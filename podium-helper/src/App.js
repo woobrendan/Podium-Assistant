@@ -4,7 +4,6 @@ import Series from './components/Series';
 function App() {
   return (
     <div className="App">
-      <>world</>
       <Series />
     </div>
   );
