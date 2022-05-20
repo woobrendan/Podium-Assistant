@@ -2,14 +2,17 @@ import {useState} from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import MenuItem from '@mui/material/MenuItem';
+import { FormControl, InputLabel, Select } from '@mui/material';
 
-const seriesName = ['GT World Challenge America', 'GT America', 'Pirelli GT4 America', 'TC America']
+const seriesNameList = ['GT World Challenge America', 'GT America', 'Pirelli GT4 America', 'TC America']
 
 function Series() {
   const [seriesName, setSeriesName] = useState('');
   const handleChange = (event) => {
     setSeriesName(event.target.value);
   };
+
+  const mappedSeries = seriesNameList.map((series, index) => <MenuItem key={index} value={series}>{series}</MenuItem>)
 
   return (
     <Box
@@ -20,22 +23,19 @@ function Series() {
       noValidate
       autoComplete="off"
     >
-      <div>
-      <TextField
-          id="outlined-select-series"
-          select
-          label="Select"
+      <FormControl sx={{ minWidth: 300 }}>
+        <InputLabel htmlFor="exampleFormControlSelect2">
+          Series
+        </InputLabel>
+        <Select
+          className="form-control"
+          name="series-name"
           value={seriesName}
           onChange={handleChange}
-          helperText="Please select Series"
         >
-          {/* {.map((option) => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))} */}
-        </TextField>
-      </div>
+          {mappedSeries}
+        </Select>
+      </FormControl>
     </Box>
   )
 }
