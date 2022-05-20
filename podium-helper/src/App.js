@@ -1,9 +1,11 @@
 import './App.css';
+import Series from './components/Series';
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      <>world</>
+      <Series />
     </div>
   );
 }
