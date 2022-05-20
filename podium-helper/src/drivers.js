@@ -1,3 +1,3 @@
-const drivers = [
-  
+export const drivers = [
+  'Michele Beretta', 'Andrea Calderlli', 'Misha Goikhberg', 'Jordan Pepper', 'George Kurtz', 'Colin Braun', 'Steven Aghakhani', 'Loris Spinelli', 'Scott Smithson', 'Bryan Sellers', 'Ziad Ghandour', 'Giacomo Altoe', 'Frank Gannett', 'Drew Staveley', 'Justin Wetherill', 'Ryan Dalziel', 'Charlie Scardina', 'Onofrio Triarsi', 'Erin Vogel', 'Michael Cooper', 'Charlie Luck', 'Jan Heylen', 'Jean-Claude Saada', 'Conrad Grunewald', 'David Askew', 'Dirk Muller', 'Jason Harward', 'Madison Snow', 'Jeff Burton', 'Corey Lewis', 'Ashton Harrison', 'Mario Farnbacher', 'Chandler Hull', 'Bill Auberlen', 'Michael Dinan'
 ]
