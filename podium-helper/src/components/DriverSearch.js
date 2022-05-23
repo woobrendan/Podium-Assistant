@@ -1,9 +1,9 @@
 import React from 'react'
-import { drivers } from '../drivers'
+import { GTWCADrivers } from '../drivers'
 
 function DriverSearch() {
-  const mappedDrivers = drivers.map((driver,index) => (
-    <li>{driver}</li>
+  const mappedDrivers = GTWCADrivers.map((driver,index) => (
+    <li key={index}>{driver}</li>
   ))
   return (
     <ul>
