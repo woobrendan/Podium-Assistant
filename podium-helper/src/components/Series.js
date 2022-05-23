@@ -2,11 +2,12 @@ import {useState} from 'react';
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select } from '@mui/material';
+import DriverSearch from './DriverSearch';
 
 const seriesNameList = ['GT World Challenge America', 'GT America', 'Pirelli GT4 America', 'TC America']
 
 function Series() {
-  const [seriesName, setSeriesName] = useState('');
+  const [seriesName, setSeriesName] = useState('GT World Challenge America');
   const handleChange = (event) => {
     setSeriesName(event.target.value);
   };
@@ -35,6 +36,7 @@ function Series() {
           {mappedSeries}
         </Select>
       </FormControl>
+      <DriverSearch seriesChoice={seriesName} />
     </Box>
   )
 }
