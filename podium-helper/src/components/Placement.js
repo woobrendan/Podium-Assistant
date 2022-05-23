@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
-import { FormControl, InputLabel, Select, Card, CardContent } from '@mui/material';
+import { FormControl, InputLabel, Select } from '@mui/material';
 
 const classification = ['Pro', 'Pro-Am', 'Silver', 'Am'];
 const placement = ['1st', '2nd', '3rd'];
