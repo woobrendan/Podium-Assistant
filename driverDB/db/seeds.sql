@@ -23,3 +23,13 @@ VALUES
 ('Mercedes', 'AMG GT3', "6", 'Pro', 3),
 ('Mercedes', 'AMG GT3', "08", 'Pro-Am', 4),
 ('Lamborghini', 'Huracan GT3', "9", 'Pro-Am', 5);
+
+INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
+('Michele Beretta', 'Silver', 'Italy', 1, 1),
+('Andrea Caldarelli', 'Platinum', 'Italy', 1, 1),
+('Misha Goikhberg', 'Silver', 'Canada', 1, 2),
+('Jordan Pepper', 'Gold', 'South Africa', 1, 2),
+('George Kurtz', 'Bronze', 'USA', 2, 3),
+('Colin Braun', 'Gold', 'USA', 2, 3),
+('Steven Aghakhani', 'Silver', 'USA', 3, 4),
+('Loris Spinelli', 'Silver', 'Italy', 3, 4);
