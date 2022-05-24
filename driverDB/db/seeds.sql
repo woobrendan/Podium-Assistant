@@ -22,7 +22,19 @@ VALUES
 ('Mercedes', 'AMG GT3', "04", 'Pro-Am', 2),
 ('Mercedes', 'AMG GT3', "6", 'Pro', 3),
 ('Mercedes', 'AMG GT3', "08", 'Pro-Am', 4),
-('Lamborghini', 'Huracan GT3', "9", 'Pro-Am', 5);
+('Lamborghini', 'Huracan GT3', "9", 'Pro-Am', 5),
+('Aston Martin', 'Vantage AMR GT3', '12', 'Pro-Am', 6),
+('Ferrari', '488 GT3', '13', 'Pro-Am', 7),
+('Ferrari', '488 GT3', '23', 'Am', 7),
+('Acura', 'NSX GT3', '43', 'Pro-Am', 8),
+('Porsche', '911 GT3-R (991.ii)', '45', 'Pro-Am', 9),
+('Ferrari', '488 GT3', '61', 'Am', 10),
+('Mercedes', 'AMG GT3', '63', 'Pro-Am', 4),
+('Lamborghini', 'Huracan GT3', '88', 'Pro-Am', 11),
+('Lamborghini', 'Huracan GT3', '91', 'Pro-Am', 11),
+('Acura', 'NSX GT3', '93', 'Pro-Am', 12),
+('BMW', 'M4 GT3', '94', 'Pro-Am', 13),
+('BMW', 'M4 GT3', '96', 'Pro', 14);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
