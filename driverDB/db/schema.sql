@@ -6,7 +6,7 @@ CREATE TABLE vehicles(
   id SERIAL PRIMARY KEY NOT NULL,
   manufacturer VARCHAR(255) NOT NULL,
   model VARCHAR(255) NOT NULL,
-  number INTEGER
+  number VARCHAR(6)
 )
 
 CREATE TABLE teams  (
