@@ -34,7 +34,8 @@ VALUES
 ('Lamborghini', 'Huracan GT3', '91', 'Pro-Am', 11),
 ('Acura', 'NSX GT3', '93', 'Pro-Am', 12),
 ('BMW', 'M4 GT3', '94', 'Pro-Am', 13),
-('BMW', 'M4 GT3', '96', 'Pro', 14);
+('BMW', 'M4 GT3', '96', 'Pro', 14),
+('BMW', 'M4 GT3', '28', 'Pro', 15);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
