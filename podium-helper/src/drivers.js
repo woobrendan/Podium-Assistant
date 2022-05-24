@@ -13,7 +13,7 @@ const driverInfo = [
     driver2: "Andrea Caldarelli",
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
-    number: 6
+    number: "6"
   },
   {
     team: "K-PAX",
@@ -21,7 +21,7 @@ const driverInfo = [
     driver2: "Jordan Pepper",
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
-    number: 1
+    number: "1"
   },
   {
     team: "Crowdstrike Racing with Riley Motorsports",
@@ -29,6 +29,6 @@ const driverInfo = [
     driver2: "Colin Braun",
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
-    number: 04
+    number: "04"
   },
 ]
