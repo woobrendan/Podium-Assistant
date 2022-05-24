@@ -21,6 +21,7 @@ CREATE TABLE drivers (
   id SERIAL PRIMARY KEY NOT NULL,
   name VARCHAR(255) NOT NULL,
   rating VARCHAR(255),
+  nationality VARCHAR(255),
   team_id INTEGER REFERENCES teams(id) ON DELETE CASCADE,
   vehicle_id INTEGER REFERENCES vehicle(id) ON DELETE CASCADE
 );
