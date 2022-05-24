@@ -17,9 +17,9 @@ INSERT INTO teams (name, country) VALUES
 
 INSERT INTO vehicles (manufacturer, model,  number, classification, team_id)
 VALUES
-('Lamborghini', 'Huracan GT3', "1", 'Pro'),
-('Lamborghini', 'Huracan GT3', "3", 'Pro'),
-('Mercedes', 'AMG GT3', "04", 'Pro-Am'),
-('Mercedes', 'AMG GT3', "6", 'Pro'),
-('Mercedes', 'AMG GT3', "08", 'Pro-Am'),
-('Lamborghini', 'Huracan GT3', "9", 'Pro-Am');
+('Lamborghini', 'Huracan GT3', "1", 'Pro', 1),
+('Lamborghini', 'Huracan GT3', "3", 'Pro', 1),
+('Mercedes', 'AMG GT3', "04", 'Pro-Am', 2),
+('Mercedes', 'AMG GT3', "6", 'Pro', 3),
+('Mercedes', 'AMG GT3', "08", 'Pro-Am', 4),
+('Lamborghini', 'Huracan GT3', "9", 'Pro-Am', 5);
