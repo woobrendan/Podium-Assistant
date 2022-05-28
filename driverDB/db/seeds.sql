@@ -51,4 +51,6 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('George Kurtz', 'Bronze', 'USA', 2, 3),
 ('Colin Braun', 'Gold', 'USA', 2, 3),
 ('Steven Aghakhani', 'Silver', 'USA', 3, 4),
-('Loris Spinelli', 'Silver', 'Italy', 3, 4);
+('Loris Spinelli', 'Silver', 'Italy', 3, 4),
+('Scott Smithson', 'Bronze', 'USA', 4, 5),
+('Bryan Sellers', 'Gold', 'USA', 4, 5);
