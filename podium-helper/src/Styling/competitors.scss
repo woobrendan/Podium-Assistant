@@ -9,5 +9,22 @@
 
   .MuiPaper-root {
     margin: 50px;
+
+    table {
+      // border: 1px solid black;
+      margin-left: 5%;
+
+      th {
+        width: 30%;
+      }
+
+      td {
+        padding: 0 15px;
+      }
+    }
+
+    .MuiCardContent-root {
+      align-items: center;
+    }
   }
 }
