@@ -1,3 +1,6 @@
+import kpax1 from './images/kpax1.jpeg';
+import kpax6 from './images/kpax6.jpeg';
+import riley04 from './images/riley04.jpeg';
 export const GTWCADrivers = [
   'Michele Beretta', 'Andrea Calderlli', 'Misha Goikhberg', 'Jordan Pepper', 'George Kurtz', 'Colin Braun', 'Steven Aghakhani', 'Loris Spinelli', 'Scott Smithson', 'Bryan Sellers', 'Ziad Ghandour', 'Giacomo Altoe', 'Frank Gannett', 'Drew Staveley', 'Justin Wetherill', 'Ryan Dalziel', 'Charlie Scardina', 'Onofrio Triarsi', 'Erin Vogel', 'Michael Cooper', 'Charlie Luck', 'Jan Heylen', 'Jean-Claude Saada', 'Conrad Grunewald', 'David Askew', 'Dirk Muller', 'Jason Harward', 'Madison Snow', 'Jeff Burton', 'Corey Lewis', 'Ashton Harrison', 'Mario Farnbacher', 'Chandler Hull', 'Bill Auberlen', 'Michael Dinan'
 ]
@@ -21,7 +24,8 @@ export const driverInfo = [
       },
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
-    number: "6"
+    number: "6",
+    carImage: kpax6
   },
   {
     team: "K-PAX",
@@ -37,7 +41,8 @@ export const driverInfo = [
       },
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
-    number: "1"
+    number: "1",
+    carImage: kpax1
   },
 
   {
@@ -54,6 +59,7 @@ export const driverInfo = [
       },
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
-    number: "04"
+    number: "04",
+    carImage: riley04
   },
 ]
