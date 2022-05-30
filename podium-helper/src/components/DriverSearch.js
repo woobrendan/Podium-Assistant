@@ -1,5 +1,6 @@
 import { GTWCADrivers, PGT4ADrivers, driverInfo } from '../drivers'
-import DriverDetails from './DriverDetails'
+import DriverDetails from './DriverDetails';
+import '../Styling/competitors.scss'
 
 function DriverSearch(props) {
   // const seriesDrivers = (choice) => {
