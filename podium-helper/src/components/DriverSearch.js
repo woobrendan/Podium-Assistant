@@ -1,23 +1,6 @@
 import { GTWCADrivers, PGT4ADrivers, driverInfo } from '../drivers'
 import DriverDetails from './DriverDetails'
 
-// {
-//   team: "K-PAX",
-//   driver1: {
-//     name: 'Michele Beretta',
-//     nationality: 'Italy',
-//     rating: 'Silver'
-//     },
-//   driver2: {
-//     name: 'Andrea Calderlli',
-//     nationality: 'Italy',
-//     rating: 'Platinum'
-//     },
-//   car: "Lamborghini Huracan GT3",
-//   classification: "Pro",
-//   number: "6"
-// },
-
 function DriverSearch(props) {
   // const seriesDrivers = (choice) => {
   //   switch (choice) {
@@ -33,9 +16,9 @@ function DriverSearch(props) {
       ))
   
   return (
-    <>
+    <div className="entry_cards">
       {mappedDrivers}
-    </>
+    </div>
   )
 }
 
