@@ -1,4 +1,5 @@
 import { GTWCADrivers, PGT4ADrivers, driverInfo } from '../drivers'
+import DriverDetails from './DriverDetails'
 
 // {
 //   team: "K-PAX",
@@ -28,13 +29,13 @@ function DriverSearch(props) {
   // }
   // const mappedDrivers = seriesDrivers(props.seriesChoice).map((driver,index) => 
   const mappedDrivers = driverInfo.map((entry,index) =>(
-        <li key={index}>{entry.driver1.name}</li>
+       <DriverDetails entry={entry} key={index}/>
       ))
   
   return (
-    <ul>
+    <>
       {mappedDrivers}
-    </ul>
+    </>
   )
 }
 
