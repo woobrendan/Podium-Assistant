@@ -1,13 +1,19 @@
 import './App.css';
+import DriverSearch from './components/DriverSearch';
+import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Placement from './components/Placement';
 import Series from './components/Series';
 
 function App() {
   return (
-    <div className="App">
-      <Series />
-      <Placement />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<Series />} />
+          <Route path="/competitors" element={<DriverSearch />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
