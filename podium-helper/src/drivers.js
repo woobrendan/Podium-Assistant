@@ -6,27 +6,52 @@ export const PGT4ADrivers = [
   'Jason Bell', 'Andrew Davis', 'Sam Owen', 'Sean Gibbons', 'Elias Sabo', 'Andy Lee', 'Tim Horrel', 'Raphael Matos'
 ]
 
-const driverInfo = [
+export const driverInfo = [
   {
     team: "K-PAX",
-    driver1: "Michele Beretta",
-    driver2: "Andrea Caldarelli",
+    driver1: {
+      name: 'Michele Beretta',
+      nationality: 'Italy',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Andrea Calderlli',
+      nationality: 'Italy',
+      rating: 'Platinum'
+      },
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "6"
   },
   {
     team: "K-PAX",
-    driver1: "Misha Goikhberg",
-    driver2: "Jordan Pepper",
+    driver1: {
+      name: 'Misha Goikhberg',
+      nationality: 'Canada',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Jordan Pepper',
+      nationality: 'South Africa',
+      rating: 'Gold'
+      },
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "1"
   },
+
   {
     team: "Crowdstrike Racing with Riley Motorsports",
-    driver1: "George Kurtz",
-    driver2: "Colin Braun",
+    driver1: {
+      name: 'George Kurtz',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Colin Braun',
+      nationality: 'USA',
+      rating: 'Gold'
+      },
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "04"
