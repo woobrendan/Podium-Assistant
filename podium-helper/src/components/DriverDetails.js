@@ -2,6 +2,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import DriverTable from './DriverTable';
 
 function DriverDetails(props) {
   return (
@@ -19,25 +20,7 @@ function DriverDetails(props) {
         <Typography gutterBottom variant="h6" component="div">
           {props.entry.car}
         </Typography>
-        <table>
-          <tbody>
-          <tr>
-            <th>Driver</th>
-            <th>Nationality</th>
-            <th>Rating</th>
-          </tr>
-          <tr>
-            <td>{props.entry.driver1.name}</td>
-            <td>{props.entry.driver1.nationality}</td>
-            <td>{props.entry.driver1.rating}</td>
-          </tr>
-          <tr>
-            <td>{props.entry.driver2.name}</td>
-            <td>{props.entry.driver2.nationality}</td>
-            <td>{props.entry.driver2.rating}</td>
-          </tr>
-          </tbody>
-        </table>
+        <DriverTable  drivers={props.entry} />
       </CardContent>
     </Card>
   )
