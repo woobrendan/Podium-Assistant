@@ -5,12 +5,16 @@ import '../Styling/podium.scss'
 
 //make a function that grabs the usestate results from each race on submit
 function Podium() {
+
+  const onSubmit = () => {
+    console.log('I am clicked')
+  }
   return (
     <div className="race-results-container">
       <WinnerTop3 />
       <WinnerTop3 />
       <WinnerTop3 />
-      <Button variant="contained" color="success">Submit</Button>
+      <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
     </div>
   )
 }
