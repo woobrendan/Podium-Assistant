@@ -67,13 +67,14 @@ function Podium() {
           noValidate
           autoComplete="off"
         >
-          <FormControl sx={{ minWidth: 300 }}>
+          <FormControl sx={{ minWidth: 150 }}>
             <InputLabel htmlFor="exampleFormControlSelect2">
               Class
             </InputLabel>
             <Select
               className="form-control"
               name="series-name"
+              label='Series'
               value={seriesName}
               onChange={handleChange}
             >
@@ -104,6 +105,7 @@ function Podium() {
               <Select
                 className="form-control"
                 name="first"
+                label="first place"
                 value={winners.first}
                 onChange={handleWinners}
               >
@@ -126,6 +128,7 @@ function Podium() {
             <Select
               className="form-control"
               name="second"
+              label="second place"
               value={winners.second}
               onChange={handleWinners}
             >
@@ -148,6 +151,7 @@ function Podium() {
             <Select
               className="form-control"
               name="third"
+              label="third place"
               value={winners.third}
               onChange={handleWinners}
             >
