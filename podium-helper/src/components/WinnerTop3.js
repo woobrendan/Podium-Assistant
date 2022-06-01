@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select } from '@mui/material';
 import { driverInfo } from '../drivers';
@@ -58,6 +59,7 @@ function Podium() {
 
   return (
     <div className="results-container">
+      <Card sx={{ maxWidth: 500 }}>
       <div className="series-container">
         <Box
           component="form"
@@ -161,10 +163,7 @@ function Podium() {
         </Box>
         </div>
       </div>
-      <div className="placement-container">
-
-      </div>
-      
+      </Card>
     </div>
   )
 }
