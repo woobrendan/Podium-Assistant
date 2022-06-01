@@ -2,6 +2,25 @@ import {useState} from 'react'
 import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select } from '@mui/material';
+import { driverInfo } from '../drivers';
+
+// {
+//   team: "K-PAX",
+//   driver1: {
+//     name: 'Michele Beretta',
+//     nationality: 'Italy',
+//     rating: 'Silver'
+//     },
+//   driver2: {
+//     name: 'Andrea Calderlli',
+//     nationality: 'Italy',
+//     rating: 'Platinum'
+//     },
+//   car: "Lamborghini Huracan GT3",
+//   classification: "Pro",
+//   number: "6",
+//   carImage: kpax6
+// },
 
 const placeOptions = [
   'Pro', 'Pro-Am','Am'
@@ -17,6 +36,10 @@ function Podium() {
   const mappedSeries = placeOptions.map((option, index) => 
     <MenuItem key={index} value={option}>{option}</MenuItem>
   )
+
+  const mappedDrivers = driverInfo.map(entry => (
+    <MenuItem key={entry.number} value={entry.number}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
+  ))
 
   return (
     <div className="results-container">
@@ -45,7 +68,79 @@ function Podium() {
         </Box>
       </div>
       <div className="placement-container">
-
+        <div className="finishing-spot">
+          <p>1st</p>
+          <p>2nd</p>
+          <p>3rd</p>
+        </div> 
+        <div>
+          <Box
+            component="form"
+            sx={{
+              '& .MuiTextField-root': { m: 1, width: '25ch' },
+            }}
+            noValidate
+            autoComplete="off"
+          >
+            <FormControl sx={{ minWidth: 300 }}>
+              <InputLabel htmlFor="exampleFormControlSelect2">
+                First Place
+              </InputLabel>
+              <Select
+                className="form-control"
+                name="series-name"
+                value={seriesName}
+                onChange={handleChange}
+              >
+                {mappedDrivers}
+              </Select>
+            </FormControl>
+          </Box>
+          <Box
+          component="form"
+          sx={{
+            '& .MuiTextField-root': { m: 1, width: '25ch' },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <FormControl sx={{ minWidth: 300 }}>
+            <InputLabel htmlFor="exampleFormControlSelect2">
+              Second Place
+            </InputLabel>
+            <Select
+              className="form-control"
+              name="series-name"
+              value={seriesName}
+              onChange={handleChange}
+            >
+              {mappedDrivers}
+            </Select>
+          </FormControl>
+        </Box>
+        <Box
+          component="form"
+          sx={{
+            '& .MuiTextField-root': { m: 1, width: '25ch' },
+          }}
+          noValidate
+          autoComplete="off"
+        >
+          <FormControl sx={{ minWidth: 300 }}>
+            <InputLabel htmlFor="exampleFormControlSelect2">
+              Third Place
+            </InputLabel>
+            <Select
+              className="form-control"
+              name="series-name"
+              value={seriesName}
+              onChange={handleChange}
+            >
+              {mappedDrivers}
+            </Select>
+          </FormControl>
+        </Box>
+        </div>
       </div>
       <div className="placement-container">
 
