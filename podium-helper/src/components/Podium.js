@@ -38,12 +38,19 @@ function Podium() {
     setSeriesName(event.target.value);
   };
 
+  const handleWinners = event => {
+    setWinners((prev) => ({
+      ...prev,
+      [event.target.name]: event.target.value
+    }))
+  }
+
   const mappedSeries = placeOptions.map((option, index) => 
     <MenuItem key={index} value={option}>{option}</MenuItem>
   )
 
   const mappedDrivers = driverInfo.map(entry => (
-    <MenuItem key={entry.number} value={entry.number}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
+    <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
   ))
 
   return (
@@ -95,7 +102,7 @@ function Podium() {
                 className="form-control"
                 name="first"
                 value={winners.first}
-                onChange={handleChange}
+                onChange={handleWinners}
               >
                 {mappedDrivers}
               </Select>
@@ -117,7 +124,7 @@ function Podium() {
               className="form-control"
               name="second"
               value={winners.second}
-              onChange={handleChange}
+              onChange={handleWinners}
             >
               {mappedDrivers}
             </Select>
@@ -139,7 +146,7 @@ function Podium() {
               className="form-control"
               name="third"
               value={winners.third}
-              onChange={handleChange}
+              onChange={handleWinners}
             >
               {mappedDrivers}
             </Select>
