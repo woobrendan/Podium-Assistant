@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select } from '@mui/material';
 import { driverInfo } from '../drivers';
+import '../Styling/winnerTop3.scss';
 
 // {
 //   team: "K-PAX",
