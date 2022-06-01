@@ -28,6 +28,11 @@ const placeOptions = [
 
 function Podium() {
   const [seriesName, setSeriesName] = useState('');
+  const [winners, setWinners] = useState({
+    first: '',
+    second: '',
+    third: ''
+  });
 
   const handleChange = (event) => {
     setSeriesName(event.target.value);
@@ -88,8 +93,8 @@ function Podium() {
               </InputLabel>
               <Select
                 className="form-control"
-                name="series-name"
-                value={seriesName}
+                name="first"
+                value={winners.first}
                 onChange={handleChange}
               >
                 {mappedDrivers}
@@ -110,8 +115,8 @@ function Podium() {
             </InputLabel>
             <Select
               className="form-control"
-              name="series-name"
-              value={seriesName}
+              name="second"
+              value={winners.second}
               onChange={handleChange}
             >
               {mappedDrivers}
@@ -132,8 +137,8 @@ function Podium() {
             </InputLabel>
             <Select
               className="form-control"
-              name="series-name"
-              value={seriesName}
+              name="third"
+              value={winners.third}
               onChange={handleChange}
             >
               {mappedDrivers}
