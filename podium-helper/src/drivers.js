@@ -44,7 +44,6 @@ export const driverInfo = [
     number: "3",
     carImage: kpax6
   },
-
   {
     team: "Crowdstrike Racing with Riley Motorsports",
     driver1: {
@@ -62,4 +61,56 @@ export const driverInfo = [
     number: "04",
     carImage: riley04
   },
+  {
+    team: "US Racetronics",
+    driver1: {
+      name: 'Steven Aghakhani',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Loris Spinelli',
+      nationality: 'Italy',
+      rating: 'Silver'
+      },
+    car: "Mercedes-AMG GT3",
+    classification: "Pro",
+    number: "6",
+    carImage: riley04
+  },
+  {
+    team: "DXDT Racing",
+    driver1: {
+      name: 'Scott Smithson',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Bryan Sellers',
+      nationality: 'USA',
+      rating: 'Gold'
+      },
+    car: "Mercedes-AMG GT3",
+    classification: "Pro-Am",
+    number: "08",
+    carImage: riley04
+  },
+  {
+    team: "Triarsi Competizione",
+    driver1: {
+      name: 'Charlie Scardina',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Onofrio Triarsi',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Ferrari 488 GT3 EVO",
+    classification: "Pro-Am",
+    number: "23",
+    carImage: riley04
+  },
+  
 ]
