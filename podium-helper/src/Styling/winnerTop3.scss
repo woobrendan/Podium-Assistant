@@ -3,9 +3,24 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
   .placement-container {
     display: flex;
     justify-content: space-around;
+    height: 250px;
+
+    .finishing-spot {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+
+    .finishing-drivers {
+      // height: 250px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+    }
   }
 
 }
