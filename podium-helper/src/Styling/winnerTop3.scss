@@ -1,0 +1,11 @@
+.results-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  .placement-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
