@@ -1,6 +1,10 @@
 import kpax1 from './images/kpax1.jpeg';
 import kpax6 from './images/kpax6.jpeg';
 import riley04 from './images/riley04.jpeg';
+import usrace6 from './images/usrace6.jpeg';
+import dxdt08 from './images/DXDT08.jpeg';
+import triarsi23 from './images/triarsi23.jpeg';
+
 export const GTWCADrivers = [
   'Michele Beretta', 'Andrea Calderlli', 'Misha Goikhberg', 'Jordan Pepper', 'George Kurtz', 'Colin Braun', 'Steven Aghakhani', 'Loris Spinelli', 'Scott Smithson', 'Bryan Sellers', 'Ziad Ghandour', 'Giacomo Altoe', 'Frank Gannett', 'Drew Staveley', 'Justin Wetherill', 'Ryan Dalziel', 'Charlie Scardina', 'Onofrio Triarsi', 'Erin Vogel', 'Michael Cooper', 'Charlie Luck', 'Jan Heylen', 'Jean-Claude Saada', 'Conrad Grunewald', 'David Askew', 'Dirk Muller', 'Jason Harward', 'Madison Snow', 'Jeff Burton', 'Corey Lewis', 'Ashton Harrison', 'Mario Farnbacher', 'Chandler Hull', 'Bill Auberlen', 'Michael Dinan'
 ]
@@ -76,7 +80,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "Pro",
     number: "6",
-    carImage: riley04
+    carImage: usrace6
   },
   {
     team: "DXDT Racing",
@@ -93,7 +97,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "08",
-    carImage: riley04
+    carImage: dxdt08
   },
   {
     team: "Triarsi Competizione",
@@ -108,9 +112,9 @@ export const driverInfo = [
       rating: 'Bronze'
       },
     car: "Ferrari 488 GT3 EVO",
-    classification: "Pro-Am",
+    classification: "Am",
     number: "23",
-    carImage: riley04
+    carImage: triarsi23
   },
   
 ]
