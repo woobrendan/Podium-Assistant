@@ -50,9 +50,11 @@ function Podium() {
     <MenuItem key={index} value={option}>{option}</MenuItem>
   )
 
-  const mappedDrivers = driverInfo.map(entry => (
-    <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
-  ))
+  const mappedDrivers = driverInfo
+    .filter(entry => entry.classification === seriesName)
+    .map(entry => (
+        <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
+      ));
 
   return (
     <div className="results-container">
