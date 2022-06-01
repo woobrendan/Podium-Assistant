@@ -59,7 +59,7 @@ function Podium() {
 
   return (
     <div className="results-container">
-      <Card sx={{ maxWidth: 500 }}>
+      <Card sx={{ minWidth: 450 }}>
       <div className="series-container">
         <Box
           component="form"
