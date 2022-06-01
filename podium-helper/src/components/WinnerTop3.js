@@ -88,7 +88,7 @@ function Podium() {
           <p>2nd</p>
           <p>3rd</p>
         </div> 
-        <div>
+        <div className="finishing-drivers">
           <Box
             component="form"
             sx={{
