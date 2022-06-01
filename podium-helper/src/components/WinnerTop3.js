@@ -85,9 +85,9 @@ function Podium() {
       </div>
       <div className="placement-container">
         <div className="finishing-spot">
-          <p>1st</p>
-          <p>2nd</p>
-          <p>3rd</p>
+          <p>1<sup>st</sup></p>
+          <p>2<sup>nd</sup></p>
+          <p>3<sup>rd</sup></p>
         </div> 
         <div className="finishing-drivers">
           <Box
