@@ -13,23 +13,6 @@ export const driverInfo = [
   {
     team: "K-PAX",
     driver1: {
-      name: 'Michele Beretta',
-      nationality: 'Italy',
-      rating: 'Silver'
-      },
-    driver2: {
-      name: 'Andrea Calderlli',
-      nationality: 'Italy',
-      rating: 'Platinum'
-      },
-    car: "Lamborghini Huracan GT3",
-    classification: "Pro",
-    number: "6",
-    carImage: kpax6
-  },
-  {
-    team: "K-PAX",
-    driver1: {
       name: 'Misha Goikhberg',
       nationality: 'Canada',
       rating: 'Silver'
@@ -43,6 +26,23 @@ export const driverInfo = [
     classification: "Pro",
     number: "1",
     carImage: kpax1
+  },
+  {
+    team: "K-PAX",
+    driver1: {
+      name: 'Michele Beretta',
+      nationality: 'Italy',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Andrea Calderlli',
+      nationality: 'Italy',
+      rating: 'Platinum'
+      },
+    car: "Lamborghini Huracan GT3",
+    classification: "Pro",
+    number: "3",
+    carImage: kpax6
   },
 
   {
