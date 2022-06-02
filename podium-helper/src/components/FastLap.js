@@ -23,15 +23,15 @@ function FastLap() {
   const singleDrivers = (entryArray) => {
     const drivers = [];
     for (const entry of entryArray) {
-      drivers.push(`#${entry.number} - ${entry.driver1.name}`);
-      drivers.push(`#${entry.number} - ${entry.driver2.name}`);
+      drivers.push({number: entry.number, driver: entry.driver1.name});
+      drivers.push({number: entry.number, driver: entry.driver2.name});
     }
     return drivers;
   }
 
   const mapSingleDrivers = singleDrivers(driverInfo)
     .map((option, index) => 
-      <MenuItem key={index} value={option}>{option}</MenuItem>
+    <MenuItem key={index} value={option.driver}>#{option.number} - {option.driver} </MenuItem>
     )
 
   return (
