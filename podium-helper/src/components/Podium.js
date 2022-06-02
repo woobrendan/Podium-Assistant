@@ -2,6 +2,7 @@ import React from 'react'
 import WinnerTop3 from './WinnerTop3';
 import { Button } from '@mui/material';
 import '../Styling/podium.scss'
+import FastLap from './FastLap';
 
 //make a function that grabs the usestate results from each race on submit
 function Podium() {
@@ -14,6 +15,7 @@ function Podium() {
       <WinnerTop3 />
       <WinnerTop3 />
       <WinnerTop3 />
+      <FastLap />
       <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
     </div>
   )
