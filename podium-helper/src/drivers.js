@@ -100,6 +100,57 @@ export const driverInfo = [
     carImage: dxdt08
   },
   {
+    team: "TR3 Racing",
+    driver1: {
+      name: 'Ziad Ghandour',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Giacomo Altoe',
+      nationality: 'Italy',
+      rating: 'Gold'
+      },
+    car: "Lamborrghini Huracan GT3 EVO",
+    classification: "Pro-Am",
+    number: "9",
+    carImage: triarsi23
+  },
+  {
+    team: "Ian Lacy Racing",
+    driver1: {
+      name: 'Frank Gannett',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Drew Stavely',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Aston Martin Vantage AMR GT3",
+    classification: "Pro-Am",
+    number: "12",
+    carImage: triarsi23
+  },
+  {
+    team: "Triarsi Competizione",
+    driver1: {
+      name: 'Justin Wetherill',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Ryan Dalziel',
+      nationality: 'Scotland',
+      rating: 'Gold'
+      },
+    car: "Ferrari 488 GT3 EVO",
+    classification: "Pro-Am",
+    number: "13",
+    carImage: triarsi23
+  },
+  {
     team: "Triarsi Competizione",
     driver1: {
       name: 'Charlie Scardina',
@@ -116,5 +167,55 @@ export const driverInfo = [
     number: "23",
     carImage: triarsi23
   },
-  
+  {
+    team: "ST Racing",
+    driver1: {
+      name: 'Samantha Tan',
+      nationality: 'Canada',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Nick Wittmer',
+      nationality: 'Canada',
+      rating: 'Silver'
+      },
+    car: "BMW M4 GT3",
+    classification: "Pro-Am",
+    number: "38",
+    carImage: triarsi23
+  },
+  {
+    team: "RealTime Racing",
+    driver1: {
+      name: 'Erin Vogel',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Michael Cooper',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Acura NSX GT3",
+    classification: "Pro-Am",
+    number: "43",
+    carImage: triarsi23
+  },
+  {
+    team: "Wright Motorsports",
+    driver1: {
+      name: 'Charlie Luck',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Jan Heylen',
+      nationality: 'Belgium',
+      rating: 'Gold'
+      },
+    car: "Porsche 911 GT3-R (991.ii)",
+    classification: "Pro-Am",
+    number: "45",
+    carImage: triarsi23
+  },
 ]
