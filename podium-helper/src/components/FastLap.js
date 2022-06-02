@@ -36,38 +36,49 @@ function FastLap() {
 
   return (
     <div className="results-container">
-      <Card sx={{ minWidth: 450 }}>
-        <Box
-          component="form"
-          sx={{
-            '& .MuiTextField-root': { m: 1, width: '25ch' },
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <FormControl sx={{ minWidth: 150 }}>
-            <InputLabel htmlFor="exampleFormControlSelect2">
-              Driver
-            </InputLabel>
-            <Select
-              className="form-control"
-              name="driver"
-              label='Driver'
-              value={fastTime.driver}
+      <div className="fast-lap-container">
+        <Card sx={{ minWidth: 450 }}>
+          <Box
+            component="form"
+            sx={{
+              '& .MuiTextField-root': { m: 1, width: '25ch' },
+            }}
+            noValidate
+            autoComplete="off"
+          >
+            <FormControl sx={{ minWidth: 250 }}>
+              <InputLabel htmlFor="exampleFormControlSelect2">
+                Driver
+              </InputLabel>
+              <Select
+                className="form-control"
+                name="driver"
+                label='Driver'
+                value={fastTime.driver}
+                onChange={handleChange}
+              >
+                {mapSingleDrivers}
+              </Select>
+            </FormControl>
+          </Box>
+          <Box
+            component="form"
+            sx={{
+              '& .MuiTextField-root': { m: 1, width: '25ch' },
+            }}
+            noValidate
+            autoComplete="off"
+          >
+            <TextField
+              id="outlined"
+              label="Fast Lap"
+              name="lapTime"
+              value={fastTime.lapTime}
               onChange={handleChange}
-            >
-              {mapSingleDrivers}
-            </Select>
-          </FormControl>
-          <TextField
-          id="outlined"
-          label="Fast Lap"
-          name="lapTime"
-          value={fastTime.lapTime}
-          onChange={handleChange}
-        />
-        </Box>
-      </Card>
+            />
+          </Box>
+        </Card>
+      </div>
     </div>
   )
 }
