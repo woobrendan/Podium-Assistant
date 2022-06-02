@@ -7,9 +7,15 @@ import {useState} from 'react'
 
 
 function FastLap() {
-  const [fastTime, setFastTime] = useState('');
+  const [fastTime, setFastTime] = useState({
+    driver: '',
+    lapTime: ''
+  });
   const handleChange = (event) => {
-    setFastTime(event.target.value)
+    setFastTime((prev) => ({
+      ...prev,
+      [event.target.name]: event.target.value
+    }))
   }
   return (
     <div className="results-container">
@@ -25,7 +31,8 @@ function FastLap() {
           <TextField
           id="outlined"
           label="Fast Lap"
-          value={fastTime}
+          name="lapTime"
+          value={fastTime.lapTime}
           onChange={handleChange}
         />
         </Box>
