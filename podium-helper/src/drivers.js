@@ -4,6 +4,12 @@ import riley04 from './images/riley04.jpeg';
 import usrace6 from './images/usrace6.jpeg';
 import dxdt08 from './images/DXDT08.jpeg';
 import triarsi23 from './images/triarsi23.jpeg';
+import wright45 from './images/wright45.jpeg';
+import ian12 from './images/ian12.jpeg';
+import real43 from  './images/real43.jpeg';
+import st38 from './images/st38.jpeg';
+import triarsi13 from './images/triarsi13.jpeg'
+import tr39 from './images/trt39.jpeg'
 
 export const GTWCADrivers = [
   'Michele Beretta', 'Andrea Calderlli', 'Misha Goikhberg', 'Jordan Pepper', 'George Kurtz', 'Colin Braun', 'Steven Aghakhani', 'Loris Spinelli', 'Scott Smithson', 'Bryan Sellers', 'Ziad Ghandour', 'Giacomo Altoe', 'Frank Gannett', 'Drew Staveley', 'Justin Wetherill', 'Ryan Dalziel', 'Charlie Scardina', 'Onofrio Triarsi', 'Erin Vogel', 'Michael Cooper', 'Charlie Luck', 'Jan Heylen', 'Jean-Claude Saada', 'Conrad Grunewald', 'David Askew', 'Dirk Muller', 'Jason Harward', 'Madison Snow', 'Jeff Burton', 'Corey Lewis', 'Ashton Harrison', 'Mario Farnbacher', 'Chandler Hull', 'Bill Auberlen', 'Michael Dinan'
@@ -111,10 +117,10 @@ export const driverInfo = [
       nationality: 'Italy',
       rating: 'Gold'
       },
-    car: "Lamborrghini Huracan GT3 EVO",
+    car: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "9",
-    carImage: triarsi23
+    carImage: tr39
   },
   {
     team: "Ian Lacy Racing",
@@ -131,7 +137,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT3",
     classification: "Pro-Am",
     number: "12",
-    carImage: triarsi23
+    carImage: ian12
   },
   {
     team: "Triarsi Competizione",
@@ -148,7 +154,7 @@ export const driverInfo = [
     car: "Ferrari 488 GT3 EVO",
     classification: "Pro-Am",
     number: "13",
-    carImage: triarsi23
+    carImage: triarsi13
   },
   {
     team: "Triarsi Competizione",
@@ -182,7 +188,7 @@ export const driverInfo = [
     car: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "38",
-    carImage: triarsi23
+    carImage: st38
   },
   {
     team: "RealTime Racing",
@@ -199,7 +205,7 @@ export const driverInfo = [
     car: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "43",
-    carImage: triarsi23
+    carImage: real43
   },
   {
     team: "Wright Motorsports",
@@ -216,6 +222,6 @@ export const driverInfo = [
     car: "Porsche 911 GT3-R (991.ii)",
     classification: "Pro-Am",
     number: "45",
-    carImage: triarsi23
+    carImage: wright45
   },
 ]
