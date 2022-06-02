@@ -4,6 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select, TextField } from '@mui/material';
 import {useState} from 'react';
 import { driverInfo } from '../drivers';
+import Typography from '@mui/material/Typography';
 
 function FastLap() {
 
@@ -38,6 +39,9 @@ function FastLap() {
     <div className="results-container">
       <div className="fast-lap-container">
         <Card sx={{ minWidth: 450 }}>
+          <Typography variant="h5" gutterBottom component="div">
+            CrowdStrike Fast Lap
+          </Typography>
           <Box
             component="form"
             sx={{
