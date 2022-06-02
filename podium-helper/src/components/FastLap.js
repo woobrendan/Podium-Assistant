@@ -4,25 +4,6 @@ import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select, TextField } from '@mui/material';
 import {useState} from 'react';
 import { driverInfo } from '../drivers';
-// {
-//   team: "K-PAX",
-//   driver1: {
-//     name: 'Michele Beretta',
-//     nationality: 'Italy',
-//     rating: 'Silver'
-//     },
-//   driver2: {
-//     name: 'Andrea Calderlli',
-//     nationality: 'Italy',
-//     rating: 'Platinum'
-//     },
-//   car: "Lamborghini Huracan GT3",
-//   classification: "Pro",
-//   number: "6",
-//   carImage: kpax6
-// },
-
-
 
 function FastLap() {
 
@@ -38,11 +19,12 @@ function FastLap() {
     }))
   }
 
+  //take in entry object and get every single driver into list
   const singleDrivers = (entryArray) => {
     const drivers = [];
     for (const entry of entryArray) {
-      drivers.push(entry.driver1.name);
-      drivers.push(entry.driver2.name);
+      drivers.push(`#${entry.number} - ${entry.driver1.name}`);
+      drivers.push(`#${entry.number} - ${entry.driver2.name}`);
     }
     return drivers;
   }
