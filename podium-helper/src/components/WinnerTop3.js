@@ -11,17 +11,12 @@ const placeOptions = [
 ]
 
 function Podium(props) {
-  const [seriesName, setSeriesName] = useState('');
   const [winners, setWinners] = useState({
     series:'',
     first: '',
     second: '',
     third: ''
   });
-
-  const handleChange = (event) => {
-    setSeriesName(event.target.value);
-  };
 
   const handleWinners = event => {
     setWinners((prev) => ({
