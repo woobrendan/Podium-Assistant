@@ -10,6 +10,13 @@ import real43 from  './images/real43.jpeg';
 import st38 from './images/st38.jpeg';
 import triarsi13 from './images/triarsi13.jpeg'
 import tr39 from './images/trt39.jpeg'
+import AF61 from './images/AF61.jpeg';
+import DXDT63 from './images/DXDT63.jpeg';
+import Zelus88 from './images/Zelus88.jpeg';
+import Zelus91 from './images/Zelus91.jpeg';
+import bimmer94 from './images/bimmer94.jpeg';
+import racers93 from './images/racers93.jpeg';
+import turner96 from './images/Turner96.jpeg';
 
 export const GTWCADrivers = [
   'Michele Beretta', 'Andrea Calderlli', 'Misha Goikhberg', 'Jordan Pepper', 'George Kurtz', 'Colin Braun', 'Steven Aghakhani', 'Loris Spinelli', 'Scott Smithson', 'Bryan Sellers', 'Ziad Ghandour', 'Giacomo Altoe', 'Frank Gannett', 'Drew Staveley', 'Justin Wetherill', 'Ryan Dalziel', 'Charlie Scardina', 'Onofrio Triarsi', 'Erin Vogel', 'Michael Cooper', 'Charlie Luck', 'Jan Heylen', 'Jean-Claude Saada', 'Conrad Grunewald', 'David Askew', 'Dirk Muller', 'Jason Harward', 'Madison Snow', 'Jeff Burton', 'Corey Lewis', 'Ashton Harrison', 'Mario Farnbacher', 'Chandler Hull', 'Bill Auberlen', 'Michael Dinan'
@@ -239,7 +246,7 @@ export const driverInfo = [
     car: "Ferrari 488 GT3",
     classification: "Am",
     number: "61",
-    carImage: wright45
+    carImage: AF61
   },
   {
     team: "DXDT Racing",
@@ -256,7 +263,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "63",
-    carImage: wright45
+    carImage: DXDT63
   },
   {
     team: "Zelus Motorsports",
@@ -273,7 +280,7 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "88",
-    carImage: wright45
+    carImage: Zelus88
   },
   {
     team: "Zelus Motorsports",
@@ -290,7 +297,7 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "91",
-    carImage: wright45
+    carImage: Zelus91
   },
   {
     team: "Racers Edge Motorsports",
@@ -307,7 +314,7 @@ export const driverInfo = [
     car: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "93",
-    carImage: wright45
+    carImage: racers93
   },
   {
     team: "BimmerWorld",
@@ -324,7 +331,7 @@ export const driverInfo = [
     car: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "94",
-    carImage: wright45
+    carImage: bimmer94
   },
   {
     team: "Turner Motorsport",
@@ -336,11 +343,11 @@ export const driverInfo = [
     driver2: {
       name: 'Robby Foley',
       nationality: 'USA',
-      rating: 'Silve'
+      rating: 'Silver'
       },
     car: "BMW M4 GT3",
     classification: "Pro",
     number: "96",
-    carImage: wright45
+    carImage: turner96
   },
 ]
