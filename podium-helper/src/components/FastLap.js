@@ -1,12 +1,13 @@
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import MenuItem from '@mui/material/MenuItem';
-import { FormControl, InputLabel, Select, TextField } from '@mui/material';
+import { FormControl, InputLabel, Select, TextField, Button } from '@mui/material';
 import {useState} from 'react';
 import { driverInfo } from '../drivers';
 import Typography from '@mui/material/Typography';
 
-function FastLap() {
+
+function FastLap(props) {
 
   const [fastTime, setFastTime] = useState({
     driver: '',
@@ -81,6 +82,13 @@ function FastLap() {
               onChange={handleChange}
             />
           </Box>
+          <Button 
+            variant="contained" 
+            color="success" 
+            onClick={() => props.onClick(fastTime)}
+          >
+            Submit
+          </Button>
         </Card>
       </div>
     </div>
