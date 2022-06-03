@@ -224,4 +224,123 @@ export const driverInfo = [
     number: "45",
     carImage: wright45
   },
+  {
+    team: "AF Corse",
+    driver1: {
+      name: 'Jean-Claude Saada',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Conrad Grunewald',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Ferrari 488 GT3",
+    classification: "Am",
+    number: "61",
+    carImage: wright45
+  },
+  {
+    team: "DXDT Racing",
+    driver1: {
+      name: 'David Askew',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Dirk Mueller',
+      nationality: 'Germany',
+      rating: 'Platinum'
+      },
+    car: "Mercedes-AMG GT3",
+    classification: "Pro-Am",
+    number: "63",
+    carImage: wright45
+  },
+  {
+    team: "Zelus Motorsports",
+    driver1: {
+      name: 'Jason Harward',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Madison Snow',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Lamborghini Huracan GT3 EVO",
+    classification: "Pro-Am",
+    number: "88",
+    carImage: wright45
+  },
+  {
+    team: "Zelus Motorsports",
+    driver1: {
+      name: 'Jeff Burton',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Corey Lewis',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Lamborghini Huracan GT3 EVO",
+    classification: "Pro-Am",
+    number: "91",
+    carImage: wright45
+  },
+  {
+    team: "Racers Edge Motorsports",
+    driver1: {
+      name: 'Ashton Harrison',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Mario Farnbacher',
+      nationality: 'Germany',
+      rating: 'Gold'
+      },
+    car: "Acura NSX GT3",
+    classification: "Pro-Am",
+    number: "93",
+    carImage: wright45
+  },
+  {
+    team: "BimmerWorld",
+    driver1: {
+      name: 'Chandler Hull',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Bill Auberlen',
+      nationality: 'USA',
+      rating: 'Gold'
+      },
+    car: "BMW M4 GT3",
+    classification: "Pro-Am",
+    number: "94",
+    carImage: wright45
+  },
+  {
+    team: "Turner Motorsport",
+    driver1: {
+      name: 'Michael Dinan',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Robby Foley',
+      nationality: 'USA',
+      rating: 'Silve'
+      },
+    car: "BMW M4 GT3",
+    classification: "Pro",
+    number: "96",
+    carImage: wright45
+  },
 ]
