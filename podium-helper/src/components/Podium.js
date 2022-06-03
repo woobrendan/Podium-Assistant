@@ -38,9 +38,9 @@ function Podium() {
   }
   return (
     <div className="race-results-container">
-      <WinnerTop3 />
-      <WinnerTop3 />
-      <WinnerTop3 />
+      <WinnerTop3 onClick={handleRacePodiumSubmit}/>
+      <WinnerTop3 onClick={handleRacePodiumSubmit}/>
+      <WinnerTop3 onClick={handleRacePodiumSubmit}/>
       <FastLap onClick={handleFastLapSumbit}/>
       <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
     </div>
