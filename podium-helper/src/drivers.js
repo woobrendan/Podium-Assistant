@@ -42,7 +42,8 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "1",
-    carImage: kpax1
+    carImage: kpax1,
+    series: "GT World Challenge America"
   },
   {
     team: "K-PAX",
@@ -59,7 +60,8 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "3",
-    carImage: kpax6
+    carImage: kpax6,
+    series: "GT World Challenge America"
   },
   {
     team: "Crowdstrike Racing with Riley Motorsports",
@@ -76,7 +78,8 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "04",
-    carImage: riley04
+    carImage: riley04,
+    series: "GT World Challenge America"
   },
   {
     team: "US Racetronics",
@@ -93,7 +96,8 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "Pro",
     number: "6",
-    carImage: usrace6
+    carImage: usrace6,
+    series: "GT World Challenge America"
   },
   {
     team: "DXDT Racing",
@@ -110,7 +114,8 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "08",
-    carImage: dxdt08
+    carImage: dxdt08,
+    series: "GT World Challenge America"
   },
   {
     team: "TR3 Racing",
@@ -127,7 +132,8 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "9",
-    carImage: tr39
+    carImage: tr39,
+    series: "GT World Challenge America"
   },
   {
     team: "Ian Lacy Racing",
@@ -144,7 +150,8 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT3",
     classification: "Pro-Am",
     number: "12",
-    carImage: ian12
+    carImage: ian12,
+    series: "GT World Challenge America"
   },
   {
     team: "Triarsi Competizione",
@@ -161,7 +168,8 @@ export const driverInfo = [
     car: "Ferrari 488 GT3 EVO",
     classification: "Pro-Am",
     number: "13",
-    carImage: triarsi13
+    carImage: triarsi13,
+    series: "GT World Challenge America"
   },
   {
     team: "Triarsi Competizione",
@@ -178,7 +186,8 @@ export const driverInfo = [
     car: "Ferrari 488 GT3 EVO",
     classification: "Am",
     number: "23",
-    carImage: triarsi23
+    carImage: triarsi23,
+    series: "GT World Challenge America"
   },
   {
     team: "ST Racing",
@@ -195,7 +204,8 @@ export const driverInfo = [
     car: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "38",
-    carImage: st38
+    carImage: st38,
+    series: "GT World Challenge America"
   },
   {
     team: "RealTime Racing",
@@ -212,7 +222,8 @@ export const driverInfo = [
     car: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "43",
-    carImage: real43
+    carImage: real43,
+    series: "GT World Challenge America"
   },
   {
     team: "Wright Motorsports",
@@ -229,7 +240,8 @@ export const driverInfo = [
     car: "Porsche 911 GT3-R (991.ii)",
     classification: "Pro-Am",
     number: "45",
-    carImage: wright45
+    carImage: wright45,
+    series: "GT World Challenge America"
   },
   {
     team: "AF Corse",
@@ -246,7 +258,8 @@ export const driverInfo = [
     car: "Ferrari 488 GT3",
     classification: "Am",
     number: "61",
-    carImage: AF61
+    carImage: AF61,
+    series: "GT World Challenge America"
   },
   {
     team: "DXDT Racing",
@@ -263,7 +276,8 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "63",
-    carImage: DXDT63
+    carImage: DXDT63,
+    series: "GT World Challenge America"
   },
   {
     team: "Zelus Motorsports",
@@ -280,7 +294,8 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "88",
-    carImage: Zelus88
+    carImage: Zelus88,
+    series: "GT World Challenge America"
   },
   {
     team: "Zelus Motorsports",
@@ -297,7 +312,8 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "91",
-    carImage: Zelus91
+    carImage: Zelus91,
+    series: "GT World Challenge America"
   },
   {
     team: "Racers Edge Motorsports",
@@ -314,7 +330,8 @@ export const driverInfo = [
     car: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "93",
-    carImage: racers93
+    carImage: racers93,
+    series: "GT World Challenge America"
   },
   {
     team: "BimmerWorld",
@@ -331,7 +348,8 @@ export const driverInfo = [
     car: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "94",
-    carImage: bimmer94
+    carImage: bimmer94,
+    series: "GT World Challenge America"
   },
   {
     team: "Turner Motorsport",
@@ -348,6 +366,7 @@ export const driverInfo = [
     car: "BMW M4 GT3",
     classification: "Pro",
     number: "96",
-    carImage: turner96
+    carImage: turner96,
+    series: "GT World Challenge America"
   },
 ]
