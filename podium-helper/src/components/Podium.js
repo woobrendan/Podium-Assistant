@@ -21,6 +21,18 @@ function Podium() {
     }))
   }
 
+  const handleRacePodiumSubmit = (value) => {
+    const podiumNumber = () => {
+      if (!results.podium1) return 'podium1'
+      else if (!results.podium2) return 'podium2'
+      else return 'podium3'
+    }
+    setResults((prev) => ({
+      ...prev,
+      [podiumNumber()]: value
+    }))
+  }
+
   const onSubmit = () => {
     console.log('I am clicked')
   }
