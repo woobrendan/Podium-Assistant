@@ -2,35 +2,18 @@ import {useState} from 'react'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import MenuItem from '@mui/material/MenuItem';
-import { FormControl, InputLabel, Select } from '@mui/material';
+import { FormControl, InputLabel, Select, Button } from '@mui/material';
 import { driverInfo } from '../drivers';
 import '../Styling/winnerTop3.scss';
-
-// {
-//   team: "K-PAX",
-//   driver1: {
-//     name: 'Michele Beretta',
-//     nationality: 'Italy',
-//     rating: 'Silver'
-//     },
-//   driver2: {
-//     name: 'Andrea Calderlli',
-//     nationality: 'Italy',
-//     rating: 'Platinum'
-//     },
-//   car: "Lamborghini Huracan GT3",
-//   classification: "Pro",
-//   number: "6",
-//   carImage: kpax6
-// },
 
 const placeOptions = [
   'Pro', 'Pro-Am','Am'
 ]
 
-function Podium() {
+function Podium(props) {
   const [seriesName, setSeriesName] = useState('');
   const [winners, setWinners] = useState({
+    series:'',
     first: '',
     second: '',
     third: ''
@@ -52,7 +35,7 @@ function Podium() {
   )
 
   const mappedDrivers = driverInfo
-    .filter(entry => entry.classification === seriesName)
+    .filter(entry => entry.classification === winners.series)
     .map(entry => (
         <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
       ));
@@ -75,10 +58,10 @@ function Podium() {
             </InputLabel>
             <Select
               className="form-control"
-              name="series-name"
+              name="series"
               label='Series'
-              value={seriesName}
-              onChange={handleChange}
+              value={winners.series}
+              onChange={handleWinners}
             >
               {mappedSeries}
             </Select>
@@ -163,6 +146,7 @@ function Podium() {
         </Box>
         </div>
       </div>
+      <Button variant="contained" color="success" onClick={() => props.onClick(winners)}>Submit</Button>
       </Card>
     </div>
   )
