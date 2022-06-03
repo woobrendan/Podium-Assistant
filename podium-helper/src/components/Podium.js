@@ -3,8 +3,8 @@ import WinnerTop3 from './WinnerTop3';
 import { Button } from '@mui/material';
 import '../Styling/podium.scss'
 import FastLap from './FastLap';
+import Results from './Results';
 
-//make a function that grabs the usestate results from each race on submit
 function Podium() {
 
   const [results, setResults] = useState({
@@ -43,6 +43,7 @@ function Podium() {
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
       <FastLap onClick={handleFastLapSumbit}/>
       <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
+      {results.podium1 && <Results result={results} />}
     </div>
   )
 }
