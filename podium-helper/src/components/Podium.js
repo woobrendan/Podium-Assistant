@@ -43,7 +43,8 @@ function Podium() {
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
       <FastLap onClick={handleFastLapSumbit}/>
       <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
-      {results.podium1 && <Results result={results} />}
+      {results.podium1 && <Results result={results.podium1} />}
+      {results.podium2 && <Results result={results.podium2} />}
     </div>
   )
 }
