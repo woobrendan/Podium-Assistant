@@ -12,7 +12,7 @@ const placeOptions = [
 
 function Podium(props) {
   const [winners, setWinners] = useState({
-    series:'',
+    class:'',
     first: '',
     second: '',
     third: ''
@@ -25,12 +25,12 @@ function Podium(props) {
     }))
   }
 
-  const mappedSeries = placeOptions.map((option, index) => 
+  const mappedClass = placeOptions.map((option, index) => 
     <MenuItem key={index} value={option}>{option}</MenuItem>
   )
 
   const mappedDrivers = driverInfo
-    .filter(entry => entry.classification === winners.series)
+    .filter(entry => entry.classification === winners.class)
     .map(entry => (
         <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
       ));
@@ -38,7 +38,7 @@ function Podium(props) {
   return (
     <div className="results-container">
       <Card sx={{ minWidth: 450 }}>
-      <div className="series-container">
+      <div className="class-container">
         <Box
           component="form"
           sx={{
@@ -53,12 +53,12 @@ function Podium(props) {
             </InputLabel>
             <Select
               className="form-control"
-              name="series"
-              label='Series'
-              value={winners.series}
+              name="class"
+              label='class'
+              value={winners.class}
               onChange={handleWinners}
             >
-              {mappedSeries}
+              {mappedClass}
             </Select>
           </FormControl>
         </Box>
