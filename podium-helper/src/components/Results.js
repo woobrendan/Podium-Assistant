@@ -14,15 +14,17 @@ function createData(place, number, driver1, driver2, car) {
 }
 
 function Results(props) {
+  const podium = props.result
   const rows = [
-    createData('First Place', props.result.podium1.first.number, props.result.podium1.first.driver1.name, props.result.podium1.first.driver2.name, props.result.podium1.first.car),
-    createData('Second Place', props.result.podium1.second.number, props.result.podium1.second.driver1.name, props.result.podium1.second.driver2.name, props.result.podium1.second.car),
-    createData('Third Place', props.result.podium1.third.number, props.result.podium1.third.driver1.name, props.result.podium1.third.driver2.name, props.result.podium1.third.car)
+    createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
+    createData('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car),
+    createData('Third Place', podium.third.number, podium.third.driver1.name, podium.third.driver2.name, podium.third.car)
   ];
+
   return (
     <div>
       <Typography variant="h2" gutterBottom component="div">
-        Race Results - {props.result.podium1.series}
+        Race Results - {podium.series}
       </Typography>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
