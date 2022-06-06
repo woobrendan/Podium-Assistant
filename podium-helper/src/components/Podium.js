@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 import '../Styling/podium.scss'
 import FastLap from './FastLap';
 import Results from './Results';
+import Series from './Series';
 
 function Podium() {
 
@@ -38,6 +39,7 @@ function Podium() {
   }
   return (
     <div className="race-results-container">
+      <Series />
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
