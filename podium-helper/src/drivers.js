@@ -17,10 +17,9 @@ import Zelus91 from './images/Zelus91.jpeg';
 import bimmer94 from './images/bimmer94.jpeg';
 import racers93 from './images/racers93.jpeg';
 import turner96 from './images/Turner96.jpeg';
+import GMG2 from './images/GMG2.jpeg';
+import NOLA7 from './images/nola7.jpeg';
 
-export const GTWCADrivers = [
-  'Michele Beretta', 'Andrea Calderlli', 'Misha Goikhberg', 'Jordan Pepper', 'George Kurtz', 'Colin Braun', 'Steven Aghakhani', 'Loris Spinelli', 'Scott Smithson', 'Bryan Sellers', 'Ziad Ghandour', 'Giacomo Altoe', 'Frank Gannett', 'Drew Staveley', 'Justin Wetherill', 'Ryan Dalziel', 'Charlie Scardina', 'Onofrio Triarsi', 'Erin Vogel', 'Michael Cooper', 'Charlie Luck', 'Jan Heylen', 'Jean-Claude Saada', 'Conrad Grunewald', 'David Askew', 'Dirk Muller', 'Jason Harward', 'Madison Snow', 'Jeff Burton', 'Corey Lewis', 'Ashton Harrison', 'Mario Farnbacher', 'Chandler Hull', 'Bill Auberlen', 'Michael Dinan'
-]
 
 export const PGT4ADrivers = [
   'Jason Bell', 'Andrew Davis', 'Sam Owen', 'Sean Gibbons', 'Elias Sabo', 'Andy Lee', 'Tim Horrel', 'Raphael Matos'
@@ -384,7 +383,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage GT4",
     classification: "Pro-Am",
     number: "2",
-    carImage: turner96,
+    carImage: GMG2,
     series: "Pirelli GT4 America"
   },
   {
@@ -402,7 +401,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "7",
-    carImage: turner96,
+    carImage: NOLA7,
     series: "Pirelli GT4 America"
   },
 ]
