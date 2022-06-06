@@ -380,7 +380,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage GT4",
+    car: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "2",
     carImage: GMG2,
@@ -401,6 +401,24 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "7",
+    carImage: NOLA7,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Flying Lizard Motorsport",
+    driver1: {
+      name: 'Elias Sabo',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Andy Lee',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "Pro-Am",
+    number: "8",
     carImage: NOLA7,
     series: "Pirelli GT4 America"
   },
