@@ -369,4 +369,40 @@ export const driverInfo = [
     carImage: turner96,
     series: "GT World Challenge America"
   },
+  {
+    team: "GMG Racing",
+    driver1: {
+      name: 'Jason Bell',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Andrew Davis',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Aston Martin Vantage GT4",
+    classification: "Pro-Am",
+    number: "2",
+    carImage: turner96,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "NOLASPORT",
+    driver1: {
+      name: 'Sam Owen',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Sean Gibbons',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "7",
+    carImage: turner96,
+    series: "Pirelli GT4 America"
+  },
 ]
