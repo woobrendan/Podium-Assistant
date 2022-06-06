@@ -48,9 +48,12 @@ function Podium() {
   return (
     <div className="race-results-container">
       <Series getSeries={getSeries}/>
-      <WinnerTop3 onClick={handleRacePodiumSubmit}/>
-      <WinnerTop3 onClick={handleRacePodiumSubmit}/>
-      <WinnerTop3 onClick={handleRacePodiumSubmit}/>
+      <WinnerTop3 
+        series={results.series} 
+        onClick={handleRacePodiumSubmit}
+      />
+      <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>
+      <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>
       <FastLap onClick={handleFastLapSumbit}/>
       <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
       {results.podium1 && <Results result={results.podium1} />}
