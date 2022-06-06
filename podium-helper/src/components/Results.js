@@ -24,7 +24,7 @@ function Results(props) {
   return (
     <div>
       <Typography variant="h2" gutterBottom component="div">
-        Race Results - {podium.series}
+        Race Results - {podium.class}
       </Typography>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
