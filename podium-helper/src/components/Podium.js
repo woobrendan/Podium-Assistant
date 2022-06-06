@@ -9,6 +9,7 @@ import Series from './Series';
 function Podium() {
 
   const [results, setResults] = useState({
+    series: '',
     podium1: '',
     podium2: '',
     podium3: '',
@@ -34,12 +35,19 @@ function Podium() {
     }))
   }
 
+  const getSeries = (series) => {
+    setResults((prev) => ({
+      ...prev,
+      series
+    }))
+  }
+
   const onSubmit = () => {
     console.log('I am clicked')
   }
   return (
     <div className="race-results-container">
-      <Series />
+      <Series getSeries={getSeries}/>
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
       <WinnerTop3 onClick={handleRacePodiumSubmit}/>
