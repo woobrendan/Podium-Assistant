@@ -18,6 +18,12 @@ function Podium() {
     podium2: '',
     podium3: '',
     fastLap: ''
+  });
+
+  const [showWinnerTable, setShowWinnerTable] = useState({
+    podium1: true,
+    podium2: true,
+    podium3: true
   })
 
   const handleFastLapSumbit = (value) => {
@@ -36,6 +42,11 @@ function Podium() {
     setResults((prev) => ({
       ...prev,
       [podiumNumber()]: value
+    }));
+    setShowWinnerTable((prev) => ({
+      ...prev,
+      [podiumNumber()]: false
+
     }))
   }
 
@@ -69,14 +80,14 @@ function Podium() {
   return (
     <div className="race-results-container">
       <Series getSeries={getSeries}/>
-      <WinnerTop3 
-        series={results.series} 
-        onClick={handleRacePodiumSubmit}
-      />
-      <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>
-      <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>
+      {showWinnerTable.podium1 && 
+        <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
+      {showWinnerTable.podium2 && 
+        <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
+      {showWinnerTable.podium3 && 
+        <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
       <FastLap onClick={handleFastLapSumbit}/>
-      <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
+      <Button variant="contained" color="success" onClick={onSubmit}>Print Results</Button>
       {podiumStatus.pod1 && <Results result={results.podium1} />}
       {podiumStatus.pod2 && <Results result={results.podium2} />}
       {podiumStatus.pod3 && <Results result={results.podium3} />}
