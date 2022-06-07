@@ -153,7 +153,7 @@ function Podium(props) {
         </Box>
         </div>
       </div>
-      <Button variant="contained" color="success" onClick={() => props.onClick(winners)}>Submit</Button>
+      <Button variant="outlined" color="error" onClick={() => props.onClick(winners)}>Submit</Button>
       </Card>
     </div>
   )
