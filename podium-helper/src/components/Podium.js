@@ -23,7 +23,8 @@ function Podium() {
   const [showWinnerTable, setShowWinnerTable] = useState({
     podium1: true,
     podium2: true,
-    podium3: true
+    podium3: true,
+    fastLap: true
   })
 
   const handleFastLapSumbit = (value) => {
@@ -86,7 +87,7 @@ function Podium() {
         <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
       {showWinnerTable.podium3 && 
         <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
-      <FastLap onClick={handleFastLapSumbit}/>
+      {showWinnerTable.fastLap && <FastLap onClick={handleFastLapSumbit}/>}
       <Button variant="contained" color="success" onClick={onSubmit}>Print Results</Button>
       {podiumStatus.pod1 && <Results result={results.podium1} />}
       {podiumStatus.pod2 && <Results result={results.podium2} />}
