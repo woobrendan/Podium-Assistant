@@ -6,7 +6,7 @@ import { FormControl, InputLabel, Select } from '@mui/material';
 const seriesNameList = ['GT World Challenge America', 'GT America', 'Pirelli GT4 America', 'TC America']
 
 function Series(props) {
-  const [seriesName, setSeriesName] = useState('GT World Challenge America');
+  const [seriesName, setSeriesName] = useState('');
   const handleChange = (event) => {
     setSeriesName(event.target.value);
     props.getSeries(event.target.value)
