@@ -65,7 +65,6 @@ function Podium() {
         pod3: true
       }))
     }
-    // console.log(pod1, pod2
   }
   return (
     <div className="race-results-container">
@@ -80,6 +79,7 @@ function Podium() {
       <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
       {podiumStatus.pod1 && <Results result={results.podium1} />}
       {podiumStatus.pod2 && <Results result={results.podium2} />}
+      {podiumStatus.pod3 && <Results result={results.podium3} />}
     </div>
   )
 }
