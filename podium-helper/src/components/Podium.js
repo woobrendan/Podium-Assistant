@@ -7,7 +7,11 @@ import Results from './Results';
 import Series from './Series';
 
 function Podium() {
-
+  const [podiumStatus, setPodiumStatus] = useState({
+    pod1: false,
+    pod2: false,
+    pod3: false
+  })
   const [results, setResults] = useState({
     series: '',
     podium1: '',
@@ -43,7 +47,25 @@ function Podium() {
   }
 
   const onSubmit = () => {
-    console.log('I am clicked')
+    if (results.podium1) {
+      setPodiumStatus((prev) => ({
+        ...prev,
+        pod1: true
+      }))
+    }
+    if (results.podium2) {
+      setPodiumStatus((prev) => ({
+        ...prev,
+        pod2: true
+      }))
+    }
+    if (results.podium3) {
+      setPodiumStatus((prev) => ({
+        ...prev,
+        pod3: true
+      }))
+    }
+    // console.log(pod1, pod2
   }
   return (
     <div className="race-results-container">
@@ -56,8 +78,8 @@ function Podium() {
       <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>
       <FastLap onClick={handleFastLapSumbit}/>
       <Button variant="contained" color="success" onClick={onSubmit}>Submit</Button>
-      {results.podium1 && <Results result={results.podium1} />}
-      {results.podium2 && <Results result={results.podium2} />}
+      {podiumStatus.pod1 && <Results result={results.podium1} />}
+      {podiumStatus.pod2 && <Results result={results.podium2} />}
     </div>
   )
 }
