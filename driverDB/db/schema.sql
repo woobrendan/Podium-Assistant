@@ -17,8 +17,7 @@ CREATE TABLE teams  (
 
 CREATE TABLE vehicles(
   id SERIAL PRIMARY KEY NOT NULL,
-  manufacturer VARCHAR(255) NOT NULL,
-  model VARCHAR(255) NOT NULL,
+  car VARCHAR(255) NOT NULL,
   number VARCHAR(6),
   classification VARCHAR(255),
   team_id INTEGER REFERENCES teams(id) ON DELETE CASCADE,
