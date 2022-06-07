@@ -24,7 +24,8 @@ function Podium() {
     podium1: true,
     podium2: true,
     podium3: true,
-    fastLap: true
+    fastLap: true,
+    misc: true,
   })
 
   const handleFastLapSumbit = (value) => {
@@ -77,10 +78,17 @@ function Podium() {
         pod3: true
       }))
     }
+    setShowWinnerTable({
+      podium1: false,
+      podium2: false,
+      podium3: false,
+      fastLap: false,
+      misc: false
+    })
   }
   return (
     <div className="race-results-container">
-      <Series getSeries={getSeries}/>
+      {showWinnerTable.misc && <Series getSeries={getSeries}/>}
       {showWinnerTable.podium1 && 
         <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
       {showWinnerTable.podium2 && 
@@ -88,7 +96,15 @@ function Podium() {
       {showWinnerTable.podium3 && 
         <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
       {showWinnerTable.fastLap && <FastLap onClick={handleFastLapSumbit}/>}
-      <Button variant="contained" color="success" onClick={onSubmit}>Print Results</Button>
+      {showWinnerTable.misc && 
+        <Button 
+          variant="contained" 
+          color="success" 
+          onClick={onSubmit}
+        >
+          Print Results
+        </Button>
+      }
       {podiumStatus.pod1 && <Results result={results.podium1} />}
       {podiumStatus.pod2 && <Results result={results.podium2} />}
       {podiumStatus.pod3 && <Results result={results.podium3} />}
