@@ -6,9 +6,12 @@ import { FormControl, InputLabel, Select, Button } from '@mui/material';
 import { driverInfo } from '../drivers';
 import '../Styling/winnerTop3.scss';
 
-const placeOptions = [
-  'Pro', 'Pro-Am','Am'
-]
+const classOptions = {
+  gtwca: ['Pro', 'Pro-Am', 'Am'],
+  gta: ['SRO3', 'GT4', 'Masters'],
+  pgt4a: ['Silver', 'Pro-Am', 'Am'],
+  tca: ['TCX', 'TC', 'TCA']
+}
 
 function Podium(props) {
   const [winners, setWinners] = useState({
@@ -25,9 +28,17 @@ function Podium(props) {
     }))
   }
 
-  const mappedClass = placeOptions.map((option, index) => 
-    <MenuItem key={index} value={option}>{option}</MenuItem>
-  )
+  const getClassArr = (series) => {
+    if (series === 'Pirelli GT4 America') return classOptions.pgt4a
+    else if (series === 'GT America') return classOptions.gta
+    else if (series === 'TC America') return classOptions.tca
+    else return classOptions.gtwca
+  }
+
+  const mappedClass = getClassArr(props.series)
+    .map((option, index) => 
+      <MenuItem key={index} value={option}>{option}</MenuItem>
+    )
 
   const mappedDrivers = driverInfo
     .filter(entry => entry.series === props.series)
