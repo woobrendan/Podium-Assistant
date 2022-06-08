@@ -16,30 +16,15 @@ import '../Styling/navBar.scss';
 
 
 function NavBar() {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
 
-  const handleChange = (event) => {
-    setAuth(event.target.checked);
+  const handleOpenNavMenu = (event) => {
+    setAnchorElNav(event.currentTarget);
   };
 
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
   return (
     <div className="nav-bar">
     <Box sx={{ flexGrow: 1 }}>
-      <FormGroup>
-        <FormControlLabel
-          control={
-            <Switch
-              checked={auth}
-              onChange={handleChange}
-              aria-label="login switch"
-            />
-          }
-          label={auth ? 'Logout' : 'Login'}
-        />
-      </FormGroup>
       <AppBar position="static" sx={{bgcolor: '#000000'}}>
         <Toolbar>
           <IconButton
@@ -48,6 +33,7 @@ function NavBar() {
             color="inherit"
             aria-label="menu"
             sx={{ mr: 2 }}
+            onClick={handleOpenNavMenu}
           >
             <MenuIcon />
           </IconButton>
