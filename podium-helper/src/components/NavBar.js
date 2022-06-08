@@ -5,22 +5,38 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import SRO from '../images/SRO.jpg';
 import '../Styling/navBar.scss';
+import { useNavigate } from 'react-router-dom';
 
-
+const pages = [
+  {
+    name: 'Competitors',
+    action: '/competitors'
+  },
+  {
+    name: 'New Podium',
+    action: '/'
+  }
+]
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const navigate = useNavigate();
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
+
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
+  };
+
+  const handlePath = (path) => {
+    handleCloseNavMenu();
+    navigate(path);
+  }
 
   return (
     <div className="nav-bar">
@@ -37,6 +53,30 @@ function NavBar() {
           >
             <MenuIcon />
           </IconButton>
+          <Menu
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'left',
+              }}
+              open={Boolean(anchorElNav)}
+              onClose={handleCloseNavMenu}
+              sx={{
+                display: { xs: 'block', md: 'none' },
+              }}
+            >
+              {pages.map((page) => (
+                <MenuItem key={page.name} onClick={() => handlePath(page.action)}>
+                  <Typography textAlign="center">{page.name}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
           <div className='img-container'>
             <img src={SRO} alt="SRO" />
           </div>
