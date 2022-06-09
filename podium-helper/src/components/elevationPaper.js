@@ -8,43 +8,37 @@ const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
   textAlign: 'center',
   color: theme.palette.text.secondary,
-  height: 60,
-  lineHeight: '60px',
+  height: 50,
+  lineHeight: '50px',
+  width: 200
 }));
 
 const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 export default function Elevation(props) {
-  const details = [
-    {
-      series: props.series,
-      class: props.class,
-      carr: props.car
-    }
-  ]
+  const details = [props.series, props.car, props.class]
   return (
-    <Grid container spacing={2}>
-      {[lightTheme, darkTheme].map((theme, index) => (
-        <Grid item xs={6} key={index}>
-          <ThemeProvider theme={theme}>
-            <Box
-              sx={{
-                p: 2,
-                bgcolor: 'background.default',
-                display: 'grid',
-                gridTemplateColumns: { md: '1fr 1fr' },
-                gap: 2,
-              }}
-            >
-              {[0, 1, 2, 3, 4, 6, 8, 12, 16, 24].map((elevation) => (
-                <Item key={elevation} elevation={elevation}>
-                  {`elevation=${elevation}`}
-                </Item>
-              ))}
-            </Box>
-          </ThemeProvider>
-        </Grid>
-      ))}
-    </Grid>
+    <div className="entry-details">
+      <Grid container spacing={3}>
+          <Grid item xs={6} >
+            <ThemeProvider theme={lightTheme}>
+              <Box
+                sx={{
+                  p: 2,
+                  bgcolor: 'background.default',
+                  display: 'grid',
+                  gap: 1,
+                }}
+              >
+                {details.map((detail, index) => (
+                  <Item key={index} elevation={3}>
+                    {detail}
+                  </Item>
+                ))}
+              </Box>
+            </ThemeProvider>
+          </Grid>
+      </Grid>
+    </div>
   );
 }
