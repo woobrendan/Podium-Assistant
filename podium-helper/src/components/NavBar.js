@@ -85,9 +85,9 @@ function NavBar() {
                 </MenuItem>
               ))}
             </Menu>
-          <div className='img-container'>
+          <a className='img-container' href="https://www.sro-america.com/">
             <img src={SRO} alt="SRO" />
-          </div>
+          </a>
         </Toolbar>
       </AppBar>
     </Box>
