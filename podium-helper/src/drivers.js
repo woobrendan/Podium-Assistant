@@ -422,4 +422,112 @@ export const driverInfo = [
     carImage: NOLA7,
     series: "Pirelli GT4 America"
   },
+  {
+    team: "Fast Track Racing",
+    driver1: {
+      name: 'Tim Horrell',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Raphael Matos',
+      nationality: 'Brazil',
+      rating: 'Gold'
+      },
+    car: "BMW M4 GT4",
+    classification: "Pro-Am",
+    number: "10",
+    carImage: NOLA7,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Fast Track Racing",
+    driver1: {
+      name: 'Damon Surzyshyn',
+      nationality: 'Canada',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Gregory Liefooghe',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "BMW M4 GT4",
+    classification: "Pro-Am",
+    number: "11",
+    carImage: NOLA7,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Bsport Racing",
+    driver1: {
+      name: 'Bryan Putt',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Kenton Koch',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "Pro-Am",
+    number: "15",
+    carImage: NOLA7,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Hattori Motorsports",
+    driver1: {
+      name: 'Seth Lucas',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Matt Plumb',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Toyota GR Supra GT4",
+    classification: "Pro-Am",
+    number: "016",
+    carImage: NOLA7,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "The Racers Group",
+    driver1: {
+      name: 'James Rappaport',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Robert Orcutt',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche Cayman 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "17",
+    carImage: NOLA7,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "RS1",
+    driver1: {
+      name: 'Eric Filgueiras',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Stevan McAleer',
+      nationality: 'Scotland',
+      rating: 'Silver'
+      },
+    car: "Porsche Cayman 718 Cayman GT4 RS CS",
+    classification: "Silver",
+    number: "18",
+    carImage: NOLA7,
+    series: "Pirelli GT4 America"
+  },
 ]
