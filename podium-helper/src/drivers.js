@@ -531,4 +531,202 @@ export const driverInfo = [
     carImage: rs118,
     series: "Pirelli GT4 America"
   },
+  {
+    team: "NOLASPORT",
+    driver1: {
+      name: 'Alain Stad',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Seth Thomas',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche Cayman 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "19",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Carrus Callas Raceteam",
+    driver1: {
+      name: 'Nick Shanny',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Terry Borcheller',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Toyota GR Supra",
+    classification: "Am",
+    number: "21",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Heart of Racing Team",
+    driver1: {
+      name: 'Gray Newell',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Ian James',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "Pro-Am",
+    number: "24",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Prive Motorsports/Topp Racing",
+    driver1: {
+      name: 'Thomas Surrgent',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: "Michael O'Brien",
+      nationality: 'United Kingdom',
+      rating: 'Silver'
+      },
+    car: "McLaren 570s GT4",
+    classification: "Pro-Am",
+    number: "26",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Conquest Racing/JMF Motorsports",
+    driver1: {
+      name: 'Gavin Sanders',
+      nationality: 'Canada',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Michai Stephens',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "Silverr",
+    number: "34",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "BimmerWorld",
+    driver1: {
+      name: 'Charlie Postins',
+      nationality: 'United Kingdom',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'James Clay',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "BMW M4 GT4",
+    classification: "Am",
+    number: "36",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "NOLASPORT",
+    driver1: {
+      name: 'Scott Noble',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Jason Hart',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "Pro-Am",
+    number: "47",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Chouest Povoledo Racing",
+    driver1: {
+      name: 'Ross Chouest',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Aaron Povoledo',
+      nationality: 'Canada',
+      rating: 'Silver'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "Pro-Am",
+    number: "50",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "AutoTechnic Racing",
+    driver1: {
+      name: 'Austen Smith',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Zac Anderson',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "BMW M4 GT4",
+    classification: "Silver",
+    number: "51",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "AutoTechnic Racing",
+    driver1: {
+      name: 'Tom Capizzi',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'John Capestro-Dubets',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "BMW M4 GT4",
+    classification: "Pro-Am",
+    number: "52",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "AutoTechnic Racing",
+    driver1: {
+      name: 'Rob Walker',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Alex Filsinger',
+      nationality: 'Canada',
+      rating: 'Bronze'
+      },
+    car: "BMW M4 GT4",
+    classification: "Am",
+    number: "53",
+    carImage: rs118,
+    series: "Pirelli GT4 America"
+  },
 ]
