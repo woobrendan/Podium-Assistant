@@ -20,11 +20,6 @@ import turner96 from './images/Turner96.jpeg';
 import GMG2 from './images/GMG2.jpeg';
 import NOLA7 from './images/nola7.jpeg';
 
-
-export const PGT4ADrivers = [
-  'Jason Bell', 'Andrew Davis', 'Sam Owen', 'Sean Gibbons', 'Elias Sabo', 'Andy Lee', 'Tim Horrel', 'Raphael Matos'
-]
-
 export const driverInfo = [
   {
     team: "K-PAX",
