@@ -7,7 +7,7 @@ import Results from './Results';
 import Series from './Series';
 
 function Podium() {
-  const [podiumStatus, setPodiumStatus] = useState({
+  const [showResultTable, setshowResultTable] = useState({
     pod1: false,
     pod2: false,
     pod3: false
@@ -20,6 +20,7 @@ function Podium() {
     fastLap: ''
   });
 
+  //toggle control for winnertop3 card
   const [showWinnerTable, setShowWinnerTable] = useState({
     podium1: true,
     podium2: true,
@@ -32,12 +33,12 @@ function Podium() {
     setResults((prev) => ({
       ...prev,
       fastLap: value
-    }))
+    }));
 
     setShowWinnerTable((prev) => ({
       ...prev,
       fastLap: false
-    }))
+    }));
   }
 
   const handleRacePodiumSubmit = (value) => {
@@ -50,13 +51,14 @@ function Podium() {
       ...prev,
       [podiumNumber()]: value
     }));
+
     setShowWinnerTable((prev) => ({
       ...prev,
       [podiumNumber()]: false
-
-    }))
+    }));
   }
 
+  //grab series from series component and set usestate
   const getSeries = (series) => {
     setResults((prev) => ({
       ...prev,
@@ -64,21 +66,21 @@ function Podium() {
     }))
   }
 
-  const onSubmit = () => {
+  const onFinalSubmit = () => {
     if (results.podium1) {
-      setPodiumStatus((prev) => ({
+      setshowResultTable((prev) => ({
         ...prev,
         pod1: true
       }))
     }
     if (results.podium2) {
-      setPodiumStatus((prev) => ({
+      setshowResultTable((prev) => ({
         ...prev,
         pod2: true
       }))
     }
     if (results.podium3) {
-      setPodiumStatus((prev) => ({
+      setshowResultTable((prev) => ({
         ...prev,
         pod3: true
       }))
@@ -118,14 +120,14 @@ function Podium() {
         <Button 
           variant="contained" 
           color="success" 
-          onClick={onSubmit}
+          onClick={onFinalSubmit}
         >
           Print Results
         </Button>
       }
-      {podiumStatus.pod1 && <Results result={results.podium1} />}
-      {podiumStatus.pod2 && <Results result={results.podium2} />}
-      {podiumStatus.pod3 && <Results result={results.podium3} />}
+      {showResultTable.pod1 && <Results result={results.podium1} />}
+      {showResultTable.pod2 && <Results result={results.podium2} />}
+      {showResultTable.pod3 && <Results result={results.podium3} />}
     </div>
   )
 }
