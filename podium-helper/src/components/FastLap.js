@@ -83,8 +83,8 @@ function FastLap(props) {
             />
           </Box>
           <Button 
-            variant="contained" 
-            color="success" 
+            variant="outlined" 
+            color="error" 
             onClick={() => props.onClick(fastTime)}
           >
             Submit
