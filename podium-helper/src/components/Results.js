@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import '../Styling/result.scss';
 
 
 function createData(place, number, driver1, driver2, car) {
@@ -21,7 +22,7 @@ function Results(props) {
   ];
 
   return (
-    <div>
+    <div className='result-table-container'>
       <Typography variant="h2" gutterBottom component="div">
         Race Results - {podium.class}
       </Typography>
