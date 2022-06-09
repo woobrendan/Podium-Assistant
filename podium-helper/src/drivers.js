@@ -19,6 +19,12 @@ import racers93 from './images/racers93.jpeg';
 import turner96 from './images/Turner96.jpeg';
 import GMG2 from './images/GMG2.jpeg';
 import NOLA7 from './images/nola7.jpeg';
+import FTR10 from './images/FTR10.jpeg';
+import bsport15 from './images/bsport15.jpeg';
+import FTR11 from './images/FTR11.jpeg';
+import hattori016 from './images/hattori016.jpeg';
+import rs118 from './images/rs118.jpeg';
+import trg17 from './images/trg17.jpeg';
 
 export const driverInfo = [
   {
@@ -432,7 +438,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "10",
-    carImage: NOLA7,
+    carImage: FTR10,
     series: "Pirelli GT4 America"
   },
   {
@@ -450,7 +456,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "11",
-    carImage: NOLA7,
+    carImage: FTR11,
     series: "Pirelli GT4 America"
   },
   {
@@ -468,7 +474,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "15",
-    carImage: NOLA7,
+    carImage: bsport15,
     series: "Pirelli GT4 America"
   },
   {
@@ -486,7 +492,7 @@ export const driverInfo = [
     car: "Toyota GR Supra GT4",
     classification: "Pro-Am",
     number: "016",
-    carImage: NOLA7,
+    carImage: hattori016,
     series: "Pirelli GT4 America"
   },
   {
@@ -504,7 +510,7 @@ export const driverInfo = [
     car: "Porsche Cayman 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "17",
-    carImage: NOLA7,
+    carImage: trg17,
     series: "Pirelli GT4 America"
   },
   {
@@ -522,7 +528,7 @@ export const driverInfo = [
     car: "Porsche Cayman 718 Cayman GT4 RS CS",
     classification: "Silver",
     number: "18",
-    carImage: NOLA7,
+    carImage: rs118,
     series: "Pirelli GT4 America"
   },
 ]
