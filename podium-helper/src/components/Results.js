@@ -1,5 +1,4 @@
 import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
