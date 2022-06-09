@@ -24,7 +24,9 @@ function FastLap(props) {
   //take in entry object and get every single driver into list
   const singleDrivers = (entryArray) => {
     const drivers = [];
-    for (const entry of entryArray) {
+    const seriesFilteredDrivers = entryArray
+      .filter(entry => entry.series === props.series)
+    for (const entry of seriesFilteredDrivers) {
       drivers.push({number: entry.number, driver: entry.driver1.name});
       drivers.push({number: entry.number, driver: entry.driver2.name});
     }
