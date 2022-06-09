@@ -94,7 +94,12 @@ function Podium() {
       podium3: false,
       fastLap: false,
       misc: false
-    })
+    });
+
+    // axios
+    //   .post('http://localhost:8080/results', {result: results})
+    //   .catch(err => console.log(err.message))
+
   };
 
   return (
