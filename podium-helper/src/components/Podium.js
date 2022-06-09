@@ -5,6 +5,7 @@ import '../Styling/podium.scss'
 import FastLap from './FastLap';
 import Results from './Results';
 import Series from './Series';
+import axios from 'axios';
 
 function Podium() {
   const [showResultTable, setshowResultTable] = useState({
@@ -67,6 +68,7 @@ function Podium() {
   }
 
   const onFinalSubmit = () => {
+    //if podium x was submitted set show table toggle to true
     if (results.podium1) {
       setshowResultTable((prev) => ({
         ...prev,
@@ -85,6 +87,7 @@ function Podium() {
         pod3: true
       }))
     }
+    //remove all other elements to only show result table
     setShowWinnerTable({
       podium1: false,
       podium2: false,
@@ -92,7 +95,8 @@ function Podium() {
       fastLap: false,
       misc: false
     })
-  }
+  };
+
   return (
     <div className="race-results-container">
       {showWinnerTable.misc && <Series getSeries={getSeries}/>}
