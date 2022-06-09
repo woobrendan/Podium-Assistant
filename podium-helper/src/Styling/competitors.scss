@@ -7,8 +7,12 @@
   -o-background-size: cover;
   background-size: cover;
 
+  .competitor-card {
+    margin: 25px;
+    height: 661px;
+  }
+
   .MuiPaper-root {
-    margin: 50px;
 
     .MuiCardContent-root {
       display: flex;
