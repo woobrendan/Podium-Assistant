@@ -25,6 +25,17 @@ import FTR11 from './images/FTR11.jpeg';
 import hattori016 from './images/hattori016.jpeg';
 import rs118 from './images/rs118.jpeg';
 import trg17 from './images/trg17.jpeg';
+import nola19 from './images/nola19.jpeg';
+import auto51 from './images/auto51.jpeg';
+import auto52 from './images/auto52.jpeg';
+import auto53 from './images/auto53.jpeg';
+import bimmer36 from './images/bimmer36.jpeg'
+import carrus21 from './images/carrus21.jpeg';
+import chouest50 from './images/chouest50.jpeg';
+import conquest34 from './images/conquest34.jpeg';
+import hort24 from './images/hort24.jpeg';
+import nola47 from './images/nola47.jpeg';
+import prive26 from './images/prive26.jpeg';
 
 export const driverInfo = [
   {
@@ -546,7 +557,7 @@ export const driverInfo = [
     car: "Porsche Cayman 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "19",
-    carImage: rs118,
+    carImage: nola19,
     series: "Pirelli GT4 America"
   },
   {
@@ -564,7 +575,7 @@ export const driverInfo = [
     car: "Toyota GR Supra",
     classification: "Am",
     number: "21",
-    carImage: rs118,
+    carImage: carrus21,
     series: "Pirelli GT4 America"
   },
   {
@@ -582,7 +593,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "24",
-    carImage: rs118,
+    carImage: hort24,
     series: "Pirelli GT4 America"
   },
   {
@@ -600,7 +611,7 @@ export const driverInfo = [
     car: "McLaren 570s GT4",
     classification: "Pro-Am",
     number: "26",
-    carImage: rs118,
+    carImage: prive26,
     series: "Pirelli GT4 America"
   },
   {
@@ -618,7 +629,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "Silverr",
     number: "34",
-    carImage: rs118,
+    carImage: conquest34,
     series: "Pirelli GT4 America"
   },
   {
@@ -636,7 +647,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "36",
-    carImage: rs118,
+    carImage: bimmer36,
     series: "Pirelli GT4 America"
   },
   {
@@ -654,7 +665,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "47",
-    carImage: rs118,
+    carImage: nola47,
     series: "Pirelli GT4 America"
   },
   {
@@ -672,7 +683,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "50",
-    carImage: rs118,
+    carImage: chouest50,
     series: "Pirelli GT4 America"
   },
   {
@@ -690,7 +701,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Silver",
     number: "51",
-    carImage: rs118,
+    carImage: auto51,
     series: "Pirelli GT4 America"
   },
   {
@@ -708,7 +719,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "52",
-    carImage: rs118,
+    carImage: auto52,
     series: "Pirelli GT4 America"
   },
   {
@@ -726,7 +737,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "53",
-    carImage: rs118,
+    carImage: auto53,
     series: "Pirelli GT4 America"
   },
 ]
