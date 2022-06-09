@@ -23,7 +23,7 @@ function Results(props) {
 
   return (
     <div className='result-table-container'>
-      <Typography variant="h2" gutterBottom component="div">
+      <Typography variant="h3" gutterBottom component="div">
         Race Results - {podium.class}
       </Typography>
       <TableContainer component={Paper}>
