@@ -33,6 +33,11 @@ function Podium() {
       ...prev,
       fastLap: value
     }))
+
+    setShowWinnerTable((prev) => ({
+      ...prev,
+      fastLap: false
+    }))
   }
 
   const handleRacePodiumSubmit = (value) => {
