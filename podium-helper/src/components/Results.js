@@ -39,7 +39,7 @@ function Results(props) {
           <TableBody>
             {rows.map((row) => (
               <TableRow
-                key={row.name}
+                key={row.number}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
               >
                 <TableCell component="th" scope="row">
