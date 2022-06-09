@@ -19,7 +19,15 @@ const pages = [
   {
     name: 'New Podium',
     action: '/'
-  }
+  },
+  {
+    name: 'Result History',
+    action: '/'
+  },
+  {
+    name: 'Manage Entries',
+    action: '/'
+  },
 ]
 function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
