@@ -90,12 +90,25 @@ function Podium() {
     <div className="race-results-container">
       {showWinnerTable.misc && <Series getSeries={getSeries}/>}
       {showWinnerTable.podium1 && 
-        <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
+        <WinnerTop3 
+          series={results.series} 
+          onClick={handleRacePodiumSubmit}
+        />}
       {showWinnerTable.podium2 && 
-        <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
+        <WinnerTop3 
+          series={results.series} 
+          onClick={handleRacePodiumSubmit}
+        />}
       {showWinnerTable.podium3 && 
-        <WinnerTop3 series={results.series} onClick={handleRacePodiumSubmit}/>}
-      {showWinnerTable.fastLap && <FastLap onClick={handleFastLapSumbit}/>}
+        <WinnerTop3 
+          series={results.series} 
+          onClick={handleRacePodiumSubmit}
+        />}
+      {showWinnerTable.fastLap && 
+        <FastLap 
+          onClick={handleFastLapSumbit}
+          series={results.series}
+          />}
       {showWinnerTable.misc && 
         <Button 
           variant="contained" 
