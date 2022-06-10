@@ -659,7 +659,7 @@ export const driverInfo = [
       rating: 'Silver'
       },
     car: "Mercedes-AMG GT4",
-    classification: "Silverr",
+    classification: "Silver",
     number: "34",
     carImage: conquest34,
     series: "Pirelli GT4 America"
@@ -821,7 +821,7 @@ export const driverInfo = [
       rating: 'Silver'
       },
     car: "Toyota GR Supra GT4",
-    classification: "Pro-Am",
+    classification: "Silver",
     number: "68",
     carImage: smooge68,
     series: "Pirelli GT4 America"
