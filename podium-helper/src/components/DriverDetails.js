@@ -4,14 +4,20 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
+import classNames from 'classnames';
 
 function DriverDetails(props) {
+  const detailClass = classNames('entry-detail__item', {
+    "entry-detail_GTWCA": props.entry.series === "GT World Challenge America"
+  })
   return (
     <div className="competitor-card">
-      <Card sx={{ 
-        maxWidth: 345, 
-        minHeight: 661,
-        minWidth: 345
+      <Card 
+        className={detailClass}
+        sx={{ 
+          maxWidth: 345, 
+          minHeight: 661,
+          minWidth: 345
       }}>
         <CardMedia
           component="img"
