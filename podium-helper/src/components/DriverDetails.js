@@ -7,8 +7,12 @@ import Elevation from './elevationPaper';
 import classNames from 'classnames';
 
 function DriverDetails(props) {
+  const series = props.entry.series;
   const detailClass = classNames('entry-detail__item', {
-    "entry-detail_GTWCA": props.entry.series === "GT World Challenge America"
+    "entry-detail_GTWCA": series === "GT World Challenge America",
+    "entry-detail_PGT4A": series === "Pirelli GT4 America",
+    "entry-detail_TCA": series === "TC America",
+    "entry-detail_GTA": series === "GT America",
   })
   return (
     <div className="competitor-card">
@@ -30,7 +34,7 @@ function DriverDetails(props) {
             {props.entry.team} #{props.entry.number} 
           </Typography>
           <Elevation 
-            series={props.entry.series}
+            series={series}
             car={props.entry.car}
             class={props.entry.classification}
           />
