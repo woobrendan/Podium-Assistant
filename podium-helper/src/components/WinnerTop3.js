@@ -28,6 +28,18 @@ function Podium(props) {
     }))
   }
 
+  const usedClassOptions = (result) => {
+    const usedClasses = [];
+    const podiums = [];
+    podiums.push(result.podium1, result.podium2, result.podium3)
+    for (const podium of podiums) {
+      if (podium.class) {
+        usedClasses.push(podium.class)
+      }
+    }
+    return usedClasses;
+  }
+
   const getClassArr = (series) => {
     if (series === 'Pirelli GT4 America') return classOptions.pgt4a
     else if (series === 'GT America') return classOptions.gta
@@ -36,6 +48,7 @@ function Podium(props) {
   }
 
   const mappedClass = getClassArr(props.series)
+    .filter(option => !usedClassOptions(props.results).includes(option))
     .map((option, index) => 
       <MenuItem key={index} value={option}>{option}</MenuItem>
     )
