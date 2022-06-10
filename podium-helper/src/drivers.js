@@ -19,6 +19,7 @@ import racers93 from './images/racers93.jpeg';
 import turner96 from './images/Turner96.jpeg';
 import GMG2 from './images/GMG2.jpeg';
 import NOLA7 from './images/nola7.jpeg';
+import flm8 from './images/flm8.jpeg';
 import FTR10 from './images/FTR10.jpeg';
 import bsport15 from './images/bsport15.jpeg';
 import FTR11 from './images/FTR11.jpeg';
@@ -431,7 +432,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "8",
-    carImage: NOLA7,
+    carImage: flm8,
     series: "Pirelli GT4 America"
   },
   {
