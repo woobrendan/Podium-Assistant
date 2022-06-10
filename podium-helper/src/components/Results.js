@@ -15,11 +15,23 @@ function createData(place, number, driver1, driver2, car) {
 
 function Results(props) {
   const podium = props.result
-  const rows = [
-    createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
-    createData('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car),
-    createData('Third Place', podium.third.number, podium.third.driver1.name, podium.third.driver2.name, podium.third.car)
-  ];
+  const checkPodium = (podium) => {
+
+    if (!podium.third) {
+      return [
+        createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
+        createData('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car)
+      ]
+    } else if (!podium.second) {
+        return [createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car)]
+    } else {
+      return [
+        createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
+        createData('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car),
+        createData('Third Place', podium.third.number, podium.third.driver1.name, podium.third.driver2.name, podium.third.car)
+      ]
+    }
+  }
 
   return (
     <div className='result-table-container'>
@@ -38,7 +50,7 @@ function Results(props) {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {checkPodium(podium).map((row) => (
               <TableRow
                 key={row.number}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
