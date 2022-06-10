@@ -7,6 +7,7 @@ import triarsi23 from './images/triarsi23.jpeg';
 import wright45 from './images/wright45.jpeg';
 import ian12 from './images/ian12.jpeg';
 import real43 from  './images/real43.jpeg';
+import winward33 from './images/winward33.jpeg';
 import st38 from './images/st38.jpeg';
 import triarsi13 from './images/triarsi13.jpeg'
 import tr39 from './images/trt39.jpeg'
@@ -199,6 +200,24 @@ export const driverInfo = [
     classification: "Am",
     number: "23",
     carImage: triarsi23,
+    series: "GT World Challenge America"
+  },
+  {
+    team: "Winward Racing",
+    driver1: {
+      name: 'Russell Ward',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Philip Ellis',
+      nationality: 'Switzerland',
+      rating: 'Gold'
+      },
+    car: "Mercedes-AMG GT3",
+    classification: "Pro",
+    number: "33",
+    carImage: winward33,
     series: "GT World Challenge America"
   },
   {
