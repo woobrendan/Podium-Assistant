@@ -38,6 +38,18 @@ import conquest34 from './images/conquest34.jpeg';
 import hort24 from './images/hort24.jpeg';
 import nola47 from './images/nola47.jpeg';
 import prive26 from './images/prive26.jpeg';
+import dexter60 from './images/dexter60.jpeg';
+import trg66 from './images/trg66.jpeg';
+import smooge68 from './images/smooge68.jpeg';
+import rooster80 from './images/rooster80.jpeg';
+import bimmer82 from './images/bimmer82.jpeg';
+import rs183 from './images/rs183.jpeg';
+import random98 from './images/random98.jpeg';
+import dexter112 from './images/dexter112.jpeg';
+import premier120 from './images/premier120.jpeg';
+import regal427 from './images/regal427.jpeg';
+import zelus888 from './images/zelus888.jpeg';
+
 
 export const driverInfo = [
   {
@@ -775,7 +787,7 @@ export const driverInfo = [
     car: "Ginetta G56 GT4",
     classification: "Am",
     number: "60",
-    carImage: auto53,
+    carImage: dexter60,
     series: "Pirelli GT4 America"
   },
   {
@@ -793,7 +805,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "66",
-    carImage: auto53,
+    carImage: trg66,
     series: "Pirelli GT4 America"
   },
   {
@@ -811,7 +823,7 @@ export const driverInfo = [
     car: "Toyota GR Supra GT4",
     classification: "Pro-Am",
     number: "68",
-    carImage: auto53,
+    carImage: smooge68,
     series: "Pirelli GT4 America"
   },
   {
@@ -829,7 +841,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "80",
-    carImage: auto53,
+    carImage: rooster80,
     series: "Pirelli GT4 America"
   },
   {
@@ -847,7 +859,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "82",
-    carImage: auto53,
+    carImage: bimmer82,
     series: "Pirelli GT4 America"
   },
   {
@@ -865,7 +877,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "83",
-    carImage: auto53,
+    carImage: rs183,
     series: "Pirelli GT4 America"
   },
   {
@@ -883,7 +895,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "98",
-    carImage: auto53,
+    carImage: random98,
     series: "Pirelli GT4 America"
   },
   {
@@ -901,7 +913,7 @@ export const driverInfo = [
     car: "Toyota GR Supra GT4",
     classification: "Silver",
     number: "112",
-    carImage: auto53,
+    carImage: dexter112,
     series: "Pirelli GT4 America"
   },
   {
@@ -919,7 +931,7 @@ export const driverInfo = [
     car: "Porscher 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "120",
-    carImage: auto53,
+    carImage: premier120,
     series: "Pirelli GT4 America"
   },
   {
@@ -937,7 +949,7 @@ export const driverInfo = [
     car: "Porscher 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "427",
-    carImage: auto53,
+    carImage: regal427,
     series: "Pirelli GT4 America"
   },
   {
@@ -955,7 +967,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "Am",
     number: "888",
-    carImage: auto53,
+    carImage: zelus888,
     series: "Pirelli GT4 America"
   },
 ]
