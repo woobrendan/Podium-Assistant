@@ -619,7 +619,7 @@ export const driverInfo = [
   {
     team: "Prive Motorsports/Topp Racing",
     driver1: {
-      name: 'Thomas Surrgent',
+      name: 'Thomas Surgent',
       nationality: 'USA',
       rating: 'Bronze'
       },
@@ -757,6 +757,204 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "53",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Dexter Racing",
+    driver1: {
+      name: 'Ben Anderson',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Matt Rivard',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Ginetta G56 GT4",
+    classification: "Am",
+    number: "60",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "The Racers Group",
+    driver1: {
+      name: 'Jason Alexandridis',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Derek DeBoer',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "66",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Smooge Racing",
+    driver1: {
+      name: 'Kevin Conway',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'John Geesbreght',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Toyota GR Supra GT4",
+    classification: "Pro-Am",
+    number: "68",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Rooster Hall Racing",
+    driver1: {
+      name: 'Todd Brown',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Johan Schwartz',
+      nationality: 'Denmark',
+      rating: 'Bronze'
+      },
+    car: "BMW M4 GT4",
+    classification: "Am",
+    number: "80",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "BimmerWorld",
+    driver1: {
+      name: 'James Walker Jr',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Devin Jones',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "BMW M4 GT4",
+    classification: "Pro-Am",
+    number: "82",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "RS1",
+    driver1: {
+      name: 'Nelson Calle',
+      nationality: 'Colombia',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Juan Martinez',
+      nationality: 'Colombia',
+      rating: 'Bronze'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "83",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Random Vandals Racing",
+    driver1: {
+      name: 'Paul Sparta',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Al Carter',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "BMW M4 GT4",
+    classification: "Am",
+    number: "98",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Dexter Racing",
+    driver1: {
+      name: 'Ryan Dexter',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Dominic Starkweather',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Toyota GR Supra GT4",
+    classification: "Silver",
+    number: "112",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Premier Racing",
+    driver1: {
+      name: 'Adam Adelson',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Elliot Skeer',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Porscher 718 Cayman GT4 RS CS",
+    classification: "Pro-Am",
+    number: "120",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Regal Motorsports",
+    driver1: {
+      name: 'Anthony Bartone',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Andy Pilgrim',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porscher 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "427",
+    carImage: auto53,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Zelus Motorsports",
+    driver1: {
+      name: 'Matt Guiver',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Sean Whalen',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "Am",
+    number: "888",
     carImage: auto53,
     series: "Pirelli GT4 America"
   },
