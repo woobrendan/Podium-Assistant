@@ -10,6 +10,15 @@
   .competitor-card {
     margin: 25px;
 
+    .driver-table {
+      .MuiTableHead-root {
+        th {
+          font-weight: bold;
+        }
+    
+      }
+    }
+
     .MuiTypography-h5 {
       color:white;
       font-weight: bold;
