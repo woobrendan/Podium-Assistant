@@ -109,16 +109,19 @@ function Podium() {
         <WinnerTop3 
           series={results.series} 
           onClick={handleRacePodiumSubmit}
+          results={results}
         />}
       {showWinnerTable.podium2 && 
         <WinnerTop3 
           series={results.series} 
           onClick={handleRacePodiumSubmit}
+          results={results}
         />}
       {showWinnerTable.podium3 && 
         <WinnerTop3 
           series={results.series} 
           onClick={handleRacePodiumSubmit}
+          results={results}
         />}
       {showWinnerTable.fastLap && 
         <FastLap 
