@@ -3,7 +3,6 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
-import classNames from 'classnames';
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -25,7 +24,6 @@ export default function Elevation(props) {
           <Grid item xs={6} >
             <ThemeProvider theme={lightTheme}>
               <Box
-                className="test"
                 sx={{
                   p: 2,
                   display: 'grid',
