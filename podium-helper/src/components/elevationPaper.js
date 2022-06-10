@@ -18,9 +18,6 @@ const lightTheme = createTheme({ palette: { mode: 'light' } });
 
 export default function Elevation(props) {
   const details = [props.series, props.car, props.class];
-  const detailClass = classNames('entry-detail__item', {
-    "entry-detail_GTWCA": props.series === "GT World Challenge America"
-  })
 
   return (
     <div className="entry-details">
