@@ -80,6 +80,15 @@ import mini62 from './images/mini62.jpeg';
 import la77 from './images/la77.jpeg';
 import bha98 from './images/bha98.jpeg';
 import vgrt780 from './images/vgrt780.jpeg';
+import cap32 from './images/cap32.jpeg';
+import conquest35 from './images/conquest35.jpeg';
+import cameron39 from './images/cameron.jpeg';
+import saleen49 from './images/saleen49.jpeg';
+import accelerate55 from './images/accerlate55.jpeg';
+import arg124 from './images/arg124.jpeg';
+import car930 from './images/car930.jpeg'
+
+
 
 export const driverInfo = [
   {
@@ -691,7 +700,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "32",
-    carImage: '',
+    carImage: cap32,
     series: "Pirelli GT4 America"
   },
   {
@@ -727,7 +736,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "35",
-    carImage: conquest34,
+    carImage: conquest35,
     series: "Pirelli GT4 America"
   },
   {
@@ -763,7 +772,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "39",
-    carImage: '',
+    carImage: cameron39,
     series: "Pirelli GT4 America"
   },
   {
@@ -799,7 +808,7 @@ export const driverInfo = [
     car: "Saleen 1",
     classification: "Pro-Am",
     number: "49",
-    carImage: '',
+    carImage: saleen49,
     series: "Pirelli GT4 America"
   },
   {
@@ -889,7 +898,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "55",
-    carImage: '',
+    carImage: accelerate55,
     series: "Pirelli GT4 America"
   },
   {
@@ -1141,7 +1150,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "152",
-    carImage: '',
+    carImage: arg124,
     series: "Pirelli GT4 America"
   },
   {
@@ -1195,7 +1204,7 @@ export const driverInfo = [
     car: "Audi R8 LMS GT4",
     classification: "Pro-Am",
     number: "930",
-    carImage: '',
+    carImage: car930,
     series: "Pirelli GT4 America"
   },
   {
