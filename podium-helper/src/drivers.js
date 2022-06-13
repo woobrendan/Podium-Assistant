@@ -49,7 +49,25 @@ import dexter112 from './images/dexter112.jpeg';
 import premier120 from './images/premier120.jpeg';
 import regal427 from './images/regal427.jpeg';
 import zelus888 from './images/zelus888.jpeg';
-
+import FTR1 from './images/FTR1.jpeg';
+import accerlate57 from './images/accerlate57.jpeg';
+import DRS06 from './images/DRS06.jpeg';
+import DRS09 from './images/DRS09.jpeg';
+import ftr29 from './images/ftr29.jpeg';
+import FTR54 from './images/FTR54.jpeg';
+import FTR76 from './images/FTR76.jpeg';
+import hard30 from './images/hard30.jpeg';
+import LA37 from './images/LA37.jpeg';
+import rigid24 from './images/rigid24.jpeg';
+import rigid26 from './images/rigid26.jpeg';
+import rooster44 from './images/rooster44.jpeg';
+import skip9 from './images/skip9.jpeg';
+import ftg70 from './images/ftg70.jpeg';
+import mini60 from './images/mini60.jpeg';
+import gen78 from './images/gen78.jpeg';
+import gen88 from './images/gen88.jpeg';
+import la73 from './images/la73.jpeg'
+import skip42 from './images/skip42.jpeg';
 
 export const driverInfo = [
   {
@@ -980,7 +998,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "1",
-    carImage: zelus888,
+    carImage: FTR1,
     series: "TC America"
   },
   {
@@ -993,7 +1011,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "24",
-    carImage: zelus888,
+    carImage: rigid24,
     series: "TC America"
   },
   {
@@ -1006,7 +1024,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "26",
-    carImage: zelus888,
+    carImage: rigid26,
     series: "TC America"
   },
   {
@@ -1019,7 +1037,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "29",
-    carImage: zelus888,
+    carImage: ftr29,
     series: "TC America"
   },
   {
@@ -1032,7 +1050,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "30",
-    carImage: zelus888,
+    carImage: hard30,
     series: "TC America"
   },
   {
@@ -1045,7 +1063,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "44",
-    carImage: zelus888,
+    carImage: rooster44,
     series: "TC America"
   },
   {
@@ -1058,7 +1076,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "51",
-    carImage: zelus888,
+    carImage: '',
     series: "TC America"
   },
   {
@@ -1071,7 +1089,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "54",
-    carImage: zelus888,
+    carImage: FTR54,
     series: "TC America"
   },
   {
@@ -1084,7 +1102,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "57",
-    carImage: zelus888,
+    carImage: accerlate57,
     series: "TC America"
   },
   {
@@ -1097,7 +1115,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "76",
-    carImage: zelus888,
+    carImage: FTR76,
     series: "TC America"
   },
   {
@@ -1110,7 +1128,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "97",
-    carImage: zelus888,
+    carImage: '',
     series: "TC America"
   },
   {
@@ -1123,7 +1141,7 @@ export const driverInfo = [
     car: "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "06",
-    carImage: zelus888,
+    carImage: DRS06,
     series: "TC America"
   },
   {
@@ -1136,7 +1154,7 @@ export const driverInfo = [
     car: "Honda Civic Type-R",
     classification: "TC",
     number: "9",
-    carImage: zelus888,
+    carImage: skip9,
     series: "TC America"
   },
   {
@@ -1149,20 +1167,20 @@ export const driverInfo = [
     car: "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "09",
-    carImage: zelus888,
+    carImage: DRS09,
     series: "TC America"
   },
   {
     team: "TechSport Racing",
     driver1: {
-      name: 'Jason Weaverr',
+      name: 'Jason Weaver',
       nationality: 'USA',
       rating: 'N/A'
       },
     car: "Nissan 370z TC Spec",
     classification: "TC",
     number: "18",
-    carImage: zelus888,
+    carImage: '',
     series: "TC America"
   },
   {
@@ -1175,7 +1193,7 @@ export const driverInfo = [
     car: "Honda Civic Type-R",
     classification: "TC",
     number: "37",
-    carImage: zelus888,
+    carImage: LA37,
     series: "TC America"
   },
   {
@@ -1188,7 +1206,7 @@ export const driverInfo = [
     car: "Honda Civic Type-R",
     classification: "TC",
     number: "42",
-    carImage: zelus888,
+    carImage: skip42,
     series: "TC America"
   },
   {
@@ -1200,8 +1218,8 @@ export const driverInfo = [
       },
     car: "MINI JCW Pro TC",
     classification: "TC",
-    number: "06",
-    carImage: zelus888,
+    number: "60",
+    carImage: mini60,
     series: "TC America"
   },
   {
@@ -1214,7 +1232,7 @@ export const driverInfo = [
     car: "Mazda 3",
     classification: "TC",
     number: "70",
-    carImage: zelus888,
+    carImage: ftg70,
     series: "TC America"
   },
   {
@@ -1227,7 +1245,7 @@ export const driverInfo = [
     car: "Honda Civic Type-R",
     classification: "TC",
     number: "73",
-    carImage: zelus888,
+    carImage: la73,
     series: "TC America"
   },
   {
@@ -1240,7 +1258,7 @@ export const driverInfo = [
     car: "Hyundai Veloster N TC",
     classification: "TC",
     number: "78",
-    carImage: zelus888,
+    carImage: gen78,
     series: "TC America"
   },
   {
@@ -1253,7 +1271,7 @@ export const driverInfo = [
     car: "Hyundai Veloster N TC",
     classification: "TC",
     number: "88",
-    carImage: zelus888,
+    carImage: gen88,
     series: "TC America"
   },
   {
