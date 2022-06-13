@@ -970,4 +970,17 @@ export const driverInfo = [
     carImage: zelus888,
     series: "Pirelli GT4 America"
   },
+  {
+    team: "Fast Track Racing",
+    driver1: {
+      name: 'Jacob Ruud',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "1",
+    carImage: zelus888,
+    series: "TC America"
+  },
 ]
