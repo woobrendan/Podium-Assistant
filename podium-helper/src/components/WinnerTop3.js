@@ -53,12 +53,18 @@ function Podium(props) {
       <MenuItem key={index} value={option}>{option}</MenuItem>
     )
 
+  //determine if entry is single or two drivers and return corresponding menu item
+  const numOfDriverMenuItem = (entry) => {
+    if (!entry.driver2) {
+      return <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} </MenuItem>
+    } else {
+      return <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
+    }
+  }
   const mappedDrivers = driverInfo
     .filter(entry => entry.series === props.series)
     .filter(entry => entry.classification === winners.class)
-    .map(entry => (
-        <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
-      ));
+    .map(entry => (numOfDriverMenuItem(entry)))
 
   return (
     <div className="results-container">
