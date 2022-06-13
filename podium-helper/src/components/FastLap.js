@@ -28,7 +28,9 @@ function FastLap(props) {
       .filter(entry => entry.series === props.series)
     for (const entry of seriesFilteredDrivers) {
       drivers.push({number: entry.number, driver: entry.driver1.name});
-      drivers.push({number: entry.number, driver: entry.driver2.name});
+      if (entry.driver2) {
+        drivers.push({number: entry.number, driver: entry.driver2.name});
+      }
     }
     return drivers;
   }
