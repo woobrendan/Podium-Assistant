@@ -975,7 +975,7 @@ export const driverInfo = [
     driver1: {
       name: 'Jacob Ruud',
       nationality: 'USA',
-      rating: 'Bronze'
+      rating: 'N/A'
       },
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
@@ -983,4 +983,447 @@ export const driverInfo = [
     carImage: zelus888,
     series: "TC America"
   },
+  {
+    team: "Rigid Speed",
+    driver1: {
+      name: 'Joesph Catania',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "24",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Rigid Speed",
+    driver1: {
+      name: 'Lucas Catania',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "26",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Fast Track Racing",
+    driver1: {
+      name: 'Olivia Askew',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "29",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "HARD Motorsports",
+    driver1: {
+      name: 'Steve Streimer',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "30",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Rooster Hall Racing",
+    driver1: {
+      name: 'Colin Garrett',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "44",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Homewrecker Racing LLC",
+    driver1: {
+      name: 'Brett Scorggin',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "51",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Fast Track Racing",
+    driver1: {
+      name: 'Garrett Adams',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "54",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Accerlating Performance",
+    driver1: {
+      name: 'Stephen Cugliari',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "57",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Fast Track Racing",
+    driver1: {
+      name: 'Mark Wilgus',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "76",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Random Vandals Racing",
+    driver1: {
+      name: 'Jessica Tracy',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M2 CS(Cup)",
+    classification: "TCX",
+    number: "97",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "DRS & Garagistic",
+    driver1: {
+      name: 'Matthew Ibrahim',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M240iR (2019 EVO)",
+    classification: "TC",
+    number: "06",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Skip Barber Racing School",
+    driver1: {
+      name: 'Kevin Boehm',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Type-R",
+    classification: "TC",
+    number: "9",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "DRS & Garagistic",
+    driver1: {
+      name: 'Kris Valdez',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "BMW M240iR (2019 EVO)",
+    classification: "TC",
+    number: "09",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "TechSport Racing",
+    driver1: {
+      name: 'Jason Weaverr',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Nissan 370z TC Spec",
+    classification: "TC",
+    number: "18",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "LA Honda World Racing",
+    driver1: {
+      name: 'Mat Pombo',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Type-R",
+    classification: "TC",
+    number: "37",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Skip Barber Racing SChool",
+    driver1: {
+      name: 'Ken Fukuda',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Type-R",
+    classification: "TC",
+    number: "42",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "MINI JCW Team",
+    driver1: {
+      name: 'Clay Williams',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "MINI JCW Pro TC",
+    classification: "TC",
+    number: "06",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "FTG Racing",
+    driver1: {
+      name: 'Joey Jordan',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Mazda 3",
+    classification: "TC",
+    number: "70",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "LA Honda World Racing",
+    driver1: {
+      name: 'Mike Lamara',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Type-R",
+    classification: "TC",
+    number: "73",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Genracer / Ricca Autosport",
+    driver1: {
+      name: 'Jeff Ricca',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Hyundai Veloster N TC",
+    classification: "TC",
+    number: "78",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Genracer / Ricca Autosport",
+    driver1: {
+      name: 'Nicholas Barbato',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Hyundai Veloster N TC",
+    classification: "TC",
+    number: "88",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Skip Barber Racing School",
+    driver1: {
+      name: 'Colin Harrison',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Si",
+    classification: "TCA",
+    number: "2",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "LA Honda World Racing",
+    driver1: {
+      name: 'Spencer Bucknum',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Si",
+    classification: "TCA",
+    number: "5",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Skip Barber Racing School",
+    driver1: {
+      name: 'Cater Fartuch',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Si",
+    classification: "TCA",
+    number: "16",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Skip Barber Racing School",
+    driver1: {
+      name: 'Mike Ogren',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Si",
+    classification: "TCA",
+    number: "20",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "TechSport Racing",
+    driver1: {
+      name: 'Gresham Wagner',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Subaru BRZ",
+    classification: "TCA",
+    number: "21",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "TechSport Racing",
+    driver1: {
+      name: 'Devin Anderson',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Subaru BRZ",
+    classification: "TCA",
+    number: "22",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "TechSport Racing",
+    driver1: {
+      name: 'Shaoyi Che',
+      nationality: 'China',
+      rating: 'N/A'
+      },
+    car: "Subaru BRZ",
+    classification: "TCA",
+    number: "23",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Bryan Herta Autosport w/ Curb-Agajanian",
+    driver1: {
+      name: 'Tyler Delgado',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Hyundai Elantra N-Line",
+    classification: "TCA",
+    number: "33",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "MINI JCW Team",
+    driver1: {
+      name: 'Christian Peocarpi',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "MINI JCW",
+    classification: "TCA",
+    number: "61",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "MINI JCW Team",
+    driver1: {
+      name: 'PJ Groenke',
+      nationality: 'Canada',
+      rating: 'N/A'
+      },
+    car: "MINI JCW",
+    classification: "TCA",
+    number: "62",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "LA Honda World Racing",
+    driver1: {
+      name: 'Mario Biundo',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Si",
+    classification: "TCA",
+    number: "77",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "Bryan Herta Autosport w/ Curb-Agajanian",
+    driver1: {
+      name: 'Branyon Tiner',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Hyundai Elantra N-Line",
+    classification: "TCA",
+    number: "98",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  {
+    team: "VGRT",
+    driver1: {
+      name: 'Sally McNulty',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Si",
+    classification: "TCA",
+    number: "780",
+    carImage: zelus888,
+    series: "TC America"
+  },
+  
 ]
