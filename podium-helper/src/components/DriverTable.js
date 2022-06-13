@@ -12,11 +12,6 @@ function createData(name, nationality, rating) {
 }
 
 function DriverTable(props) {
-  // const rows = [
-  //   createData(props.drivers.driver1.name, props.drivers.driver1.nationality, props.drivers.driver1.rating),
-  //   createData(props.drivers.driver2.name, props.drivers.driver2.nationality, props.drivers.driver2.rating)
-  // ];
-
   const tableRows = (drivers) => {
     if (!drivers.driver2) {
       return [
