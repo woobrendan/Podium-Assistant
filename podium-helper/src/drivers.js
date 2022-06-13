@@ -68,6 +68,18 @@ import gen78 from './images/gen78.jpeg';
 import gen88 from './images/gen88.jpeg';
 import la73 from './images/la73.jpeg'
 import skip42 from './images/skip42.jpeg';
+import skip2 from './images/skip2.jpeg';
+import la5 from './images/la5.jpeg';
+import skip16 from './images/skip16.jpeg';
+import tech21 from './images/tech21.jpeg';
+import tech22 from './images/tech22.jpeg';
+import tech23 from './images/tech23.jpeg';
+import bha33 from './images/bha33.jpeg';
+import mini61 from './images/mini61.jpeg';
+import mini62 from './images/mini62.jpeg';
+import la77 from './images/la77.jpeg';
+import bha98 from './images/bha98.jpeg';
+import vgrt780 from './images/vgrt780.jpeg';
 
 export const driverInfo = [
   {
@@ -1284,7 +1296,7 @@ export const driverInfo = [
     car: "Honda Civic Si",
     classification: "TCA",
     number: "2",
-    carImage: zelus888,
+    carImage: skip2,
     series: "TC America"
   },
   {
@@ -1297,7 +1309,7 @@ export const driverInfo = [
     car: "Honda Civic Si",
     classification: "TCA",
     number: "5",
-    carImage: zelus888,
+    carImage: la5,
     series: "TC America"
   },
   {
@@ -1310,7 +1322,7 @@ export const driverInfo = [
     car: "Honda Civic Si",
     classification: "TCA",
     number: "16",
-    carImage: zelus888,
+    carImage: skip16,
     series: "TC America"
   },
   {
@@ -1323,7 +1335,7 @@ export const driverInfo = [
     car: "Honda Civic Si",
     classification: "TCA",
     number: "20",
-    carImage: zelus888,
+    carImage: '',
     series: "TC America"
   },
   {
@@ -1336,7 +1348,7 @@ export const driverInfo = [
     car: "Subaru BRZ",
     classification: "TCA",
     number: "21",
-    carImage: zelus888,
+    carImage: tech21,
     series: "TC America"
   },
   {
@@ -1349,7 +1361,7 @@ export const driverInfo = [
     car: "Subaru BRZ",
     classification: "TCA",
     number: "22",
-    carImage: zelus888,
+    carImage: tech22,
     series: "TC America"
   },
   {
@@ -1362,7 +1374,7 @@ export const driverInfo = [
     car: "Subaru BRZ",
     classification: "TCA",
     number: "23",
-    carImage: zelus888,
+    carImage: tech23,
     series: "TC America"
   },
   {
@@ -1375,7 +1387,7 @@ export const driverInfo = [
     car: "Hyundai Elantra N-Line",
     classification: "TCA",
     number: "33",
-    carImage: zelus888,
+    carImage: bha33,
     series: "TC America"
   },
   {
@@ -1388,7 +1400,7 @@ export const driverInfo = [
     car: "MINI JCW",
     classification: "TCA",
     number: "61",
-    carImage: zelus888,
+    carImage: mini61,
     series: "TC America"
   },
   {
@@ -1401,7 +1413,7 @@ export const driverInfo = [
     car: "MINI JCW",
     classification: "TCA",
     number: "62",
-    carImage: zelus888,
+    carImage: mini62,
     series: "TC America"
   },
   {
@@ -1414,7 +1426,7 @@ export const driverInfo = [
     car: "Honda Civic Si",
     classification: "TCA",
     number: "77",
-    carImage: zelus888,
+    carImage: la77,
     series: "TC America"
   },
   {
@@ -1427,7 +1439,7 @@ export const driverInfo = [
     car: "Hyundai Elantra N-Line",
     classification: "TCA",
     number: "98",
-    carImage: zelus888,
+    carImage: bha98,
     series: "TC America"
   },
   {
@@ -1440,7 +1452,7 @@ export const driverInfo = [
     car: "Honda Civic Si",
     classification: "TCA",
     number: "780",
-    carImage: zelus888,
+    carImage: vgrt780,
     series: "TC America"
   },
   
