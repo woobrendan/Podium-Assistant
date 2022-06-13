@@ -9,27 +9,47 @@ import Paper from '@mui/material/Paper';
 import '../Styling/result.scss';
 
 
-function createData(place, number, driver1, driver2, car) {
+function createDataTwoDriver(place, number, driver1, driver2, car) {
   return { place, number, driver1, driver2, car };
+}
+
+function createDataSingleDriver(place, number, driver1, car) {
+  return { place, number, driver1, car };
 }
 
 function Results(props) {
   const podium = props.result
   const checkPodium = (podium) => {
-
-    if (!podium.third) {
-      return [
-        createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
-        createData('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car)
-      ]
-    } else if (!podium.second) {
-        return [createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car)]
+    if(!podium.first.driver2) {
+      if (!podium.third && podium.second) {
+        return [
+          createDataSingleDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.car),
+          createDataSingleDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.car)
+        ]
+      } else if (!podium.second) {
+          return [createDataSingleDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.car)]
+      } else {
+        return [
+          createDataSingleDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.car),
+          createDataSingleDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.car),
+          createDataSingleDriver('Third Place', podium.third.number, podium.third.driver1.name, podium.third.car)
+        ]
+      }
     } else {
-      return [
-        createData('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
-        createData('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car),
-        createData('Third Place', podium.third.number, podium.third.driver1.name, podium.third.driver2.name, podium.third.car)
-      ]
+      if (!podium.third && podium.second) {
+        return [
+          createDataTwoDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
+          createDataTwoDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car)
+        ]
+      } else if (!podium.second) {
+          return [createDataTwoDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car)]
+      } else {
+        return [
+          createDataTwoDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.car),
+          createDataTwoDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.car),
+          createDataTwoDriver('Third Place', podium.third.number, podium.third.driver1.name, podium.third.driver2.name, podium.third.car)
+        ]
+      }
     }
   }
 
@@ -45,7 +65,7 @@ function Results(props) {
               <TableCell>Place</TableCell>
               <TableCell align="right">Car #</TableCell>
               <TableCell align="right">Driver 1</TableCell>
-              <TableCell align="right">Driver 2</TableCell>
+              {podium.first.driver2 && <TableCell align="right">Driver 2</TableCell>}
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
           </TableHead>
@@ -60,7 +80,7 @@ function Results(props) {
                 </TableCell>
                 <TableCell align="right">{row.number}</TableCell>
                 <TableCell align="right">{row.driver1}</TableCell>
-                <TableCell align="right">{row.driver2}</TableCell>
+                {row.driver2 && <TableCell align="right">{row.driver2}</TableCell>}
                 <TableCell align="right">{row.car}</TableCell>
               </TableRow>
             ))}
