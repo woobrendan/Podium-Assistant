@@ -576,7 +576,7 @@ export const driverInfo = [
       rating: 'Bronze'
       },
     driver2: {
-      name: 'Robert Orcutt',
+      name: 'Todd Hetherington',
       nationality: 'USA',
       rating: 'Bronze'
       },
@@ -677,7 +677,25 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
-    team: "Conquest Racing/JMF Motorsports",
+    team: "Capstone Motorsportrs",
+    driver1: {
+      name: 'Kris Wilson',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Cole Ciraulo',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "Silver",
+    number: "32",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Conquest Racing/JWF Motorsports",
     driver1: {
       name: 'Gavin Sanders',
       nationality: 'Canada',
@@ -691,6 +709,24 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "34",
+    carImage: conquest34,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Conquest Racing",
+    driver1: {
+      name: 'Manny Franco',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Josh Hurley',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "Silver",
+    number: "35",
     carImage: conquest34,
     series: "Pirelli GT4 America"
   },
@@ -713,6 +749,24 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
+    team: "Cameron Racing",
+    driver1: {
+      name: 'Chris Cagnazzi',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Guy Cosmo',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "Silver",
+    number: "39",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
     team: "NOLASPORT",
     driver1: {
       name: 'Scott Noble',
@@ -728,6 +782,24 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "47",
     carImage: nola47,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Team Saleen",
+    driver1: {
+      name: 'Steve Saleen',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Eric Curran',
+      nationality: 'USA',
+      rating: 'Gold'
+      },
+    car: "Saleen 1",
+    classification: "Pro-Am",
+    number: "49",
+    carImage: '',
     series: "Pirelli GT4 America"
   },
   {
@@ -803,6 +875,24 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
+    team: "Accerlating Performance",
+    driver1: {
+      name: 'Moisey Uretsky',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Justin Piscitell',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "Pro-Am",
+    number: "55",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
     team: "Dexter Racing",
     driver1: {
       name: 'Ben Anderson',
@@ -854,6 +944,42 @@ export const driverInfo = [
     classification: "Silver",
     number: "68",
     carImage: smooge68,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "KRUGSPEED",
+    driver1: {
+      name: 'Anthony Geraci',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Jason Lander',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Toyota GR Supra GT4",
+    classification: "Am",
+    number: "72",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "RENNtech Motorsports",
+    driver1: {
+      name: 'Chris Gumprecht',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Kyle Marcelli',
+      nationality: 'Canada',
+      rating: 'Gold'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "Pro-Am",
+    number: "79",
+    carImage: '',
     series: "Pirelli GT4 America"
   },
   {
@@ -911,6 +1037,24 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
+    team: "RENNtech Motorsports",
+    driver1: {
+      name: 'Paul Kiebler',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Jon Branam',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "Am",
+    number: "89",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
     team: "Random Vandals Racing",
     driver1: {
       name: 'Paul Sparta',
@@ -965,6 +1109,42 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
+    team: "ARG/Rotek Racing",
+    driver1: {
+      name: 'Edgar Lau',
+      nationality: 'Hong Kong',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Mike Skeen',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Ford Mustang GT4",
+    classification: "Pro-Am",
+    number: "124",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "Team ACP - Tangerine Associates",
+    driver1: {
+      name: 'Alex Amine',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Ryan Hall',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "BMW M4 GT4",
+    classification: "Am",
+    number: "152",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
     team: "Regal Motorsports",
     driver1: {
       name: 'Anthony Bartone',
@@ -998,6 +1178,24 @@ export const driverInfo = [
     classification: "Am",
     number: "888",
     carImage: zelus888,
+    series: "Pirelli GT4 America"
+  },
+  {
+    team: "CarBahn w/ Peregrine Racing",
+    driver1: {
+      name: 'Mark Siegel',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Tom Dyer',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    car: "Audi R8 LMS GT4",
+    classification: "Pro-Am",
+    number: "930",
+    carImage: '',
     series: "Pirelli GT4 America"
   },
   {
