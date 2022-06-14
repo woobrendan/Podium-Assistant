@@ -24,6 +24,9 @@ From within the `podium-helper` folder:
 ![Create New Podium](https://github.com/woobrendan/Podium-Assistant/blob/main/podium-helper/public/docs/podium_creation.gif?raw=true)
 
 ## Competitors
+
+The competitors page displays all of the competitors in SRO Motorsports America competition, dynamically changing their background colour based on the series they are entered in.
+
 ![Competitors](https://github.com/woobrendan/Podium-Assistant/blob/main/podium-helper/public/docs/competitors.png?raw=true)
 
 ## Dependencies
