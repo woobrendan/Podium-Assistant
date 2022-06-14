@@ -56,7 +56,7 @@ function Results(props) {
   return (
     <div className='result-table-container'>
       <Typography variant="h3" gutterBottom component="div">
-        Race Results - {podium.class}
+        Results - {podium.class}
       </Typography>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
@@ -92,5 +92,5 @@ function Results(props) {
   )
 }
 
-export default Results
+export default Results;
 
