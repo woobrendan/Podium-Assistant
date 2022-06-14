@@ -13,7 +13,8 @@ function Podium() {
     pod1: false,
     pod2: false,
     pod3: false,
-    fastLap: false
+    fastLap: false,
+    printPage: false
   })
   const [results, setResults] = useState({
     series: '',
@@ -95,6 +96,11 @@ function Podium() {
         fastLap: true
       }))
     }
+
+    setshowResultTable((prev) => ({
+      ...prev,
+      printPage: true
+    }))
     //remove all other elements to only show result table
     setShowWinnerTable({
       podium1: false,
@@ -109,6 +115,10 @@ function Podium() {
     //   .catch(err => console.log(err.message))
 
   };
+
+  const printPage = () => {
+    window.print()
+  }
 
   return (
     <div className="race-results-container">
@@ -149,6 +159,7 @@ function Podium() {
       {showResultTable.pod2 && <Results result={results.podium2} />}
       {showResultTable.pod3 && <Results result={results.podium3} />}
       {showResultTable.fastLap && <FastLapTable fastLap={results.fastLap} />}
+      {showResultTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
     </div>
   )
 }
