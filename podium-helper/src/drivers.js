@@ -1675,5 +1675,331 @@ export const driverInfo = [
     carImage: GMG2,
     series: "GT America"
   },
+  {
+    team: "CrowdStrike w/ Riley Motorsports",
+    driver1: {
+      name: 'George Kurtz',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Mercedes-AMG GT3",
+    classification: "SRO3",
+    number: "04",
+    carImage: '',
+    series: "GT America"
+  },
+  {
+    team: "Flying Lizard Motorsports",
+    driver1: {
+      name: 'Elias Sabo',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "GT4",
+    number: "8",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "NOLASPORT",
+    driver1: {
+      name: 'Alain Stad',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "GT4",
+    number: "19",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Carrus Callas Raceteam",
+    driver1: {
+      name: 'Nick Shanny',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Toyota GR Supra GT4",
+    classification: "GT4",
+    number: "21",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "SRQ Motorsports Motorsports",
+    driver1: {
+      name: 'Marko Radisic',
+      nationality: 'Serbia',
+      rating: 'Bronze'
+      },
+    car: "BMW M4 GT4",
+    classification: "GT4",
+    number: "22",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Heart of Racing Team",
+    driver1: {
+      name: 'Gray Newell',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "GT4",
+    number: "25",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Daskalos Motorsports",
+    driver1: {
+      name: 'Jason Daskalos',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Audi R8 LMS",
+    classification: "SRO3",
+    number: "27",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "SRQ Motorsports Group",
+    driver1: {
+      name: 'Rick Uhler',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "BMW M4 GT4",
+    classification: "GT4",
+    number: "28",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Triarsi Competizione",
+    driver1: {
+      name: 'Justin Wetherill',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Ferrari 488 GT3",
+    classification: "SRO3",
+    number: "37",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Cameron Racing",
+    driver1: {
+      name: 'Chris Cagnazzi',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "GT4",
+    number: "39",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Chouest Povoledo Racing",
+    driver1: {
+      name: 'Ross Chouest',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "GT4",
+    number: "50",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Accelerating Performance",
+    driver1: {
+      name: 'Moisey Uretsky',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "GT4",
+    number: "55",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "SKI Autosports",
+    driver1: {
+      name: 'Andy Pilgrim',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Ferrari 458 Italia GT3",
+    classification: "SRO3",
+    number: "56",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "GMG Racing",
+    driver1: {
+      name: 'CJ Moses',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Audi R8 LMS GT2",
+    classification: "GT2",
+    number: "58",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Smooge Racing",
+    driver1: {
+      name: 'Jose DaSilva',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Toyota GR Supra GT4",
+    classification: "GT4",
+    number: "67",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "MISHUMOTORS",
+    driver1: {
+      name: 'Micro Schultis',
+      nationality: 'Germany',
+      rating: 'Bronze'
+      },
+    car: "Callaway Corvette C7 GT3-R",
+    classification: "SRO3",
+    number: "70",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "GMG Racing",
+    driver1: {
+      name: 'Jay Logan',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "GT4",
+    number: "71",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "RENNtech Motorsports",
+    driver1: {
+      name: 'Chris Gumprecht',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "GT4",
+    number: "79",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Zelus Motorsports",
+    driver1: {
+      name: 'Jason Harward',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Lamborghini Huracan GT3",
+    classification: "SRO3",
+    number: "88",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "RENNtech Motorsports",
+    driver1: {
+      name: 'Paul Kiebler',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Mercedes-AMG GT4",
+    classification: "GT4",
+    number: "89",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Rotek Racing",
+    driver1: {
+      name: 'Robb Holland',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "GT4",
+    number: "99",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Premier Racing",
+    driver1: {
+      name: 'Adam Adelson',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Porsche 718 Cayman GT4 RS CS",
+    classification: "GT4",
+    number: "120",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "ARG/Rotek Racing",
+    driver1: {
+      name: 'Chris Alliegro',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Ford Mustang GT4",
+    classification: "GT4",
+    number: "124",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Zelus Motorsports",
+    driver1: {
+      name: 'Jeff Burton',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Lamborghini Huracan GT3",
+    classification: "SRO3",
+    number: "191",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  {
+    team: "Zelus Motorsports",
+    driver1: {
+      name: 'Sean Whalen',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "SRO3",
+    number: "888",
+    carImage: GMG2,
+    series: "GT America"
+  },
+  
   
 ]
