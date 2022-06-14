@@ -82,7 +82,7 @@ import bha98 from './images/bha98.jpeg';
 import vgrt780 from './images/vgrt780.jpeg';
 import cap32 from './images/cap32.jpeg';
 import conquest35 from './images/conquest35.jpeg';
-import cameron39 from './images/cameron.jpeg';
+import cameron39 from './images/cameron39.jpeg';
 import saleen49 from './images/saleen49.jpeg';
 import accelerate55 from './images/accerlate55.jpeg';
 import arg124 from './images/arg124.jpeg';
@@ -589,7 +589,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche Cayman 718 Cayman GT4 RS CS",
+    car: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "17",
     carImage: trg17,
@@ -1661,6 +1661,19 @@ export const driverInfo = [
     number: "780",
     carImage: vgrt780,
     series: "TC America"
+  },
+  {
+    team: "GMG Racing",
+    driver1: {
+      name: 'Jason Bell',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Aston Martin Vantage AMR GT4",
+    classification: "GT4",
+    number: "2",
+    carImage: GMG2,
+    series: "GT America"
   },
   
 ]
