@@ -5,7 +5,7 @@ Podium Assistant allows the user to select which Series is racing which filters 
 
 ## SRO Motorsports America
 
-Youtube: [GT World](https://www.youtube.com/gtworld)  
+YouTube: [GT World](https://www.youtube.com/gtworld)  
 Website: [GTWCA](https://www.gt-world-challenge-america.com/)  
 Instagram: [GTWCA](https://www.instagram.com/gtworldchallengeamerica/?hl=en)  
 
@@ -22,6 +22,9 @@ From within the `podium-helper` folder:
 
 ## Creating New Podiums
 ![Create New Podium](https://github.com/woobrendan/Podium-Assistant/blob/main/podium-helper/public/docs/podium_creation.gif?raw=true)
+
+## Competitors
+![Competitors](https://github.com/woobrendan/Podium-Assistant/blob/main/podium-helper/public/docs/competitors.png?raw=true)
 
 ## Dependencies
 ```sh
