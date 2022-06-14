@@ -6,12 +6,14 @@ import FastLap from './FastLap';
 import Results from './Results';
 import Series from './Series';
 import axios from 'axios';
+import FastLapTable from './FastLapTable';
 
 function Podium() {
   const [showResultTable, setshowResultTable] = useState({
     pod1: false,
     pod2: false,
-    pod3: false
+    pod3: false,
+    fastLap: false
   })
   const [results, setResults] = useState({
     series: '',
@@ -87,6 +89,12 @@ function Podium() {
         pod3: true
       }))
     }
+    if (results.fastLap) {
+      setshowResultTable((prev) => ({
+        ...prev,
+        fastLap: true
+      }))
+    }
     //remove all other elements to only show result table
     setShowWinnerTable({
       podium1: false,
@@ -140,6 +148,7 @@ function Podium() {
       {showResultTable.pod1 && <Results result={results.podium1} />}
       {showResultTable.pod2 && <Results result={results.podium2} />}
       {showResultTable.pod3 && <Results result={results.podium3} />}
+      {showResultTable.fastLap && <FastLapTable fastLap={results.fastLap} />}
     </div>
   )
 }
