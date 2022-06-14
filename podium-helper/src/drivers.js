@@ -87,6 +87,27 @@ import saleen49 from './images/saleen49.jpeg';
 import accelerate55 from './images/accerlate55.jpeg';
 import arg124 from './images/arg124.jpeg';
 import car930 from './images/car930.jpeg'
+import gmg2a from './images/gmg2a.jpeg';
+import crwd04a from './images/crwd04a.jpeg';
+import nola19a from './images/nola19a.jpeg';
+import carrus21a from './images/carrus21a.jpeg';
+import srq22 from './images/srq22.jpeg';
+import hort25a from './images/hort25a.jpeg';
+import dask27 from './images/dask27.jpeg';
+import srq28 from './images/srq28.jpeg';
+import triarsi37a from './images/triarsi37a.jpeg'
+import cameron39a from './images/cameron39a.jpeg';
+import chouest50a from './images/chouest50a.jpeg';
+import accerlate55a from './images/accerlate55a.jpeg';
+import gmg58 from './images/gmg58.jpeg';
+import smooge67 from './images/smooge67.jpeg';
+import mish70 from './images/mish70.jpeg';
+import renn79a from './images/renn79a.jpeg';
+import zelus88a from './images/zelus88a.jpeg';
+import renn89a from './images/renn89a.jpeg';
+import rotek99 from './images/rotek99.jpeg';
+import premier120a from './images/premier120a.jpeg';
+import zelus191 from './images/zelus191.jpeg'
 
 
 
@@ -1132,7 +1153,7 @@ export const driverInfo = [
     car: "Ford Mustang GT4",
     classification: "Pro-Am",
     number: "124",
-    carImage: '',
+    carImage: arg124,
     series: "Pirelli GT4 America"
   },
   {
@@ -1150,7 +1171,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "152",
-    carImage: arg124,
+    carImage: '',
     series: "Pirelli GT4 America"
   },
   {
@@ -1672,7 +1693,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "2",
-    carImage: GMG2,
+    carImage: gmg2a,
     series: "GT America"
   },
   {
@@ -1685,7 +1706,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT3",
     classification: "SRO3",
     number: "04",
-    carImage: '',
+    carImage: crwd04a,
     series: "GT America"
   },
   {
@@ -1698,7 +1719,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "8",
-    carImage: GMG2,
+    carImage: flm8,
     series: "GT America"
   },
   {
@@ -1711,7 +1732,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "19",
-    carImage: GMG2,
+    carImage: nola19a,
     series: "GT America"
   },
   {
@@ -1724,7 +1745,7 @@ export const driverInfo = [
     car: "Toyota GR Supra GT4",
     classification: "GT4",
     number: "21",
-    carImage: GMG2,
+    carImage: carrus21a,
     series: "GT America"
   },
   {
@@ -1737,7 +1758,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "GT4",
     number: "22",
-    carImage: GMG2,
+    carImage: srq22,
     series: "GT America"
   },
   {
@@ -1750,7 +1771,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "25",
-    carImage: GMG2,
+    carImage: hort25a,
     series: "GT America"
   },
   {
@@ -1763,7 +1784,7 @@ export const driverInfo = [
     car: "Audi R8 LMS",
     classification: "SRO3",
     number: "27",
-    carImage: GMG2,
+    carImage: dask27,
     series: "GT America"
   },
   {
@@ -1776,7 +1797,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "GT4",
     number: "28",
-    carImage: GMG2,
+    carImage: srq28,
     series: "GT America"
   },
   {
@@ -1789,7 +1810,7 @@ export const driverInfo = [
     car: "Ferrari 488 GT3",
     classification: "SRO3",
     number: "37",
-    carImage: GMG2,
+    carImage: triarsi37a,
     series: "GT America"
   },
   {
@@ -1802,7 +1823,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "GT4",
     number: "39",
-    carImage: GMG2,
+    carImage: cameron39a,
     series: "GT America"
   },
   {
@@ -1815,7 +1836,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "50",
-    carImage: GMG2,
+    carImage: chouest50a,
     series: "GT America"
   },
   {
@@ -1828,7 +1849,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "55",
-    carImage: GMG2,
+    carImage: accerlate55a,
     series: "GT America"
   },
   {
@@ -1841,7 +1862,7 @@ export const driverInfo = [
     car: "Ferrari 458 Italia GT3",
     classification: "SRO3",
     number: "56",
-    carImage: GMG2,
+    carImage: '',
     series: "GT America"
   },
   {
@@ -1854,7 +1875,7 @@ export const driverInfo = [
     car: "Audi R8 LMS GT2",
     classification: "GT2",
     number: "58",
-    carImage: GMG2,
+    carImage: gmg58,
     series: "GT America"
   },
   {
@@ -1867,7 +1888,7 @@ export const driverInfo = [
     car: "Toyota GR Supra GT4",
     classification: "GT4",
     number: "67",
-    carImage: GMG2,
+    carImage: smooge67,
     series: "GT America"
   },
   {
@@ -1880,7 +1901,7 @@ export const driverInfo = [
     car: "Callaway Corvette C7 GT3-R",
     classification: "SRO3",
     number: "70",
-    carImage: GMG2,
+    carImage: mish70,
     series: "GT America"
   },
   {
@@ -1893,7 +1914,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "71",
-    carImage: GMG2,
+    carImage: '',
     series: "GT America"
   },
   {
@@ -1906,7 +1927,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "GT4",
     number: "79",
-    carImage: GMG2,
+    carImage: renn79a,
     series: "GT America"
   },
   {
@@ -1919,7 +1940,7 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3",
     classification: "SRO3",
     number: "88",
-    carImage: GMG2,
+    carImage: zelus88a,
     series: "GT America"
   },
   {
@@ -1932,7 +1953,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "GT4",
     number: "89",
-    carImage: GMG2,
+    carImage: renn89a,
     series: "GT America"
   },
   {
@@ -1945,7 +1966,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "99",
-    carImage: GMG2,
+    carImage: rotek99,
     series: "GT America"
   },
   {
@@ -1958,7 +1979,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "120",
-    carImage: GMG2,
+    carImage: premier120a,
     series: "GT America"
   },
   {
@@ -1971,7 +1992,7 @@ export const driverInfo = [
     car: "Ford Mustang GT4",
     classification: "GT4",
     number: "124",
-    carImage: GMG2,
+    carImage: arg124,
     series: "GT America"
   },
   {
@@ -1984,7 +2005,7 @@ export const driverInfo = [
     car: "Lamborghini Huracan GT3",
     classification: "SRO3",
     number: "191",
-    carImage: GMG2,
+    carImage: zelus191,
     series: "GT America"
   },
   {
@@ -1997,7 +2018,7 @@ export const driverInfo = [
     car: "Aston Martin Vantage AMR GT4",
     classification: "SRO3",
     number: "888",
-    carImage: GMG2,
+    carImage: zelus888,
     series: "GT America"
   },
   
