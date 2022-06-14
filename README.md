@@ -5,9 +5,9 @@ Podium Assistant allows the user to select which Series is racing which filters 
 
 ## SRO Motorsports America
 
-Youtube: [GT World](https://www.youtube.com/gtworld)
-Website: [GTWCA](https://www.gt-world-challenge-america.com/)
-Instagram: [GTWCA](https://www.instagram.com/gtworldchallengeamerica/?hl=en)
+Youtube: [GT World](https://www.youtube.com/gtworld)  
+Website: [GTWCA](https://www.gt-world-challenge-america.com/)  
+Instagram: [GTWCA](https://www.instagram.com/gtworldchallengeamerica/?hl=en)  
 
 ### Disclaimer
 This app is a work in progress and not yet complete and is currently set up for basic functionality to be used on-site during races.
