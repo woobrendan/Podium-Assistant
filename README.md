@@ -3,8 +3,14 @@ Podium Assistant was created with the intention of easing post race podium activ
 
 Podium Assistant allows the user to select which Series is racing which filters out the appropriate classes and drivers to that series. From there the podium information can be collected and once all is submitted and returned with all results ready to be read by the podium announcer.
 
+## SRO Motorsports America
+
+Youtube: [GT World](https://www.youtube.com/gtworld)
+Website: [GTWCA](https://www.gt-world-challenge-america.com/)
+Instagram: [GTWCA](https://www.instagram.com/gtworldchallengeamerica/?hl=en)
+
 ### Disclaimer
-This app is a work in progress and not yet complete and is currently set up for basic functionality to be used on site during races.
+This app is a work in progress and not yet complete and is currently set up for basic functionality to be used on-site during races.
 
 Driver data right now is currently hard coded with the information, with future intention to move to a working database and the ability to add/delete/edit drivers/entries.
 
