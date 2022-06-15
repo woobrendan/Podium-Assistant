@@ -1,9 +1,10 @@
 import { driverInfo } from '../drivers'
 import DriverDetails from './DriverDetails';
 import '../Styling/competitors.scss'
+import TextField from '@mui/material/TextField';
 import {useState} from 'react';
 
-function DriverSearch(props) {
+function DriverSearch() {
   const [drivers, setDrivers] = useState(driverInfo);
   const [driverSearch, setDriverSearch] = useState('');
   
@@ -20,8 +21,17 @@ function DriverSearch(props) {
       ))
 
   return (
-    <div className="entry_cards">
-      {mappedDrivers}
+    <div className="competitors-container">
+       <TextField 
+        id="standard-basic" 
+        label="Search by driver" 
+        variant="standard" 
+        value={driverSearch}
+        onChange={e => {setDriverSearch(e.target.value)}}
+      />
+      <div className="entry_cards">
+        {mappedDrivers}
+      </div>
     </div>
   )
 }
