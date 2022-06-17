@@ -8,6 +8,7 @@ function DriverSearch() {
   const [drivers, setDrivers] = useState(driverInfo);
   const [driverSearch, setDriverSearch] = useState('');
   
+  //to do: create toggle search by options that dynamically render which search to show
   const filteredDrivers = drivers.filter(val => {
     if (!val.driver2) {
       if (driverSearch === "") {
