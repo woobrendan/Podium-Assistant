@@ -115,24 +115,6 @@ export const driverInfo = [
   {
     team: "K-PAX",
     driver1: {
-      name: 'Misha Goikhberg',
-      nationality: 'Canada',
-      rating: 'Silver'
-      },
-    driver2: {
-      name: 'Jordan Pepper',
-      nationality: 'South Africa',
-      rating: 'Gold'
-      },
-    car: "Lamborghini Huracan GT3",
-    classification: "Pro",
-    number: "1",
-    carImage: kpax1,
-    series: "GT World Challenge America"
-  },
-  {
-    team: "K-PAX",
-    driver1: {
       name: 'Michele Beretta',
       nationality: 'Italy',
       rating: 'Silver'
@@ -144,8 +126,26 @@ export const driverInfo = [
       },
     car: "Lamborghini Huracan GT3",
     classification: "Pro",
-    number: "3",
+    number: "1",
     carImage: kpax6,
+    series: "GT World Challenge America"
+  },
+  {
+    team: "K-PAX",
+    driver1: {
+      name: 'Misha Goikhberg',
+      nationality: 'Canada',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Jordan Pepper',
+      nationality: 'South Africa',
+      rating: 'Gold'
+      },
+    car: "Lamborghini Huracan GT3",
+    classification: "Pro",
+    number: "3",
+    carImage: kpax1,
     series: "GT World Challenge America"
   },
   {
@@ -228,7 +228,7 @@ export const driverInfo = [
       rating: 'Bronze'
       },
     driver2: {
-      name: 'Drew Stavely',
+      name: 'Drew Staveley',
       nationality: 'USA',
       rating: 'Silver'
       },
