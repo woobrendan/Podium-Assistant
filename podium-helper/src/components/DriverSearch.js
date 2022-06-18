@@ -14,11 +14,7 @@ function DriverSearch() {
     setOption(option);
   }
   
-  //to do: create toggle search by options that dynamically render which search to show
   const filteredDrivers = drivers.filter(val => {
-    if (!option) {
-      return val;
-    }
     switch(option){
       case 'Driver':
         if (!val.driver2) {
@@ -44,7 +40,9 @@ function DriverSearch() {
         }
         break;
       // case 'Team':
-      //   if 
+      //   if
+      default:
+        return val; 
     }
   });
 
