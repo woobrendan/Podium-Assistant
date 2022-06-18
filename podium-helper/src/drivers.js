@@ -1383,6 +1383,18 @@ export const driverInfo = [
     number: "06",
     carImage: DRS06,
     series: "TC America"
+  },{
+    team: "VGRT",
+    driver1: {
+      name: 'Ruben Iglesias',
+      nationality: 'USA',
+      rating: 'N/A'
+      },
+    car: "Honda Civic Type-R",
+    classification: "TC",
+    number: "8",
+    carImage: '',
+    series: "TC America"
   },
   {
     team: "Skip Barber Racing School",
@@ -1543,7 +1555,7 @@ export const driverInfo = [
   {
     team: "Skip Barber Racing School",
     driver1: {
-      name: 'Cater Fartuch',
+      name: 'Carter Fartuch',
       nationality: 'USA',
       rating: 'N/A'
       },
@@ -1621,7 +1633,7 @@ export const driverInfo = [
   {
     team: "MINI JCW Team",
     driver1: {
-      name: 'Christian Peocarpi',
+      name: 'Christian Perocarpi',
       nationality: 'USA',
       rating: 'N/A'
       },
