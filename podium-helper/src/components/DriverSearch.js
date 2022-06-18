@@ -20,7 +20,7 @@ function DriverSearch() {
       return val;
     }
     switch(option){
-      case 'driver':
+      case 'Driver':
         if (!val.driver2) {
           if (searchValue === "") {
             return val;
@@ -34,6 +34,13 @@ function DriverSearch() {
             || val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())){
             return val;
           }
+        }
+        break;
+      case 'Car':
+        if (searchValue === '') {
+          return val;
+        } else if (val.car.toLowerCase().includes(searchValue.toLowerCase())) {
+          return val;
         }
     }
   });
