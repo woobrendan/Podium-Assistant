@@ -107,7 +107,12 @@ import zelus88a from './images/zelus88a.jpeg';
 import renn89a from './images/renn89a.jpeg';
 import rotek99 from './images/rotek99.jpeg';
 import premier120a from './images/premier120a.jpeg';
-import zelus191 from './images/zelus191.jpeg'
+import zelus191 from './images/zelus191.jpeg';
+import SKI56 from './images/SKI56.jpeg';
+import ACP152 from './images/ACP152.jpeg';
+import random97 from './images/random97.jpeg';
+import vgrt8 from './images/vgrt8.jpeg'
+import gmg71 from './images/gmg71.jpeg';
 
 
 
@@ -1171,7 +1176,7 @@ export const driverInfo = [
     car: "BMW M4 GT4",
     classification: "Am",
     number: "152",
-    carImage: '',
+    carImage: ACP152,
     series: "Pirelli GT4 America"
   },
   {
@@ -1368,7 +1373,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "97",
-    carImage: '',
+    carImage: random97,
     series: "TC America"
   },
   {
@@ -1393,7 +1398,7 @@ export const driverInfo = [
     car: "Honda Civic Type-R",
     classification: "TC",
     number: "8",
-    carImage: '',
+    carImage: vgrt8,
     series: "TC America"
   },
   {
@@ -1874,7 +1879,7 @@ export const driverInfo = [
     car: "Ferrari 458 Italia GT3",
     classification: "SRO3",
     number: "56",
-    carImage: '',
+    carImage: SKI56,
     series: "GT America"
   },
   {
@@ -1926,7 +1931,7 @@ export const driverInfo = [
     car: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "71",
-    carImage: '',
+    carImage: gmg71,
     series: "GT America"
   },
   {
