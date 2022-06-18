@@ -563,7 +563,7 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
-    team: "Bsport Racing",
+    team: "BSport Racing",
     driver1: {
       name: 'Bryan Putt',
       nationality: 'USA',
@@ -984,7 +984,7 @@ export const driverInfo = [
       rating: 'Bronze'
       },
     driver2: {
-      name: 'Jason Lander',
+      name: 'Jaden Lander',
       nationality: 'USA',
       rating: 'Bronze'
       },
@@ -1213,7 +1213,7 @@ export const driverInfo = [
   {
     team: "CarBahn w/ Peregrine Racing",
     driver1: {
-      name: 'Mark Siegel',
+      name: 'Steve Dinan',
       nationality: 'USA',
       rating: 'Bronze'
       },
