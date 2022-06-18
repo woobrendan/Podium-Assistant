@@ -39,8 +39,13 @@ function DriverSearch() {
           return val;
         }
         break;
-      // case 'Team':
-      //   if
+      case 'Team':
+        if (!searchValue) {
+          return val;
+        } else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) {
+          return val;
+        }
+        break;
       default:
         return val; 
     }
