@@ -1896,6 +1896,19 @@ export const driverInfo = [
     series: "GT America"
   },
   {
+    team: "Dexter Racing",
+    driver1: {
+      name: 'Matthew Ibrahim',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    car: "Ginetta G56 GT4",
+    classification: "GT4",
+    number: "67",
+    carImage: '',
+    series: "GT America"
+  },
+  {
     team: "Smooge Racing",
     driver1: {
       name: 'Jose DaSilva',
