@@ -4,17 +4,18 @@ import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select } from '@mui/material';
 
 
-function toggleSearch() {
+function ToggleSearch(props) {
   const [searchOption, setSearchOption] = useState('');
 
-  const options = ['driver', 'car', 'nationality', 'team', 'rating'];
+  const options = ['Driver', 'Car', 'Nationality', 'Team', 'Rating'];
 
   const handleToggle = (event) => {
     setSearchOption(event.target.value);
+    props.getOption(event.target.value);
   }
 
   const mappedOptions = options.map(option => (
-    <MenuItem key={opion} value={option}>{option}</MenuItem>
+    <MenuItem key={option} value={option}>{option}</MenuItem>
   ))
 
   return (
@@ -46,4 +47,4 @@ function toggleSearch() {
   )
 }
 
-export default toggleSearch
+export default ToggleSearch
