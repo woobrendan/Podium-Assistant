@@ -22,13 +22,13 @@ function DriverSearch() {
     switch(option){
       case 'Driver':
         if (!val.driver2) {
-          if (searchValue === "") {
+          if (!searchValue) {
             return val;
           } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
             return val;
           }
         } else {
-          if (searchValue === "") {
+          if (!searchValue) {
             return val;
           } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())
             || val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())){
@@ -37,12 +37,14 @@ function DriverSearch() {
         }
         break;
       case 'Car':
-        if (searchValue === '') {
+        if (!searchValue) {
           return val;
         } else if (val.car.toLowerCase().includes(searchValue.toLowerCase())) {
           return val;
         }
         break;
+      // case 'Team':
+      //   if 
     }
   });
 
