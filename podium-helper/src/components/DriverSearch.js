@@ -42,6 +42,7 @@ function DriverSearch() {
         } else if (val.car.toLowerCase().includes(searchValue.toLowerCase())) {
           return val;
         }
+        break;
     }
   });
 
