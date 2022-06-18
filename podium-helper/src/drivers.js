@@ -1906,7 +1906,7 @@ export const driverInfo = [
   {
     team: "MISHUMOTORS",
     driver1: {
-      name: 'Micro Schultis',
+      name: 'Mirco Schultis',
       nationality: 'Germany',
       rating: 'Bronze'
       },
