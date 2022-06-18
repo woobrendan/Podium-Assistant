@@ -3,26 +3,38 @@ import DriverDetails from './DriverDetails';
 import '../Styling/competitors.scss'
 import TextField from '@mui/material/TextField';
 import {useState} from 'react';
+import ToggleSearch from './toggleSearch';
 
 function DriverSearch() {
   const [drivers, setDrivers] = useState(driverInfo);
-  const [driverSearch, setDriverSearch] = useState('');
+  const [searchValue, setSearchValue] = useState('');
+  const [option, setOption] = useState('');
+  
+  const getSearchOption = (option) => {
+    setOption(option);
+  }
   
   //to do: create toggle search by options that dynamically render which search to show
   const filteredDrivers = drivers.filter(val => {
-    if (!val.driver2) {
-      if (driverSearch === "") {
-        return val;
-      } else if (val.driver1.name.toLowerCase().includes(driverSearch.toLowerCase())) {
-        return val;
-      }
-    } else {
-      if (driverSearch === "") {
-        return val;
-      } else if (val.driver1.name.toLowerCase().includes(driverSearch.toLowerCase())
-        || val.driver2.name.toLowerCase().includes(driverSearch.toLowerCase())){
-        return val;
-      }
+    if (!option) {
+      return val;
+    }
+    switch(option){
+      case 'driver':
+        if (!val.driver2) {
+          if (searchValue === "") {
+            return val;
+          } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
+            return val;
+          }
+        } else {
+          if (searchValue === "") {
+            return val;
+          } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())
+            || val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())){
+            return val;
+          }
+        }
     }
   });
 
@@ -31,14 +43,16 @@ function DriverSearch() {
        <DriverDetails entry={entry} key={index}/>
       ))
 
+  const searchLabel = option ? `Search by ${option}`: "Search"
   return (
     <div className="competitors-container">
+      <ToggleSearch getOption={getSearchOption} />
        <TextField 
         id="standard-basic" 
-        label="Search by driver" 
+        label={searchLabel} 
         variant="standard" 
-        value={driverSearch}
-        onChange={e => {setDriverSearch(e.target.value)}}
+        value={searchValue}
+        onChange={e => {setSearchValue(e.target.value)}}
       />
       <div className="entry_cards">
         {mappedDrivers}
