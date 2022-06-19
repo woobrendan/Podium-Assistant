@@ -18,7 +18,7 @@ function FastLapTable(props) {
       
   return (
     <div className='result-table-container'>
-      <Typography variant="h3" gutterBottom component="div">
+      <Typography variant="h5" gutterBottom component="div">
         CrowdStrike Fast Lap
       </Typography>
       <TableContainer component={Paper}>
