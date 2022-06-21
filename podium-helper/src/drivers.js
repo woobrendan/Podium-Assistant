@@ -113,6 +113,10 @@ import ACP152 from './images/ACP152.jpeg';
 import random97 from './images/random97.jpeg';
 import vgrt8 from './images/vgrt8.jpeg'
 import gmg71 from './images/gmg71.jpeg';
+import home51 from './images/home51.jpeg';
+import krug72 from './images/krug72.jpeg';
+import renn79 from './images/renn79.jpeg';
+import renn89 from './images/renn89.jpeg';
 
 
 
@@ -996,7 +1000,7 @@ export const driverInfo = [
     car: "Toyota GR Supra GT4",
     classification: "Am",
     number: "72",
-    carImage: '',
+    carImage: krug72,
     series: "Pirelli GT4 America"
   },
   {
@@ -1014,7 +1018,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "Pro-Am",
     number: "79",
-    carImage: '',
+    carImage: renn79,
     series: "Pirelli GT4 America"
   },
   {
@@ -1086,7 +1090,7 @@ export const driverInfo = [
     car: "Mercedes-AMG GT4",
     classification: "Am",
     number: "89",
-    carImage: '',
+    carImage: renn89,
     series: "Pirelli GT4 America"
   },
   {
@@ -1321,7 +1325,7 @@ export const driverInfo = [
     car: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "51",
-    carImage: '',
+    carImage: home51,
     series: "TC America"
   },
   {
@@ -1904,8 +1908,8 @@ export const driverInfo = [
       },
     car: "Ginetta G56 GT4",
     classification: "GT4",
-    number: "67",
-    carImage: '',
+    number: "60",
+    carImage: dexter60,
     series: "GT America"
   },
   {
