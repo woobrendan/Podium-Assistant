@@ -4,6 +4,7 @@ import '../Styling/competitors.scss'
 import TextField from '@mui/material/TextField';
 import {useState} from 'react';
 import ToggleSearch from './toggleSearch';
+import BackToTopButton from './BackToTopButton';
 
 function DriverSearch() {
   const [drivers, setDrivers] = useState(driverInfo);
@@ -51,7 +52,7 @@ function DriverSearch() {
           return val;
         }
         break;
-        
+
       default:
         return val; 
     }
@@ -76,6 +77,7 @@ function DriverSearch() {
       <div className="entry_cards">
         {mappedDrivers}
       </div>
+      <BackToTopButton />
     </div>
   )
 }
