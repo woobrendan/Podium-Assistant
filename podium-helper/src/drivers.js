@@ -2046,7 +2046,7 @@ export const driverInfo = [
       rating: 'Bronze'
       },
     car: "Aston Martin Vantage AMR GT4",
-    classification: "SRO3",
+    classification: "GT4",
     number: "888",
     carImage: zelus888,
     series: "GT America"
