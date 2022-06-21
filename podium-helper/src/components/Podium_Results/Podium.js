@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import WinnerTop3 from './WinnerTop3';
 import { Button } from '@mui/material';
-import '../Styling/podium.scss'
+import '../../Styling/podium.scss'
 import FastLap from './FastLap';
 import Results from './Results';
 import Series from './Series';
