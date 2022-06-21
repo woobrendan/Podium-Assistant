@@ -7,7 +7,7 @@ import { FormControl, InputLabel, Select } from '@mui/material';
 function ToggleSearch(props) {
   const [searchOption, setSearchOption] = useState('');
 
-  const options = ['Driver', 'Car', 'Nationality', 'Team', 'Rating'];
+  const options = ['All', 'Driver', 'Car', 'Nationality', 'Team', 'Rating'];
 
   const handleToggle = (event) => {
     setSearchOption(event.target.value);
