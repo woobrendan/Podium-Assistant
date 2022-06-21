@@ -62,8 +62,8 @@ function Podium(props) {
     }
   }
   const mappedDrivers = driverInfo
-    .filter(entry => entry.series === props.series)
-    .filter(entry => entry.classification === winners.class)
+    .filter(entry => entry.series === props.series 
+      && entry.classification === winners.class)
     .map(entry => (numOfDriverMenuItem(entry)))
 
   return (
