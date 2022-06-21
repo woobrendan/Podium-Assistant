@@ -1,4 +1,7 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react';
+import ArrowCircleUpTwoToneIcon from '@mui/icons-material/ArrowCircleUpTwoTone';
+import IconButton from '@material-ui/core/IconButton';
+import '../Styling/toTopButton.scss'
 
 
 function BackToTopButton() {
@@ -22,16 +25,11 @@ function BackToTopButton() {
   }
   return (
     <div className="backToTopButton">
-      {backToTopButton && (
-        <button style={{
-          position: "fixed",
-          bottom: "50px",
-          right: "50px",
-          height: "50px",
-          width: "50px",
-          fontSize: "50px"
-        }}>^</button>
-      )}
+      {backToTopButton &&
+      <IconButton onClick={scrollUp} id="To-Top-Button">
+        <ArrowCircleUpTwoToneIcon  />
+      </IconButton>
+      }
     </div>
   )
 }
