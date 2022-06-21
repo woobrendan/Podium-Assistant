@@ -24,12 +24,13 @@ function Series(props) {
       autoComplete="off"
     >
       <FormControl sx={{ minWidth: 300 }}>
-        <InputLabel htmlFor="exampleFormControlSelect2">
+        <InputLabel htmlFor="Series">
           Series
         </InputLabel>
         <Select
           className="form-control"
           name="series-name"
+          label="Series"
           value={seriesName}
           onChange={handleChange}
         >
