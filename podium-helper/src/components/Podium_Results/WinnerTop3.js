@@ -4,7 +4,7 @@ import Card from '@mui/material/Card';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select, Button } from '@mui/material';
 import { driverInfo } from '../../drivers';
-import '../Styling/winnerTop3.scss';
+import '../../Styling/winnerTop3.scss';
 
 const classOptions = {
   gtwca: ['Pro', 'Pro-Am', 'Am'],
