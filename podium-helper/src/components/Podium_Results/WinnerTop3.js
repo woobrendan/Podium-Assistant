@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select, Button } from '@mui/material';
-import { driverInfo } from '../drivers';
+import { driverInfo } from '../../drivers';
 import '../Styling/winnerTop3.scss';
 
 const classOptions = {
