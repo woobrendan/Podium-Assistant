@@ -8,7 +8,7 @@ import '../Styling/winnerTop3.scss';
 
 const classOptions = {
   gtwca: ['Pro', 'Pro-Am', 'Am'],
-  gta: ['SRO3', 'GT4', 'Masters'],
+  gta: ['SRO3', 'GT4', 'Masters', 'GT2'],
   pgt4a: ['Silver', 'Pro-Am', 'Am'],
   tca: ['TCX', 'TC', 'TCA']
 }
