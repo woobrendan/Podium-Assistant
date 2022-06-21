@@ -16,6 +16,9 @@ function DriverSearch() {
   
   const filteredDrivers = drivers.filter(val => {
     switch(option){
+      case 'All':
+        return val;
+
       case 'Driver':
         if (!val.driver2) {
           if (!searchValue) {
@@ -32,6 +35,7 @@ function DriverSearch() {
           }
         }
         break;
+
       case 'Car':
         if (!searchValue) {
           return val;
@@ -39,6 +43,7 @@ function DriverSearch() {
           return val;
         }
         break;
+
       case 'Team':
         if (!searchValue) {
           return val;
@@ -46,6 +51,7 @@ function DriverSearch() {
           return val;
         }
         break;
+        
       default:
         return val; 
     }
