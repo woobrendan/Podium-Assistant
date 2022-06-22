@@ -56,4 +56,3 @@ module.exports = (db) => {
   return router;
 }
 
-//driver + vehicle info
