@@ -20,5 +20,20 @@ module.exports = (db) => {
       .catch(err => console.log(err.message))
   });
 
+  router.get('/:id', (req, res) => {
+    const queryString = `SELECT vehicles.*, teams.name AS team, series.name AS series 
+    FROM vehicles 
+    JOIN teams ON teams.id = team_id
+    JOIN series ON series.id = series_id
+    WHERE vehicles.id=$1;`
+    return db
+      .query(queryString, [req.params.id])
+      .then(response => {
+        return res.status(200)
+          .json(response.rows[0]);
+      })
+      .catch(err => console.log(err.message));
+  })
+
   return router;
 }
