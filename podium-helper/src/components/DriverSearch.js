@@ -53,6 +53,23 @@ function DriverSearch() {
         }
         break;
 
+      case 'Nationality':
+        if (!val.driver2) {
+          if (!searchValue) {
+            return val;
+          } else if (val.driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) {
+            return val;
+          }
+        } else {
+          if (!searchValue) {
+            return val;
+          } else if (val.driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())
+            || val.driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())){
+            return val;
+          }
+        }
+        break;
+
       default:
         return val; 
     }
