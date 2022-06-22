@@ -70,6 +70,23 @@ function DriverSearch() {
         }
         break;
 
+        case 'Rating':
+        if (!val.driver2) {
+          if (!searchValue) {
+            return val;
+          } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) {
+            return val;
+          }
+        } else {
+          if (!searchValue) {
+            return val;
+          } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())
+            || val.driver2.rating.toLowerCase().includes(searchValue.toLowerCase())){
+            return val;
+          }
+        }
+        break;
+
       default:
         return val; 
     }
