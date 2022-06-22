@@ -4,12 +4,7 @@ const router = express.Router();
 module.exports = (db) => {
   //route /api/teams
   router.get('/', (req, res) => {
-    const queryString = `
-    SELECT drivers.id as id, drivers.name AS driver, rating, nationality, teams.name AS team, vehicles.* AS vehicle 
-    FROM drivers
-    JOIN teams ON teams.id = team_id
-    JOIN vehicles ON vehicles.id = vehicle_id;
-    `;
+    const queryString = `SELECT * FROM teams;`;
     return db
       .query(queryString)
       .then(response => {
@@ -17,6 +12,6 @@ module.exports = (db) => {
           .json(response.rows)
       })
       .catch(err => console.log(err.message))
-  })
+  });
   return router;
 }
