@@ -1,0 +1,24 @@
+const express = require('express');
+const router = express.Router();
+
+module.exports = (db) => {
+  //route /api/vehicles
+  router.get('/', (req, res) => {
+    const queryString = `
+    SELECT vehicles.*, teams.name AS team, series.name AS series 
+    FROM vehicles
+    JOIN teams ON teams.id = team_id
+    JOIN series ON series.id = series_id
+    ORDER BY vehicles.id;
+    `;
+    return db
+      .query(queryString)
+      .then(response => {
+        return res.status(200)
+          .json(response.rows)
+      })
+      .catch(err => console.log(err.message))
+  });
+
+  return router;
+}
