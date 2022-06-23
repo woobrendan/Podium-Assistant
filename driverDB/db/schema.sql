@@ -65,7 +65,7 @@ CREATE TABLE fastlaps (
 
 CREATE TABLE results (
   id SERIAL PRIMARY KEY NOT NULL,
-  event INTEGER REFERENCES events(id) NOT NULL,
+  event_id INTEGER REFERENCES events(id) NOT NULL,
   series_id INTEGER REFERENCES series(id) ON DELETE CASCADE,
   podium_one INTEGER REFERENCES podiums(id),
   podium_two INTEGER REFERENCES podiums(id),
