@@ -81,3 +81,9 @@ INSERT INTO podiums (class, first_place, second_place, third_place) VALUES
 (1, 1, 18, 2),
 (2, 8, 11, 13),
 (3, 9);
+
+INSERT INTO fastlaps (driver_id, laptime) VALUES
+(8, '1:44.150');
+
+INSERT INTO results (event_id, series_id, podium_one, podium_two, podium_three, fastlap_id) VALUES
+(4, 1, 1, 2, 3, 1);
