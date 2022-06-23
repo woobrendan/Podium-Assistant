@@ -40,3 +40,13 @@ CREATE TABLE podiums (
   second_place INTEGER REFERENCES drivers(id),
   third_place INTEGER REFERENCES drivesr(id)
 );
+
+CREATE TABLE results (
+  id SERIAL PRIMARY KEY NOT NULL,
+  event INTEGER REFERENCES events(id) NOT NULL,
+  series_id INTEGER REFERENCES series(id) ON DELETE CASCADE
+  podium1 INTEGER REFERENCES podiums(id),
+  podium2 INTEGER REFERENCES podiums(id),
+  podium3 INTEGER REFERENCES podiums(id),
+  fastlap_id INTEGER REFERENCES fastlaps(id)
+);
