@@ -32,3 +32,11 @@ CREATE TABLE drivers (
   team_id INTEGER REFERENCES teams(id) ON DELETE CASCADE,
   vehicle_id INTEGER REFERENCES vehicles(id) ON DELETE CASCADE
 );
+
+CREATE TABLE podiums (
+  id SERIAL PRIMARY KEY NOT NULL,
+  class VARCHAR(255) NOT NULL,
+  first_place INTEGER REFERENCES drivers(id),
+  second_place INTEGER REFERENCES drivers(id),
+  third_place INTEGER REFERENCES drivesr(id)
+);
