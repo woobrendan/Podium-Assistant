@@ -4,6 +4,17 @@ INSERT INTO series (name) VALUES
 ('GT America'),
 ('TC America');
 
+INSERT INTO events (name, date) VALUES 
+('Grand Prix of St. Petersburg', 'February 24-26, 2022'),
+('Sonoma Raceway', 'April 14-17, 2022'),
+('NOLA Motorsports Park', 'May 19-22, 2022'),
+('VIRginia International Raceway', 'June 17-19, 2022'),
+('Watkins Glen', 'July 22-24, 2022'),
+('Music City Grand Prix', 'August 5-7, 2022'),
+('Road America', 'August 19-21, 2022'),
+('Sebring International Raceway', 'September 23-25, 2022'),
+('Indianapolis Motor Speedway', 'October 7-9, 2022');
+
 INSERT INTO teams (name, country) VALUES
 ('K-PAX', 'USA'),
 ('Crowdstrike Racing with Riley Motorsports', 'USA'),
