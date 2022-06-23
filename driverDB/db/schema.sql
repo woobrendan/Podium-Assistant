@@ -1,3 +1,6 @@
+DROP TABLE IF EXISTS results CASCADE;
+DROP TABLE IF EXISTS fastlaps CASCADE;
+DROP TABLE IF EXISTS podiums CASCADE;
 DROP TABLE IF EXISTS drivers CASCADE;
 DROP TABLE IF EXISTS vehicles CASCADE;
 DROP TABLE IF EXISTS teams CASCADE;
@@ -39,6 +42,12 @@ CREATE TABLE podiums (
   first_place INTEGER REFERENCES drivers(id),
   second_place INTEGER REFERENCES drivers(id),
   third_place INTEGER REFERENCES drivesr(id)
+);
+
+CREATE TABLE fastlaps (
+  id SERIAL PRIMARY KEY NOT NULL,
+  driver_id INTEGER REFERENCES drivers(id) NOT NULL,
+  laptime VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE results (
