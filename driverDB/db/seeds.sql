@@ -77,10 +77,10 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Ziad Ghandour', 'Bronze', 'USA', 5, 6),
 ('Giacomo Altoe', 'Gold', 'Italy', 5, 6);
 
-INSERT INTO podiums (class, first_place, second_place, third_place) VALUES
+INSERT INTO podiums (class_id, first_place, second_place, third_place) VALUES
 (1, 1, 18, 2),
 (2, 8, 11, 13),
-(3, 9);
+(3, 9, NULL, NULL);
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
 (8, '1:44.150');
