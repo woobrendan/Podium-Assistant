@@ -51,10 +51,10 @@ CREATE TABLE drivers (
 
 CREATE TABLE podiums (
   id SERIAL PRIMARY KEY NOT NULL,
-  class VARCHAR(255) NOT NULL,
-  first_place INTEGER REFERENCES drivers(id),
-  second_place INTEGER REFERENCES drivers(id),
-  third_place INTEGER REFERENCES drivers(id)
+  class_id INTEGER REFERENCES class(id),
+  first_place INTEGER REFERENCES vehicles(id),
+  second_place INTEGER REFERENCES vehicles(id),
+  third_place INTEGER REFERENCES vehicles(id)
 );
 
 CREATE TABLE fastlaps (
