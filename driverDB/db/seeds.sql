@@ -77,13 +77,15 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Ziad Ghandour', 'Bronze', 'USA', 5, 6),
 ('Giacomo Altoe', 'Gold', 'Italy', 5, 6);
 
-INSERT INTO podiums (class_id, first_place, second_place, third_place) VALUES
-(1, 1, 18, 2),
-(2, 8, 11, 13),
-(3, 9, NULL, NULL);
-
 INSERT INTO fastlaps (driver_id, laptime) VALUES
 (8, '1:44.150');
 
-INSERT INTO results (event_id, series_id, podium_one, podium_two, podium_three, fastlap_id) VALUES
-(4, 1, 1, 2, 3, 1);
+INSERT INTO results (event_id, series_id, fastlap_id) VALUES
+(4, 1, 1);
+
+INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES
+(1, 1, 18, 2, 1),
+(2, 8, 11, 13, 1),
+(3, 9, NULL, NULL, 1);
+
+
