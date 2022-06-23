@@ -4,6 +4,15 @@ INSERT INTO series (name) VALUES
 ('GT America'),
 ('TC America');
 
+INSERT INTO class (name) VALUES
+('Pro'),
+('Pro-Am'),
+('Am'),
+('Silver'),
+('TCX'),
+('TC'),
+('TCA');
+
 INSERT INTO events (name, date) VALUES 
 ('Grand Prix of St. Petersburg', 'February 24-26, 2022'),
 ('Sonoma Raceway', 'April 14-17, 2022'),
@@ -67,3 +76,6 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Bryan Sellers', 'Gold', 'USA', 4, 5),
 ('Ziad Ghandour', 'Bronze', 'USA', 5, 6),
 ('Giacomo Altoe', 'Gold', 'Italy', 5, 6);
+
+INSERT INTO podiums (class, first_place, second_place, third_place) VALUES
+('Pro',)
