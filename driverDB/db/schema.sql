@@ -4,12 +4,19 @@ DROP TABLE IF EXISTS podiums CASCADE;
 DROP TABLE IF EXISTS drivers CASCADE;
 DROP TABLE IF EXISTS vehicles CASCADE;
 DROP TABLE IF EXISTS teams CASCADE;
+DROP TABLE IF EXISTS events CASCADE;
 DROP TABLE IF EXISTS series CASCADE;
 
 
 CREATE TABLE series (
   id SERIAL PRIMARY KEY NOT NULL,
   name VARCHAR(255)
+);
+
+CREATE TABLE events (
+  id SERIAL PRIMARY KEY NOT NULL,
+  name VARCHAR(255) NOT NULL,
+  date VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE teams  (
@@ -41,7 +48,7 @@ CREATE TABLE podiums (
   class VARCHAR(255) NOT NULL,
   first_place INTEGER REFERENCES drivers(id),
   second_place INTEGER REFERENCES drivers(id),
-  third_place INTEGER REFERENCES drivesr(id)
+  third_place INTEGER REFERENCES drivers(id)
 );
 
 CREATE TABLE fastlaps (
@@ -53,9 +60,9 @@ CREATE TABLE fastlaps (
 CREATE TABLE results (
   id SERIAL PRIMARY KEY NOT NULL,
   event INTEGER REFERENCES events(id) NOT NULL,
-  series_id INTEGER REFERENCES series(id) ON DELETE CASCADE
-  podium1 INTEGER REFERENCES podiums(id),
-  podium2 INTEGER REFERENCES podiums(id),
-  podium3 INTEGER REFERENCES podiums(id),
+  series_id INTEGER REFERENCES series(id) ON DELETE CASCADE,
+  podium_one INTEGER REFERENCES podiums(id),
+  podium_two INTEGER REFERENCES podiums(id),
+  podium_there INTEGER REFERENCES podiums(id),
   fastlap_id INTEGER REFERENCES fastlaps(id)
 );
