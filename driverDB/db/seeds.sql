@@ -78,4 +78,6 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Giacomo Altoe', 'Gold', 'Italy', 5, 6);
 
 INSERT INTO podiums (class, first_place, second_place, third_place) VALUES
-('Pro',)
+(1, 1, 18, 2),
+(2, 8, 11, 13),
+(3, 9);
