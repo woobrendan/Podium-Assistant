@@ -89,7 +89,19 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Charlie Luck', 'Bronze', 'USA', 10, 12),
 ('Jan Heylen', 'Gold', 'Belgium', 10, 12),
 ('Jean-Claude Saada', 'Bronze', 'USA', 11, 13),
-('Conrad Grunewald', 'Bronze', 'USA', 11, 13);
+('Conrad Grunewald', 'Bronze', 'USA', 11, 13),
+('David Askew', 'Bronze', 'USA', 4, 14),
+('Dirk Muller', 'Platinum', 'Germany', 4, 14),
+('Jason Harward', 'Bronze', 'USA', 12, 15),
+('Madison Snow', 'Silver', 'USA', 12, 15),
+('Jeff Burton', 'Bronze', 'USA', 13, 16),
+('Corey Lewis', 'Silver', 'USA', 13, 16),
+('Ashton Harrison', 'Bronze', 'USA', 13, 17),
+('Mario Farnbacher', 'Gold', 'Gemany', 13, 17),
+('Chandler Hull', 'Bronze', 'USA', 14, 18),
+('Bill Auberlen', 'Gold', 'USA', 14, 18),
+('Michael Dinan', 'Silver', 'USA', 15, 19),
+('Robby Foley', 'Silver', 'USA', 15, 19);
 
 
 
