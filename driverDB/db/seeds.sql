@@ -32,14 +32,14 @@ INSERT INTO teams (name, country) VALUES
 ('TR3 Racing', 'USA'),
 ('Ian Lacy Racing', 'USA'),
 ('Triarsi Competizione', 'USA'),
-('ST Racing', 'Canada');
+('ST Racing', 'Canada'),
 ('RealTime Racing', 'USA'),
 ('Wright Motorsports', 'USA'),
 ('AF CORSE', 'USA'),
 ('Zelus Motorsports', 'USA'),
 ('Racers Edge Motorsports', 'USA'),
 ('BimmerWorld', 'USA'),
-('Turner Motorsport', 'USA'),
+('Turner Motorsport', 'USA');
 
 INSERT INTO vehicles (car,  number, classification, team_id, series_id)
 VALUES
@@ -52,7 +52,7 @@ VALUES
 ('Aston Martin Vantage AMR GT3', '12', 'Pro-Am', 6, 1),
 ('Ferrari 488 GT3', '13', 'Pro-Am', 7, 1),
 ('Ferrari 488 GT3', '23', 'Am', 7, 1),
-('BMW M4 GT3', '38', 'Pro', 15, 1)
+('BMW M4 GT3', '38', 'Pro', 15, 1),
 ('Acura NSX GT3', '43', 'Pro-Am', 8, 1),
 ('Porsche 911 GT3-R (991.ii)', '45', 'Pro-Am', 9, 1),
 ('Ferrari 488 GT3', '61', 'Am', 10, 1),
@@ -61,7 +61,7 @@ VALUES
 ('Lamborghini Huracan GT3', '91', 'Pro-Am', 11, 1),
 ('Acura NSX GT3', '93', 'Pro-Am', 12, 1),
 ('BMW M4 GT3', '94', 'Pro-Am', 13, 1),
-('BMW M4 GT3', '96', 'Pro', 14, 1),
+('BMW M4 GT3', '96', 'Pro', 14, 1);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -75,7 +75,23 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Scott Smithson', 'Bronze', 'USA', 4, 5),
 ('Bryan Sellers', 'Gold', 'USA', 4, 5),
 ('Ziad Ghandour', 'Bronze', 'USA', 5, 6),
-('Giacomo Altoe', 'Gold', 'Italy', 5, 6);
+('Giacomo Altoe', 'Gold', 'Italy', 5, 6),
+('Frank Gannett', 'Bronze', 'USA', 6, 7),
+('Drew Staveley', 'Silver', 'USA', 6, 7),
+('Justin Wetherill', 'Bronze', 'USA', 7, 8),
+('Ryan Dalziel', 'Gold', 'Scotland', 7, 8),
+('Charlie Scardina', 'Bronze', 'USA', 7, 9),
+('Onofrio Triasi', 'Bronze', 'USA', 7, 9),
+('Samantha Tan', 'Bronze', 'Canada', 8, 10),
+('Nick Wittmer', 'Silver', 'Canada', 8, 10),
+('Erin Vogel', 'Bronze', 'USA', 9, 11),
+('Michael Cooper', 'Gold', 'USA', 9, 11),
+('Charlie Luck', 'Bronze', 'USA', 10, 12),
+('Jan Heylen', 'Gold', 'Belgium', 10, 12),
+('Jean-Claude Saada', 'Bronze', 'USA', 11, 13),
+('Conrad Grunewald', 'Bronze', 'USA', 11, 13);
+
+
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
 (8, '1:44.150');
