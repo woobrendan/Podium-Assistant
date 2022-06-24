@@ -91,8 +91,14 @@ VALUES
 ('Acura NSX GT3', '93', 2, 12, 1),
 ('BMW M4 GT3', '94', 2, 13, 1),
 ('BMW M4 GT3', '96', 1, 14, 1),
-('Aston Martin Vantage AMR GT4', '2', 2, 14, 2),
-('Porsche 718 Cayman GT4 RS CS', '7', 3, 14, 2);
+('Aston Martin Vantage AMR GT4', '2', 2, 16, 2),
+('Porsche 718 Cayman GT4 RS CS', '7', 3, 17, 2),
+('Aston Martin Vantage AMR GT4', '8', 2, 18, 2),
+('BMW M4 GT4', '10', 2, 19, 2),
+('BMW M4 GT4', '11', 2, 19, 2),
+('Aston Martin Vantage AMR GT4', '15', 2, 20, 2),
+('Toyota GR Supra GT4', '016', 2, 21, 2),
+('Porsche 718 Cayman GT4 RS CS', '17', 2, 22, 2),
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
