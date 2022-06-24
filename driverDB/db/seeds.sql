@@ -53,7 +53,19 @@ INSERT INTO teams (name, country) VALUES
 ('Capstone Motorsports', 'USA'),
 ('Conquest Racing', 'USA'),
 ('BimmerWorld', 'USA'),
-('Cameron Racing', 'USA');
+('Cameron Racing', 'USA'),
+('Team Saleen', 'USA'),
+('Chouest Povoledo Racing', 'USA'),
+('AutoTechnic Racing', 'USA'),
+('Accerlating Performance', 'USA'),
+('Smooge Racing', 'USA'),
+('KRUGSPEED', 'USA'),
+('RENNtech Motorsports', 'USA'),
+('Rooster Hall Racing', 'USA'),
+('Random Vandal Racing', 'USA'),
+('Dexter Racing', 'USA'),
+('Premier Racing', 'USA'),
+('ARG/Rotek Racing', 'USA');
 
 
 INSERT INTO vehicles (car,  number, classification, team_id, series_id)
