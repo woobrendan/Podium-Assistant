@@ -32,6 +32,7 @@ INSERT INTO teams (name, country) VALUES
 ('TR3 Racing', 'USA'),
 ('Ian Lacy Racing', 'USA'),
 ('Triarsi Competizione', 'USA'),
+('ST Racing', 'Canada');
 ('RealTime Racing', 'USA'),
 ('Wright Motorsports', 'USA'),
 ('AF CORSE', 'USA'),
@@ -39,7 +40,6 @@ INSERT INTO teams (name, country) VALUES
 ('Racers Edge Motorsports', 'USA'),
 ('BimmerWorld', 'USA'),
 ('Turner Motorsport', 'USA'),
-('ST Racing', 'Canada');
 
 INSERT INTO vehicles (car,  number, classification, team_id, series_id)
 VALUES
@@ -52,6 +52,7 @@ VALUES
 ('Aston Martin Vantage AMR GT3', '12', 'Pro-Am', 6, 1),
 ('Ferrari 488 GT3', '13', 'Pro-Am', 7, 1),
 ('Ferrari 488 GT3', '23', 'Am', 7, 1),
+('BMW M4 GT3', '38', 'Pro', 15, 1)
 ('Acura NSX GT3', '43', 'Pro-Am', 8, 1),
 ('Porsche 911 GT3-R (991.ii)', '45', 'Pro-Am', 9, 1),
 ('Ferrari 488 GT3', '61', 'Am', 10, 1),
@@ -61,7 +62,6 @@ VALUES
 ('Acura NSX GT3', '93', 'Pro-Am', 12, 1),
 ('BMW M4 GT3', '94', 'Pro-Am', 13, 1),
 ('BMW M4 GT3', '96', 'Pro', 14, 1),
-('BMW M4 GT3', '28', 'Pro', 15, 1);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
