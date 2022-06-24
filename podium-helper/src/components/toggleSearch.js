@@ -35,6 +35,7 @@ function ToggleSearch(props) {
             <Select
               className="form-control"
               name="search-by"
+              label="Search Options"
               value={searchOption}
               onChange={handleToggle}
             >
