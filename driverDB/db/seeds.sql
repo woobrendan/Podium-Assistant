@@ -39,7 +39,22 @@ INSERT INTO teams (name, country) VALUES
 ('Zelus Motorsports', 'USA'),
 ('Racers Edge Motorsports', 'USA'),
 ('BimmerWorld', 'USA'),
-('Turner Motorsport', 'USA');
+('Turner Motorsport', 'USA'),
+('GMG Racing', 'USA'),
+('NOLASPORT', 'USA'),
+('Flying Lizard Motorsportrs', 'USA'),
+('Fast Track Racing', 'USA'),
+('BSport Racing', 'USA'),
+('Hattori Motorsports', 'USA'),
+('TRG', 'USA'),
+('RS1', 'USA'),
+('Carrus Callas Raceteam', 'USA'),
+('Heart of Racing Team', 'USA'),
+('Capstone Motorsports', 'USA'),
+('Conquest Racing', 'USA'),
+('BimmerWorld', 'USA'),
+('Cameron Racing', 'USA');
+
 
 INSERT INTO vehicles (car,  number, classification, team_id, series_id)
 VALUES
