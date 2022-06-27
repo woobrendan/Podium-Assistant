@@ -2,7 +2,10 @@ require("dotenv").config();
 const PORT = process.env.PORT || 8080;
 const express = require('express');
 const app = express();
+const cors = require("cors");
+
 app.use(express.static('public'));
+app.use(cors());
 
 const pool = require('./lib/db');
 
