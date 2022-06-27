@@ -3,9 +3,11 @@ const PORT = process.env.PORT || 8080;
 const express = require('express');
 const app = express();
 const cors = require("cors");
+const morgan = require("morgan");
 
 app.use(express.static('public'));
 app.use(cors());
+app.use(morgan("dev"));
 
 const pool = require('./lib/db');
 
