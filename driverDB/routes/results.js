@@ -13,12 +13,13 @@ module.exports = (db) => {
     // JOIN class ON class_id = class.id
     // WHERE results.id = 1
     // ;`;
-    `SELECT results.id AS result_id, events.name AS event, series.name AS series, podiums.*
+    `SELECT results.id AS result_id, events.name AS event, series.name AS series, class.name AS class, podiums.*
     FROM results
     JOIN events ON events.id = event_id
     JOIN series ON series.id = series_id
     JOIN podiums ON results.id = result_id
     JOIN drivers ON first_place = drivers.id
+    JOIN class ON class_id = class.id
    
     ;`;
     return db
