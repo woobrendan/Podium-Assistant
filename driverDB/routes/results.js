@@ -18,7 +18,8 @@ module.exports = (db) => {
     JOIN events ON events.id = event_id
     JOIN series ON series.id = series_id
     JOIN podiums ON results.id = result_id
-    WHERE results.id = 1
+    JOIN drivers ON first_place = drivers.id
+   
     ;`;
     return db
       .query(queryString)
