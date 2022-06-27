@@ -19,6 +19,18 @@ function Results() {
       .catch((err) => console.log("Error:", err));
   }, [])
 
+  vehicles.map((vehicle) => {
+    for (const driver of drivers) {
+      if (vehicle.id === driver.vehicle_id) {
+        if (!vehicle.driver1) {
+          vehicle.driver1 = driver
+        } else {
+          vehicle.driver2 = driver
+        }
+      }
+    }
+  });
+
   const entryResults = resultHistory.map((result) => {
     for (const vehicle of vehicles) {
       if (result.first_place === vehicle.id) {
