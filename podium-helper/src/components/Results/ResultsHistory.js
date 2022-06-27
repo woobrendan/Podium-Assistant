@@ -19,9 +19,34 @@ function Results() {
       .catch((err) => console.log("Error:", err));
   }, [])
 
+  const entryResults = resultHistory.map((result) => {
+    for (const vehicle of vehicles) {
+      if (result.first_place === vehicle.id) {
+        result.first_place = vehicle
+      }
+      if (result.second_place && result.second_place === vehicle.id) {
+        result.second_place = vehicle
+      }
+      if (result.third_place && result.third_place === vehicle.id) {
+        result.third_place = vehicle
+      }
+    }
+    return result;
+  })
+  const allResults = entryResults.map((result) => (
+    <div key={result.id}>
+      <h1>{result.event}</h1>
+      <h2>{result.series}</h2>
+      <h3>{result.class}</h3>
+      <p>{result.first_place.vehicle}</p>
+      <p>{result.second_place && result.second_place.vehicle}</p>
+      <p>{result.third_place && result.third_place.vehicle}</p>
+    </div>
+  ))
+
   return (
     <div className="result-container">
-      <span>Hello World</span>
+      {allResults}
     </div>
   )
 }
