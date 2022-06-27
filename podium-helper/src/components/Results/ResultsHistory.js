@@ -6,10 +6,12 @@ function Results() {
   const [resultHistory, setResultHistory] = useState([]);
 
   useEffect(() => {
-    axios
-      .get(`http://localhost:8080/api/results`)
-      .then((res) => {
-        setResultHistory(res.data);
+    const promise1 = axios.get(`http://localhost:8080/api/results`);
+    const promise2 = axios.get(`http://localhost:8080/api/drivers`);
+    Promise.all([promise1, promise2])
+      .then((all) => {
+        setResultHistory(all[0].data);
+        setDrivers(all[1].data);
       })
       .catch((err) => console.log("Error:", err));
   }, [])
