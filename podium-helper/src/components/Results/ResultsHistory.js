@@ -4,14 +4,17 @@ import axios from 'axios';
 function Results() {
   const [drivers, setDrivers] = useState([]);
   const [resultHistory, setResultHistory] = useState([]);
+  const [vehicles, setVehicles] = useState([])
 
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:8080/api/results`);
     const promise2 = axios.get(`http://localhost:8080/api/drivers`);
-    Promise.all([promise1, promise2])
+    const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
+    Promise.all([promise1, promise2, promise3])
       .then((all) => {
         setResultHistory(all[0].data);
         setDrivers(all[1].data);
+        setVehicles(all[2].data)
       })
       .catch((err) => console.log("Error:", err));
   }, [])
