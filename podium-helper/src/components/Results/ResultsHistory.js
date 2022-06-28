@@ -62,11 +62,9 @@ function Results() {
     return result;
   });
 
-  //group the results togethers, left with array of obj with pro, p/a, am together
-  groupedResults(entryResults)
   const allResults = entryResults.map((result) => (
     <div key={result.id}>
-      <ResultTable results={resultHistory}/>
+      <ResultTable results={result}/>
     </div>
   ))
 
