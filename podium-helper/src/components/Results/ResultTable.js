@@ -6,6 +6,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
 
 const result = {
   result1: {
@@ -78,6 +79,9 @@ function ResultTable(props) {
   }
   return (
     <div>
+      <Typography variant="h5" gutterBottom component="div">
+        {podium.event} - Results - {podium.class}
+      </Typography>
        <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
           <TableHead>
