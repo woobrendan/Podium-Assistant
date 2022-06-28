@@ -24,7 +24,8 @@ const result = {
     },
     second_place:{},
     third_place: {}
-  }
+  },
+  result2: {}
 }
 
 function createDataTwoDriver(place, number, driver1, driver2, team, car) {
@@ -37,36 +38,40 @@ function createDataSingleDriver(place, number, driver1, team, car) {
 
 function ResultTable(props) {
 
-  const podium = props.result
+  const podium = props.results;
+  const first = podium.first_place;
+  const sceond = podium.second_place;
+  const third = podium.third_place;
+
   const checkPodium = (podium) => {
-    if(!podium.first.driver2) {
+    if(!podium.first_place.driver2) {
       if (!podium.third && podium.second) {
         return [
-          createDataSingleDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.team, podium.first.car),
-          createDataSingleDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.team, podium.second.car)
+          createDataSingleDriver('First Place', podium.first_place.number, podium.first_place.driver1.name, podium.first_place.team, podium.first_place.vehicle),
+          createDataSingleDriver('Second Place', podium.second_place.number, podium.second_place.driver1.name, podium.second_place.team, podium.second_place.vehicle)
         ]
-      } else if (!podium.second) {
-          return [createDataSingleDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.team, podium.first.car)]
+      } else if (!podium.second_place) {
+          return [createDataSingleDriver('First Place', podium.first_place.number, podium.first_place.driver1.name, podium.first_place.team, podium.first_place.vehicle)]
       } else {
         return [
-          createDataSingleDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.team, podium.first.car),
-          createDataSingleDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.team, podium.second.car),
-          createDataSingleDriver('Third Place', podium.third.number, podium.third.driver1.name, podium.third.team, podium.third.car)
+          createDataSingleDriver('First Place', podium.first_place.number, podium.first_place.driver1.name, podium.first_place.team, podium.first_place.vehicle),
+          createDataSingleDriver('Second Place', podium.second_place.number, podium.second_place.driver1.name, podium.second_place.team, podium.second_place.vehicle),
+          createDataSingleDriver('Third Place', podium.third_place.number, podium.third_place.driver1.name, podium.third_place.team, podium.third_place.vehicle)
         ]
       }
     } else {
-      if (!podium.third && podium.second) {
+      if (!podium.third_place && podium.second_place) {
         return [
-          createDataTwoDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.team, podium.first.car),
-          createDataTwoDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.team, podium.second.car)
+          createDataTwoDriver('First Place', podium.first_place.number, podium.first_place.driver1.name, podium.first_place.driver2.name, podium.first_place.team, podium.first_place.vehicle),
+          createDataTwoDriver('Second Place', podium.second_place.number, podium.second_place.driver1.name, podium.second_place.driver2.name, podium.second_place.team, podium.second_place.vehicle)
         ]
-      } else if (!podium.second) {
-          return [createDataTwoDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.team, podium.first.car)]
+      } else if (!podium.second_place) {
+          return [createDataTwoDriver('First Place', podium.first_place.number, podium.first_place.driver1.name, podium.first_place.driver2.name, podium.first_place.team, podium.first_place.vehicle)]
       } else {
         return [
-          createDataTwoDriver('First Place', podium.first.number, podium.first.driver1.name, podium.first.driver2.name, podium.first.team, podium.first.car),
-          createDataTwoDriver('Second Place', podium.second.number, podium.second.driver1.name, podium.second.driver2.name, podium.second.team, podium.second.car),
-          createDataTwoDriver('Third Place', podium.third.number, podium.third.driver1.name, podium.third.driver2.name, podium.third.team, podium.third.car)
+          createDataTwoDriver('First Place', podium.first_place.number, podium.first_place.driver1.name, podium.first_place.driver2.name, podium.first_place.team, podium.first_place.vehicle),
+          createDataTwoDriver('Second Place', podium.second_place.number, podium.second_place.driver1.name, podium.second_place.driver2.name, podium.second_place.team, podium.second_place.vehicle),
+          createDataTwoDriver('Third Place', podium.third_place.number, podium.third_place.driver1.name, podium.third_place.driver2.name,  podium.third_place.team, podium.third_place.vehicle)
         ]
       }
     }
@@ -80,13 +85,13 @@ function ResultTable(props) {
               <TableCell>Place</TableCell>
               <TableCell align="right">Car #</TableCell>
               <TableCell align="right">Driver 1</TableCell>
-              {podium.first.driver2 && <TableCell align="right">Driver 2</TableCell>}
+              {podium.first_place.driver2 && <TableCell align="right">Driver 2</TableCell>}
               <TableCell align="right">Team</TableCell>
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
-            {props.results.map((row) => (
+            {checkPodium(podium).map((row) => (
               <TableRow
                 key={row.number}
                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
