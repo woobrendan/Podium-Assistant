@@ -81,7 +81,10 @@ function ResultTable(props) {
   return (
     <div className='result-table-container'>
       <Typography variant="h5" gutterBottom component="div">
-        {podium.event} - Results - {podium.class}
+        {podium.event} - {podium.date}
+      </Typography>
+      <Typography variant="h5" gutterBottom component="div">
+        Results - {podium.class}
       </Typography>
        <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
