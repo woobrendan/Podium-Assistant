@@ -5,15 +5,7 @@ module.exports = (db) => {
   //route /api/results
   router.get('/', (req, res) => {
     const queryString = 
-    // `SELECT results.id AS result_id, events.name AS event, series.name AS series, class.name AS class
-    // FROM results
-    // JOIN events ON events.id = event_id
-    // JOIN series ON series.id = series_id
-    // JOIN podiums ON results.id = result_id
-    // JOIN class ON class_id = class.id
-    // WHERE results.id = 1
-    // ;`;
-    `SELECT results.id AS result_id, events.name AS event, series.name AS series, class.name AS class, podiums.*
+    `SELECT results.id AS result_id, results.date AS date, events.name AS event, series.name AS series, class.name AS class, podiums.*
     FROM results
     JOIN events ON events.id = event_id
     JOIN series ON series.id = series_id
