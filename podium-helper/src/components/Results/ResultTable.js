@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import '../../Styling/result.scss';
 
 const result = {
   result1: {
@@ -78,7 +79,7 @@ function ResultTable(props) {
     }
   }
   return (
-    <div>
+    <div className='result-table-container'>
       <Typography variant="h5" gutterBottom component="div">
         {podium.event} - Results - {podium.class}
       </Typography>
