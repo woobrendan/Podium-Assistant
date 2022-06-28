@@ -22,7 +22,7 @@ const pages = [
   },
   {
     name: 'Result History',
-    action: '/'
+    action: '/results'
   },
   {
     name: 'Manage Entries',
