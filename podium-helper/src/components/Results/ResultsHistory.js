@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import ResultTable from './ResultTable';
 
 function Results() {
   const [drivers, setDrivers] = useState([]);
@@ -37,8 +38,6 @@ function Results() {
       let y = i + 1;
       let z = i + 2;
       arrayOfGroupedResults.push({
-        event: resultArr[i].event,
-        series: resultArr[i].series,
         result1: resultArr[i], 
         result2: resultArr[y],
         result3: resultArr[z]
@@ -67,12 +66,7 @@ function Results() {
   groupedResults(entryResults)
   const allResults = entryResults.map((result) => (
     <div key={result.id}>
-      <h1>{result.event}</h1>
-      <h2>{result.series}</h2>
-      <h3>{result.class}</h3>
-      <p>{result.first_place.vehicle}</p>
-      <p>{result.second_place && result.second_place.vehicle}</p>
-      <p>{result.third_place && result.third_place.vehicle}</p>
+      <ResultTable results={resultHistory}/>
     </div>
   ))
 
