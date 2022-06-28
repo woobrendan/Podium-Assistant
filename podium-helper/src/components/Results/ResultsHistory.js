@@ -44,11 +44,10 @@ function Results() {
         result3: resultArr[z]
       })
     }
-   
     return arrayOfGroupedResults
-  }
-  console.log('newresults',groupedResults(resultHistory))
+  };
 
+  //loop through results, take the placement winner id and match the id with the vehicle id
   const entryResults = resultHistory.map((result) => {
     for (const vehicle of vehicles) {
       if (result.first_place === vehicle.id) {
@@ -62,7 +61,10 @@ function Results() {
       }
     }
     return result;
-  })
+  });
+
+  //group the results togethers, left with array of obj with pro, p/a, am together
+  groupedResults(entryResults)
   const allResults = entryResults.map((result) => (
     <div key={result.id}>
       <h1>{result.event}</h1>
