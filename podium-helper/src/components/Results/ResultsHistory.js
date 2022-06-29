@@ -32,6 +32,20 @@ function Results() {
     }
   });
 
+  const groupedResults = (resultArr) => {
+    const arrayOfGroupedResults = [];
+    for (let i = 0; i < resultArr.length; i += 3) {
+      let y = i + 1;
+      let z = i + 2;
+      arrayOfGroupedResults.push({
+        result1: resultArr[i], 
+        result2: resultArr[y],
+        result3: resultArr[z]
+      })
+    }
+    return arrayOfGroupedResults
+  };
+
   //loop through results, take the placement winner id and match the id with the vehicle id
   const entryResults = resultHistory.map((result) => {
     for (const vehicle of vehicles) {
