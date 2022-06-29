@@ -1,6 +1,5 @@
 import {useEffect, useState} from 'react';
 import axios from 'axios';
-import ResultTable from './ResultTable';
 import ResultTableHeader from './ResultTableHeader';
 
 function Results() {
@@ -47,8 +46,6 @@ function Results() {
     return arrayOfGroupedResults
   };
 
-  // console.log('group', groupedResults(resultHistory))
-
   //loop through results, take the placement winner id and match the id with the vehicle id
   const entryResults = resultHistory.map((result) => {
     for (const vehicle of vehicles) {
@@ -78,4 +75,4 @@ function Results() {
   )
 }
 
-export default Results
+export default Results;
