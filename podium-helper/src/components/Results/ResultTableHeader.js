@@ -1,6 +1,5 @@
 import React from 'react';
 import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
@@ -11,10 +10,9 @@ import ResultTable from './ResultTable';
 function ResultTableHeader(props) {
   const podiums = props.results
   const podium1 = podiums.result1
-  console.log('podiums', podiums)
 
   return (
-    <div>
+    <div className='result-table-container'>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
           <TableHead>
