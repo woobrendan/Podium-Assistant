@@ -6,11 +6,13 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
+import ResultTable from './ResultTable';
 
 function ResultTableHeader(props) {
-  const podium = props.resultHistory
-  const podium1 = podium.result1
-  const mappedPodiumReults = ''
+  const podiums = props.results
+  const podium1 = podiums.result1
+  console.log('podiums', podiums)
+
   return (
     <div>
       <TableContainer component={Paper}>
@@ -31,6 +33,9 @@ function ResultTableHeader(props) {
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
           </TableHead>
+            <ResultTable results={podiums.result1}/>
+            <ResultTable results={podiums.result2}/>
+            <ResultTable results={podiums.result3}/>
           </Table>
           </TableContainer>
     </div>
