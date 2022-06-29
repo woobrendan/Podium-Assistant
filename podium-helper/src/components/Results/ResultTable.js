@@ -78,10 +78,15 @@ function ResultTable(props) {
     }
   }
   return (
-    <div className='result-table-container'>
-       <TableContainer component={Paper}>
+    <>
+       {/* <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
           <TableHead>
+            <TableRow>
+              <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
+            </TableRow>
+          </TableHead> */}
+          {/* <TableHead>
             <TableRow>
               <TableCell colSpan={4} align='center'>{podium.event}</TableCell>
               <TableCell colSpan={2} align='center'>{podium.date}</TableCell>
@@ -90,7 +95,7 @@ function ResultTable(props) {
               <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
             </TableRow>
           </TableHead>
-          {/* <TableHead>
+          <TableHead>
             <TableRow>
               <TableCell>Place</TableCell>
               <TableCell align="right">Car #</TableCell>
@@ -100,6 +105,11 @@ function ResultTable(props) {
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
           </TableHead> */}
+          <TableHead>
+            <TableRow>
+              <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
+            </TableRow>
+          </TableHead>
           <TableBody>
             {checkPodium(podium).map((row) => (
               <TableRow
@@ -117,9 +127,9 @@ function ResultTable(props) {
               </TableRow>
             ))}
           </TableBody>
-        </Table>
-      </TableContainer>
-    </div>
+        {/* </Table>
+      </TableContainer> */}
+    </>
   )
 }
 
