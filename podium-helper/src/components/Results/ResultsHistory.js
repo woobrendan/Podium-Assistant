@@ -66,7 +66,7 @@ function Results() {
   });
 
   const allResults = groupedResults(entryResults).map((result) => (
-    <div key={result.id}>
+    <div key={result.result1.result_id}>
       <ResultTableHeader results={result}/>
     </div>
   ))
