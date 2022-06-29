@@ -6,7 +6,6 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
 import '../../Styling/result.scss';
 
 const result = {
@@ -91,7 +90,7 @@ function ResultTable(props) {
               <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
             </TableRow>
           </TableHead>
-          <TableHead>
+          {/* <TableHead>
             <TableRow>
               <TableCell>Place</TableCell>
               <TableCell align="right">Car #</TableCell>
@@ -100,7 +99,7 @@ function ResultTable(props) {
               <TableCell align="right">Team</TableCell>
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
-          </TableHead>
+          </TableHead> */}
           <TableBody>
             {checkPodium(podium).map((row) => (
               <TableRow
