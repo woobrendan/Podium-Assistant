@@ -79,56 +79,28 @@ function ResultTable(props) {
   }
   return (
     <>
-       {/* <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 600 }} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
-            </TableRow>
-          </TableHead> */}
-          {/* <TableHead>
-            <TableRow>
-              <TableCell colSpan={4} align='center'>{podium.event}</TableCell>
-              <TableCell colSpan={2} align='center'>{podium.date}</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableHead>
-            <TableRow>
-              <TableCell>Place</TableCell>
-              <TableCell align="right">Car #</TableCell>
-              <TableCell align="right">Driver 1</TableCell>
-              {first.driver2 && <TableCell align="right">Driver 2</TableCell>}
-              <TableCell align="right">Team</TableCell>
-              <TableCell align="right">Vehicle</TableCell>
-            </TableRow>
-          </TableHead> */}
-          <TableHead>
-            <TableRow>
-              <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {checkPodium(podium).map((row) => (
-              <TableRow
-                key={row.number}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">
-                  {row.place}
-                </TableCell>
-                <TableCell align="right">{row.number}</TableCell>
-                <TableCell align="right">{row.driver1}</TableCell>
-                {row.driver2 && <TableCell align="right">{row.driver2}</TableCell>}
-                <TableCell align="right">{row.team}</TableCell>
-                <TableCell align="right">{row.car}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        {/* </Table>
-      </TableContainer> */}
+      <TableHead>
+        <TableRow>
+          <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {checkPodium(podium).map((row) => (
+          <TableRow
+            key={row.number}
+            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+          >
+            <TableCell component="th" scope="row">
+              {row.place}
+            </TableCell>
+            <TableCell align="right">{row.number}</TableCell>
+            <TableCell align="right">{row.driver1}</TableCell>
+            {row.driver2 && <TableCell align="right">{row.driver2}</TableCell>}
+            <TableCell align="right">{row.team}</TableCell>
+            <TableCell align="right">{row.car}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
     </>
   )
 }
