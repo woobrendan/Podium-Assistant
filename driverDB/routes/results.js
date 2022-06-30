@@ -5,13 +5,14 @@ module.exports = (db) => {
   //route /api/results
   router.get('/', (req, res) => {
     const queryString = 
-    `SELECT results.id AS result_id, results.date AS date, events.name AS event, series.name AS series, class.name AS class, podiums.*
+    `SELECT results.id AS result_id, results.date AS date, events.name AS event, series.name AS series, class.name AS class, fastlaps.id AS fast_lap, podiums.*
     FROM results
     JOIN events ON events.id = event_id
     JOIN series ON series.id = series_id
     JOIN podiums ON results.id = result_id
     JOIN drivers ON first_place = drivers.id
     JOIN class ON class_id = class.id
+    JOIN fastlaps ON fastlap_id = fastlaps.id
    
     ;`;
     return db
