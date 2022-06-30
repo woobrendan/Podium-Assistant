@@ -133,7 +133,7 @@ export const driverInfo = [
       nationality: 'Italy',
       rating: 'Platinum'
       },
-    car: "Lamborghini Huracan GT3",
+    vehicle: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "1",
     carImage: kpax6,
@@ -151,7 +151,7 @@ export const driverInfo = [
       nationality: 'South Africa',
       rating: 'Gold'
       },
-    car: "Lamborghini Huracan GT3",
+    vehicle: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "3",
     carImage: kpax1,
@@ -169,7 +169,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Gold'
       },
-    car: "Mercedes-AMG GT3",
+    vehicle: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "04",
     carImage: riley04,
@@ -187,7 +187,7 @@ export const driverInfo = [
       nationality: 'Italy',
       rating: 'Silver'
       },
-    car: "Mercedes-AMG GT3",
+    vehicle: "Mercedes-AMG GT3",
     classification: "Pro",
     number: "6",
     carImage: usrace6,
@@ -205,7 +205,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Gold'
       },
-    car: "Mercedes-AMG GT3",
+    vehicle: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "08",
     carImage: dxdt08,
@@ -223,7 +223,7 @@ export const driverInfo = [
       nationality: 'Italy',
       rating: 'Gold'
       },
-    car: "Lamborghini Huracan GT3 EVO",
+    vehicle: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "9",
     carImage: tr39,
@@ -241,7 +241,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage AMR GT3",
+    vehicle: "Aston Martin Vantage AMR GT3",
     classification: "Pro-Am",
     number: "12",
     carImage: ian12,
@@ -259,7 +259,7 @@ export const driverInfo = [
       nationality: 'Scotland',
       rating: 'Gold'
       },
-    car: "Ferrari 488 GT3 EVO",
+    vehicle: "Ferrari 488 GT3 EVO",
     classification: "Pro-Am",
     number: "13",
     carImage: triarsi13,
@@ -277,7 +277,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Ferrari 488 GT3 EVO",
+    vehicle: "Ferrari 488 GT3 EVO",
     classification: "Am",
     number: "23",
     carImage: triarsi23,
@@ -295,7 +295,7 @@ export const driverInfo = [
       nationality: 'Switzerland',
       rating: 'Gold'
       },
-    car: "Mercedes-AMG GT3",
+    vehicle: "Mercedes-AMG GT3",
     classification: "Pro",
     number: "33",
     carImage: winward33,
@@ -313,7 +313,7 @@ export const driverInfo = [
       nationality: 'Canada',
       rating: 'Silver'
       },
-    car: "BMW M4 GT3",
+    vehicle: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "38",
     carImage: st38,
@@ -331,7 +331,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Acura NSX GT3",
+    vehicle: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "43",
     carImage: real43,
@@ -349,7 +349,7 @@ export const driverInfo = [
       nationality: 'Belgium',
       rating: 'Gold'
       },
-    car: "Porsche 911 GT3-R (991.ii)",
+    vehicle: "Porsche 911 GT3-R (991.ii)",
     classification: "Pro-Am",
     number: "45",
     carImage: wright45,
@@ -367,7 +367,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Ferrari 488 GT3",
+    vehicle: "Ferrari 488 GT3",
     classification: "Am",
     number: "61",
     carImage: AF61,
@@ -385,7 +385,7 @@ export const driverInfo = [
       nationality: 'Germany',
       rating: 'Platinum'
       },
-    car: "Mercedes-AMG GT3",
+    vehicle: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "63",
     carImage: DXDT63,
@@ -403,7 +403,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Lamborghini Huracan GT3 EVO",
+    vehicle: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "88",
     carImage: Zelus88,
@@ -421,7 +421,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Lamborghini Huracan GT3 EVO",
+    vehicle: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "91",
     carImage: Zelus91,
@@ -439,7 +439,7 @@ export const driverInfo = [
       nationality: 'Germany',
       rating: 'Gold'
       },
-    car: "Acura NSX GT3",
+    vehicle: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "93",
     carImage: racers93,
@@ -457,7 +457,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Gold'
       },
-    car: "BMW M4 GT3",
+    vehicle: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "94",
     carImage: bimmer94,
@@ -475,7 +475,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "BMW M4 GT3",
+    vehicle: "BMW M4 GT3",
     classification: "Pro",
     number: "96",
     carImage: turner96,
@@ -493,7 +493,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "2",
     carImage: GMG2,
@@ -511,7 +511,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "7",
     carImage: NOLA7,
@@ -529,7 +529,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "8",
     carImage: flm8,
@@ -547,7 +547,7 @@ export const driverInfo = [
       nationality: 'Brazil',
       rating: 'Gold'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "10",
     carImage: FTR10,
@@ -565,7 +565,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "11",
     carImage: FTR11,
@@ -583,7 +583,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "15",
     carImage: bsport15,
@@ -601,7 +601,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Toyota GR Supra GT4",
+    vehicle: "Toyota GR Supra GT4",
     classification: "Pro-Am",
     number: "016",
     carImage: hattori016,
@@ -619,7 +619,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "17",
     carImage: trg17,
@@ -637,7 +637,7 @@ export const driverInfo = [
       nationality: 'Scotland',
       rating: 'Silver'
       },
-    car: "Porsche Cayman 718 Cayman GT4 RS CS",
+    vehicle: "Porsche Cayman 718 Cayman GT4 RS CS",
     classification: "Silver",
     number: "18",
     carImage: rs118,
@@ -655,7 +655,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche Cayman 718 Cayman GT4 RS CS",
+    vehicle: "Porsche Cayman 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "19",
     carImage: nola19,
@@ -673,7 +673,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Toyota GR Supra",
+    vehicle: "Toyota GR Supra",
     classification: "Am",
     number: "21",
     carImage: carrus21,
@@ -691,7 +691,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "24",
     carImage: hort24,
@@ -709,7 +709,7 @@ export const driverInfo = [
       nationality: 'United Kingdom',
       rating: 'Silver'
       },
-    car: "McLaren 570s GT4",
+    vehicle: "McLaren 570s GT4",
     classification: "Pro-Am",
     number: "26",
     carImage: prive26,
@@ -727,7 +727,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "32",
     carImage: cap32,
@@ -745,7 +745,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "34",
     carImage: conquest34,
@@ -763,7 +763,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "35",
     carImage: conquest35,
@@ -781,7 +781,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Am",
     number: "36",
     carImage: bimmer36,
@@ -799,7 +799,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "39",
     carImage: cameron39,
@@ -817,7 +817,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "47",
     carImage: nola47,
@@ -835,7 +835,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Gold'
       },
-    car: "Saleen 1",
+    vehicle: "Saleen 1",
     classification: "Pro-Am",
     number: "49",
     carImage: saleen49,
@@ -853,7 +853,7 @@ export const driverInfo = [
       nationality: 'Canada',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "50",
     carImage: chouest50,
@@ -871,7 +871,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Silver",
     number: "51",
     carImage: auto51,
@@ -889,7 +889,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "52",
     carImage: auto52,
@@ -907,7 +907,7 @@ export const driverInfo = [
       nationality: 'Canada',
       rating: 'Bronze'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Am",
     number: "53",
     carImage: auto53,
@@ -925,7 +925,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "55",
     carImage: accelerate55,
@@ -943,7 +943,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Ginetta G56 GT4",
+    vehicle: "Ginetta G56 GT4",
     classification: "Am",
     number: "60",
     carImage: dexter60,
@@ -961,7 +961,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "66",
     carImage: trg66,
@@ -979,7 +979,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Toyota GR Supra GT4",
+    vehicle: "Toyota GR Supra GT4",
     classification: "Silver",
     number: "68",
     carImage: smooge68,
@@ -997,7 +997,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Toyota GR Supra GT4",
+    vehicle: "Toyota GR Supra GT4",
     classification: "Am",
     number: "72",
     carImage: krug72,
@@ -1015,7 +1015,7 @@ export const driverInfo = [
       nationality: 'Canada',
       rating: 'Gold'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "Pro-Am",
     number: "79",
     carImage: renn79,
@@ -1033,7 +1033,7 @@ export const driverInfo = [
       nationality: 'Denmark',
       rating: 'Bronze'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Am",
     number: "80",
     carImage: rooster80,
@@ -1051,7 +1051,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "82",
     carImage: bimmer82,
@@ -1069,7 +1069,7 @@ export const driverInfo = [
       nationality: 'Colombia',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "83",
     carImage: rs183,
@@ -1087,7 +1087,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "Am",
     number: "89",
     carImage: renn89,
@@ -1105,7 +1105,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Am",
     number: "98",
     carImage: random98,
@@ -1123,7 +1123,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Toyota GR Supra GT4",
+    vehicle: "Toyota GR Supra GT4",
     classification: "Silver",
     number: "112",
     carImage: dexter112,
@@ -1141,7 +1141,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Porscher 718 Cayman GT4 RS CS",
+    vehicle: "Porscher 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "120",
     carImage: premier120,
@@ -1159,7 +1159,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Ford Mustang GT4",
+    vehicle: "Ford Mustang GT4",
     classification: "Pro-Am",
     number: "124",
     carImage: arg124,
@@ -1177,7 +1177,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "Am",
     number: "152",
     carImage: ACP152,
@@ -1195,7 +1195,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porscher 718 Cayman GT4 RS CS",
+    vehicle: "Porscher 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "427",
     carImage: regal427,
@@ -1213,7 +1213,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Am",
     number: "888",
     carImage: zelus888,
@@ -1231,7 +1231,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Silver'
       },
-    car: "Audi R8 LMS GT4",
+    vehicle: "Audi R8 LMS GT4",
     classification: "Pro-Am",
     number: "930",
     carImage: car930,
@@ -1244,7 +1244,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "1",
     carImage: FTR1,
@@ -1257,7 +1257,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "24",
     carImage: rigid24,
@@ -1270,7 +1270,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "26",
     carImage: rigid26,
@@ -1283,7 +1283,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "29",
     carImage: ftr29,
@@ -1296,7 +1296,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "30",
     carImage: hard30,
@@ -1309,7 +1309,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "44",
     carImage: rooster44,
@@ -1322,7 +1322,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "51",
     carImage: home51,
@@ -1335,7 +1335,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "54",
     carImage: FTR54,
@@ -1348,7 +1348,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "57",
     carImage: accerlate57,
@@ -1361,7 +1361,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "76",
     carImage: FTR76,
@@ -1374,7 +1374,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M2 CS(Cup)",
+    vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "97",
     carImage: random97,
@@ -1387,7 +1387,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M240iR (2019 EVO)",
+    vehicle: "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "06",
     carImage: DRS06,
@@ -1399,7 +1399,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Type-R",
+    vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "8",
     carImage: vgrt8,
@@ -1412,7 +1412,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Type-R",
+    vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "9",
     carImage: skip9,
@@ -1425,7 +1425,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "BMW M240iR (2019 EVO)",
+    vehicle: "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "09",
     carImage: DRS09,
@@ -1438,7 +1438,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Nissan 370z TC Spec",
+    vehicle: "Nissan 370z TC Spec",
     classification: "TC",
     number: "18",
     carImage: '',
@@ -1451,7 +1451,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Type-R",
+    vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "37",
     carImage: LA37,
@@ -1464,7 +1464,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Type-R",
+    vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "42",
     carImage: skip42,
@@ -1477,7 +1477,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "MINI JCW Pro TC",
+    vehicle: "MINI JCW Pro TC",
     classification: "TC",
     number: "60",
     carImage: mini60,
@@ -1490,7 +1490,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Mazda 3",
+    vehicle: "Mazda 3",
     classification: "TC",
     number: "70",
     carImage: ftg70,
@@ -1503,7 +1503,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Type-R",
+    vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "73",
     carImage: la73,
@@ -1516,7 +1516,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Hyundai Veloster N TC",
+    vehicle: "Hyundai Veloster N TC",
     classification: "TC",
     number: "78",
     carImage: gen78,
@@ -1529,7 +1529,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Hyundai Veloster N TC",
+    vehicle: "Hyundai Veloster N TC",
     classification: "TC",
     number: "88",
     carImage: gen88,
@@ -1542,7 +1542,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Si",
+    vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "2",
     carImage: skip2,
@@ -1555,7 +1555,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Si",
+    vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "5",
     carImage: la5,
@@ -1568,7 +1568,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Si",
+    vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "16",
     carImage: skip16,
@@ -1581,7 +1581,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Si",
+    vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "20",
     carImage: '',
@@ -1594,7 +1594,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Subaru BRZ",
+    vehicle: "Subaru BRZ",
     classification: "TCA",
     number: "21",
     carImage: tech21,
@@ -1607,7 +1607,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Subaru BRZ",
+    vehicle: "Subaru BRZ",
     classification: "TCA",
     number: "22",
     carImage: tech22,
@@ -1620,7 +1620,7 @@ export const driverInfo = [
       nationality: 'China',
       rating: 'N/A'
       },
-    car: "Subaru BRZ",
+    vehicle: "Subaru BRZ",
     classification: "TCA",
     number: "23",
     carImage: tech23,
@@ -1633,7 +1633,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Hyundai Elantra N-Line",
+    vehicle: "Hyundai Elantra N-Line",
     classification: "TCA",
     number: "33",
     carImage: bha33,
@@ -1646,7 +1646,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "MINI JCW",
+    vehicle: "MINI JCW",
     classification: "TCA",
     number: "61",
     carImage: mini61,
@@ -1659,7 +1659,7 @@ export const driverInfo = [
       nationality: 'Canada',
       rating: 'N/A'
       },
-    car: "MINI JCW",
+    vehicle: "MINI JCW",
     classification: "TCA",
     number: "62",
     carImage: mini62,
@@ -1672,7 +1672,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Si",
+    vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "77",
     carImage: la77,
@@ -1685,7 +1685,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Hyundai Elantra N-Line",
+    vehicle: "Hyundai Elantra N-Line",
     classification: "TCA",
     number: "98",
     carImage: bha98,
@@ -1698,7 +1698,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'N/A'
       },
-    car: "Honda Civic Si",
+    vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "780",
     carImage: vgrt780,
@@ -1711,7 +1711,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "2",
     carImage: gmg2a,
@@ -1724,7 +1724,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Mercedes-AMG GT3",
+    vehicle: "Mercedes-AMG GT3",
     classification: "SRO3",
     number: "04",
     carImage: crwd04a,
@@ -1737,7 +1737,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "8",
     carImage: flm8,
@@ -1750,7 +1750,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "19",
     carImage: nola19a,
@@ -1763,7 +1763,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Toyota GR Supra GT4",
+    vehicle: "Toyota GR Supra GT4",
     classification: "GT4",
     number: "21",
     carImage: carrus21a,
@@ -1776,7 +1776,7 @@ export const driverInfo = [
       nationality: 'Serbia',
       rating: 'Bronze'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "GT4",
     number: "22",
     carImage: srq22,
@@ -1789,7 +1789,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "25",
     carImage: hort25a,
@@ -1802,7 +1802,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Audi R8 LMS",
+    vehicle: "Audi R8 LMS",
     classification: "SRO3",
     number: "27",
     carImage: dask27,
@@ -1815,7 +1815,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "BMW M4 GT4",
+    vehicle: "BMW M4 GT4",
     classification: "GT4",
     number: "28",
     carImage: srq28,
@@ -1828,7 +1828,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Ferrari 488 GT3",
+    vehicle: "Ferrari 488 GT3",
     classification: "SRO3",
     number: "37",
     carImage: triarsi37a,
@@ -1841,7 +1841,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "GT4",
     number: "39",
     carImage: cameron39a,
@@ -1854,7 +1854,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "50",
     carImage: chouest50a,
@@ -1867,7 +1867,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "55",
     carImage: accerlate55a,
@@ -1880,7 +1880,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Ferrari 458 Italia GT3",
+    vehicle: "Ferrari 458 Italia GT3",
     classification: "SRO3",
     number: "56",
     carImage: SKI56,
@@ -1893,7 +1893,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Audi R8 LMS GT2",
+    vehicle: "Audi R8 LMS GT2",
     classification: "GT2",
     number: "58",
     carImage: gmg58,
@@ -1906,7 +1906,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Ginetta G56 GT4",
+    vehicle: "Ginetta G56 GT4",
     classification: "GT4",
     number: "60",
     carImage: dexter60,
@@ -1919,7 +1919,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Toyota GR Supra GT4",
+    vehicle: "Toyota GR Supra GT4",
     classification: "GT4",
     number: "67",
     carImage: smooge67,
@@ -1932,7 +1932,7 @@ export const driverInfo = [
       nationality: 'Germany',
       rating: 'Bronze'
       },
-    car: "Callaway Corvette C7 GT3-R",
+    vehicle: "Callaway Corvette C7 GT3-R",
     classification: "SRO3",
     number: "70",
     carImage: mish70,
@@ -1945,7 +1945,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "71",
     carImage: gmg71,
@@ -1958,7 +1958,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "GT4",
     number: "79",
     carImage: renn79a,
@@ -1971,7 +1971,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Lamborghini Huracan GT3",
+    vehicle: "Lamborghini Huracan GT3",
     classification: "SRO3",
     number: "88",
     carImage: zelus88a,
@@ -1984,7 +1984,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Mercedes-AMG GT4",
+    vehicle: "Mercedes-AMG GT4",
     classification: "GT4",
     number: "89",
     carImage: renn89a,
@@ -1997,7 +1997,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "99",
     carImage: rotek99,
@@ -2010,7 +2010,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Porsche 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "120",
     carImage: premier120a,
@@ -2023,7 +2023,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Ford Mustang GT4",
+    vehicle: "Ford Mustang GT4",
     classification: "GT4",
     number: "124",
     carImage: arg124,
@@ -2036,7 +2036,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Lamborghini Huracan GT3",
+    vehicle: "Lamborghini Huracan GT3",
     classification: "SRO3",
     number: "191",
     carImage: zelus191,
@@ -2049,7 +2049,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    car: "Aston Martin Vantage AMR GT4",
+    vehicle: "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "888",
     carImage: zelus888,
