@@ -10,13 +10,7 @@ import FastLapTable from './FastLapTable';
 import EventSearch from './EventsSearch';
 
 function Podium() {
-  const [showResultTable, setshowResultTable] = useState({
-    pod1: false,
-    pod2: false,
-    pod3: false,
-    fastLap: false,
-    printPage: false
-  })
+
   const [results, setResults] = useState({
     series: '',
     event: '',
@@ -33,6 +27,7 @@ function Podium() {
     podium3: true,
     fastLap: true,
     misc: true,
+    printPage: false
   })
 
   const handleFastLapSumbit = (value) => {
@@ -43,7 +38,9 @@ function Podium() {
 
     setShowWinnerTable((prev) => ({
       ...prev,
-      fastLap: false
+      fastLap: false,
+      misc: false,
+      printPage: true
     }));
   }
 
@@ -79,51 +76,12 @@ function Podium() {
     }))
   }
 
-  const onFinalSubmit = () => {
-    //if podium x was submitted set show table toggle to true
-    if (results.podium1) {
-      setshowResultTable((prev) => ({
-        ...prev,
-        pod1: true
-      }))
-    }
-    if (results.podium2) {
-      setshowResultTable((prev) => ({
-        ...prev,
-        pod2: true
-      }))
-    }
-    if (results.podium3) {
-      setshowResultTable((prev) => ({
-        ...prev,
-        pod3: true
-      }))
-    }
-    if (results.fastLap) {
-      setshowResultTable((prev) => ({
-        ...prev,
-        fastLap: true
-      }))
-    }
-
-    setshowResultTable((prev) => ({
-      ...prev,
-      printPage: true
-    }))
-    //remove all other elements to only show result table
-    setShowWinnerTable({
-      podium1: false,
-      podium2: false,
-      podium3: false,
-      fastLap: false,
-      misc: false
-    });
-
+  // const onFinalSubmit = () => {
     // axios
     //   .post('http://localhost:8080/results', {result: results})
     //   .catch(err => console.log(err.message))
 
-  };
+
 
   const printPage = () => {
     window.print()
@@ -156,7 +114,7 @@ function Podium() {
           onClick={handleFastLapSumbit}
           series={results.series}
           />}
-      {showWinnerTable.misc && 
+      {/* {showWinnerTable.misc && 
         <Button 
           variant="contained" 
           color="success" 
@@ -164,12 +122,12 @@ function Podium() {
         >
           Print Results
         </Button>
-      }
-      {showResultTable.pod1 && <Results result={results.podium1} />}
-      {showResultTable.pod2 && <Results result={results.podium2} />}
-      {showResultTable.pod3 && <Results result={results.podium3} />}
-      {showResultTable.fastLap && <FastLapTable fastLap={results.fastLap} />}
-      {showResultTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
+      } */}
+      {!showWinnerTable.podium1 && <Results result={results.podium1} />}
+      {!showWinnerTable.podium2 && <Results result={results.podium2} />}
+      {!showWinnerTable.podium3 && <Results result={results.podium3} />}
+      {!showWinnerTable.fastLap && <FastLapTable fastLap={results.fastLap} />}
+      {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
     </div>
   )
 }
