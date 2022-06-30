@@ -31,7 +31,7 @@ function Podium(props) {
   const usedClassOptions = (result) => {
     const usedClasses = [];
     const podiums = [];
-    podiums.push(result.podium1, result.podium2, result.podium3)
+    podiums.push(result.result1, result.result2, result.result3)
     for (const podium of podiums) {
       if (podium.class) {
         usedClasses.push(podium.class)
