@@ -20,10 +20,10 @@ function EventSearch(props) {
 
   const handleChange = (event) => {
     setEventName(event.target.value);
-    props.getSeries(event.target.value)
+    props.getEventName(event.target.value)
   };
 
-  const mappedEvents = eventList.map((series, index) => <MenuItem key={index} value={series}>{series}</MenuItem>)
+  const mappedEvents = eventList.map((event) => <MenuItem key={event.id} value={event.name}>{event.name}</MenuItem>)
 
   return (
     <Box
