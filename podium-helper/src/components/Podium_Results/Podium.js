@@ -7,6 +7,7 @@ import Results from './Results';
 import Series from './Series';
 import axios from 'axios';
 import FastLapTable from './FastLapTable';
+import EventSearch from './EventsSearch';
 
 function Podium() {
   const [showResultTable, setshowResultTable] = useState({
@@ -18,6 +19,7 @@ function Podium() {
   })
   const [results, setResults] = useState({
     series: '',
+    event: '',
     podium1: '',
     podium2: '',
     podium3: '',
@@ -67,6 +69,13 @@ function Podium() {
     setResults((prev) => ({
       ...prev,
       series
+    }))
+  }
+
+  const getEventName = (eventName) => {
+    setResults((prev) => ({
+      ...prev,
+      event: eventName
     }))
   }
 
@@ -122,6 +131,7 @@ function Podium() {
 
   return (
     <div className="race-results-container">
+      {showWinnerTable.misc && <EventSearch getEventName={getEventName}/>}
       {showWinnerTable.misc && <Series getSeries={getSeries}/>}
       {showWinnerTable.podium1 && 
         <WinnerTop3 
