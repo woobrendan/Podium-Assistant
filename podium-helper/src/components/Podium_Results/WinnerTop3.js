@@ -16,9 +16,9 @@ const classOptions = {
 function Podium(props) {
   const [winners, setWinners] = useState({
     class:'',
-    first: '',
-    second: '',
-    third: ''
+    first_place: '',
+    second_place: '',
+    third_place: ''
   });
 
   const handleWinners = event => {
@@ -117,7 +117,7 @@ function Podium(props) {
                 className="form-control"
                 name="first"
                 label="first place"
-                value={winners.first}
+                value={winners.first_place}
                 onChange={handleWinners}
               >
                 {mappedDrivers}
@@ -140,7 +140,7 @@ function Podium(props) {
               className="form-control"
               name="second"
               label="second place"
-              value={winners.second}
+              value={winners.second_place}
               onChange={handleWinners}
             >
               {mappedDrivers}
@@ -163,7 +163,7 @@ function Podium(props) {
               className="form-control"
               name="third"
               label="third place"
-              value={winners.third}
+              value={winners.third_place}
               onChange={handleWinners}
             >
               {mappedDrivers}
