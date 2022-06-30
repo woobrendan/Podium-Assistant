@@ -17,8 +17,9 @@ function ResultTableHeader(props) {
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell colSpan={4} align='center'>{podium1.event}</TableCell>
-              <TableCell colSpan={2} align='center'>{podium1.date}</TableCell>
+              <TableCell colSpan={3} align='center'>{podiums.event}</TableCell>
+              <TableCell colSpan={2} align='center'>{podiums.series}</TableCell>
+              <TableCell colSpan={1} align='center'>{podium1.date}</TableCell>
             </TableRow>
           </TableHead>
           <TableHead>
