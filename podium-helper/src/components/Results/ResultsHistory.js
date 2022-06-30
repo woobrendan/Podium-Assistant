@@ -38,6 +38,8 @@ function Results() {
       let y = i + 1;
       let z = i + 2;
       arrayOfGroupedResults.push({
+        series: resultArr[i].series,
+        event: resultArr[i].event,
         result1: resultArr[i], 
         result2: resultArr[y],
         result3: resultArr[z]
