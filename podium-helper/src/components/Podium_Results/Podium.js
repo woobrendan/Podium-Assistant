@@ -8,6 +8,7 @@ import Series from './Series';
 import axios from 'axios';
 import FastLapTable from './FastLapTable';
 import EventSearch from './EventsSearch';
+import ResultTableHeader from '../Results/ResultTableHeader';
 
 function Podium() {
 
@@ -128,6 +129,8 @@ function Podium() {
       {!showWinnerTable.result3 && <Results result={results.result3} />}
       {!showWinnerTable.fastLap && <FastLapTable fastLap={results.fastLap} />}
       {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
+      <br></br>
+      {!showWinnerTable.fastLap && <ResultTableHeader results={results}/>}
     </div>
   )
 }
