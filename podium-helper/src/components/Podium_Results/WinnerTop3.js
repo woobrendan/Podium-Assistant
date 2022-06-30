@@ -115,7 +115,7 @@ function Podium(props) {
               </InputLabel>
               <Select
                 className="form-control"
-                name="first"
+                name="first_place"
                 label="first place"
                 value={winners.first_place}
                 onChange={handleWinners}
@@ -138,7 +138,7 @@ function Podium(props) {
             </InputLabel>
             <Select
               className="form-control"
-              name="second"
+              name="second_place"
               label="second place"
               value={winners.second_place}
               onChange={handleWinners}
@@ -161,7 +161,7 @@ function Podium(props) {
             </InputLabel>
             <Select
               className="form-control"
-              name="third"
+              name="third_place"
               label="third place"
               value={winners.third_place}
               onChange={handleWinners}
