@@ -18,11 +18,13 @@ function FastLapTable(props) {
       
   return (
     <div className='result-table-container'>
-      <Typography variant="h5" gutterBottom component="div">
-        CrowdStrike Fast Lap
-      </Typography>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 600 }} aria-label="simple table">
+        <TableHead>
+            <TableRow>
+              <TableCell colSpan={2} align='center'>CrowdStrike Fast Lap</TableCell>
+            </TableRow>
+          </TableHead>
           <TableHead>
             <TableRow>
               <TableCell>Driver</TableCell>
