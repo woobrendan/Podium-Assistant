@@ -14,38 +14,33 @@ function createFastLap(driver, lapTime) {
 
 function FastLapTable(props) {
   const fastLap = props.fastLap;
-  const rows = [createFastLap(fastLap.driver, fastLap.lapTime)]
+  const rows = [createFastLap(fastLap.driver, fastLap.laptime)]
       
   return (
-    <div className='result-table-container'>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 600 }} aria-label="simple table">
-        <TableHead>
-            <TableRow>
-              <TableCell colSpan={2} align='center'>CrowdStrike Fast Lap</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableHead>
-            <TableRow>
-              <TableCell>Driver</TableCell>
-              <TableCell align="right">Lap Time</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows.map((row) => (
-              <TableRow
-                key={row.driver}
-                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-              >
-                <TableCell component="th" scope="row">{row.driver}</TableCell>
-                <TableCell align="right">{row.lapTime}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-      
-    </div>
+    <>
+      <TableHead>
+        <TableRow>
+          <TableCell colSpan={6} align='center'>CrowdStrike Fast Lap</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableHead>
+        <TableRow>
+          <TableCell colSpan={3}>Driver</TableCell>
+          <TableCell align="right" colSpan={3}>Lap Time</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {rows.map((row) => (
+          <TableRow
+            key={row.driver}
+            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+          >
+            <TableCell component="th" scope="row" colSpan={3}>{row.driver}</TableCell>
+            <TableCell align="right" colSpan={3}>{row.lapTime}</TableCell>
+          </TableRow>
+        ))}
+      </TableBody>
+    </>
   )
 }
 
