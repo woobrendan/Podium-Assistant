@@ -11,7 +11,7 @@ function FastLap(props) {
 
   const [fastTime, setFastTime] = useState({
     driver: '',
-    lapTime: ''
+    laptime: ''
   });
 
   const handleChange = (event) => {
@@ -81,7 +81,7 @@ function FastLap(props) {
             <TextField
               id="outlined"
               label="Fast Lap"
-              name="lapTime"
+              name="laptime"
               value={fastTime.lapTime}
               onChange={handleChange}
             />
