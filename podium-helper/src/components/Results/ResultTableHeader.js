@@ -6,6 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ResultTable from './ResultTable';
+import FastLapTable from '../Podium_Results/FastLapTable';
 
 function ResultTableHeader(props) {
   const podiums = props.results
@@ -13,8 +14,8 @@ function ResultTableHeader(props) {
 
   return (
     <div className='result-table-container'>
-      <TableContainer component={Paper}>
-        <Table sx={{ minWidth: 600 }} aria-label="simple table">
+      <TableContainer sx={{ minWidth: 600, maxWidth: 1000 }}component={Paper}>
+        <Table aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell colSpan={3} align='center'>{podiums.event}</TableCell>
@@ -32,11 +33,12 @@ function ResultTableHeader(props) {
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
           </TableHead>
-            <ResultTable results={podiums.result1}/>
-            <ResultTable results={podiums.result2}/>
-            <ResultTable results={podiums.result3}/>
-          </Table>
-          </TableContainer>
+          <ResultTable results={podiums.result1}/>
+          <ResultTable results={podiums.result2}/>
+          <ResultTable results={podiums.result3}/>
+          <FastLapTable fastLap={podiums.fastLap}/>
+        </Table>
+      </TableContainer>
     </div>
   )
 }
