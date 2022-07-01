@@ -127,7 +127,7 @@ function Podium() {
       {!showWinnerTable.result1 && <Results result={results.result1} />}
       {!showWinnerTable.result2 && <Results result={results.result2} />}
       {!showWinnerTable.result3 && <Results result={results.result3} />}
-      {!showWinnerTable.fastLap && <FastLapTable fastLap={results.fastLap} />}
+      {/* {!showWinnerTable.fastLap && <FastLapTable fastLap={results.fastLap} />} */}
       {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
       <br></br>
       {!showWinnerTable.fastLap && <ResultTableHeader results={results}/>}
