@@ -130,7 +130,7 @@ function Podium(props) {
                 className="form-control"
                 name="first_place"
                 label="first place"
-                error={!winners.first_place}
+                error={isError}
                 value={winners.first_place}
                 onChange={handleWinners}
               >
