@@ -20,7 +20,7 @@ function EventSearch(props) {
 
   const handleChange = (event) => {
     setEventName(event.target.value);
-    props.getEventName(event.target.value)
+    props.getValue(event.target.name, event.target.value)
   };
 
   const mappedEvents = eventList.map((event) => <MenuItem key={event.id} value={event.name}>{event.name}</MenuItem>)
@@ -40,7 +40,7 @@ function EventSearch(props) {
         </InputLabel>
         <Select
           className="form-control"
-          name="series-name"
+          name="event"
           label="Event"
           value={eventName}
           onChange={handleChange}
