@@ -7,7 +7,16 @@ import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
 
 export default function DatePicker() {
-  const [date, setDate] = React.useState(new Date('2014-08-18T21:11:54'));
+  
+  const getToday = () => {
+    let today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const year = today.getFullYear();
+    return `${mm}/${dd}/${year}`;
+  }
+
+  const [date, setDate] = React.useState(getToday());
 
   const handleChange = (newdate) => {
     setDate(newdate);
@@ -17,7 +26,7 @@ export default function DatePicker() {
     <LocalizationProvider dateAdapter={AdapterDateFns}>
       <Stack spacing={3}>
         <DesktopDatePicker
-          label="Date desktop"
+          label="Date"
           inputFormat="MM/dd/yyyy"
           value={date}
           onChange={handleChange}
