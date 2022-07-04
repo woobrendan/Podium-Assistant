@@ -2,6 +2,7 @@ import {useState} from 'react'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import MenuItem from '@mui/material/MenuItem';
+import Typography from '@mui/material/Typography';
 import { FormControl, InputLabel, Select, Button } from '@mui/material';
 import { driverInfo } from '../../drivers';
 import '../../Styling/winnerTop3.scss';
@@ -125,6 +126,8 @@ function Podium(props) {
                 className="form-control"
                 name="first_place"
                 label="first place"
+                error={!winners.first_place}
+                helpertext={!winners.first_place ? "Add P1" : ""}
                 value={winners.first_place}
                 onChange={handleWinners}
               >
@@ -180,6 +183,11 @@ function Podium(props) {
         </Box>
         </div>
       </div>
+      {isError && (
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  All fields must be filled.
+                </Typography>
+              )}
       <Button variant="outlined" color="error" onClick={() => props.onClick(winners)}>Submit</Button>
       </Card>
     </div>
