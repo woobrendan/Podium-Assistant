@@ -88,7 +88,7 @@ function Podium() {
   const getValue = (name, value) => {
     setResults((prev) => ({
       ...prev,
-      name: value
+      [name]: value
     }))
   }
 
@@ -107,7 +107,7 @@ function Podium() {
     <div className="race-results-container">
       {showWinnerTable.misc && 
         <DatePicker getValue={getValue} today={getToday()}/>}
-      {showWinnerTable.misc && <EventSearch getEventName={getEventName}/>}
+      {showWinnerTable.misc && <EventSearch getValue={getValue}/>}
       {showWinnerTable.misc && <Series getSeries={getSeries}/>}
       {showWinnerTable.result1 && 
         <WinnerTop3 
