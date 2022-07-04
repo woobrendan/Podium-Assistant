@@ -9,9 +9,18 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 
+const getToday = () => {
+  let today = new Date();
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const year = today.getFullYear();
+  return `${mm}/${dd}/${year}`;
+}
+
 function Podium() {
 
   const [results, setResults] = useState({
+    date: getToday(),
     series: '',
     event: '',
     result1: '',
@@ -76,6 +85,13 @@ function Podium() {
     }))
   }
 
+  const getValue = (name, value) => {
+    setResults((prev) => ({
+      ...prev,
+      name: value
+    }))
+  }
+
   // const onFinalSubmit = () => {
     // axios
     //   .post('http://localhost:8080/results', {result: results})
@@ -89,7 +105,8 @@ function Podium() {
 
   return (
     <div className="race-results-container">
-      {showWinnerTable.misc && <DatePicker/>}
+      {showWinnerTable.misc && 
+        <DatePicker getValue={getValue} today={getToday()}/>}
       {showWinnerTable.misc && <EventSearch getEventName={getEventName}/>}
       {showWinnerTable.misc && <Series getSeries={getSeries}/>}
       {showWinnerTable.result1 && 
