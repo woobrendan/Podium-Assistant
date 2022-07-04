@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@date-io/dayjs": "^2.14.0",
     "@material-ui/icons": "^4.11.3",
     "@mui/icons-material": "^5.8.3",
     "@testing-library/jest-dom": "^5.16.4",
