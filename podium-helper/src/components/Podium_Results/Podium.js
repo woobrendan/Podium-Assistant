@@ -7,7 +7,7 @@ import Series from './Series';
 import axios from 'axios';
 import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
-import DateePicker from './DatePicker';
+import DatePicker from './DatePicker';
 
 function Podium() {
 
