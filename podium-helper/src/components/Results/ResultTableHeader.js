@@ -13,7 +13,7 @@ function ResultTableHeader(props) {
   const podium1 = podiums.result1
 
   return (
-    <div className='result-table-container'>
+    <div id='result-table-container'>
       <TableContainer sx={{ minWidth: 600, maxWidth: 1000 }}component={Paper}>
         <Table aria-label="simple table">
           <TableHead>
