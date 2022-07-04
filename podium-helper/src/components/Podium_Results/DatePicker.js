@@ -6,11 +6,11 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DesktopDatePicker } from '@mui/x-date-pickers/DesktopDatePicker';
 
 
-export default function DateePicker() {
-  const [value, setValue] = React.useState(new Date('2014-08-18T21:11:54'));
+export default function DatePicker() {
+  const [date, setDate] = React.useState(new Date('2014-08-18T21:11:54'));
 
-  const handleChange = (newValue) => {
-    setValue(newValue);
+  const handleChange = (newdate) => {
+    setDate(newdate);
   };
 
   return (
@@ -19,7 +19,7 @@ export default function DateePicker() {
         <DesktopDatePicker
           label="Date desktop"
           inputFormat="MM/dd/yyyy"
-          value={value}
+          value={date}
           onChange={handleChange}
           renderInput={(params) => <TextField {...params} />}
         />
