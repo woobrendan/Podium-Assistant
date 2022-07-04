@@ -7,6 +7,7 @@ import Series from './Series';
 import axios from 'axios';
 import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
+import DateePicker from './DatePicker';
 
 function Podium() {
 
@@ -88,6 +89,7 @@ function Podium() {
 
   return (
     <div className="race-results-container">
+      {showWinnerTable.misc && <DatePicker/>}
       {showWinnerTable.misc && <EventSearch getEventName={getEventName}/>}
       {showWinnerTable.misc && <Series getSeries={getSeries}/>}
       {showWinnerTable.result1 && 
