@@ -21,11 +21,19 @@ function Podium(props) {
     third_place: ''
   });
 
+  const [isError, setIsError] = useState(false);
+
   const handleWinners = event => {
-    setWinners((prev) => ({
-      ...prev,
-      [event.target.name]: event.target.value
-    }))
+    const isFirstPlace = winners.first_place;
+    if (!isFirstPlace) {
+      setIsError(true);
+    } else {
+      if (isError) setIsError(false);
+      setWinners((prev) => ({
+        ...prev,
+        [event.target.name]: event.target.value
+      }))
+    }
   }
 
   const usedClassOptions = (result) => {
