@@ -10,10 +10,10 @@ export default function DatePicker(props) {
 
   const [date, setDate] = React.useState(props.today);
 
-  const handleChange = (event) => {
-    const et = event.target
-    setDate(et.value);
-    props.getValue(et.name, et.value)
+  const handleChange = (newValue) => {
+    const newDate = newValue.toISOString().split('T')[0]
+    setDate(newDate)
+    props.getValue('date', newDate)
   };
 
   return (
@@ -21,7 +21,7 @@ export default function DatePicker(props) {
       <Stack spacing={3}>
         <DesktopDatePicker
           label="Date"
-          inputFormat="MM/dd/yyyy"
+          inputFormat="yyyy/MM/dd"
           name='date'
           value={date}
           onChange={handleChange}
