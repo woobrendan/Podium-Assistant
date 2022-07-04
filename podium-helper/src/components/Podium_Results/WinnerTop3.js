@@ -25,15 +25,19 @@ function Podium(props) {
   const [isError, setIsError] = useState(false);
 
   const handleWinners = event => {
+      setWinners((prev) => ({
+        ...prev,
+        [event.target.name]: event.target.value
+      }))
+  }
+
+  const handleSubmit = () => {
     const isFirstPlace = winners.first_place;
     if (!isFirstPlace) {
       setIsError(true);
     } else {
       if (isError) setIsError(false);
-      setWinners((prev) => ({
-        ...prev,
-        [event.target.name]: event.target.value
-      }))
+      props.onClick(winners)
     }
   }
 
@@ -127,7 +131,6 @@ function Podium(props) {
                 name="first_place"
                 label="first place"
                 error={!winners.first_place}
-                helpertext={!winners.first_place ? "Add P1" : ""}
                 value={winners.first_place}
                 onChange={handleWinners}
               >
@@ -185,10 +188,10 @@ function Podium(props) {
       </div>
       {isError && (
                 <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                  All fields must be filled.
+                  Must be a First Place Finisher
                 </Typography>
               )}
-      <Button variant="outlined" color="error" onClick={() => props.onClick(winners)}>Submit</Button>
+      <Button variant="outlined" color="error" onClick={handleSubmit}>Submit</Button>
       </Card>
     </div>
   )
