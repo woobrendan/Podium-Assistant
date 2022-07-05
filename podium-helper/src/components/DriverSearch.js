@@ -95,7 +95,13 @@ function DriverSearch() {
         }
         break;
 
-  
+        case 'Number':
+        if (!searchValue) {
+          return val;
+        } else if (val.number.includes(searchValue)) {
+          return val;
+        }
+        break;
 
       default:
         return val; 
