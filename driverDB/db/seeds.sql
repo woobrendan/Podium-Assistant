@@ -67,7 +67,21 @@ INSERT INTO teams (name, country) VALUES
 ('Premier Racing', 'USA'),
 ('ARG/Rotek Racing', 'USA'),
 ('Team ACP - Tangerine Associates', 'USA'),
-('CarBahn w/ Peregrine Racing', 'USA');
+('CarBahn w/ Peregrine Racing', 'USA'),
+('Fast Track Racing', 'USA'),
+('Rigid Speed', 'USA'),
+('HARD Motorsports', 'USA'),
+('Rooster Hall Racing', 'USA'),
+('Accerlating Performance', 'USA'),
+('Homewrecker Racing', 'USA'),
+('DRS & Garagistic', 'USA'),
+('VGRT', 'Puerto Rico'),
+('Skip Barber Racing', 'USA'),
+('TechSport Racing', 'USA'),
+('LA Honda World Racing', 'USA'),
+('MINI JCW Team', 'USA'),
+('GenRacer / Ricca Autosport', 'USA'),
+('Bryan Herta Autosport w/ Curb-Agajanian', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id)
