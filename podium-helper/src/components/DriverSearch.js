@@ -87,6 +87,16 @@ function DriverSearch() {
         }
         break;
 
+        case 'Series':
+        if (!searchValue) {
+          return val;
+        } else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) {
+          return val;
+        }
+        break;
+
+  
+
       default:
         return val; 
     }
