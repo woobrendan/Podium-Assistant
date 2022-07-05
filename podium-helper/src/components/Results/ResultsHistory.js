@@ -50,6 +50,7 @@ function Results() {
       let y = i + 1;
       let z = i + 2;
       arrayOfGroupedResults.push({
+        date: resultArr[i].date,
         series: resultArr[i].series,
         event: resultArr[i].event,
         result1: resultArr[i], 
