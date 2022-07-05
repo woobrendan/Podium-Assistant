@@ -20,7 +20,7 @@ function ResultTableHeader(props) {
             <TableRow>
               <TableCell colSpan={3} align='center'>{podiums.event}</TableCell>
               <TableCell colSpan={2} align='center'>{podiums.series}</TableCell>
-              <TableCell colSpan={1} align='center'>{podium1.date}</TableCell>
+              <TableCell colSpan={1} align='center'>{podiums.date}</TableCell>
             </TableRow>
           </TableHead>
           <TableHead>
