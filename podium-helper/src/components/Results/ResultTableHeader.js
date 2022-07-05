@@ -7,6 +7,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import ResultTable from './ResultTable';
 import FastLapTable from '../Podium_Results/FastLapTable';
+import '../../Styling/result.scss';
 
 function ResultTableHeader(props) {
   const podiums = props.results
