@@ -82,8 +82,6 @@ function Results() {
     return result;
   });
 
-  console.log('group', groupedResults(entryResults))
-
   const allResults = groupedResults(entryResults).map((result) => (
     <div key={result.result1.result_id}>
       <ResultTableHeader results={result}/>
