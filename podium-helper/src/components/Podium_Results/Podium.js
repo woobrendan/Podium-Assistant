@@ -14,7 +14,7 @@ const getToday = () => {
   const dd = String(today.getDate()).padStart(2, '0');
   const mm = String(today.getMonth() + 1).padStart(2, '0');
   const year = today.getFullYear();
-  return `${mm}/${dd}/${year}`;
+  return `${mm}-${dd}-${year}`;
 }
 
 function Podium() {
@@ -70,21 +70,7 @@ function Podium() {
     }));
   }
 
-  //grab series from series component and set usestate
-  const getSeries = (series) => {
-    setResults((prev) => ({
-      ...prev,
-      series
-    }))
-  }
-
-  const getEventName = (eventName) => {
-    setResults((prev) => ({
-      ...prev,
-      event: eventName
-    }))
-  }
-
+  //grab value and name from component and set result usestate
   const getValue = (name, value) => {
     setResults((prev) => ({
       ...prev,
@@ -108,7 +94,7 @@ function Podium() {
       {showWinnerTable.misc && 
         <DatePicker getValue={getValue} today={getToday()}/>}
       {showWinnerTable.misc && <EventSearch getValue={getValue}/>}
-      {showWinnerTable.misc && <Series getSeries={getSeries}/>}
+      {showWinnerTable.misc && <Series getValue={getValue}/>}
       {showWinnerTable.result1 && 
         <WinnerTop3 
           series={results.series} 
