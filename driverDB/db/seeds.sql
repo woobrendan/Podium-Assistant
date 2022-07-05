@@ -151,8 +151,8 @@ INSERT INTO fastlaps (driver_id, laptime) VALUES
 (12, '1:44.232');
 
 INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES
-('June 18, 2022', 4, 1, 1),
-('June 19, 2022',4, 1, 2 );
+('2022-06-18', 4, 1, 1),
+('2022-06-19',4, 1, 2 );
 
 INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES
 (1, 1, 18, 2, 1),
