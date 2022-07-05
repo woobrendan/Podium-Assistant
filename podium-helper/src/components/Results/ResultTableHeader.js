@@ -27,7 +27,7 @@ function ResultTableHeader(props) {
           <TableHead>
             <TableRow>
               <TableCell>Place</TableCell>
-              <TableCell align="right">Car #</TableCell>
+              <TableCell align="right">#</TableCell>
               <TableCell align="right">Driver 1</TableCell>
               {podium1.first_place.driver2 && <TableCell align="right">Driver 2</TableCell>}
               <TableCell align="right">Team</TableCell>
