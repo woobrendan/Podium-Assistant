@@ -10,3 +10,17 @@
 
   }
 }
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #result-table-container, #result-table-container * {
+    visibility: visible;
+  }
+  #result-table-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
