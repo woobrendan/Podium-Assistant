@@ -9,7 +9,7 @@ function Series(props) {
   const [seriesName, setSeriesName] = useState('');
   const handleChange = (event) => {
     setSeriesName(event.target.value);
-    props.getSeries(event.target.value)
+    props.getValue(event.target.name, event.target.value)
   };
 
   const mappedSeries = seriesNameList.map((series, index) => <MenuItem key={index} value={series}>{series}</MenuItem>)
@@ -29,7 +29,7 @@ function Series(props) {
         </InputLabel>
         <Select
           className="form-control"
-          name="series-name"
+          name="series"
           label="Series"
           value={seriesName}
           onChange={handleChange}
