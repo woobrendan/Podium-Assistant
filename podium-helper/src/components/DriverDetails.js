@@ -35,7 +35,7 @@ function DriverDetails(props) {
           </Typography>
           <Elevation 
             series={series}
-            car={props.entry.car}
+            car={props.entry.vehicle}
             class={props.entry.classification}
           />
           <DriverTable  drivers={props.entry} />
