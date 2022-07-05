@@ -26,7 +26,7 @@ INSERT INTO events (name, date) VALUES
 
 INSERT INTO teams (name, country) VALUES
 ('K-PAX', 'USA'),
-('Crowdstrike Racing with Riley Motorsports', 'USA'),
+('Crowdstrike Racing w/ Riley Motorsports', 'USA'),
 ('US Racetronics', 'USA'),
 ('DXDT Racing', 'USA'),
 ('TR3 Racing', 'USA'),
