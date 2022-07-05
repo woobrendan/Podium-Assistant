@@ -21,7 +21,7 @@ export default function DatePicker(props) {
       <Stack spacing={3}>
         <DesktopDatePicker
           label="Date"
-          inputFormat="yyyy/MM/dd"
+          inputFormat="yyyy-MM-dd"
           name='date'
           value={date}
           onChange={handleChange}
