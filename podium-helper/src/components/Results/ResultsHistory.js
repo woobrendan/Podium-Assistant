@@ -4,8 +4,7 @@ import ResultTableHeader from './ResultTableHeader';
 import ToggleSearch from '../toggleSearch';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
-// import helperHooks from '../../helperHooks'
-import useEntries from '../../helperHooks.js'
+import useEntries from '../../useEntries.js'
 
 function Results() {
   const {
