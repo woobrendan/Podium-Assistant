@@ -9,12 +9,16 @@ function ToggleSearch(props) {
 
   const options = ['All', 'Driver', 'Car', 'Nationality', 'Team', 'Rating', 'Series', 'Number'];
 
+  const resultOptions = ['All', 'Driver', 'Car', 'Nationality', 'Team', 'Rating', 'Series', 'Number', 'Event'];
+
   const handleToggle = (event) => {
     setSearchOption(event.target.value);
     props.getOption(event.target.value);
   }
 
-  const mappedOptions = options.map(option => (
+  const searchList = props.page === 'result' ? resultOptions : options
+
+  const mappedOptions = searchList.map(option => (
     <MenuItem key={option} value={option}>{option}</MenuItem>
   ))
 
