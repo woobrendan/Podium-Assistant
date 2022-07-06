@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 import axios from 'axios';
 import ResultTableHeader from './ResultTableHeader';
 import ToggleSearch from '../toggleSearch';
+import Typography from '@mui/material/Typography';
 
 function Results() {
   const [drivers, setDrivers] = useState([]);
@@ -91,6 +92,9 @@ function Results() {
 
   return (
     <div className="result-container">
+      <Typography gutterBottom variant="h3" component="div">
+        Result History
+      </Typography>
       <ToggleSearch page='result'/>
       {allResults}
     </div>
