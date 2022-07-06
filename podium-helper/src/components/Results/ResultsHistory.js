@@ -24,6 +24,50 @@ function Results() {
   const searchLabel = option ? `Search by ${option}`: "Search";
 
   const filteredResults = groupResults.filter(val => {
+    const allResults = [val.result1, val.result2, val.result3]
+    const allValDrivers = []
+    for (const result of allResults) {
+      if (!result.first_place.driver2) {
+        if (!result.third_place && result.seceond_place) {
+          allValDrivers.push(
+            result.first_place.driver1.name, 
+            result.second_place.driver1.name,
+          )
+        } else if (!result.second_place) {
+          allValDrivers.push(result.first_place.driver1.name)
+        } else {
+          allValDrivers.push(
+            result.first_place.driver1.name, 
+            result.second_place.driver1.name,
+            result.third_place.driver1.name
+          )
+        }
+      } else {
+        if (!result.third_place && result.seceond_place) {
+          allValDrivers.push(
+            result.first_place.driver1.name, 
+            result.first_place.driver2.name,
+            result.second_place.driver1.name,
+            result.second_place.driver2.name
+          )
+        } else if (!result.second_place) {
+          allValDrivers.push(
+            result.first_place.driver1.name,
+            result.first_place.driver2.name
+          )
+        } else {
+          allValDrivers.push(
+            result.first_place.driver1.name,
+            result.first_place.driver2.name,  
+            result.second_place.driver1.name,
+            result.second_place.driver2.name,
+            result.third_place.driver1.name,
+            result.third_place.driver2.name
+            )
+          }
+          console.log('alldrivers', allValDrivers)
+      }
+    }
     switch(option){
       case 'All':
         return val;
@@ -37,21 +81,44 @@ function Results() {
         break;
 
       // case 'Driver':
-      //   if (!val.driver2) {
-      //     if (!searchValue) {
-      //       return val;
-      //     } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
-      //       return val;
-      //     }
-      //   } else {
-      //     if (!searchValue) {
-      //       return val;
-      //     } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())
-      //       || val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())){
-      //       return val;
-      //     }
-      //   }
-      //   break;
+        // const allResults = [val.result1, val.result2, val.result3]
+        // const allValDrivers = []
+        // for (const result of allResults) {
+        //   if (!result.first_place.driver2) {
+        //     allValDrivers.push(
+        //       result.first_place.driver1.name, 
+        //       result.second_place.driver1.name,
+        //       result.third_place.driver1.name
+        //     )
+        //   } else {
+        //     allValDrivers.push(
+        //       result.first_place.driver1.name,
+        //       result.first_place.driver2.name,  
+        //       result.second_place.driver1.name,
+        //       result.second_place.driver2.name,
+        //       result.third_place.driver1.name,
+        //       result.third_place.driver2.name
+        //     )
+        //   }
+        // }
+    
+        // console.log('alldrivers', allValDrivers)
+        // if (!val.driver2) {
+        //   if (!searchValue) {
+        //     return val;
+        //   } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
+        //     return val;
+        //   }
+        // } else {
+        //   if (!searchValue) {
+        //     return val;
+        //   } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())
+        //     || val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())){
+        //     return val;
+        //   }
+        // }
+        // console.log('hello')
+        // break;
 
 
       // case 'Team':
@@ -117,7 +184,7 @@ function Results() {
     }
   });
 
-  const allResults = filteredResults.map((result) => (
+  const allResults = groupResults.map((result) => (
     <div key={result.result1.result_id}>
       <ResultTableHeader results={result}/>
     </div>
