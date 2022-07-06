@@ -3,24 +3,31 @@ import axios from 'axios';
 import ResultTableHeader from './ResultTableHeader';
 import ToggleSearch from '../toggleSearch';
 import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+// import helperHooks from '../../helperHooks'
+import useDrivers from '../../helperHooks.js'
 
 function Results() {
-  const [drivers, setDrivers] = useState([]);
+  const [drivers, setDrivers] = useDrivers()
   const [resultHistory, setResultHistory] = useState([]);
   const [vehicles, setVehicles] = useState([]);
   const [fastLaps, setFastLaps] = useState([]);
+  const [searchValue, setSearchValue] = useState('');
+  const [option, setOption] = useState('');
+
+  console.log(drivers)
 
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:8080/api/results`);
-    const promise2 = axios.get(`http://localhost:8080/api/drivers`);
+    // const promise2 = axios.get(`http://localhost:8080/api/drivers`);
     const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
     const promise4 = axios.get(`http://localhost:8080/api/fastlaps`);
-    Promise.all([promise1, promise2, promise3, promise4])
+    Promise.all([promise1, promise3, promise4])
       .then((all) => {
         setResultHistory(all[0].data);
-        setDrivers(all[1].data);
-        setVehicles(all[2].data);
-        setFastLaps(all[3].data);
+        // setDrivers(all[1].data);
+        setVehicles(all[1].data);
+        setFastLaps(all[2].data);
       })
       .catch((err) => console.log("Error:", err));
   }, [])
@@ -88,14 +95,27 @@ function Results() {
     <div key={result.result1.result_id}>
       <ResultTableHeader results={result}/>
     </div>
-  ))
+  ));
+
+  const getSearchOption = (option) => {
+    setOption(option);
+  }
+
+  const searchLabel = option ? `Search by ${option}`: "Search"
 
   return (
     <div className="result-container">
       <Typography gutterBottom variant="h3" component="div">
         Result History
       </Typography>
-      <ToggleSearch page='result'/>
+      <ToggleSearch page='result' getOption={getSearchOption}/>
+       <TextField 
+        id="standard-basic" 
+        label={searchLabel} 
+        variant="standard" 
+        value={searchValue}
+        onChange={e => {setSearchValue(e.target.value)}}
+      />
       {allResults}
     </div>
   )
