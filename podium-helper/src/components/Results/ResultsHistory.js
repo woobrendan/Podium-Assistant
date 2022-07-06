@@ -1,5 +1,4 @@
-import {useEffect, useState} from 'react';
-import axios from 'axios';
+import {useState} from 'react';
 import ResultTableHeader from './ResultTableHeader';
 import ToggleSearch from '../toggleSearch';
 import Typography from '@mui/material/Typography';
@@ -11,35 +10,14 @@ function Results() {
     drivers,
     vehicles,
     fastLaps,
-    resultHistory
+    resultHistory,
+    groupResults
   } = useEntries()
 
   const [searchValue, setSearchValue] = useState('');
   const [option, setOption] = useState('');
 
-  const groupedResults = (resultArr) => {
-    const arrayOfGroupedResults = [];
-    for (let i = 0; i < resultArr.length; i += 3) {
-      let y = i + 1;
-      let z = i + 2;
-      arrayOfGroupedResults.push({
-        date: resultArr[i].date,
-        series: resultArr[i].series,
-        event: resultArr[i].event,
-        result1: resultArr[i], 
-        result2: resultArr[y],
-        result3: resultArr[z]
-      })
-    }
-    for (let x = 0; x < fastLaps.length; x++) {
-      if (fastLaps[x].id === arrayOfGroupedResults[x].result1.fast_lap) {
-        arrayOfGroupedResults[x].fastLap = fastLaps[x]
-      }
-    }
-    return arrayOfGroupedResults
-  };
-
-  const allResults = groupedResults(resultHistory).map((result) => (
+  const allResults = groupResults.map((result) => (
     <div key={result.result1.result_id}>
       <ResultTableHeader results={result}/>
     </div>
