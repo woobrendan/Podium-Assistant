@@ -5,21 +5,19 @@ import ToggleSearch from '../toggleSearch';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 // import helperHooks from '../../helperHooks'
-import useDrivers from '../../helperHooks.js'
+import useEntries from '../../helperHooks.js'
 
 function Results() {
-  // const [drivers, setDrivers] = useDrivers()
   const {
     drivers,
     vehicles,
     fastLaps,
     resultHistory
-  } = useDrivers()
+  } = useEntries()
 
   const [searchValue, setSearchValue] = useState('');
   const [option, setOption] = useState('');
 
-  console.log(resultHistory)
   const groupedResults = (resultArr) => {
     const arrayOfGroupedResults = [];
     for (let i = 0; i < resultArr.length; i += 3) {
