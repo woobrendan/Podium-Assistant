@@ -58,10 +58,33 @@ export default function useEntries() {
     return result;
   });
 
+  const groupedResults = (resultArr) => {
+    const arrayOfGroupedResults = [];
+    for (let i = 0; i < resultArr.length; i += 3) {
+      let y = i + 1;
+      let z = i + 2;
+      arrayOfGroupedResults.push({
+        date: resultArr[i].date,
+        series: resultArr[i].series,
+        event: resultArr[i].event,
+        result1: resultArr[i], 
+        result2: resultArr[y],
+        result3: resultArr[z]
+      })
+    }
+    for (let x = 0; x < fastLaps.length; x++) {
+      if (fastLaps[x].id === arrayOfGroupedResults[x].result1.fast_lap) {
+        arrayOfGroupedResults[x].fastLap = fastLaps[x]
+      }
+    }
+    return arrayOfGroupedResults
+  };
+
   return {
     drivers,
     vehicles,
     fastLaps,
-    resultHistory
+    resultHistory,
+    groupResults: groupedResults(resultHistory)
   }
 }
