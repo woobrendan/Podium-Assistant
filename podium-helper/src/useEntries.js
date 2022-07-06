@@ -32,6 +32,7 @@ export default function useEntries() {
         }
       }
     }
+    return vehicle;
   });
 
   fastLaps.map((lap) => {
@@ -40,6 +41,7 @@ export default function useEntries() {
         lap.driver = driver.name;
       }
     }
+    return lap;
   });
 
   //loop through results, take the placement winner id and match the id with the vehicle id
