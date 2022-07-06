@@ -28,44 +28,32 @@ function Results() {
     const allValDrivers = []
     for (const result of allResults) {
       if (!result.first_place.driver2) {
-        if (!result.third_place && result.seceond_place) {
-          allValDrivers.push(
-            result.first_place.driver1.name, 
-            result.second_place.driver1.name,
-          )
-        } else if (!result.second_place) {
-          allValDrivers.push(result.first_place.driver1.name)
-        } else {
-          allValDrivers.push(
-            result.first_place.driver1.name, 
-            result.second_place.driver1.name,
-            result.third_place.driver1.name
-          )
+
+        allValDrivers.push(result.first_place.driver1.name)
+        if (result.second_place) {
+          allValDrivers.push(result.second_place.driver1.name)
+        }
+        if (result.third_place) {
+          allValDrivers.push(result.third_place.driver1.name)
         }
       } else {
-        if (!result.third_place && result.seceond_place) {
+        allValDrivers.push(
+          result.first_place.driver1.name,
+          result.first_place.driver2.name
+        )
+        if (result.second_place) {
           allValDrivers.push(
-            result.first_place.driver1.name, 
-            result.first_place.driver2.name,
             result.second_place.driver1.name,
             result.second_place.driver2.name
           )
-        } else if (!result.second_place) {
+        }
+        if (result.third_place) {
           allValDrivers.push(
-            result.first_place.driver1.name,
-            result.first_place.driver2.name
-          )
-        } else {
-          allValDrivers.push(
-            result.first_place.driver1.name,
-            result.first_place.driver2.name,  
-            result.second_place.driver1.name,
-            result.second_place.driver2.name,
             result.third_place.driver1.name,
             result.third_place.driver2.name
-            )
-          }
-          console.log('alldrivers', allValDrivers)
+          )
+        } 
+        console.log('alldrivers', allValDrivers)
       }
     }
     switch(option){
