@@ -7,7 +7,8 @@ module.exports = (db) => {
     const queryString = `
     SELECT drivers.id AS id, drivers.name AS name, drivers.rating AS rating, drivers.nationality AS nationality, drivers.team_id AS team_id, vehicles.car AS vehicle, drivers.vehicle_id AS vehicle_id
     FROM drivers
-    JOIN vehicles ON vehicle_id = vehicles.id;
+    JOIN vehicles ON vehicle_id = vehicles.id
+    ORDER BY drivers.id;
     `;
     return db
       .query(queryString)
