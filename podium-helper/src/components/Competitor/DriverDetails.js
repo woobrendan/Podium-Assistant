@@ -3,7 +3,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import DriverTable from './DriverTable';
-import Elevation from './elevationPaper';
+import Elevation from '../elevationPaper';
 import classNames from 'classnames';
 
 function DriverDetails(props) {
