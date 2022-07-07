@@ -1,5 +1,5 @@
 import './App.css';
-import DriverSearch from './components/DriverSearch';
+import DriverSearch from './components/Competitor/DriverSearch';
 import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Podium from './components/Podium_Results/Podium';
 import NavBar from './components/NavBar';
