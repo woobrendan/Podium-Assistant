@@ -26,7 +26,7 @@ export default function filteredOptions(list, option, searchValue) {
       case 'Car':
         if (!searchValue) {
           return val;
-        } else if (val.car.toLowerCase().includes(searchValue.toLowerCase())) {
+        } else if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
           return val;
         }
         break;
