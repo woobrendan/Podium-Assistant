@@ -110,7 +110,7 @@ function DriverSearch() {
   // });
 
   
-  const mappedDrivers = filteredOptions(drivers).map((entry,index) =>(
+  const mappedDrivers = filteredOptions(drivers, option, searchValue).map((entry,index) =>(
        <DriverDetails entry={entry} key={index}/>
       ))
 
