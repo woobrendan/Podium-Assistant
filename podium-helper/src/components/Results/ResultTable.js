@@ -20,36 +20,25 @@ function ResultTable(props) {
   const third = podium.third_place;
 
   const checkPodium = (podium) => {
+    const allResults = [];
     if(!first.driver2) {
-      if (!podium.third && podium.second) {
-        return [
-          createDataSingleDriver('First Place', first.number, first.driver1.name, first.team, first.vehicle),
-          createDataSingleDriver('Second Place', second.number, second.driver1.name, second.team, second.vehicle)
-        ]
-      } else if (!second) {
-          return [createDataSingleDriver('First Place', first.number, first.driver1.name, first.team, first.vehicle)]
-      } else {
-        return [
-          createDataSingleDriver('First Place', first.number, first.driver1.name, first.team, first.vehicle),
-          createDataSingleDriver('Second Place', second.number, second.driver1.name, second.team, second.vehicle),
-          createDataSingleDriver('Third Place', third.number, third.driver1.name, third.team, third.vehicle)
-        ]
+      allResults.push(createDataSingleDriver('1st', first.number, first.driver1.name, first.team, first.car));
+      if (second) {
+        allResults.push(createDataSingleDriver('2nd', second.number, second.driver1.name, second.team, second.car));
+      } 
+      if (third) {
+        allResults.push(createDataSingleDriver('3rd', third.number, third.driver1.name, third.team, third.car));
       }
+      return allResults; 
     } else {
-      if (!third && second) {
-        return [
-          createDataTwoDriver('First Place', first.number, first.driver1.name, first.driver2.name, first.team, first.vehicle),
-          createDataTwoDriver('Second Place', second.number, second.driver1.name, second.driver2.name, second.team, second.vehicle)
-        ]
-      } else if (!second) {
-          return [createDataTwoDriver('First Place', first.number, first.driver1.name, first.driver2.name, first.team, first.vehicle)]
-      } else {
-        return [
-          createDataTwoDriver('First Place', first.number, first.driver1.name, first.driver2.name, first.team, first.vehicle),
-          createDataTwoDriver('Second Place', second.number, second.driver1.name, second.driver2.name, second.team, second.vehicle),
-          createDataTwoDriver('Third Place', third.number, third.driver1.name, third.driver2.name,  third.team, third.vehicle)
-        ]
+      allResults.push(createDataTwoDriver('1st', first.number, first.driver1.name, first.driver2.name, first.team, first.car));
+      if (second) {
+        allResults.push(createDataTwoDriver('2nd', second.number, second.driver1.name, second.driver2.name, second.team, second.car));
+      } 
+      if (third) {
+        allResults.push(createDataTwoDriver('3rd', third.number, third.driver1.name, third.driver2.name, third.team, third.car));
       }
+      return allResults;
     }
   }
   return (
