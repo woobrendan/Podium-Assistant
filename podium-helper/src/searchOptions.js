@@ -1,7 +1,6 @@
 
 export default function filteredOptions(list, option, searchValue) {
   const filtered = list.filter(val => {
-    console.log('val', val)
     switch(option){
       case 'All':
         return val;
@@ -56,38 +55,38 @@ export default function filteredOptions(list, option, searchValue) {
         }
         break;
 
-        case 'Rating':
-        if (!val.driver2) {
-          if (!searchValue) {
-            return val;
-          } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) {
-            return val;
-          }
-        } else {
-          if (!searchValue) {
-            return val;
-          } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())
-            || val.driver2.rating.toLowerCase().includes(searchValue.toLowerCase())){
-            return val;
-          }
-        }
-        break;
-
-        case 'Series':
+      case 'Rating':
+      if (!val.driver2) {
         if (!searchValue) {
           return val;
-        } else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) {
+        } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) {
           return val;
         }
-        break;
-
-        case 'Number':
+      } else {
         if (!searchValue) {
           return val;
-        } else if (val.number.includes(searchValue)) {
+        } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())
+          || val.driver2.rating.toLowerCase().includes(searchValue.toLowerCase())){
           return val;
         }
-        break;
+      }
+      break;
+
+      case 'Series':
+      if (!searchValue) {
+        return val;
+      } else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) {
+        return val;
+      }
+      break;
+
+      case 'Number':
+      if (!searchValue) {
+        return val;
+      } else if (val.number.includes(searchValue)) {
+        return val;
+      }
+      break;
 
       default:
         return val; 
