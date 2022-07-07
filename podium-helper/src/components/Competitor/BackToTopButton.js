@@ -1,7 +1,7 @@
 import {useEffect, useState} from 'react';
 import ArrowCircleUpTwoToneIcon from '@mui/icons-material/ArrowCircleUpTwoTone';
 import IconButton from '@material-ui/core/IconButton';
-import '../Styling/toTopButton.scss'
+import '../../Styling/toTopButton.scss'
 
 
 function BackToTopButton() {
