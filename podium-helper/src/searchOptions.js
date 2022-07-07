@@ -1,8 +1,7 @@
 
-export default function filteredOptions(list) {
-
-
+export default function filteredOptions(list, option, searchValue) {
   const filtered = list.filter(val => {
+    console.log('val', val)
     switch(option){
       case 'All':
         return val;
