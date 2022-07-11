@@ -2,6 +2,15 @@
 export default function filteredResultOptions(list, option, searchValue) {
   
   const filtered = list.filter(val => {
+    const resultOneP1 = val.result1.first_place;
+    const resultOneP2 = val.result1.second_place;
+    const resultOneP3 = val.result1.third_place;
+    const resultTwoP1 = val.result2.first_place;
+    const resultTwoP2 = val.result2.second_place;
+    const resultTwoP3 = val.result2.third_place;
+    const resultThreeP1 = val.result3.first_place;
+    const resultThreeP2 = val.result3.second_place;
+    const resultThreeP3 = val.result3.third_place;
     const allResults = [val.result1, val.result2, val.result3];
     const allValDrivers = []
     for (const result of allResults) {
@@ -31,16 +40,18 @@ export default function filteredResultOptions(list, option, searchValue) {
             result.third_place.driver2.name
           )
         } 
-        // console.log('alldrivers', allValDrivers)
       }
     }
+    // console.log('alldrivers', allValDrivers)
+    console.log('val:', val)
+    
 
     switch(option){
       case 'All':
         return val;
 
       case 'Driver':
-        if (!val.driver2) {
+        if (!val.result1.first_place.driver2) {
           if (!searchValue) {
             return val;
           } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
@@ -59,7 +70,7 @@ export default function filteredResultOptions(list, option, searchValue) {
       // case 'Car':
       //   if (!searchValue) {
       //     return val;
-      //   } else if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
+      //   } else if (allValVehicles.toLowerCase().includes(searchValue.toLowerCase())) {
       //     return val;
       //   }
       //   break;
