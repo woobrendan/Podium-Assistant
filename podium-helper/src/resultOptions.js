@@ -65,13 +65,16 @@ export default function filteredResultOptions(list, option, searchValue) {
         }
         break;
 
-      // case 'Team':
-      //   if (!searchValue) {
-      //     return val;
-      //   } else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) {
-      //     return val;
-      //   }
-      //   break;
+      case 'Team':
+        const teamsOfVal = categoryArray('team');
+        for (const team of teamsOfVal) {
+          if (!searchValue) {
+            return val;
+          } else if (team.toLowerCase().includes(searchValue.toLowerCase())) {
+            return val;
+          }
+        }
+        break;
 
       // case 'Nationality':
       //   if (!val.driver2) {
