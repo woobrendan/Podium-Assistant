@@ -44,6 +44,19 @@ export default function filteredResultOptions(list, option, searchValue) {
       }
     }
 
+    const allDrivers = () => {
+      const driverArray = [];
+      for (const result of allPlaceResults) {
+        if (result) {
+          driverArray.push(result.driver1.name)
+          if (result.driver2) {
+            driverArray.push(result.driver2.name)
+          }
+        }
+      }
+      return driverArray;
+    }
+
     const categoryArray = (category) => {
       const newArray = [];
       for (const placeResult of allPlaceResults) {
