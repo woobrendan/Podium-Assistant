@@ -12,37 +12,37 @@ export default function filteredResultOptions(list, option, searchValue) {
     const resultThreeP2 = val.result3.second_place;
     const resultThreeP3 = val.result3.third_place;
     const allPlaceResults = [resultOneP1, resultOneP2, resultOneP3, resultTwoP1, resultTwoP2, resultTwoP3, resultThreeP1, resultThreeP2, resultThreeP3]
-    const allResults = [val.result1, val.result2, val.result3];
-    const allValDrivers = []
-    for (const result of allResults) {
-      if (!result.first_place.driver2) {
+    // const allResults = [val.result1, val.result2, val.result3];
+    // const allValDrivers = []
+    // for (const result of allResults) {
+    //   if (!result.first_place.driver2) {
 
-        allValDrivers.push(result.first_place.driver1.name)
-        if (result.second_place) {
-          allValDrivers.push(result.second_place.driver1.name)
-        }
-        if (result.third_place) {
-          allValDrivers.push(result.third_place.driver1.name)
-        }
-      } else {
-        allValDrivers.push(
-          result.first_place.driver1.name,
-          result.first_place.driver2.name
-        )
-        if (result.second_place) {
-          allValDrivers.push(
-            result.second_place.driver1.name,
-            result.second_place.driver2.name
-          )
-        }
-        if (result.third_place) {
-          allValDrivers.push(
-            result.third_place.driver1.name,
-            result.third_place.driver2.name
-          )
-        } 
-      }
-    }
+    //     allValDrivers.push(result.first_place.driver1.name)
+    //     if (result.second_place) {
+    //       allValDrivers.push(result.second_place.driver1.name)
+    //     }
+    //     if (result.third_place) {
+    //       allValDrivers.push(result.third_place.driver1.name)
+    //     }
+    //   } else {
+    //     allValDrivers.push(
+    //       result.first_place.driver1.name,
+    //       result.first_place.driver2.name
+    //     )
+    //     if (result.second_place) {
+    //       allValDrivers.push(
+    //         result.second_place.driver1.name,
+    //         result.second_place.driver2.name
+    //       )
+    //     }
+    //     if (result.third_place) {
+    //       allValDrivers.push(
+    //         result.third_place.driver1.name,
+    //         result.third_place.driver2.name
+    //       )
+    //     } 
+    //   }
+    // }
 
     const allDrivers = () => {
       const driverArray = [];
@@ -75,17 +75,25 @@ export default function filteredResultOptions(list, option, searchValue) {
         return val;
 
       case 'Driver':
-        if (!val.result1.first_place.driver2) {
+        // if (!val.result1.first_place.driver2) {
+        //   if (!searchValue) {
+        //     return val;
+        //   } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
+        //     return val;
+        //   }
+        // } else {
+        //   if (!searchValue) {
+        //     return val;
+        //   } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())
+        //     || val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())){
+        //     return val;
+        //   }
+        // }
+        const drivers = allDrivers();
+        for (const driver of drivers) {
           if (!searchValue) {
             return val;
-          } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
-            return val;
-          }
-        } else {
-          if (!searchValue) {
-            return val;
-          } else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())
-            || val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())){
+          } else if (driver.toLowerCase().includes(searchValue.toLowerCase())) {
             return val;
           }
         }
