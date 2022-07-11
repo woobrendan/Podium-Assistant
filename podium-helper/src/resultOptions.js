@@ -11,6 +11,7 @@ export default function filteredResultOptions(list, option, searchValue) {
     const resultThreeP1 = val.result3.first_place;
     const resultThreeP2 = val.result3.second_place;
     const resultThreeP3 = val.result3.third_place;
+    const allPlaceResults = [resultOneP1, resultOneP2, resultOneP3, resultTwoP1, resultTwoP2, resultTwoP3, resultThreeP1, resultThreeP2, resultThreeP3]
     const allResults = [val.result1, val.result2, val.result3];
     const allValDrivers = []
     for (const result of allResults) {
@@ -45,17 +46,16 @@ export default function filteredResultOptions(list, option, searchValue) {
 
     const categoryArray = (category) => {
       const newArray = [];
-      const allOfCategory = [resultOneP1[category], resultOneP2[category], resultOneP3[category], resultTwoP1[category], resultTwoP2[category], resultTwoP3[category], resultThreeP1[category], resultThreeP2[category], resultThreeP3[category] ];
-
-      for (const result of allOfCategory) {
-        if (result) {
-          newArray.push(result)
+      for (const placeResult of allPlaceResults) {
+        if (placeResult) {
+          newArray.push(placeResult[category])
         }
       }
+      return newArray;
     }
 
     // console.log('alldrivers', allValDrivers)
-    console.log('val:', val)
+    // console.log('val:', val)
 
     switch(option){
       case 'All':
@@ -78,13 +78,16 @@ export default function filteredResultOptions(list, option, searchValue) {
         }
         break;
 
-      // case 'Car':
-      //   if (!searchValue) {
-      //     return val;
-      //   } else if (allValVehicles.toLowerCase().includes(searchValue.toLowerCase())) {
-      //     return val;
-      //   }
-      //   break;
+      case 'Car':
+        const vehiclesOfVal = categoryArray('vehicle');
+        for (const vehicle of vehiclesOfVal) {
+          if (!searchValue) {
+            return val;
+          } else if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
+            return val;
+          }
+        }
+        break;
 
       // case 'Team':
       //   if (!searchValue) {
