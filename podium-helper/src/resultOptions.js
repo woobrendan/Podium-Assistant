@@ -42,9 +42,20 @@ export default function filteredResultOptions(list, option, searchValue) {
         } 
       }
     }
+
+    const categoryArray = (category) => {
+      const newArray = [];
+      const allOfCategory = [resultOneP1[category], resultOneP2[category], resultOneP3[category], resultTwoP1[category], resultTwoP2[category], resultTwoP3[category], resultThreeP1[category], resultThreeP2[category], resultThreeP3[category] ];
+
+      for (const result of allOfCategory) {
+        if (result) {
+          newArray.push(result)
+        }
+      }
+    }
+
     // console.log('alldrivers', allValDrivers)
     console.log('val:', val)
-    
 
     switch(option){
       case 'All':
