@@ -36,7 +36,7 @@ const result = {
   fastLap: {
     id: 2,
     driver: "Giacomo",
-    laptimee: "1",
+    laptime: "1",
     driver_id: "2"
   },
   result1: {
