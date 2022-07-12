@@ -13,7 +13,8 @@ INSERT INTO class (name) VALUES
 ('TC'),
 ('TCA'),
 ('SRO3'),
-('GT4');
+('GT4'),
+('GT2');
 
 INSERT INTO events (name, date) VALUES 
 ('Grand Prix of St. Petersburg', 'February 24-26, 2022'),
@@ -179,7 +180,21 @@ VALUES
 ('MINI JCW', '62', 7, 51, 4),
 ('Hyundai Elantra N-Line', '98', 7, 53, 4),
 ('Honda Civic Si', '780', 7, 47, 4),
-('Aston Martin Vantage AMR GT4', '2', 2, 16, 2),
+('Aston Martin Vantage AMR GT4', '2', 9, 16, 3),
+('Mercedes-AMG GT3', '04', 8, 2, 3),
+('Aston Martin Vantage AMR GT4', '8', 9, 18, 3),
+('Porsche 718 Cayman GT4 RS CS', '19', 9, 17, 3),
+('Toyota GR Supra GT4', '21', 9, 24, 3),
+('BMW M4 GT4', '22', 9, 54, 3),
+('Aston Martin Vantage AMR GT4', '25', 9, 25, 3),
+('Audi R8 LMS', '27', 8, 25, 3),
+('BMW M4 GT4', '28', 9, 54, 3),
+('Ferrari 488 GT3', '37', 8, 7, 3),
+('Mercedes-AMG GT4', '39', 9, 28, 3),
+('Aston Martin Vantage AMR GT4', '50', 9, 30, 3),
+('Aston Martin Vantage AMR GT4', '55', 9, 32, 3),
+('Ferrari 458 Italia GT3', '56', 8, 56, 3),
+('Audi R8 LMS GT2', '58', 10, 16, 3),
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
