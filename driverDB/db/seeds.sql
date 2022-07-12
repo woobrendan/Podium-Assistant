@@ -52,7 +52,6 @@ INSERT INTO teams (name, country) VALUES
 ('Heart of Racing Team', 'USA'),
 ('Capstone Motorsports', 'USA'),
 ('Conquest Racing', 'USA'),
-('BimmerWorld', 'USA'),
 ('Cameron Racing', 'USA'),
 ('Team Saleen', 'USA'),
 ('Chouest Povoledo Racing', 'USA'),
@@ -121,7 +120,12 @@ VALUES
 ('Porsche 718 Cayman GT4 RS CS', '18', 4, 23, 2),
 ('Porsche 718 Cayman GT4 RS CS', '19', 3, 17, 2),
 ('Toyota GR Supra GT4', '21', 3, 24, 2),
-('Aston Martin Vantage AMR GT4', '24', 2, 25, 2);
+('Aston Martin Vantage AMR GT4', '24', 2, 25, 2),
+('Mercedes-AMG GT4', '32', 4, 26, 2),
+('Mercedes-AMG GT4', '34', 4, 27, 2),
+('BMW M4 GT4', '36', 3, 14, 2),
+('Mercedes-AMG GT4', '39', 2, 28, 2);
+
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
