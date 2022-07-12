@@ -303,7 +303,26 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Kyle Marcelli', 'Gold', 'Canada', 35, 46),
 ('Todd Brown', 'Bronze', 'USA', 36, 47),
 ('Johan Schwartz', 'Bronze', 'USA', 36, 47),
-
+('James Walker Jr', 'Bronze', 'USA', 14, 48),
+('Devin Jones', 'Silver', 'USA', 14, 48),
+('Nelson Calle', 'Bronze', 'USA', 23, 49),
+('Juan Martinez', 'Bronze', 'Columbia', 23, 49),
+('Paul Kiebler', 'Bronze', 'USA', 35, 50),
+('Jon Branam', 'Bronze', 'USA', 35, 50),
+('Paul Sparta', 'Bronze', 'USA', 37, 51),
+('Al Carter', 'Bronze', 'USA', 37, 51),
+('Ryan Dexter', 'Silver', 'USA', 38, 52),
+('Dominic Starkweather', 'Silver', 'USA', 38, 52),
+('Adam Adelson', 'Bronze', 'USA', 39, 53),
+('Elliot Skeer', 'Silver', 'USA', 39, 53),
+('Edgar Lau', 'Bronze', 'Hong Kong', 40, 54),
+('Mike Skeen', 'Silver', 'USA', 40, 54),
+('Alex Amine', 'Bronze', 'USA', 41, 55),
+('Ryan Hall', 'Bronze', 'USA', 41, 55),
+('Sean Whalen', 'Bronze', 'USA', 12, 56),
+('Matt Guiver', 'Bronze', 'USA', 12, 56),
+('Steve Dinan', 'Bronze', 'USA', 42, 57),
+('Tom Dyer', 'Silver', 'USA', 42, 57),
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
