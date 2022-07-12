@@ -36,9 +36,6 @@ export default function filteredResultOptions(list, option, searchValue) {
       return newArray;
     }
 
-    // console.log('alldrivers', allValDrivers)
-    console.log('val:', val)
-
     switch(option){
       case 'All':
         return val;
