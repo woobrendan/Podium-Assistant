@@ -333,6 +333,17 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Stephen Cugliari', 'N/A', 'USA', 32, 65),
 ('Brett Scroggin', 'N/A', 'USA', 45, 66),
 ('Jessica Tracy', 'N/A', 'USA', 37, 67),
+('Matthew Ibrahim', 'N/A', 'USA', 46, 68),
+('Ruben Iglesias', 'N/A', 'Puerto Rico', 47, 69),
+('Kevin Boehm', 'N/A', 'USA', 48, 70),
+('Kris Valdez', 'N/A', 'USA', 46, 71),
+('Jason Weaver', 'N/A', 'USA', 49, 72),
+('Mat Pombo', 'N/A', 'USA', 50, 73),
+('Ken Fukuda', 'N/A', 'USA', 48, 74),
+('Clay Williams', 'N/A', 'USA', 51, 75),
+('Mike Lamarra', 'N/A', 'USA', 50, 76),
+('Jeff Ricca', 'N/A', 'USA', 52, 77),
+('Nicholas Barbato', 'N/A', 'USA', 52, 78),
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
