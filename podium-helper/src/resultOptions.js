@@ -84,13 +84,16 @@ export default function filteredResultOptions(list, option, searchValue) {
       }
       break;
 
-      // case 'Number':
-      // if (!searchValue) {
-      //   return val;
-      // } else if (val.number.includes(searchValue)) {
-      //   return val;
-      // }
-      // break;
+      case 'Number':
+        const numbersOfVal = categoryArray('number');
+        for (const number of numbersOfVal) {
+          if (!searchValue) {
+            return val;
+          } else if (number.includes(searchValue)) {
+            return val;
+          }
+        }
+      break;
 
       default:
         return val; 
