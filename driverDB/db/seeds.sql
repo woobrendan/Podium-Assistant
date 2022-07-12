@@ -165,7 +165,18 @@ VALUES
 ('Honda Civic Type-R', '73', 6, 50, 4),
 ('Hyundai Veloster N TC', '78', 6, 52, 4),
 ('Hyundai Veloster N TC', '88', 6, 52, 4),
-
+('Honda Civic Si', '2', 7, 48, 4),
+('Honda Civic Si', '5', 7, 50, 4),
+('Honda Civic Si', '16', 7, 48, 4),
+('Honda Civic Si', '20', 7, 48, 4),
+('Subaru BRZ', '21', 7, 49, 4),
+('Subaru BRZ', '22', 7, 49, 4),
+('Subaru BRZ', '23', 7, 49, 4),
+('Hyundai Elantra N-Line', '33', 7, 53, 4),
+('MINI JCW', '61', 7, 51, 4),
+('MINI JCW', '62', 7, 51, 4),
+('Hyundai Elantra N-Line', '98', 7, 53, 4),
+('Honda Civic Si', '780', 7, 47, 4),
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
