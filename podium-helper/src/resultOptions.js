@@ -95,6 +95,14 @@ export default function filteredResultOptions(list, option, searchValue) {
         }
       break;
 
+      case 'Event':
+          if (!searchValue) {
+            return val;
+          } else if (val.result1.event.toLowerCase().includes(searchValue.toLowerCase())) {
+            return val;
+          }
+      break;
+
       default:
         return val; 
     }
