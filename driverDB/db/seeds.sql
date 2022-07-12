@@ -69,7 +69,6 @@ INSERT INTO teams (name, country) VALUES
 ('CarBahn w/ Peregrine Racing', 'USA'),
 ('Rigid Speed', 'USA'),
 ('HARD Motorsports', 'USA'),
-('Accerlating Performance', 'USA'),
 ('Homewrecker Racing', 'USA'),
 ('DRS & Garagistic', 'USA'),
 ('VGRT', 'Puerto Rico'),
@@ -152,7 +151,9 @@ VALUES
 ('BMW M2 CS', '30', 5, 44, 4),
 ('BMW M2 CS', '44', 5, 36, 4),
 ('BMW M2 CS', '54', 5, 19, 4),
-('BMW M2 CS', '57', 5, 32, 4);
+('BMW M2 CS', '57', 5, 32, 4),
+('BMW M2 CS', '51', 5, 45, 4),
+('BMW M2 CS', '97', 5, 37, 4);
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
