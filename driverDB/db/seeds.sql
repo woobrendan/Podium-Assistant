@@ -81,7 +81,12 @@ INSERT INTO teams (name, country) VALUES
 ('LA Honda World Racing', 'USA'),
 ('MINI JCW Team', 'USA'),
 ('GenRacer / Ricca Autosport', 'USA'),
-('Bryan Herta Autosport w/ Curb-Agajanian', 'USA');
+('Bryan Herta Autosport w/ Curb-Agajanian', 'USA'),
+('SRQ Motorsports Group', 'USA'),
+('Daskalos Motorsports', 'USA'),
+('SKI Autosports', 'USA'),
+('MISHUMOTORS', 'USA'),
+('Rotek Racing', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id)
