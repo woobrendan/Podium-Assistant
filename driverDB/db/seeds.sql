@@ -153,7 +153,18 @@ VALUES
 ('BMW M2 CS', '54', 5, 19, 4),
 ('BMW M2 CS', '57', 5, 32, 4),
 ('BMW M2 CS', '51', 5, 45, 4),
-('BMW M2 CS', '97', 5, 37, 4);
+('BMW M2 CS', '97', 5, 37, 4),
+('BMW M240iR', '06', 6, 46, 4),
+('Honda Civic Type-R', '8', 6, 47, 4),
+('Honda Civic Type-R', '9', 6, 48, 4),
+('BMW M240iR', '09', 6, 46, 4),
+('Nissan 370z', '18', 6, 49, 4),
+('Honda Civic Type-R', '37', 6, 50, 4),
+('Honda Civic Type-R', '42', 6, 48, 4),
+('MINI JCW Pro TC', '60', 6, 51, 4),
+('Honda Civic Type-R', '73', 6, 50, 4),
+('Hyundai Veloster N TC', '78', 6, 52, 4),
+('Hyundai Veloster N TC', '88', 6, 52, 4),
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
