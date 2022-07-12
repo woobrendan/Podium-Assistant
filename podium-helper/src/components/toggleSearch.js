@@ -9,7 +9,7 @@ function ToggleSearch(props) {
 
   const options = ['All', 'Driver', 'Car', 'Nationality', 'Team', 'Rating', 'Series', 'Number'];
 
-  const resultOptions = ['All', 'Driver', 'Car', 'Nationality', 'Team', 'Rating', 'Series', 'Number', 'Event'];
+  const resultOptions = ['All', 'Driver', 'Car', 'Team', 'Series', 'Number', 'Event'];
 
   const handleToggle = (event) => {
     setSearchOption(event.target.value);
