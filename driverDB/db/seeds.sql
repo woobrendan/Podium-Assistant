@@ -323,6 +323,16 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Matt Guiver', 'Bronze', 'USA', 12, 56),
 ('Steve Dinan', 'Bronze', 'USA', 42, 57),
 ('Tom Dyer', 'Silver', 'USA', 42, 57),
+('Jacob Ruud', 'N/A', 'USA', 19, 58),
+('Joesph Catania', 'N/A', 'USA', 43, 59),
+('Lucas Catania', 'N/A', 'USA', 43, 60),
+('Olivia Askew', 'N/A', 'USA', 19, 61),
+('Steve Streimer', 'N/A', 'USA', 44, 62),
+('Colin Garrett', 'N/A', 'USA', 36, 63),
+('Garrett Adams', 'N/A', 'USA', 19, 64),
+('Stephen Cugliari', 'N/A', 'USA', 32, 65),
+('Brett Scroggin', 'N/A', 'USA', 45, 66),
+('Jessica Tracy', 'N/A', 'USA', 37, 67),
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
