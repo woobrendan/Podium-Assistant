@@ -151,7 +151,9 @@ VALUES
 ('BMW M2 CS', '26', 5, 44, 4),
 ('BMW M2 CS', '29', 5, 43, 4),
 ('BMW M2 CS', '30', 5, 45, 4),
-('BMW M2 CS', '44', 5, 44, 4),
+('BMW M2 CS', '44', 5, 36, 4),
+('BMW M2 CS', '54', 5, 43, 4),
+('BMW M2 CS', '57', 5, 32, 4);
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
