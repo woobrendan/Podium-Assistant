@@ -124,7 +124,29 @@ VALUES
 ('Mercedes-AMG GT4', '32', 4, 26, 2),
 ('Mercedes-AMG GT4', '34', 4, 27, 2),
 ('BMW M4 GT4', '36', 3, 14, 2),
-('Mercedes-AMG GT4', '39', 2, 28, 2);
+('Mercedes-AMG GT4', '39', 2, 28, 2),
+('Porsche 718 Cayman GT4 RS CS', '47', 2, 17, 2),
+('Saleen 1', '49', 2, 29, 2),
+('Aston Martin Vantage AMR GT4', '50', 2, 30, 2),
+('BMW M4 GT4', '51', 4, 31, 2),
+('BMW M4 GT4', '52', 2, 31, 2),
+('BMW M4 GT4', '53', 3, 31, 2),
+('Aston Martin Vantage AMR GT4', '55', 2, 32, 2),
+('Porsche 718 Cayman GT4 RS CS', '66', 3, 22, 2),
+('Toyota GR Supra GT4', '68', 4, 33, 2),
+('Toyota GR Supra GT4', '72', 3, 34, 2),
+('Mercedes-AMG GT4', '79', 2, 35, 2),
+('BMW M4 GT4', '80', 3, 36, 2),
+('BMW M4 GT4', '82', 2, 14, 2),
+('Porsche 718 Cayman GT4 RS CS', '83', 3, 23, 2),
+('Mercedes-AMG GT4', '89', 3, 35, 2),
+('BMW M4 GT4', '98', 3, 37, 2),
+('Toyota GR Supra GT4', '112', 4, 38, 2),
+('Porsche 718 Cayman GT4 RS CS', '120', 2, 39, 2),
+('Ford Mustang GT4', '124', 2, 40, 2),
+('BMW M4 GT4', '152', 3, 41, 2),
+('Aston Martin Vantage AMR GT4', '888', 3, 12, 2),
+('Audi R8 LMS GT4', '930', 2, 42, 2);
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
