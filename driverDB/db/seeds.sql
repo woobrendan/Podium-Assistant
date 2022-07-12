@@ -344,6 +344,18 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Mike Lamarra', 'N/A', 'USA', 50, 76),
 ('Jeff Ricca', 'N/A', 'USA', 52, 77),
 ('Nicholas Barbato', 'N/A', 'USA', 52, 78),
+('Colin Harrison', 'N/A', 'USA', 48, 79),
+('Spencer Bucknum', 'N/A', 'USA', 50, 80),
+('Carter Fartuch', 'N/A', 'USA', 48, 81),
+('Mike Ogren', 'N/A', 'USA', 48, 82),
+('Gresham Wagner', 'N/A', 'USA', 49, 83),
+('Devin Anderson', 'N/A', 'USA', 49, 84),
+('Shaoyi Che', 'N/A', 'China', 49, 85),
+('Tyler Delgado', 'N/A', 'USA', 53, 86),
+('Cristian Perocarpi', 'N/A', 'USA', 51, 87),
+('PJ Groenke', 'N/A', 'Canada', 51, 88),
+('Branyon Tiner', 'N/A', 'USA', 53, 89),
+('Sally McNulty', 'N/A', 'USA', 47, 90);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
