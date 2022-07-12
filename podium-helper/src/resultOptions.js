@@ -37,7 +37,7 @@ export default function filteredResultOptions(list, option, searchValue) {
     }
 
     // console.log('alldrivers', allValDrivers)
-    // console.log('val:', val)
+    console.log('val:', val)
 
     switch(option){
       case 'All':
@@ -76,47 +76,13 @@ export default function filteredResultOptions(list, option, searchValue) {
         }
         break;
 
-      // case 'Nationality':
-      //   if (!val.driver2) {
-      //     if (!searchValue) {
-      //       return val;
-      //     } else if (val.driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) {
-      //       return val;
-      //     }
-      //   } else {
-      //     if (!searchValue) {
-      //       return val;
-      //     } else if (val.driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())
-      //       || val.driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())){
-      //       return val;
-      //     }
-      //   }
-      //   break;
-
-      // case 'Rating':
-      // if (!val.driver2) {
-      //   if (!searchValue) {
-      //     return val;
-      //   } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) {
-      //     return val;
-      //   }
-      // } else {
-      //   if (!searchValue) {
-      //     return val;
-      //   } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())
-      //     || val.driver2.rating.toLowerCase().includes(searchValue.toLowerCase())){
-      //     return val;
-      //   }
-      // }
-      // break;
-
-      // case 'Series':
-      // if (!searchValue) {
-      //   return val;
-      // } else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) {
-      //   return val;
-      // }
-      // break;
+      case 'Series':
+      if (!searchValue) {
+        return val;
+      } else if (val.result1.series.toLowerCase().includes(searchValue.toLowerCase())) {
+        return val;
+      }
+      break;
 
       // case 'Number':
       // if (!searchValue) {
