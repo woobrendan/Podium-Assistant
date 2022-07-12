@@ -70,7 +70,6 @@ INSERT INTO teams (name, country) VALUES
 ('Fast Track Racing', 'USA'),
 ('Rigid Speed', 'USA'),
 ('HARD Motorsports', 'USA'),
-('Rooster Hall Racing', 'USA'),
 ('Accerlating Performance', 'USA'),
 ('Homewrecker Racing', 'USA'),
 ('DRS & Garagistic', 'USA'),
@@ -146,7 +145,13 @@ VALUES
 ('Ford Mustang GT4', '124', 2, 40, 2),
 ('BMW M4 GT4', '152', 3, 41, 2),
 ('Aston Martin Vantage AMR GT4', '888', 3, 12, 2),
-('Audi R8 LMS GT4', '930', 2, 42, 2);
+('Audi R8 LMS GT4', '930', 2, 42, 2),
+('BMW M2 CS', '1', 5, 43, 4),
+('BMW M2 CS', '24', 5, 44, 4),
+('BMW M2 CS', '26', 5, 44, 4),
+('BMW M2 CS', '29', 5, 43, 4),
+('BMW M2 CS', '30', 5, 45, 4),
+('BMW M2 CS', '44', 5, 44, 4),
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
