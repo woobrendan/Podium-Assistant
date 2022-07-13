@@ -3,14 +3,13 @@ import Card from '@mui/material/Card';
 import MenuItem from '@mui/material/MenuItem';
 import { FormControl, InputLabel, Select, TextField, Button } from '@mui/material';
 import {useState} from 'react';
-import { driverInfo } from '../../drivers';
 import Typography from '@mui/material/Typography';
 import useEntries from '../../useEntries';
 
 
 function FastLap(props) {
 
-  const {drivers, vehicles} = useEntries();
+  const {vehicles} = useEntries();
 
   const [fastTime, setFastTime] = useState({
     driver: '',
@@ -48,7 +47,7 @@ function FastLap(props) {
 
   const mapSingleDrivers = singleDrivers(vehicles)
     .map((option, index) => 
-    <MenuItem key={index} value={option}>#{option.number} - {option.driver} </MenuItem>
+    {return <MenuItem key={index} value={option.driver}>#{option.number} - {option.driver} </MenuItem>}
     )
 
   return (
