@@ -75,8 +75,10 @@ export default function useEntries() {
       })
     }
     for (let x = 0; x < fastLaps.length; x++) {
-      if (fastLaps[x].id === arrayOfGroupedResults[x].result1.fast_lap) {
-        arrayOfGroupedResults[x].fastLap = fastLaps[x]
+      for (let y = 0; y < arrayOfGroupedResults.length; y++) {
+        if (fastLaps[x].id === arrayOfGroupedResults[y].result1.fast_lap) {
+          arrayOfGroupedResults[y].fastLap = fastLaps[x]
+        }
       }
     }
     return arrayOfGroupedResults
