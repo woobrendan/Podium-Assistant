@@ -207,7 +207,8 @@ VALUES
 ('Ford Mustang GT4', '124', 9, 40, 3),
 ('Lamborghini Huracan GT3', '191', 8, 12, 3),
 ('Aston Martin Vantage AMR GT4', '888', 9, 12, 3),
-('Mercedes-AMG GT3', '08', 9, 4, 3);
+('Mercedes-AMG GT3', '08', 8, 4, 3),
+('Porsche 718 Cayman GT4 RS CS', '66', 9, 22, 3);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -384,7 +385,8 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Chris Alliegro', 'Bronze', 'USA', 40, 115),
 ('Jeff Burton', 'Bronze', 'USA', 13, 116),
 ('Sean Whalen', 'Bronze', 'USA', 12, 117),
-('Scott Smithson', 'Bronze', 'USA', 4, 118);
+('Scott Smithson', 'Bronze', 'USA', 4, 118),
+('Derek DeBoer', 'Bronze', 'USA', 22, 119);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
@@ -404,6 +406,8 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (1, 1, 19, 2, 2),
 (2, 3, 17, 14, 2),
 (3, 9, NULL, NULL, 2),
-(9, 98, 118, 92, 3);
+(8, 98, 118, 92, 3),
+(9, 96, 119, 103, 3),
+(10, 105, NULL, NULL, 3);
 
 
