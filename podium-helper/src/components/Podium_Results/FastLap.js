@@ -5,10 +5,13 @@ import { FormControl, InputLabel, Select, TextField, Button } from '@mui/materia
 import {useState} from 'react';
 import { driverInfo } from '../../drivers';
 import Typography from '@mui/material/Typography';
+import useEntries from '../../useEntries';
 
 
 function FastLap(props) {
 
+  const {drivers, vehicles} = useEntries();
+  console.log('drivers eh:', vehicles)
   const [fastTime, setFastTime] = useState({
     driver: '',
     laptime: ''
@@ -35,7 +38,7 @@ function FastLap(props) {
     return drivers;
   }
 
-  const mapSingleDrivers = singleDrivers(driverInfo)
+  const mapSingleDrivers = singleDrivers(vehicles)
     .map((option, index) => 
     <MenuItem key={index} value={option.driver}>#{option.number} - {option.driver} </MenuItem>
     )
