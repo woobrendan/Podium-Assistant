@@ -11,7 +11,7 @@ import useEntries from '../../useEntries';
 function FastLap(props) {
 
   const {drivers, vehicles} = useEntries();
-  console.log('drivers eh:', vehicles)
+
   const [fastTime, setFastTime] = useState({
     driver: '',
     laptime: ''
@@ -30,9 +30,17 @@ function FastLap(props) {
     const seriesFilteredDrivers = entryArray
       .filter(entry => entry.series === props.series)
     for (const entry of seriesFilteredDrivers) {
-      drivers.push({number: entry.number, driver: entry.driver1.name});
+      drivers.push({
+        number: entry.number, 
+        driver: entry.driver1.name,
+        vehicle: entry.vehicle
+      });
       if (entry.driver2) {
-        drivers.push({number: entry.number, driver: entry.driver2.name});
+        drivers.push({
+          number: entry.number, 
+          driver: entry.driver2.name,
+          vehicle: entry.vehicle
+        });
       }
     }
     return drivers;
@@ -40,7 +48,7 @@ function FastLap(props) {
 
   const mapSingleDrivers = singleDrivers(vehicles)
     .map((option, index) => 
-    <MenuItem key={index} value={option.driver}>#{option.number} - {option.driver} </MenuItem>
+    <MenuItem key={index} value={option}>#{option.number} - {option.driver} </MenuItem>
     )
 
   return (
