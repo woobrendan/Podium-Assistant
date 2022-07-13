@@ -27,7 +27,7 @@ export default function useEntries() {
       if (vehicle.id === driver.vehicle_id) {
         if (!vehicle.driver1) {
           vehicle.driver1 = driver
-        } else {
+        } else if (!vehicle.driver2 && driver.id !== vehicle.driver1.id) {
           vehicle.driver2 = driver
         }
       }
