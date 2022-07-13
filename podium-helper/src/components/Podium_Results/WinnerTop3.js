@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { FormControl, InputLabel, Select, Button } from '@mui/material';
 import { driverInfo } from '../../drivers';
 import '../../Styling/winnerTop3.scss';
+import useEntries from '../../useEntries'
 
 const classOptions = {
   gtwca: ['Pro', 'Pro-Am', 'Am'],
@@ -15,6 +16,8 @@ const classOptions = {
 }
 
 function Podium(props) {
+
+  const {vehicles} = useEntries();
   const [winners, setWinners] = useState({
     class:'',
     first_place: '',
