@@ -13,7 +13,7 @@ module.exports = (db) => {
     JOIN drivers ON first_place = drivers.id
     JOIN class ON class_id = class.id
     JOIN fastlaps ON fastlap_id = fastlaps.id
-   
+    ORDER BY date, podiums.id
     ;`;
     return db
       .query(queryString)
