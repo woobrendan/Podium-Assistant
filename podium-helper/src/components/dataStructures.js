@@ -58,3 +58,44 @@ const result = {
   },
   result2: {}
 }
+
+
+//from drivers, driverInfo
+const driverInfo = {
+  team: "K-PAX",
+  driver1: {
+    name: 'Michele Beretta',
+    nationality: 'Italy',
+    rating: 'Silver'
+    },
+  driver2: {
+    name: 'Andrea Calderlli',
+    nationality: 'Italy',
+    rating: 'Platinum'
+    },
+  vehicle: "Lamborghini Huracan GT3",
+  classification: "Pro",
+  number: "1",
+  carImage: kpax6,
+  series: "GT World Challenge America"
+}
+
+//from vehicles from useEntries
+const vehicles = {
+  team: "K-PAX",
+  id: 1,
+  driver1: {
+    name: 'Michele Beretta',
+    nationality: 'Italy',
+    rating: 'Silver'
+    },
+  driver2: {
+    name: 'Andrea Calderlli',
+    nationality: 'Italy',
+    rating: 'Platinum'
+    },
+  vehicle: "Lamborghini Huracan GT3",
+  classification: "Pro",
+  number: "1",
+  series: "GT World Challenge America"
+}
