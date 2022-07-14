@@ -53,6 +53,13 @@ function Podium() {
       misc: false,
       printPage: true
     }));
+
+    axios
+      .post('http://localhost:8080/fastlaps', {
+        driver: getDriverId(value.driver),
+        lapTime: value.laptime
+      })
+      .catch(err => console.log(err.message))
   }
 
   const handleRacePodiumSubmit = (value) => {
