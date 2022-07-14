@@ -188,7 +188,7 @@ VALUES
 ('Toyota GR Supra GT4', '21', 9, 24, 3),
 ('BMW M4 GT4', '22', 9, 54, 3),
 ('Aston Martin Vantage AMR GT4', '25', 9, 25, 3),
-('Audi R8 LMS', '27', 8, 25, 3),
+('Audi R8 LMS', '27', 8, 55, 3),
 ('BMW M4 GT4', '28', 9, 54, 3),
 ('Ferrari 488 GT3', '37', 8, 7, 3),
 ('Mercedes-AMG GT4', '39', 9, 28, 3),
@@ -394,7 +394,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Russell Ward', 'Silver', 'USA', 59 ,120),
 ('Philip Ellis', 'Gold', 'Switzerland', 59, 120),
 ('Steve Dinan', 'Bronze', 'USA', 42, 121),
-('Todd Coleman', 'Bronze', 'USA', 33, 122)
+('Todd Coleman', 'Bronze', 'USA', 33, 122);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
@@ -435,5 +435,6 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (2, 12, 17, 3, 6),
 (3, 13, 9, NULL, 6),
 (8, 98, 92, 111, 7),
-(9, 121, 122, 107, 7);
+(9, 121, 122, 107, 7),
+(10, 105, NULL, NULL, 7);
 
