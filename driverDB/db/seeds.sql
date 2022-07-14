@@ -210,7 +210,9 @@ VALUES
 ('Aston Martin Vantage AMR GT4', '888', 9, 12, 3),
 ('Mercedes-AMG GT3', '08', 8, 4, 3),
 ('Porsche 718 Cayman GT4 RS CS', '66', 9, 22, 3),
-('Mercedes-AMG GT3', '33', 1, 59, 1);
+('Mercedes-AMG GT3', '33', 1, 59, 1),
+('Audi R8 LMS GT4', '930', 9, 42, 3),
+('Toyota GR Supra GT4', '69', 9, 33, 3);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -390,7 +392,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Scott Smithson', 'Bronze', 'USA', 4, 118),
 ('Derek DeBoer', 'Bronze', 'USA', 22, 119),
 ('Russell Ward', 'Silver', 'USA', 59 ,120),
-('Philip Ellis', 'Gold', 'Switzerland', 59, 120);
+('Philip Ellis', 'Gold', 'Switzerland', 59, 120),
+('Steve Dinan', 'Bronze', 'USA', 42, 121),
+('Todd Coleman', 'Bronze', 'USA', 33, 122)
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
@@ -399,7 +403,8 @@ INSERT INTO fastlaps (driver_id, laptime) VALUES
 (149, '1:13.964'),
 (157, '1:13.642'),
 (4, '1:37.310'),
-(4, '1:37.208');
+(4, '1:37.208'),
+(168, '1:41.653');
 
 INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES
 ('2022-06-18', 4, 1, 1),
@@ -407,7 +412,8 @@ INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES
 ('2022-02-25', 1, 3, 3),
 ('2022-02-26', 1, 3, 4),
 ('2022-04-16', 2, 1, 5),
-('2022-04-17', 2, 1, 6);
+('2022-04-17', 2, 1, 6),
+('2022-04-16', 2, 3, 7);
 
 INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES
 (1, 1, 19, 2, 1),
@@ -427,5 +433,7 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (3, 13, 9, NULL, 5),
 (1, 1, 120, 2, 6),
 (2, 12, 17, 3, 6),
-(3, 13, 9, NULL, 6);
+(3, 13, 9, NULL, 6),
+(8, 98, 92, 111, 7),
+(9, 121, 122, 107, 7);
 
