@@ -15,7 +15,7 @@ function ResultsHistory() {
     groupResults
   } = useEntries()
 
-  // console.log(groupResults)
+
   const [searchValue, setSearchValue] = useState('');
   const [option, setOption] = useState('');
 
