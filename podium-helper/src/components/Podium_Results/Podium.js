@@ -8,6 +8,7 @@ import axios from 'axios';
 import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
+import useEntries from '../../useEntries';
 
 const getToday = () => {
   let today = new Date();
@@ -18,6 +19,7 @@ const getToday = () => {
 }
 
 function Podium() {
+  const {drivers} = useEntries(); 
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -78,12 +80,22 @@ function Podium() {
     }))
   }
 
-  // const onFinalSubmit = () => {
-    // axios
-    //   .post('http://localhost:8080/results', {result: results})
-    //   .catch(err => console.log(err.message))
+  const getDriverId = (name) => {
+    for (const driver of drivers) {
+      if (driver.name === name) {
+        return driver.id;
+      }
+    }
+  }
 
-
+  const onFinalSubmit = () => {
+    axios
+      .post('http://localhost:8080/fastLaps', {
+        driver: getDriverId(results.fastLap.driver),
+        lapTime: results.fastLap.laptime
+      })
+      .catch(err => console.log(err.message))
+  } 
 
   const printPage = () => {
     window.print()
