@@ -10,8 +10,8 @@ import FastLapTable from '../Podium_Results/FastLapTable';
 import '../../Styling/result.scss';
 
 function ResultTableHeader(props) {
-  const podiums = props.results
-  const podium1 = podiums.result1
+  const podiums = props.results;
+  const podium1 = podiums.result1;
 
   return (
     <div id='result-table-container'>
@@ -44,5 +44,5 @@ function ResultTableHeader(props) {
   )
 }
 
-export default ResultTableHeader
+export default ResultTableHeader;
 
