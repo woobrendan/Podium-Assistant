@@ -26,9 +26,9 @@ export default function useEntries() {
     for (const driver of drivers) {
       if (vehicle.id === driver.vehicle_id) {
         if (!vehicle.driver1) {
-          vehicle.driver1 = driver
+          vehicle.driver1 = driver;
         } else if (!vehicle.driver2 && driver.id !== vehicle.driver1.id) {
-          vehicle.driver2 = driver
+          vehicle.driver2 = driver;
         }
       }
     }
@@ -44,7 +44,7 @@ export default function useEntries() {
     return lap;
   });
 
-  //loop through results, take the placement winner id and match the id with the vehicle id
+  //loop through results take the placement winner id and match the id with the vehicle id
   resultHistory.map((result) => {
     for (const vehicle of vehicles) {
       if (result.first_place === vehicle.id) {
