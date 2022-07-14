@@ -12,6 +12,7 @@ import '../../Styling/result.scss';
 function ResultTableHeader(props) {
   const podiums = props.results;
   const podium1 = podiums.result1;
+  const singleDriver = podium1.first_place.driver2 ? false : true
 
   return (
     <div id='result-table-container'>
@@ -19,7 +20,12 @@ function ResultTableHeader(props) {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell colSpan={3} align='center'>{podiums.event}</TableCell>
+              <TableCell 
+                colSpan={singleDriver ? 2 : 3} 
+                align='center'
+              >
+                {podiums.event}
+              </TableCell>
               <TableCell colSpan={2} align='center'>{podiums.series}</TableCell>
               <TableCell colSpan={1} align='center'>{podiums.date}</TableCell>
             </TableRow>
