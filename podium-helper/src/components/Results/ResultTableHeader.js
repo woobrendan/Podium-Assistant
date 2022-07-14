@@ -18,7 +18,7 @@ function ResultTableHeader(props) {
     <div id='result-table-container'>
       <TableContainer sx={{ minWidth: 600, maxWidth: 1000 }}component={Paper}>
         <Table aria-label="simple table">
-          <TableHead className="test">
+          <TableHead className="result-table-head">
             <TableRow>
               <TableCell 
                 colSpan={singleDriver ? 2 : 3} 
