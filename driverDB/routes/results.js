@@ -5,7 +5,7 @@ module.exports = (db) => {
   //results
   router.post('/new', (req, res) => {
     const fastLap = req.body.results.fastLap;
-    
+    const result = req.body.results;
     const queryString = 
     `INSERT INTO fastlaps (driver_id, laptime) VALUES ($1, $2) RETURNING *;`;
 
@@ -20,7 +20,7 @@ module.exports = (db) => {
         return result.rows[0].id
       })
       // .then(fastId  => {
-      //   return db.query(newResultString, [])
+      //   return db.query(newResultString, [result.date, result])
       // })
       .catch(err => console.log(err.message))
   });
