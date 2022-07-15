@@ -1705,6 +1705,19 @@ export const driverInfo = [
     series: "TC America"
   },
   {
+    team: "Team Hardpoint",
+    driver1: {
+      name: 'PJ Hyett',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    vehicle: "Porsche 911 GT3-R (991.ii)",
+    classification: "SRO3",
+    number: "00",
+    carImage: '',
+    series: "GT America"
+  },
+  {
     team: "GMG Racing",
     driver1: {
       name: 'Jason Bell',
@@ -1741,6 +1754,32 @@ export const driverInfo = [
     classification: "GT4",
     number: "8",
     carImage: flm8,
+    series: "GT America"
+  },
+  {
+    team: "BSport Racing",
+    driver1: {
+      name: 'Bryan Putt',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    vehicle: "Aston Martin Vantage AMR GT4",
+    classification: "GT4",
+    number: "15",
+    carImage: bsport15,
+    series: "GT America"
+  },
+  {
+    team: "Hattori Motorsports",
+    driver1: {
+      name: 'Seth Lucas',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    vehicle: "Toyota GR Supra GT4",
+    classification: "GT4",
+    number: "016",
+    carImage: hattori016,
     series: "GT America"
   },
   {
@@ -1819,6 +1858,19 @@ export const driverInfo = [
     classification: "GT4",
     number: "28",
     carImage: srq28,
+    series: "GT America"
+  },
+  {
+    team: "Conquest Racing",
+    driver1: {
+      name: 'Custodio Toledo',
+      nationality: 'Brazil',
+      rating: 'Bronze'
+      },
+    vehicle: "Mercedes-AMG GT4",
+    classification: "GT4",
+    number: "35",
+    carImage: '',
     series: "GT America"
   },
   {
@@ -1922,6 +1974,19 @@ export const driverInfo = [
     vehicle: "Toyota GR Supra GT4",
     classification: "GT4",
     number: "67",
+    carImage: smooge67,
+    series: "GT America"
+  },
+  {
+    team: "Smooge Racing",
+    driver1: {
+      name: 'Todd Coleman',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    vehicle: "Toyota GR Supra GT4",
+    classification: "GT4",
+    number: "69",
     carImage: smooge67,
     series: "GT America"
   },
