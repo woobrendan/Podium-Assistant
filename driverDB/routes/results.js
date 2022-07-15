@@ -3,7 +3,7 @@ const router = express.Router();
 
 module.exports = (db) => {
   //results
-  router.post('/', (req, res) => {
+  router.post('/new', (req, res) => {
     const fastLap = req.body;
     console.log('req.body', fastLap)
     const queryString = 
