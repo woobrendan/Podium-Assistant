@@ -55,7 +55,7 @@ function Podium() {
     }));
 
     axios
-      .post('http://localhost:8080/results', {
+      .post('http://localhost:8080/results/new', {
         driver: getDriverId(value.driver),
         lapTime: value.laptime
       })
