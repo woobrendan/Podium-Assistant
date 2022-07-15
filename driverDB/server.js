@@ -14,6 +14,7 @@ app.use(morgan("dev"));
 
 const pool = require('./lib/db');
 
+//API Routes
 const apiDriverRoute = require('./routes/api/drivers');
 const apiTeamsRoute = require('./routes/api/teams');
 const apiVehiclesRoute = require('./routes/api/vehicles');
@@ -21,6 +22,7 @@ const apiResultsRoute = require('./routes/api/results');
 const apiEventsRoute = require('./routes/api/events');
 const apiFastLapRoute = require('./routes/api/fastLap');
 const fastLapRoute = require('./routes/fastlap');
+const resultsRoute = require('./routes/results')
 
 
 app.use('/api/drivers', apiDriverRoute(pool));
@@ -30,5 +32,6 @@ app.use('/api/results', apiResultsRoute(pool));
 app.use('/api/events', apiEventsRoute(pool));
 app.use('/api/fastlaps', apiFastLapRoute(pool));
 app.use('/fastlaps', fastLapRoute(pool));
+app.use('/results', resultsRoute(pool));
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`));
