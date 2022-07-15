@@ -55,7 +55,7 @@ function Podium() {
     }));
 
     axios
-      .post('http://localhost:8080/fastlaps', {
+      .post('http://localhost:8080/results', {
         driver: getDriverId(value.driver),
         lapTime: value.laptime
       })
