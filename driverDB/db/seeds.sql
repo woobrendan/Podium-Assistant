@@ -217,7 +217,8 @@ VALUES
 ('Porsche 911 GT3-R (991.ii)', '00',8, 60, 3),
 ('Mercedes-AMG GT4', '35', 9, 27, 3),
 ('Aston Martin Vantage AMR GT4', '15', 9, 20, 3),
-('Toyota GR Supra GT4', '016', 9, 21, 3);
+('Toyota GR Supra GT4', '016', 9, 21, 3),
+('Porsche 911 GT3-R (991.ii)', '00', 2, 60, 1);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -403,7 +404,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('PJ Hyett', 'Bronze', 'USA', 60, 123),
 ('Custodio Toledo', 'Bronze', 'Brazil', 27, 124),
 ('Bryan Putt', 'Bronze', 'USA', 20, 125),
-('Seth Lucas', 'Bronze', 'USA', 21, 126);
+('Seth Lucas', 'Bronze', 'USA', 21, 126),
+('PJ Hyett', 'Bronze', 'USA', 60, 127),
+('Gunnar Jeannette', 'Silver', 'USA', 60, 127);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
