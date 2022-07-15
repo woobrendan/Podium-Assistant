@@ -44,7 +44,7 @@ function Podium() {
   const handleFastLapSumbit = (value) => {
     setResults((prev) => ({
       ...prev,
-      fastLap: value
+      fastLap: {...value, id: getDriverId(value.driver)}
     }));
 
     setShowWinnerTable((prev) => ({
@@ -54,10 +54,14 @@ function Podium() {
       printPage: true
     }));
 
+    const copyResults = {
+      ...results,
+      fastLap: {...value, id: getDriverId(value.driver)}
+    }
+
     axios
       .post('http://localhost:8080/results/new', {
-        driver: getDriverId(value.driver),
-        lapTime: value.laptime
+        results: copyResults
       })
       .catch(err => console.log(err.message))
   }
@@ -95,14 +99,14 @@ function Podium() {
     }
   }
 
-  const onFinalSubmit = () => {
-    axios
-      .post('http://localhost:8080/fastLaps', {
-        driver: getDriverId(results.fastLap.driver),
-        lapTime: results.fastLap.laptime
-      })
-      .catch(err => console.log(err.message))
-  } 
+  // const onFinalSubmit = () => {
+  //   axios
+  //     .post('http://localhost:8080/fastLaps', {
+  //       driver: getDriverId(results.fastLap.driver),
+  //       lapTime: results.fastLap.laptime
+  //     })
+  //     .catch(err => console.log(err.message))
+  // } 
 
   const printPage = () => {
     window.print()
