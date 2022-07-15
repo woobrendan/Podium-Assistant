@@ -15,19 +15,6 @@ module.exports = (db) => {
       .catch(err => console.log(err.message))
   });
 
-  router.post('/', (req, res) => {
-    const fastLapInfo = req.body;
-    console.log('req.body', req)
-    const queryString = 
-    `INSERT INTO fastlaps (driver_id, laptime) VALUES ($1, $2) RETURNING *;`;
-    return db
-      .query(queryString, [fastLapInfo.driver, fastLapInfo.lapTime])
-      .then(result => {
-        console.log('result rows:', result.rows[0])
-        return result.rows[0].id
-      })
-      .catch(err => console.log(err.message))
-  });
   return router;
 }
 
