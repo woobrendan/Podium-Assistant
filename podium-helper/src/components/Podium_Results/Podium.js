@@ -9,6 +9,7 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../useEntries';
+import { getDriverId } from '../../helperFunc';
 
 const getToday = () => {
   let today = new Date();
@@ -44,7 +45,7 @@ function Podium() {
   const handleFastLapSumbit = (value) => {
     setResults((prev) => ({
       ...prev,
-      fastLap: {...value, id: getDriverId(value.driver)}
+      fastLap: {...value, id: getDriverId(value.driver, drivers)}
     }));
 
     setShowWinnerTable((prev) => ({
@@ -56,7 +57,7 @@ function Podium() {
 
     const copyResults = {
       ...results,
-      fastLap: {...value, id: getDriverId(value.driver)}
+      fastLap: {...value, id: getDriverId(value.driver, drivers)}
     }
 
     axios
@@ -89,14 +90,6 @@ function Podium() {
       ...prev,
       [name]: value
     }))
-  }
-
-  const getDriverId = (name) => {
-    for (const driver of drivers) {
-      if (driver.name === name) {
-        return driver.id;
-      }
-    }
   }
 
   // const onFinalSubmit = () => {
