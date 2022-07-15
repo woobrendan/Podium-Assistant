@@ -122,6 +122,24 @@ import renn89 from './images/renn89.jpeg';
 
 export const driverInfo = [
   {
+    team: "Team Hardpoint",
+    driver1: {
+      name: 'PJ Hyett',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Gunnar Jeannette',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    vehicle: "Porsche 911 GT3-R (991.ii)",
+    classification: "Pro-Am",
+    number: "00",
+    carImage: '',
+    series: "GT World Challenge America"
+  },
+  {
     team: "K-PAX",
     driver1: {
       name: 'Michele Beretta',
