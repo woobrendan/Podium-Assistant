@@ -218,7 +218,9 @@ VALUES
 ('Mercedes-AMG GT4', '35', 9, 27, 3),
 ('Aston Martin Vantage AMR GT4', '15', 9, 20, 3),
 ('Toyota GR Supra GT4', '016', 9, 21, 3),
-('Porsche 911 GT3-R (991.ii)', '00', 2, 60, 1);
+('Porsche 911 GT3-R (991.ii)', '00', 2, 60, 1),
+('Mercedes-AMG GT4', '35', 3, 27, 2),
+('Toyota GR Supra GT4', '69', 2, 33, 2);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -278,7 +280,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Eric Filgueiras', 'Silver', 'USA', 23, 28),
 ('Stevan McAleer', 'Silver', 'Scotland', 23, 28),
 ('Alain Stad', 'Bronze', 'USA', 17, 29),
-('Seth Thomas', 'Bronze', 'USA', 17, 29),
+('Matt Travis', 'Bronze', 'USA', 17, 29),
 ('Nick Shanny', 'Bronze', 'USA', 24, 30),
 ('Terryr Borcheller', 'Bronze', 'USA', 24, 30),
 ('Gray Newell', 'Bronze', 'USA', 25, 31),
@@ -328,7 +330,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Adam Adelson', 'Bronze', 'USA', 39, 53),
 ('Elliot Skeer', 'Silver', 'USA', 39, 53),
 ('Edgar Lau', 'Bronze', 'Hong Kong', 40, 54),
-('Mike Skeen', 'Silver', 'USA', 40, 54),
+('Billy Johnson', 'Gold', 'USA', 40, 54),
 ('Alex Amine', 'Bronze', 'USA', 41, 55),
 ('Ryan Hall', 'Bronze', 'USA', 41, 55),
 ('Sean Whalen', 'Bronze', 'USA', 12, 56),
@@ -406,7 +408,11 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Bryan Putt', 'Bronze', 'USA', 20, 125),
 ('Seth Lucas', 'Bronze', 'USA', 21, 126),
 ('PJ Hyett', 'Bronze', 'USA', 60, 127),
-('Gunnar Jeannette', 'Silver', 'USA', 60, 127);
+('Gunnar Jeannette', 'Silver', 'USA', 60, 127),
+('Custodio Toledo', 'Bronze', 'Brazil', 27, 128),
+('Paulo Carcasci', 'Bronze', 'Brazil', 27, 128),
+('Todd Coleman', 'Bronze', 'USA', 33, 129),
+('Aarron Telitz', 'Gold', 'USA', 33, 129);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
