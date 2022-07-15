@@ -669,7 +669,7 @@ export const driverInfo = [
       rating: 'Bronze'
       },
     driver2: {
-      name: 'Seth Thomas',
+      name: 'Matt Travis',
       nationality: 'USA',
       rating: 'Bronze'
       },
@@ -772,14 +772,14 @@ export const driverInfo = [
   {
     team: "Conquest Racing",
     driver1: {
-      name: 'Manny Franco',
-      nationality: 'USA',
-      rating: 'Silver'
+      name: 'Custodio Toledo',
+      nationality: 'Brazil',
+      rating: 'Bronze'
       },
     driver2: {
-      name: 'Josh Hurley',
-      nationality: 'USA',
-      rating: 'Silver'
+      name: 'Paulo Carcasci',
+      nationality: 'Brazil',
+      rating: 'Am'
       },
     vehicle: "Mercedes-AMG GT4",
     classification: "Silver",
@@ -1004,6 +1004,24 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
+    team: "Smooge Racing",
+    driver1: {
+      name: 'Todd Coleman',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Aaron Telitz',
+      nationality: 'USA',
+      rating: 'Gold'
+      },
+    vehicle: "Toyota GR Supra GT4",
+    classification: "Pro-Am",
+    number: "69",
+    carImage: smooge68,
+    series: "Pirelli GT4 America"
+  },
+  {
     team: "KRUGSPEED",
     driver1: {
       name: 'Anthony Geraci',
@@ -1173,9 +1191,9 @@ export const driverInfo = [
       rating: 'Bronze'
       },
     driver2: {
-      name: 'Mike Skeen',
+      name: 'Billy Johnson',
       nationality: 'USA',
-      rating: 'Silver'
+      rating: 'Gold'
       },
     vehicle: "Ford Mustang GT4",
     classification: "Pro-Am",
@@ -1202,6 +1220,24 @@ export const driverInfo = [
     series: "Pirelli GT4 America"
   },
   {
+    team: "Indian Summer Racing",
+    driver1: {
+      name: 'Travis Washay',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    driver2: {
+      name: 'Francis Selldorff',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "319",
+    carImage: '',
+    series: "Pirelli GT4 America"
+  },
+  {
     team: "Regal Motorsports",
     driver1: {
       name: 'Anthony Bartone',
@@ -1213,7 +1249,7 @@ export const driverInfo = [
       nationality: 'USA',
       rating: 'Bronze'
       },
-    vehicle: "Porscher 718 Cayman GT4 RS CS",
+    vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "427",
     carImage: regal427,
@@ -1240,7 +1276,7 @@ export const driverInfo = [
   {
     team: "CarBahn w/ Peregrine Racing",
     driver1: {
-      name: 'Steve Dinan',
+      name: 'Mark Siegel',
       nationality: 'USA',
       rating: 'Bronze'
       },
