@@ -87,7 +87,8 @@ INSERT INTO teams (name, country) VALUES
 ('MISHUMOTORS', 'USA'),
 ('Rotek Racing', 'USA'),
 ('Winward Racing', 'USA'),
-('Team Hardpoint', 'USA');
+('Team Hardpoint', 'USA'),
+('Indian Summer Racing', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id)
@@ -220,7 +221,8 @@ VALUES
 ('Toyota GR Supra GT4', '016', 9, 21, 3),
 ('Porsche 911 GT3-R (991.ii)', '00', 2, 60, 1),
 ('Mercedes-AMG GT4', '35', 3, 27, 2),
-('Toyota GR Supra GT4', '69', 2, 33, 2);
+('Toyota GR Supra GT4', '69', 2, 33, 2),
+('Porsche 718 Cayman GT4 RS CS', '319', 2, 61, 2);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -335,7 +337,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Ryan Hall', 'Bronze', 'USA', 41, 55),
 ('Sean Whalen', 'Bronze', 'USA', 12, 56),
 ('Matt Guiver', 'Bronze', 'USA', 12, 56),
-('Steve Dinan', 'Bronze', 'USA', 42, 57),
+('Mark Siegel', 'Bronze', 'USA', 42, 57),
 ('Tom Dyer', 'Silver', 'USA', 42, 57),
 ('Jacob Ruud', 'N/A', 'USA', 19, 58),
 ('Joesph Catania', 'N/A', 'USA', 43, 59),
@@ -412,7 +414,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Custodio Toledo', 'Bronze', 'Brazil', 27, 128),
 ('Paulo Carcasci', 'Bronze', 'Brazil', 27, 128),
 ('Todd Coleman', 'Bronze', 'USA', 33, 129),
-('Aarron Telitz', 'Gold', 'USA', 33, 129);
+('Aarron Telitz', 'Gold', 'USA', 33, 129),
+('Travis Washay', 'Bronze', 'USA', 61, 130),
+('Francis Selldorff', 'Silver', 'USA', 61, 130);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
