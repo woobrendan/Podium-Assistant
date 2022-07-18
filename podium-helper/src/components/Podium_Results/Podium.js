@@ -9,7 +9,7 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../useEntries';
-import { getDriverId, getEventId, getIdFromArray } from '../../helperFunc';
+import { getIdFromArray } from '../../helperFunc';
 
 const getToday = () => {
   let today = new Date();
