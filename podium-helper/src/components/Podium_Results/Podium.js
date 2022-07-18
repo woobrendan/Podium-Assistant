@@ -20,7 +20,7 @@ const getToday = () => {
 }
 
 function Podium() {
-  const {drivers, events} = useEntries(); 
+  const {drivers, events, series} = useEntries(); 
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -58,6 +58,7 @@ function Podium() {
     const copyResults = {
       ...results,
       event: getIdFromArray(results.event, events),
+      series: getIdFromArray(results.series, series),
       fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
     }
 
