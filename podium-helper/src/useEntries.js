@@ -6,18 +6,21 @@ export default function useEntries() {
   const [vehicles, setVehicles] = useState([]);
   const [fastLaps, setFastLaps] = useState([]);
   const [resultHistory, setResultHistory] = useState([]);
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:8080/api/results`);
     const promise2 = axios.get(`http://localhost:8080/api/drivers`);
     const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
     const promise4 = axios.get(`http://localhost:8080/api/fastlaps`);
-    Promise.all([promise1, promise2, promise3, promise4])
+    const promise5 = axios.get('http://localhost:8080/api/events');
+    Promise.all([promise1, promise2, promise3, promise4, promise5])
       .then((all) => {
         setResultHistory(all[0].data);
         setDrivers(all[1].data);
         setVehicles(all[2].data);
         setFastLaps(all[3].data);
+        setEvents(all[4].data);
       })
       .catch((err) => console.log("Error:", err));
   }, [])
@@ -89,6 +92,7 @@ export default function useEntries() {
     vehicles,
     fastLaps,
     resultHistory,
-    groupResults: groupedResults(resultHistory)
+    groupResults: groupedResults(resultHistory),
+    events
   }
 }
