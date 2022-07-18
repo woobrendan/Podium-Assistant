@@ -21,6 +21,8 @@ const apiVehiclesRoute = require('./routes/api/vehicles');
 const apiResultsRoute = require('./routes/api/results');
 const apiEventsRoute = require('./routes/api/events');
 const apiFastLapRoute = require('./routes/api/fastLap');
+const apiSeriesRoute = require('./routes/api/series');
+
 const fastLapRoute = require('./routes/fastlap');
 const resultsRoute = require('./routes/results')
 
@@ -30,7 +32,9 @@ app.use('/api/teams', apiTeamsRoute(pool));
 app.use('/api/vehicles', apiVehiclesRoute(pool));
 app.use('/api/results', apiResultsRoute(pool));
 app.use('/api/events', apiEventsRoute(pool));
-app.use('/api/fastlaps', apiFastLapRoute(pool));
+app.use('/api/series', apiSeriesRoute(pool));
+
+
 app.use('/fastlaps', fastLapRoute(pool));
 app.use('/results', resultsRoute(pool));
 
