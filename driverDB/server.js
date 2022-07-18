@@ -32,6 +32,7 @@ app.use('/api/teams', apiTeamsRoute(pool));
 app.use('/api/vehicles', apiVehiclesRoute(pool));
 app.use('/api/results', apiResultsRoute(pool));
 app.use('/api/events', apiEventsRoute(pool));
+app.use('/api/fastlaps', apiFastLapRoute(pool));
 app.use('/api/series', apiSeriesRoute(pool));
 
 
