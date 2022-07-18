@@ -14,7 +14,16 @@ const getEventId = (eventName, events) => {
   }
 }
 
+const getIdFromArray = (name, arr) => {
+  for (const val of arr)  {
+    if (val.name === name) {
+      return val.id;
+    }
+  }
+}
+
 export {
   getDriverId,
-  getEventId
+  getEventId,
+  getIdFromArray
 }
