@@ -9,7 +9,7 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../useEntries';
-import { getDriverId } from '../../helperFunc';
+import { getDriverId, getEventId } from '../../helperFunc';
 
 const getToday = () => {
   let today = new Date();
@@ -20,7 +20,7 @@ const getToday = () => {
 }
 
 function Podium() {
-  const {drivers} = useEntries(); 
+  const {drivers, events} = useEntries(); 
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -57,6 +57,7 @@ function Podium() {
 
     const copyResults = {
       ...results,
+      event: getEventId(results.event, events),
       fastLap: {...value, id: getDriverId(value.driver, drivers)}
     }
 
