@@ -6,6 +6,15 @@ const getDriverId = (name, drivers) => {
   }
 }
 
+const getEventId = (eventName, events) => {
+  for (const event of events) {
+    if (event.name === eventName) {
+      return event.id;
+    }
+  }
+}
+
 export {
-  getDriverId
+  getDriverId,
+  getEventId
 }
