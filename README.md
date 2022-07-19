@@ -36,4 +36,6 @@ The competitors page displays all of the competitors in SRO Motorsports America 
 - React-Router-DOM
 - classnames
 - SASS
+- Express
+- PostgreSQL
 ```
