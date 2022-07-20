@@ -9,7 +9,7 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../useEntries';
-import { getIdFromArray, getToday } from '../../helperFunc';
+import { getIdFromArray, getToday, printPage } from '../../helperFunc';
 
 function Podium() {
   const {drivers, events, series, classCategory} = useEntries(); 
@@ -89,10 +89,6 @@ function Podium() {
       ...prev,
       [name]: value
     }))
-  }
-
-  const printPage = () => {
-    window.print()
   }
 
   return (
