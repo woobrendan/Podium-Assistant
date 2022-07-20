@@ -35,6 +35,10 @@ function Podium() {
   })
 
   const handleFastLapSumbit = (value) => {
+    const result1 = results.result1;
+    const result2 = results.result2;
+    const result3 = results.result3;
+
     setResults((prev) => ({
       ...prev,
       fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
@@ -51,15 +55,15 @@ function Podium() {
       ...results,
       result1: {
         ...results.result1,
-        class: getIdFromArray(results.result1.class, classCategory)
+        class: getIdFromArray(result1.class, classCategory)
       },
       result2: {
         ...results.result2,
-        class: getIdFromArray(results.result2.class, classCategory)
+        class: getIdFromArray(result2.class, classCategory)
       },
       result3: {
         ...results.result,
-        class: getIdFromArray(results.result3.class, classCategory)
+        class: getIdFromArray(result3.class, classCategory)
       },
       event: getIdFromArray(results.event, events),
       series: getIdFromArray(results.series, series),
