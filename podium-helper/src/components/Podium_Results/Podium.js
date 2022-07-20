@@ -20,7 +20,7 @@ const getToday = () => {
 }
 
 function Podium() {
-  const {drivers, events, series} = useEntries(); 
+  const {drivers, events, series, classCategory} = useEntries(); 
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -57,10 +57,15 @@ function Podium() {
 
     const copyResults = {
       ...results,
+      result1: {
+        ...results.result1,
+        class: getIdFromArray(results.result1.class, classCategory)
+      },
       event: getIdFromArray(results.event, events),
       series: getIdFromArray(results.series, series),
       fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
     }
+    console.log('copyResult', copyResults)
 
     axios
       .post('http://localhost:8080/results/new', {
