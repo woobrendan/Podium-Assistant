@@ -53,6 +53,10 @@ function Podium() {
         ...results.result1,
         class: getIdFromArray(results.result1.class, classCategory)
       },
+      result2: {
+        ...results.result2,
+        class: getIdFromArray(results.result2.class, classCategory)
+      },
       event: getIdFromArray(results.event, events),
       series: getIdFromArray(results.series, series),
       fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
