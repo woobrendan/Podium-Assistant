@@ -11,14 +11,6 @@ import DatePicker from './DatePicker';
 import useEntries from '../../useEntries';
 import { getIdFromArray, getToday } from '../../helperFunc';
 
-// const getToday = () => {
-//   let today = new Date();
-//   const dd = String(today.getDate()).padStart(2, '0');
-//   const mm = String(today.getMonth() + 1).padStart(2, '0');
-//   const year = today.getFullYear();
-//   return `${mm}-${dd}-${year}`;
-// }
-
 function Podium() {
   const {drivers, events, series, classCategory} = useEntries(); 
 
@@ -98,15 +90,6 @@ function Podium() {
       [name]: value
     }))
   }
-
-  // const onFinalSubmit = () => {
-  //   axios
-  //     .post('http://localhost:8080/fastLaps', {
-  //       driver: getDriverId(results.fastLap.driver),
-  //       lapTime: results.fastLap.laptime
-  //     })
-  //     .catch(err => console.log(err.message))
-  // } 
 
   const printPage = () => {
     window.print()
