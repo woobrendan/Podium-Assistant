@@ -13,6 +13,9 @@ module.exports = (db) => {
     const newResultString = `
     INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES ($1, $2, $3, $4) RETURNING *;`
 
+    const podiumString = `
+    INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  ($1, $2, $3, $4, $5)`
+
     // Create new fast lap entry
     return db
       .query(queryString, [fastLap.id, fastLap.laptime])
@@ -23,8 +26,8 @@ module.exports = (db) => {
         return db.query(newResultString, [result.date, result.event, result.series, fastId])
       })
       .then(val => {
-        const resultId = val.rows[0].id
-        console.log('result Id:', resultId)
+        const resultId = val.rows[0].id;
+        return db.query(podiumString, [resultId])
       })
       .catch(err => console.log(err.message))
   });
