@@ -29,7 +29,8 @@ module.exports = (db) => {
       })
       .then(val => {
         const resultId = val.rows[0].id;
-        return db.query(podiumString, [req.body.result1.class, req.body.result1.first_place, req.body.result1.second_place, result1.third_place, resultId])
+        db.query(podiumString, [req.body.result1.class, req.body.result1.first_place, req.body.result1.second_place, result1.third_place, resultId]);
+        db.query(podiumString, [result2.class, result2.first_place, result2.second_place, result2.third_place, resultId]);
       })
       .catch(err => console.log(err.message))
   });
