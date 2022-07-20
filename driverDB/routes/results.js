@@ -9,7 +9,7 @@ module.exports = (db) => {
     const result1 = req.body.result1;
     const result2 = req.body.result2;
     const result3 = req.body.result3;
-    
+
     console.log('req.body', req.body)
     const queryString = 
     `INSERT INTO fastlaps (driver_id, laptime) VALUES ($1, $2) RETURNING *;`;
@@ -31,7 +31,7 @@ module.exports = (db) => {
       })
       .then(val => {
         const resultId = val.rows[0].id;
-        return db.query(podiumString, [resultId])
+        return db.query(podiumString, [req.body.result1.class, req.body.result1.first_place, req.body.result1.second_place, result1.third_place, resultId])
       })
       .catch(err => console.log(err.message))
   });
