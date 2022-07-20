@@ -6,6 +6,10 @@ module.exports = (db) => {
   router.post('/new', (req, res) => {
     const fastLap = req.body.results.fastLap;
     const result = req.body.results;
+    const result1 = req.body.result1;
+    const result2 = req.body.result2;
+    const result3 = req.body.result3;
+    
     console.log('req.body', req.body)
     const queryString = 
     `INSERT INTO fastlaps (driver_id, laptime) VALUES ($1, $2) RETURNING *;`;
