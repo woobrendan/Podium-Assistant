@@ -7,6 +7,14 @@ const getIdFromArray = (name, arr) => {
   }
 }
 
+const getVehicleId = (num, vehicles) => {
+  for (const vehicle of vehicles) {
+    if (vehicle.number === num)  {
+      return vehicle.id;
+    }
+  }
+}
+
 const getToday = () => {
   let today = new Date();
   const dd = String(today.getDate()).padStart(2, '0');
@@ -22,5 +30,6 @@ const printPage = () => {
 export {
   getIdFromArray,
   getToday,
-  printPage
+  printPage,
+  getVehicleId
 }
