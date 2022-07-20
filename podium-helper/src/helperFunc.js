@@ -15,7 +15,12 @@ const getToday = () => {
   return `${mm}-${dd}-${year}`;
 }
 
+const printPage = () => {
+  window.print()
+}
+
 export {
   getIdFromArray,
-  getToday
+  getToday,
+  printPage
 }
