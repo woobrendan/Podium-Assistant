@@ -9,10 +9,10 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../useEntries';
-import { getIdFromArray, getToday, printPage } from '../../helperFunc';
+import { getIdFromArray, getToday, printPage, getVehicleId } from '../../helperFunc';
 
 function Podium() {
-  const {drivers, events, series, classCategory} = useEntries(); 
+  const {drivers, events, series, classCategory, vehicles} = useEntries(); 
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -38,6 +38,7 @@ function Podium() {
     const result1 = results.result1;
     const result2 = results.result2;
     const result3 = results.result3;
+    const NULL = 'NULL'
 
     setResults((prev) => ({
       ...prev,
@@ -55,7 +56,10 @@ function Podium() {
       ...results,
       result1: {
         ...results.result1,
-        class: getIdFromArray(result1.class, classCategory)
+        class: getIdFromArray(result1.class, classCategory),
+        first_place: getVehicleId(result1.first_place.number, vehicles),
+        second_place: (getVehicleId(result1.second_place.number, vehicles) || NULL),
+        third_place: (getVehicleId(result1.third_place.number, vehicles) || NULL)
       },
       result2: {
         ...results.result2,
