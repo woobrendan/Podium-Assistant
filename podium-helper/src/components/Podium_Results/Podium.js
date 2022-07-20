@@ -55,25 +55,22 @@ function Podium() {
     const copyResults = {
       ...results,
       result1: {
-        ...results.result1,
         class: getIdFromArray(result1.class, classCategory),
         first_place: getVehicleId(result1.first_place.number, vehicles),
         second_place: (getVehicleId(result1.second_place.number, vehicles) || NULL),
         third_place: (getVehicleId(result1.third_place.number, vehicles) || NULL)
       },
       result2: {
-        ...results.result2,
         class: getIdFromArray(result2.class, classCategory)
       },
       result3: {
-        ...results.result,
         class: getIdFromArray(result3.class, classCategory)
       },
       event: getIdFromArray(results.event, events),
       series: getIdFromArray(results.series, series),
       fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
     }
-    console.log('copyResult', copyResults)
+    // console.log('copyResult', copyResults)
 
     axios
       .post('http://localhost:8080/results/new', {
