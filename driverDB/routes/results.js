@@ -27,9 +27,10 @@ module.exports = (db) => {
         const fastId = fast.rows[0].id;
         return db.query(newResultString, [result.date, result.event, result.series, fastId])
       })
+      //  get result Id from return from previous query, pass to each podium creation
       .then(val => {
         const resultId = val.rows[0].id;
-        db.query(podiumString, [req.body.result1.class, req.body.result1.first_place, req.body.result1.second_place, result1.third_place, resultId]);
+        db.query(podiumString, [result1.class, result1.first_place, result1.second_place, result1.third_place, resultId]);
         db.query(podiumString, [result2.class, result2.first_place, result2.second_place, result2.third_place, resultId]);
         return db.query(podiumString, [result3.class, result3.first_place, result3.second_place, result3.third_place, resultId]);
       })
