@@ -8,6 +8,8 @@ export default function useEntries() {
   const [resultHistory, setResultHistory] = useState([]);
   const [events, setEvents] = useState([]);
   const [series, setSeries] = useState([]);
+  const [classCategory, setClassCategory] = useState([]);
+
 
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:8080/api/results`);
@@ -16,7 +18,8 @@ export default function useEntries() {
     const promise4 = axios.get(`http://localhost:8080/api/fastlaps`);
     const promise5 = axios.get('http://localhost:8080/api/events');
     const promise6 = axios.get('http://localhost:8080/api/series');
-    Promise.all([promise1, promise2, promise3, promise4, promise5, promise6])
+    const promise7 = axios.get('http://localhost:8080/api/class');
+    Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7])
       .then((all) => {
         setResultHistory(all[0].data);
         setDrivers(all[1].data);
@@ -24,6 +27,7 @@ export default function useEntries() {
         setFastLaps(all[3].data);
         setEvents(all[4].data);
         setSeries(all[5].data);
+        setClassCategory(all[6].data);
       })
       .catch((err) => console.log("Error from Promise:", err));
   }, [])
@@ -97,6 +101,7 @@ export default function useEntries() {
     resultHistory,
     groupResults: groupedResults(resultHistory),
     events,
-    series
+    series,
+    classCategory
   }
 }
