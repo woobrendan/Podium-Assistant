@@ -23,10 +23,8 @@ module.exports = (db) => {
     // Create new fast lap entry
     return db
       .query(queryString, [fastLap.id, fastLap.laptime])
-      .then(result => {
-        return result.rows[0].id
-      })
-      .then(fastId  => {
+      .then(fast => {
+        const fastId = fast.rows[0].id;
         return db.query(newResultString, [result.date, result.event, result.series, fastId])
       })
       .then(val => {
