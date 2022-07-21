@@ -224,7 +224,8 @@ VALUES
 ('Toyota GR Supra GT4', '69', 2, 33, 2),
 ('Porsche 718 Cayman GT4 RS CS', '319', 2, 61, 2),
 ('Porsche 718 Cayman GT4 RS CS', '30', 9, 10, 3),
-('Ginetta G56', '60', 3, 38, 2);
+('Ginetta G56', '60', 3, 38, 2),
+('Porsche 718 Cayman GT4 RS CS', '032', 3, 16, 2);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -421,7 +422,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Francis Selldorff', 'Silver', 'USA', 61, 130),
 ('Hutton McKenna', 'Bronze', 'USA', 10, 131),
 ('Matt Rivard', 'Bronze', 'USA', 38, 132),
-('Ben Anderson', 'Bronze', 'USA', 38, 132);
+('Ben Anderson', 'Bronze', 'USA', 38, 132),
+('Kyle Washington', 'Bronze', 'USA', 16, 133),
+('James Sofronas', 'Bronze', 'USA', 16, 133);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
@@ -478,5 +481,5 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (3, 34, 29, 43, 9),
 (4, 28, 33, 39, 10),
 (2, 25, 38, 36, 10),
-(3, 125, 34)
+(3, 125, 34, 126, 10);
 
