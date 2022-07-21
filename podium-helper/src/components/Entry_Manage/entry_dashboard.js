@@ -39,16 +39,18 @@ function entry_dashboard() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableRows(props.entry).map((row) => (
+          {tableRows(vehicles).map((entry, index) => (
             <TableRow
-              key={row.name}
+              key={index}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">
-                {row.carNum}
+                {entry.carNum}
               </TableCell>
-              <TableCell align="right">{row.nationality}</TableCell>
-              <TableCell align="right">{row.rating}</TableCell>
+              <TableCell align="right">{entry.teamName}</TableCell>
+              <TableCell colSpan={entry.driver2 ? 1 : 2} align="right">{entry.driver1}</TableCell>
+              {entry.driver2 && <TableCell align="right">{entry.driver2}</TableCell>}
+              <TableCell align="right">{entry.vehicle}</TableCell>
             </TableRow>
           ))}
         </TableBody>
