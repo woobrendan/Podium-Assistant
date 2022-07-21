@@ -51,7 +51,7 @@ function EntryDashboard() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {/* {tableRows(vehicles).map((entry, index) => (
+          {tableRows(vehicles).map((entry, index) => (
             <TableRow
               key={index}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -62,7 +62,7 @@ function EntryDashboard() {
               {entry.driver2 && <TableCell align="right">{entry.driver2}</TableCell>}
               <TableCell align="right">{entry.vehicle}</TableCell>
             </TableRow>
-          ))} */}
+          ))}
         </TableBody>
       </Table>
     </TableContainer>
