@@ -438,7 +438,8 @@ INSERT INTO fastlaps (driver_id, laptime) VALUES
 (168, '1:39.433'),
 (55, '1:46.124'),
 (55, '1:47.022'),
-(115, '1:52.331');
+(115, '1:52.331'),
+(117, '1:52.246');
 
 INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES
 ('2022-06-18', 4, 1, 1),
@@ -451,7 +452,8 @@ INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES
 ('2022-04-17', 2, 3, 8),
 ('2022-04-16', 2, 2, 9),
 ('2022-04-17', 2, 2, 10),
-('2022-04-16', 2, 4, 11);
+('2022-04-16', 2, 4, 11),
+('2022-04-17', 2, 4, 12);
 
 INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES
 (1, 1, 19, 2, 1),
@@ -486,5 +488,8 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (3, 125, 34, 126, 10),
 (5, 58, 65, 60, 11),
 (6, 70, 73, 75, 11),
-(7, 81, 83, 80, 11);
+(7, 81, 83, 80, 11),
+(5, 58, 60, 65, 12),
+(6, 70, 75, 73, 12),
+(7, 83, 81, 80, 12);
 
