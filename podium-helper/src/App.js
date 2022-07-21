@@ -4,7 +4,7 @@ import { Routes, Route, BrowserRouter as Router } from "react-router-dom";
 import Podium from './components/Podium_Results/Podium';
 import NavBar from './components/NavBar';
 import Results from './components/Results/ResultsHistory';
-import EntryDashboard from './components/Entry_Manage/entry_dashboard';
+import EntryDashboard from './components/Entry_Manage/EntryDashboard';
 
 function App() {
   return (
