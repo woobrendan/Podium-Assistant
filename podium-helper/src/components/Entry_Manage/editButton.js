@@ -1,11 +1,12 @@
 import React from 'react'
+import { Button } from '@mui/material'
 
-function editButton() {
+function EditButton() {
   return (
-    <div>
-      
-    </div>
+    <Button  variant="outlined">
+      Edit
+    </Button>
   )
 }
 
-export default editButton
+export default EditButton
