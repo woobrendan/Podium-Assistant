@@ -693,7 +693,7 @@ export const driverInfo = [
       },
     vehicle: "Toyota GR Supra",
     classification: "Am",
-    number: "21",
+    number: "20",
     carImage: carrus21,
     series: "Pirelli GT4 America"
   },
@@ -782,7 +782,7 @@ export const driverInfo = [
       rating: 'Am'
       },
     vehicle: "Mercedes-AMG GT4",
-    classification: "Silver",
+    classification: "Am",
     number: "35",
     carImage: conquest35,
     series: "Pirelli GT4 America"
@@ -818,7 +818,7 @@ export const driverInfo = [
       rating: 'Silver'
       },
     vehicle: "Mercedes-AMG GT4",
-    classification: "Silver",
+    classification: "Pro-Am",
     number: "39",
     carImage: cameron39,
     series: "Pirelli GT4 America"
@@ -1232,7 +1232,7 @@ export const driverInfo = [
       rating: 'Silver'
       },
     vehicle: "Porsche 718 Cayman GT4 RS CS",
-    classification: "Am",
+    classification: "Pro-Am",
     number: "319",
     carImage: '',
     series: "Pirelli GT4 America"
