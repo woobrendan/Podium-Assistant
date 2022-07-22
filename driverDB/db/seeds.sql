@@ -122,7 +122,7 @@ VALUES
 ('Porsche 718 Cayman GT4 RS CS', '17', 3, 22, 2),
 ('Porsche 718 Cayman GT4 RS CS', '18', 4, 23, 2),
 ('Porsche 718 Cayman GT4 RS CS', '19', 3, 17, 2),
-('Toyota GR Supra GT4', '21', 3, 24, 2),
+('Toyota GR Supra GT4', '20', 3, 24, 2),
 ('Aston Martin Vantage AMR GT4', '24', 2, 25, 2),
 ('Mercedes-AMG GT4', '32', 4, 26, 2),
 ('Mercedes-AMG GT4', '34', 4, 27, 2),
