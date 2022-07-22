@@ -7,6 +7,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import useEntries from '../../useEntries';
 import {useState, useEffect} from 'react'
+import EditButton from './EditButton';
 
 
 function createSingleDriverData(carNum, teamName, driver1, vehicle) {
@@ -54,7 +55,7 @@ function EntryDashboard() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableRows(vehicles).map((entry, index) => (
+          {tableRows(entries).map((entry, index) => (
             <TableRow
               key={index}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
@@ -64,7 +65,7 @@ function EntryDashboard() {
               <TableCell colSpan={entry.driver2 ? 1 : 2} align="right">{entry.driver1}</TableCell>
               {entry.driver2 && <TableCell align="right">{entry.driver2}</TableCell>}
               <TableCell align="right">{entry.vehicle}</TableCell>
-              <TableCell align="right">"Edit"</TableCell>
+              <TableCell align="right"><EditButton/></TableCell>
             </TableRow>
           ))}
         </TableBody>
