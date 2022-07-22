@@ -6,6 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import useEntries from '../../useEntries';
+import {useState, useEffect} from 'react'
 
 
 function createSingleDriverData(carNum, teamName, driver1, vehicle) {
@@ -19,8 +20,6 @@ function createDoubleDriverData(carNum, teamName, driver1, driver2, vehicle) {
 function EntryDashboard() {
 
   const {vehicles} = useEntries();
-
-  console.log('vehicles', vehicles)
 
   const tableRows = (entries) => {
     const allEntries = []
@@ -46,6 +45,7 @@ function EntryDashboard() {
             <TableCell align="right">Driver 1</TableCell>
             <TableCell align="right">Driver 2</TableCell>
             <TableCell align="right">Vehicle</TableCell>
+            <TableCell align="right">+/-</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -59,6 +59,7 @@ function EntryDashboard() {
               <TableCell colSpan={entry.driver2 ? 1 : 2} align="right">{entry.driver1}</TableCell>
               {entry.driver2 && <TableCell align="right">{entry.driver2}</TableCell>}
               <TableCell align="right">{entry.vehicle}</TableCell>
+              <TableCell align="right">"Edit"</TableCell>
             </TableRow>
           ))}
         </TableBody>
