@@ -20,6 +20,11 @@ function createDoubleDriverData(carNum, teamName, driver1, driver2, vehicle) {
 function EntryDashboard() {
 
   const {vehicles} = useEntries();
+  const [entries, setEntries] = useState([]);
+
+  useEffect(() => {
+    setEntries(vehicles)
+  }, [vehicles]);
 
   const tableRows = (entries) => {
     const allEntries = []
