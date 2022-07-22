@@ -1449,7 +1449,7 @@ export const driverInfo = [
   },{
     team: "VGRT",
     driver1: {
-      name: 'Ruben Iglesias',
+      name: 'Celso Neto',
       nationality: 'USA',
       rating: 'N/A'
       },
