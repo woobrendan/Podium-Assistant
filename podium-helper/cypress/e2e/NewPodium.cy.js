@@ -13,21 +13,36 @@ describe('Creating New Podiums', () => {
     cy.visit('http://localhost:3000/')
   })
 
-  it('should display date, event & series', () => {
-
-    // cy.get('#date-picker').contains(formatDate())
-    // cy.get('.css-1lwbda4-MuiStack-root > .MuiFormControl-root > .MuiOutlinedInput-root').contains(formatDate())
-    
-  })
-  
-
   it('Should select event', () => {
     cy.get('#mui-component-select-event')
     .parent()
     .click()
     .get('ul > li[data-value="Sonoma Raceway"]')
     .click()
-  })
+  });
+
+  it('Should select Series', () => {
+    cy.get('#mui-component-select-series')
+    .parent()
+    .click()
+    .get('ul > li[data-value="GT World Challenge America"]')
+    .click()
+  });
+
+  it('Should select Class', () => {
+    cy.get('#mui-component-select-series')
+      .parent()
+      .click()
+      .get('ul > li[data-value="GT World Challenge America"]')
+      .click()
+
+    cy.get('.class-container')
+      .first()
+      .click()
+      .get('ul > li[data-value="Pro"]')
+      .click()
+  });
+
 
 
 })
