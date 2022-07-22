@@ -17,17 +17,19 @@ export default function DatePicker(props) {
   };
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <Stack spacing={3}>
-        <DesktopDatePicker
-          label="Date"
-          inputFormat="yyyy-MM-dd"
-          name='date'
-          value={date}
-          onChange={handleChange}
-          renderInput={(params) => <TextField {...params} />}
-        />
-      </Stack>
-    </LocalizationProvider>
+    <div id="date-picker">
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <Stack spacing={3}>
+          <DesktopDatePicker
+            label="Date"
+            inputFormat="yyyy-MM-dd"
+            name='date'
+            value={date}
+            onChange={handleChange}
+            renderInput={(params) => <TextField {...params} />}
+          />
+        </Stack>
+      </LocalizationProvider>
+    </div>
   );
 }
