@@ -140,7 +140,7 @@ export const driverInfo = [
     series: "GT World Challenge America"
   },
   {
-    team: "K-PAX",
+    team: "K-PAX Racing",
     driver1: {
       name: 'Michele Beretta',
       nationality: 'Italy',
@@ -158,7 +158,7 @@ export const driverInfo = [
     series: "GT World Challenge America"
   },
   {
-    team: "K-PAX",
+    team: "K-PAX Racing",
     driver1: {
       name: 'Misha Goikhberg',
       nationality: 'Canada',
