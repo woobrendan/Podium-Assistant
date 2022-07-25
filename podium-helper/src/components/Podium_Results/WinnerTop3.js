@@ -36,7 +36,7 @@ function Podium(props) {
 
   const handleSubmit = () => {
     const isFirstPlace = winners.first_place;
-    if (!isFirstPlace) {
+    if (!isFirstPlace && props.series !== 'GT America') {
       setIsError(true);
     } else {
       if (isError) setIsError(false);
