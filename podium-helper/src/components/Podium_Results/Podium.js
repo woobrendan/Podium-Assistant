@@ -29,6 +29,7 @@ function Podium() {
     result1: true,
     result2: true,
     result3: true,
+    result4: false,
     fastLap: true,
     misc: true,
     printPage: false
@@ -128,6 +129,12 @@ function Podium() {
           onClick={handleRacePodiumSubmit}
           results={results}
         />}
+      {results.series === 'GT America' && 
+        <WinnerTop3 
+        series={results.series} 
+        onClick={handleRacePodiumSubmit}
+        results={results}
+      />}
       {showWinnerTable.fastLap && 
         <FastLap 
           onClick={handleFastLapSumbit}
