@@ -62,10 +62,16 @@ function Podium() {
         third_place: (getVehicleId(result1.third_place.number, vehicles) || NULL)
       },
       result2: {
-        class: getIdFromArray(result2.class, classCategory)
+        class: getIdFromArray(result2.class, classCategory),
+        first_place: getVehicleId(result2.first_place.number, vehicles),
+        second_place: (getVehicleId(result2.second_place.number, vehicles) || NULL),
+        third_place: (getVehicleId(result2.third_place.number, vehicles) || NULL)
       },
       result3: {
-        class: getIdFromArray(result3.class, classCategory)
+        class: getIdFromArray(result3.class, classCategory),
+        first_place: getVehicleId(result3.first_place.number, vehicles),
+        second_place: (getVehicleId(result3.second_place.number, vehicles) || NULL),
+        third_place: (getVehicleId(result3.third_place.number, vehicles) || NULL)
       },
       event: getIdFromArray(results.event, events),
       series: getIdFromArray(results.series, series),
