@@ -70,7 +70,8 @@ export default function useEntries() {
     return result;
   });
 
-  //returns array of arrays [[{result1}, {result1}]...]
+  //groups togethter results with same id, returns array of arrays 
+  // returns [[{result1}, {result1}]...]
   const groupMe = (resultArr) => {
     const group = [];
     resultArr.forEach(result => {
@@ -97,8 +98,19 @@ export default function useEntries() {
     }
     return arrOfResults
   }
+
   
-  console.log('Group Me', resultInfoGrouped(groupMe(resultHistory)))
+  const addFastLap = (resultArr) => {
+    for (let f = 0; f < fastLaps.length; f++)  {
+      for (let r = 0; r < resultArr.length; r++) {
+        if (fastLaps[f].id === resultArr[r].result1.fast_lap) {
+          resultArr[r][`fastLap`] = fastLaps[f];
+        }
+      }
+    }
+    return resultArr
+  }
+  // console.log('Group Me', addFastLap(resultInfoGrouped(groupMe(resultHistory))))
 
   const groupedResults = (resultArr) => {
     const arrayOfGroupedResults = [];
