@@ -5,17 +5,32 @@ export default function filteredResultOptions(list, option, searchValue) {
     const resultOneP1 = val.result1.first_place;
     const resultOneP2 = val.result1.second_place;
     const resultOneP3 = val.result1.third_place;
-    const resultTwoP1 = val.result2.first_place;
-    const resultTwoP2 = val.result2.second_place;
-    const resultTwoP3 = val.result2.third_place;
-    const resultThreeP1 = val.result3.first_place;
-    const resultThreeP2 = val.result3.second_place;
-    const resultThreeP3 = val.result3.third_place;
-    const allPlaceResults = [resultOneP1, resultOneP2, resultOneP3, resultTwoP1, resultTwoP2, resultTwoP3, resultThreeP1, resultThreeP2, resultThreeP3]
+
+    const allPlaceResults = () => {
+      const all = [];
+      all.push(resultOneP1, resultOneP2, resultOneP3)
+
+      if (val.result2) {
+        all.push(
+          val.result2.first_place, 
+          val.result2.second_place, 
+          val.result2.third_place
+        )
+      }
+      if (val.result3) {
+        all.push(
+          val.result3.first_place, 
+          val.result3.second_place, 
+          val.result3.third_place
+        )
+      }
+      return all;
+    }
+ 
 
     const allDrivers = () => {
       const driverArray = [];
-      for (const result of allPlaceResults) {
+      for (const result of allPlaceResults()) {
         if (result) {
           driverArray.push(result.driver1.name)
           if (result.driver2) {
@@ -28,7 +43,7 @@ export default function filteredResultOptions(list, option, searchValue) {
 
     const categoryArray = (category) => {
       const newArray = [];
-      for (const placeResult of allPlaceResults) {
+      for (const placeResult of allPlaceResults()) {
         if (placeResult) {
           newArray.push(placeResult[category])
         }
