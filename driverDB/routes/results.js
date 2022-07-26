@@ -11,6 +11,7 @@ module.exports = (db) => {
     const result3 = result.result3;
 
     console.log('req.body', req.body)
+
     const queryString = 
     `INSERT INTO fastlaps (driver_id, laptime) VALUES ($1, $2) RETURNING *;`;
 
@@ -19,6 +20,31 @@ module.exports = (db) => {
 
     const podiumString = `
     INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  ($1, $2, $3, $4, $5)`
+
+    const getNumOfResults = () => {
+      let num = 1;
+      if (req.body.results.result2) num += 1
+      if (req.body.results.result3) num += 1
+      return num;
+    }
+    
+    const podiumQueryStringBuilder = () => {
+      let string = `
+        INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  (`;
+      const numOfResultInputs = getNumOfResults() * 5;
+      for (let i = 1; i <= numOfResultInputs; i++) {
+        if (i === numOfResultInputs) {
+          string += `$${i}) RETURNING *;`
+        } else if (i % 5 === 0){
+          string += `$${i}), (`
+        } else {
+          string += `$${i}, `;
+        }
+      } 
+      return string;
+    }
+
+    console.log('podiumquery', podiumQueryStringBuilder())
 
     // Create new fast lap entry
     return db
@@ -46,9 +72,4 @@ module.exports = (db) => {
       .catch(err => console.log(err.message))
   });
   return router;
-}
-
-const podiumQueryStringBuilder = () => {
-  const podiumString = `
-    INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  ($1, $2, $3, $4, $5)`
 }
