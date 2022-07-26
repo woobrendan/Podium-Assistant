@@ -11,6 +11,7 @@ import '../../Styling/result.scss';
 
 function ResultTableHeader(props) {
   const podiums = props.results;
+  console.log('podiums', podiums)
   const podium1 = podiums.result1;
   const singleDriver = podium1.first_place.driver2 ? false : true
 
@@ -41,8 +42,8 @@ function ResultTableHeader(props) {
             </TableRow>
           </TableHead>
           <ResultTable results={podiums.result1}/>
-          <ResultTable results={podiums.result2}/>
-          {podiums.result3  && <ResultTable results={podiums.result3}/>}
+          {podiums.result2 && <ResultTable results={podiums.result2}/>}
+          {podiums.result3 && <ResultTable results={podiums.result3}/>}
           <FastLapTable fastLap={podiums.fastLap}/>
         </Table>
       </TableContainer>
