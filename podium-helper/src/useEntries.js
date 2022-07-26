@@ -10,7 +10,7 @@ export default function useEntries() {
   const [series, setSeries] = useState([]);
   const [classCategory, setClassCategory] = useState([]);
 
-
+// console.log('result History', resultHistory)
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:8080/api/results`);
     const promise2 = axios.get(`http://localhost:8080/api/drivers`);
@@ -69,6 +69,20 @@ export default function useEntries() {
     }
     return result;
   });
+
+  const groupMe = (resultArr) => {
+    const group = [];
+    resultArr.forEach(result => {
+      if (!group[result.result_id - 1]) {
+        group[result.result_id - 1] = [];
+      } 
+      group[result.result_id - 1].push(result)
+      
+    })
+    return group;
+  }
+  
+  console.log('Group Me', groupMe(resultHistory))
 
   const groupedResults = (resultArr) => {
     const arrayOfGroupedResults = [];
