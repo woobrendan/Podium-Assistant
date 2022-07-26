@@ -10,7 +10,6 @@ export default function useEntries() {
   const [series, setSeries] = useState([]);
   const [classCategory, setClassCategory] = useState([]);
 
-// console.log('result History', resultHistory)
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:8080/api/results`);
     const promise2 = axios.get(`http://localhost:8080/api/drivers`);
@@ -82,7 +81,7 @@ export default function useEntries() {
     })
     return group;
   }
-
+  //create array of objects, where each object holds all the info pertaining to one series race result
   const resultInfoGrouped = (groupArr) => {
     const arrOfResults = [];
     for (const result of groupArr) {
@@ -99,7 +98,7 @@ export default function useEntries() {
     return arrOfResults
   }
 
-  
+  // add fast lap to array of objects  for each result, adding the fast lap into  to that obj
   const addFastLap = (resultArr) => {
     for (let f = 0; f < fastLaps.length; f++)  {
       for (let r = 0; r < resultArr.length; r++) {
@@ -110,34 +109,8 @@ export default function useEntries() {
     }
     return resultArr
   }
-  // console.log('Group Me', addFastLap(resultInfoGrouped(groupMe(resultHistory))))
-
-  // const groupedResults = (resultArr) => {
-  //   const arrayOfGroupedResults = [];
-  //   for (let i = 0; i < resultArr.length; i += 3) {
-  //     let y = i + 1;
-  //     let z = i + 2;
-  //     arrayOfGroupedResults.push({
-  //       date: resultArr[i].date,
-  //       series: resultArr[i].series,
-  //       event: resultArr[i].event,
-  //       result1: resultArr[i], 
-  //       result2: resultArr[y],
-  //       result3: resultArr[z]
-  //     })
-  //   }
-  //   for (let x = 0; x < fastLaps.length; x++) {
-  //     for (let y = 0; y < arrayOfGroupedResults.length; y++) {
-  //       if (fastLaps[x].id === arrayOfGroupedResults[y].result1.fast_lap) {
-  //         arrayOfGroupedResults[y].fastLap = fastLaps[x]
-  //       }
-  //     }
-  //   }
-  //   return arrayOfGroupedResults
-  // };
+ 
   const groupResults = addFastLap(resultInfoGrouped(groupMe(resultHistory)))
-
-  // console.log('groupedResults', groupedResults(resultHistory))
 
   return {
     drivers,
