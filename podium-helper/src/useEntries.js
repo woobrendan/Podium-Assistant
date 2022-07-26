@@ -112,29 +112,30 @@ export default function useEntries() {
   }
   // console.log('Group Me', addFastLap(resultInfoGrouped(groupMe(resultHistory))))
 
-  const groupedResults = (resultArr) => {
-    const arrayOfGroupedResults = [];
-    for (let i = 0; i < resultArr.length; i += 3) {
-      let y = i + 1;
-      let z = i + 2;
-      arrayOfGroupedResults.push({
-        date: resultArr[i].date,
-        series: resultArr[i].series,
-        event: resultArr[i].event,
-        result1: resultArr[i], 
-        result2: resultArr[y],
-        result3: resultArr[z]
-      })
-    }
-    for (let x = 0; x < fastLaps.length; x++) {
-      for (let y = 0; y < arrayOfGroupedResults.length; y++) {
-        if (fastLaps[x].id === arrayOfGroupedResults[y].result1.fast_lap) {
-          arrayOfGroupedResults[y].fastLap = fastLaps[x]
-        }
-      }
-    }
-    return arrayOfGroupedResults
-  };
+  // const groupedResults = (resultArr) => {
+  //   const arrayOfGroupedResults = [];
+  //   for (let i = 0; i < resultArr.length; i += 3) {
+  //     let y = i + 1;
+  //     let z = i + 2;
+  //     arrayOfGroupedResults.push({
+  //       date: resultArr[i].date,
+  //       series: resultArr[i].series,
+  //       event: resultArr[i].event,
+  //       result1: resultArr[i], 
+  //       result2: resultArr[y],
+  //       result3: resultArr[z]
+  //     })
+  //   }
+  //   for (let x = 0; x < fastLaps.length; x++) {
+  //     for (let y = 0; y < arrayOfGroupedResults.length; y++) {
+  //       if (fastLaps[x].id === arrayOfGroupedResults[y].result1.fast_lap) {
+  //         arrayOfGroupedResults[y].fastLap = fastLaps[x]
+  //       }
+  //     }
+  //   }
+  //   return arrayOfGroupedResults
+  // };
+  const groupResults = addFastLap(resultInfoGrouped(groupMe(resultHistory)))
 
   // console.log('groupedResults', groupedResults(resultHistory))
 
@@ -143,7 +144,7 @@ export default function useEntries() {
     vehicles,
     fastLaps,
     resultHistory,
-    groupResults: groupedResults(resultHistory),
+    groupResults,
     events,
     series,
     classCategory
