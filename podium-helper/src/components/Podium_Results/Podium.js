@@ -39,6 +39,7 @@ function Podium() {
     const result1 = results.result1;
     const result2 = results.result2;
     const result3 = results.result3;
+    const result4 = results.result4;
     const NULL = 'NULL'
 
     setResults((prev) => ({
@@ -53,35 +54,40 @@ function Podium() {
       printPage: true
     }));
 
-    const copyResults = {
-      ...results,
-      result1: {
-        class: getIdFromArray(result1.class, classCategory),
-        first_place: getVehicleId(result1.first_place.number, vehicles),
-        second_place: (getVehicleId(result1.second_place.number, vehicles) || NULL),
-        third_place: (getVehicleId(result1.third_place.number, vehicles) || NULL)
-      },
-      result2: {
-        class: getIdFromArray(result2.class, classCategory),
-        first_place: getVehicleId(result2.first_place.number, vehicles),
-        second_place: (getVehicleId(result2.second_place.number, vehicles) || NULL),
-        third_place: (getVehicleId(result2.third_place.number, vehicles) || NULL)
-      },
-      result3: {
-        class: getIdFromArray(result3.class, classCategory),
-        first_place: getVehicleId(result3.first_place.number, vehicles),
-        second_place: (getVehicleId(result3.second_place.number, vehicles) || NULL),
-        third_place: (getVehicleId(result3.third_place.number, vehicles) || NULL)
-      },
-      event: getIdFromArray(results.event, events),
-      series: getIdFromArray(results.series, series),
-      fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
+    const copyResults = () => {
+      const copy = {
+        ...results,
+        result1: {
+          class: getIdFromArray(result1.class, classCategory),
+          first_place: getVehicleId(result1.first_place.number, vehicles),
+          second_place: (getVehicleId(result1.second_place.number, vehicles) || NULL),
+          third_place: (getVehicleId(result1.third_place.number, vehicles) || NULL)
+        },
+        result2: {
+          class: getIdFromArray(result2.class, classCategory),
+          first_place: getVehicleId(result2.first_place.number, vehicles),
+          second_place: (getVehicleId(result2.second_place.number, vehicles) || NULL),
+          third_place: (getVehicleId(result2.third_place.number, vehicles) || NULL)
+        },
+        event: getIdFromArray(results.event, events),
+        series: getIdFromArray(results.series, series),
+        fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
+      }
+      if (result3) {
+        copy['result3'] = {
+          class: getIdFromArray(result3.class, classCategory),
+          first_place: getVehicleId(result3.first_place.number, vehicles),
+          second_place: (getVehicleId(result3.second_place.number, vehicles) || NULL),
+          third_place: (getVehicleId(result3.third_place.number, vehicles) || NULL)
+        }
+      }
+      return copy
     }
-    // console.log('copyResult', copyResults)
+    console.log('copyResult', copyResults())
 
     axios
       .post('http://localhost:8080/results/new', {
-        results: copyResults
+        results: copyResults()
       })
       .catch(err => console.log(err.message))
   }
