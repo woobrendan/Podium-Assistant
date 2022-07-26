@@ -4,8 +4,8 @@ const router = express.Router();
 module.exports = (db) => {
   //results
   router.post('/new', (req, res) => {
-    const fastLap = req.body.results.fastLap;
     const result = req.body.results;
+    const fastLap = result.fastLap;
     const result1 = result.result1;
     const result2 = result.result2;
     const result3 = result.result3;
@@ -17,9 +17,6 @@ module.exports = (db) => {
 
     const newResultString = `
     INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES ($1, $2, $3, $4) RETURNING *;`
-
-    const podiumString = `
-    INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  ($1, $2, $3, $4, $5)`
 
     const getNumOfResults = () => {
       let num = 1;
