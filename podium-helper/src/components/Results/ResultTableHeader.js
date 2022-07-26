@@ -11,7 +11,6 @@ import '../../Styling/result.scss';
 
 function ResultTableHeader(props) {
   const podiums = props.results;
-  console.log('podiums', podiums)
   const podium1 = podiums.result1;
   const singleDriver = podium1.first_place.driver2 ? false : true
 
