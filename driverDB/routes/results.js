@@ -6,9 +6,9 @@ module.exports = (db) => {
   router.post('/new', (req, res) => {
     const fastLap = req.body.results.fastLap;
     const result = req.body.results;
-    const result1 = req.body.result1;
-    const result2 = req.body.result2;
-    const result3 = req.body.result3;
+    const result1 = result.result1;
+    const result2 = result.result2;
+    const result3 = result.result3;
 
     console.log('req.body', req.body)
     const queryString = 
@@ -27,7 +27,7 @@ module.exports = (db) => {
         const fastId = fast.rows[0].id;
         return db.query(newResultString, [result.date, result.event, result.series, fastId])
       })
-      //  get result Id from return from previous query, pass to each podium creation
+      //  get result Id from return from p`revious query, pass to each podium creation
       .then(val => {
         const resultId = val.rows[0].id;
         db.query(podiumString, [result1.class, result1.first_place, result1.second_place, result1.third_place, resultId]);
@@ -48,3 +48,7 @@ module.exports = (db) => {
   return router;
 }
 
+const podiumQueryStringBuilder = () => {
+  const podiumString = `
+    INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  ($1, $2, $3, $4, $5)`
+}
