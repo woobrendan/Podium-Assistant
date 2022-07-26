@@ -70,6 +70,7 @@ export default function useEntries() {
     return result;
   });
 
+  //returns array of arrays [[{result1}, {result1}]...]
   const groupMe = (resultArr) => {
     const group = [];
     resultArr.forEach(result => {
@@ -77,12 +78,27 @@ export default function useEntries() {
         group[result.result_id - 1] = [];
       } 
       group[result.result_id - 1].push(result)
-      
     })
     return group;
   }
+
+  const resultInfoGrouped = (groupArr) => {
+    const arrOfResults = [];
+    for (const result of groupArr) {
+      const indivResult = {
+        date: result[0].date,
+        series: result[0].series,
+        event: result[0].event
+      }
+      for (let i = 1; i <= result.length; i++) {
+        indivResult[`result${i}`] = result[i - 1];
+      }
+      arrOfResults.push(indivResult)
+    }
+    return arrOfResults
+  }
   
-  console.log('Group Me', groupMe(resultHistory))
+  console.log('Group Me', resultInfoGrouped(groupMe(resultHistory)))
 
   const groupedResults = (resultArr) => {
     const arrayOfGroupedResults = [];
@@ -107,6 +123,8 @@ export default function useEntries() {
     }
     return arrayOfGroupedResults
   };
+
+  // console.log('groupedResults', groupedResults(resultHistory))
 
   return {
     drivers,
