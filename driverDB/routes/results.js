@@ -23,8 +23,8 @@ module.exports = (db) => {
 
     const getNumOfResults = () => {
       let num = 1;
-      if (req.body.results.result2) num += 1
-      if (req.body.results.result3) num += 1
+      if (result2) num += 1
+      if (result3) num += 1
       return num;
     }
     
@@ -56,14 +56,8 @@ module.exports = (db) => {
       //  get result Id from return from p`revious query, pass to each podium creation
       .then(val => {
         const resultId = val.rows[0].id;
-        db.query(podiumString, [result1.class, result1.first_place, result1.second_place, result1.third_place, resultId]);
-        if (result2) {
-          db.query(podiumString, [result2.class, result2.first_place, result2.second_place, result2.third_place, resultId]);
-        }
-        if (result3) {
-          db.query(podiumString, [result3.class, result3.first_place, result3.second_place, result3.third_place, resultId]);
-        }
-        return
+         return db.query(podiumQueryStringBuilder(), [result1.class, result1.first_place, result1.second_place, result1.third_place, resultId]);
+        
       })
       .then(response => {
         res.json(response.rows);
