@@ -18,6 +18,7 @@ const classOptions = {
 function Podium(props) {
 
   const {vehicles} = useEntries();
+  // console.log('vehicles/entries', vehicles)
   const [winners, setWinners] = useState({
     class:'',
     first_place: '',
@@ -77,9 +78,9 @@ function Podium(props) {
       return <MenuItem key={entry.number} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
     }
   }
-  const mappedDrivers = driverInfo
+  const mappedDrivers = vehicles
     .filter(entry => entry.series === props.series 
-      && entry.classification === winners.class)
+      && entry.class === winners.class)
     .map(entry => (numOfDriverMenuItem(entry)))
 
   return (
