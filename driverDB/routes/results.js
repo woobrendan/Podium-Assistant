@@ -9,6 +9,7 @@ module.exports = (db) => {
     const result1 = result.result1;
     const result2 = result.result2;
     const result3 = result.result3;
+    const result4 = result.result4;
 
     const queryString = 
     `INSERT INTO fastlaps (driver_id, laptime) VALUES ($1, $2) RETURNING *;`;
@@ -20,6 +21,7 @@ module.exports = (db) => {
       let num = 1;
       if (result2) num += 1
       if (result3) num += 1
+      if (result4) num += 1
       return num;
     }
     
