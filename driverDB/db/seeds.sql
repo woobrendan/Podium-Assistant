@@ -14,7 +14,8 @@ INSERT INTO class (name) VALUES
 ('TCA'),
 ('SRO3'),
 ('GT4'),
-('GT2');
+('GT2'),
+('Masters');
 
 INSERT INTO events (name, date) VALUES 
 ('Grand Prix of St. Petersburg', 'February 24-26, 2022'),
@@ -225,7 +226,9 @@ VALUES
 ('Porsche 718 Cayman GT4 RS CS', '319', 2, 61, 2),
 ('Porsche 718 Cayman GT4 RS CS', '30', 9, 10, 3),
 ('Ginetta G56', '60', 3, 38, 2),
-('Porsche 718 Cayman GT4 RS CS', '032', 3, 16, 2);
+('Porsche 718 Cayman GT4 RS CS', '032', 3, 16, 2),
+('Lamborghini Huracan GT3', '191', 11, 12, 3),
+('Callaway Corvette C7 GT3-R', '70', 11, 57, 3);
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
@@ -424,7 +427,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Matt Rivard', 'Bronze', 'USA', 38, 132),
 ('Ben Anderson', 'Bronze', 'USA', 38, 132),
 ('Kyle Washington', 'Bronze', 'USA', 16, 133),
-('James Sofronas', 'Bronze', 'USA', 16, 133);
+('James Sofronas', 'Bronze', 'USA', 16, 133),
+('Jeff Burton', 'Bronze', 'USA', 13, 134),
+('Mirco Shultis', 'Bronze', 'Germany', 57, 135);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
