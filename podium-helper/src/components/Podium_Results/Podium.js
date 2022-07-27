@@ -40,7 +40,7 @@ function Podium() {
     const result2 = results.result2;
     const result3 = results.result3;
     const result4 = results.result4;
-    const NULL = 'NULL'
+    
 
     setResults((prev) => ({
       ...prev,
@@ -60,14 +60,14 @@ function Podium() {
         result1: {
           class: getIdFromArray(result1.class, classCategory),
           first_place: getVehicleId(result1.first_place.number, vehicles),
-          second_place: (getVehicleId(result1.second_place.number, vehicles) || NULL),
-          third_place: (getVehicleId(result1.third_place.number, vehicles) || NULL)
+          second_place: (getVehicleId(result1.second_place.number, vehicles) || null),
+          third_place: (getVehicleId(result1.third_place.number, vehicles) || null)
         },
         result2: {
           class: getIdFromArray(result2.class, classCategory),
           first_place: getVehicleId(result2.first_place.number, vehicles),
-          second_place: (getVehicleId(result2.second_place.number, vehicles) || NULL),
-          third_place: (getVehicleId(result2.third_place.number, vehicles) || NULL)
+          second_place: (getVehicleId(result2.second_place.number, vehicles) || null),
+          third_place: (getVehicleId(result2.third_place.number, vehicles) || null)
         },
         event: getIdFromArray(results.event, events),
         series: getIdFromArray(results.series, series),
@@ -77,8 +77,8 @@ function Podium() {
         copy['result3'] = {
           class: getIdFromArray(result3.class, classCategory),
           first_place: getVehicleId(result3.first_place.number, vehicles),
-          second_place: (getVehicleId(result3.second_place.number, vehicles) || NULL),
-          third_place: (getVehicleId(result3.third_place.number, vehicles) || NULL)
+          second_place: (getVehicleId(result3.second_place.number, vehicles) || null),
+          third_place: (getVehicleId(result3.third_place.number, vehicles) || null)
         }
       }
       return copy
