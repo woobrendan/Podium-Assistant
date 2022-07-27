@@ -21,6 +21,7 @@ function Podium() {
     result1: '',
     result2: '',
     result3: '',
+    result4: '',
     fastLap: ''
   });
 
@@ -54,6 +55,7 @@ function Podium() {
       printPage: true
     }));
 
+    // create copy of results useState to get proper values to pass. change values of drivers into their id number for backend
     const copyResults = () => {
       const copy = {
         ...results,
@@ -83,7 +85,6 @@ function Podium() {
       }
       return copy
     }
-    console.log('copyResult', copyResults())
 
     axios
       .post('http://localhost:8080/results/new', {
@@ -115,6 +116,12 @@ function Podium() {
       ...prev,
       [name]: value
     }))
+    if (value === 'GT America') {
+      setShowWinnerTable((prev) => ({
+        ...prev,
+        result4: true
+      }));
+    }
   }
 
   return (
@@ -141,7 +148,7 @@ function Podium() {
           onClick={handleRacePodiumSubmit}
           results={results}
         />}
-      {results.series === 'GT America' && 
+      {showWinnerTable.result4 && 
         <WinnerTop3 
         series={results.series} 
         onClick={handleRacePodiumSubmit}
