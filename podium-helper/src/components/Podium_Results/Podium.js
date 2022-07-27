@@ -83,6 +83,14 @@ function Podium() {
           third_place: (getVehicleId(result3.third_place.number, vehicles) || null)
         }
       }
+      if (result4) {
+        copy['result4'] = {
+          class: getIdFromArray(result4.class, classCategory),
+          first_place: getVehicleId(result4.first_place.number, vehicles),
+          second_place: (getVehicleId(result4.second_place.number, vehicles) || null),
+          third_place: (getVehicleId(result4.third_place.number, vehicles) || null)
+        }
+      }
       return copy
     }
 
