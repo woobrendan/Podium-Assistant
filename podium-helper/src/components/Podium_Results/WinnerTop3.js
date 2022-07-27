@@ -29,10 +29,10 @@ function Podium(props) {
   const [isError, setIsError] = useState(false);
 
   const handleWinners = event => {
-      setWinners((prev) => ({
-        ...prev,
-        [event.target.name]: event.target.value
-      }))
+    setWinners((prev) => ({
+      ...prev,
+      [event.target.name]: event.target.value
+    }))
   }
 
   const handleSubmit = () => {
@@ -48,7 +48,7 @@ function Podium(props) {
   const usedClassOptions = (result) => {
     const usedClasses = [];
     const podiums = [];
-    podiums.push(result.result1, result.result2, result.result3)
+    podiums.push(result.result1, result.result2, result.result3, result.result4)
     for (const podium of podiums) {
       if (podium.class) {
         usedClasses.push(podium.class)
