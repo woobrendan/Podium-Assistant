@@ -31,7 +31,7 @@ module.exports = (db) => {
       const numOfResultInputs = getNumOfResults() * 5;
       for (let i = 1; i <= numOfResultInputs; i++) {
         if (i === numOfResultInputs) {
-          string += `$${i}) RETURNING *;`
+          string += `$${i});`
         } else if (i % 5 === 0){
           string += `$${i}), (`
         } else {
@@ -39,6 +39,18 @@ module.exports = (db) => {
         }
       } 
       return string;
+    }
+
+    const podiumValues = (resultId) => {
+      const allResults = [];
+      allResults.push(result1.class, result1.first_place, result1.second_place, result1.third_place, resultId)
+      if (result2) {
+        allResults.push(result2.class, result2.first_place, result2.second_place, result2.third_place, resultId)
+      }
+      if (result3) {
+        allResults.push(result3.class, result3.first_place, result3.second_place, result3.third_place, resultId)
+      }
+      return allResults;
     }
 
     console.log('podiumquery', podiumQueryStringBuilder())
