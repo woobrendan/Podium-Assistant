@@ -54,18 +54,19 @@ module.exports = (db) => {
     }
 
     console.log('podiumquery', podiumQueryStringBuilder())
-
+    
     // Create new fast lap entry
     return db
-      .query(queryString, [fastLap.id, fastLap.laptime])
-      .then(fast => {
-        const fastId = fast.rows[0].id;
-        return db.query(newResultString, [result.date, result.event, result.series, fastId])
-      })
-      //  get result Id from return from p`revious query, pass to each podium creation
-      .then(val => {
-        const resultId = val.rows[0].id;
-         return db.query(podiumQueryStringBuilder(), [result1.class, result1.first_place, result1.second_place, result1.third_place, resultId]);
+    .query(queryString, [fastLap.id, fastLap.laptime])
+    .then(fast => {
+      const fastId = fast.rows[0].id;
+      return db.query(newResultString, [result.date, result.event, result.series, fastId])
+    })
+    //  get result Id from return from p`revious query, pass to each podium creation
+    .then(val => {
+      const resultId = val.rows[0].id;
+      console.log('vals:', podiumValues(resultId))
+         return db.query(podiumQueryStringBuilder(), podiumValues(resultId));
         
       })
       .then(response => {
