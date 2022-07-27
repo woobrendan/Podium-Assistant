@@ -62,18 +62,16 @@ module.exports = (db) => {
       const fastId = fast.rows[0].id;
       return db.query(newResultString, [result.date, result.event, result.series, fastId])
     })
-    //  get result Id from return from p`revious query, pass to each podium creation
+    //  get result Id from return from previous query, pass to each podium creation
     .then(val => {
       const resultId = val.rows[0].id;
-      console.log('vals:', podiumValues(resultId))
-         return db.query(podiumQueryStringBuilder(), podiumValues(resultId));
-        
-      })
-      .then(response => {
-        res.json(response.rows);
-        return res.status(200);
-      })
-      .catch(err => console.log(err.message))
+      return db.query(podiumQueryStringBuilder(), podiumValues(resultId));
+    })
+    .then(response => {
+      res.json(response.rows);
+      return res.status(200);
+    })
+    .catch(err => console.log(err.message))
   });
   return router;
 }
