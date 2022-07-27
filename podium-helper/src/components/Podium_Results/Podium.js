@@ -97,7 +97,8 @@ function Podium() {
     const podiumNumber = () => {
       if (!results.result1) return 'result1'
       else if (!results.result2) return 'result2'
-      else return 'result3'
+      else if (!results.result3) return 'result3'
+      else return 'result4'
     }
     setResults((prev) => ({
       ...prev,
