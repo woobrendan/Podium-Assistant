@@ -7,15 +7,7 @@ import useEntries from '../../useEntries.js';
 import filteredResultOptions from '../../resultOptions';
 
 function ResultsHistory() {
-  const {
-    drivers,
-    vehicles,
-    fastLaps,
-    resultHistory,
-    groupResults
-  } = useEntries()
-
-
+  const { groupResults } = useEntries()
   const [searchValue, setSearchValue] = useState('');
   const [option, setOption] = useState('');
 
