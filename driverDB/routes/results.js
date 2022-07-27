@@ -52,6 +52,9 @@ module.exports = (db) => {
       if (result3) {
         allResults.push(result3.class, result3.first_place, result3.second_place, result3.third_place, resultId)
       }
+      if (result4) {
+        allResults.push(result4.class, result4.first_place, result4.second_place, result4.third_place, resultId)
+      }
       return allResults;
     }
     
