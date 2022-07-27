@@ -43,6 +43,7 @@ function ResultTableHeader(props) {
           <ResultTable results={podiums.result1}/>
           {podiums.result2 && <ResultTable results={podiums.result2}/>}
           {podiums.result3 && <ResultTable results={podiums.result3}/>}
+          {podiums.result4 && <ResultTable results={podiums.result4}/>}
           <FastLapTable fastLap={podiums.fastLap}/>
         </Table>
       </TableContainer>
