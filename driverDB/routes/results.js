@@ -10,8 +10,6 @@ module.exports = (db) => {
     const result2 = result.result2;
     const result3 = result.result3;
 
-    console.log('req.body', req.body)
-
     const queryString = 
     `INSERT INTO fastlaps (driver_id, laptime) VALUES ($1, $2) RETURNING *;`;
 
@@ -25,6 +23,7 @@ module.exports = (db) => {
       return num;
     }
     
+    // create backend of query string, creating n of $n values
     const podiumQueryStringBuilder = () => {
       let string = `
         INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  (`;
@@ -41,6 +40,7 @@ module.exports = (db) => {
       return string;
     }
 
+    // Create array of values to be passed to query string input into SQL
     const podiumValues = (resultId) => {
       const allResults = [];
       allResults.push(result1.class, result1.first_place, result1.second_place, result1.third_place, resultId)
@@ -52,26 +52,24 @@ module.exports = (db) => {
       }
       return allResults;
     }
-
-    console.log('podiumquery', podiumQueryStringBuilder())
     
     // Create new fast lap entry
     return db
-    .query(queryString, [fastLap.id, fastLap.laptime])
-    .then(fast => {
-      const fastId = fast.rows[0].id;
-      return db.query(newResultString, [result.date, result.event, result.series, fastId])
-    })
-    //  get result Id from return from previous query, pass to each podium creation
-    .then(val => {
-      const resultId = val.rows[0].id;
-      return db.query(podiumQueryStringBuilder(), podiumValues(resultId));
-    })
-    .then(response => {
-      res.json(response.rows);
-      return res.status(200);
-    })
-    .catch(err => console.log(err.message))
+      .query(queryString, [fastLap.id, fastLap.laptime])
+      .then(fast => {
+        const fastId = fast.rows[0].id;
+        return db.query(newResultString, [result.date, result.event, result.series, fastId])
+      })
+      //  get result Id from return from previous query, pass to each podium creation
+      .then(val => {
+        const resultId = val.rows[0].id;
+        return db.query(podiumQueryStringBuilder(), podiumValues(resultId));
+      })
+      .then(response => {
+        res.json(response.rows);
+        return res.status(200);
+      })
+      .catch(err => console.log(err.message))
   });
   return router;
 }
