@@ -1,4 +1,4 @@
-import {compare} from './helperFunc'
+import {compareDate} from './helperFunc'
 
 export default function filteredResultOptions(list, option, searchValue) {
 
@@ -120,5 +120,5 @@ export default function filteredResultOptions(list, option, searchValue) {
         return val; 
     }
   });
-  return filtered.sort(compare);
+  return filtered.sort(compareDate);
 }
