@@ -27,11 +27,21 @@ const printPage = () => {
   window.print()
 }
 
-const compare = (a, b) => {
+const compareDate = (a, b) => {
   if (a.date < b.date) {
     return -1
   }
   if (a.date > b.date) {
+    return 1
+  }
+  return 0;
+}  
+
+const compareCarNumber = (a, b) => {
+  if (a.number < b.number) {
+    return -1
+  }
+  if (a.number > b.number) {
     return 1
   }
   return 0;
@@ -42,5 +52,6 @@ export {
   getToday,
   printPage,
   getVehicleId,
-  compare
+  compareDate,
+  compareCarNumber
 }
