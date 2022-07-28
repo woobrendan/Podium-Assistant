@@ -1,15 +1,6 @@
+import {compare} from './helperFunc'
 
 export default function filteredResultOptions(list, option, searchValue) {
-  
-  const compare = (a, b) => {
-    if (a.date < b.date) {
-      return -1
-    }
-    if (a.date > b.date) {
-      return 1
-    }
-    return 0;
-  }  
 
   const filtered = list.filter(val => {
     const resultOneP1 = val.result1.first_place;
