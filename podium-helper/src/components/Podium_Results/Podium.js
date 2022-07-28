@@ -53,7 +53,9 @@ function Podium() {
       ...prev,
       fastLap: false,
       misc: false,
-      printPage: true
+      printPage: true,
+      result3: false,
+      result4: false
     }));
 
     // create copy of results useState to get proper values to pass. change values of drivers into their id number for backend
