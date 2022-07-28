@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {compare} from './helperFunc';
+import {compareCarNumber} from './helperFunc';
 import axios from "axios";
 
 export default function useEntries() {
@@ -115,7 +115,7 @@ export default function useEntries() {
 
   return {
     drivers,
-    vehicles,
+    vehicles: vehicles.sort(compareCarNumber),
     fastLaps,
     resultHistory,
     groupResults,
