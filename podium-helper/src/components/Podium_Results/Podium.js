@@ -48,6 +48,7 @@ function Podium() {
       fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
     }));
 
+    // remove fast lap, series, date and event boxes, show print button
     setShowWinnerTable((prev) => ({
       ...prev,
       fastLap: false,
@@ -91,7 +92,7 @@ function Podium() {
           third_place: (getVehicleId(result4.third_place.number, vehicles) || null)
         }
       }
-      return copy
+      return copy;
     }
 
     axios
@@ -144,30 +145,34 @@ function Podium() {
           series={results.series} 
           onClick={handleRacePodiumSubmit}
           results={results}
-        />}
+        />
+      }
       {showWinnerTable.result2 && 
         <WinnerTop3 
           series={results.series} 
           onClick={handleRacePodiumSubmit}
           results={results}
-        />}
+        />
+      }
       {showWinnerTable.result3 && 
         <WinnerTop3 
           series={results.series} 
           onClick={handleRacePodiumSubmit}
           results={results}
-        />}
+        />
+      }
       {showWinnerTable.result4 && 
         <WinnerTop3 
-        series={results.series} 
-        onClick={handleRacePodiumSubmit}
-        results={results}
-      />}
+          series={results.series} 
+          onClick={handleRacePodiumSubmit}
+          results={results}
+        />
+      }
       {showWinnerTable.fastLap && 
         <FastLap 
           onClick={handleFastLapSumbit}
           series={results.series}
-          />
+        />
       }
       {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
       {!showWinnerTable.fastLap && <ResultTableHeader results={results}/>}
