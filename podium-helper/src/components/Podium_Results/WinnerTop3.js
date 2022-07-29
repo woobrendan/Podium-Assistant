@@ -1,9 +1,5 @@
 import {useState} from 'react'
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import MenuItem from '@mui/material/MenuItem';
-import Typography from '@mui/material/Typography';
-import { FormControl, InputLabel, Select, Button } from '@mui/material';
+import { FormControl, InputLabel, Select, Button, Typography, MenuItem, Card, Box } from '@mui/material';
 import '../../Styling/winnerTop3.scss';
 import useEntries from '../../useEntries'
 
