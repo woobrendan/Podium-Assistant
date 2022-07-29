@@ -1,7 +1,5 @@
 import {useState} from 'react';
-import Box from '@mui/material/Box';
-import MenuItem from '@mui/material/MenuItem';
-import { FormControl, InputLabel, Select } from '@mui/material';
+import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
 
 const seriesNameList = ['GT World Challenge America', 'GT America', 'Pirelli GT4 America', 'TC America']
 
