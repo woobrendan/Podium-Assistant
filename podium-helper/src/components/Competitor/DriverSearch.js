@@ -1,7 +1,7 @@
 import { driverInfo } from '../../drivers'
 import DriverDetails from './DriverDetails';
 import '../../Styling/competitors.scss'
-import TextField from '@mui/material/TextField';
+import {TextField} from '@mui/material'
 import {useState} from 'react';
 import ToggleSearch from '../toggleSearch';
 import BackToTopButton from './BackToTopButton';
