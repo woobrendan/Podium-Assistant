@@ -1,7 +1,4 @@
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
+import {TableBody, TableCell, TableHead, TableRow} from '@mui/material'
 import '../../Styling/result.scss';
 
 function createFastLap(driver, lapTime) {
