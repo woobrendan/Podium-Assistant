@@ -1,7 +1,4 @@
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import { Typography, CardMedia, CardContent, Card } from '@mui/material';
 import DriverTable from './DriverTable';
 import Elevation from '../elevationPaper';
 import classNames from 'classnames';
