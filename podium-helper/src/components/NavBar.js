@@ -1,12 +1,6 @@
 import React from 'react'
-import {AppBar} from '@mui/material';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import {Typography, IconButton, MenuItem, Menu, Box, Toolbar, AppBar} from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
 import SRO from '../images/SRO.jpg';
 import '../Styling/navBar.scss';
 import { useNavigate } from 'react-router-dom';
