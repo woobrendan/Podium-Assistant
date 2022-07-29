@@ -1,9 +1,5 @@
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import MenuItem from '@mui/material/MenuItem';
-import { FormControl, InputLabel, Select, TextField, Button } from '@mui/material';
+import { FormControl, InputLabel, Select, TextField, Button, Typography, Card, Box, MenuItemClasses } from '@mui/material';
 import {useState} from 'react';
-import Typography from '@mui/material/Typography';
 import useEntries from '../../useEntries';
 
 
