@@ -9,10 +9,6 @@ YouTube: [GT World](https://www.youtube.com/gtworld)
 [Website](https://www.gt-world-challenge-america.com/)  
 [Instagram](https://www.instagram.com/gtworldchallengeamerica/?hl=en)  
 
-### Disclaimer
-This app is a work in progress and not yet complete and is currently set up for basic functionality to be used on-site during races.
-
-Driver data right now is currently hard coded with the information, with future intention to move to a working database and the ability to add/delete/edit drivers/entries.
 
 ## Set-Up
 From within the `podium-helper` folder:
