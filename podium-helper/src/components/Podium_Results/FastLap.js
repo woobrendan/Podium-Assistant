@@ -1,4 +1,4 @@
-import { FormControl, InputLabel, Select, TextField, Button, Typography, Card, Box, MenuItemClasses } from '@mui/material';
+import { FormControl, InputLabel, Select, TextField, Button, Typography, Card, Box, MenuItem } from '@mui/material';
 import {useState} from 'react';
 import useEntries from '../../useEntries';
 
