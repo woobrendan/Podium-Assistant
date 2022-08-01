@@ -1,4 +1,7 @@
-docker build --tag react .
-docker run react
+docker build --tag podium_helper .
 
-docker run --rm -it --name podium_helper -p 3000:3000 react
+
+docker run --rm -it --name podium_helper -p 3000:3000 podium_helper
+
+
+docker run --rm -it --name podium_helper -p 3000:3000 -v $(pwd):/podium-helper podium_helper
