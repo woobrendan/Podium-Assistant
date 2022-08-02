@@ -242,7 +242,8 @@ VALUES
 ('Ferrari 488 GT3', '62', 8, 65, 3),
 ('Mercedes-AMG GT3', '63', 8, 4, 3),
 ('Ford Mustang GT4', '124', 9, 40, 3),
-('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3);
+('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3),
+('Ferrari 458 Italia GT3', '56', 10, 56, 3);
 
 
 
@@ -455,7 +456,8 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Brett Curtis', 'Bronze', 'USA', 65, 142),
 ('David Askew', 'Bronze', 'USA', 4, 143),
 ('Edgar Lau', 'Bronze', 'Hong Kong', 40, 144),
-('Anthony Bartone', 'Bronze', 'USA', 62, 145);
+('Anthony Bartone', 'Bronze', 'USA', 62, 145),
+('Andy Pilgrim', 'Bronze', 'USA', 56, 146);
 
 
 
@@ -564,9 +566,9 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (7, 83, 84, 81, 19),
 (8, 92, 116, 111, 20),
 (9, 114, 103, 91, 20),
-(10, 105, NULL, NULL),
-(11, 134, NULL, NULL),
+(10, 105, NULL, NULL, 20),
+(11, 134, NULL, NULL, 20),
 (8, 92, 104, 98, 21),
 (9, 103, 113, 91, 21),
-(10, 105, NULL, NULL),
-(11, NULL, NULL, NULL);
+(10, 105, NULL, NULL, 21),
+(11, 134, NULL, NULL, 21);
