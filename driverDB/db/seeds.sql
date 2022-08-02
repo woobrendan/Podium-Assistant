@@ -447,7 +447,11 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Jeff Burton', 'Bronze', 'USA', 13, 134),
 ('Mirco Shultis', 'Bronze', 'Germany', 57, 135),
 ('Andy Pilgrim', 'Bornze', 'USA', 62, 136),
-('Rusty Bittle', 'Bronze', 'USA', 63, 137);
+('Rusty Bittle', 'Bronze', 'USA', 63, 137),
+('Jayson Clunie', 'Bronze', 'Canada', 19, 138),
+('Onofrio Triarsi', 'Bronze', 'USA', 7, 139),
+('Kyle Washington', 'Bronze', 'USA', 16, 140),
+('Matt Forbush', 'Bronze', 'USA', 64, 141);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
