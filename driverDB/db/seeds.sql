@@ -89,7 +89,11 @@ INSERT INTO teams (name, country) VALUES
 ('Rotek Racing', 'USA'),
 ('Winward Racing', 'USA'),
 ('Team Hardpoint', 'USA'),
-('Indian Summer Racing', 'USA');
+('Indian Summer Racing', 'USA'),
+('Regal Motorsports LLC/Bartone Bros', 'USA'),
+('Flatrock Motorsports', 'USA'),
+('Forbush Performance', 'USA'),
+('Scuderia Corsa', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id)
