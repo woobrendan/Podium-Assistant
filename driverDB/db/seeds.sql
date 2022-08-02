@@ -243,7 +243,7 @@ VALUES
 ('Mercedes-AMG GT3', '63', 8, 4, 3),
 ('Ford Mustang GT4', '124', 9, 40, 3),
 ('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3),
-('Ferrari 458 Italia GT3', '56', 10, 56, 3);
+('Ferrari 458 Italia GT3', '56', 11, 56, 3);
 
 
 
@@ -571,4 +571,4 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (8, 92, 104, 98, 21),
 (9, 103, 113, 91, 21),
 (10, 105, NULL, NULL, 21),
-(11, 134, NULL, NULL, 21);
+(11, 146, NULL, NULL, 21);
