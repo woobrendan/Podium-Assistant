@@ -236,7 +236,14 @@ VALUES
 ('Porsche 718 Cayman GT4 Clubsport MR', '3', 9, 62, 3),
 ('Porsche 718 Cayman GT4 Clubsport MR', '7', 9, 63, 3),
 ('BMW M4 GT4', '11', 9, 19, 3),
-('Ferrari 488 GT3', '23', 8, 7, 3)
+('Ferrari 488 GT3', '23', 8, 7, 3),
+('Porsche', '032', 8, 16, 3),
+('Toyota GR Supra GT4', 9, 64, 3),
+('Ferrari 488 GT3', '62', 8, 65, 3),
+('Mercedes-AMG GT3', '63', 8, 4, 3),
+('Ford Mustang GT4', '124', 9, 40, 3),
+('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3);
+
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
