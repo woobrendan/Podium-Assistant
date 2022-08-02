@@ -232,7 +232,12 @@ VALUES
 ('Ginetta G56', '60', 3, 38, 2),
 ('Porsche 718 Cayman GT4 RS CS', '032', 3, 16, 2),
 ('Lamborghini Huracan GT3', '191', 11, 12, 3),
-('Callaway Corvette C7 GT3-R', '70', 11, 57, 3);
+('Callaway Corvette C7 GT3-R', '70', 11, 57, 3),
+('Porsche 718 Cayman GT4 Clubsport MR', '3', 9, 62, 3),
+('Porsche 718 Cayman GT4 Clubsport MR', '7', 9, 63, 3),
+('BMW M4 GT4', '11', 9, 19, 3),
+('Ferrari 488 GT3', '23', 8, 7, 3)
+
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Michele Beretta', 'Silver', 'Italy', 1, 1),
