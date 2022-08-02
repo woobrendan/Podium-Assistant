@@ -238,7 +238,7 @@ VALUES
 ('BMW M4 GT4', '11', 9, 19, 3),
 ('Ferrari 488 GT3', '23', 8, 7, 3),
 ('Porsche', '032', 8, 16, 3),
-('Toyota GR Supra GT4', 9, 64, 3),
+('Toyota GR Supra GT4', '33' 9, 64, 3),
 ('Ferrari 488 GT3', '62', 8, 65, 3),
 ('Mercedes-AMG GT3', '63', 8, 4, 3),
 ('Ford Mustang GT4', '124', 9, 40, 3),
