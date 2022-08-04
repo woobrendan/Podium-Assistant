@@ -573,4 +573,7 @@ INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id
 (8, 92, 104, 98, 21),
 (9, 103, 113, 91, 21),
 (10, 105, NULL, NULL, 21),
-(11, 146, NULL, NULL, 21);
+(11, 146, NULL, NULL, 21),
+(4, 28, 33, 32, 22),
+(2, 40, 54, 53, 22),
+(3, 34, 29, 49, 22);
