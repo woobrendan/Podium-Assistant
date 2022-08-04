@@ -2174,6 +2174,32 @@ export const driverInfo = [
     carImage: zelus888,
     series: "GT America"
   },
+  {
+    team: "Regal Motorsports LLC/Bartone Bros",
+    driver1: {
+      name: 'Andy Pilgrim',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    vehicle: "Porsche 718 Cayman GT4 Clubsport MR",
+    classification: "GT4",
+    number: "3",
+    carImage: '',
+    series: "GT America"
+  },
+  {
+    team: "Regal Motorsports LLC/Bartone Bros",
+    driver1: {
+      name: 'Anthony Bartone',
+      nationality: 'USA',
+      rating: 'Bronze'
+      },
+    vehicle: "Porsche 718 Cayman GT4 Clubsport MR",
+    classification: "GT4",
+    number: "427",
+    carImage: '',
+    series: "GT America"
+  },
   
   
 ]
