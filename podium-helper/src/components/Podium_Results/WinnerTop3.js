@@ -2,6 +2,7 @@ import {useState} from 'react'
 import { FormControl, InputLabel, Select, Button, Typography, MenuItem, Card, Box } from '@mui/material';
 import '../../Styling/winnerTop3.scss';
 import useEntries from '../../useEntries'
+import {driverInfo} from '../../drivers';
 
 const classOptions = {
   gtwca: ['Pro', 'Pro-Am', 'Am'],
@@ -72,7 +73,7 @@ function Podium(props) {
       return <MenuItem key={`${entry.number} ${entry.driver1.name}`} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
     }
   }
-  const mappedDrivers = vehicles
+  const mappedDrivers = driverInfo
     .filter(entry => entry.series === props.series 
       && entry.class === winners.class)
     .map(entry => (numOfDriverMenuItem(entry)))
