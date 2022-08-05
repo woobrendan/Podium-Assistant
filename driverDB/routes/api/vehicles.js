@@ -5,7 +5,7 @@ module.exports = (db) => {
   //route /api/vehicles
   router.get('/', (req, res) => {
     const queryString = `
-    SELECT vehicles.id AS id, vehicles.car AS vehicle, vehicles.number AS number, class.name AS class, teams.name AS team, series.name AS series 
+    SELECT vehicles.id AS id, vehicles.car AS vehicle, vehicles.number AS number, class.name AS class, teams.name AS team, series.name AS series, vehicles.image AS image 
     FROM vehicles
     JOIN teams ON teams.id = team_id
     JOIN series ON series.id = series_id
