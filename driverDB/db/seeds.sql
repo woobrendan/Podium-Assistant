@@ -243,7 +243,8 @@ VALUES
 ('Mercedes-AMG GT3', '63', 8, 4, 3, ''),
 ('Ford Mustang GT4', '124', 9, 40, 3, ''),
 ('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3, ''),
-('Ferrari 458 Italia GT3', '56', 11, 56, 3, '');
+('Ferrari 458 Italia GT3', '56', 11, 56, 3, ''),
+('Mercedes-AMG GT3', '63', 11, 4, 3, '');
 
 
 
@@ -457,7 +458,8 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('David Askew', 'Bronze', 'USA', 4, 143),
 ('Edgar Lau', 'Bronze', 'Hong Kong', 40, 144),
 ('Anthony Bartone', 'Bronze', 'USA', 62, 145),
-('Andy Pilgrim', 'Bronze', 'USA', 56, 146);
+('Andy Pilgrim', 'Bronze', 'USA', 56, 146),
+('David Askew', 'Bronze', 'USA', 4, 147);
 
 
 
