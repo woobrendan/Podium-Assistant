@@ -73,7 +73,7 @@ function Podium(props) {
       return <MenuItem key={`${entry.number} ${entry.driver1.name}`} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
     }
   }
-  const mappedDrivers = driverInfo
+  const mappedDrivers = vehicles
     .filter(entry => entry.series === props.series 
       && entry.class === winners.class)
     .map(entry => (numOfDriverMenuItem(entry)))
