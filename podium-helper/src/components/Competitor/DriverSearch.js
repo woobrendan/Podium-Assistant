@@ -6,17 +6,18 @@ import {useState} from 'react';
 import ToggleSearch from '../toggleSearch';
 import BackToTopButton from './BackToTopButton';
 import filteredOptions from '../../searchOptions';
+import useEntries from '../../useEntries';
 
 function DriverSearch() {
-  const [drivers, setDrivers] = useState(driverInfo);
   const [searchValue, setSearchValue] = useState('');
   const [option, setOption] = useState('');
+  const {vehicles} = useEntries()
   
   const getSearchOption = (option) => {
     setOption(option);
   }
   
-  const mappedDrivers = filteredOptions(drivers, option, searchValue).map((entry,index) =>(
+  const mappedDrivers = filteredOptions(vehicles, option, searchValue).map((entry,index) =>(
        <DriverDetails entry={entry} key={index}/>
       ))
 
