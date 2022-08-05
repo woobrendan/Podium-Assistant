@@ -37,7 +37,8 @@ CREATE TABLE vehicles(
   number VARCHAR(6),
   class_id INTEGER REFERENCES class(id),
   team_id INTEGER REFERENCES teams(id) ON DELETE CASCADE,
-  series_id INTEGER REFERENCES series(id) ON DELETE CASCADE
+  series_id INTEGER REFERENCES series(id) ON DELETE CASCADE,
+  image VARCHAR(255)
 );
 
 CREATE TABLE drivers (
