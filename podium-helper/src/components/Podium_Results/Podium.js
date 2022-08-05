@@ -138,10 +138,12 @@ function Podium() {
 
   return (
     <div className="race-results-container">
-      {showWinnerTable.misc && 
-        <DatePicker getValue={getValue} today={getToday()}/>}
-      {showWinnerTable.misc && <EventSearch getValue={getValue}/>}
-      {showWinnerTable.misc && <Series getValue={getValue}/>}
+      <div className="results-details">
+        {showWinnerTable.misc && 
+          <DatePicker getValue={getValue} today={getToday()}/>}
+        {showWinnerTable.misc && <EventSearch getValue={getValue}/>}
+        {showWinnerTable.misc && <Series getValue={getValue}/>}
+      </div>
       {showWinnerTable.result1 && 
         <WinnerTop3 
           series={results.series} 
