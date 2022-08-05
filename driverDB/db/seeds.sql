@@ -98,11 +98,11 @@ INSERT INTO teams (name, country) VALUES
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
 VALUES
-('Lamborghini Huracan GT3', '1', 1, 1, 1, ''),
-('Lamborghini Huracan GT3', '3', 1, 1, 1, ''),
+('Lamborghini Huracan GT3', '1', 1, 1, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F299%2F%2FFH1_6911.jpg'),
+('Lamborghini Huracan GT3', '3', 1, 1, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F81%2F285%2F%2F_RM28469.JPG'),
 ('Mercedes-AMG GT3', '04', 2, 2, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FDY-12A86I3525.jpg'),
-('Mercedes-AMG GT3', '6', 1, 3, 1, ''),
-('Mercedes-AMG GT3', '08', 2, 4, 1, ''),
+('Mercedes-AMG GT3', '6', 1, 3, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10314f.jpg'),
+('Mercedes-AMG GT3', '08', 2, 4, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FDY-4A86I2478.jpg'),
 ('Lamborghini Huracan GT3', '9', 2, 5, 1, ''),
 ('Aston Martin Vantage AMR GT3', '12', 2, 6, 1, ''),
 ('Ferrari 488 GT3', '13', 2, 7, 1, ''),
