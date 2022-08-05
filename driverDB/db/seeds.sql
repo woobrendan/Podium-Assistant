@@ -108,7 +108,7 @@ VALUES
 ('Ferrari 488 GT3', '13', 2, 7, 1),
 ('Ferrari 488 GT3', '23', 3, 7, 1),
 ('BMW M4 GT3', '38', 1, 8, 1),
-('Acura NSX GT3', '19', 2, 9, 1),
+('Acura NSX GT3', '43', 2, 9, 1),
 ('Porsche 911 GT3-R (991.ii)', '45', 2, 10, 1),
 ('Ferrari 488 GT3', '61', 3, 11, 1),
 ('Mercedes-AMG GT3', '63', 2, 4, 1),
