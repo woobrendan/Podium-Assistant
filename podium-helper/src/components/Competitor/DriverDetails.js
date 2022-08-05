@@ -23,7 +23,7 @@ function DriverDetails(props) {
         <CardMedia
           component="img"
           height="180"
-          image={props.entry.carImage}
+          image={props.entry.image}
           alt={props.entry.car}
         />
         <CardContent>
