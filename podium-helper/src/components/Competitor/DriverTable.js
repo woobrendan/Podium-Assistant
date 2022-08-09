@@ -20,7 +20,7 @@ function DriverTable(props) {
   }
 
   return (
-    <div className="entry-driver-details">
+    <div className="entry-driver-details" id={`card-driver-${props.index+1}`}>
       <TableContainer component={Paper} className="driver-table">
         <Table sx={{ minWidth: 300 }} aria-label="simple table">
           <TableHead>
