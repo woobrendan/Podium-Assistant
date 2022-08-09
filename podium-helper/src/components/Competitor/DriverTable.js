@@ -20,31 +20,33 @@ function DriverTable(props) {
   }
 
   return (
-    <TableContainer component={Paper} className="driver-table">
-      <Table sx={{ minWidth: 300 }} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            <TableCell>Driver</TableCell>
-            <TableCell align="right">Nat.</TableCell>
-            <TableCell align="right">Rating</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {tableRows(props.drivers).map((row) => (
-            <TableRow
-              key={row.name}
-              sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
-              <TableCell align="right">{row.nationality}</TableCell>
-              <TableCell align="right">{row.rating}</TableCell>
+    <div className="entry-driver-details">
+      <TableContainer component={Paper} className="driver-table">
+        <Table sx={{ minWidth: 300 }} aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell>Driver</TableCell>
+              <TableCell align="right">Nat.</TableCell>
+              <TableCell align="right">Rating</TableCell>
             </TableRow>
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+          </TableHead>
+          <TableBody>
+            {tableRows(props.drivers).map((row) => (
+              <TableRow
+                key={row.name}
+                sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+              >
+                <TableCell component="th" scope="row">
+                  {row.name}
+                </TableCell>
+                <TableCell align="right">{row.nationality}</TableCell>
+                <TableCell align="right">{row.rating}</TableCell>
+              </TableRow>
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </div>
   );
 
 }
