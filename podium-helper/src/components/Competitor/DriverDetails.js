@@ -3,6 +3,8 @@ import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
 import classNames from 'classnames';
 import $ from "jquery";
+import add from '../../images/add.png';
+import minus from '../../images/minimize-sign.png';
 
 function DriverDetails(props) {
   const series = props.entry.series;
@@ -50,7 +52,9 @@ function DriverDetails(props) {
           />
           <DriverTable  drivers={props.entry} index={props.index} />
           <br></br>
-          <Button variant="contained" color="error">Drivers</Button>
+          <Button >
+            <img id={`add-button-${props.index + 1}`} src={add} />
+          </Button>
         </CardContent>
       </Card>
     </div>
