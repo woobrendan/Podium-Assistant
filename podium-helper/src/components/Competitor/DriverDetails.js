@@ -1,4 +1,4 @@
-import { Typography, CardMedia, CardContent, Card } from '@mui/material';
+import { Typography, CardMedia, CardContent, Card, Button } from '@mui/material';
 import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
 import classNames from 'classnames';
@@ -36,6 +36,7 @@ function DriverDetails(props) {
             class={props.entry.class}
           />
           <DriverTable  drivers={props.entry} />
+          <Button variant="contained">Details</Button>
         </CardContent>
       </Card>
     </div>
