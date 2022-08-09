@@ -20,7 +20,7 @@ const pages = [
   },
   {
     name: 'Manage Entries',
-    action: '/'
+    action: '/entry-dashboard'
   },
 ]
 function NavBar() {
