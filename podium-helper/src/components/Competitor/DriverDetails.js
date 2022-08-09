@@ -35,8 +35,9 @@ function DriverDetails(props) {
             car={props.entry.vehicle}
             class={props.entry.class}
           />
-          <DriverTable  drivers={props.entry} />
-          <Button variant="contained">Details</Button>
+          <DriverTable  drivers={props.entry} index={props.index} />
+          <br></br>
+          <Button variant="contained" color="error">Details</Button>
         </CardContent>
       </Card>
     </div>
