@@ -2,6 +2,7 @@ import { Typography, CardMedia, CardContent, Card, Button } from '@mui/material'
 import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
 import classNames from 'classnames';
+import $ from "jquery";
 
 function DriverDetails(props) {
   const series = props.entry.series;
@@ -11,6 +12,18 @@ function DriverDetails(props) {
     "entry-detail_TCA": series === "TC America",
     "entry-detail_GTA": series === "GT America",
   })
+
+  const handleToggle = (id) => {
+    //check if driver info is showing, toggle hidden attribute and change add/minus icon accordingly
+    if ($(`#card-driver-${id}`).is('[hidden]')) {
+      $(`#card-driver-${id}`).removeAttr('hidden');
+      $(`#add-button-${id}`).attr("src", minus)
+    } else {
+      $(`#card-driver-${id}`).attr('hidden', '');
+      $(`#add-button-${id}`).attr("src", add)
+    }
+  }
+
   return (
     <div className="competitor-card">
       <Card 
@@ -37,7 +50,7 @@ function DriverDetails(props) {
           />
           <DriverTable  drivers={props.entry} index={props.index} />
           <br></br>
-          <Button variant="contained" color="error">Details</Button>
+          <Button variant="contained" color="error">Drivers</Button>
         </CardContent>
       </Card>
     </div>
