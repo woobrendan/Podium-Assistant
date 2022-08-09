@@ -1,6 +1,6 @@
 import { Typography, CardMedia, CardContent, Card } from '@mui/material';
 import DriverTable from './DriverTable';
-import Elevation from '../elevationPaper';
+import Elevation from './elevationPaper';
 import classNames from 'classnames';
 
 function DriverDetails(props) {
