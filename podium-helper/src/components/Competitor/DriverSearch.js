@@ -17,7 +17,7 @@ function DriverSearch() {
   }
   
   const mappedDrivers = filteredOptions(vehicles, option, searchValue).map((entry,index) =>(
-       <DriverDetails entry={entry} key={index}/>
+       <DriverDetails entry={entry} key={index} index={index}/>
       ))
 
   const searchLabel = option ? `Search by ${option}`: "Search"
