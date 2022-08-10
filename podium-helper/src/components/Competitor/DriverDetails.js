@@ -3,8 +3,6 @@ import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
 import classNames from 'classnames';
 import $ from "jquery";
-import add from '../../images/add.png';
-import minus from '../../images/minimize-sign.png';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import {useState} from 'react';
@@ -24,10 +22,8 @@ function DriverDetails(props) {
     if ($(`#card-driver-${id}`).is('[hidden]')) {
       $(`#card-driver-${id}`).removeAttr('hidden');
       setDriverInfo(true)
-      // $(`#add-button-${id}`).attr("src", minus)
     } else {
       $(`#card-driver-${id}`).attr('hidden', '');
-      // $(`#add-button-${id}`).attr("src", add)
       setDriverInfo(false)
     }
   }
@@ -62,12 +58,12 @@ function DriverDetails(props) {
             <Button onClick={() => handleToggle(props.index + 1)}>
               {!driverInfo && <AddCircleOutlineIcon 
                 id={`add-button-${props.index + 1}`} 
-                color="info"
+                color="warning"
                 fontSize="large"
               />}
               {driverInfo && <RemoveCircleOutlineIcon 
                 id={`add-button-${props.index + 1}`} 
-                color="info"
+                color="warning"
                 fontSize="large"
                 />
               }
