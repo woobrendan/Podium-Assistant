@@ -2,7 +2,6 @@ import { Typography, CardMedia, CardContent, Card, Button } from '@mui/material'
 import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
 import classNames from 'classnames';
-import $ from "jquery";
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import {useState} from 'react';
@@ -18,7 +17,6 @@ function DriverDetails(props) {
   })
 
   const handleToggle = () => {
-    //check if driver info is showing, toggle hidden attribute and change add/minus icon accordingly
     driverInfo ? setDriverInfo(false) : setDriverInfo(true)
   }
 
@@ -49,15 +47,16 @@ function DriverDetails(props) {
           <div className="driver-info-toggle">
             <h4>Drivers</h4>
             <Button onClick={() => handleToggle()}>
-              {!driverInfo && <AddCircleOutlineIcon 
-                color="warning"
-                fontSize="large"
-              />}
-              {driverInfo && <RemoveCircleOutlineIcon 
-                color="warning"
-                fontSize="large"
-                />
-              }
+              {!driverInfo && 
+                <AddCircleOutlineIcon 
+                  color="warning"
+                  fontSize="large"
+                />}
+              {driverInfo && 
+                <RemoveCircleOutlineIcon 
+                  color="warning"
+                  fontSize="large"
+                />}
             </Button>
           </div>
           {driverInfo && <DriverTable drivers={props.entry} />}
