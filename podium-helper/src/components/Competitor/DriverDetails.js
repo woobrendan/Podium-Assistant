@@ -52,12 +52,12 @@ function DriverDetails(props) {
           />
           <br></br>
           <div className="driver-info-toggle">
-            <p>Drivers</p>
+            <h4>Drivers</h4>
             <Button onClick={() => handleToggle(props.index + 1)}>
               <img id={`add-button-${props.index + 1}`} src={add} />
             </Button>
-          <DriverTable  drivers={props.entry} index={props.index} />
           </div>
+          <DriverTable  drivers={props.entry} index={props.index} />
         </CardContent>
       </Card>
     </div>
