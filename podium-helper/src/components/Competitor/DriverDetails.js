@@ -17,15 +17,16 @@ function DriverDetails(props) {
     "entry-detail_GTA": series === "GT America",
   })
 
-  const handleToggle = (id) => {
+  const handleToggle = () => {
     //check if driver info is showing, toggle hidden attribute and change add/minus icon accordingly
-    if ($(`#card-driver-${id}`).is('[hidden]')) {
-      $(`#card-driver-${id}`).removeAttr('hidden');
-      setDriverInfo(true)
-    } else {
-      $(`#card-driver-${id}`).attr('hidden', '');
-      setDriverInfo(false)
-    }
+    // if ($(`#card-driver-${id}`).is('[hidden]')) {
+    //   $(`#card-driver-${id}`).removeAttr('hidden');
+    //   setDriverInfo(true)
+    // } else {
+    //   $(`#card-driver-${id}`).attr('hidden', '');
+    //   setDriverInfo(false)
+    // }
+    driverInfo ? setDriverInfo(false) : setDriverInfo(true)
   }
 
   return (
@@ -52,10 +53,9 @@ function DriverDetails(props) {
             car={props.entry.vehicle}
             class={props.entry.class}
           />
-          <br></br>
           <div className="driver-info-toggle">
             <h4>Drivers</h4>
-            <Button onClick={() => handleToggle(props.index + 1)}>
+            <Button onClick={() => handleToggle()}>
               {!driverInfo && <AddCircleOutlineIcon 
                 color="warning"
                 fontSize="large"
@@ -67,7 +67,7 @@ function DriverDetails(props) {
               }
             </Button>
           </div>
-          <DriverTable  drivers={props.entry} index={props.index} />
+          {driverInfo && <DriverTable drivers={props.entry} />}
         </CardContent>
       </Card>
     </div>
