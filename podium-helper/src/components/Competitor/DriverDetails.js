@@ -50,11 +50,14 @@ function DriverDetails(props) {
             car={props.entry.vehicle}
             class={props.entry.class}
           />
-          <DriverTable  drivers={props.entry} index={props.index} />
           <br></br>
-          <Button onClick={() => handleToggle(props.index + 1)}>
-            <img id={`add-button-${props.index + 1}`} src={add} />
-          </Button>
+          <div className="driver-info-toggle">
+            <p>Drivers</p>
+            <Button onClick={() => handleToggle(props.index + 1)}>
+              <img id={`add-button-${props.index + 1}`} src={add} />
+            </Button>
+          <DriverTable  drivers={props.entry} index={props.index} />
+          </div>
         </CardContent>
       </Card>
     </div>
