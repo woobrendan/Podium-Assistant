@@ -57,12 +57,10 @@ function DriverDetails(props) {
             <h4>Drivers</h4>
             <Button onClick={() => handleToggle(props.index + 1)}>
               {!driverInfo && <AddCircleOutlineIcon 
-                id={`add-button-${props.index + 1}`} 
                 color="warning"
                 fontSize="large"
               />}
               {driverInfo && <RemoveCircleOutlineIcon 
-                id={`add-button-${props.index + 1}`} 
                 color="warning"
                 fontSize="large"
                 />
