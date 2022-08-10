@@ -10,6 +10,12 @@
   .competitor-card {
     margin: 25px;
 
+    .driver-info-toggle {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
     .driver-table {
       .MuiTableHead-root {
         th {
