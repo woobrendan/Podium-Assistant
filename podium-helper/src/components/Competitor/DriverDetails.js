@@ -19,13 +19,6 @@ function DriverDetails(props) {
 
   const handleToggle = () => {
     //check if driver info is showing, toggle hidden attribute and change add/minus icon accordingly
-    // if ($(`#card-driver-${id}`).is('[hidden]')) {
-    //   $(`#card-driver-${id}`).removeAttr('hidden');
-    //   setDriverInfo(true)
-    // } else {
-    //   $(`#card-driver-${id}`).attr('hidden', '');
-    //   setDriverInfo(false)
-    // }
     driverInfo ? setDriverInfo(false) : setDriverInfo(true)
   }
 
@@ -35,7 +28,7 @@ function DriverDetails(props) {
         className={detailClass}
         sx={{ 
           maxWidth: 345, 
-          minHeight: 661,
+          minHeight: 450,
           minWidth: 345
       }}>
         <CardMedia
