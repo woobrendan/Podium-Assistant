@@ -5,9 +5,13 @@ import classNames from 'classnames';
 import $ from "jquery";
 import add from '../../images/add.png';
 import minus from '../../images/minimize-sign.png';
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
+import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
+import {useState} from 'react';
 
 function DriverDetails(props) {
   const series = props.entry.series;
+  const [driverInfo, setDriverInfo] = useState(false)
   const detailClass = classNames('entry-detail__item', {
     "entry-detail_GTWCA": series === "GT World Challenge America",
     "entry-detail_PGT4A": series === "Pirelli GT4 America",
@@ -19,10 +23,12 @@ function DriverDetails(props) {
     //check if driver info is showing, toggle hidden attribute and change add/minus icon accordingly
     if ($(`#card-driver-${id}`).is('[hidden]')) {
       $(`#card-driver-${id}`).removeAttr('hidden');
-      $(`#add-button-${id}`).attr("src", minus)
+      setDriverInfo(true)
+      // $(`#add-button-${id}`).attr("src", minus)
     } else {
       $(`#card-driver-${id}`).attr('hidden', '');
-      $(`#add-button-${id}`).attr("src", add)
+      // $(`#add-button-${id}`).attr("src", add)
+      setDriverInfo(false)
     }
   }
 
@@ -54,7 +60,17 @@ function DriverDetails(props) {
           <div className="driver-info-toggle">
             <h4>Drivers</h4>
             <Button onClick={() => handleToggle(props.index + 1)}>
-              <img id={`add-button-${props.index + 1}`} src={add} />
+              {!driverInfo && <AddCircleOutlineIcon 
+                id={`add-button-${props.index + 1}`} 
+                color="info"
+                fontSize="large"
+              />}
+              {driverInfo && <RemoveCircleOutlineIcon 
+                id={`add-button-${props.index + 1}`} 
+                color="info"
+                fontSize="large"
+                />
+              }
             </Button>
           </div>
           <DriverTable  drivers={props.entry} index={props.index} />
