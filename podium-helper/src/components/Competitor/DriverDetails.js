@@ -23,7 +23,6 @@ function DriverDetails(props) {
   const handleToggle = () => {
     driverInfo ? setDriverInfo(false) : setDriverInfo(true)
   }
-  // console.log('prop', props.entry)
 
   const getSeriesLogo = (series) => {
     switch(series){
@@ -46,8 +45,8 @@ function DriverDetails(props) {
       }}>
         <CardHeader 
           avatar={<Avatar 
-            alt={props.series} 
-            src={GTWCA}
+            alt={series} 
+            src={getSeriesLogo(series)}
             sx={{bgcolor: 'white'}} 
           />} 
         />
