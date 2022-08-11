@@ -10,6 +10,12 @@
   .competitor-card {
     margin: 25px;
 
+    .MuiTypography-body2 {
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
     .driver-info-toggle {
       display: flex;
       align-items: center;
