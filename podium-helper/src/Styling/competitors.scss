@@ -10,9 +10,15 @@
   .competitor-card {
     margin: 25px;
 
+    .MuiAvatar-root {
+      img {
+        object-fit: contain;
+      }
+    }
+
     .MuiTypography-body2 {
       color: white;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: bold;
     }
 
