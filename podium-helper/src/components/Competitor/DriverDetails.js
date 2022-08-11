@@ -1,10 +1,11 @@
-import { Typography, CardMedia, CardContent, Card, Button } from '@mui/material';
+import { Typography, CardMedia, CardContent, Card, Button, CardHeader, Avatar } from '@mui/material';
 import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
 import classNames from 'classnames';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import {useState} from 'react';
+import GTWCA from '../../images/GTWCA.png';
 
 function DriverDetails(props) {
   const series = props.entry.series;
@@ -19,6 +20,7 @@ function DriverDetails(props) {
   const handleToggle = () => {
     driverInfo ? setDriverInfo(false) : setDriverInfo(true)
   }
+  console.log('prop', props.entry)
 
   return (
     <div className="competitor-card">
@@ -29,6 +31,10 @@ function DriverDetails(props) {
           minHeight: 450,
           minWidth: 345
       }}>
+        <CardHeader 
+          avatar={<Avatar alt={props.series} src={GTWCA} />} 
+        />
+
         <CardMedia
           component="img"
           height="180"
