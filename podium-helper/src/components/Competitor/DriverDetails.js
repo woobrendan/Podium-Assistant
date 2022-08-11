@@ -60,7 +60,7 @@ function DriverDetails(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {props.entry.team} #{props.entry.number} 
+            #{props.entry.number} 
           </Typography>
           <Elevation 
             series={series}
