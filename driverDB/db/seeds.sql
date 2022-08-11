@@ -184,7 +184,7 @@ VALUES
 ('Subaru BRZ', '22', 7, 49, 4, ''),
 ('Subaru BRZ', '23', 7, 49, 4, ''),
 ('Hyundai Elantra N-Line', '33', 7, 53, 4, ''),
-('MINI JCW', '61', 7, 51, 4, ''),
+('MINI JCW', '61', 7, 51, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FJL4_2636.JPG'),
 ('MINI JCW', '62', 7, 51, 4, ''),
 ('Hyundai Elantra N-Line', '98', 7, 53, 4, ''),
 ('Honda Civic Si', '780', 7, 47, 4, ''),
