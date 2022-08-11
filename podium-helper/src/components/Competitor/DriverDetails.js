@@ -31,8 +31,8 @@ function DriverDetails(props) {
       case "TC America": return TCAM;
       case "GT America": return GTAM
     }
-
   }
+  // console.log('props', props.entry)
 
   return (
     <div className="competitor-card">
@@ -47,8 +47,9 @@ function DriverDetails(props) {
           avatar={<Avatar 
             alt={series} 
             src={getSeriesLogo(series)}
-            sx={{bgcolor: 'white'}} 
-          />} 
+            sx={{bgcolor: 'white', width: 56, height: 56}} 
+          />}
+          title={props.entry.team} 
         />
 
         <CardMedia
