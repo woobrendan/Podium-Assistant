@@ -9,6 +9,16 @@
 
   .competitor-card {
     margin: 25px;
+    position: relative;
+
+    .car-number {
+      position: absolute;
+      top: 100px;
+      left: 20px;
+      font-weight: bold;
+      font-size: 40px;
+      color: white;
+    }
 
     .MuiAvatar-root {
       img {
