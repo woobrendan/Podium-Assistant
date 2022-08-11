@@ -6,6 +6,9 @@ import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
 import {useState} from 'react';
 import GTWCA from '../../images/GTWCA.png';
+import PGT4A from '../../images/PGT4A.png';
+import GTAM from '../../images/GTAM.png';
+import TCAM from '../../images/TCAM.png';
 
 function DriverDetails(props) {
   const series = props.entry.series;
@@ -20,7 +23,17 @@ function DriverDetails(props) {
   const handleToggle = () => {
     driverInfo ? setDriverInfo(false) : setDriverInfo(true)
   }
-  console.log('prop', props.entry)
+  // console.log('prop', props.entry)
+
+  const getSeriesLogo = (series) => {
+    switch(series){
+      case 'GT World Challenge America': return GTWCA;
+      case "Pirelli GT4 America": return PGT4A;
+      case "TC America": return TCAM;
+      case "GT America": return GTAM
+    }
+
+  }
 
   return (
     <div className="competitor-card">
@@ -32,7 +45,11 @@ function DriverDetails(props) {
           minWidth: 345
       }}>
         <CardHeader 
-          avatar={<Avatar alt={props.series} src={GTWCA} />} 
+          avatar={<Avatar 
+            alt={props.series} 
+            src={GTWCA}
+            sx={{bgcolor: 'white'}} 
+          />} 
         />
 
         <CardMedia
