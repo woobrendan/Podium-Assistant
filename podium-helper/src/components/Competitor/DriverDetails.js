@@ -10,6 +10,10 @@ import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
 import TCAM from '../../images/TCAM.png';
 
+const styles = {
+
+}
+
 function DriverDetails(props) {
   const series = props.entry.series;
   const [driverInfo, setDriverInfo] = useState(false)
@@ -47,7 +51,7 @@ function DriverDetails(props) {
           avatar={<Avatar 
             alt={series} 
             src={getSeriesLogo(series)}
-            sx={{bgcolor: 'white', width: 56, height: 56}} 
+            sx={{bgcolor: 'white', width: 62, height: 62}} 
           />}
           title={props.entry.team} 
         />
@@ -58,6 +62,9 @@ function DriverDetails(props) {
           image={props.entry.image}
           alt={props.entry.car}
         />
+        <div className="car-number">
+          #{props.entry.number}
+        </div>
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             #{props.entry.number} 
