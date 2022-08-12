@@ -9,10 +9,8 @@ import GTWCA from '../../images/GTWCA.png';
 import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
 import TCAM from '../../images/TCAM.png';
+import porscheLogo from '../../images/Porsche-Symbol.png';
 
-const styles = {
-
-}
 
 function DriverDetails(props) {
   const series = props.entry.series;
@@ -38,6 +36,18 @@ function DriverDetails(props) {
   }
   // console.log('props', props.entry)
 
+  const manufacturerCheck = (vehicle) => {
+    // console.log(vehicle)
+    if (vehicle.includes('Porsche')) {
+      return porscheLogo
+    }
+    // switch(vehicle){
+    //   case vehicle.includes('Porsche'):
+    //     console.log('hello')
+    //     return porscheLogo
+    // }
+  }
+
   return (
     <div className="competitor-card">
       <Card 
@@ -47,6 +57,7 @@ function DriverDetails(props) {
           minHeight: 450,
           minWidth: 375
       }}>
+        <div className="header">
         <CardHeader 
           sx={{minHeight: 100}}
           avatar={<Avatar 
@@ -56,6 +67,14 @@ function DriverDetails(props) {
           />}
           title={props.entry.team} 
         />
+          <Avatar
+            className="manufacturer-avatar" 
+            alt={props.entry.vehicle} 
+            src={manufacturerCheck(props.entry.vehicle)}
+            sx={{bgcolor: 'white', width: 68, height: 68}} 
+          />
+
+        </div>
 
         <CardMedia
           component="img"
@@ -66,6 +85,12 @@ function DriverDetails(props) {
         <div className="car-number">
           #{props.entry.number}
         </div>
+        {/* <Avatar
+            className="manufacturer-avatar" 
+            alt={props.entry.vehicle} 
+            src={manufacturerCheck(props.entry.vehicle)}
+            sx={{bgcolor: 'white', width: 68, height: 68}} 
+          /> */}
         <CardContent>
           <Elevation 
             series={series}
