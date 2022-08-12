@@ -189,7 +189,7 @@ VALUES
 ('MINI JCW', '61', 7, 51, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FJL4_2636.JPG'),
 ('MINI JCW', '62', 7, 51, 4, ''),
 ('Hyundai Elantra N-Line', '98', 7, 53, 4, ''),
-('Honda Civic Si', '780', 7, 47, 4, ''),
+('Honda Civic Si', '780', 7, 48, 4, ''),
 ('Aston Martin Vantage AMR GT4', '2', 9, 16, 3, ''),
 ('Mercedes-AMG GT3', '04', 8, 2, 3, ''),
 ('Aston Martin Vantage AMR GT4', '8', 9, 18, 3, ''),
