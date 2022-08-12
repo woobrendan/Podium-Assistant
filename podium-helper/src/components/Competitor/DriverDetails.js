@@ -67,9 +67,6 @@ function DriverDetails(props) {
           #{props.entry.number}
         </div>
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            #{props.entry.number} 
-          </Typography>
           <Elevation 
             series={series}
             car={props.entry.vehicle}
