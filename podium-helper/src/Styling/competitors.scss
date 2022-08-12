@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/sports-jersey');
+
 .entry_cards {
   display: flex;
   flex-wrap: wrap;
@@ -15,9 +17,9 @@
       position: absolute;
       top: 100px;
       left: 20px;
-      font-weight: bold;
       font-size: 40px;
       color: white;
+      font-family: 'Sports Jersey', sans-serif;
     }
 
     .MuiAvatar-root {
