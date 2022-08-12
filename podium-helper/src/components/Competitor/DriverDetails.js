@@ -75,21 +75,23 @@ function DriverDetails(props) {
             car={props.entry.vehicle}
             class={props.entry.class}
           />
-          <div className="driver-info-toggle">
-            <h4>Drivers</h4>
-            <Button onClick={() => handleToggle()}>
-              {!driverInfo && 
-                <AddCircleOutlineIcon 
-                  color="warning"
-                  fontSize="large"
-                />}
-              {driverInfo && 
-                <RemoveCircleOutlineIcon 
-                  color="warning"
-                  fontSize="large"
-                />}
-            </Button>
-          </div>
+          {props.entry.driver1 && 
+            <div className="driver-info-toggle">
+              <h4>Drivers</h4>
+              <Button onClick={() => handleToggle()}>
+                {!driverInfo && 
+                  <AddCircleOutlineIcon 
+                    color="warning"
+                    fontSize="large"
+                  />}
+                {driverInfo && 
+                  <RemoveCircleOutlineIcon 
+                    color="warning"
+                    fontSize="large"
+                  />}
+              </Button>
+            </div>
+          }
           {driverInfo && <DriverTable drivers={props.entry} />}
         </CardContent>
       </Card>
