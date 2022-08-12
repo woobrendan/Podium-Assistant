@@ -45,13 +45,14 @@ function DriverDetails(props) {
         sx={{ 
           maxWidth: 345, 
           minHeight: 450,
-          minWidth: 345
+          minWidth: 375
       }}>
         <CardHeader 
+          sx={{minHeight: 100}}
           avatar={<Avatar 
             alt={series} 
             src={getSeriesLogo(series)}
-            sx={{bgcolor: 'white', width: 62, height: 62}} 
+            sx={{bgcolor: 'white', width: 68, height: 68}} 
           />}
           title={props.entry.team} 
         />
