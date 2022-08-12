@@ -22,7 +22,7 @@ export default function filteredOptions(list, option, searchValue) {
         }
         break;
 
-      case 'Car':
+      case 'Manufacturer':
         if (!searchValue) {
           return val;
         } else if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
