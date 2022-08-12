@@ -13,6 +13,12 @@
     margin: 10px;
     position: relative;
 
+    .manufacturer-avatar {
+      position: absolute;
+      top: 31px;
+      right: 15px;
+    }
+
     .car-number {
       position: absolute;
       top: 135px;
