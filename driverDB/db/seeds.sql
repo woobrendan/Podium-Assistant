@@ -93,7 +93,8 @@ INSERT INTO teams (name, country) VALUES
 ('Regal Motorsports LLC/Bartone Bros', 'USA'),
 ('Flatrock Motorsports', 'USA'),
 ('Forbush Performance', 'USA'),
-('Scuderia Corsa', 'USA');
+('Scuderia Corsa', 'USA'),
+('Lone Star Racing', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
@@ -245,7 +246,9 @@ VALUES
 ('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3, ''),
 ('Ferrari 458 Italia GT3', '56', 11, 56, 3, ''),
 ('Mercedes-AMG GT3', '63', 11, 4, 3, ''),
-('Porsche 911 GT3-R (991.ii)', '032', 3, 16, 1, '');
+('Porsche 911 GT3-R (991.ii)', '032', 3, 16, 1, ''),
+('Mercedes-AMG GT4', '4', 2, 66, 2, ''),
+('Toyota GR Supra GT4', '16', 2, 64, 2, '');
 
 
 
@@ -296,8 +299,8 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Andy Lee', 'Silver', 'USA', 18, 22),
 ('Tim Horrell', 'Bronze', 'USA', 19, 23),
 ('Raphael Matos', 'Gold', 'Brazil', 19, 23),
-('Damon Surzyshyn', 'Bronze', 'Canada', 19, 24),
-('Gregory Liefooghe', 'Silver', 'USA', 19, 24),
+('Damon Surzyshyn', 'Bronze', 'Canada', 64, 150),
+('Gregory Liefooghe', 'Silver', 'USA', 64, 150),
 ('Bryan Putt', 'Bronze', 'USA', 20, 25),
 ('Kenton Koch', 'Silver', 'USA', 20, 25),
 ('Seth Lucas', 'Bronze', 'USA', 21, 26),
@@ -462,7 +465,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Andy Pilgrim', 'Bronze', 'USA', 56, 146),
 ('David Askew', 'Bronze', 'USA', 4, 147),
 ('James Sofronas', 'Bronze', 'USA', 16, 148),
-('Kyle Washington', 'Bronze', 'USA', 16, 148);
+('Kyle Washington', 'Bronze', 'USA', 16, 148),
+('Zane Hodgen', 'Bronze', 'USA', 66, 149),
+('Cameron Lawrence', 'Silver', 'USA', 66, 149);
 
 
 
