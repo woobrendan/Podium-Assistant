@@ -401,7 +401,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Cristian Perocarpi', 'N/A', 'USA', 51, 87),
 ('PJ Groenke', 'N/A', 'Canada', 51, 88),
 ('Branyon Tiner', 'N/A', 'USA', 53, 89),
-('Sally McNulty', 'N/A', 'USA', 47, 90),
+('Sally McNulty', 'N/A', 'USA', 48, 90),
 ('Jason Bell', 'N/A', 'USA', 16, 91),
 ('George Kurtz', 'Bronze', 'USA', 2, 92),
 ('Elias Sabo', 'Bronze', 'USA', 18, 93),
