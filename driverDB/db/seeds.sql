@@ -94,7 +94,8 @@ INSERT INTO teams (name, country) VALUES
 ('Flatrock Motorsports', 'USA'),
 ('Forbush Performance', 'USA'),
 ('Scuderia Corsa', 'USA'),
-('Lone Star Racing', 'USA');
+('Lone Star Racing', 'USA'),
+('G2 Racing/GSpeed', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
@@ -248,7 +249,8 @@ VALUES
 ('Mercedes-AMG GT3', '63', 11, 4, 3, ''),
 ('Porsche 911 GT3-R (991.ii)', '032', 3, 16, 1, ''),
 ('Mercedes-AMG GT4', '4', 2, 66, 2, ''),
-('Toyota GR Supra GT4', '16', 2, 64, 2, '');
+('Toyota GR Supra GT4', '16', 2, 64, 2, ''),
+('BMW M4 GT4', '59', 4, 67, 2, '');
 
 
 
@@ -360,7 +362,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Adam Adelson', 'Bronze', 'USA', 39, 53),
 ('Elliot Skeer', 'Silver', 'USA', 39, 53),
 ('Edgar Lau', 'Bronze', 'Hong Kong', 40, 54),
-('Billy Johnson', 'Gold', 'USA', 40, 54),
+('Jaden Conwright', 'Silver', 'USA', 40, 54),
 ('Alex Amine', 'Bronze', 'USA', 41, 55),
 ('Ryan Hall', 'Bronze', 'USA', 41, 55),
 ('Sean Whalen', 'Bronze', 'USA', 12, 56),
@@ -467,7 +469,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('James Sofronas', 'Bronze', 'USA', 16, 148),
 ('Kyle Washington', 'Bronze', 'USA', 16, 148),
 ('Zane Hodgen', 'Bronze', 'USA', 66, 149),
-('Cameron Lawrence', 'Silver', 'USA', 66, 149);
+('Cameron Lawrence', 'Silver', 'USA', 66, 149),
+('Grayson Farischon', 'Silver', 'USA', 67, 151),
+('Mike Skeen', 'Silver', 'USA', 67, 151);
 
 
 
