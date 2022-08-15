@@ -10,6 +10,7 @@ import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
 import TCAM from '../../images/TCAM.png';
 import porscheLogo from '../../images/Porsche-Symbol.png';
+import bmwLogo from '../../images/bmw.png'
 
 
 function DriverDetails(props) {
@@ -37,15 +38,8 @@ function DriverDetails(props) {
   // console.log('props', props.entry)
 
   const manufacturerCheck = (vehicle) => {
-    // console.log(vehicle)
-    if (vehicle.includes('Porsche')) {
-      return porscheLogo
-    }
-    // switch(vehicle){
-    //   case vehicle.includes('Porsche'):
-    //     console.log('hello')
-    //     return porscheLogo
-    // }
+    if (vehicle.includes('Porsche')) return porscheLogo
+    else if (vehicle.includes('BMW')) return bmwLogo;
   }
 
   return (
