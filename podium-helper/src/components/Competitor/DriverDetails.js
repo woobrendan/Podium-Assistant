@@ -11,6 +11,12 @@ import GTAM from '../../images/GTAM.png';
 import TCAM from '../../images/TCAM.png';
 import porscheLogo from '../../images/Porsche-Symbol.png';
 import bmwLogo from '../../images/bmw.png'
+import mercedesLogo from '../../images/mercedes.png'
+import acuraLogo from '../../images/acura.png';
+import astonMartin from '../../images/aston_martin.png';
+import ferrari from '../../images/ferrari.png';
+import ginetta from '../../images/ginetta.png';
+import honda from '../../images/honda.png';
 
 
 function DriverDetails(props) {
@@ -40,6 +46,8 @@ function DriverDetails(props) {
   const manufacturerCheck = (vehicle) => {
     if (vehicle.includes('Porsche')) return porscheLogo
     else if (vehicle.includes('BMW')) return bmwLogo;
+    else if (vehicle.includes('Mercedes')) return mercedesLogo;
+    else if (vehicle.includes('Acura')) return acuraLogo
   }
 
   return (
