@@ -57,25 +57,21 @@ function DriverDetails(props) {
           minHeight: 450,
           minWidth: 375
       }}>
-        <div className="header">
         <CardHeader 
-          sx={{minHeight: 100}}
+          sx={{minHeight: 100, maxwidth: 325}}
           avatar={<Avatar 
             alt={series} 
             src={getSeriesLogo(series)}
-            sx={{bgcolor: 'white', width: 68, height: 68}} 
+            sx={{bgcolor: 'white', width: 59, height: 59}} 
           />}
           title={props.entry.team} 
         />
-          <Avatar
-            className="manufacturer-avatar" 
-            alt={props.entry.vehicle} 
-            src={manufacturerCheck(props.entry.vehicle)}
-            sx={{bgcolor: 'white', width: 68, height: 68}} 
-          />
-
-        </div>
-
+        <Avatar
+          className="manufacturer-avatar" 
+          alt={props.entry.vehicle} 
+          src={manufacturerCheck(props.entry.vehicle)}
+          sx={{bgcolor: 'white', width: 59, height: 59}} 
+        />
         <CardMedia
           component="img"
           height="180"
@@ -85,12 +81,6 @@ function DriverDetails(props) {
         <div className="car-number">
           #{props.entry.number}
         </div>
-        {/* <Avatar
-            className="manufacturer-avatar" 
-            alt={props.entry.vehicle} 
-            src={manufacturerCheck(props.entry.vehicle)}
-            sx={{bgcolor: 'white', width: 68, height: 68}} 
-          /> */}
         <CardContent>
           <Elevation 
             series={series}
