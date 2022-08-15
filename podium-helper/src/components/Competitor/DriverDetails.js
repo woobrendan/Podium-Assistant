@@ -51,10 +51,13 @@ function DriverDetails(props) {
     else if (vehicle.includes('BMW')) return bmwLogo;
     else if (vehicle.includes('Mercedes')) return mercedesLogo;
     else if (vehicle.includes('Acura')) return acuraLogo
-    else if (vehicle.includes('Aston')) return astinMartin
+    else if (vehicle.includes('Aston')) return astonMartin
     else if (vehicle.includes('Ferrari')) return ferrari;
     else if (vehicle.includes('Ginetta')) return ginetta;
     else if (vehicle.includes('Honda')) return honda;
+    else if (vehicle.includes('Lambo')) return lamborghini;
+    else if (vehicle.includes('MINI')) return MINI;
+    else if (vehicle.includes('Toyota')) return toyota;
   }
 
   return (
