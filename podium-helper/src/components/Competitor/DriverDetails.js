@@ -17,6 +17,9 @@ import astonMartin from '../../images/aston_martin.png';
 import ferrari from '../../images/ferrari.png';
 import ginetta from '../../images/ginetta.png';
 import honda from '../../images/honda.png';
+import lamborghini from '../../images/lamborghini.png';
+import MINI from '../../images/MINI.png';
+import toyota from '../../images/toyota.png';
 
 
 function DriverDetails(props) {
@@ -48,6 +51,10 @@ function DriverDetails(props) {
     else if (vehicle.includes('BMW')) return bmwLogo;
     else if (vehicle.includes('Mercedes')) return mercedesLogo;
     else if (vehicle.includes('Acura')) return acuraLogo
+    else if (vehicle.includes('Aston')) return astinMartin
+    else if (vehicle.includes('Ferrari')) return ferrari;
+    else if (vehicle.includes('Ginetta')) return ginetta;
+    else if (vehicle.includes('Honda')) return honda;
   }
 
   return (
