@@ -1,10 +1,11 @@
-import { Typography, CardMedia, CardContent, Card, Button, CardHeader, Avatar } from '@mui/material';
+import {useState} from 'react';
+import { CardMedia, CardContent, Card, Button, CardHeader, Avatar } from '@mui/material';
 import DriverTable from './DriverTable';
 import Elevation from './elevationPaper';
 import classNames from 'classnames';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
-import {useState} from 'react';
+import { getManufLogo } from '../../helperFunc';
 import GTWCA from '../../images/GTWCA.png';
 import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
@@ -24,7 +25,8 @@ import toyota from '../../images/toyota.png';
 
 function DriverDetails(props) {
   const series = props.entry.series;
-  const [driverInfo, setDriverInfo] = useState(false)
+  const [driverInfo, setDriverInfo] = useState(false);
+
   const detailClass = classNames('entry-detail__item', {
     "entry-detail_GTWCA": series === "GT World Challenge America",
     "entry-detail_PGT4A": series === "Pirelli GT4 America",
@@ -81,7 +83,7 @@ function DriverDetails(props) {
         <Avatar
           className="manufacturer-avatar" 
           alt={props.entry.vehicle} 
-          src={manufacturerCheck(props.entry.vehicle)}
+          src={getManufLogo(props.entry.vehicle)}
           sx={{bgcolor: 'white', width: 59, height: 59}} 
         />
         <CardMedia
