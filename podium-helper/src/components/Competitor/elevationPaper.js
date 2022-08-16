@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {Grid, Box, Paper} from '@mui/material'
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
@@ -8,7 +7,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
   height: 50,
   lineHeight: '50px',
-  width: 200
+  width: 260
 }));
 
 const lightTheme = createTheme({ palette: { mode: 'light' } });
