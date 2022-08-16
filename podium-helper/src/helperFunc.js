@@ -14,7 +14,7 @@ import corvette from './images/corvette.png'
 import hyundai from './images/hyundai.png';
 import nissan from './images/nissan.png';
 import saleen from './images/saleen.png';
-import sro from './images/SRO.png';
+import sro from './images/SRO.jpg';
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes('Porsche')) return porscheLogo
