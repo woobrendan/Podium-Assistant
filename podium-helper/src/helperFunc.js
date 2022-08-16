@@ -14,6 +14,7 @@ import corvette from './images/corvette.png'
 import hyundai from './images/hyundai.png';
 import nissan from './images/nissan.png';
 import saleen from './images/saleen.png';
+import sro from './images/SRO.png';
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes('Porsche')) return porscheLogo
@@ -32,7 +33,7 @@ const getManufLogo = (vehicle) => {
   else if (vehicle.includes('Hyundai')) return hyundai;
   else if (vehicle.includes('Nissan')) return nissan;
   else if (vehicle.includes('Saleen')) return saleen;
-  // else return default logo
+  else return sro;
 }
 
 
