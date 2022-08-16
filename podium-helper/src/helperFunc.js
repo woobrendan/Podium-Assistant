@@ -1,3 +1,30 @@
+import bmwLogo from './images/bmw.png'
+import porscheLogo from './images/Porsche-Symbol.png';
+import mercedesLogo from './images/mercedes.png'
+import acuraLogo from './images/acura.png';
+import astonMartin from './images/aston_martin.png';
+import ferrari from './images/ferrari.png';
+import ginetta from './images/ginetta.png';
+import honda from './images/honda.png';
+import lamborghini from './images/lamborghini.png';
+import MINI from './images/MINI.png';
+import toyota from './images/toyota.png';
+
+const getManufLogo = (vehicle) => {
+  if (vehicle.includes('Porsche')) return porscheLogo
+  else if (vehicle.includes('BMW')) return bmwLogo;
+  else if (vehicle.includes('Mercedes')) return mercedesLogo;
+  else if (vehicle.includes('Acura')) return acuraLogo
+  else if (vehicle.includes('Aston')) return astonMartin
+  else if (vehicle.includes('Ferrari')) return ferrari;
+  else if (vehicle.includes('Ginetta')) return ginetta;
+  else if (vehicle.includes('Honda')) return honda;
+  else if (vehicle.includes('Lambo')) return lamborghini;
+  else if (vehicle.includes('MINI')) return MINI;
+  else if (vehicle.includes('Toyota')) return toyota;
+}
+
+
 // use to get driver and event ID based on given name as string
 const getIdFromArray = (name, arr) => {
   for (const val of arr)  {
@@ -53,5 +80,6 @@ export {
   printPage,
   getVehicleId,
   compareDate,
-  compareCarNumber
+  compareCarNumber,
+  getManufLogo
 }
