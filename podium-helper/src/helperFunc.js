@@ -27,6 +27,12 @@ const getManufLogo = (vehicle) => {
   else if (vehicle.includes('Lambo')) return lamborghini;
   else if (vehicle.includes('MINI')) return MINI;
   else if (vehicle.includes('Toyota')) return toyota;
+  else if (vehicle.includes('Audi')) return audi;
+  else if (vehicle.includes('Corvette')) return corvette;
+  else if (vehicle.includes('Hyundai')) return hyundai;
+  else if (vehicle.includes('Nissan')) return nissan;
+  else if (vehicle.includes('Saleen')) return saleen;
+  // else return default logo
 }
 
 
