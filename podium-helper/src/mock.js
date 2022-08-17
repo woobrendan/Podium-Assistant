@@ -24,6 +24,18 @@ console.log('copy:', copy.location);
 //////
 
 // Create a for loop that iterates up to 100 while outputting "fizz" at multiples of 3, "buzz" at multiples of 5 and "fizzbuzz" at multiples of 3 and 5
+const fizzbuzz = () => {
+  for (let i = 1; i < 30; i++) {
+    let str = '';
+    if (i % 3 === 0) {
+      str += 'fizz';
+    }
+    if (i % 5 === 0) {
+      str += 'buzz';
+    }
+    console.log(str ? str : i)
+  }
+}
 
 
 ///////
