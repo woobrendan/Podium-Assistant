@@ -30,10 +30,11 @@ function DriverDetails(props) {
 
   const getSeriesLogo = (series) => {
     switch(series){
-      case 'GT World Challenge America': return GTWCA;
+      // case 'GT World Challenge America': return GTWCA;
       case "Pirelli GT4 America": return PGT4A;
       case "TC America": return TCAM;
-      case "GT America": return GTAM
+      case "GT America": return GTAM;
+      default: return GTWCA;
     }
   }
 
