@@ -233,7 +233,7 @@ VALUES
 ('Porsche 718 Cayman GT4 RS CS', '30', 9, 10, 3, ''),
 ('Ginetta G56', '60', 3, 38, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F344%2F%2F041522_Sonoma_bcpix2278879.jpg'),
 ('Porsche 718 Cayman GT4 RS CS', '032', 3, 16, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10948_RL_Sonomaf.jpg'),
-('Lamborghini Huracan GT3', '191', 11, 12, 3, ''),
+('Lamborghini Huracan GT3', '91', 11, 5, 3, ''),
 ('Callaway Corvette C7 GT3-R', '70', 11, 57, 3, ''),
 ('Porsche 718 Cayman GT4 Clubsport MR', '3', 9, 62, 3, ''),
 ('Porsche 718 Cayman GT4 Clubsport MR', '7', 9, 63, 3, ''),
