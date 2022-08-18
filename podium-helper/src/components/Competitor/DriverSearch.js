@@ -6,6 +6,7 @@ import ToggleSearch from '../toggleSearch';
 import BackToTopButton from './BackToTopButton';
 import filteredOptions from '../../searchOptions';
 import useEntries from '../../useEntries';
+import searchAll from './searchAll';
 
 function DriverSearch() {
   const [searchValue, setSearchValue] = useState('');
@@ -15,8 +16,8 @@ function DriverSearch() {
   const getSearchOption = (option) => {
     setOption(option);
   }
-  
-  const mappedDrivers = filteredOptions(vehicles, option, searchValue).map((entry,index) =>(
+  // console.log('vehicles', vehicles)
+  const mappedDrivers = searchAll(vehicles, searchValue).map((entry,index) =>(
        <DriverDetails entry={entry} key={index} index={index}/>
       ))
 
