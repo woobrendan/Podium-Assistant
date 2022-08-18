@@ -471,7 +471,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Zane Hodgen', 'Bronze', 'USA', 66, 149),
 ('Cameron Lawrence', 'Silver', 'USA', 66, 149),
 ('Grayson Farischon', 'Silver', 'USA', 67, 151),
-('Mike Skeen', 'Silver', 'USA', 67, 151);
+('Mike Skeen', 'Silver', 'USA', 67, 151),
+('Damon Surzyshyn', 'Bronze', 'Canada', 19, 24),
+('Gregory Liefooghe', 'Silver', 'USA', 64, 150);
 
 
 
