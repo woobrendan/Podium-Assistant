@@ -215,7 +215,7 @@ VALUES
 ('Porsche 718 Cayman GT4 RS CS', '99', 9, 58, 3, ''),
 ('Porsche 718 Cayman GT4 RS CS', '120', 9, 39, 3, ''),
 ('Ford Mustang GT4', '124', 9, 40, 3, ''),
-('Lamborghini Huracan GT3', '191', 8, 12, 3, ''),
+('Lamborghini Huracan GT3', '91', 8, 5, 3, ''),
 ('Aston Martin Vantage AMR GT4', '888', 9, 12, 3, ''),
 ('Mercedes-AMG GT3', '08', 8, 4, 3, ''),
 ('Porsche 718 Cayman GT4 RS CS', '66', 9, 22, 3, ''),
