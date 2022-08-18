@@ -95,7 +95,8 @@ INSERT INTO teams (name, country) VALUES
 ('Forbush Performance', 'USA'),
 ('Scuderia Corsa', 'USA'),
 ('Lone Star Racing', 'USA'),
-('G2 Racing/GSpeed', 'USA');
+('G2 Racing/GSpeed', 'USA'),
+('FTG Racing', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
@@ -250,7 +251,8 @@ VALUES
 ('Porsche 911 GT3-R (991.ii)', '032', 3, 16, 1, ''),
 ('Mercedes-AMG GT4', '4', 2, 66, 2, ''),
 ('Toyota GR Supra GT4', '16', 2, 64, 2, ''),
-('BMW M4 GT4', '59', 4, 67, 2, '');
+('BMW M4 GT4', '59', 4, 67, 2, ''),
+('Mazda 3', '70', 6, 68, 4, '');
 
 
 
@@ -378,7 +380,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Garrett Adams', 'N/A', 'USA', 19, 64),
 ('Stephen Cugliari', 'N/A', 'USA', 32, 65),
 ('Brett Scroggin', 'N/A', 'USA', 45, 66),
-('Jessica Tracy', 'N/A', 'USA', 37, 67),
+('Michael Kanisczcak', 'N/A', 'USA', 37, 67),
 ('Matthew Ibrahim', 'N/A', 'USA', 46, 68),
 ('Celso Nesto', 'N/A', 'Puerto Rico', 47, 69),
 ('Kevin Boehm', 'N/A', 'USA', 48, 70),
@@ -473,7 +475,8 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Grayson Farischon', 'Silver', 'USA', 67, 151),
 ('Mike Skeen', 'Silver', 'USA', 67, 151),
 ('Damon Surzyshyn', 'Bronze', 'Canada', 19, 24),
-('Gregory Liefooghe', 'Silver', 'USA', 64, 150);
+('Gregory Liefooghe', 'Silver', 'USA', 64, 150),
+('Joey Jordan', 'TC', 'USA', 68, 152);
 
 
 
