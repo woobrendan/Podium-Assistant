@@ -15,6 +15,7 @@ import hyundai from './images/hyundai.png';
 import nissan from './images/nissan.png';
 import saleen from './images/saleen.png';
 import sro from './images/SRO.jpg';
+import pro from './images/pro.png';
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes('Porsche')) return porscheLogo
@@ -34,6 +35,10 @@ const getManufLogo = (vehicle) => {
   else if (vehicle.includes('Nissan')) return nissan;
   else if (vehicle.includes('Saleen')) return saleen;
   else return sro;
+}
+
+const getClassBannerImg = (nameOfClass) => {
+  return pro
 }
 
 
@@ -93,5 +98,6 @@ export {
   getVehicleId,
   compareDate,
   compareCarNumber,
-  getManufLogo
+  getManufLogo,
+  getClassBannerImg
 }
