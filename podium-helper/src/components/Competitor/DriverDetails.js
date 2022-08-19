@@ -72,7 +72,6 @@ function DriverDetails(props) {
           #{props.entry.number}
         </div>
         <CardContent>
-          {props.entry.driver1 && 
             <div className="driver-info-toggle">
               <h4>Drivers</h4>
               <Button onClick={() => handleToggle()}>
@@ -88,7 +87,6 @@ function DriverDetails(props) {
                   />}
               </Button>
             </div>
-          }
           <Elevation 
             series={series}
             car={props.entry.vehicle}
