@@ -226,7 +226,7 @@ VALUES
 ('Porsche 911 GT3-R (991.ii)', '00',8, 60, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F395%2F%2FT6P_7207.jpg'),
 ('Mercedes-AMG GT4', '35', 9, 27, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F397%2F%2F072422_WGI_bcpix2473920.jpg'),
 ('Aston Martin Vantage AMR GT4', '15', 9, 20, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F397%2F%2F072422_WGI_bcpix2474293.jpg'),
-('Toyota GR Supra GT4', '016', 9, 21, 3, ''),
+('Toyota GR Supra GT4', '016', 9, 21, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F397%2F%2F072422_WGI_bcpix2474340.jpg'),
 ('Porsche 911 GT3-R (991.ii)', '00', 2, 60, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F304%2F%2FRL_WG_SRO_06324f.jpg'),
 ('Mercedes-AMG GT4', '35', 3, 27, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472370.jpg'),
 ('Toyota GR Supra GT4', '69', 2, 33, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10903_RL_Sonomaf.jpg'),
