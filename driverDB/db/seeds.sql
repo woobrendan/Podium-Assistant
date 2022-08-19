@@ -246,13 +246,13 @@ VALUES
 ('Mercedes-AMG GT3', '63', 8, 4, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F401%2F%2F080622_NSHVL_bcpix2487437.jpg'),
 ('Ford Mustang GT4', '124', 9, 40, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2FFH2_7086.jpg'),
 ('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479488.jpg'),
-('Ferrari 458 Italia GT3', '56', 11, 56, 3, ''),
-('Mercedes-AMG GT3', '63', 11, 4, 3, ''),
+('Ferrari 458 Italia GT3', '56', 11, 56, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F391%2F%2FFH1_5639.jpg'),
+('Mercedes-AMG GT3', '63', 11, 4, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F376%2F%2F022622_StPete_bcpix2208466.jpg'),
 ('Porsche 911 GT3-R (991.ii)', '032', 3, 16, 1, ''),
 ('Mercedes-AMG GT4', '4', 2, 66, 2, ''),
 ('Toyota GR Supra GT4', '16', 2, 64, 2, ''),
 ('BMW M4 GT4', '59', 4, 67, 2, ''),
-('Mazda 3', '70', 6, 68, 4, '');
+('Mazda 3', '70', 6, 68, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285091.jpg');
 
 
 
