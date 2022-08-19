@@ -15,7 +15,7 @@ import TCAM from '../../images/TCAM.png';
 
 function DriverDetails(props) {
   const series = props.entry.series;
-  const [driverInfo, setDriverInfo] = useState(false);
+  const [entryInfo, setEntryInfo] = useState(false);
 
   const detailClass = classNames('entry-detail__item', {
     "entry-detail_GTWCA": series === "GT World Challenge America",
@@ -25,7 +25,7 @@ function DriverDetails(props) {
   })
 
   const handleToggle = () => {
-    driverInfo ? setDriverInfo(false) : setDriverInfo(true)
+    entryInfo ? setEntryInfo(false) : setEntryInfo(true)
   }
 
   const getSeriesLogo = (series) => {
@@ -72,21 +72,16 @@ function DriverDetails(props) {
           #{props.entry.number}
         </div>
         <CardContent>
-          <Elevation 
-            series={series}
-            car={props.entry.vehicle}
-            class={props.entry.class}
-          />
           {props.entry.driver1 && 
             <div className="driver-info-toggle">
               <h4>Drivers</h4>
               <Button onClick={() => handleToggle()}>
-                {!driverInfo && 
+                {!entryInfo && 
                   <AddCircleOutlineIcon 
                     color="warning"
                     fontSize="large"
                   />}
-                {driverInfo && 
+                {entryInfo && 
                   <RemoveCircleOutlineIcon 
                     color="warning"
                     fontSize="large"
@@ -94,7 +89,12 @@ function DriverDetails(props) {
               </Button>
             </div>
           }
-          {driverInfo && <DriverTable drivers={props.entry} />}
+          <Elevation 
+            series={series}
+            car={props.entry.vehicle}
+            class={props.entry.class}
+          />
+          {entryInfo && <DriverTable drivers={props.entry} />}
         </CardContent>
       </Card>
     </div>
