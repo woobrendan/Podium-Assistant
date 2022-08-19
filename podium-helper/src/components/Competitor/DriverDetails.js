@@ -5,7 +5,7 @@ import Elevation from './elevationPaper';
 import classNames from 'classnames';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
-import { getManufLogo } from '../../helperFunc';
+import { getManufLogo, getClassBannerImg } from '../../helperFunc';
 import GTWCA from '../../images/GTWCA.png';
 import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
@@ -67,6 +67,11 @@ function DriverDetails(props) {
           height="180"
           image={props.entry.image}
           alt={props.entry.car}
+        />
+        <img 
+          className="class-banner-img"
+          src={getClassBannerImg(props.entry.class)} 
+          alt={props.entry.class} 
         />
         <div className="car-number">
           #{props.entry.number}
