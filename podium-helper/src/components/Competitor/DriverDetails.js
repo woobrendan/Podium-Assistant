@@ -44,7 +44,7 @@ function DriverDetails(props) {
         className={detailClass}
         sx={{ 
           maxWidth: 345, 
-          minHeight: 450,
+          minHeight: 375,
           minWidth: 375
       }}>
         <CardHeader 
@@ -73,7 +73,7 @@ function DriverDetails(props) {
         </div>
         <CardContent>
             <div className="driver-info-toggle">
-              <h4>Drivers</h4>
+              <h4>Details</h4>
               <Button onClick={() => handleToggle()}>
                 {!entryInfo && 
                   <AddCircleOutlineIcon 
