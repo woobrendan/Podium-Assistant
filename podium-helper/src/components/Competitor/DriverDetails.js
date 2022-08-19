@@ -87,11 +87,11 @@ function DriverDetails(props) {
                   />}
               </Button>
             </div>
-          <Elevation 
+          {entryInfo && <Elevation 
             series={series}
             car={props.entry.vehicle}
             class={props.entry.class}
-          />
+          />}
           {entryInfo && <DriverTable drivers={props.entry} />}
         </CardContent>
       </Card>
