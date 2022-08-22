@@ -68,9 +68,10 @@ function DriverDetails(props) {
           image={props.entry.image}
           alt={props.entry.car}
         />
+        <br></br>
         <img 
           className="class-banner-img"
-          src={getClassBannerImg(props.entry.class)} 
+          src={getClassBannerImg(props.entry.class, series)} 
           alt={props.entry.class} 
         />
         <div className="car-number">
