@@ -15,7 +15,8 @@ import TCAM from '../../images/TCAM.png';
 
 function DriverDetails(props) {
   const [entryInfo, setEntryInfo] = useState(false);
-  const series = props.entry.series;
+  const entry = props.entry;
+  const series = entry.series;
   const gtwca = "GT World Challenge America";
   const tcam = "TC AMerica";
   const gtam = "GT America";
@@ -57,28 +58,28 @@ function DriverDetails(props) {
             src={getSeriesLogo(series)}
             sx={{bgcolor: 'white', width: 59, height: 59}} 
           />}
-          title={props.entry.team} 
+          title={entry.team} 
         />
         <Avatar
           className="manufacturer-avatar" 
-          alt={props.entry.vehicle} 
-          src={getManufLogo(props.entry.vehicle)}
+          alt={entry.vehicle} 
+          src={getManufLogo(entry.vehicle)}
           sx={{bgcolor: 'white', width: 59, height: 59}} 
         />
         <CardMedia
           component="img"
           height="180"
-          image={props.entry.image}
-          alt={props.entry.car}
+          image={entry.image}
+          alt={entry.car}
         />
         <br></br>
         <img 
           className="class-banner-img"
-          src={getClassBannerImg(props.entry.class, series)} 
-          alt={props.entry.class} 
+          src={getClassBannerImg(entry.class, series)} 
+          alt={entry.class} 
         />
         <div className="car-number">
-          #{props.entry.number}
+          #{entry.number}
         </div>
         <CardContent>
             <div className="driver-info-toggle">
@@ -98,10 +99,10 @@ function DriverDetails(props) {
             </div>
           {entryInfo && <Elevation 
             series={series}
-            car={props.entry.vehicle}
-            class={props.entry.class}
+            car={entry.vehicle}
+            class={entry.class}
           />}
-          {entryInfo && <DriverTable drivers={props.entry} />}
+          {entryInfo && <DriverTable drivers={entry} />}
         </CardContent>
       </Card>
     </div>
