@@ -14,14 +14,18 @@ import TCAM from '../../images/TCAM.png';
 
 
 function DriverDetails(props) {
-  const series = props.entry.series;
   const [entryInfo, setEntryInfo] = useState(false);
+  const series = props.entry.series;
+  const gtwca = "GT World Challenge America";
+  const tcam = "TC AMerica";
+  const gtam = "GT America";
+  const gt4a = "Pirelli GT4 America";
 
   const detailClass = classNames('entry-detail__item', {
-    "entry-detail_GTWCA": series === "GT World Challenge America",
-    "entry-detail_PGT4A": series === "Pirelli GT4 America",
-    "entry-detail_TCA": series === "TC America",
-    "entry-detail_GTA": series === "GT America",
+    "entry-detail_GTWCA": series === gtwca,
+    "entry-detail_PGT4A": series === gt4a,
+    "entry-detail_TCA": series === tcam,
+    "entry-detail_GTA": series === gtam,
   })
 
   const handleToggle = () => {
@@ -30,7 +34,6 @@ function DriverDetails(props) {
 
   const getSeriesLogo = (series) => {
     switch(series){
-      // case 'GT World Challenge America': return GTWCA;
       case "Pirelli GT4 America": return PGT4A;
       case "TC America": return TCAM;
       case "GT America": return GTAM;
