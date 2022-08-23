@@ -5,7 +5,7 @@ import Elevation from './elevationPaper';
 import classNames from 'classnames';
 import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@mui/icons-material/RemoveCircleOutline';
-import { getManufLogo, getClassBannerImg } from '../../helperFunc';
+import { getManufLogo, getClassBannerImg } from '../../functions/getImages';
 import GTWCA from '../../images/GTWCA.png';
 import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
