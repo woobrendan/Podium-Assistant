@@ -15,9 +15,10 @@ import hyundai from './images/hyundai.png';
 import nissan from './images/nissan.png';
 import saleen from './images/saleen.png';
 import sro from './images/SRO.jpg';
-// import pro from './images/pro.png';
+import pro from './images/gtwca_pro.png';
 // import silver from './images/silver.png'
 import GTWCAProAm from './images/gtwca_pro_am.png';
+import gt4_proam from './images/gt4_proam.png';
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes('Porsche')) return porscheLogo
@@ -41,11 +42,11 @@ const getManufLogo = (vehicle) => {
 
 const getClassBannerImg = (nameOfClass, series) => {
   switch(nameOfClass) {
-    // case "Pro": return pro;
+    case "Pro": return pro;
     // case "Silver": return silver;
     case "Pro-Am": 
       if (series === "GT World Challenge America") return GTWCAProAm  
-      //else return gt4 p/a
+      else return gt4_proam
   }
 }
 
