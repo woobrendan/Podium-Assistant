@@ -8,7 +8,7 @@ import axios from 'axios';
 import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
-import useEntries from '../../useEntries';
+import useEntries from '../../functions/useEntries';
 import { getIdFromArray, getToday, printPage, getVehicleId } from '../../helperFunc';
 
 function Podium() {
