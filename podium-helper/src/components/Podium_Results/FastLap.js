@@ -1,6 +1,6 @@
 import { FormControl, InputLabel, Select, TextField, Button, Typography, Card, Box, MenuItem } from '@mui/material';
 import {useState} from 'react';
-import useEntries from '../../useEntries';
+import useEntries from '../../functions/useEntries';
 
 
 function FastLap(props) {
