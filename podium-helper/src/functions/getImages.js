@@ -2,7 +2,7 @@ import bmwLogo from '../images/bmw.png'
 import porscheLogo from '../images/Porsche-Symbol.png';
 import mercedesLogo from '../images/mercedes.png'
 import acuraLogo from '../images/acura.png';
-import astonMartin from './images/aston_martin.png';
+import astonMartin from '../images/aston_martin.png';
 import ferrari from './images/ferrari.png';
 import ginetta from './images/ginetta.png';
 import honda from './images/honda.png';
