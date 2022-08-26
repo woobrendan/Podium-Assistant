@@ -1,4 +1,4 @@
-import bmwLogo from './images/bmw.png'
+import bmwLogo from '../images/bmw.png'
 import porscheLogo from './images/Porsche-Symbol.png';
 import mercedesLogo from './images/mercedes.png'
 import acuraLogo from './images/acura.png';
