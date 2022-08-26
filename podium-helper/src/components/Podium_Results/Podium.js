@@ -9,7 +9,7 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../functions/useEntries';
-import { getIdFromArray, getToday, printPage, getVehicleId } from '../../helperFunc';
+import { getIdFromArray, getToday, printPage, getVehicleId } from '../../functions/helperFunc';
 
 function Podium() {
   const {drivers, events, series, classCategory, vehicles} = useEntries(); 
