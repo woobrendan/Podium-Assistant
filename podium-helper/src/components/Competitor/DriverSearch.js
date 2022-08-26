@@ -5,7 +5,7 @@ import {useState} from 'react';
 import ToggleSearch from '../../functions/toggleSearch';
 import BackToTopButton from './BackToTopButton';
 import filteredOptions from '../../functions/searchOptions';
-import useEntries from '../../useEntries';
+import useEntries from '../../functions/useEntries';
 import searchAll from './searchAll';
 
 function DriverSearch() {
