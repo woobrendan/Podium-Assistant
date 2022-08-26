@@ -1,6 +1,6 @@
 import bmwLogo from '../images/bmw.png'
 import porscheLogo from '../images/Porsche-Symbol.png';
-import mercedesLogo from './images/mercedes.png'
+import mercedesLogo from '../images/mercedes.png'
 import acuraLogo from './images/acura.png';
 import astonMartin from './images/aston_martin.png';
 import ferrari from './images/ferrari.png';
