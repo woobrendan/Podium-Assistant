@@ -1,5 +1,5 @@
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@mui/material'
-import useEntries from '../../useEntries';
+import useEntries from '../../functions/useEntries';
 import {useState, useEffect} from 'react'
 import EditButton from './EditButton';
 
