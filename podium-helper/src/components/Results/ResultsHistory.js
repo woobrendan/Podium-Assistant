@@ -1,9 +1,9 @@
 import {useState} from 'react';
 import {Typography, TextField} from '@mui/material'
 import ResultTableHeader from './ResultTableHeader';
-import ToggleSearch from '../toggleSearch';
-import useEntries from '../../useEntries.js';
-import filteredResultOptions from '../../resultOptions';
+import ToggleSearch from '../functions/toggleSearch';
+import useEntries from '../../functions/useEntries.js';
+import filteredResultOptions from '../../functions/resultOptions';
 
 function ResultsHistory() {
   const { groupResults } = useEntries()
