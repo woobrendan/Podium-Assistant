@@ -4,7 +4,7 @@ import {TextField} from '@mui/material'
 import {useState} from 'react';
 import ToggleSearch from '../../functions/toggleSearch';
 import BackToTopButton from './BackToTopButton';
-import filteredOptions from '../../searchOptions';
+import filteredOptions from '../../functions/searchOptions';
 import useEntries from '../../useEntries';
 import searchAll from './searchAll';
 
