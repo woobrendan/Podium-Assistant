@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import { FormControl, InputLabel, Select, Button, Typography, MenuItem, Card, Box } from '@mui/material';
 import '../../Styling/winnerTop3.scss';
-import useEntries from '../../useEntries'
+import useEntries from '../../functions/useEntries'
 
 
 const classOptions = {
