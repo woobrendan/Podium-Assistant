@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {Typography, TextField} from '@mui/material'
 import ResultTableHeader from './ResultTableHeader';
-import ToggleSearch from '../functions/toggleSearch';
+import ToggleSearch from '../../functions/toggleSearch';
 import useEntries from '../../functions/useEntries.js';
 import filteredResultOptions from '../../functions/resultOptions';
 
