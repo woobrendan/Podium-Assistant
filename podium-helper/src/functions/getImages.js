@@ -7,7 +7,7 @@ import ferrari from '../images/ferrari.png';
 import ginetta from '../images/ginetta.png';
 import honda from '../images/honda.png';
 import lamborghini from '../images/lamborghini.png';
-import MINI from './images/MINI.png';
+import MINI from '../images/MINI.png';
 import toyota from './images/toyota.png';
 import audi from './images/audi.png';
 import corvette from './images/corvette.png'
