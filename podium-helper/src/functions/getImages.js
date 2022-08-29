@@ -14,7 +14,7 @@ import corvette from '../images/corvette.png'
 import hyundai from '../images/hyundai.png';
 import nissan from '../images/nissan.png';
 import saleen from './images/saleen.png';
-import sro from './images/SRO.jpg';
+import sro from '../images/SRO.jpg';
 import gtwca_pro from './images/gtwca_pro.png';
 import gtwca_am from './images/gtwca_am.png';
 import gtwca_ProAm from './images/gtwca_pro_am.png';
