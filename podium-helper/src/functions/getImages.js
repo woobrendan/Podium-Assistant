@@ -20,7 +20,7 @@ import gtwca_am from '../images/gtwca_am.png';
 import gtwca_ProAm from '../images/gtwca_pro_am.png';
 import gt4_proam from '../images/gt4_proam.png';
 import gt4_am from '../images/gt4_am.png';
-import gt4_silver from './images/gt4_silver.png';
+import gt4_silver from '../images/gt4_silver.png';
 import tcx from './images/tcx.png';
 import tc from  './images/tc.png';
 import tca from './images/tca.png';
