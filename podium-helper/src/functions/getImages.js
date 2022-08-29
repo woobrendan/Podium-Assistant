@@ -25,7 +25,7 @@ import tcx from '../images/tcx.png';
 import tc from  '../images/tc.png';
 import tca from '../images/tca.png';
 import gtam_gt3 from '../images/gtam_gt3.png';
-import gtam_gt2 from './images/gtam_gt2.png';
+import gtam_gt2 from '../images/gtam_gt2.png';
 import gtam_gt4 from './images/gtam_gt4.png';
 
 const getManufLogo = (vehicle) => {
