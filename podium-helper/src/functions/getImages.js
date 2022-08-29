@@ -10,7 +10,7 @@ import lamborghini from '../images/lamborghini.png';
 import MINI from '../images/MINI.png';
 import toyota from '../images/toyota.png';
 import audi from '../images/audi.png';
-import corvette from './images/corvette.png'
+import corvette from '../images/corvette.png'
 import hyundai from './images/hyundai.png';
 import nissan from './images/nissan.png';
 import saleen from './images/saleen.png';
