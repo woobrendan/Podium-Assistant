@@ -12,7 +12,7 @@ import toyota from '../images/toyota.png';
 import audi from '../images/audi.png';
 import corvette from '../images/corvette.png'
 import hyundai from '../images/hyundai.png';
-import nissan from './images/nissan.png';
+import nissan from '../images/nissan.png';
 import saleen from './images/saleen.png';
 import sro from './images/SRO.jpg';
 import gtwca_pro from './images/gtwca_pro.png';
