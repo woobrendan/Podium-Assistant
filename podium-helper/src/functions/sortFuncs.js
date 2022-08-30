@@ -1,8 +1,4 @@
 const sortBySeries = (listOfEntries) => {
-  const gtwca = "GT World Challenge America";
-  const tcam = "TC America";
-  const gtam = "GT America";
-  const gt4a = "Pirelli GT4 America";
   const gt3 = [];
   const gt2 = [];
   const gt4 = [];
@@ -18,7 +14,7 @@ const sortBySeries = (listOfEntries) => {
       tc.push(entry)
     }
   })
-  return [...gt3, ...gt4, ...tc]
+  return [...gt3, ...gt2, ...gt4, ...tc]
 }
 
 export {
