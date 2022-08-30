@@ -23,10 +23,20 @@
       right: 15px;
     }
 
-    .car-number {
+    .car-number-2 {
       position: absolute;
       top: 310px;
       left: -20px;
+      font-size: 80px;
+      color: white;
+      -webkit-text-stroke: 3px red;
+      font-family: 'Sports Jersey', sans-serif;
+    }
+
+    .car-number-1 {
+      position: absolute;
+      top: 310px;
+      left: 0px;
       font-size: 80px;
       color: white;
       -webkit-text-stroke: 3px red;
