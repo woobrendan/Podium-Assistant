@@ -53,7 +53,5 @@ export {
   printPage,
   getVehicleId,
   compareDate,
-  compareCarNumber,
-  getManufLogo,
-  getClassBannerImg
+  compareCarNumber
 }
