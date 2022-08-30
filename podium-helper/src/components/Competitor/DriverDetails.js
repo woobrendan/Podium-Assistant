@@ -18,7 +18,7 @@ function DriverDetails(props) {
   const entry = props.entry;
   const series = entry.series;
   const gtwca = "GT World Challenge America";
-  const tcam = "TC AMerica";
+  const tcam = "TC America";
   const gtam = "GT America";
   const gt4a = "Pirelli GT4 America";
 
