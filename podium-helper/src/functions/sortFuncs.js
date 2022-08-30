@@ -1,4 +1,4 @@
-const sortBySeries = (listOfEntries) => {
+const sortByVehicleType = (listOfEntries) => {
   const gt3 = [];
   const gt2 = [];
   const gt4 = [];
@@ -17,6 +17,11 @@ const sortBySeries = (listOfEntries) => {
   return [...gt3, ...gt2, ...gt4, ...tc]
 }
 
+const sortBySeries = () => {
+  
+}
+
 export {
-  sortBySeries
+  sortBySeries,
+  sortByVehicleType
 }
