@@ -7,6 +7,7 @@ import BackToTopButton from './BackToTopButton';
 import filteredOptions from '../../functions/searchOptions';
 import useEntries from '../../functions/useEntries';
 import searchAll from './searchAll';
+import {sortBySeries} from '../../functions/sortFuncs';
 
 function DriverSearch() {
   const [searchValue, setSearchValue] = useState('');
@@ -21,7 +22,7 @@ function DriverSearch() {
   //      <DriverDetails entry={entry} key={index} index={index}/>
   //     ))
 
-  const mappedDrivers = filteredOptions(vehicles, option, searchValue).map((entry,index) =>(
+  const mappedDrivers = sortBySeries(filteredOptions(vehicles, option, searchValue)).map((entry,index) =>(
     <DriverDetails entry={entry} key={index} index={index}/>
   ))
 
