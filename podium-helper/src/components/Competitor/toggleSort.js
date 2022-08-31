@@ -4,10 +4,16 @@ import {useState} from 'react';
 export default function ToggleSort(props) {
   const [sortOption, setSortOption] = useState('');
 
+  const sortOptions = ['Series', 'Manufacturer', 'Vehicle Type']
+
   const handleToggle = (event) => {
     setSortOption(event.target.value);
     props.getOption(event.target.value);
   }
+
+  const mappedOptions = sortOptions.map(option => (
+    <MenuItem key={option} value={option}>{option}</MenuItem>
+  ))
 
   return (
     <div>
