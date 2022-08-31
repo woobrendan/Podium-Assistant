@@ -16,7 +16,7 @@ export default function ToggleSort(props) {
   ))
 
   return (
-    <div>
+    <div className="sort-option-selector">
       <Box
         component="form"
         sx={{
