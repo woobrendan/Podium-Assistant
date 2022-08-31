@@ -1,3 +1,4 @@
+import {gtwca, gt4a, gtam} from '../functions/helperFunc';
 const sortByVehicleType = (listOfEntries) => {
   const gt3 = [];
   const gt2 = [];
@@ -12,8 +13,18 @@ const sortByVehicleType = (listOfEntries) => {
   return [...gt3, ...gt2, ...gt4, ...tc]
 }
 
-const sortBySeries = () => {
-
+const sortBySeries = (listOfEntries) => {
+  const gtwc = [];
+  const gta = [];
+  const gt4 = [];
+  const tc = [];
+  listOfEntries.forEach((entry) => {
+    if (entry.series === gtwca) gtwc.push(entry)
+    else if (entry.series === gtam) gta.push(entry)
+    else if (entry.series === gt4a) gt4.push(entry)
+    else tc.push(entry)
+  })
+  return [...gtwc, ...gta, ...gt4, ...tc]
 }
 
 export {
