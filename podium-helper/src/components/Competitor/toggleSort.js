@@ -1,8 +1,13 @@
 import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
 import {useState} from 'react';
 
-export default function ToggleSort() {
+export default function ToggleSort(props) {
   const [sortOption, setSortOption] = useState('');
+
+  const handleToggle = (event) => {
+    setSortOption(event.target.value);
+    props.getOption(event.target.value);
+  }
 
   return (
     <div>
