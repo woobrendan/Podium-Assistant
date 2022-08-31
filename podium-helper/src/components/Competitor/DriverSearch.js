@@ -2,7 +2,7 @@ import DriverDetails from './DriverDetails';
 import '../../Styling/competitors.scss'
 import {TextField} from '@mui/material'
 import {useState} from 'react';
-import ToggleSearch from '../../functions/toggleSearch';
+import ToggleSearch from './toggleSearch';
 import BackToTopButton from './BackToTopButton';
 import filteredOptions from '../../functions/searchOptions';
 import useEntries from '../../functions/useEntries';
