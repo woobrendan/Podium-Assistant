@@ -45,7 +45,12 @@ const compareCarNumber = (a, b) => {
     return 1
   }
   return 0;
-}  
+} 
+
+const gtwca = "GT World Challenge America";
+const tcam = "TC America";
+const gtam = "GT America";
+const gt4a = "Pirelli GT4 America";
 
 export {
   getIdFromArray,
@@ -53,5 +58,9 @@ export {
   printPage,
   getVehicleId,
   compareDate,
-  compareCarNumber
+  compareCarNumber,
+  gtwca,
+  tcam,
+  gtam,
+  gt4a
 }
