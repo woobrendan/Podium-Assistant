@@ -1,4 +1,9 @@
+import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
+import {useState} from 'react';
+
 export default function ToggleSort() {
+  const [sortOption, setSortOption] = useState('');
+
   return (
     <div>
       <Box
@@ -11,13 +16,13 @@ export default function ToggleSort() {
       >
         <FormControl sx={{ minWidth: 300 }}>
           <InputLabel htmlFor="exampleFormControlSelect2">
-            Search Options
+            Sort Options
           </InputLabel>
           <Select
             className="form-control"
             name="search-by"
             label="Search Options"
-            value={searchOption}
+            value={sortOption}
             onChange={handleToggle}
           >
             {mappedOptions}
