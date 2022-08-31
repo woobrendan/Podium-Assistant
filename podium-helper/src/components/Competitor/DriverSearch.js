@@ -6,6 +6,7 @@ import ToggleSearch from './toggleSearch';
 import BackToTopButton from './BackToTopButton';
 import filteredOptions from '../../functions/searchOptions';
 import useEntries from '../../functions/useEntries';
+import ToggleSort from './toggleSort';
 import searchAll from './searchAll';
 import {sortBySeries, sortByVehicleType} from '../../functions/sortFuncs';
 
@@ -29,14 +30,15 @@ function DriverSearch() {
   const searchLabel = option ? `Search by ${option}`: "Search"
   return (
     <div className="competitors-container">
-      <ToggleSearch getOption={getSearchOption} />
-       <TextField 
+      {/* <ToggleSearch getOption={getSearchOption} /> */}
+      <ToggleSort getOption={getSearchOption} />
+       {/* <TextField 
         id="standard-basic" 
         label={searchLabel} 
         variant="standard" 
         value={searchValue}
         onChange={e => {setSearchValue(e.target.value)}}
-      />
+      /> */}
       <div className="entry_cards">
         {mappedDrivers}
       </div>
