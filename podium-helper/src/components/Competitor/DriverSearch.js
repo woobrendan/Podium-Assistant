@@ -25,14 +25,14 @@ function DriverSearch() {
 
   const setSortOption = (sortOption, entryArray) => {
     switch(sortOption) {
-      case 'Series': 
-        return sortBySeries(entryArray)
+      case 'Number': 
+        return entryArray
       case 'Manufacturer': 
         //return sortByManuf
       case 'Vehicle Type':
         return sortByVehicleType(entryArray)
       default:
-        return entryArray
+        return sortBySeries(entryArray)
     }
   }
 
