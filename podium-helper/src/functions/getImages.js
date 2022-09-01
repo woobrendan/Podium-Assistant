@@ -27,6 +27,7 @@ import tca from '../images/tca.png';
 import gtam_gt3 from '../images/gtam_gt3.png';
 import gtam_gt2 from '../images/gtam_gt2.png';
 import gtam_gt4 from '../images/gtam_gt4.png';
+import {gtwca} from './helperFunc'
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes('Porsche')) return porscheLogo
@@ -49,7 +50,6 @@ const getManufLogo = (vehicle) => {
 }
 
 const getClassBannerImg = (nameOfClass, series) => {
-  const gtwca = "GT World Challenge America";
   switch(nameOfClass) {
     case "Pro": return gtwca_pro;
     case "Pro-Am": return series === gtwca ? gtwca_ProAm : gt4_proam;
