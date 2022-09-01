@@ -48,6 +48,7 @@ function DriverDetails(props) {
           minHeight: 375,
           minWidth: 375
       }}>
+      {!entryInfo && <div className="entry-media">
         <CardHeader 
           sx={{minHeight: 100, maxwidth: 325}}
           avatar={<Avatar 
@@ -78,29 +79,30 @@ function DriverDetails(props) {
         <div className={`car-number-${entry.number.length}`}>
           #{entry.number}
         </div>
+      </div>}
         <CardContent>
-            <div className="driver-info-toggle">
-              <h4>Details</h4>
-              <Button onClick={() => handleToggle()}>
-                {!entryInfo && 
-                  <AddCircleOutlineIcon 
-                    color="warning"
-                    fontSize="large"
-                  />}
-                {entryInfo && 
-                  <RemoveCircleOutlineIcon 
-                    color="warning"
-                    fontSize="large"
-                  />}
-              </Button>
-            </div>
-            {entryInfo && <div className="entry-details">
-              <Elevation 
-                series={series}
-                car={entry.vehicle}
-                class={entry.class}
-              />
-              <DriverTable drivers={entry} />
+          <div className="driver-info-toggle">
+            <h4>Details</h4>
+            <Button onClick={() => handleToggle()}>
+              {!entryInfo && 
+                <AddCircleOutlineIcon 
+                  color="warning"
+                  fontSize="large"
+                />}
+              {entryInfo && 
+                <RemoveCircleOutlineIcon 
+                  color="warning"
+                  fontSize="large"
+                />}
+            </Button>
+          </div>
+          {entryInfo && <div className="entry-details">
+            <Elevation 
+              series={series}
+              car={entry.vehicle}
+              class={entry.class}
+            />
+            <DriverTable drivers={entry} />
           </div>}
         </CardContent>
       </Card>
