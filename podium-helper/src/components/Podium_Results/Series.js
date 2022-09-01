@@ -1,7 +1,8 @@
 import {useState} from 'react';
 import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
+import { gtwca, tcam, gt4a, gtam } from '../../functions/helperFunc';
 
-const seriesNameList = ['GT World Challenge America', 'GT America', 'Pirelli GT4 America', 'TC America']
+const seriesNameList = [gtwca, gtam, gt4a, tcam]
 
 function Series(props) {
   const [seriesName, setSeriesName] = useState('');
