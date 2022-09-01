@@ -16,12 +16,19 @@ From within the `podium-helper` folder:
 1. Run `npm install` to install dependencies
 2. Run `npm start` to start app
 
+From the driverDB folder:
+1. Run `npm install` to install dependencies
+2. From within Postgres (PSQL) session, run `CREATE DATABASE sro;`
+3. Switch to database by entering `\c workout` within PSQL
+4. Seed the database by running `\i db/schema.sql` then `\i db/seeds.sql`
+5. Exit PSQL session and from `driverDB` folder run `npm start` to start back-end server
+
 ## Creating New Podiums
 ![Create New Podium](https://github.com/woobrendan/Podium-Assistant/blob/main/podium-helper/public/docs/podium_creation.gif?raw=true)
 
 ## Competitors
 
-The competitors page displays all of the competitors in SRO Motorsports America competition, dynamically changing their background colour based on the series they are entered in.
+The competitors page displays all of the competitors in SRO Motorsports America competition, using classnames to dynamically change their background colour based on the series they are entered in.
 
 ![Competitors](https://github.com/woobrendan/Podium-Assistant/blob/main/podium-helper/public/docs/competitors.png?raw=true)
 
