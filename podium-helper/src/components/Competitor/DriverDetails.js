@@ -10,6 +10,7 @@ import GTWCA from '../../images/GTWCA.png';
 import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
 import TCAM from '../../images/TCAM.png';
+import {gtwca, tcam, gtam, gt4a} from '../../functions/helperFunc'
 
 
 
@@ -17,10 +18,6 @@ function DriverDetails(props) {
   const [entryInfo, setEntryInfo] = useState(false);
   const entry = props.entry;
   const series = entry.series;
-  const gtwca = "GT World Challenge America";
-  const tcam = "TC America";
-  const gtam = "GT America";
-  const gt4a = "Pirelli GT4 America";
 
   const detailClass = classNames('entry-detail__item', {
     "entry-detail_GTWCA": series === gtwca,
