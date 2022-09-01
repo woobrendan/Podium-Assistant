@@ -117,6 +117,7 @@ import home51 from './images/home51.jpeg';
 import krug72 from './images/krug72.jpeg';
 import renn79 from './images/renn79.jpeg';
 import renn89 from './images/renn89.jpeg';
+import { gtwca, gtam, gt4a, tcam } from '../podium-helper/src/functions/helperFunc'
 
 
 
@@ -134,10 +135,10 @@ export const driverInfo = [
       rating: 'Silver'
       },
     vehicle: "Porsche 911 GT3-R (991.ii)",
-    classification: "Pro-Am",
+    classification: "Pro-Am", 
     number: "00",
     carImage: '',
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "K-PAX Racing",
@@ -155,7 +156,7 @@ export const driverInfo = [
     classification: "Pro",
     number: "1",
     carImage: kpax6,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "K-PAX Racing",
@@ -173,7 +174,7 @@ export const driverInfo = [
     classification: "Pro",
     number: "3",
     carImage: kpax1,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Crowdstrike Racing with Riley Motorsports",
@@ -191,7 +192,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "04",
     carImage: riley04,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "US Racetronics",
@@ -209,7 +210,7 @@ export const driverInfo = [
     classification: "Pro",
     number: "6",
     carImage: usrace6,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "DXDT Racing",
@@ -227,7 +228,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "08",
     carImage: dxdt08,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "TR3 Racing",
@@ -245,7 +246,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "9",
     carImage: tr39,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Ian Lacy Racing",
@@ -263,7 +264,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "12",
     carImage: ian12,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Triarsi Competizione",
@@ -281,7 +282,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "13",
     carImage: triarsi13,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Triarsi Competizione",
@@ -299,7 +300,7 @@ export const driverInfo = [
     classification: "Am",
     number: "23",
     carImage: triarsi23,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Winward Racing",
@@ -317,7 +318,7 @@ export const driverInfo = [
     classification: "Pro",
     number: "33",
     carImage: winward33,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "ST Racing",
@@ -335,7 +336,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "38",
     carImage: st38,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "RealTime Racing",
@@ -353,7 +354,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "43",
     carImage: real43,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Wright Motorsports",
@@ -371,7 +372,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "45",
     carImage: wright45,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "AF Corse",
@@ -389,7 +390,7 @@ export const driverInfo = [
     classification: "Am",
     number: "61",
     carImage: AF61,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "DXDT Racing",
@@ -407,7 +408,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "63",
     carImage: DXDT63,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Zelus Motorsports",
@@ -425,7 +426,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "88",
     carImage: Zelus88,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Zelus Motorsports",
@@ -443,7 +444,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "91",
     carImage: Zelus91,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Racers Edge Motorsports",
@@ -461,7 +462,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "93",
     carImage: racers93,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "BimmerWorld",
@@ -479,7 +480,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "94",
     carImage: bimmer94,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "Turner Motorsport",
@@ -497,7 +498,7 @@ export const driverInfo = [
     classification: "Pro",
     number: "96",
     carImage: turner96,
-    series: "GT World Challenge America"
+    series: gtwca
   },
   {
     team: "GMG Racing",
@@ -515,7 +516,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "2",
     carImage: GMG2,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "NOLASPORT",
@@ -533,7 +534,7 @@ export const driverInfo = [
     classification: "Am",
     number: "7",
     carImage: NOLA7,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Flying Lizard Motorsport",
@@ -551,7 +552,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "8",
     carImage: flm8,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Fast Track Racing",
@@ -569,7 +570,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "10",
     carImage: FTR10,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Fast Track Racing",
@@ -587,7 +588,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "11",
     carImage: FTR11,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "BSport Racing",
@@ -605,7 +606,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "15",
     carImage: bsport15,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Hattori Motorsports",
@@ -623,7 +624,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "016",
     carImage: hattori016,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "The Racers Group",
@@ -641,7 +642,7 @@ export const driverInfo = [
     classification: "Am",
     number: "17",
     carImage: trg17,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "RS1",
@@ -659,7 +660,7 @@ export const driverInfo = [
     classification: "Silver",
     number: "18",
     carImage: rs118,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "NOLASPORT",
@@ -677,7 +678,7 @@ export const driverInfo = [
     classification: "Am",
     number: "19",
     carImage: nola19,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Carrus Callas Raceteam",
@@ -695,7 +696,7 @@ export const driverInfo = [
     classification: "Am",
     number: "20",
     carImage: carrus21,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Heart of Racing Team",
@@ -713,7 +714,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "24",
     carImage: hort24,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Prive Motorsports/Topp Racing",
@@ -731,7 +732,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "26",
     carImage: prive26,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Capstone Motorsportrs",
@@ -749,7 +750,7 @@ export const driverInfo = [
     classification: "Silver",
     number: "32",
     carImage: cap32,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Conquest Racing/JWF Motorsports",
@@ -767,7 +768,7 @@ export const driverInfo = [
     classification: "Silver",
     number: "34",
     carImage: conquest34,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Conquest Racing",
@@ -785,7 +786,7 @@ export const driverInfo = [
     classification: "Am",
     number: "35",
     carImage: conquest35,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "BimmerWorld",
@@ -803,7 +804,7 @@ export const driverInfo = [
     classification: "Am",
     number: "36",
     carImage: bimmer36,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Cameron Racing",
@@ -821,7 +822,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "39",
     carImage: cameron39,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "NOLASPORT",
@@ -839,7 +840,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "47",
     carImage: nola47,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Team Saleen",
@@ -857,7 +858,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "49",
     carImage: saleen49,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Chouest Povoledo Racing",
@@ -875,7 +876,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "50",
     carImage: chouest50,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "AutoTechnic Racing",
@@ -893,7 +894,7 @@ export const driverInfo = [
     classification: "Silver",
     number: "51",
     carImage: auto51,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "AutoTechnic Racing",
@@ -911,7 +912,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "52",
     carImage: auto52,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "AutoTechnic Racing",
@@ -929,7 +930,7 @@ export const driverInfo = [
     classification: "Am",
     number: "53",
     carImage: auto53,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Accerlating Performance",
@@ -947,7 +948,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "55",
     carImage: accelerate55,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Dexter Racing",
@@ -965,7 +966,7 @@ export const driverInfo = [
     classification: "Am",
     number: "60",
     carImage: dexter60,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "The Racers Group",
@@ -983,7 +984,7 @@ export const driverInfo = [
     classification: "Am",
     number: "66",
     carImage: trg66,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Smooge Racing",
@@ -1001,7 +1002,7 @@ export const driverInfo = [
     classification: "Silver",
     number: "68",
     carImage: smooge68,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Smooge Racing",
@@ -1019,7 +1020,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "69",
     carImage: smooge68,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "KRUGSPEED",
@@ -1037,7 +1038,7 @@ export const driverInfo = [
     classification: "Am",
     number: "72",
     carImage: krug72,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "RENNtech Motorsports",
@@ -1055,7 +1056,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "79",
     carImage: renn79,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Rooster Hall Racing",
@@ -1073,7 +1074,7 @@ export const driverInfo = [
     classification: "Am",
     number: "80",
     carImage: rooster80,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "BimmerWorld",
@@ -1091,7 +1092,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "82",
     carImage: bimmer82,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "RS1",
@@ -1109,7 +1110,7 @@ export const driverInfo = [
     classification: "Am",
     number: "83",
     carImage: rs183,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "RENNtech Motorsports",
@@ -1127,7 +1128,7 @@ export const driverInfo = [
     classification: "Am",
     number: "89",
     carImage: renn89,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Random Vandals Racing",
@@ -1145,7 +1146,7 @@ export const driverInfo = [
     classification: "Am",
     number: "98",
     carImage: random98,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Dexter Racing",
@@ -1163,7 +1164,7 @@ export const driverInfo = [
     classification: "Silver",
     number: "112",
     carImage: dexter112,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Premier Racing",
@@ -1181,7 +1182,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "120",
     carImage: premier120,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "ARG/Rotek Racing",
@@ -1199,7 +1200,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "124",
     carImage: arg124,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Team ACP - Tangerine Associates",
@@ -1217,7 +1218,7 @@ export const driverInfo = [
     classification: "Am",
     number: "152",
     carImage: ACP152,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Indian Summer Racing",
@@ -1235,7 +1236,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "319",
     carImage: '',
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Regal Motorsports",
@@ -1253,7 +1254,7 @@ export const driverInfo = [
     classification: "Am",
     number: "427",
     carImage: regal427,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Zelus Motorsports",
@@ -1271,7 +1272,7 @@ export const driverInfo = [
     classification: "Am",
     number: "888",
     carImage: zelus888,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "CarBahn w/ Peregrine Racing",
@@ -1289,7 +1290,7 @@ export const driverInfo = [
     classification: "Pro-Am",
     number: "930",
     carImage: car930,
-    series: "Pirelli GT4 America"
+    series: gt4a
   },
   {
     team: "Fast Track Racing",
@@ -1302,7 +1303,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "1",
     carImage: FTR1,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Rigid Speed",
@@ -1315,7 +1316,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "24",
     carImage: rigid24,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Rigid Speed",
@@ -1328,7 +1329,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "26",
     carImage: rigid26,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Fast Track Racing",
@@ -1341,7 +1342,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "29",
     carImage: ftr29,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "HARD Motorsports",
@@ -1354,7 +1355,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "30",
     carImage: hard30,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Rooster Hall Racing",
@@ -1367,7 +1368,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "44",
     carImage: rooster44,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Homewrecker Racing LLC",
@@ -1380,7 +1381,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "51",
     carImage: home51,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Fast Track Racing",
@@ -1393,7 +1394,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "54",
     carImage: FTR54,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Accerlating Performance",
@@ -1406,7 +1407,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "57",
     carImage: accerlate57,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Fast Track Racing",
@@ -1419,7 +1420,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "76",
     carImage: FTR76,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Random Vandals Racing",
@@ -1432,7 +1433,7 @@ export const driverInfo = [
     classification: "TCX",
     number: "97",
     carImage: random97,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "DRS & Garagistic",
@@ -1445,7 +1446,7 @@ export const driverInfo = [
     classification: "TC",
     number: "06",
     carImage: DRS06,
-    series: "TC America"
+    series: tcam
   },{
     team: "VGRT",
     driver1: {
@@ -1457,7 +1458,7 @@ export const driverInfo = [
     classification: "TC",
     number: "8",
     carImage: vgrt8,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Skip Barber Racing School",
@@ -1470,7 +1471,7 @@ export const driverInfo = [
     classification: "TC",
     number: "9",
     carImage: skip9,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "DRS & Garagistic",
@@ -1483,7 +1484,7 @@ export const driverInfo = [
     classification: "TC",
     number: "09",
     carImage: DRS09,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "TechSport Racing",
@@ -1496,7 +1497,7 @@ export const driverInfo = [
     classification: "TC",
     number: "18",
     carImage: '',
-    series: "TC America"
+    series: tcam
   },
   {
     team: "LA Honda World Racing",
@@ -1509,7 +1510,7 @@ export const driverInfo = [
     classification: "TC",
     number: "37",
     carImage: LA37,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Skip Barber Racing SChool",
@@ -1522,7 +1523,7 @@ export const driverInfo = [
     classification: "TC",
     number: "42",
     carImage: skip42,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "MINI JCW Team",
@@ -1535,7 +1536,7 @@ export const driverInfo = [
     classification: "TC",
     number: "60",
     carImage: mini60,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "FTG Racing",
@@ -1548,7 +1549,7 @@ export const driverInfo = [
     classification: "TC",
     number: "70",
     carImage: ftg70,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "LA Honda World Racing",
@@ -1561,7 +1562,7 @@ export const driverInfo = [
     classification: "TC",
     number: "73",
     carImage: la73,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Genracer / Ricca Autosport",
@@ -1574,7 +1575,7 @@ export const driverInfo = [
     classification: "TC",
     number: "78",
     carImage: gen78,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Genracer / Ricca Autosport",
@@ -1587,7 +1588,7 @@ export const driverInfo = [
     classification: "TC",
     number: "88",
     carImage: gen88,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Skip Barber Racing School",
@@ -1600,7 +1601,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "2",
     carImage: skip2,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "LA Honda World Racing",
@@ -1613,7 +1614,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "5",
     carImage: la5,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Skip Barber Racing School",
@@ -1626,7 +1627,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "16",
     carImage: skip16,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Skip Barber Racing School",
@@ -1639,7 +1640,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "20",
     carImage: '',
-    series: "TC America"
+    series: tcam
   },
   {
     team: "TechSport Racing",
@@ -1652,7 +1653,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "21",
     carImage: tech21,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "TechSport Racing",
@@ -1665,7 +1666,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "22",
     carImage: tech22,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "TechSport Racing",
@@ -1678,7 +1679,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "23",
     carImage: tech23,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Bryan Herta Autosport w/ Curb-Agajanian",
@@ -1691,7 +1692,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "33",
     carImage: bha33,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "MINI JCW Team",
@@ -1704,7 +1705,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "61",
     carImage: mini61,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "MINI JCW Team",
@@ -1717,7 +1718,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "62",
     carImage: mini62,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "LA Honda World Racing",
@@ -1730,7 +1731,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "77",
     carImage: la77,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Bryan Herta Autosport w/ Curb-Agajanian",
@@ -1743,7 +1744,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "98",
     carImage: bha98,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "VGRT",
@@ -1756,7 +1757,7 @@ export const driverInfo = [
     classification: "TCA",
     number: "780",
     carImage: vgrt780,
-    series: "TC America"
+    series: tcam
   },
   {
     team: "Team Hardpoint",
@@ -1769,7 +1770,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "00",
     carImage: '',
-    series: "GT America"
+    series: gtam
   },
   {
     team: "GMG Racing",
@@ -1782,7 +1783,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "2",
     carImage: gmg2a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "CrowdStrike w/ Riley Motorsports",
@@ -1795,7 +1796,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "04",
     carImage: crwd04a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Flying Lizard Motorsports",
@@ -1808,7 +1809,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "8",
     carImage: flm8,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "BSport Racing",
@@ -1821,7 +1822,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "15",
     carImage: bsport15,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Hattori Motorsports",
@@ -1834,7 +1835,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "016",
     carImage: hattori016,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "NOLASPORT",
@@ -1847,7 +1848,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "19",
     carImage: nola19a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Carrus Callas Raceteam",
@@ -1860,7 +1861,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "21",
     carImage: carrus21a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "SRQ Motorsports Motorsports",
@@ -1873,7 +1874,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "22",
     carImage: srq22,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Heart of Racing Team",
@@ -1886,7 +1887,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "25",
     carImage: hort25a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Daskalos Motorsports",
@@ -1899,7 +1900,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "27",
     carImage: dask27,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "SRQ Motorsports Group",
@@ -1912,7 +1913,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "28",
     carImage: srq28,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Conquest Racing",
@@ -1925,7 +1926,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "35",
     carImage: '',
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Triarsi Competizione",
@@ -1938,7 +1939,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "37",
     carImage: triarsi37a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Cameron Racing",
@@ -1951,7 +1952,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "39",
     carImage: cameron39a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Chouest Povoledo Racing",
@@ -1964,7 +1965,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "50",
     carImage: chouest50a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Accelerating Performance",
@@ -1977,7 +1978,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "55",
     carImage: accerlate55a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "SKI Autosports",
@@ -1990,7 +1991,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "56",
     carImage: SKI56,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "GMG Racing",
@@ -2003,7 +2004,7 @@ export const driverInfo = [
     classification: "GT2",
     number: "58",
     carImage: gmg58,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Dexter Racing",
@@ -2016,7 +2017,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "60",
     carImage: dexter60,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Smooge Racing",
@@ -2029,7 +2030,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "67",
     carImage: smooge67,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Smooge Racing",
@@ -2042,7 +2043,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "69",
     carImage: smooge67,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "MISHUMOTORS",
@@ -2055,7 +2056,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "70",
     carImage: mish70,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "GMG Racing",
@@ -2068,7 +2069,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "71",
     carImage: gmg71,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "RENNtech Motorsports",
@@ -2081,7 +2082,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "79",
     carImage: renn79a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Zelus Motorsports",
@@ -2094,7 +2095,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "88",
     carImage: zelus88a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "RENNtech Motorsports",
@@ -2107,7 +2108,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "89",
     carImage: renn89a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Rotek Racing",
@@ -2120,7 +2121,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "99",
     carImage: rotek99,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Premier Racing",
@@ -2133,7 +2134,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "120",
     carImage: premier120a,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "ARG/Rotek Racing",
@@ -2146,7 +2147,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "124",
     carImage: arg124,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Zelus Motorsports",
@@ -2159,7 +2160,7 @@ export const driverInfo = [
     classification: "SRO3",
     number: "191",
     carImage: zelus191,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Zelus Motorsports",
@@ -2172,7 +2173,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "888",
     carImage: zelus888,
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Regal Motorsports LLC/Bartone Bros",
@@ -2185,7 +2186,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "3",
     carImage: '',
-    series: "GT America"
+    series: gtam
   },
   {
     team: "Regal Motorsports LLC/Bartone Bros",
@@ -2198,7 +2199,7 @@ export const driverInfo = [
     classification: "GT4",
     number: "427",
     carImage: '',
-    series: "GT America"
+    series: gtam
   },
   
   
