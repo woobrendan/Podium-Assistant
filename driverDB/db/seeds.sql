@@ -248,7 +248,7 @@ VALUES
 ('Porsche 718 Cayman GT4 Clubsport MR', '427', 9, 62, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479488.jpg'),
 ('Ferrari 458 Italia GT3', '56', 11, 56, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F391%2F%2FFH1_5639.jpg'),
 ('Mercedes-AMG GT3', '63', 11, 4, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F376%2F%2F022622_StPete_bcpix2208466.jpg'),
-('Porsche 911 GT3-R (991.ii)', '032', 3, 16, 1, ''),
+('Porsche 911 GT3-R (991.ii)', '032', 3, 16, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F313%2F%2F082122_RDAM_bcpix2526519.jpg'),
 ('Mercedes-AMG GT4', '4', 2, 66, 2, ''),
 ('Toyota GR Supra GT4', '16', 2, 64, 2, ''),
 ('BMW M4 GT4', '59', 4, 67, 2, ''),
