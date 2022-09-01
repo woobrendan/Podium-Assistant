@@ -94,12 +94,14 @@ function DriverDetails(props) {
                   />}
               </Button>
             </div>
-          {entryInfo && <Elevation 
-            series={series}
-            car={entry.vehicle}
-            class={entry.class}
-          />}
-          {entryInfo && <DriverTable drivers={entry} />}
+            {entryInfo && <div className="entry-details">
+              <Elevation 
+                series={series}
+                car={entry.vehicle}
+                class={entry.class}
+              />
+              <DriverTable drivers={entry} />
+          </div>}
         </CardContent>
       </Card>
     </div>
