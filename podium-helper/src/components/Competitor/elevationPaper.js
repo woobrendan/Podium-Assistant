@@ -16,7 +16,7 @@ export default function Elevation(props) {
   const details = [props.series, props.car, props.class];
 
   return (
-      <Grid container spacing={3}>
+      <Grid container spacing={3} className="elevation-details">
           <Grid item xs={6} >
             <ThemeProvider theme={lightTheme}>
               <Box
