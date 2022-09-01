@@ -27,7 +27,20 @@ const sortBySeries = (listOfEntries) => {
   return [...gtwc, ...gta, ...gt4, ...tc]
 }
 
+const compareNames = (a, b) => {
+  if (a.vehicle < b.vehicle) return -1;
+  if (a.vehicle > b.vehicle) return 1;
+  return 0;
+}
+
+const sortByManufacturer = (listOfEntries) => {
+  const sorted = listOfEntries.sort(compareNames)
+  console.log('sorted', sorted)
+  return sorted
+}
+
 export {
   sortBySeries,
-  sortByVehicleType
+  sortByVehicleType,
+  sortByManufacturer
 }
