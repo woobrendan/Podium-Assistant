@@ -8,7 +8,7 @@ import filteredOptions from '../../functions/searchOptions';
 import useEntries from '../../functions/useEntries';
 import ToggleSort from './toggleSort';
 import searchAll from './searchAll';
-import {sortBySeries, sortByVehicleType} from '../../functions/sortFuncs';
+import {sortBySeries, sortByVehicleType, sortByManufacturer} from '../../functions/sortFuncs';
 
 function DriverSearch() {
   const [searchValue, setSearchValue] = useState('');
@@ -28,7 +28,7 @@ function DriverSearch() {
       case 'Number': 
         return entryArray
       case 'Manufacturer': 
-        //return sortByManuf
+        return sortByManufacturer(entryArray)
       case 'Vehicle Type':
         return sortByVehicleType(entryArray)
       default:

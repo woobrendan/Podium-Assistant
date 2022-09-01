@@ -34,9 +34,7 @@ const compareNames = (a, b) => {
 }
 
 const sortByManufacturer = (listOfEntries) => {
-  const sorted = listOfEntries.sort(compareNames)
-  console.log('sorted', sorted)
-  return sorted
+  return listOfEntries.sort(compareNames)
 }
 
 export {
