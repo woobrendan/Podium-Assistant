@@ -16,7 +16,6 @@ export default function Elevation(props) {
   const details = [props.series, props.car, props.class];
 
   return (
-    <div className="entry-details">
       <Grid container spacing={3}>
           <Grid item xs={6} >
             <ThemeProvider theme={lightTheme}>
@@ -36,6 +35,5 @@ export default function Elevation(props) {
             </ThemeProvider>
           </Grid>
       </Grid>
-    </div>
   );
 }
