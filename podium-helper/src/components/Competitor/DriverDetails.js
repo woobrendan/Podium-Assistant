@@ -81,6 +81,14 @@ function DriverDetails(props) {
         </div>
       </div>}
         <CardContent>
+          {entryInfo && <div className="entry-details">
+            <Elevation 
+              series={series}
+              car={entry.vehicle}
+              class={entry.class}
+            />
+            <DriverTable drivers={entry} />
+          </div>}
           <div className="driver-info-toggle">
             <h4>Details</h4>
             <Button onClick={() => handleToggle()}>
@@ -96,14 +104,6 @@ function DriverDetails(props) {
                 />}
             </Button>
           </div>
-          {entryInfo && <div className="entry-details">
-            <Elevation 
-              series={series}
-              car={entry.vehicle}
-              class={entry.class}
-            />
-            <DriverTable drivers={entry} />
-          </div>}
         </CardContent>
       </Card>
     </div>
