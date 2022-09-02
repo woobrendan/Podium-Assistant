@@ -64,9 +64,23 @@ const sortByClass = (listOfEntries) => {
     const nameOfSeries = entry.series;
     if (nameOfClass === 'Pro') pro.push(entry);
     else if (nameOfClass === 'Pro-Am') {
-      if (nameOfSeries === gtwca) gt3proam.push(entry);
-    }
+      nameOfSeries === gtwca 
+        ? gt3proam.push(entry) 
+        : gt4proam.push(entry)
+    } else if (nameOfClass === 'Am') {
+      nameOfSeries === gtwca
+        ? gt3am.push(entry) 
+        : gt4am.push(entry)
+    } else if (nameOfClass === 'Silver') silver.push(entry);
+    else if (nameOfClass === 'SRO3') sro3.push(entry);
+    else if (nameOfClass === 'Masters') masters.push(entry);
+    else if (nameOfClass === 'GT2') gt2.push(entry);
+    else if (nameOfClass === 'GT4') gt4.push(entry)
+    else if (nameOfClass === 'TCX') tcx.push(entry);
+    else if (nameOfClass === 'TC') tc.push(entry);
+    else if (nameOfClass === 'TCA') tca.push(entry)
   })
+  return [...pro, ...gt3proam, ...gt3am, ...sro3, ...masters, ...gt2, ...gt4, ...gt4proam, ...silver, ...gt4am, ...tcx, ...tc, ...tca ]
 }
 
 export {
