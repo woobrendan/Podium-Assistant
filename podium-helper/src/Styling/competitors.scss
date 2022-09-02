@@ -4,11 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: url(../images/background1.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
   .competitor-card {
     margin: 10px;
@@ -138,6 +133,11 @@
 }
 
 .competitors-container {
+  background: url(../images/background1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   .MuiFormControl-root {
     width: 60%;
   }
