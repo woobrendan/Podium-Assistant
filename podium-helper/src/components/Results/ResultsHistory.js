@@ -16,9 +16,7 @@ function ResultsHistory() {
   const searchLabel = option ? `Search by ${option}`: "Search";
 
   const allResults = filteredResultOptions(groupResults, option, searchValue).map((result, index) => (
-    <div key={index}>
-      <ResultTableHeader results={result}/>
-    </div>
+      <ResultTableHeader results={result} key={index}/>
   ));
 
   return (
@@ -34,7 +32,9 @@ function ResultsHistory() {
         value={searchValue}
         onChange={e => {setSearchValue(e.target.value)}}
       />
-      {allResults}
+      <div className="result-history-list">
+        {allResults}
+      </div>
     </div>
   )
 }
