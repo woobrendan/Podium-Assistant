@@ -1,5 +1,4 @@
 import {gtwca, gt4a, gtam} from '../functions/helperFunc';
-const nameOfSeries = entry.series;
 
 const sortByVehicleType = (listOfEntries) => {
   const gt3 = [];
@@ -21,6 +20,7 @@ const sortBySeries = (listOfEntries) => {
   const gt4 = [];
   const tc = [];
   listOfEntries.forEach((entry) => {
+    const nameOfSeries = entry.series;
     if (nameOfSeries === gtwca) gtwc.push(entry)
     else if (nameOfSeries === gtam) gta.push(entry)
     else if (nameOfSeries === gt4a) gt4.push(entry)
@@ -49,7 +49,7 @@ const sortByClass = (listOfEntries) => {
   const gt3proam = [];
   const gt4proam = [];
   const gt3am = [];
-  const gt4proam = [];
+  const gt4am = [];
   const silver = [];
   const sro3 = [];
   const masters = []
@@ -61,6 +61,7 @@ const sortByClass = (listOfEntries) => {
   
   listOfEntries.forEach(entry => {
     const nameOfClass = entry.class;
+    const nameOfSeries = entry.series;
     if (nameOfClass === 'Pro') pro.push(entry);
     else if (nameOfClass === 'Pro-Am') {
       if (nameOfSeries === gtwca) gt3proam.push(entry);
