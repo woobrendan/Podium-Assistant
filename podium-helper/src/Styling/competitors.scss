@@ -1,138 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/sports-jersey');
-
-.entry_cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  .competitor-card {
-    margin: 10px;
-    position: relative;
-
-    .class-banner-img {
-        width: 140px;
-    }
-
-    .manufacturer-avatar {
-      position: absolute;
-      top: 325px;
-      right: 15px;
-    }
-
-    .car-number-2 {
-      position: absolute;
-      top: 310px;
-      left: -20px;
-      font-size: 80px;
-      color: white;
-      -webkit-text-stroke: 3px red;
-      font-family: 'Sports Jersey', sans-serif;
-    }
-
-    .car-number-1 {
-      position: absolute;
-      top: 310px;
-      left: 0px;
-      font-size: 80px;
-      color: white;
-      -webkit-text-stroke: 3px red;
-      font-family: 'Sports Jersey', sans-serif;
-    }
-
-    .car-number-3 {
-      position: absolute;
-      top: 310px;
-      left: -25px;
-      font-size: 70px;
-      color: white;
-      -webkit-text-stroke: 3px red;
-      font-family: 'Sports Jersey', sans-serif;
-    }
-
-    .MuiAvatar-root {
-      img {
-        object-fit: contain;
-      }
-    }
-
-    .MuiTypography-body2 {
-      color: white;
-      font-size: 25px;
-      font-weight: bold;
-    }
-
-    .driver-info-toggle {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-
-      svg {
-        color: white;
-      }
-
-      h4 {
-        color: white;
-      }
-    }
-
-    .entry-details {
-      .elevation-details {
-        margin-left: -10px;
-      }
-    }
-
-    .driver-table {
-      .MuiTableHead-root {
-        th {
-          font-weight: bold;
-        }
-    
-      }
-    }
-
-    button {
-      border: none;
-      background: none;
-    }
-
-    .MuiTypography-h5 {
-      color:white;
-      font-weight: bold;
-    }
-
-      .entry-detail_GTWCA {
-        background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,22,7,1) 100%);
-      }
-
-      .entry-detail_PGT4A {
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,92,249,1) 60%);
-      }
-
-      .entry-detail_TCA {
-        background: rgb(2,0,36);
-        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(179,179,182,1) 60%);
-      }
-
-      .entry-detail_GTA {
-        background: rgb(0,0,0);
-        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(101,101,102,1) 100%); 
-      }
-    
-  }
-
-  .MuiPaper-root {
-
-    .MuiCardContent-root {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-}
-
 .competitors-container {
+
   background: url(../images/background1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -144,5 +12,137 @@
 
   .sort-option-selector {
     padding: 30px;
+  }
+
+  .entry_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .competitor-card {
+      margin: 10px;
+      position: relative;
+
+      .class-banner-img {
+          width: 140px;
+      }
+
+      .manufacturer-avatar {
+        position: absolute;
+        top: 325px;
+        right: 15px;
+      }
+
+      .car-number-2 {
+        position: absolute;
+        top: 310px;
+        left: -20px;
+        font-size: 80px;
+        color: white;
+        -webkit-text-stroke: 3px red;
+        font-family: 'Sports Jersey', sans-serif;
+      }
+
+      .car-number-1 {
+        position: absolute;
+        top: 310px;
+        left: 0px;
+        font-size: 80px;
+        color: white;
+        -webkit-text-stroke: 3px red;
+        font-family: 'Sports Jersey', sans-serif;
+      }
+
+      .car-number-3 {
+        position: absolute;
+        top: 310px;
+        left: -25px;
+        font-size: 70px;
+        color: white;
+        -webkit-text-stroke: 3px red;
+        font-family: 'Sports Jersey', sans-serif;
+      }
+
+      .MuiAvatar-root {
+        img {
+          object-fit: contain;
+        }
+      }
+
+      .MuiTypography-body2 {
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .driver-info-toggle {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        svg {
+          color: white;
+        }
+
+        h4 {
+          color: white;
+        }
+      }
+
+      .entry-details {
+        .elevation-details {
+          margin-left: -10px;
+        }
+      }
+
+      .driver-table {
+        .MuiTableHead-root {
+          th {
+            font-weight: bold;
+          }
+      
+        }
+      }
+
+      button {
+        border: none;
+        background: none;
+      }
+
+      .MuiTypography-h5 {
+        color:white;
+        font-weight: bold;
+      }
+
+        .entry-detail_GTWCA {
+          background: rgb(0,0,0);
+          background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,22,7,1) 100%);
+        }
+
+        .entry-detail_PGT4A {
+          background: rgb(2,0,36);
+          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(67,92,249,1) 60%);
+        }
+
+        .entry-detail_TCA {
+          background: rgb(2,0,36);
+          background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(179,179,182,1) 60%);
+        }
+
+        .entry-detail_GTA {
+          background: rgb(0,0,0);
+          background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(101,101,102,1) 100%); 
+        }
+      
+    }
+
+    .MuiPaper-root {
+
+      .MuiCardContent-root {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   }
 }
