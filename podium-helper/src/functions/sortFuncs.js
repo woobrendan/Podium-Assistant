@@ -40,11 +40,6 @@ const sortByManufacturer = (listOfEntries) => {
 }
 
 const sortByClass = (listOfEntries) => {
-  // const compareClass = (a, b) => {
-  //   if (a.class < b.class) return -1;
-  //   if (a.class > b.class) return 1;
-  //   return 0;
-  // }
   const pro = [];
   const gt3proam = [];
   const gt4proam = [];
@@ -62,23 +57,45 @@ const sortByClass = (listOfEntries) => {
   listOfEntries.forEach(entry => {
     const nameOfClass = entry.class;
     const nameOfSeries = entry.series;
-    if (nameOfClass === 'Pro') pro.push(entry);
-    else if (nameOfClass === 'Pro-Am') {
-      nameOfSeries === gtwca 
-        ? gt3proam.push(entry) 
-        : gt4proam.push(entry)
-    } else if (nameOfClass === 'Am') {
-      nameOfSeries === gtwca
-        ? gt3am.push(entry) 
-        : gt4am.push(entry)
-    } else if (nameOfClass === 'Silver') silver.push(entry);
-    else if (nameOfClass === 'SRO3') sro3.push(entry);
-    else if (nameOfClass === 'Masters') masters.push(entry);
-    else if (nameOfClass === 'GT2') gt2.push(entry);
-    else if (nameOfClass === 'GT4') gt4.push(entry)
-    else if (nameOfClass === 'TCX') tcx.push(entry);
-    else if (nameOfClass === 'TC') tc.push(entry);
-    else if (nameOfClass === 'TCA') tca.push(entry)
+    switch(nameOfClass) {
+      case 'Pro': 
+        pro.push(entry);
+        break;
+      case 'Pro-Am': 
+        nameOfSeries === gtwca 
+          ? gt3proam.push(entry) 
+          : gt4proam.push(entry);
+        break;
+      case 'Am': 
+        nameOfSeries === gtwca
+          ? gt3am.push(entry) 
+          : gt4am.push(entry);
+        break;
+      case 'Silver': 
+        silver.push(entry);
+        break;
+      case 'SRO3': 
+        sro3.push(entry);
+        break;
+      case 'Masters': 
+        masters.push(entry);
+        break;
+      case 'GT2': 
+        gt2.push(entry) 
+        break;
+      case 'GT4': 
+        gt4.push(entry);
+        break;
+      case 'TCX': 
+        tcx.push(entry);
+        break;
+      case 'TC': 
+        tc.push(entry);
+        break;
+      case 'TCA': 
+        tca.push(entry);
+        break;
+    }
   })
   return [...pro, ...gt3proam, ...gt3am, ...sro3, ...masters, ...gt2, ...gt4, ...gt4proam, ...silver, ...gt4am, ...tcx, ...tc, ...tca ]
 }
