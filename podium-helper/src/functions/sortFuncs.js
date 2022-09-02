@@ -38,8 +38,18 @@ const sortByManufacturer = (listOfEntries) => {
   return listOfEntries.sort(compareVehicles)
 }
 
+const sortByClass = (listOfEntries) => {
+  const compareClass = (a, b) => {
+    if (a.class < b.class) return -1;
+    if (a.class > b.class) return 1;
+    return 0;
+  }
+  return listOfEntries.sort(compareClass)
+}
+
 export {
   sortBySeries,
   sortByVehicleType,
-  sortByManufacturer
+  sortByManufacturer,
+  sortByClass
 }
