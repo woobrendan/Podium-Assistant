@@ -4,7 +4,7 @@ import {useState} from 'react';
 export default function ToggleSort(props) {
   const [sortOption, setSortOption] = useState('');
 
-  const sortOptions = ['Number', 'Manufacturer', 'Vehicle Type']
+  const sortOptions = ['Number', 'Manufacturer', 'Vehicle Type', 'Class']
 
   const handleToggle = (event) => {
     setSortOption(event.target.value);
