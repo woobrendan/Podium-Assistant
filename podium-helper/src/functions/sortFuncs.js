@@ -1,4 +1,5 @@
 import {gtwca, gt4a, gtam} from '../functions/helperFunc';
+
 const sortByVehicleType = (listOfEntries) => {
   const gt3 = [];
   const gt2 = [];
@@ -27,14 +28,14 @@ const sortBySeries = (listOfEntries) => {
   return [...gtwc, ...gta, ...gt4, ...tc]
 }
 
-const compareNames = (a, b) => {
-  if (a.vehicle < b.vehicle) return -1;
-  if (a.vehicle > b.vehicle) return 1;
-  return 0;
-}
 
 const sortByManufacturer = (listOfEntries) => {
-  return listOfEntries.sort(compareNames)
+  const compareVehicles = (a, b) => {
+    if (a.vehicle < b.vehicle) return -1;
+    if (a.vehicle > b.vehicle) return 1;
+    return 0;
+  }
+  return listOfEntries.sort(compareVehicles)
 }
 
 export {
