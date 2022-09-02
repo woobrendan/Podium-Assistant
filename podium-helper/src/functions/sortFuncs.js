@@ -1,4 +1,5 @@
 import {gtwca, gt4a, gtam} from '../functions/helperFunc';
+const nameOfSeries = entry.series;
 
 const sortByVehicleType = (listOfEntries) => {
   const gt3 = [];
@@ -20,9 +21,9 @@ const sortBySeries = (listOfEntries) => {
   const gt4 = [];
   const tc = [];
   listOfEntries.forEach((entry) => {
-    if (entry.series === gtwca) gtwc.push(entry)
-    else if (entry.series === gtam) gta.push(entry)
-    else if (entry.series === gt4a) gt4.push(entry)
+    if (nameOfSeries === gtwca) gtwc.push(entry)
+    else if (nameOfSeries === gtam) gta.push(entry)
+    else if (nameOfSeries === gt4a) gt4.push(entry)
     else tc.push(entry)
   })
   return [...gtwc, ...gta, ...gt4, ...tc]
@@ -39,12 +40,32 @@ const sortByManufacturer = (listOfEntries) => {
 }
 
 const sortByClass = (listOfEntries) => {
-  const compareClass = (a, b) => {
-    if (a.class < b.class) return -1;
-    if (a.class > b.class) return 1;
-    return 0;
-  }
-  return listOfEntries.sort(compareClass)
+  // const compareClass = (a, b) => {
+  //   if (a.class < b.class) return -1;
+  //   if (a.class > b.class) return 1;
+  //   return 0;
+  // }
+  const pro = [];
+  const gt3proam = [];
+  const gt4proam = [];
+  const gt3am = [];
+  const gt4proam = [];
+  const silver = [];
+  const sro3 = [];
+  const masters = []
+  const gt2 = [];
+  const gt4 = []
+  const tcx = [];
+  const tc = [];
+  const tca = [];
+  
+  listOfEntries.forEach(entry => {
+    const nameOfClass = entry.class;
+    if (nameOfClass === 'Pro') pro.push(entry);
+    else if (nameOfClass === 'Pro-Am') {
+      if (nameOfSeries === gtwca) gt3proam.push(entry);
+    }
+  })
 }
 
 export {
