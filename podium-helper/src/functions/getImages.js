@@ -59,6 +59,7 @@ const getClassBannerImg = (nameOfClass, series) => {
     case "TC": return tc;
     case "TCA": return tca;
     case "SRO3": return gtam_gt3;
+    case "Masters": return gtam_gt3;
     case "GT4": return gtam_gt4;
     case "GT2": return gtam_gt2;
   }
