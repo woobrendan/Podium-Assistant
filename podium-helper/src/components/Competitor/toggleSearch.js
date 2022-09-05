@@ -30,7 +30,12 @@ function ToggleSearch(props) {
           noValidate
           autoComplete="off"
         >
-          <FormControl sx={{ minWidth: 300 }}>
+          <FormControl 
+            sx={{ minWidth: 300 }}
+            color="error"
+            // focused={true}
+            className="form-control"
+          >
             <InputLabel htmlFor="exampleFormControlSelect2">
               Search Options
             </InputLabel>
