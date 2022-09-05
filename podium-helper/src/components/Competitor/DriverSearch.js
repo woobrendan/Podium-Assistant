@@ -48,7 +48,7 @@ function DriverSearch() {
       <ToggleSearch getOption={getSearchOption} />
       <ToggleSort getOption={getSearchOption} />
        <TextField 
-        // id="standard-basic" 
+        className="form-control"
         label={searchLabel} 
         variant="filled" 
         color="error"
