@@ -21,37 +21,30 @@ function ToggleSearch(props) {
   ))
 
   return (
-    <div>
-        <Box
-          component="form"
-          sx={{
-            '& .MuiTextField-root': { m: 1, width: '25ch' },
-          }}
-          noValidate
-          autoComplete="off"
+    <Box
+      component="form"
+      sx={{'& .MuiTextField-root': { m: 1, width: '25ch' }}}
+      noValidate
+      autoComplete="off"
+    >
+      <FormControl 
+        sx={{ minWidth: 300 }}
+        color="error"
+        // focused={true}
+        className="form-control"
+      >
+        <InputLabel>Search Options</InputLabel>
+        <Select
+          className="form-control"
+          name="search-by"
+          label="Search Options"
+          value={searchOption}
+          onChange={handleToggle}
         >
-          <FormControl 
-            sx={{ minWidth: 300 }}
-            color="error"
-            // focused={true}
-            className="form-control"
-          >
-            <InputLabel htmlFor="exampleFormControlSelect2">
-              Search Options
-            </InputLabel>
-            <Select
-              className="form-control"
-              name="search-by"
-              label="Search Options"
-              value={searchOption}
-              onChange={handleToggle}
-            >
-              {mappedOptions}
-            </Select>
-          </FormControl>
-        </Box>
-      
-    </div>
+          {mappedOptions}
+        </Select>
+      </FormControl>
+    </Box>
   )
 }
 
