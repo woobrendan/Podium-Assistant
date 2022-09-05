@@ -19,9 +19,9 @@ function DriverSearch() {
     setOption(option);
   }
   // console.log('vehicles', vehicles)
-  // const mappedDrivers = searchAll(vehicles, searchValue).map((entry,index) =>(
-  //      <DriverDetails entry={entry} key={index} index={index}/>
-  //     ))
+  const mappedDrivers = searchAll(vehicles, searchValue).map((entry,index) =>(
+       <DriverDetails entry={entry} key={index} index={index}/>
+      ))
 
   const setSortOption = (sortOption, entryArray) => {
     switch(sortOption) {
@@ -38,16 +38,16 @@ function DriverSearch() {
     }
   }
 
-  const mappedDrivers = setSortOption(option, filteredOptions(vehicles, option, searchValue)).map((entry,index) =>(
-    <DriverDetails entry={entry} key={index} index={index}/>
-  ))
+  // const mappedDrivers = setSortOption(option, filteredOptions(vehicles, option, searchValue)).map((entry,index) =>(
+  //   <DriverDetails entry={entry} key={index} index={index}/>
+  // ))
 
   const searchLabel = option ? `Search by ${option}`: "Search"
   return (
     <div className="competitors-container">
       <ToggleSearch getOption={getSearchOption} />
       <ToggleSort getOption={getSearchOption} />
-       <TextField 
+      <TextField 
         className="form-control"
         label={searchLabel} 
         variant="filled" 
