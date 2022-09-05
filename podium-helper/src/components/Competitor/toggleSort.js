@@ -28,8 +28,8 @@ export default function ToggleSort(props) {
         <FormControl 
           sx={{ minWidth: 150 }} 
           color="error"
-          // variant="filled"
-          focused={true}
+          // focused={true}
+          className="form-control"
         >
           <InputLabel>
             Sort Options
