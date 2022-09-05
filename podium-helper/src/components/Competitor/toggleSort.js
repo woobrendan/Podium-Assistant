@@ -29,7 +29,7 @@ export default function ToggleSort(props) {
           sx={{ minWidth: 150 }} 
           color="error"
           // variant="filled"
-          focused="true"
+          focused={true}
         >
           <InputLabel>
             Sort Options
