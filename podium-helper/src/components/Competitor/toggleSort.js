@@ -25,8 +25,13 @@ export default function ToggleSort(props) {
         noValidate
         autoComplete="off"
       >
-        <FormControl sx={{ minWidth: 150 }}>
-          <InputLabel htmlFor="exampleFormControlSelect2">
+        <FormControl 
+          sx={{ minWidth: 150 }} 
+          color="error"
+          // variant="filled"
+          focused="true"
+        >
+          <InputLabel>
             Sort Options
           </InputLabel>
           <Select
