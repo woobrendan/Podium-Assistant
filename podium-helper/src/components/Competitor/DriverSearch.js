@@ -45,15 +45,17 @@ function DriverSearch() {
   const searchLabel = option ? `Search by ${option}`: "Search"
   return (
     <div className="competitors-container">
-      {/* <ToggleSearch getOption={getSearchOption} /> */}
+      <ToggleSearch getOption={getSearchOption} />
       <ToggleSort getOption={getSearchOption} />
-       {/* <TextField 
-        id="standard-basic" 
+       <TextField 
+        // id="standard-basic" 
         label={searchLabel} 
-        variant="standard" 
+        variant="filled" 
+        color="error"
+        focused={true}
         value={searchValue}
         onChange={e => {setSearchValue(e.target.value)}}
-      /> */}
+      />
       <div className="entry_cards">
         {mappedDrivers}
       </div>
