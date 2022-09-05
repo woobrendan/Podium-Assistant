@@ -7,21 +7,10 @@ export default function searchAll(list, searchValue) {
     else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.driver2 && val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) return val
     // else return null
 
-    // switch(option){
-    //   case 'All':
-    //     return val;
-
-
-    //   case 'Manufacturer':
-    //     if (!searchValue) {
-    //       return val;
-    //     } else if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
-    //       return val;
-    //     }
-    //     break;
-
+   
     //   case 'Team':
     //     if (!searchValue) {
     //       return val;
