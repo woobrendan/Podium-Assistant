@@ -7,17 +7,11 @@ export default function searchAll(list, searchValue) {
     else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.driver2 && val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) return val;
-    else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) return val
+    else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (val.driver2 && val.driver2.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
     // else return null
 
-   
-    //   case 'Team':
-    //     if (!searchValue) {
-    //       return val;
-    //     } else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) {
-    //       return val;
-    //     }
-    //     break;
 
     //   case 'Nationality':
     //     if (!val.driver2) {
@@ -36,22 +30,6 @@ export default function searchAll(list, searchValue) {
     //     }
     //     break;
 
-    //   case 'Rating':
-    //   if (!val.driver2) {
-    //     if (!searchValue) {
-    //       return val;
-    //     } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) {
-    //       return val;
-    //     }
-    //   } else {
-    //     if (!searchValue) {
-    //       return val;
-    //     } else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())
-    //       || val.driver2.rating.toLowerCase().includes(searchValue.toLowerCase())){
-    //       return val;
-    //     }
-    //   }
-    //   break;
 
     //   case 'Series':
     //   if (!searchValue) {
