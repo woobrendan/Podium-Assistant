@@ -9,6 +9,8 @@
   .search-sort-options {
     display: flex;
     justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 20px;
   }
 
   .MuiFormControl-root {
@@ -17,10 +19,6 @@
 
   .form-control {
     background-color: white;
-  }
-
-  .sort-option-selector {
-    padding: 30px;
   }
 
   .entry_cards {
