@@ -13,16 +13,8 @@ export default function searchAll(list, searchValue) {
     else if (driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) return val; 
     else if (driver2 && driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())) return val; 
     else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (val.number.includes(searchValue)) return val;
     // else return null
-
-
-    //   case 'Series':
-    //   if (!searchValue) {
-    //     return val;
-    //   } else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) {
-    //     return val;
-    //   }
-    //   break;
 
     //   case 'Number':
     //   if (!searchValue) {
