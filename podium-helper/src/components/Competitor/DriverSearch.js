@@ -44,16 +44,18 @@ function DriverSearch() {
   const searchLabel = option ? `Search by ${option}`: "Search"
   return (
     <div className="competitors-container">
-      <ToggleSort getOption={getSearchOption} />
-      <TextField 
-        className="form-control"
-        label={searchLabel} 
-        variant="filled" 
-        color="error"
-        focused={true}
-        value={searchValue}
-        onChange={e => {setSearchValue(e.target.value)}}
-      />
+      <div className="search-sort-options">
+        <ToggleSort getOption={getSearchOption} />
+        <TextField 
+          className="form-control"
+          label={searchLabel} 
+          variant="filled" 
+          color="error"
+          focused={true}
+          value={searchValue}
+          onChange={e => {setSearchValue(e.target.value)}}
+        />
+      </div>
       <div className="entry_cards">
         {mappedDrivers}
       </div>
