@@ -41,17 +41,15 @@ function DriverSearch() {
     }
   }
 
-  const searchLabel = option ? `Search by ${option}`: "Search"
   return (
     <div className="competitors-container">
       <div className="search-sort-options">
         <ToggleSort getOption={getSearchOption} />
         <TextField 
           className="form-control"
-          label={searchLabel} 
-          variant="filled" 
+          label="Search" 
+          variant="outlined" 
           color="error"
-          focused={true}
           value={searchValue}
           onChange={e => {setSearchValue(e.target.value)}}
         />
