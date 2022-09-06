@@ -14,19 +14,6 @@ export default function searchAll(list, searchValue) {
     else if (driver2 && driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())) return val; 
     else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.number.includes(searchValue)) return val;
-    // else return null
-
-    //   case 'Number':
-    //   if (!searchValue) {
-    //     return val;
-    //   } else if (val.number.includes(searchValue)) {
-    //     return val;
-    //   }
-    //   break;
-
-    //   default:
-    //     return val; 
-    // }
   });
   return filtered;
 }
