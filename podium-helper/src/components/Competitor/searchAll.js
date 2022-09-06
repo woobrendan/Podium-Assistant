@@ -1,15 +1,15 @@
 
 export default function searchAll(list, searchValue) {
   const filtered = list.filter(val => {
-    // console.log('the val', val)
-    // console.log('search', searchValue)
+    const driver1 = val.driver1;
+    const driver2 = val.driver2;
     if (!searchValue) return val
-    else if (val.driver1.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
-    else if (val.driver2 && val.driver2.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (driver1.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (driver2 && driver2.name.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) return val;
-    else if (val.driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
-    else if (val.driver2 && val.driver2.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (driver2 && driver2.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
     // else return null
 
 
@@ -17,13 +17,13 @@ export default function searchAll(list, searchValue) {
     //     if (!val.driver2) {
     //       if (!searchValue) {
     //         return val;
-    //       } else if (val.driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) {
+    //       } else if (driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) {
     //         return val;
     //       }
     //     } else {
     //       if (!searchValue) {
     //         return val;
-    //       } else if (val.driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())
+    //       } else if (driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())
     //         || val.driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())){
     //         return val;
     //       }
