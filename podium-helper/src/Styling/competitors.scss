@@ -6,6 +6,10 @@
   -o-background-size: cover;
   background-size: cover;
 
+  .search-sort-options {
+    display: flex;
+    justify-content: space-around;
+  }
 
   .MuiFormControl-root {
     width: 60%;
