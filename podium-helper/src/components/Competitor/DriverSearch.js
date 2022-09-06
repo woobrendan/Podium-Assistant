@@ -2,7 +2,6 @@ import DriverDetails from './DriverDetails';
 import '../../Styling/competitors.scss'
 import {TextField} from '@mui/material'
 import {useState} from 'react';
-import ToggleSearch from './toggleSearch';
 import BackToTopButton from './BackToTopButton';
 import filteredOptions from '../../functions/searchOptions';
 import useEntries from '../../functions/useEntries';
@@ -50,7 +49,6 @@ function DriverSearch() {
   const searchLabel = option ? `Search by ${option}`: "Search"
   return (
     <div className="competitors-container">
-      <ToggleSearch getOption={getSearchOption} />
       <ToggleSort getOption={getSearchOption} />
       <TextField 
         className="form-control"
