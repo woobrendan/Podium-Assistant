@@ -10,25 +10,9 @@ export default function searchAll(list, searchValue) {
     else if (val.team.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (driver2 && driver2.rating.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    else if (driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) return val; 
+    else if (driver2 && driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())) return val; 
     // else return null
-
-
-    //   case 'Nationality':
-    //     if (!val.driver2) {
-    //       if (!searchValue) {
-    //         return val;
-    //       } else if (driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) {
-    //         return val;
-    //       }
-    //     } else {
-    //       if (!searchValue) {
-    //         return val;
-    //       } else if (driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())
-    //         || val.driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())){
-    //         return val;
-    //       }
-    //     }
-    //     break;
 
 
     //   case 'Series':
