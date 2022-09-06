@@ -8,6 +8,7 @@ import filteredOptions from '../../functions/searchOptions';
 import useEntries from '../../functions/useEntries';
 import ToggleSort from './toggleSort';
 import searchAll from './searchAll';
+import NoResults from '../NoResults';
 import {sortBySeries, sortByVehicleType, sortByManufacturer, sortByClass} from '../../functions/sortFuncs';
 
 function DriverSearch() {
@@ -18,10 +19,14 @@ function DriverSearch() {
   const getSearchOption = (option) => {
     setOption(option);
   }
-  // console.log('vehicles', vehicles)
-  const mappedDrivers = searchAll(vehicles, searchValue).map((entry,index) =>(
-       <DriverDetails entry={entry} key={index} index={index}/>
-      ))
+
+  const searchResult = searchAll(vehicles, searchValue)
+
+  const mappedDrivers = searchResult.length > 0 
+    ? searchResult.map((entry,index) =>(
+      <DriverDetails entry={entry} key={index} index={index}/>
+    ))
+    : <NoResults />
 
   const setSortOption = (sortOption, entryArray) => {
     switch(sortOption) {
