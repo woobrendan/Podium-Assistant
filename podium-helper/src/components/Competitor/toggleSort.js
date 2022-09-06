@@ -32,12 +32,12 @@ export default function ToggleSort(props) {
           className="form-control"
         >
           <InputLabel>
-            Sort Options
+            Sort By
           </InputLabel>
           <Select
             className="form-control"
-            name="search-by"
-            label="Search Options"
+            name="sort-by"
+            label="Sort By"
             value={sortOption}
             onChange={handleToggle}
           >
