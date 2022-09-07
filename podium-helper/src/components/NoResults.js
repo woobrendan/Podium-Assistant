@@ -1,9 +1,30 @@
+import { CardActions, Card, CardContent, Typography } from "@mui/material"
+
 export default function NoResults() {
 
   return (
     <div className="No-Result">
-      <h1>No Results Found</h1>
-      <p>Could not find what you were searching for. Try searching again</p>
+      <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image="/static/images/cards/contemplative-reptile.jpg"
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
     </div>
   )
 }
