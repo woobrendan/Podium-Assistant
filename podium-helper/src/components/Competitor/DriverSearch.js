@@ -14,9 +14,7 @@ function DriverSearch() {
   const [option, setOption] = useState('');
   const {vehicles} = useEntries()
   
-  const getSearchOption = (option) => {
-    setOption(option);
-  }
+  const getSortOption = (option) => setOption(option);
 
   const searchResult = searchAll(vehicles, searchValue)
 
@@ -44,7 +42,7 @@ function DriverSearch() {
   return (
     <div className="competitors-container">
       <div className="search-sort-options">
-        <ToggleSort getOption={getSearchOption} />
+        <ToggleSort getOption={getSortOption} />
         <TextField 
           className="form-control"
           label="Search" 
