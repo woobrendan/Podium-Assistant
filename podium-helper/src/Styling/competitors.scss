@@ -32,7 +32,10 @@
 
     .No-Result {
       height: 100vh;
-      color: red;
+      
+      img {
+        object-fit: contain;
+      }
     }
 
     .competitor-card {
