@@ -1,8 +1,8 @@
 export default function NoResults() {
 
   return (
-    <>
-    <h1>No Results Found</h1>
-    </>
+    <div className="No-Result">
+      <h1>No Results Found</h1>
+    </div>
   )
 }
