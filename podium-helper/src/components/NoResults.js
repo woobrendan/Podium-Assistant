@@ -1,29 +1,25 @@
-import { CardActions, Card, CardContent, Typography } from "@mui/material"
+import { Card, CardContent, Typography, CardMedia } from "@mui/material"
+import missing from '../images/Missing_car.png';
 
 export default function NoResults() {
 
   return (
     <div className="No-Result">
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ minWidth: 600 }}>
       <CardMedia
         component="img"
         height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-        alt="green iguana"
+        image={missing}
+        alt="No Vehicles Found"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          No Results Found
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          We couldn't find what you were searching for. Try searching again
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
     </Card>
     </div>
   )
