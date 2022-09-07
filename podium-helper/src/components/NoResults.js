@@ -13,10 +13,10 @@ export default function NoResults() {
         alt="No Vehicles Found"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom variant="h2" component="div" color="error">
           No Results Found
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="error">
           We couldn't find what you were searching for. Try searching again
         </Typography>
       </CardContent>
