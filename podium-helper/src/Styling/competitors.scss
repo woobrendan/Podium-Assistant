@@ -30,6 +30,10 @@
     flex-wrap: wrap;
     justify-content: center;
 
+    .No-Result {
+      height: 100vh;
+    }
+
     .competitor-card {
       margin: 10px;
       position: relative;
