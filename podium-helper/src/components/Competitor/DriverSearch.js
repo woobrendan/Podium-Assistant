@@ -18,26 +18,27 @@ function DriverSearch() {
 
   const searchResult = searchAll(vehicles, searchValue)
 
-  const mappedDrivers = searchResult.length > 0 
-    ? searchResult.map((entry,index) =>(
-      <DriverDetails entry={entry} key={index} index={index}/>
-    ))
-    : <NoResults />
-
+  
   const setSortOption = (sortOption, entryArray) => {
     switch(sortOption) {
       case 'Number': 
-        return entryArray
+      return entryArray
       case 'Manufacturer': 
-        return sortByManufacturer(entryArray)
+      return sortByManufacturer(entryArray)
       case 'Vehicle Type':
         return sortByVehicleType(entryArray)
-      case 'Class': 
+        case 'Class': 
         return sortByClass(entryArray)
-      default:
-        return sortBySeries(entryArray)
-    }
-  }
+        default:
+          return sortBySeries(entryArray)
+        }
+      }
+    
+  const mappedDrivers = searchResult.length > 0 
+    ? setSortOption(option, searchResult).map((entry,index) =>(
+      <DriverDetails entry={entry} key={index} index={index}/>
+    ))
+    : <NoResults />
 
   return (
     <div className="competitors-container">
