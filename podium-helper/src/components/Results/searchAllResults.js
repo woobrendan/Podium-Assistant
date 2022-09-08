@@ -59,33 +59,16 @@ export default function SearchAllResults(list, searchValue) {
     for (const driver of allDrivers()) {
       if (driver.toLowerCase().includes(searchValue.toLowerCase())) return val
     }
-    // else if ()
 
     for (const vehicle of categoryArray('vehicle')) {
       if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) return val;
     }
 
-    //   case 'Car':
-    //     const vehiclesOfVal = categoryArray('vehicle');
-    //     for (const vehicle of vehiclesOfVal) {
-    //       if (!searchValue) {
-    //         return val;
-    //       } else if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
-    //         return val;
-    //       }
-    //     }
-    //     break;
+    for (const team of categoryArray('team')) {
+      if (team.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    }
 
-    //   case 'Team':
-    //     const teamsOfVal = categoryArray('team');
-    //     for (const team of teamsOfVal) {
-    //       if (!searchValue) {
-    //         return val;
-    //       } else if (team.toLowerCase().includes(searchValue.toLowerCase())) {
-    //         return val;
-    //       }
-    //     }
-    //     break;
+
 
     //   case 'Series':
     //   if (!searchValue) {
