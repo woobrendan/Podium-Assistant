@@ -69,16 +69,10 @@ export default function SearchAllResults(list, searchValue) {
       if (team.toLowerCase().includes(searchValue.toLowerCase())) return val;
     }
 
-    //   case 'Number':
-    //     const numbersOfVal = categoryArray('number');
-    //     for (const number of numbersOfVal) {
-    //       if (!searchValue) {
-    //         return val;
-    //       } else if (number.includes(searchValue)) {
-    //         return val;
-    //       }
-    //     }
-    //   break;
+    for (const number of categoryArray('number')) {
+      if (number.includes(searchValue)) return val;
+    }
+
 
     //   case 'Event':
     //       if (!searchValue) {
