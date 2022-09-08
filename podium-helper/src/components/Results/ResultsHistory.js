@@ -9,30 +9,19 @@ import SearchAllResults from './SearchAllResults';
 function ResultsHistory() {
   const { groupResults } = useEntries()
   const [searchValue, setSearchValue] = useState('');
-  const [option, setOption] = useState('');
-
-  const getSearchOption = (option) => {
-    setOption(option);
-  };
-  const searchLabel = option ? `Search by ${option}`: "Search";
-
-  // const allResults = filteredResultOptions(groupResults, option, searchValue).map((result, index) => (
-  //     <ResultTableHeader results={result} key={index}/>
-  // ));
 
   const allResults = SearchAllResults(groupResults, searchValue).map((result, index) => (
-    <ResultTableHeader results={result} key={index}/>
-));
+    <ResultTableHeader results={result} key={index} />
+  ));
 
   return (
     <div className="result-container">
       <Typography gutterBottom variant="h3" component="div">
         Result History
       </Typography>
-      <ToggleSearch page='result' getOption={getSearchOption}/>
        <TextField 
         id="standard-basic" 
-        label={searchLabel} 
+        label='Search' 
         variant="standard" 
         value={searchValue}
         onChange={e => {setSearchValue(e.target.value)}}
