@@ -4,6 +4,7 @@ import ResultTableHeader from './ResultTableHeader';
 import ToggleSearch from '../Competitor/toggleSearch';
 import useEntries from '../../functions/useEntries.js';
 import filteredResultOptions from './ResultOptions';
+import SearchAllResults from './SearchAllResults';
 
 function ResultsHistory() {
   const { groupResults } = useEntries()
@@ -15,9 +16,13 @@ function ResultsHistory() {
   };
   const searchLabel = option ? `Search by ${option}`: "Search";
 
-  const allResults = filteredResultOptions(groupResults, option, searchValue).map((result, index) => (
-      <ResultTableHeader results={result} key={index}/>
-  ));
+  // const allResults = filteredResultOptions(groupResults, option, searchValue).map((result, index) => (
+  //     <ResultTableHeader results={result} key={index}/>
+  // ));
+
+  const allResults = SearchAllResults(groupResults, searchValue).map((result, index) => (
+    <ResultTableHeader results={result} key={index}/>
+));
 
   return (
     <div className="result-container">
