@@ -55,6 +55,7 @@ export default function SearchAllResults(list, searchValue) {
 
     
     if (!searchValue) return val;
+    if (val.result1.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
 
     for (const driver of allDrivers()) {
       if (driver.toLowerCase().includes(searchValue.toLowerCase())) return val
@@ -67,16 +68,6 @@ export default function SearchAllResults(list, searchValue) {
     for (const team of categoryArray('team')) {
       if (team.toLowerCase().includes(searchValue.toLowerCase())) return val;
     }
-
-
-
-    //   case 'Series':
-    //   if (!searchValue) {
-    //     return val;
-    //   } else if (val.result1.series.toLowerCase().includes(searchValue.toLowerCase())) {
-    //     return val;
-    //   }
-    //   break;
 
     //   case 'Number':
     //     const numbersOfVal = categoryArray('number');
