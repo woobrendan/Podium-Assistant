@@ -18,9 +18,9 @@ function ResultsHistory() {
         Result History
       </Typography>
        <TextField 
-        id="standard-basic" 
         label='Search' 
-        variant="standard" 
+        variant="outlined" 
+        color="error"
         value={searchValue}
         onChange={e => {setSearchValue(e.target.value)}}
       />
