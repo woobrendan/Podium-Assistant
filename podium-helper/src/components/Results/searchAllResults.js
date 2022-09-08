@@ -3,7 +3,6 @@ import {compareDate} from '../../functions/helperFunc'
 export default function SearchAllResults(list, searchValue) {
 
   const filtered = list.filter(val => {
-    // console.log('val', val)
     const resultOneP1 = val.result1.first_place;
     const resultOneP2 = val.result1.second_place;
     const resultOneP3 = val.result1.third_place;
@@ -29,7 +28,6 @@ export default function SearchAllResults(list, searchValue) {
       return all;
     }
  
-
     const allDrivers = () => {
       const driverArray = [];
       for (const result of allPlaceResults()) {
@@ -56,6 +54,7 @@ export default function SearchAllResults(list, searchValue) {
     
     if (!searchValue) return val;
     if (val.result1.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    if (val.result1.event.toLowerCase().includes(searchValue.toLowerCase())) return val;
 
     for (const driver of allDrivers()) {
       if (driver.toLowerCase().includes(searchValue.toLowerCase())) return val
@@ -72,19 +71,6 @@ export default function SearchAllResults(list, searchValue) {
     for (const number of categoryArray('number')) {
       if (number.includes(searchValue)) return val;
     }
-
-
-    //   case 'Event':
-    //       if (!searchValue) {
-    //         return val;
-    //       } else if (val.result1.event.toLowerCase().includes(searchValue.toLowerCase())) {
-    //         return val;
-    //       }
-    //   break;
-
-    //   default:
-    //     return val; 
-    // }
   });
   return filtered.sort(compareDate);
 }
