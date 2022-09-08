@@ -3,7 +3,7 @@ import {compareDate} from '../../functions/helperFunc'
 export default function SearchAllResults(list, searchValue) {
 
   const filtered = list.filter(val => {
-    console.log('val', val)
+    // console.log('val', val)
     const resultOneP1 = val.result1.first_place;
     const resultOneP2 = val.result1.second_place;
     const resultOneP3 = val.result1.third_place;
@@ -55,26 +55,15 @@ export default function SearchAllResults(list, searchValue) {
 
     
     if (!searchValue) return val;
-    
+
     for (const driver of allDrivers()) {
       if (driver.toLowerCase().includes(searchValue.toLowerCase())) return val
     }
     // else if ()
 
-    // switch(option){
-    //   case 'All':
-    //     return val;
-
-    //   case 'Driver':
-    //     const drivers = allDrivers();
-    //     for (const driver of drivers) {
-    //       if (!searchValue) {
-    //         return val;
-    //       } else if (driver.toLowerCase().includes(searchValue.toLowerCase())) {
-    //         return val;
-    //       }
-    //     }
-    //     break;
+    for (const vehicle of categoryArray('vehicle')) {
+      if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    }
 
     //   case 'Car':
     //     const vehiclesOfVal = categoryArray('vehicle');
