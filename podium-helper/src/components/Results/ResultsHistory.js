@@ -1,9 +1,7 @@
 import {useState} from 'react';
 import {Typography, TextField} from '@mui/material'
 import ResultTableHeader from './ResultTableHeader';
-import ToggleSearch from '../Competitor/toggleSearch';
 import useEntries from '../../functions/useEntries.js';
-import filteredResultOptions from './ResultOptions';
 import SearchAllResults from './SearchAllResults';
 
 function ResultsHistory() {
