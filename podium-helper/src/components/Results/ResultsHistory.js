@@ -3,7 +3,7 @@ import {Typography, TextField} from '@mui/material'
 import ResultTableHeader from './ResultTableHeader';
 import ToggleSearch from '../Competitor/toggleSearch';
 import useEntries from '../../functions/useEntries.js';
-import filteredResultOptions from '../../functions/resultOptions';
+import filteredResultOptions from './ResultOptions';
 
 function ResultsHistory() {
   const { groupResults } = useEntries()
