@@ -9,7 +9,7 @@ function createDataSingleDriver(place, number, driver1, team, car) {
   return { place, number, driver1, team, car };
 }
 
-function ResultTableBbody(props) {
+export default function ResultTableBbody(props) {
 
   const podium = props.results;
   const first = podium.first_place;
@@ -17,9 +17,8 @@ function ResultTableBbody(props) {
   const third = podium.third_place;
 
   const checkPodium = () => {
-    const allResults = [];
+    const allResults = [createDataSingleDriver('1st', first.number, first.driver1.name, first.team, first.vehicle)];
     if(!first.driver2) {
-      allResults.push(createDataSingleDriver('1st', first.number, first.driver1.name, first.team, first.vehicle));
       if (second) {
         allResults.push(createDataSingleDriver('2nd', second.number, second.driver1.name, second.team, second.vehicle));
       } 
@@ -66,4 +65,3 @@ function ResultTableBbody(props) {
   )
 }
 
-export default ResultTable
