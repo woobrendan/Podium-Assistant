@@ -1,6 +1,6 @@
 import React from 'react';
 import {Table, TableCell, TableContainer, TableHead, TableRow, Paper} from '@mui/material'
-import ResultTable from './ResultTable';
+import ResultTableBody from './ResultTableBody';
 import FastLapTable from '../Podium_Results/FastLapTable';
 import '../../Styling/result.scss';
 
@@ -35,10 +35,10 @@ function ResultTableHeader(props) {
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
           </TableHead>
-          <ResultTable results={podiums.result1}/>
-          {podiums.result2 && <ResultTable results={podiums.result2}/>}
-          {podiums.result3 && <ResultTable results={podiums.result3}/>}
-          {podiums.result4 && <ResultTable results={podiums.result4}/>}
+          <ResultTableBody results={podiums.result1}/>
+          {podiums.result2 && <ResultTableBody results={podiums.result2}/>}
+          {podiums.result3 && <ResultTableBody results={podiums.result3}/>}
+          {podiums.result4 && <ResultTableBody results={podiums.result4}/>}
           <FastLapTable fastLap={podiums.fastLap}/>
         </Table>
       </TableContainer>
