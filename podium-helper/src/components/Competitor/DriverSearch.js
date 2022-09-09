@@ -20,18 +20,13 @@ function DriverSearch() {
 
   const setSortOption = (sortOption, entryArray) => {
     switch(sortOption) {
-      case 'Number': 
-      return entryArray
-      case 'Manufacturer': 
-      return sortByManufacturer(entryArray)
-      case 'Vehicle Type':
-        return sortByVehicleType(entryArray)
-        case 'Class': 
-        return sortByClass(entryArray)
-        default:
-          return sortBySeries(entryArray)
-        }
-      }
+      case 'Number': return entryArray
+      case 'Manufacturer': return sortByManufacturer(entryArray)
+      case 'Vehicle Type': return sortByVehicleType(entryArray)
+      case 'Class': return sortByClass(entryArray)
+      default: return sortBySeries(entryArray)
+    }
+  }
     
   const mappedDrivers = searchResult.length > 0 
     ? setSortOption(option, searchResult).map((entry,index) =>(
