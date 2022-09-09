@@ -3,6 +3,7 @@ import {Typography, TextField} from '@mui/material'
 import ResultTableHeader from './ResultTableHeader';
 import useEntries from '../../functions/useEntries.js';
 import SearchAllResults from './SearchAllResults';
+import BackToTopButton from '../Competitor/BackToTopButton';
 
 function ResultsHistory() {
   const { groupResults } = useEntries()
@@ -27,6 +28,7 @@ function ResultsHistory() {
       <div className="result-history-list">
         {allResults}
       </div>
+      <BackToTopButton />
     </div>
   )
 }
