@@ -3,40 +3,25 @@ import {compareDate} from '../../functions/helperFunc'
 export default function SearchAllResults(list, searchValue) {
 
   const filtered = list.filter(val => {
-    const resultOneP1 = val.result1.first_place;
-    const resultOneP2 = val.result1.second_place;
-    const resultOneP3 = val.result1.third_place;
 
     const allPlaceResults = () => {
-      const all = [];
-      all.push(resultOneP1, resultOneP2, resultOneP3)
+      const all = [val.result1.first_place, val.result1.second_place, val.result1.third_place];
 
       if (val.result2) {
-        all.push(
-          val.result2.first_place, 
-          val.result2.second_place, 
-          val.result2.third_place
-        )
+        all.push(val.result2.first_place, val.result2.second_place, val.result2.third_place);
       }
       if (val.result3) {
-        all.push(
-          val.result3.first_place, 
-          val.result3.second_place, 
-          val.result3.third_place
-        )
+        all.push(val.result3.first_place, val.result3.second_place, val.result3.third_place);
       }
       return all;
     }
  
+    // Get all drivers from one result (all classes, one series, one race)
     const allDrivers = () => {
       const driverArray = [];
       for (const result of allPlaceResults()) {
-        if (result) {
-          driverArray.push(result.driver1.name)
-          if (result.driver2) {
-            driverArray.push(result.driver2.name)
-          }
-        }
+        if (result) driverArray.push(result.driver1.name)
+        if (result.driver2) driverArray.push(result.driver2.name)
       }
       return driverArray;
     }
@@ -44,9 +29,7 @@ export default function SearchAllResults(list, searchValue) {
     const categoryArray = (category) => {
       const newArray = [];
       for (const placeResult of allPlaceResults()) {
-        if (placeResult) {
-          newArray.push(placeResult[category])
-        }
+        if (placeResult) newArray.push(placeResult[category])
       }
       return newArray;
     }
@@ -71,6 +54,7 @@ export default function SearchAllResults(list, searchValue) {
     for (const number of categoryArray('number')) {
       if (number.includes(searchValue)) return val;
     }
+    
   });
   return filtered.sort(compareDate);
 }
