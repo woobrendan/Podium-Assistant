@@ -5,7 +5,7 @@ import {useState} from 'react';
 import BackToTopButton from './BackToTopButton';
 import useEntries from '../../functions/useEntries';
 import ToggleSort from './toggleSort';
-import searchAll from './searchAll';
+import searchAllEntries from './searchAllEntries';
 import NoResults from '../NoResults';
 import {sortBySeries, sortByVehicleType, sortByManufacturer, sortByClass} from '../../functions/sortFuncs';
 
@@ -16,9 +16,8 @@ function DriverSearch() {
   
   const getSortOption = (option) => setOption(option);
 
-  const searchResult = searchAll(vehicles, searchValue)
+  const searchResult = searchAllEntries(vehicles, searchValue)
 
-  
   const setSortOption = (sortOption, entryArray) => {
     switch(sortOption) {
       case 'Number': 
