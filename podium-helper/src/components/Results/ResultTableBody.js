@@ -45,9 +45,9 @@ export default function ResultTableBbody(props) {
         </TableRow>
       </TableHead>
       <TableBody>
-        {checkPodium().map((row) => (
+        {checkPodium().map((row, index) => (
           <TableRow
-            key={row.number}
+            key={index}
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
           >
             <TableCell component="th" scope="row">
