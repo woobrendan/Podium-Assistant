@@ -3,7 +3,7 @@ import {Typography, TextField} from '@mui/material'
 import ResultTableHeader from './ResultTableHeader';
 import useEntries from '../../functions/useEntries.js';
 import SearchAllResults from './SearchAllResults';
-import BackToTopButton from '../Competitor/BackToTopButton';
+import BackToTopButton from '../BackToTopButton';
 
 function ResultsHistory() {
   const { groupResults } = useEntries()
