@@ -5,6 +5,7 @@ import SRO from '../images/SRO.jpg';
 import '../Styling/navBar.scss';
 import { useNavigate } from 'react-router-dom';
 
+
 const pages = [
   {
     name: 'Competitors',
@@ -44,8 +45,9 @@ function NavBar() {
     <div className="nav-bar">
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{bgcolor: '#FF0000'}}>
+        {/* <a onClick={() => navigate('/Competitors')}>Competitors</a> */}
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             size="large"
             edge="start"
             color="inherit"
@@ -78,10 +80,11 @@ function NavBar() {
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
           <a className='img-container' href="https://www.sro-america.com/">
             <img src={SRO} alt="SRO" />
           </a>
+          <a onClick={() => navigate('/Competitors')}>Competitors</a>
         </Toolbar>
       </AppBar>
     </Box>
