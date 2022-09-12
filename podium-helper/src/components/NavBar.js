@@ -3,7 +3,7 @@ import {Typography, IconButton, MenuItem, Menu, Box, Toolbar, AppBar} from '@mui
 import MenuIcon from '@mui/icons-material/Menu';
 import SRO from '../images/SRO.jpg';
 import '../Styling/navBar.scss';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 
 const pages = [
@@ -84,7 +84,9 @@ function NavBar() {
           <a className='img-container' href="https://www.sro-america.com/">
             <img src={SRO} alt="SRO" />
           </a>
-          <a onClick={() => navigate('/Competitors')}>Competitors</a>
+          <Link to='/'>New Podium</Link>
+          <Link to='/Competitors'>Competitors</Link>
+          <Link to='/Results'>Results</Link>
         </Toolbar>
       </AppBar>
     </Box>
