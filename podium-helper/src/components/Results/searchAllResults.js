@@ -21,7 +21,7 @@ export default function SearchAllResults(list, searchValue) {
       const driverArray = [];
       for (const result of allPlaceResults()) {
         if (result) driverArray.push(result.driver1.name)
-        if (result.driver2) driverArray.push(result.driver2.name)
+        if (result && result.driver2) driverArray.push(result.driver2.name)
       }
       return driverArray;
     }
