@@ -1,4 +1,6 @@
 @import url('http://fonts.cdnfonts.com/css/sports-jersey');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+
 .competitors-container {
   background: url(../images/background1.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -58,6 +60,14 @@
 
       .class-banner-img {
           width: 140px;
+      }
+
+      .MuiCardHeader-content {
+        span {
+          font-family: 'Bebas Neue', cursive;
+          font-size: 30px;
+          font-weight: normal;
+        }
       }
 
       .manufacturer-avatar {
