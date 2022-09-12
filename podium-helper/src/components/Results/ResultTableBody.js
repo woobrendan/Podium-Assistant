@@ -17,8 +17,9 @@ export default function ResultTableBbody(props) {
   const third = podium.third_place;
 
   const checkPodium = () => {
-    const allResults = [createDataSingleDriver('1st', first.number, first.driver1.name, first.team, first.vehicle)];
+    const allResults = [];
     if(!first.driver2) {
+      allResults.push(createDataSingleDriver('1st', first.number, first.driver1.name, first.team, first.vehicle))
       if (second) {
         allResults.push(createDataSingleDriver('2nd', second.number, second.driver1.name, second.team, second.vehicle));
       } 
