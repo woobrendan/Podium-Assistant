@@ -43,53 +43,20 @@ function NavBar() {
 
   return (
     <div className="nav-bar">
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{bgcolor: '#FF0000'}}>
-        {/* <a onClick={() => navigate('/Competitors')}>Competitors</a> */}
-        <Toolbar>
-          {/* <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-            onClick={handleOpenNavMenu}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page.name} onClick={() => handlePath(page.action)}>
-                  <Typography textAlign="center">{page.name}</Typography>
-                </MenuItem>
-              ))}
-            </Menu> */}
-          <a className='img-container' href="https://www.sro-america.com/">
-            <img src={SRO} alt="SRO" />
-          </a>
-          <Link to='/'>New Podium</Link>
-          <Link to='/Competitors'>Competitors</Link>
-          <Link to='/Results'>Results</Link>
-        </Toolbar>
-      </AppBar>
-    </Box>
+      <Box sx={{ flexGrow: 1 }}>
+        <AppBar position="static" sx={{bgcolor: '#FF0000'}}>
+          <Toolbar>
+            <div className="navbar-links">
+              <a className='img-container' href="https://www.sro-america.com/">
+                <img src={SRO} alt="SRO" />
+              </a>
+              <Link to='/'>New Podium</Link>
+              <Link to='/Competitors'>Competitors</Link>
+              <Link to='/Results'>Results</Link>
+            </div>
+          </Toolbar>
+        </AppBar>
+      </Box>
     </div>
   )
 }
