@@ -14,7 +14,7 @@
     vehicle: "Porsche 911 GT3-R (991.ii)",
     classification: "Pro-Am", 
     number: "00",
-    carImage: '',
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F304%2F%2FRL_WG_SRO_06324f.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -32,7 +32,7 @@
     vehicle: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "1",
-    carImage: kpax6,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F299%2F%2FFH1_6911.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -50,7 +50,7 @@
     vehicle: "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "3",
-    carImage: kpax1,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F81%2F285%2F%2F_RM28469.JPG',
     series: 'GT World Challenge America'
   },
   {
@@ -68,7 +68,7 @@
     vehicle: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "04",
-    carImage: riley04,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FDY-12A86I3525.jpg',
     series: 'GT World Challenge America'
   },
   {
