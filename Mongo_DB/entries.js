@@ -15,7 +15,7 @@
     classification: "Pro-Am", 
     number: "00",
     carImage: '',
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "K-PAX Racing",
@@ -33,7 +33,7 @@
     classification: "Pro",
     number: "1",
     carImage: kpax6,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "K-PAX Racing",
@@ -51,7 +51,7 @@
     classification: "Pro",
     number: "3",
     carImage: kpax1,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Crowdstrike Racing with Riley Motorsports",
@@ -69,7 +69,7 @@
     classification: "Pro-Am",
     number: "04",
     carImage: riley04,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "US Racetronics",
@@ -87,7 +87,7 @@
     classification: "Pro",
     number: "6",
     carImage: usrace6,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "DXDT Racing",
@@ -105,7 +105,7 @@
     classification: "Pro-Am",
     number: "08",
     carImage: dxdt08,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "TR3 Racing",
@@ -123,7 +123,7 @@
     classification: "Pro-Am",
     number: "9",
     carImage: tr39,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Ian Lacy Racing",
@@ -141,7 +141,7 @@
     classification: "Pro-Am",
     number: "12",
     carImage: ian12,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Triarsi Competizione",
@@ -159,7 +159,7 @@
     classification: "Pro-Am",
     number: "13",
     carImage: triarsi13,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Triarsi Competizione",
@@ -177,7 +177,7 @@
     classification: "Am",
     number: "23",
     carImage: triarsi23,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Winward Racing",
@@ -195,7 +195,7 @@
     classification: "Pro",
     number: "33",
     carImage: winward33,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "ST Racing",
@@ -213,7 +213,7 @@
     classification: "Pro-Am",
     number: "38",
     carImage: st38,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "RealTime Racing",
@@ -231,7 +231,7 @@
     classification: "Pro-Am",
     number: "43",
     carImage: real43,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Wright Motorsports",
@@ -249,7 +249,7 @@
     classification: "Pro-Am",
     number: "45",
     carImage: wright45,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "AF Corse",
@@ -267,7 +267,7 @@
     classification: "Am",
     number: "61",
     carImage: AF61,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "DXDT Racing",
@@ -285,7 +285,7 @@
     classification: "Pro-Am",
     number: "63",
     carImage: DXDT63,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Zelus Motorsports",
@@ -303,7 +303,7 @@
     classification: "Pro-Am",
     number: "88",
     carImage: Zelus88,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Zelus Motorsports",
@@ -321,7 +321,7 @@
     classification: "Pro-Am",
     number: "91",
     carImage: Zelus91,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Racers Edge Motorsports",
@@ -339,7 +339,7 @@
     classification: "Pro-Am",
     number: "93",
     carImage: racers93,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "BimmerWorld",
@@ -357,7 +357,7 @@
     classification: "Pro-Am",
     number: "94",
     carImage: bimmer94,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "Turner Motorsport",
@@ -375,7 +375,7 @@
     classification: "Pro",
     number: "96",
     carImage: turner96,
-    series: gtwca
+    series: 'GT World Challenge America'
   },
   {
     team: "GMG Racing",
@@ -393,7 +393,7 @@
     classification: "Pro-Am",
     number: "2",
     carImage: GMG2,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "NOLASPORT",
@@ -411,7 +411,7 @@
     classification: "Am",
     number: "7",
     carImage: NOLA7,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Flying Lizard Motorsport",
@@ -429,7 +429,7 @@
     classification: "Pro-Am",
     number: "8",
     carImage: flm8,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Fast Track Racing",
@@ -447,7 +447,7 @@
     classification: "Pro-Am",
     number: "10",
     carImage: FTR10,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Fast Track Racing",
@@ -465,7 +465,7 @@
     classification: "Pro-Am",
     number: "11",
     carImage: FTR11,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "BSport Racing",
@@ -483,7 +483,7 @@
     classification: "Pro-Am",
     number: "15",
     carImage: bsport15,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Hattori Motorsports",
@@ -501,7 +501,7 @@
     classification: "Pro-Am",
     number: "016",
     carImage: hattori016,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "The Racers Group",
@@ -519,7 +519,7 @@
     classification: "Am",
     number: "17",
     carImage: trg17,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "RS1",
@@ -537,7 +537,7 @@
     classification: "Silver",
     number: "18",
     carImage: rs118,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "NOLASPORT",
@@ -555,7 +555,7 @@
     classification: "Am",
     number: "19",
     carImage: nola19,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Carrus Callas Raceteam",
@@ -573,7 +573,7 @@
     classification: "Am",
     number: "20",
     carImage: carrus21,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Heart of Racing Team",
@@ -591,7 +591,7 @@
     classification: "Pro-Am",
     number: "24",
     carImage: hort24,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Prive Motorsports/Topp Racing",
@@ -609,7 +609,7 @@
     classification: "Pro-Am",
     number: "26",
     carImage: prive26,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Capstone Motorsportrs",
@@ -627,7 +627,7 @@
     classification: "Silver",
     number: "32",
     carImage: cap32,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Conquest Racing/JWF Motorsports",
@@ -645,7 +645,7 @@
     classification: "Silver",
     number: "34",
     carImage: conquest34,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Conquest Racing",
@@ -663,7 +663,7 @@
     classification: "Am",
     number: "35",
     carImage: conquest35,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "BimmerWorld",
@@ -681,7 +681,7 @@
     classification: "Am",
     number: "36",
     carImage: bimmer36,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Cameron Racing",
@@ -699,7 +699,7 @@
     classification: "Pro-Am",
     number: "39",
     carImage: cameron39,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "NOLASPORT",
@@ -717,7 +717,7 @@
     classification: "Pro-Am",
     number: "47",
     carImage: nola47,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Team Saleen",
@@ -735,7 +735,7 @@
     classification: "Pro-Am",
     number: "49",
     carImage: saleen49,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Chouest Povoledo Racing",
@@ -753,7 +753,7 @@
     classification: "Pro-Am",
     number: "50",
     carImage: chouest50,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "AutoTechnic Racing",
@@ -771,7 +771,7 @@
     classification: "Silver",
     number: "51",
     carImage: auto51,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "AutoTechnic Racing",
@@ -789,7 +789,7 @@
     classification: "Pro-Am",
     number: "52",
     carImage: auto52,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "AutoTechnic Racing",
@@ -807,7 +807,7 @@
     classification: "Am",
     number: "53",
     carImage: auto53,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Accerlating Performance",
@@ -825,7 +825,7 @@
     classification: "Pro-Am",
     number: "55",
     carImage: accelerate55,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Dexter Racing",
@@ -843,7 +843,7 @@
     classification: "Am",
     number: "60",
     carImage: dexter60,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "The Racers Group",
@@ -861,7 +861,7 @@
     classification: "Am",
     number: "66",
     carImage: trg66,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Smooge Racing",
@@ -879,7 +879,7 @@
     classification: "Silver",
     number: "68",
     carImage: smooge68,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Smooge Racing",
@@ -897,7 +897,7 @@
     classification: "Pro-Am",
     number: "69",
     carImage: smooge68,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "KRUGSPEED",
@@ -915,7 +915,7 @@
     classification: "Am",
     number: "72",
     carImage: krug72,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "RENNtech Motorsports",
@@ -933,7 +933,7 @@
     classification: "Pro-Am",
     number: "79",
     carImage: renn79,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Rooster Hall Racing",
@@ -951,7 +951,7 @@
     classification: "Am",
     number: "80",
     carImage: rooster80,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "BimmerWorld",
@@ -969,7 +969,7 @@
     classification: "Pro-Am",
     number: "82",
     carImage: bimmer82,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "RS1",
@@ -987,7 +987,7 @@
     classification: "Am",
     number: "83",
     carImage: rs183,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "RENNtech Motorsports",
@@ -1005,7 +1005,7 @@
     classification: "Am",
     number: "89",
     carImage: renn89,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Random Vandals Racing",
@@ -1023,7 +1023,7 @@
     classification: "Am",
     number: "98",
     carImage: random98,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Dexter Racing",
@@ -1041,7 +1041,7 @@
     classification: "Silver",
     number: "112",
     carImage: dexter112,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Premier Racing",
@@ -1059,7 +1059,7 @@
     classification: "Pro-Am",
     number: "120",
     carImage: premier120,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "ARG/Rotek Racing",
@@ -1077,7 +1077,7 @@
     classification: "Pro-Am",
     number: "124",
     carImage: arg124,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Team ACP - Tangerine Associates",
@@ -1095,7 +1095,7 @@
     classification: "Am",
     number: "152",
     carImage: ACP152,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Indian Summer Racing",
@@ -1113,7 +1113,7 @@
     classification: "Pro-Am",
     number: "319",
     carImage: '',
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Regal Motorsports",
@@ -1131,7 +1131,7 @@
     classification: "Am",
     number: "427",
     carImage: regal427,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Zelus Motorsports",
@@ -1149,7 +1149,7 @@
     classification: "Am",
     number: "888",
     carImage: zelus888,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "CarBahn w/ Peregrine Racing",
@@ -1167,7 +1167,7 @@
     classification: "Pro-Am",
     number: "930",
     carImage: car930,
-    series: gt4a
+    series: 'Pirelli GT4 America'
   },
   {
     team: "Fast Track Racing",
@@ -1180,7 +1180,7 @@
     classification: "TCX",
     number: "1",
     carImage: FTR1,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Rigid Speed",
@@ -1193,7 +1193,7 @@
     classification: "TCX",
     number: "24",
     carImage: rigid24,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Rigid Speed",
@@ -1206,7 +1206,7 @@
     classification: "TCX",
     number: "26",
     carImage: rigid26,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Fast Track Racing",
@@ -1219,7 +1219,7 @@
     classification: "TCX",
     number: "29",
     carImage: ftr29,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "HARD Motorsports",
@@ -1232,7 +1232,7 @@
     classification: "TCX",
     number: "30",
     carImage: hard30,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Rooster Hall Racing",
@@ -1245,7 +1245,7 @@
     classification: "TCX",
     number: "44",
     carImage: rooster44,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Homewrecker Racing LLC",
@@ -1258,7 +1258,7 @@
     classification: "TCX",
     number: "51",
     carImage: home51,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Fast Track Racing",
@@ -1271,7 +1271,7 @@
     classification: "TCX",
     number: "54",
     carImage: FTR54,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Accerlating Performance",
@@ -1284,7 +1284,7 @@
     classification: "TCX",
     number: "57",
     carImage: accerlate57,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Fast Track Racing",
@@ -1297,7 +1297,7 @@
     classification: "TCX",
     number: "76",
     carImage: FTR76,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Random Vandals Racing",
@@ -1310,7 +1310,7 @@
     classification: "TCX",
     number: "97",
     carImage: random97,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "DRS & Garagistic",
@@ -1323,7 +1323,7 @@
     classification: "TC",
     number: "06",
     carImage: DRS06,
-    series: tcam
+    series: 'TC America'
   },{
     team: "VGRT",
     driver1: {
@@ -1335,7 +1335,7 @@
     classification: "TC",
     number: "8",
     carImage: vgrt8,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Skip Barber Racing School",
@@ -1348,7 +1348,7 @@
     classification: "TC",
     number: "9",
     carImage: skip9,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "DRS & Garagistic",
@@ -1361,7 +1361,7 @@
     classification: "TC",
     number: "09",
     carImage: DRS09,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "TechSport Racing",
@@ -1374,7 +1374,7 @@
     classification: "TC",
     number: "18",
     carImage: '',
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "LA Honda World Racing",
@@ -1387,7 +1387,7 @@
     classification: "TC",
     number: "37",
     carImage: LA37,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Skip Barber Racing SChool",
@@ -1400,7 +1400,7 @@
     classification: "TC",
     number: "42",
     carImage: skip42,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "MINI JCW Team",
@@ -1413,7 +1413,7 @@
     classification: "TC",
     number: "60",
     carImage: mini60,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "FTG Racing",
@@ -1426,7 +1426,7 @@
     classification: "TC",
     number: "70",
     carImage: ftg70,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "LA Honda World Racing",
@@ -1439,7 +1439,7 @@
     classification: "TC",
     number: "73",
     carImage: la73,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Genracer / Ricca Autosport",
@@ -1452,7 +1452,7 @@
     classification: "TC",
     number: "78",
     carImage: gen78,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Genracer / Ricca Autosport",
@@ -1465,7 +1465,7 @@
     classification: "TC",
     number: "88",
     carImage: gen88,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Skip Barber Racing School",
@@ -1478,7 +1478,7 @@
     classification: "TCA",
     number: "2",
     carImage: skip2,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "LA Honda World Racing",
@@ -1491,7 +1491,7 @@
     classification: "TCA",
     number: "5",
     carImage: la5,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Skip Barber Racing School",
@@ -1504,7 +1504,7 @@
     classification: "TCA",
     number: "16",
     carImage: skip16,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Skip Barber Racing School",
@@ -1517,7 +1517,7 @@
     classification: "TCA",
     number: "20",
     carImage: '',
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "TechSport Racing",
@@ -1530,7 +1530,7 @@
     classification: "TCA",
     number: "21",
     carImage: tech21,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "TechSport Racing",
@@ -1543,7 +1543,7 @@
     classification: "TCA",
     number: "22",
     carImage: tech22,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "TechSport Racing",
@@ -1556,7 +1556,7 @@
     classification: "TCA",
     number: "23",
     carImage: tech23,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Bryan Herta Autosport w/ Curb-Agajanian",
@@ -1569,7 +1569,7 @@
     classification: "TCA",
     number: "33",
     carImage: bha33,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "MINI JCW Team",
@@ -1582,7 +1582,7 @@
     classification: "TCA",
     number: "61",
     carImage: mini61,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "MINI JCW Team",
@@ -1595,7 +1595,7 @@
     classification: "TCA",
     number: "62",
     carImage: mini62,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "LA Honda World Racing",
@@ -1608,7 +1608,7 @@
     classification: "TCA",
     number: "77",
     carImage: la77,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Bryan Herta Autosport w/ Curb-Agajanian",
@@ -1621,7 +1621,7 @@
     classification: "TCA",
     number: "98",
     carImage: bha98,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "VGRT",
@@ -1634,7 +1634,7 @@
     classification: "TCA",
     number: "780",
     carImage: vgrt780,
-    series: tcam
+    series: 'TC America'
   },
   {
     team: "Team Hardpoint",
@@ -1647,7 +1647,7 @@
     classification: "SRO3",
     number: "00",
     carImage: '',
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "GMG Racing",
@@ -1660,7 +1660,7 @@
     classification: "GT4",
     number: "2",
     carImage: gmg2a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "CrowdStrike w/ Riley Motorsports",
@@ -1673,7 +1673,7 @@
     classification: "SRO3",
     number: "04",
     carImage: crwd04a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Flying Lizard Motorsports",
@@ -1686,7 +1686,7 @@
     classification: "GT4",
     number: "8",
     carImage: flm8,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "BSport Racing",
@@ -1699,7 +1699,7 @@
     classification: "GT4",
     number: "15",
     carImage: bsport15,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Hattori Motorsports",
@@ -1712,7 +1712,7 @@
     classification: "GT4",
     number: "016",
     carImage: hattori016,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "NOLASPORT",
@@ -1725,7 +1725,7 @@
     classification: "GT4",
     number: "19",
     carImage: nola19a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Carrus Callas Raceteam",
@@ -1738,7 +1738,7 @@
     classification: "GT4",
     number: "21",
     carImage: carrus21a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "SRQ Motorsports Motorsports",
@@ -1751,7 +1751,7 @@
     classification: "GT4",
     number: "22",
     carImage: srq22,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Heart of Racing Team",
@@ -1764,7 +1764,7 @@
     classification: "GT4",
     number: "25",
     carImage: hort25a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Daskalos Motorsports",
@@ -1777,7 +1777,7 @@
     classification: "SRO3",
     number: "27",
     carImage: dask27,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "SRQ Motorsports Group",
@@ -1790,7 +1790,7 @@
     classification: "GT4",
     number: "28",
     carImage: srq28,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Conquest Racing",
@@ -1803,7 +1803,7 @@
     classification: "GT4",
     number: "35",
     carImage: '',
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Triarsi Competizione",
@@ -1816,7 +1816,7 @@
     classification: "SRO3",
     number: "37",
     carImage: triarsi37a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Cameron Racing",
@@ -1829,7 +1829,7 @@
     classification: "GT4",
     number: "39",
     carImage: cameron39a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Chouest Povoledo Racing",
@@ -1842,7 +1842,7 @@
     classification: "GT4",
     number: "50",
     carImage: chouest50a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Accelerating Performance",
@@ -1855,7 +1855,7 @@
     classification: "GT4",
     number: "55",
     carImage: accerlate55a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "SKI Autosports",
@@ -1868,7 +1868,7 @@
     classification: "SRO3",
     number: "56",
     carImage: SKI56,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "GMG Racing",
@@ -1881,7 +1881,7 @@
     classification: "GT2",
     number: "58",
     carImage: gmg58,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Dexter Racing",
@@ -1894,7 +1894,7 @@
     classification: "GT4",
     number: "60",
     carImage: dexter60,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Smooge Racing",
@@ -1907,7 +1907,7 @@
     classification: "GT4",
     number: "67",
     carImage: smooge67,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Smooge Racing",
@@ -1920,7 +1920,7 @@
     classification: "GT4",
     number: "69",
     carImage: smooge67,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "MISHUMOTORS",
@@ -1933,7 +1933,7 @@
     classification: "SRO3",
     number: "70",
     carImage: mish70,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "GMG Racing",
@@ -1946,7 +1946,7 @@
     classification: "GT4",
     number: "71",
     carImage: gmg71,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "RENNtech Motorsports",
@@ -1959,7 +1959,7 @@
     classification: "GT4",
     number: "79",
     carImage: renn79a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Zelus Motorsports",
@@ -1972,7 +1972,7 @@
     classification: "SRO3",
     number: "88",
     carImage: zelus88a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "RENNtech Motorsports",
@@ -1985,7 +1985,7 @@
     classification: "GT4",
     number: "89",
     carImage: renn89a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Rotek Racing",
@@ -1998,7 +1998,7 @@
     classification: "GT4",
     number: "99",
     carImage: rotek99,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Premier Racing",
@@ -2011,7 +2011,7 @@
     classification: "GT4",
     number: "120",
     carImage: premier120a,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "ARG/Rotek Racing",
@@ -2024,7 +2024,7 @@
     classification: "GT4",
     number: "124",
     carImage: arg124,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Zelus Motorsports",
@@ -2037,7 +2037,7 @@
     classification: "SRO3",
     number: "191",
     carImage: zelus191,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Zelus Motorsports",
@@ -2050,7 +2050,7 @@
     classification: "GT4",
     number: "888",
     carImage: zelus888,
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Regal Motorsports LLC/Bartone Bros",
@@ -2063,7 +2063,7 @@
     classification: "GT4",
     number: "3",
     carImage: '',
-    series: gtam
+    series: 'GT America'
   },
   {
     team: "Regal Motorsports LLC/Bartone Bros",
@@ -2076,7 +2076,7 @@
     classification: "GT4",
     number: "427",
     carImage: '',
-    series: gtam
+    series: 'GT America'
   },
 
   
