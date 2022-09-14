@@ -572,7 +572,7 @@
     vehicle: "Toyota GR Supra",
     classification: "Am",
     number: "20",
-    carImage: carrus21,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472061.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -590,7 +590,7 @@
     vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "24",
-    carImage: hort24,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_51026f.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -626,7 +626,7 @@
     vehicle: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "32",
-    carImage: cap32,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_54248f.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -644,7 +644,7 @@
     vehicle: "Mercedes-AMG GT4",
     classification: "Silver",
     number: "34",
-    carImage: conquest34,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471906.jpg',
     series: 'Pirelli GT4 America'
   },
   {
