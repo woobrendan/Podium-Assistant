@@ -428,7 +428,7 @@
     vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "8",
-    carImage: flm8,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335866.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -446,7 +446,7 @@
     vehicle: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "10",
-    carImage: FTR10,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471986.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -464,7 +464,7 @@
     vehicle: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "11",
-    carImage: FTR11,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F361%2F%2F9B243085-F8D3-4FEE-978B-654979C2B6E0_01.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -482,7 +482,7 @@
     vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "15",
-    carImage: bsport15,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F366%2F%2FRL_WG_SRO_05269f.jpg',
     series: 'Pirelli GT4 America'
   },
   {
