@@ -86,7 +86,7 @@
     vehicle: "Mercedes-AMG GT3",
     classification: "Pro",
     number: "6",
-    carImage: usrace6,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10314f.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -104,7 +104,7 @@
     vehicle: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "08",
-    carImage: dxdt08,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2FVIR_GTWCA_Q_GM_2403291.JPG',
     series: 'GT World Challenge America'
   },
   {
@@ -122,7 +122,7 @@
     vehicle: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "9",
-    carImage: tr39,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F293%2F%2FRL_VIR_45415f_1.jpg',
     series: 'GT World Challenge America'
   },
   {
