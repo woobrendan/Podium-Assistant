@@ -284,7 +284,7 @@
     vehicle: "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "63",
-    carImage: DXDT63,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10359f.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -302,7 +302,7 @@
     vehicle: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "88",
-    carImage: Zelus88,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FFH1_3959.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -320,7 +320,7 @@
     vehicle: "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "91",
-    carImage: Zelus91,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F300%2F%2F072222_WGI_bcpix2462628.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -338,7 +338,7 @@
     vehicle: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "93",
-    carImage: racers93,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_09976f.jpg',
     series: 'GT World Challenge America'
   },
   {
