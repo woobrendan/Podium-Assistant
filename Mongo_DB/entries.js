@@ -356,7 +356,7 @@
     vehicle: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "94",
-    carImage: bimmer94,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FRL_VIR_43517f.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -374,7 +374,7 @@
     vehicle: "BMW M4 GT3",
     classification: "Pro",
     number: "96",
-    carImage: turner96,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FMRM_5040.JPG',
     series: 'GT World Challenge America'
   },
   {
@@ -392,7 +392,7 @@
     vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "2",
-    carImage: GMG2,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472384.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -410,7 +410,7 @@
     vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "7",
-    carImage: NOLA7,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2473016.jpg',
     series: 'Pirelli GT4 America'
   },
   {
