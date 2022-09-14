@@ -212,7 +212,7 @@
     vehicle: "BMW M4 GT3",
     classification: "Pro-Am",
     number: "38",
-    carImage: st38,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387612DN-severe-noise.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -230,7 +230,7 @@
     vehicle: "Acura NSX GT3",
     classification: "Pro-Am",
     number: "43",
-    carImage: real43,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387571.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -248,7 +248,7 @@
     vehicle: "Porsche 911 GT3-R (991.ii)",
     classification: "Pro-Am",
     number: "45",
-    carImage: wright45,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10326f.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -266,7 +266,7 @@
     vehicle: "Ferrari 488 GT3",
     classification: "Am",
     number: "61",
-    carImage: AF61,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F81%2F290%2F%2FNOLA_SRO_20220522_Rizzo_29679.JPG',
     series: 'GT World Challenge America'
   },
   {
