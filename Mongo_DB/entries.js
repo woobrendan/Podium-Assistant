@@ -140,7 +140,7 @@
     vehicle: "Aston Martin Vantage AMR GT3",
     classification: "Pro-Am",
     number: "12",
-    carImage: ian12,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FP6180569.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -158,7 +158,7 @@
     vehicle: "Ferrari 488 GT3 EVO",
     classification: "Pro-Am",
     number: "13",
-    carImage: triarsi13,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F293%2F%2FRL_VIR_45437f_1.jpg',
     series: 'GT World Challenge America'
   },
   {
@@ -176,7 +176,7 @@
     vehicle: "Ferrari 488 GT3 EVO",
     classification: "Am",
     number: "23",
-    carImage: triarsi23,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F304%2F%2FT6P_8515.JPG',
     series: 'GT World Challenge America'
   },
   {
@@ -194,7 +194,7 @@
     vehicle: "Mercedes-AMG GT3",
     classification: "Pro",
     number: "33",
-    carImage: winward33,
+    carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F301%2F%2FT6P_6471.jpg',
     series: 'GT World Challenge America'
   },
   {
