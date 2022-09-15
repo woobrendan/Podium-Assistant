@@ -734,7 +734,7 @@
     vehicle: "Saleen 1",
     classification: "Pro-Am",
     number: "49",
-    carImage: saleen49,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472326.jpg' ,
     series: 'Pirelli GT4 America'
   },
   {
@@ -752,7 +752,7 @@
     vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "50",
-    carImage: chouest50,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471970.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -770,7 +770,7 @@
     vehicle: "BMW M4 GT4",
     classification: "Silver",
     number: "51",
-    carImage: auto51,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2473005.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -788,7 +788,7 @@
     vehicle: "BMW M4 GT4",
     classification: "Pro-Am",
     number: "52",
-    carImage: auto52,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335932.jpg',
     series: 'Pirelli GT4 America'
   },
   {
