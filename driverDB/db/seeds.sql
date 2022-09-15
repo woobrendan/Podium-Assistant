@@ -253,7 +253,8 @@ VALUES
 ('Toyota GR Supra GT4', '16', 2, 64, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F69%2F372%2F%2F081922_RDAM_bcpix2507624.jpg'),
 ('BMW M4 GT4', '59', 4, 67, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F69%2F373%2F%2F081922_RDAM_bcpix2509091.jpg'),
 ('Mazda 3', '70', 6, 68, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285091.jpg'),
-('Ferrari 488 GT3', '34', 1, 27, 1, '');
+('Ferrari 488 GT3', '34', 1, 27, 1, ''),
+('Toyota GR Supra GT4', '33', 4, 64, 2, '');
 
 
 
@@ -479,7 +480,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Gregory Liefooghe', 'Silver', 'USA', 64, 150),
 ('Joey Jordan', 'N/A', 'USA', 68, 152),
 ('Manny Franco', 'Silver', 'USA', 27, 153),
-('Alessandro Balzan', 'Gold', 'Italy', 27, 153);
+('Alessandro Balzan', 'Gold', 'Italy', 27, 153),
+('Matt Forbush', 'Bronze', 'USA', 64, 154),
+('Caleb Bacon', 'Silver', 'USA', 64, 154);
 
 
 
