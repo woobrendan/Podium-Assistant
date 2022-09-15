@@ -198,6 +198,24 @@
     series: 'GT World Challenge America'
   },
   {
+    team: "Conquest Racing",
+    driver1: {
+      name: 'Manny Franco',
+      nationality: 'USA',
+      rating: 'Silver'
+      },
+    driver2: {
+      name: 'Alessandro Balzan',
+      nationality: 'Italy',
+      rating: 'Gold'
+      },
+    vehicle: "Ferrari 488 GT3",
+    classification: "Pro",
+    number: "34",
+    carImage: '',
+    series: 'GT World Challenge America'
+  },
+  {
     team: "ST Racing",
     driver1: {
       name: 'Samantha Tan',
