@@ -375,7 +375,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Ryan Hall', 'Bronze', 'USA', 41, 55),
 ('Sean Whalen', 'Bronze', 'USA', 12, 56),
 ('Matt Guiver', 'Bronze', 'USA', 12, 56),
-('Mark Siegel', 'Bronze', 'USA', 42, 57),
+('Sameer Ghandi', 'Bronze', 'USA', 42, 57),
 ('Tom Dyer', 'Silver', 'USA', 42, 57),
 ('Jacob Ruud', 'N/A', 'USA', 19, 58),
 ('Joesph Catania', 'N/A', 'USA', 43, 59),
