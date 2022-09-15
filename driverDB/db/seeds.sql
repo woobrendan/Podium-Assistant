@@ -477,7 +477,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Mike Skeen', 'Silver', 'USA', 67, 151),
 ('Damon Surzyshyn', 'Bronze', 'Canada', 19, 24),
 ('Gregory Liefooghe', 'Silver', 'USA', 64, 150),
-('Joey Jordan', 'TC', 'USA', 68, 152),
+('Joey Jordan', 'N/A', 'USA', 68, 152),
 ('Manny Franco', 'Silver', 'USA', 27, 153),
 ('Alessandro Balzan', 'Gold', 'Italy', 27, 153);
 
