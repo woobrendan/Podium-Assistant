@@ -1,45 +1,10 @@
 import React from 'react'
-import {Typography, IconButton, MenuItem, Menu, Box, Toolbar, AppBar} from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu';
+import { Box, Toolbar, AppBar} from '@mui/material'
 import SRO from '../images/SRO.jpg';
 import '../Styling/navBar.scss';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-
-const pages = [
-  {
-    name: 'Competitors',
-    action: '/competitors'
-  },
-  {
-    name: 'New Podium',
-    action: '/'
-  },
-  {
-    name: 'Result History',
-    action: '/results'
-  },
-  {
-    name: 'Manage Entries',
-    action: '/entry-dashboard'
-  },
-]
 function NavBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const navigate = useNavigate();
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.target);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handlePath = (path) => {
-    handleCloseNavMenu();
-    navigate(path);
-  }
 
   return (
     <div className="nav-bar">
