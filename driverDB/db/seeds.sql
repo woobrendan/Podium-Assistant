@@ -257,7 +257,8 @@ VALUES
 ('Ferrari 488 GT3', '34', 1, 27, 1, ''),
 ('Toyota GR Supra GT4', '33', 4, 64, 2, ''),
 ('Porsche 718 Cayman GT4 RS CS', '71', 2, 16, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg'),
-('Porsche 718 Cayman GT4 RS CS', '420', 3, 69, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg');
+('Porsche 718 Cayman GT4 RS CS', '420', 3, 69, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg'),
+('Porsche 718 Cayman GT4 Clubsport MR', '427', 3, 62, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479488.jpg');
 
 
 
@@ -489,7 +490,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Jay Logan', 'Bronze', 'USA', 16, 155),
 ('Alex Premat', 'Gold', 'France', 16, 155),
 ('Thomas Collingwood', 'Bronze', 'Canada', 69, 156),
-('John Tecce', 'Bronze', 'USA', 69, 156);
+('John Tecce', 'Bronze', 'USA', 69, 156),
+('Andy Pilgrim', 'Bronze', 'USA', 62, 157),
+('Anthony Bartone', 'Bronze', 'USA', 62, 157);
 
 
 
