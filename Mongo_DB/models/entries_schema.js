@@ -17,8 +17,7 @@ const entriesSchema = new mongoose.Schema({
       nationality: {
         type: String,
         required: true
-      },
-      required: true
+      }
     },
     driver2: {
       name: {
@@ -32,8 +31,7 @@ const entriesSchema = new mongoose.Schema({
       nationality: {
         type: String,
         required: true
-      },
-      required: false
+      }
     },
     vehicle: {
       type: String,
@@ -57,4 +55,4 @@ const entriesSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('entries', entriesSchema)
+module.exports = mongoose.model('Entry', entriesSchema)
