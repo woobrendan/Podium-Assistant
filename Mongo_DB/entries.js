@@ -1339,7 +1339,7 @@
     vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "8",
-    carImage: vgrt8,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335272.jpg',
     series: 'TC America'
   },
   {
@@ -1352,7 +1352,7 @@
     vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "9",
-    carImage: skip9,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388750.jpg',
     series: 'TC America'
   },
   {
@@ -1365,7 +1365,7 @@
     vehicle: "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "09",
-    carImage: DRS09,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FRL_VIR_45218f.jpg',
     series: 'TC America'
   },
   {
@@ -1378,7 +1378,7 @@
     vehicle: "Nissan 370z TC Spec",
     classification: "TC",
     number: "18",
-    carImage: '',
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2021%2F58%2F318%2F%2F060521_VIR_bcpix_1751219.jpg',
     series: 'TC America'
   },
   {
