@@ -4,9 +4,10 @@ const router = express.Router();
 const Entry = require('../../models/entries_schema')
 
   //route = /api/drivers
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
   try {
-    const entries = Entry.find()
+    const entries =  await Entry.find()
+    // console.log('entries', entries)
     res.json(entries)
   } catch (err) {
     res.status(500).json({message: err.message})
@@ -29,7 +30,7 @@ router.get('/:id', (req, res) => {
   res.send(req.params.id)
 })
 
-router.post('/post', (req, res) => {
+router.post('/post', async (req, res) => {
   const newEntry = new Entry({
     team: req.body.team,
     driver1: {
@@ -44,7 +45,7 @@ router.post('/post', (req, res) => {
   })
 
   try {
-    const entryToSave = newEntry.save();
+    const entryToSave =  await newEntry.save();
     res.status(200).json(entryToSave)
   } catch(error) {
     res.status(400).json({ message: error.message })
