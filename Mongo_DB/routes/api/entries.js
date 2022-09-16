@@ -29,4 +29,26 @@ router.get('/:id', (req, res) => {
   res.send(req.params.id)
 })
 
+router.post('/post', (req, res) => {
+  const newEntry = new Entry({
+    team: req.body.team,
+    driver1: {
+      name: req.body.driver1.name,
+      nationality: req.body.driver1.nationality,
+      rating: req.body.driver1.rating
+    },
+    vehicle: req.body.vehicle,
+    classification: req.body.classification,
+    number: req.body.number,
+    series: req.body.series
+  })
+
+  try {
+    const entryToSave = newEntry.save();
+    res.status(200).json(entryToSave)
+  } catch(error) {
+    res.status(400).json({ message: error.message })
+  }
+})
+
 module.exports = router
