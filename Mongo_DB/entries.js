@@ -1288,7 +1288,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "54",
-    carImage: FTR54,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335132.jpg',
     series: 'TC America'
   },
   {
@@ -1301,20 +1301,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "57",
-    carImage: accerlate57,
-    series: 'TC America'
-  },
-  {
-    team: "Fast Track Racing",
-    driver1: {
-      name: 'Mark Wilgus',
-      nationality: 'USA',
-      rating: 'N/A'
-      },
-    vehicle: "BMW M2 CS(Cup)",
-    classification: "TCX",
-    number: "76",
-    carImage: FTR76,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FRL_VIR_45119f.jpg',
     series: 'TC America'
   },
   {
@@ -1327,7 +1314,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "97",
-    carImage: random97,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FFH2_3259.jpg',
     series: 'TC America'
   },
   {
@@ -1340,7 +1327,7 @@
     vehicle: "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "06",
-    carImage: DRS06,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041522_Sonoma_bcpix2269379.jpg',
     series: 'TC America'
   },{
     team: "VGRT",
