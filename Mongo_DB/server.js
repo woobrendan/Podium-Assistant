@@ -25,8 +25,8 @@ const db = mongoose.connection
 db.on('error', error => console.error(error))
 db.once('open', () => console.log('Connected to Mongoose'))
 
-const apiDriverRoute = require('./routes/api/drivers');
+const apiEntriesRoute = require('./routes/api/entries');
 
-app.use('/api/drivers', apiDriverRoute);
+app.use('/api/drivers', apiEntriesRoute);
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`))
