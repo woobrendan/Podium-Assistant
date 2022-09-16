@@ -896,7 +896,7 @@
     vehicle: "Toyota GR Supra GT4",
     classification: "Silver",
     number: "68",
-    carImage: smooge68,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472342.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -914,7 +914,7 @@
     vehicle: "Toyota GR Supra GT4",
     classification: "Pro-Am",
     number: "69",
-    carImage: smooge68,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10903_RL_Sonomaf.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -932,7 +932,7 @@
     vehicle: "Toyota GR Supra GT4",
     classification: "Am",
     number: "72",
-    carImage: krug72,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472210.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -950,7 +950,7 @@
     vehicle: "Mercedes-AMG GT4",
     classification: "Pro-Am",
     number: "79",
-    carImage: renn79,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F361%2F%2F4010CA28-E887-4091-BE2C-F04F0FE575BE_01.jpg',
     series: 'Pirelli GT4 America'
   },
   {
