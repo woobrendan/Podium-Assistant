@@ -4,6 +4,7 @@ const PORT = process.env.PORT || 2020;
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require("body-parser");
+const morgan = require("morgan");
 const app = express();
 // const MongoClient = require('mongodb').MongoClient
 
@@ -11,6 +12,7 @@ app.use(express.static('public'));
 app.use(express.json())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(morgan("dev"));
 
 // MongoClient.connect(process.env.DATABASE_URL, { useNewURLParser: true })
 // .then(client => {
