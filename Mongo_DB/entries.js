@@ -1184,7 +1184,7 @@
     vehicle: "Audi R8 LMS GT4",
     classification: "Pro-Am",
     number: "930",
-    carImage: car930,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F347%2F%2F09174_RL_Sonomaf.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -1197,7 +1197,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "1",
-    carImage: FTR1,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388686.jpg',
     series: 'TC America'
   },
   {
@@ -1210,7 +1210,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "24",
-    carImage: rigid24,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335201.jpg',
     series: 'TC America'
   },
   {
@@ -1223,7 +1223,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "26",
-    carImage: rigid26,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337526.jpg',
     series: 'TC America'
   },
   {
