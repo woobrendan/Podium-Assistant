@@ -1112,7 +1112,7 @@
     vehicle: "BMW M4 GT4",
     classification: "Am",
     number: "152",
-    carImage: ACP152,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F363%2F%2FFH1_5121.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -1130,7 +1130,7 @@
     vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "319",
-    carImage: '',
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472258.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -1148,7 +1148,7 @@
     vehicle: "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "427",
-    carImage: regal427,
+    carImage: 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479488.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -1166,7 +1166,7 @@
     vehicle: "Aston Martin Vantage AMR GT4",
     classification: "Am",
     number: "888",
-    carImage: zelus888,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471980.jpg',
     series: 'Pirelli GT4 America'
   },
   {
