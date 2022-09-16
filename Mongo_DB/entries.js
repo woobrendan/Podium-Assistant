@@ -1040,7 +1040,7 @@
     vehicle: "BMW M4 GT4",
     classification: "Am",
     number: "98",
-    carImage: random98,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F366%2F%2FT6P_0562.JPG',
     series: 'Pirelli GT4 America'
   },
   {
@@ -1058,7 +1058,7 @@
     vehicle: "Toyota GR Supra GT4",
     classification: "Silver",
     number: "112",
-    carImage: dexter112,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_51097f.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -1076,7 +1076,7 @@
     vehicle: "Porscher 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "120",
-    carImage: premier120,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472994.jpg',
     series: 'Pirelli GT4 America'
   },
   {
@@ -1094,7 +1094,7 @@
     vehicle: "Ford Mustang GT4",
     classification: "Pro-Am",
     number: "124",
-    carImage: arg124,
+    carImage: 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471920.jpg',
     series: 'Pirelli GT4 America'
   },
   {
