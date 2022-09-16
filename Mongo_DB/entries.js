@@ -1236,7 +1236,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "29",
-    carImage: ftr29,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285717.jpg',
     series: 'TC America'
   },
   {
@@ -1249,7 +1249,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "30",
-    carImage: hard30,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335276.jpg',
     series: 'TC America'
   },
   {
@@ -1262,7 +1262,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "44",
-    carImage: rooster44,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335313_1.jpg',
     series: 'TC America'
   },
   {
@@ -1275,7 +1275,7 @@
     vehicle: "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "51",
-    carImage: home51,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F372%2F%2FFH2_5315.jpg',
     series: 'TC America'
   },
   {
