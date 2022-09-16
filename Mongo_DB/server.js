@@ -27,6 +27,6 @@ db.once('open', () => console.log('Connected to Mongoose'))
 
 const apiDriverRoute = require('./routes/api/drivers');
 
-app.use('/api/drivers', apiDriverRoute(db));
+app.use('/api/drivers', apiDriverRoute);
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}`))
