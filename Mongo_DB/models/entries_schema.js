@@ -6,13 +6,35 @@ const entriesSchema = new mongoose.Schema({
       required: true
     },
     driver1: {
-      type: Object,
+      name: {
+        type: String,
+        required: true
+      },
+      rating: {
+        type: String,
+        required: false
+      },
+      nationality: {
+        type: String,
+        required: true
+      },
       required: true
-      },
+    },
     driver2: {
-      type: Object,
-      required: false
+      name: {
+        type: String,
+        required: true
       },
+      rating: {
+        type: String,
+        required: false
+      },
+      nationality: {
+        type: String,
+        required: true
+      },
+      required: false
+    },
     vehicle: {
       type: String,
       required: true
