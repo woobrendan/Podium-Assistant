@@ -572,5 +572,75 @@
         "team": "GMG Racing"
       }
     }
+  },
+  {
+    "series": "TC America",
+    "date": "04-16-2022",
+    "event": "Sonoma Raceway",
+    "fastLap": {
+      "driver": "Jacob Ruud",
+      "vehicle": "BMW M2 CS",
+      "time": "1:52.331"
+    },
+    "result1": {
+      "class": "TCX",
+      "firstPlace": {
+        "driver1": "Jacob Ruud",
+        "number": "1",
+        "vehicle": "BMW M2 CS",
+        "team": "Fast Track Racing"
+      },
+      "secondPlace": {
+        "driver1": "Stephen Cugliari",
+        "number": "57",
+        "vehicle": "BMW M2 CS",
+        "team": "Accerlating Performance"
+      },
+      "thirdPlace": {
+        "driver1": "Lucas Catania",
+        "number": "26",
+        "vehicle": "BMW M2 CS",
+        "team": "Rigid Speed"
+      }
+    },
+    "result2": {
+      "class": "GT4",
+      "firstPlace": {
+        "driver1": "Jason Bell",
+        "number": "2",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "GMG Racing"
+      },
+      "secondPlace": {
+        "driver1": "Chris Gumprecht",
+        "number": "79",
+        "vehicle": "Mercedes-AMG GT4",
+        "team": "RENNtech Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "Moisey Uretsky",
+        "number": "55",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Accelerating Peformance"
+      }
+    },
+    "result3": {
+      "class": "GT2",
+      "firstPlace": {
+        "driver1": "CJ Moses",
+        "number": "58",
+        "vehicle": "Audi R8 LMS GT2",
+        "team": "GMG Racing"
+      }
+    },
+    "result4": {
+      "class": "Masters",
+      "firstPlace": {
+        "driver1": "Ziad Ghandour",
+        "number": "9",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "TR3 Racing"
+      }
+    }
   }
 ]
