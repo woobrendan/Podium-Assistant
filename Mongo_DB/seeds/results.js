@@ -349,5 +349,66 @@
         "team": "Mishumotors"
       },
     }
+  },
+  {
+    "series": "GT America",
+    "date": "04-17-2022",
+    "event": "Sonoma Raceway",
+    "fastLap": {
+      "driver": "Jason Harward",
+      "vehicle": "Lamborghini Huracan GT3",
+      "time": "1:39.433"
+    },
+    "result1": {
+      "class": "SRO3",
+      "firstPlace": {
+        "driver1": "Jason Harward",
+        "number": "88",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Jason Daskalos",
+        "number": "27",
+        "vehicle": "Audi R8 LMS",
+        "team": "Daskalos Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "Jeff Burton",
+        "number": "191",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
+      }
+    },
+    "result2": {
+      "class": "GT4",
+      "firstPlace": {
+        "driver1": "Steve Dinan",
+        "number": "930",
+        "vehicle": "Audi R8 LMS GT4",
+        "team": "CarBahn w/ Peregrine Racing"
+      },
+      "secondPlace": {
+        "driver1": "Todd Coleman",
+        "number": "69",
+        "vehicle": "Toyota GR Supra GT4",
+        "team": "Smooge Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Jose DaSilva",
+        "number": "67",
+        "vehicle": "Toyota GR Supra GT4",
+        "team": "Smooge Racing"
+      }
+    },
+    "result3": {
+      "class": "Masters",
+      "firstPlace": {
+        "driver1": "Mirco Shultis",
+        "number": "70",
+        "vehicle": "Callaway Corvette C7 GT3",
+        "team": "Mishumotors"
+      },
+    }
   }
 ]
