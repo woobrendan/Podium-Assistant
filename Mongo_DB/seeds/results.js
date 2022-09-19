@@ -473,7 +473,7 @@
         "driver2": "Charlie Postins",
         "number": "36",
         "vehicle": "BMW M4 GT4",
-        "team": "AF Corse"
+        "team": "BimmerWorld"
       },
       "secondPlace": {
         "driver1": "Alain Stad",
@@ -551,25 +551,25 @@
     "result3": {
       "class": "Am",
       "firstPlace": {
+        "driver1": "Ben Anderson",
+        "driver2": "Matt Rivard",
+        "number": "36",
+        "vehicle": "Ginetta G56 GT4",
+        "team": "Dexter Racing"
+      },
+      "secondPlace": {
         "driver1": "James Clay",
         "driver2": "Charlie Postins",
         "number": "36",
         "vehicle": "BMW M4 GT4",
-        "team": "AF Corse"
-      },
-      "secondPlace": {
-        "driver1": "Alain Stad",
-        "driver2": "Thomas Merrill",
-        "number": "19",
-        "vehicle": "Porsche 718 Cayman GT4 RS CS",
-        "team": "NOLAsport"
+        "team": "BimmerWorld"
       },
       "thirdPlace": {
-        "driver1": "Jason Alexandridis",
-        "driver2": "Derek DeBoer",
-        "number": "66",
+        "driver1": "Kyle Washington",
+        "driver2": "James Sofronas",
+        "number": "032",
         "vehicle": "Porsche 718 Cayman GT4 RS CS",
-        "team": "The Racers Group"
+        "team": "GMG Racing"
       }
     }
   }
