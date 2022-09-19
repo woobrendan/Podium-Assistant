@@ -469,18 +469,25 @@
     "result3": {
       "class": "Am",
       "firstPlace": {
-        "driver1": "Jean-Claude Saada",
-        "driver2": "Conrad Grunewald",
-        "number": "61",
-        "vehicle": "Ferrari 488 GT3",
+        "driver1": "James Clay",
+        "driver2": "Charlie Postins",
+        "number": "36",
+        "vehicle": "BMW M4 GT4",
         "team": "AF Corse"
       },
       "secondPlace": {
-        "driver1": "Charlie Scardina",
-        "driver2": "Onofrio Triarsi",
-        "number": "23",
-        "vehicle": "Ferrari 488 GT3",
-        "team": "Triarsi Competizione"
+        "driver1": "Alain Stad",
+        "driver2": "Thomas Merrill",
+        "number": "19",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "NOLAsport"
+      },
+      "thirdPlace": {
+        "driver1": "Jason Alexandridis",
+        "driver2": "Derek DeBoer",
+        "number": "66",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "The Racers Group"
       }
     }
   }
