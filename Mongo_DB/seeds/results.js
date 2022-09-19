@@ -445,25 +445,25 @@
     "result2": {
       "class": "Pro/Am",
       "firstPlace": {
-        "driver1": "Charlie Luck",
-        "driver2": "Jan Heylen",
-        "number": "45",
-        "vehicle": "Porsche 911 GT3-R (991.ii)",
-        "team": "Wright Motorsports"
+        "driver1": "Bryan Putt",
+        "driver2": "Kenton Koch",
+        "number": "15",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "BSport Racing"
       },
       "secondPlace": {
-        "driver1": "Ashton Harrison",
-        "driver2": "Mario Farnbacher",
-        "number": "93",
-        "vehicle": "Acura NSX GT3",
-        "team": "Racers Edge Motorsports"
+        "driver1": "Scott Noble",
+        "driver2": "Jason Hart",
+        "number": "47",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "NOLAsport"
       },
       "thirdPlace": {
-        "driver1": "George Kurtz",
-        "driver2": "Colin Braun",
-        "number": "04",
-        "vehicle": "Mercedes-AMG GT3",
-        "team": "CrowdStrike Racing by Riley Motorsports"
+        "driver1": "Elias Sabo",
+        "driver2": "Andy Lee",
+        "number": "8",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Flying Lizard Motorsports"
       }
     },
     "result3": {
