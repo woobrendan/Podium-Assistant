@@ -625,21 +625,24 @@
       }
     },
     "result3": {
-      "class": "GT2",
+      "class": "TCA",
       "firstPlace": {
-        "driver1": "CJ Moses",
-        "number": "58",
-        "vehicle": "Audi R8 LMS GT2",
-        "team": "GMG Racing"
-      }
-    },
-    "result4": {
-      "class": "Masters",
-      "firstPlace": {
-        "driver1": "Ziad Ghandour",
-        "number": "9",
-        "vehicle": "Lamborghini Huracan GT3",
-        "team": "TR3 Racing"
+        "driver1": "Carter Fartuch",
+        "number": "16",
+        "vehicle": "Honda Civic Si",
+        "team": "Skip Barber Racing"
+      },
+      "secondPlace": {
+        "driver1": "Gresham Wagner",
+        "number": "21",
+        "vehicle": "Subaru BRZ",
+        "team": "TechSport Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Spencer Bucknum",
+        "number": "5",
+        "vehicle": "Honda Civic Si",
+        "team": "LA Honda World"
       }
     }
   }
