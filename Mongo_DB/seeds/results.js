@@ -383,32 +383,30 @@
     "result2": {
       "class": "GT4",
       "firstPlace": {
-        "driver1": "Steve Dinan",
-        "number": "930",
-        "vehicle": "Audi R8 LMS GT4",
-        "team": "CarBahn w/ Peregrine Racing"
+        "driver1": "Hutton McKenna",
+        "number": "30",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "Wright Motorsports"
       },
       "secondPlace": {
-        "driver1": "Todd Coleman",
-        "number": "69",
-        "vehicle": "Toyota GR Supra GT4",
-        "team": "Smooge Racing"
+        "driver1": "Chris Cagnazzi",
+        "number": "39",
+        "vehicle": "Mercedes-AMG GT4",
+        "team": "Cameron Racing"
       },
       "thirdPlace": {
-        "driver1": "Jose DaSilva",
-        "number": "67",
-        "vehicle": "Toyota GR Supra GT4",
-        "team": "Smooge Racing"
+        "driver1": "Jason Bell",
+        "number": "2",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "GMG Racing"
       }
     },
     "result3": {
       "class": "Masters",
-      "firstPlace": {
-        "driver1": "Mirco Shultis",
-        "number": "70",
-        "vehicle": "Callaway Corvette C7 GT3",
-        "team": "Mishumotors"
-      },
+      "driver1": "Jeff Burton",
+        "number": "191",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
     }
   }
 ]
