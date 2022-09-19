@@ -604,24 +604,24 @@
       }
     },
     "result2": {
-      "class": "GT4",
+      "class": "TC",
       "firstPlace": {
-        "driver1": "Jason Bell",
-        "number": "2",
-        "vehicle": "Aston Martin Vantage GT4",
-        "team": "GMG Racing"
+        "driver1": "Kevin Boehm",
+        "number": "9",
+        "vehicle": "Honda Civic Type-R",
+        "team": "Skip Barber Racing"
       },
       "secondPlace": {
-        "driver1": "Chris Gumprecht",
-        "number": "79",
-        "vehicle": "Mercedes-AMG GT4",
-        "team": "RENNtech Motorsports"
+        "driver1": "Mat Pombo",
+        "number": "37",
+        "vehicle": "Honda Civic Type-R",
+        "team": "LA Honda World"
       },
       "thirdPlace": {
-        "driver1": "Moisey Uretsky",
-        "number": "55",
-        "vehicle": "Aston Martin Vantage GT4",
-        "team": "Accelerating Peformance"
+        "driver1": "Clay Williams",
+        "number": "60",
+        "vehicle": "MINI Cooper JCW Pro TC",
+        "team": "MINI JCW Team"
       }
     },
     "result3": {
