@@ -408,5 +408,80 @@
         "vehicle": "Lamborghini Huracan GT3",
         "team": "Zelus Motorsports"
     }
+  },
+  {
+    "series": "Pirelli GT4 America",
+    "date": "04-16-2022",
+    "event": "Sonoma Raceway",
+    "fastLap": {
+      "driver": "Eric Filgueiras",
+      "vehicle": "Porsche 718 Cayman GT4 RS CS",
+      "time": "1:46.124"
+    },
+    "result1": {
+      "class": "Silver",
+      "firstPlace": {
+        "driver1": "Eric Filgueiras",
+        "driver2": "Stevan McAleer",
+        "number": "18",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "RS1"
+      },
+      "secondPlace": {
+        "driver1": "Gavin Sanders",
+        "driver2": "Michai Stephens",
+        "number": "34",
+        "vehicle": "Mercedes-AMG GT4",
+        "team": "Winward Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Austen Smith",
+        "driver2": "Zac Anderson",
+        "number": "51",
+        "vehicle": "BMW M4 GT4",
+        "team": "AutoTechnic Racing"
+      }
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Charlie Luck",
+        "driver2": "Jan Heylen",
+        "number": "45",
+        "vehicle": "Porsche 911 GT3-R (991.ii)",
+        "team": "Wright Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Ashton Harrison",
+        "driver2": "Mario Farnbacher",
+        "number": "93",
+        "vehicle": "Acura NSX GT3",
+        "team": "Racers Edge Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "George Kurtz",
+        "driver2": "Colin Braun",
+        "number": "04",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Jean-Claude Saada",
+        "driver2": "Conrad Grunewald",
+        "number": "61",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "AF Corse"
+      },
+      "secondPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "number": "23",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
+      }
+    }
   }
 ]
