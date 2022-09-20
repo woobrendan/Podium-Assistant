@@ -1,12 +1,12 @@
 [
   {
     "series": "GT America",
-    "date": "09-19-2022",
+    "date": "02-25-2022",
     "event": "St. Petersburg",
     "fastLap": {
-      "driver": "Marko Radisic",
-      "vehicle": "BMW M4 GT4",
-      "time": "1:11.111"
+      "driver": "Geoge Kurtz",
+      "vehicle": "Mercedes-AMG GT3",
+      "time": "1:13.964"
     },
     "result1": {
       "class": "SRO3",
@@ -29,13 +29,19 @@
     "result2": {
       "class": "GT4",
       "firstPlace": {
-        //driver info
+        "driver": "Marko Radisic",
+        "vehicle": "BMW M4 GT4",
+        "team": "SRQ Motorsports"
       },
       "secondPlace": {
-        //driver info
+        "driver": "Derek DeBoer",
+        "vehicle": "Porsche 718 Cayman GT4 CS MR",
+        "team": "The Racers Group"
       },
       "thirdPlace": {
-        //driver info
+        "driver": "Moisey Uretsky",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Accelerating Peformance"
       }
     },
     "result3": {
