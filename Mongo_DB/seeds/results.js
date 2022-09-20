@@ -11,13 +11,19 @@
     "result1": {
       "class": "SRO3",
       "firstPlace": {
-        //driver info
+        "driver": "Jason Daskalos",
+        "vehicle": "Audi R8 LMS",
+        "team": "Daskalos Motorsports"
       },
       "secondPlace": {
-        //driver info
+        "driver": "Scott Smithson",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "DXDT Racing"
       },
       "thirdPlace": {
-        //driver info
+        "driver": "George Kurtz",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "Riley Motorsports w/ CrowdStrike Racing"
       }
     },
     "result2": {
