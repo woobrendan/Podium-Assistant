@@ -5,10 +5,33 @@ const resultSchema = new mongoose.Schema({
       type: String,
       required: true
     },
-    classification: {
+    date: {
       type: String,
       required: true
+    },
+    event: {
+      type: String,
+      required: true
+    },
+    fastLap: {
+      driver: {
+        type: String,
+        required: true
+      },
+      vehicle: {
+        type: String,
+        required: true
+      },
+      time: {
+        type: String,
+        required: true
+      }
     }
 })
 
 module.exports = mongoose.model('results', entriesSchema)
+
+// classification: {
+//   type: String,
+//   required: true
+// }
