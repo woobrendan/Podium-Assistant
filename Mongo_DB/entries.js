@@ -20,13 +20,13 @@
   },
   {
     "team": "K-PAX Racing",
-    driver1: {
-      name: "Michele Beretta",
+    "driver1": {
+      "name": "Michele Beretta",
       nationality: "Italy",
       rating: "Silver"
       },
     driver2: {
-      name: "Andrea Calderlli",
+      "name": "Andrea Calderlli",
       nationality: "Italy",
       rating: "Platinum"
       },
@@ -38,13 +38,13 @@
   },
   {
     "team": "K-PAX Racing",
-    driver1: {
-      name: "Misha Goikhberg",
+    "driver1": {
+      "name": "Misha Goikhberg",
       nationality: "Canada",
       rating: "Silver"
       },
     driver2: {
-      name: "Jordan Pepper",
+      "name": "Jordan Pepper",
       nationality: "South Africa",
       rating: "Gold"
       },
@@ -56,13 +56,13 @@
   },
   {
     "team": "Crowdstrike Racing with Riley Motorsports",
-    driver1: {
-      name: "George Kurtz",
+    "driver1": {
+      "name": "George Kurtz",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Colin Braun",
+      "name": "Colin Braun",
       nationality: "USA",
       rating: "Gold"
       },
@@ -74,13 +74,13 @@
   },
   {
     "team": "US Racetronics",
-    driver1: {
-      name: "Steven Aghakhani",
+    "driver1": {
+      "name": "Steven Aghakhani",
       nationality: "USA",
       rating: "Silver"
       },
     driver2: {
-      name: "Loris Spinelli",
+      "name": "Loris Spinelli",
       nationality: "Italy",
       rating: "Silver"
       },
@@ -92,13 +92,13 @@
   },
   {
     "team": "DXDT Racing",
-    driver1: {
-      name: "Scott Smithson",
+    "driver1": {
+      "name": "Scott Smithson",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Bryan Sellers",
+      "name": "Bryan Sellers",
       nationality: "USA",
       rating: "Gold"
       },
@@ -110,13 +110,13 @@
   },
   {
     "team": "TR3 Racing",
-    driver1: {
-      name: "Ziad Ghandour",
+    "driver1": {
+      "name": "Ziad Ghandour",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Giacomo Altoe",
+      "name": "Giacomo Altoe",
       nationality: "Italy",
       rating: "Gold"
       },
@@ -128,13 +128,13 @@
   },
   {
     "team": "Ian Lacy Racing",
-    driver1: {
-      name: "Frank Gannett",
+    "driver1": {
+      "name": "Frank Gannett",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Drew Staveley",
+      "name": "Drew Staveley",
       nationality: "USA",
       rating: "Silver"
       },
@@ -146,13 +146,13 @@
   },
   {
     "team": "Triarsi Competizione",
-    driver1: {
-      name: "Justin Wetherill",
+    "driver1": {
+      "name": "Justin Wetherill",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Ryan Dalziel",
+      "name": "Ryan Dalziel",
       nationality: "Scotland",
       rating: "Gold"
       },
@@ -164,13 +164,13 @@
   },
   {
     "team": "Triarsi Competizione",
-    driver1: {
-      name: "Charlie Scardina",
+    "driver1": {
+      "name": "Charlie Scardina",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Onofrio Triarsi",
+      "name": "Onofrio Triarsi",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -182,13 +182,13 @@
   },
   {
     "team": "Winward Racing",
-    driver1: {
-      name: "Russell Ward",
+    "driver1": {
+      "name": "Russell Ward",
       nationality: "USA",
       rating: "Silver"
       },
     driver2: {
-      name: "Philip Ellis",
+      "name": "Philip Ellis",
       nationality: "Switzerland",
       rating: "Gold"
       },
@@ -200,13 +200,13 @@
   },
   {
     "team": "Conquest Racing",
-    driver1: {
-      name: "Manny Franco",
+    "driver1": {
+      "name": "Manny Franco",
       nationality: "USA",
       rating: "Silver"
       },
     driver2: {
-      name: "Alessandro Balzan",
+      "name": "Alessandro Balzan",
       nationality: "Italy",
       rating: "Gold"
       },
@@ -218,13 +218,13 @@
   },
   {
     "team": "ST Racing",
-    driver1: {
-      name: "Samantha Tan",
+    "driver1": {
+      "name": "Samantha Tan",
       nationality: "Canada",
       rating: "Bronze"
       },
     driver2: {
-      name: "Nick Wittmer",
+      "name": "Nick Wittmer",
       nationality: "Canada",
       rating: "Silver"
       },
@@ -236,13 +236,13 @@
   },
   {
     "team": "RealTime Racing",
-    driver1: {
-      name: "Erin Vogel",
+    "driver1": {
+      "name": "Erin Vogel",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Michael Cooper",
+      "name": "Michael Cooper",
       nationality: "USA",
       rating: "Silver"
       },
@@ -254,13 +254,13 @@
   },
   {
     "team": "Wright Motorsports",
-    driver1: {
-      name: "Charlie Luck",
+    "driver1": {
+      "name": "Charlie Luck",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Jan Heylen",
+      "name": "Jan Heylen",
       nationality: "Belgium",
       rating: "Gold"
       },
@@ -272,13 +272,13 @@
   },
   {
     "team": "AF Corse",
-    driver1: {
-      name: "Jean-Claude Saada",
+    "driver1": {
+      "name": "Jean-Claude Saada",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Conrad Grunewald",
+      "name": "Conrad Grunewald",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -290,13 +290,13 @@
   },
   {
     "team": "DXDT Racing",
-    driver1: {
-      name: "David Askew",
+    "driver1": {
+      "name": "David Askew",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Dirk Mueller",
+      "name": "Dirk Mueller",
       nationality: "Germany",
       rating: "Platinum"
       },
@@ -308,13 +308,13 @@
   },
   {
     "team": "Zelus Motorsports",
-    driver1: {
-      name: "Jason Harward",
+    "driver1": {
+      "name": "Jason Harward",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Madison Snow",
+      "name": "Madison Snow",
       nationality: "USA",
       rating: "Silver"
       },
@@ -326,13 +326,13 @@
   },
   {
     "team": "Zelus Motorsports",
-    driver1: {
-      name: "Jeff Burton",
+    "driver1": {
+      "name": "Jeff Burton",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Corey Lewis",
+      "name": "Corey Lewis",
       nationality: "USA",
       rating: "Silver"
       },
@@ -344,13 +344,13 @@
   },
   {
     "team": "Racers Edge Motorsports",
-    driver1: {
-      name: "Ashton Harrison",
+    "driver1": {
+      "name": "Ashton Harrison",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Mario Farnbacher",
+      "name": "Mario Farnbacher",
       nationality: "Germany",
       rating: "Gold"
       },
@@ -362,13 +362,13 @@
   },
   {
     "team": "BimmerWorld",
-    driver1: {
-      name: "Chandler Hull",
+    "driver1": {
+      "name": "Chandler Hull",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Bill Auberlen",
+      "name": "Bill Auberlen",
       nationality: "USA",
       rating: "Gold"
       },
@@ -380,13 +380,13 @@
   },
   {
     "team": "Turner Motorsport",
-    driver1: {
-      name: "Michael Dinan",
+    "driver1": {
+      "name": "Michael Dinan",
       nationality: "USA",
       rating: "Silver"
       },
     driver2: {
-      name: "Robby Foley",
+      "name": "Robby Foley",
       nationality: "USA",
       rating: "Silver"
       },
@@ -398,13 +398,13 @@
   },
   {
     "team": "GMG Racing",
-    driver1: {
-      name: "Jason Bell",
+    "driver1": {
+      "name": "Jason Bell",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Andrew Davis",
+      "name": "Andrew Davis",
       nationality: "USA",
       rating: "Silver"
       },
@@ -416,13 +416,13 @@
   },
   {
     "team": "NOLASPORT",
-    driver1: {
-      name: "Sam Owen",
+    "driver1": {
+      "name": "Sam Owen",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Sean Gibbons",
+      "name": "Sean Gibbons",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -434,13 +434,13 @@
   },
   {
     "team": "Flying Lizard Motorsport",
-    driver1: {
-      name: "Elias Sabo",
+    "driver1": {
+      "name": "Elias Sabo",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Andy Lee",
+      "name": "Andy Lee",
       nationality: "USA",
       rating: "Silver"
       },
@@ -452,13 +452,13 @@
   },
   {
     "team": "Fast Track Racing",
-    driver1: {
-      name: "Tim Horrell",
+    "driver1": {
+      "name": "Tim Horrell",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Raphael Matos",
+      "name": "Raphael Matos",
       nationality: "Brazil",
       rating: "Gold"
       },
@@ -470,13 +470,13 @@
   },
   {
     "team": "Fast Track Racing",
-    driver1: {
-      name: "Damon Surzyshyn",
+    "driver1": {
+      "name": "Damon Surzyshyn",
       nationality: "Canada",
       rating: "Bronze"
       },
     driver2: {
-      name: "Gregory Liefooghe",
+      "name": "Gregory Liefooghe",
       nationality: "USA",
       rating: "Silver"
       },
@@ -488,13 +488,13 @@
   },
   {
     "team": "BSport Racing",
-    driver1: {
-      name: "Bryan Putt",
+    "driver1": {
+      "name": "Bryan Putt",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Kenton Koch",
+      "name": "Kenton Koch",
       nationality: "USA",
       rating: "Silver"
       },
@@ -506,13 +506,13 @@
   },
   {
     "team": "Hattori Motorsports",
-    driver1: {
-      name: "Seth Lucas",
+    "driver1": {
+      "name": "Seth Lucas",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Matt Plumb",
+      "name": "Matt Plumb",
       nationality: "USA",
       rating: "Silver"
       },
@@ -524,13 +524,13 @@
   },
   {
     "team": "The Racers Group",
-    driver1: {
-      name: "James Rappaport",
+    "driver1": {
+      "name": "James Rappaport",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Todd Hetherington",
+      "name": "Todd Hetherington",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -542,13 +542,13 @@
   },
   {
     "team": "RS1",
-    driver1: {
-      name: "Eric Filgueiras",
+    "driver1": {
+      "name": "Eric Filgueiras",
       nationality: "USA",
       rating: "Silver"
       },
     driver2: {
-      name: "Stevan McAleer",
+      "name": "Stevan McAleer",
       nationality: "Scotland",
       rating: "Silver"
       },
@@ -560,13 +560,13 @@
   },
   {
     "team": "NOLASPORT",
-    driver1: {
-      name: "Alain Stad",
+    "driver1": {
+      "name": "Alain Stad",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Matt Travis",
+      "name": "Matt Travis",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -578,13 +578,13 @@
   },
   {
     "team": "Carrus Callas Race Team",
-    driver1: {
-      name: "Nick Shanny",
+    "driver1": {
+      "name": "Nick Shanny",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Terry Borcheller",
+      "name": "Terry Borcheller",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -596,13 +596,13 @@
   },
   {
     "team": "Heart of Racing Team",
-    driver1: {
-      name: "Gray Newell",
+    "driver1": {
+      "name": "Gray Newell",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Ian James",
+      "name": "Ian James",
       nationality: "USA",
       rating: "Silver"
       },
@@ -614,13 +614,13 @@
   },
   {
     "team": "Prive Motorsports/Topp Racing",
-    driver1: {
-      name: "Thomas Surgent",
+    "driver1": {
+      "name": "Thomas Surgent",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Michael O'Brien",
+      "name": "Michael O'Brien",
       nationality: "United Kingdom",
       rating: "Silver"
       },
@@ -632,13 +632,13 @@
   },
   {
     "team": "Capstone Motorsportrs",
-    driver1: {
-      name: "Kris Wilson",
+    "driver1": {
+      "name": "Kris Wilson",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Cole Ciraulo",
+      "name": "Cole Ciraulo",
       nationality: "USA",
       rating: "Silver"
       },
@@ -650,13 +650,13 @@
   },
   {
     "team": "Conquest Racing/JWF Motorsports",
-    driver1: {
-      name: "Gavin Sanders",
+    "driver1": {
+      "name": "Gavin Sanders",
       nationality: "Canada",
       rating: "Silver"
       },
     driver2: {
-      name: "Michai Stephens",
+      "name": "Michai Stephens",
       nationality: "USA",
       rating: "Silver"
       },
@@ -668,13 +668,13 @@
   },
   {
     "team": "Conquest Racing",
-    driver1: {
-      name: "Custodio Toledo",
+    "driver1": {
+      "name": "Custodio Toledo",
       nationality: "Brazil",
       rating: "Bronze"
       },
     driver2: {
-      name: "Paulo Carcasci",
+      "name": "Paulo Carcasci",
       nationality: "Brazil",
       rating: "Am"
       },
@@ -686,13 +686,13 @@
   },
   {
     "team": "BimmerWorld",
-    driver1: {
-      name: "Charlie Postins",
+    "driver1": {
+      "name": "Charlie Postins",
       nationality: "United Kingdom",
       rating: "Bronze"
       },
     driver2: {
-      name: "James Clay",
+      "name": "James Clay",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -704,13 +704,13 @@
   },
   {
     "team": "Cameron Racing",
-    driver1: {
-      name: "Chris Cagnazzi",
+    "driver1": {
+      "name": "Chris Cagnazzi",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Guy Cosmo",
+      "name": "Guy Cosmo",
       nationality: "USA",
       rating: "Silver"
       },
@@ -722,13 +722,13 @@
   },
   {
     "team": "NOLASPORT",
-    driver1: {
-      name: "Scott Noble",
+    "driver1": {
+      "name": "Scott Noble",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Jason Hart",
+      "name": "Jason Hart",
       nationality: "USA",
       rating: "Silver"
       },
@@ -740,13 +740,13 @@
   },
   {
     "team": "Team Saleen",
-    driver1: {
-      name: "Steve Saleen",
+    "driver1": {
+      "name": "Steve Saleen",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Eric Curran",
+      "name": "Eric Curran",
       nationality: "USA",
       rating: "Gold"
       },
@@ -758,13 +758,13 @@
   },
   {
     "team": "Chouest Povoledo Racing",
-    driver1: {
-      name: "Ross Chouest",
+    "driver1": {
+      "name": "Ross Chouest",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Aaron Povoledo",
+      "name": "Aaron Povoledo",
       nationality: "Canada",
       rating: "Silver"
       },
@@ -776,13 +776,13 @@
   },
   {
     "team": "AutoTechnic Racing",
-    driver1: {
-      name: "Austen Smith",
+    "driver1": {
+      "name": "Austen Smith",
       nationality: "USA",
       rating: "Silver"
       },
     driver2: {
-      name: "Zac Anderson",
+      "name": "Zac Anderson",
       nationality: "USA",
       rating: "Silver"
       },
@@ -794,13 +794,13 @@
   },
   {
     "team": "AutoTechnic Racing",
-    driver1: {
-      name: "Tom Capizzi",
+    "driver1": {
+      "name": "Tom Capizzi",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "John Capestro-Dubets",
+      "name": "John Capestro-Dubets",
       nationality: "USA",
       rating: "Silver"
       },
@@ -812,13 +812,13 @@
   },
   {
     "team": "AutoTechnic Racing",
-    driver1: {
-      name: "Rob Walker",
+    "driver1": {
+      "name": "Rob Walker",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Alex Filsinger",
+      "name": "Alex Filsinger",
       nationality: "Canada",
       rating: "Bronze"
       },
@@ -830,13 +830,13 @@
   },
   {
     "team": "Accerlating Performance",
-    driver1: {
-      name: "Moisey Uretsky",
+    "driver1": {
+      "name": "Moisey Uretsky",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Justin Piscitell",
+      "name": "Justin Piscitell",
       nationality: "USA",
       rating: "Silver"
       },
@@ -848,13 +848,13 @@
   },
   {
     "team": "Dexter Racing",
-    driver1: {
-      name: "Ben Anderson",
+    "driver1": {
+      "name": "Ben Anderson",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Matt Rivard",
+      "name": "Matt Rivard",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -866,13 +866,13 @@
   },
   {
     "team": "The Racers Group",
-    driver1: {
-      name: "Jason Alexandridis",
+    "driver1": {
+      "name": "Jason Alexandridis",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Derek DeBoer",
+      "name": "Derek DeBoer",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -884,13 +884,13 @@
   },
   {
     "team": "Smooge Racing",
-    driver1: {
-      name: "Kevin Conway",
+    "driver1": {
+      "name": "Kevin Conway",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "John Geesbreght",
+      "name": "John Geesbreght",
       nationality: "USA",
       rating: "Silver"
       },
@@ -902,13 +902,13 @@
   },
   {
     "team": "Smooge Racing",
-    driver1: {
-      name: "Todd Coleman",
+    "driver1": {
+      "name": "Todd Coleman",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Aaron Telitz",
+      "name": "Aaron Telitz",
       nationality: "USA",
       rating: "Gold"
       },
@@ -920,13 +920,13 @@
   },
   {
     "team": "KRUGSPEED",
-    driver1: {
-      name: "Anthony Geraci",
+    "driver1": {
+      "name": "Anthony Geraci",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Jaden Lander",
+      "name": "Jaden Lander",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -938,13 +938,13 @@
   },
   {
     "team": "RENNtech Motorsports",
-    driver1: {
-      name: "Chris Gumprecht",
+    "driver1": {
+      "name": "Chris Gumprecht",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Kyle Marcelli",
+      "name": "Kyle Marcelli",
       nationality: "Canada",
       rating: "Gold"
       },
@@ -956,13 +956,13 @@
   },
   {
     "team": "Rooster Hall Racing",
-    driver1: {
-      name: "Todd Brown",
+    "driver1": {
+      "name": "Todd Brown",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Johan Schwartz",
+      "name": "Johan Schwartz",
       nationality: "Denmark",
       rating: "Bronze"
       },
@@ -974,13 +974,13 @@
   },
   {
     "team": "BimmerWorld",
-    driver1: {
-      name: "James Walker Jr",
+    "driver1": {
+      "name": "James Walker Jr",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Devin Jones",
+      "name": "Devin Jones",
       nationality: "USA",
       rating: "Silver"
       },
@@ -992,13 +992,13 @@
   },
   {
     "team": "RS1",
-    driver1: {
-      name: "Nelson Calle",
+    "driver1": {
+      "name": "Nelson Calle",
       nationality: "Colombia",
       rating: "Bronze"
       },
     driver2: {
-      name: "Juan Martinez",
+      "name": "Juan Martinez",
       nationality: "Colombia",
       rating: "Bronze"
       },
@@ -1010,13 +1010,13 @@
   },
   {
     "team": "RENNtech Motorsports",
-    driver1: {
-      name: "Paul Kiebler",
+    "driver1": {
+      "name": "Paul Kiebler",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Jon Branam",
+      "name": "Jon Branam",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1028,13 +1028,13 @@
   },
   {
     "team": "Random Vandals Racing",
-    driver1: {
-      name: "Paul Sparta",
+    "driver1": {
+      "name": "Paul Sparta",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Al Carter",
+      "name": "Al Carter",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1046,13 +1046,13 @@
   },
   {
     "team": "Dexter Racing",
-    driver1: {
-      name: "Ryan Dexter",
+    "driver1": {
+      "name": "Ryan Dexter",
       nationality: "USA",
       rating: "Silver"
       },
     driver2: {
-      name: "Dominic Starkweather",
+      "name": "Dominic Starkweather",
       nationality: "USA",
       rating: "Silver"
       },
@@ -1064,13 +1064,13 @@
   },
   {
     "team": "Premier Racing",
-    driver1: {
-      name: "Adam Adelson",
+    "driver1": {
+      "name": "Adam Adelson",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Elliot Skeer",
+      "name": "Elliot Skeer",
       nationality: "USA",
       rating: "Silver"
       },
@@ -1082,13 +1082,13 @@
   },
   {
     "team": "ARG/Rotek Racing",
-    driver1: {
-      name: "Edgar Lau",
+    "driver1": {
+      "name": "Edgar Lau",
       nationality: "Hong Kong",
       rating: "Bronze"
       },
     driver2: {
-      name: "Billy Johnson",
+      "name": "Billy Johnson",
       nationality: "USA",
       rating: "Gold"
       },
@@ -1100,13 +1100,13 @@
   },
   {
     "team": "Team ACP - Tangerine Associates",
-    driver1: {
-      name: "Alex Amine",
+    "driver1": {
+      "name": "Alex Amine",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Ryan Hall",
+      "name": "Ryan Hall",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1118,13 +1118,13 @@
   },
   {
     "team": "Indian Summer Racing",
-    driver1: {
-      name: "Travis Washay",
+    "driver1": {
+      "name": "Travis Washay",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Francis Selldorff",
+      "name": "Francis Selldorff",
       nationality: "USA",
       rating: "Silver"
       },
@@ -1136,13 +1136,13 @@
   },
   {
     "team": "Regal Motorsports",
-    driver1: {
-      name: "Anthony Bartone",
+    "driver1": {
+      "name": "Anthony Bartone",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Andy Pilgrim",
+      "name": "Andy Pilgrim",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1154,13 +1154,13 @@
   },
   {
     "team": "Zelus Motorsports",
-    driver1: {
-      name: "Matt Guiver",
+    "driver1": {
+      "name": "Matt Guiver",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Sean Whalen",
+      "name": "Sean Whalen",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1172,13 +1172,13 @@
   },
   {
     "team": "CarBahn w/ Peregrine Racing",
-    driver1: {
-      name: "Mark Siegel",
+    "driver1": {
+      "name": "Mark Siegel",
       nationality: "USA",
       rating: "Bronze"
       },
     driver2: {
-      name: "Tom Dyer",
+      "name": "Tom Dyer",
       nationality: "USA",
       rating: "Silver"
       },
@@ -1190,8 +1190,8 @@
   },
   {
     "team": "Fast Track Racing",
-    driver1: {
-      name: "Jacob Ruud",
+    "driver1": {
+      "name": "Jacob Ruud",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1203,8 +1203,8 @@
   },
   {
     "team": "Rigid Speed",
-    driver1: {
-      name: "Joesph Catania",
+    "driver1": {
+      "name": "Joesph Catania",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1216,8 +1216,8 @@
   },
   {
     "team": "Rigid Speed",
-    driver1: {
-      name: "Lucas Catania",
+    "driver1": {
+      "name": "Lucas Catania",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1229,8 +1229,8 @@
   },
   {
     "team": "Fast Track Racing",
-    driver1: {
-      name: "Olivia Askew",
+    "driver1": {
+      "name": "Olivia Askew",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1242,8 +1242,8 @@
   },
   {
     "team": "HARD Motorsports",
-    driver1: {
-      name: "Steve Streimer",
+    "driver1": {
+      "name": "Steve Streimer",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1255,8 +1255,8 @@
   },
   {
     "team": "Rooster Hall Racing",
-    driver1: {
-      name: "Colin Garrett",
+    "driver1": {
+      "name": "Colin Garrett",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1268,8 +1268,8 @@
   },
   {
     "team": "Homewrecker Racing LLC",
-    driver1: {
-      name: "Brett Scorggin",
+    "driver1": {
+      "name": "Brett Scorggin",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1281,8 +1281,8 @@
   },
   {
     "team": "Fast Track Racing",
-    driver1: {
-      name: "Garrett Adams",
+    "driver1": {
+      "name": "Garrett Adams",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1294,8 +1294,8 @@
   },
   {
     "team": "Accerlating Performance",
-    driver1: {
-      name: "Stephen Cugliari",
+    "driver1": {
+      "name": "Stephen Cugliari",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1307,8 +1307,8 @@
   },
   {
     "team": "Random Vandals Racing",
-    driver1: {
-      name: "Jessica Tracy",
+    "driver1": {
+      "name": "Jessica Tracy",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1320,8 +1320,8 @@
   },
   {
     "team": "DRS & Garagistic",
-    driver1: {
-      name: "Matthew Ibrahim",
+    "driver1": {
+      "name": "Matthew Ibrahim",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1332,8 +1332,8 @@
     series: "TC America"
   },{
     "team": "VGRT",
-    driver1: {
-      name: "Celso Neto",
+    "driver1": {
+      "name": "Celso Neto",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1345,8 +1345,8 @@
   },
   {
     "team": "Skip Barber Racing School",
-    driver1: {
-      name: "Kevin Boehm",
+    "driver1": {
+      "name": "Kevin Boehm",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1358,8 +1358,8 @@
   },
   {
     "team": "DRS & Garagistic",
-    driver1: {
-      name: "Kris Valdez",
+    "driver1": {
+      "name": "Kris Valdez",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1371,8 +1371,8 @@
   },
   {
     "team": "TechSport Racing",
-    driver1: {
-      name: "Jason Weaver",
+    "driver1": {
+      "name": "Jason Weaver",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1384,8 +1384,8 @@
   },
   {
     "team": "LA Honda World Racing",
-    driver1: {
-      name: "Mat Pombo",
+    "driver1": {
+      "name": "Mat Pombo",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1397,8 +1397,8 @@
   },
   {
     "team": "Skip Barber Racing SChool",
-    driver1: {
-      name: "Ken Fukuda",
+    "driver1": {
+      "name": "Ken Fukuda",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1410,8 +1410,8 @@
   },
   {
     "team": "MINI JCW Team",
-    driver1: {
-      name: "Clay Williams",
+    "driver1": {
+      "name": "Clay Williams",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1423,8 +1423,8 @@
   },
   {
     "team": "FTG Racing",
-    driver1: {
-      name: "Joey Jordan",
+    "driver1": {
+      "name": "Joey Jordan",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1436,8 +1436,8 @@
   },
   {
     "team": "LA Honda World Racing",
-    driver1: {
-      name: "Mike Lamara",
+    "driver1": {
+      "name": "Mike Lamara",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1449,8 +1449,8 @@
   },
   {
     "team": "Genracer / Ricca Autosport",
-    driver1: {
-      name: "Jeff Ricca",
+    "driver1": {
+      "name": "Jeff Ricca",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1462,8 +1462,8 @@
   },
   {
     "team": "Genracer / Ricca Autosport",
-    driver1: {
-      name: "Nicholas Barbato",
+    "driver1": {
+      "name": "Nicholas Barbato",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1475,8 +1475,8 @@
   },
   {
     "team": "Skip Barber Racing School",
-    driver1: {
-      name: "Colin Harrison",
+    "driver1": {
+      "name": "Colin Harrison",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1488,8 +1488,8 @@
   },
   {
     "team": "LA Honda World Racing",
-    driver1: {
-      name: "Spencer Bucknum",
+    "driver1": {
+      "name": "Spencer Bucknum",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1501,8 +1501,8 @@
   },
   {
     "team": "Skip Barber Racing School",
-    driver1: {
-      name: "Carter Fartuch",
+    "driver1": {
+      "name": "Carter Fartuch",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1514,8 +1514,8 @@
   },
   {
     "team": "Skip Barber Racing School",
-    driver1: {
-      name: "Mike Ogren",
+    "driver1": {
+      "name": "Mike Ogren",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1527,8 +1527,8 @@
   },
   {
     "team": "TechSport Racing",
-    driver1: {
-      name: "Gresham Wagner",
+    "driver1": {
+      "name": "Gresham Wagner",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1540,8 +1540,8 @@
   },
   {
     "team": "TechSport Racing",
-    driver1: {
-      name: "Devin Anderson",
+    "driver1": {
+      "name": "Devin Anderson",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1553,8 +1553,8 @@
   },
   {
     "team": "TechSport Racing",
-    driver1: {
-      name: "Shaoyi Che",
+    "driver1": {
+      "name": "Shaoyi Che",
       nationality: "China",
       rating: "N/A"
       },
@@ -1566,8 +1566,8 @@
   },
   {
     "team": "Bryan Herta Autosport w/ Curb-Agajanian",
-    driver1: {
-      name: "Tyler Delgado",
+    "driver1": {
+      "name": "Tyler Delgado",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1579,8 +1579,8 @@
   },
   {
     "team": "MINI JCW Team",
-    driver1: {
-      name: "Christian Perocarpi",
+    "driver1": {
+      "name": "Christian Perocarpi",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1592,8 +1592,8 @@
   },
   {
     "team": "MINI JCW Team",
-    driver1: {
-      name: "PJ Groenke",
+    "driver1": {
+      "name": "PJ Groenke",
       nationality: "Canada",
       rating: "N/A"
       },
@@ -1605,8 +1605,8 @@
   },
   {
     "team": "LA Honda World Racing",
-    driver1: {
-      name: "Mario Biundo",
+    "driver1": {
+      "name": "Mario Biundo",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1618,8 +1618,8 @@
   },
   {
     "team": "Bryan Herta Autosport w/ Curb-Agajanian",
-    driver1: {
-      name: "Branyon Tiner",
+    "driver1": {
+      "name": "Branyon Tiner",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1631,8 +1631,8 @@
   },
   {
     "team": "VGRT",
-    driver1: {
-      name: "Sally McNulty",
+    "driver1": {
+      "name": "Sally McNulty",
       nationality: "USA",
       rating: "N/A"
       },
@@ -1644,8 +1644,8 @@
   },
   {
     "team": "Team Hardpoint",
-    driver1: {
-      name: "PJ Hyett",
+    "driver1": {
+      "name": "PJ Hyett",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1657,8 +1657,8 @@
   },
   {
     "team": "GMG Racing",
-    driver1: {
-      name: "Jason Bell",
+    "driver1": {
+      "name": "Jason Bell",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1670,8 +1670,8 @@
   },
   {
     "team": "CrowdStrike w/ Riley Motorsports",
-    driver1: {
-      name: "George Kurtz",
+    "driver1": {
+      "name": "George Kurtz",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1683,8 +1683,8 @@
   },
   {
     "team": "Flying Lizard Motorsports",
-    driver1: {
-      name: "Elias Sabo",
+    "driver1": {
+      "name": "Elias Sabo",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1696,8 +1696,8 @@
   },
   {
     "team": "BSport Racing",
-    driver1: {
-      name: "Bryan Putt",
+    "driver1": {
+      "name": "Bryan Putt",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1709,8 +1709,8 @@
   },
   {
     "team": "Hattori Motorsports",
-    driver1: {
-      name: "Seth Lucas",
+    "driver1": {
+      "name": "Seth Lucas",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1722,8 +1722,8 @@
   },
   {
     "team": "NOLASPORT",
-    driver1: {
-      name: "Alain Stad",
+    "driver1": {
+      "name": "Alain Stad",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1735,8 +1735,8 @@
   },
   {
     "team": "Carrus Callas Race Team",
-    driver1: {
-      name: "Nick Shanny",
+    "driver1": {
+      "name": "Nick Shanny",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1748,8 +1748,8 @@
   },
   {
     "team": "SRQ Motorsports Motorsports",
-    driver1: {
-      name: "Marko Radisic",
+    "driver1": {
+      "name": "Marko Radisic",
       nationality: "Serbia",
       rating: "Bronze"
       },
@@ -1761,8 +1761,8 @@
   },
   {
     "team": "Heart of Racing Team",
-    driver1: {
-      name: "Gray Newell",
+    "driver1": {
+      "name": "Gray Newell",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1774,8 +1774,8 @@
   },
   {
     "team": "Daskalos Motorsports",
-    driver1: {
-      name: "Jason Daskalos",
+    "driver1": {
+      "name": "Jason Daskalos",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1787,8 +1787,8 @@
   },
   {
     "team": "SRQ Motorsports Group",
-    driver1: {
-      name: "Rick Uhler",
+    "driver1": {
+      "name": "Rick Uhler",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1800,8 +1800,8 @@
   },
   {
     "team": "Conquest Racing",
-    driver1: {
-      name: "Custodio Toledo",
+    "driver1": {
+      "name": "Custodio Toledo",
       nationality: "Brazil",
       rating: "Bronze"
       },
@@ -1813,8 +1813,8 @@
   },
   {
     "team": "Triarsi Competizione",
-    driver1: {
-      name: "Justin Wetherill",
+    "driver1": {
+      "name": "Justin Wetherill",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1826,8 +1826,8 @@
   },
   {
     "team": "Cameron Racing",
-    driver1: {
-      name: "Chris Cagnazzi",
+    "driver1": {
+      "name": "Chris Cagnazzi",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1839,8 +1839,8 @@
   },
   {
     "team": "Chouest Povoledo Racing",
-    driver1: {
-      name: "Ross Chouest",
+    "driver1": {
+      "name": "Ross Chouest",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1852,8 +1852,8 @@
   },
   {
     "team": "Accelerating Performance",
-    driver1: {
-      name: "Moisey Uretsky",
+    "driver1": {
+      "name": "Moisey Uretsky",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1865,8 +1865,8 @@
   },
   {
     "team": "SKI Autosports",
-    driver1: {
-      name: "Andy Pilgrim",
+    "driver1": {
+      "name": "Andy Pilgrim",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1878,8 +1878,8 @@
   },
   {
     "team": "GMG Racing",
-    driver1: {
-      name: "CJ Moses",
+    "driver1": {
+      "name": "CJ Moses",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1891,8 +1891,8 @@
   },
   {
     "team": "Dexter Racing",
-    driver1: {
-      name: "Matthew Ibrahim",
+    "driver1": {
+      "name": "Matthew Ibrahim",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1904,8 +1904,8 @@
   },
   {
     "team": "Smooge Racing",
-    driver1: {
-      name: "Jose DaSilva",
+    "driver1": {
+      "name": "Jose DaSilva",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1917,8 +1917,8 @@
   },
   {
     "team": "Smooge Racing",
-    driver1: {
-      name: "Todd Coleman",
+    "driver1": {
+      "name": "Todd Coleman",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1930,8 +1930,8 @@
   },
   {
     "team": "MISHUMOTORS",
-    driver1: {
-      name: "Mirco Schultis",
+    "driver1": {
+      "name": "Mirco Schultis",
       nationality: "Germany",
       rating: "Bronze"
       },
@@ -1943,8 +1943,8 @@
   },
   {
     "team": "GMG Racing",
-    driver1: {
-      name: "Jay Logan",
+    "driver1": {
+      "name": "Jay Logan",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1956,8 +1956,8 @@
   },
   {
     "team": "RENNtech Motorsports",
-    driver1: {
-      name: "Chris Gumprecht",
+    "driver1": {
+      "name": "Chris Gumprecht",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1969,8 +1969,8 @@
   },
   {
     "team": "Zelus Motorsports",
-    driver1: {
-      name: "Jason Harward",
+    "driver1": {
+      "name": "Jason Harward",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1982,8 +1982,8 @@
   },
   {
     "team": "RENNtech Motorsports",
-    driver1: {
-      name: "Paul Kiebler",
+    "driver1": {
+      "name": "Paul Kiebler",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -1995,8 +1995,8 @@
   },
   {
     "team": "Rotek Racing",
-    driver1: {
-      name: "Robb Holland",
+    "driver1": {
+      "name": "Robb Holland",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -2008,8 +2008,8 @@
   },
   {
     "team": "Premier Racing",
-    driver1: {
-      name: "Adam Adelson",
+    "driver1": {
+      "name": "Adam Adelson",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -2021,8 +2021,8 @@
   },
   {
     "team": "ARG/Rotek Racing",
-    driver1: {
-      name: "Chris Alliegro",
+    "driver1": {
+      "name": "Chris Alliegro",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -2034,8 +2034,8 @@
   },
   {
     "team": "Zelus Motorsports",
-    driver1: {
-      name: "Jeff Burton",
+    "driver1": {
+      "name": "Jeff Burton",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -2047,8 +2047,8 @@
   },
   {
     "team": "Zelus Motorsports",
-    driver1: {
-      name: "Sean Whalen",
+    "driver1": {
+      "name": "Sean Whalen",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -2060,8 +2060,8 @@
   },
   {
     "team": "Regal Motorsports LLC/Bartone Bros",
-    driver1: {
-      name: "Andy Pilgrim",
+    "driver1": {
+      "name": "Andy Pilgrim",
       nationality: "USA",
       rating: "Bronze"
       },
@@ -2073,8 +2073,8 @@
   },
   {
     "team": "Regal Motorsports LLC/Bartone Bros",
-    driver1: {
-      name: "Anthony Bartone",
+    "driver1": {
+      "name": "Anthony Bartone",
       nationality: "USA",
       rating: "Bronze"
       },
