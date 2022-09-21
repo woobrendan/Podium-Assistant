@@ -1443,7 +1443,7 @@
     vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "73",
-    carImage: la73,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337380.jpg',
     series: 'TC America'
   },
   {
@@ -1456,7 +1456,7 @@
     vehicle: "Hyundai Veloster N TC",
     classification: "TC",
     number: "78",
-    carImage: gen78,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388720.jpg',
     series: 'TC America'
   },
   {
@@ -1469,7 +1469,7 @@
     vehicle: "Hyundai Veloster N TC",
     classification: "TC",
     number: "88",
-    carImage: gen88,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388680.jpg',
     series: 'TC America'
   },
   {
@@ -1482,7 +1482,7 @@
     vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "2",
-    carImage: skip2,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F364%2F%2F_RM27919.JPG',
     series: 'TC America'
   },
   {
