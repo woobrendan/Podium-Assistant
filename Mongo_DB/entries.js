@@ -1612,7 +1612,7 @@
     vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "77",
-    carImage: la77,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335115.jpg',
     series: 'TC America'
   },
   {
@@ -1625,7 +1625,7 @@
     vehicle: "Hyundai Elantra N-Line",
     classification: "TCA",
     number: "98",
-    carImage: bha98,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335233.jpg',
     series: 'TC America'
   },
   {
@@ -1638,7 +1638,7 @@
     vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "780",
-    carImage: vgrt780,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F376%2F%2FT6P_4931.jpg',
     series: 'TC America'
   },
   {
