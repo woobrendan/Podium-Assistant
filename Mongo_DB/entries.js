@@ -1,4 +1,28 @@
-[
+// Test ideas:
+// Array for drivers and array for classification if GT Am
+// {
+//   team: "Team Hardpoint",
+//   drivers: [
+//    {
+//     name: 'PJ Hyett',
+//     nationality: 'USA',
+//     rating: 'Bronze'
+//    },
+//    {
+//     name: 'Gunnar Jeannette',
+//     nationality: 'USA',
+//     rating: 'Silver'
+//     }
+    //],
+//   vehicle: "Porsche 911 GT3-R (991.ii)",
+//   classification: "Pro-Am", 
+//   number: "00",
+//   carImage: 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F304%2F%2FRL_WG_SRO_06324f.jpg',
+//   series: 'GT World Challenge America'
+// }
+
+
+[ 
   {
     team: "Team Hardpoint",
     driver1: {
