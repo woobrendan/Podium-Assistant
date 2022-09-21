@@ -1495,7 +1495,7 @@
     vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "5",
-    carImage: la5,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285137.jpg',
     series: 'TC America'
   },
   {
@@ -1508,7 +1508,7 @@
     vehicle: "Honda Civic Si",
     classification: "TCA",
     number: "16",
-    carImage: skip16,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FRL_VIR_45074f.jpg',
     series: 'TC America'
   },
   {
@@ -1534,7 +1534,7 @@
     vehicle: "Subaru BRZ",
     classification: "TCA",
     number: "21",
-    carImage: tech21,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285116.jpg',
     series: 'TC America'
   },
   {
@@ -1547,7 +1547,7 @@
     vehicle: "Subaru BRZ",
     classification: "TCA",
     number: "22",
-    carImage: tech22,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337247.jpg',
     series: 'TC America'
   },
   {
