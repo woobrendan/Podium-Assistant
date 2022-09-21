@@ -19,7 +19,7 @@
     "series": "GT World Challenge America"
   },
   {
-    team: "K-PAX Racing",
+    "team": "K-PAX Racing",
     driver1: {
       name: "Michele Beretta",
       nationality: "Italy",
@@ -37,7 +37,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "K-PAX Racing",
+    "team": "K-PAX Racing",
     driver1: {
       name: "Misha Goikhberg",
       nationality: "Canada",
@@ -55,7 +55,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Crowdstrike Racing with Riley Motorsports",
+    "team": "Crowdstrike Racing with Riley Motorsports",
     driver1: {
       name: "George Kurtz",
       nationality: "USA",
@@ -73,7 +73,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "US Racetronics",
+    "team": "US Racetronics",
     driver1: {
       name: "Steven Aghakhani",
       nationality: "USA",
@@ -91,7 +91,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "DXDT Racing",
+    "team": "DXDT Racing",
     driver1: {
       name: "Scott Smithson",
       nationality: "USA",
@@ -109,7 +109,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "TR3 Racing",
+    "team": "TR3 Racing",
     driver1: {
       name: "Ziad Ghandour",
       nationality: "USA",
@@ -127,7 +127,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Ian Lacy Racing",
+    "team": "Ian Lacy Racing",
     driver1: {
       name: "Frank Gannett",
       nationality: "USA",
@@ -145,7 +145,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Triarsi Competizione",
+    "team": "Triarsi Competizione",
     driver1: {
       name: "Justin Wetherill",
       nationality: "USA",
@@ -163,7 +163,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Triarsi Competizione",
+    "team": "Triarsi Competizione",
     driver1: {
       name: "Charlie Scardina",
       nationality: "USA",
@@ -181,7 +181,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Winward Racing",
+    "team": "Winward Racing",
     driver1: {
       name: "Russell Ward",
       nationality: "USA",
@@ -199,7 +199,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Conquest Racing",
+    "team": "Conquest Racing",
     driver1: {
       name: "Manny Franco",
       nationality: "USA",
@@ -217,7 +217,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "ST Racing",
+    "team": "ST Racing",
     driver1: {
       name: "Samantha Tan",
       nationality: "Canada",
@@ -235,7 +235,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "RealTime Racing",
+    "team": "RealTime Racing",
     driver1: {
       name: "Erin Vogel",
       nationality: "USA",
@@ -253,7 +253,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Wright Motorsports",
+    "team": "Wright Motorsports",
     driver1: {
       name: "Charlie Luck",
       nationality: "USA",
@@ -271,7 +271,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "AF Corse",
+    "team": "AF Corse",
     driver1: {
       name: "Jean-Claude Saada",
       nationality: "USA",
@@ -289,7 +289,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "DXDT Racing",
+    "team": "DXDT Racing",
     driver1: {
       name: "David Askew",
       nationality: "USA",
@@ -307,7 +307,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Zelus Motorsports",
+    "team": "Zelus Motorsports",
     driver1: {
       name: "Jason Harward",
       nationality: "USA",
@@ -325,7 +325,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Zelus Motorsports",
+    "team": "Zelus Motorsports",
     driver1: {
       name: "Jeff Burton",
       nationality: "USA",
@@ -343,7 +343,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Racers Edge Motorsports",
+    "team": "Racers Edge Motorsports",
     driver1: {
       name: "Ashton Harrison",
       nationality: "USA",
@@ -361,7 +361,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "BimmerWorld",
+    "team": "BimmerWorld",
     driver1: {
       name: "Chandler Hull",
       nationality: "USA",
@@ -379,7 +379,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "Turner Motorsport",
+    "team": "Turner Motorsport",
     driver1: {
       name: "Michael Dinan",
       nationality: "USA",
@@ -397,7 +397,7 @@
     series: "GT World Challenge America"
   },
   {
-    team: "GMG Racing",
+    "team": "GMG Racing",
     driver1: {
       name: "Jason Bell",
       nationality: "USA",
@@ -415,7 +415,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "NOLASPORT",
+    "team": "NOLASPORT",
     driver1: {
       name: "Sam Owen",
       nationality: "USA",
@@ -433,7 +433,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Flying Lizard Motorsport",
+    "team": "Flying Lizard Motorsport",
     driver1: {
       name: "Elias Sabo",
       nationality: "USA",
@@ -451,7 +451,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Fast Track Racing",
+    "team": "Fast Track Racing",
     driver1: {
       name: "Tim Horrell",
       nationality: "USA",
@@ -469,7 +469,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Fast Track Racing",
+    "team": "Fast Track Racing",
     driver1: {
       name: "Damon Surzyshyn",
       nationality: "Canada",
@@ -487,7 +487,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "BSport Racing",
+    "team": "BSport Racing",
     driver1: {
       name: "Bryan Putt",
       nationality: "USA",
@@ -505,7 +505,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Hattori Motorsports",
+    "team": "Hattori Motorsports",
     driver1: {
       name: "Seth Lucas",
       nationality: "USA",
@@ -523,7 +523,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "The Racers Group",
+    "team": "The Racers Group",
     driver1: {
       name: "James Rappaport",
       nationality: "USA",
@@ -541,7 +541,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "RS1",
+    "team": "RS1",
     driver1: {
       name: "Eric Filgueiras",
       nationality: "USA",
@@ -559,7 +559,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "NOLASPORT",
+    "team": "NOLASPORT",
     driver1: {
       name: "Alain Stad",
       nationality: "USA",
@@ -577,7 +577,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Carrus Callas Raceteam",
+    "team": "Carrus Callas Race Team",
     driver1: {
       name: "Nick Shanny",
       nationality: "USA",
@@ -595,7 +595,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Heart of Racing Team",
+    "team": "Heart of Racing Team",
     driver1: {
       name: "Gray Newell",
       nationality: "USA",
@@ -613,7 +613,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Prive Motorsports/Topp Racing",
+    "team": "Prive Motorsports/Topp Racing",
     driver1: {
       name: "Thomas Surgent",
       nationality: "USA",
@@ -631,7 +631,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Capstone Motorsportrs",
+    "team": "Capstone Motorsportrs",
     driver1: {
       name: "Kris Wilson",
       nationality: "USA",
@@ -649,7 +649,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Conquest Racing/JWF Motorsports",
+    "team": "Conquest Racing/JWF Motorsports",
     driver1: {
       name: "Gavin Sanders",
       nationality: "Canada",
@@ -667,7 +667,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Conquest Racing",
+    "team": "Conquest Racing",
     driver1: {
       name: "Custodio Toledo",
       nationality: "Brazil",
@@ -685,7 +685,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "BimmerWorld",
+    "team": "BimmerWorld",
     driver1: {
       name: "Charlie Postins",
       nationality: "United Kingdom",
@@ -703,7 +703,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Cameron Racing",
+    "team": "Cameron Racing",
     driver1: {
       name: "Chris Cagnazzi",
       nationality: "USA",
@@ -721,7 +721,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "NOLASPORT",
+    "team": "NOLASPORT",
     driver1: {
       name: "Scott Noble",
       nationality: "USA",
@@ -739,7 +739,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Team Saleen",
+    "team": "Team Saleen",
     driver1: {
       name: "Steve Saleen",
       nationality: "USA",
@@ -757,7 +757,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Chouest Povoledo Racing",
+    "team": "Chouest Povoledo Racing",
     driver1: {
       name: "Ross Chouest",
       nationality: "USA",
@@ -775,7 +775,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "AutoTechnic Racing",
+    "team": "AutoTechnic Racing",
     driver1: {
       name: "Austen Smith",
       nationality: "USA",
@@ -793,7 +793,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "AutoTechnic Racing",
+    "team": "AutoTechnic Racing",
     driver1: {
       name: "Tom Capizzi",
       nationality: "USA",
@@ -811,7 +811,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "AutoTechnic Racing",
+    "team": "AutoTechnic Racing",
     driver1: {
       name: "Rob Walker",
       nationality: "USA",
@@ -829,7 +829,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Accerlating Performance",
+    "team": "Accerlating Performance",
     driver1: {
       name: "Moisey Uretsky",
       nationality: "USA",
@@ -847,7 +847,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Dexter Racing",
+    "team": "Dexter Racing",
     driver1: {
       name: "Ben Anderson",
       nationality: "USA",
@@ -865,7 +865,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "The Racers Group",
+    "team": "The Racers Group",
     driver1: {
       name: "Jason Alexandridis",
       nationality: "USA",
@@ -883,7 +883,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Smooge Racing",
+    "team": "Smooge Racing",
     driver1: {
       name: "Kevin Conway",
       nationality: "USA",
@@ -901,7 +901,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Smooge Racing",
+    "team": "Smooge Racing",
     driver1: {
       name: "Todd Coleman",
       nationality: "USA",
@@ -919,7 +919,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "KRUGSPEED",
+    "team": "KRUGSPEED",
     driver1: {
       name: "Anthony Geraci",
       nationality: "USA",
@@ -937,7 +937,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "RENNtech Motorsports",
+    "team": "RENNtech Motorsports",
     driver1: {
       name: "Chris Gumprecht",
       nationality: "USA",
@@ -955,7 +955,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Rooster Hall Racing",
+    "team": "Rooster Hall Racing",
     driver1: {
       name: "Todd Brown",
       nationality: "USA",
@@ -973,7 +973,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "BimmerWorld",
+    "team": "BimmerWorld",
     driver1: {
       name: "James Walker Jr",
       nationality: "USA",
@@ -991,7 +991,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "RS1",
+    "team": "RS1",
     driver1: {
       name: "Nelson Calle",
       nationality: "Colombia",
@@ -1009,7 +1009,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "RENNtech Motorsports",
+    "team": "RENNtech Motorsports",
     driver1: {
       name: "Paul Kiebler",
       nationality: "USA",
@@ -1027,7 +1027,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Random Vandals Racing",
+    "team": "Random Vandals Racing",
     driver1: {
       name: "Paul Sparta",
       nationality: "USA",
@@ -1045,7 +1045,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Dexter Racing",
+    "team": "Dexter Racing",
     driver1: {
       name: "Ryan Dexter",
       nationality: "USA",
@@ -1063,7 +1063,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Premier Racing",
+    "team": "Premier Racing",
     driver1: {
       name: "Adam Adelson",
       nationality: "USA",
@@ -1081,7 +1081,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "ARG/Rotek Racing",
+    "team": "ARG/Rotek Racing",
     driver1: {
       name: "Edgar Lau",
       nationality: "Hong Kong",
@@ -1099,7 +1099,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Team ACP - Tangerine Associates",
+    "team": "Team ACP - Tangerine Associates",
     driver1: {
       name: "Alex Amine",
       nationality: "USA",
@@ -1117,7 +1117,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Indian Summer Racing",
+    "team": "Indian Summer Racing",
     driver1: {
       name: "Travis Washay",
       nationality: "USA",
@@ -1135,7 +1135,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Regal Motorsports",
+    "team": "Regal Motorsports",
     driver1: {
       name: "Anthony Bartone",
       nationality: "USA",
@@ -1153,7 +1153,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Zelus Motorsports",
+    "team": "Zelus Motorsports",
     driver1: {
       name: "Matt Guiver",
       nationality: "USA",
@@ -1171,7 +1171,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "CarBahn w/ Peregrine Racing",
+    "team": "CarBahn w/ Peregrine Racing",
     driver1: {
       name: "Mark Siegel",
       nationality: "USA",
@@ -1189,7 +1189,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    team: "Fast Track Racing",
+    "team": "Fast Track Racing",
     driver1: {
       name: "Jacob Ruud",
       nationality: "USA",
@@ -1202,7 +1202,7 @@
     series: "TC America"
   },
   {
-    team: "Rigid Speed",
+    "team": "Rigid Speed",
     driver1: {
       name: "Joesph Catania",
       nationality: "USA",
@@ -1215,7 +1215,7 @@
     series: "TC America"
   },
   {
-    team: "Rigid Speed",
+    "team": "Rigid Speed",
     driver1: {
       name: "Lucas Catania",
       nationality: "USA",
@@ -1228,7 +1228,7 @@
     series: "TC America"
   },
   {
-    team: "Fast Track Racing",
+    "team": "Fast Track Racing",
     driver1: {
       name: "Olivia Askew",
       nationality: "USA",
@@ -1241,7 +1241,7 @@
     series: "TC America"
   },
   {
-    team: "HARD Motorsports",
+    "team": "HARD Motorsports",
     driver1: {
       name: "Steve Streimer",
       nationality: "USA",
@@ -1254,7 +1254,7 @@
     series: "TC America"
   },
   {
-    team: "Rooster Hall Racing",
+    "team": "Rooster Hall Racing",
     driver1: {
       name: "Colin Garrett",
       nationality: "USA",
@@ -1267,7 +1267,7 @@
     series: "TC America"
   },
   {
-    team: "Homewrecker Racing LLC",
+    "team": "Homewrecker Racing LLC",
     driver1: {
       name: "Brett Scorggin",
       nationality: "USA",
@@ -1280,7 +1280,7 @@
     series: "TC America"
   },
   {
-    team: "Fast Track Racing",
+    "team": "Fast Track Racing",
     driver1: {
       name: "Garrett Adams",
       nationality: "USA",
@@ -1293,7 +1293,7 @@
     series: "TC America"
   },
   {
-    team: "Accerlating Performance",
+    "team": "Accerlating Performance",
     driver1: {
       name: "Stephen Cugliari",
       nationality: "USA",
@@ -1306,7 +1306,7 @@
     series: "TC America"
   },
   {
-    team: "Random Vandals Racing",
+    "team": "Random Vandals Racing",
     driver1: {
       name: "Jessica Tracy",
       nationality: "USA",
@@ -1319,7 +1319,7 @@
     series: "TC America"
   },
   {
-    team: "DRS & Garagistic",
+    "team": "DRS & Garagistic",
     driver1: {
       name: "Matthew Ibrahim",
       nationality: "USA",
@@ -1331,7 +1331,7 @@
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041522_Sonoma_bcpix2269379.jpg",
     series: "TC America"
   },{
-    team: "VGRT",
+    "team": "VGRT",
     driver1: {
       name: "Celso Neto",
       nationality: "USA",
@@ -1344,7 +1344,7 @@
     series: "TC America"
   },
   {
-    team: "Skip Barber Racing School",
+    "team": "Skip Barber Racing School",
     driver1: {
       name: "Kevin Boehm",
       nationality: "USA",
@@ -1357,7 +1357,7 @@
     series: "TC America"
   },
   {
-    team: "DRS & Garagistic",
+    "team": "DRS & Garagistic",
     driver1: {
       name: "Kris Valdez",
       nationality: "USA",
@@ -1370,7 +1370,7 @@
     series: "TC America"
   },
   {
-    team: "TechSport Racing",
+    "team": "TechSport Racing",
     driver1: {
       name: "Jason Weaver",
       nationality: "USA",
@@ -1383,7 +1383,7 @@
     series: "TC America"
   },
   {
-    team: "LA Honda World Racing",
+    "team": "LA Honda World Racing",
     driver1: {
       name: "Mat Pombo",
       nationality: "USA",
@@ -1396,7 +1396,7 @@
     series: "TC America"
   },
   {
-    team: "Skip Barber Racing SChool",
+    "team": "Skip Barber Racing SChool",
     driver1: {
       name: "Ken Fukuda",
       nationality: "USA",
@@ -1409,7 +1409,7 @@
     series: "TC America"
   },
   {
-    team: "MINI JCW Team",
+    "team": "MINI JCW Team",
     driver1: {
       name: "Clay Williams",
       nationality: "USA",
@@ -1422,7 +1422,7 @@
     series: "TC America"
   },
   {
-    team: "FTG Racing",
+    "team": "FTG Racing",
     driver1: {
       name: "Joey Jordan",
       nationality: "USA",
@@ -1435,7 +1435,7 @@
     series: "TC America"
   },
   {
-    team: "LA Honda World Racing",
+    "team": "LA Honda World Racing",
     driver1: {
       name: "Mike Lamara",
       nationality: "USA",
@@ -1448,7 +1448,7 @@
     series: "TC America"
   },
   {
-    team: "Genracer / Ricca Autosport",
+    "team": "Genracer / Ricca Autosport",
     driver1: {
       name: "Jeff Ricca",
       nationality: "USA",
@@ -1461,7 +1461,7 @@
     series: "TC America"
   },
   {
-    team: "Genracer / Ricca Autosport",
+    "team": "Genracer / Ricca Autosport",
     driver1: {
       name: "Nicholas Barbato",
       nationality: "USA",
@@ -1474,7 +1474,7 @@
     series: "TC America"
   },
   {
-    team: "Skip Barber Racing School",
+    "team": "Skip Barber Racing School",
     driver1: {
       name: "Colin Harrison",
       nationality: "USA",
@@ -1487,7 +1487,7 @@
     series: "TC America"
   },
   {
-    team: "LA Honda World Racing",
+    "team": "LA Honda World Racing",
     driver1: {
       name: "Spencer Bucknum",
       nationality: "USA",
@@ -1500,7 +1500,7 @@
     series: "TC America"
   },
   {
-    team: "Skip Barber Racing School",
+    "team": "Skip Barber Racing School",
     driver1: {
       name: "Carter Fartuch",
       nationality: "USA",
@@ -1513,7 +1513,7 @@
     series: "TC America"
   },
   {
-    team: "Skip Barber Racing School",
+    "team": "Skip Barber Racing School",
     driver1: {
       name: "Mike Ogren",
       nationality: "USA",
@@ -1526,7 +1526,7 @@
     series: "TC America"
   },
   {
-    team: "TechSport Racing",
+    "team": "TechSport Racing",
     driver1: {
       name: "Gresham Wagner",
       nationality: "USA",
@@ -1539,7 +1539,7 @@
     series: "TC America"
   },
   {
-    team: "TechSport Racing",
+    "team": "TechSport Racing",
     driver1: {
       name: "Devin Anderson",
       nationality: "USA",
@@ -1552,7 +1552,7 @@
     series: "TC America"
   },
   {
-    team: "TechSport Racing",
+    "team": "TechSport Racing",
     driver1: {
       name: "Shaoyi Che",
       nationality: "China",
@@ -1565,7 +1565,7 @@
     series: "TC America"
   },
   {
-    team: "Bryan Herta Autosport w/ Curb-Agajanian",
+    "team": "Bryan Herta Autosport w/ Curb-Agajanian",
     driver1: {
       name: "Tyler Delgado",
       nationality: "USA",
@@ -1578,7 +1578,7 @@
     series: "TC America"
   },
   {
-    team: "MINI JCW Team",
+    "team": "MINI JCW Team",
     driver1: {
       name: "Christian Perocarpi",
       nationality: "USA",
@@ -1591,7 +1591,7 @@
     series: "TC America"
   },
   {
-    team: "MINI JCW Team",
+    "team": "MINI JCW Team",
     driver1: {
       name: "PJ Groenke",
       nationality: "Canada",
@@ -1604,7 +1604,7 @@
     series: "TC America"
   },
   {
-    team: "LA Honda World Racing",
+    "team": "LA Honda World Racing",
     driver1: {
       name: "Mario Biundo",
       nationality: "USA",
@@ -1617,7 +1617,7 @@
     series: "TC America"
   },
   {
-    team: "Bryan Herta Autosport w/ Curb-Agajanian",
+    "team": "Bryan Herta Autosport w/ Curb-Agajanian",
     driver1: {
       name: "Branyon Tiner",
       nationality: "USA",
@@ -1630,7 +1630,7 @@
     series: "TC America"
   },
   {
-    team: "VGRT",
+    "team": "VGRT",
     driver1: {
       name: "Sally McNulty",
       nationality: "USA",
@@ -1643,7 +1643,7 @@
     series: "TC America"
   },
   {
-    team: "Team Hardpoint",
+    "team": "Team Hardpoint",
     driver1: {
       name: "PJ Hyett",
       nationality: "USA",
@@ -1656,7 +1656,7 @@
     series: "GT America"
   },
   {
-    team: "GMG Racing",
+    "team": "GMG Racing",
     driver1: {
       name: "Jason Bell",
       nationality: "USA",
@@ -1669,7 +1669,7 @@
     series: "GT America"
   },
   {
-    team: "CrowdStrike w/ Riley Motorsports",
+    "team": "CrowdStrike w/ Riley Motorsports",
     driver1: {
       name: "George Kurtz",
       nationality: "USA",
@@ -1682,7 +1682,7 @@
     series: "GT America"
   },
   {
-    team: "Flying Lizard Motorsports",
+    "team": "Flying Lizard Motorsports",
     driver1: {
       name: "Elias Sabo",
       nationality: "USA",
@@ -1695,7 +1695,7 @@
     series: "GT America"
   },
   {
-    team: "BSport Racing",
+    "team": "BSport Racing",
     driver1: {
       name: "Bryan Putt",
       nationality: "USA",
@@ -1708,7 +1708,7 @@
     series: "GT America"
   },
   {
-    team: "Hattori Motorsports",
+    "team": "Hattori Motorsports",
     driver1: {
       name: "Seth Lucas",
       nationality: "USA",
@@ -1721,7 +1721,7 @@
     series: "GT America"
   },
   {
-    team: "NOLASPORT",
+    "team": "NOLASPORT",
     driver1: {
       name: "Alain Stad",
       nationality: "USA",
@@ -1734,7 +1734,7 @@
     series: "GT America"
   },
   {
-    team: "Carrus Callas Raceteam",
+    "team": "Carrus Callas Race Team",
     driver1: {
       name: "Nick Shanny",
       nationality: "USA",
@@ -1747,7 +1747,7 @@
     series: "GT America"
   },
   {
-    team: "SRQ Motorsports Motorsports",
+    "team": "SRQ Motorsports Motorsports",
     driver1: {
       name: "Marko Radisic",
       nationality: "Serbia",
@@ -1760,7 +1760,7 @@
     series: "GT America"
   },
   {
-    team: "Heart of Racing Team",
+    "team": "Heart of Racing Team",
     driver1: {
       name: "Gray Newell",
       nationality: "USA",
@@ -1773,7 +1773,7 @@
     series: "GT America"
   },
   {
-    team: "Daskalos Motorsports",
+    "team": "Daskalos Motorsports",
     driver1: {
       name: "Jason Daskalos",
       nationality: "USA",
@@ -1786,7 +1786,7 @@
     series: "GT America"
   },
   {
-    team: "SRQ Motorsports Group",
+    "team": "SRQ Motorsports Group",
     driver1: {
       name: "Rick Uhler",
       nationality: "USA",
@@ -1799,7 +1799,7 @@
     series: "GT America"
   },
   {
-    team: "Conquest Racing",
+    "team": "Conquest Racing",
     driver1: {
       name: "Custodio Toledo",
       nationality: "Brazil",
@@ -1812,7 +1812,7 @@
     series: "GT America"
   },
   {
-    team: "Triarsi Competizione",
+    "team": "Triarsi Competizione",
     driver1: {
       name: "Justin Wetherill",
       nationality: "USA",
@@ -1825,7 +1825,7 @@
     series: "GT America"
   },
   {
-    team: "Cameron Racing",
+    "team": "Cameron Racing",
     driver1: {
       name: "Chris Cagnazzi",
       nationality: "USA",
@@ -1838,7 +1838,7 @@
     series: "GT America"
   },
   {
-    team: "Chouest Povoledo Racing",
+    "team": "Chouest Povoledo Racing",
     driver1: {
       name: "Ross Chouest",
       nationality: "USA",
@@ -1851,7 +1851,7 @@
     series: "GT America"
   },
   {
-    team: "Accelerating Performance",
+    "team": "Accelerating Performance",
     driver1: {
       name: "Moisey Uretsky",
       nationality: "USA",
@@ -1864,7 +1864,7 @@
     series: "GT America"
   },
   {
-    team: "SKI Autosports",
+    "team": "SKI Autosports",
     driver1: {
       name: "Andy Pilgrim",
       nationality: "USA",
@@ -1877,7 +1877,7 @@
     series: "GT America"
   },
   {
-    team: "GMG Racing",
+    "team": "GMG Racing",
     driver1: {
       name: "CJ Moses",
       nationality: "USA",
@@ -1890,7 +1890,7 @@
     series: "GT America"
   },
   {
-    team: "Dexter Racing",
+    "team": "Dexter Racing",
     driver1: {
       name: "Matthew Ibrahim",
       nationality: "USA",
@@ -1903,7 +1903,7 @@
     series: "GT America"
   },
   {
-    team: "Smooge Racing",
+    "team": "Smooge Racing",
     driver1: {
       name: "Jose DaSilva",
       nationality: "USA",
@@ -1916,7 +1916,7 @@
     series: "GT America"
   },
   {
-    team: "Smooge Racing",
+    "team": "Smooge Racing",
     driver1: {
       name: "Todd Coleman",
       nationality: "USA",
@@ -1929,7 +1929,7 @@
     series: "GT America"
   },
   {
-    team: "MISHUMOTORS",
+    "team": "MISHUMOTORS",
     driver1: {
       name: "Mirco Schultis",
       nationality: "Germany",
@@ -1942,7 +1942,7 @@
     series: "GT America"
   },
   {
-    team: "GMG Racing",
+    "team": "GMG Racing",
     driver1: {
       name: "Jay Logan",
       nationality: "USA",
@@ -1955,7 +1955,7 @@
     series: "GT America"
   },
   {
-    team: "RENNtech Motorsports",
+    "team": "RENNtech Motorsports",
     driver1: {
       name: "Chris Gumprecht",
       nationality: "USA",
@@ -1968,7 +1968,7 @@
     series: "GT America"
   },
   {
-    team: "Zelus Motorsports",
+    "team": "Zelus Motorsports",
     driver1: {
       name: "Jason Harward",
       nationality: "USA",
@@ -1981,7 +1981,7 @@
     series: "GT America"
   },
   {
-    team: "RENNtech Motorsports",
+    "team": "RENNtech Motorsports",
     driver1: {
       name: "Paul Kiebler",
       nationality: "USA",
@@ -1994,7 +1994,7 @@
     series: "GT America"
   },
   {
-    team: "Rotek Racing",
+    "team": "Rotek Racing",
     driver1: {
       name: "Robb Holland",
       nationality: "USA",
@@ -2007,7 +2007,7 @@
     series: "GT America"
   },
   {
-    team: "Premier Racing",
+    "team": "Premier Racing",
     driver1: {
       name: "Adam Adelson",
       nationality: "USA",
@@ -2020,7 +2020,7 @@
     series: "GT America"
   },
   {
-    team: "ARG/Rotek Racing",
+    "team": "ARG/Rotek Racing",
     driver1: {
       name: "Chris Alliegro",
       nationality: "USA",
@@ -2033,7 +2033,7 @@
     series: "GT America"
   },
   {
-    team: "Zelus Motorsports",
+    "team": "Zelus Motorsports",
     driver1: {
       name: "Jeff Burton",
       nationality: "USA",
@@ -2046,7 +2046,7 @@
     series: "GT America"
   },
   {
-    team: "Zelus Motorsports",
+    "team": "Zelus Motorsports",
     driver1: {
       name: "Sean Whalen",
       nationality: "USA",
@@ -2059,7 +2059,7 @@
     series: "GT America"
   },
   {
-    team: "Regal Motorsports LLC/Bartone Bros",
+    "team": "Regal Motorsports LLC/Bartone Bros",
     driver1: {
       name: "Andy Pilgrim",
       nationality: "USA",
@@ -2072,7 +2072,7 @@
     series: "GT America"
   },
   {
-    team: "Regal Motorsports LLC/Bartone Bros",
+    "team": "Regal Motorsports LLC/Bartone Bros",
     driver1: {
       name: "Anthony Bartone",
       nationality: "USA",
