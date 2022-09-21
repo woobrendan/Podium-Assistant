@@ -1391,7 +1391,7 @@
     vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "37",
-    carImage: LA37,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337180.jpg',
     series: 'TC America'
   },
   {
@@ -1404,7 +1404,7 @@
     vehicle: "Honda Civic Type-R",
     classification: "TC",
     number: "42",
-    carImage: skip42,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F07898_RL_Sonomaf.jpg',
     series: 'TC America'
   },
   {
@@ -1417,7 +1417,7 @@
     vehicle: "MINI JCW Pro TC",
     classification: "TC",
     number: "60",
-    carImage: mini60,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335148.jpg',
     series: 'TC America'
   },
   {
@@ -1430,7 +1430,7 @@
     vehicle: "Mazda 3",
     classification: "TC",
     number: "70",
-    carImage: ftg70,
+    carImage: 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285091.jpg',
     series: 'TC America'
   },
   {
