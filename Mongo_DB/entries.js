@@ -25,12 +25,12 @@
      " nationality": "Italy",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Andrea Calderlli",
      " nationality": "Italy",
       "rating": "Platinum"
       },
-    vehicle: "Lamborghini Huracan GT3",
+    "vehicle": "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "1",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F299%2F%2FFH1_6911.jpg",
@@ -43,12 +43,12 @@
      " nationality": "Canada",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Jordan Pepper",
      " nationality": "South Africa",
       "rating": "Gold"
       },
-    vehicle: "Lamborghini Huracan GT3",
+    "vehicle": "Lamborghini Huracan GT3",
     classification: "Pro",
     number: "3",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F81%2F285%2F%2F_RM28469.JPG",
@@ -61,12 +61,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Colin Braun",
      " nationality": "USA",
       "rating": "Gold"
       },
-    vehicle: "Mercedes-AMG GT3",
+    "vehicle": "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "04",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FDY-12A86I3525.jpg",
@@ -79,12 +79,12 @@
      " nationality": "USA",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Loris Spinelli",
      " nationality": "Italy",
       "rating": "Silver"
       },
-    vehicle: "Mercedes-AMG GT3",
+    "vehicle": "Mercedes-AMG GT3",
     classification: "Pro",
     number: "6",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10314f.jpg",
@@ -97,12 +97,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Bryan Sellers",
      " nationality": "USA",
       "rating": "Gold"
       },
-    vehicle: "Mercedes-AMG GT3",
+    "vehicle": "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "08",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2FVIR_GTWCA_Q_GM_2403291.JPG",
@@ -115,12 +115,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Giacomo Altoe",
      " nationality": "Italy",
       "rating": "Gold"
       },
-    vehicle: "Lamborghini Huracan GT3 EVO",
+    "vehicle": "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "9",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F293%2F%2FRL_VIR_45415f_1.jpg",
@@ -133,12 +133,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Drew Staveley",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Aston Martin Vantage AMR GT3",
+    "vehicle": "Aston Martin Vantage AMR GT3",
     classification: "Pro-Am",
     number: "12",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FP6180569.jpg",
@@ -151,12 +151,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Ryan Dalziel",
      " nationality": "Scotland",
       "rating": "Gold"
       },
-    vehicle: "Ferrari 488 GT3 EVO",
+    "vehicle": "Ferrari 488 GT3 EVO",
     classification: "Pro-Am",
     number: "13",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F293%2F%2FRL_VIR_45437f_1.jpg",
@@ -169,12 +169,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Onofrio Triarsi",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Ferrari 488 GT3 EVO",
+    "vehicle": "Ferrari 488 GT3 EVO",
     classification: "Am",
     number: "23",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F304%2F%2FT6P_8515.JPG",
@@ -187,12 +187,12 @@
      " nationality": "USA",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Philip Ellis",
      " nationality": "Switzerland",
       "rating": "Gold"
       },
-    vehicle: "Mercedes-AMG GT3",
+    "vehicle": "Mercedes-AMG GT3",
     classification: "Pro",
     number: "33",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F301%2F%2FT6P_6471.jpg",
@@ -205,12 +205,12 @@
      " nationality": "USA",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Alessandro Balzan",
      " nationality": "Italy",
       "rating": "Gold"
       },
-    vehicle: "Ferrari 488 GT3",
+    "vehicle": "Ferrari 488 GT3",
     classification: "Pro",
     number: "34",
     carImage: "",
@@ -223,12 +223,12 @@
      " nationality": "Canada",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Nick Wittmer",
      " nationality": "Canada",
       "rating": "Silver"
       },
-    vehicle: "BMW M4 GT3",
+    "vehicle": "BMW M4 GT3",
     classification: "Pro-Am",
     number: "38",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387612DN-severe-noise.jpg",
@@ -241,12 +241,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Michael Cooper",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Acura NSX GT3",
+    "vehicle": "Acura NSX GT3",
     classification: "Pro-Am",
     number: "43",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387571.jpg",
@@ -259,12 +259,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Jan Heylen",
      " nationality": "Belgium",
       "rating": "Gold"
       },
-    vehicle: "Porsche 911 GT3-R (991.ii)",
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
     classification: "Pro-Am",
     number: "45",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10326f.jpg",
@@ -277,12 +277,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Conrad Grunewald",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Ferrari 488 GT3",
+    "vehicle": "Ferrari 488 GT3",
     classification: "Am",
     number: "61",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F81%2F290%2F%2FNOLA_SRO_20220522_Rizzo_29679.JPG",
@@ -295,12 +295,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Dirk Mueller",
      " nationality": "Germany",
       "rating": "Platinum"
       },
-    vehicle: "Mercedes-AMG GT3",
+    "vehicle": "Mercedes-AMG GT3",
     classification: "Pro-Am",
     number: "63",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10359f.jpg",
@@ -313,12 +313,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Madison Snow",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Lamborghini Huracan GT3 EVO",
+    "vehicle": "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "88",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FFH1_3959.jpg",
@@ -331,12 +331,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Corey Lewis",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Lamborghini Huracan GT3 EVO",
+    "vehicle": "Lamborghini Huracan GT3 EVO",
     classification: "Pro-Am",
     number: "91",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F300%2F%2F072222_WGI_bcpix2462628.jpg",
@@ -349,12 +349,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Mario Farnbacher",
      " nationality": "Germany",
       "rating": "Gold"
       },
-    vehicle: "Acura NSX GT3",
+    "vehicle": "Acura NSX GT3",
     classification: "Pro-Am",
     number: "93",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_09976f.jpg",
@@ -367,12 +367,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Bill Auberlen",
      " nationality": "USA",
       "rating": "Gold"
       },
-    vehicle: "BMW M4 GT3",
+    "vehicle": "BMW M4 GT3",
     classification: "Pro-Am",
     number: "94",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FRL_VIR_43517f.jpg",
@@ -385,12 +385,12 @@
      " nationality": "USA",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Robby Foley",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "BMW M4 GT3",
+    "vehicle": "BMW M4 GT3",
     classification: "Pro",
     number: "96",
     carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FMRM_5040.JPG",
@@ -403,12 +403,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Andrew Davis",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "2",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472384.jpg",
@@ -421,12 +421,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Sean Gibbons",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "7",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2473016.jpg",
@@ -439,12 +439,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Andy Lee",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "8",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335866.jpg",
@@ -457,12 +457,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Raphael Matos",
      " nationality": "Brazil",
       "rating": "Gold"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Pro-Am",
     number: "10",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471986.jpg",
@@ -475,12 +475,12 @@
      " nationality": "Canada",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Gregory Liefooghe",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Pro-Am",
     number: "11",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F361%2F%2F9B243085-F8D3-4FEE-978B-654979C2B6E0_01.jpg",
@@ -493,12 +493,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Kenton Koch",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "15",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F366%2F%2FRL_WG_SRO_05269f.jpg",
@@ -511,12 +511,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Matt Plumb",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "Pro-Am",
     number: "016",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F361%2F%2F6EA05358-3894-4E31-BC18-A7648479B18C_01.jpg",
@@ -529,12 +529,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Todd Hetherington",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "17",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F357%2F%2F052222_NOLA_bcpix2360094.jpg",
@@ -547,12 +547,12 @@
      " nationality": "USA",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Stevan McAleer",
      " nationality": "Scotland",
       "rating": "Silver"
       },
-    vehicle: "Porsche Cayman 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche Cayman 718 Cayman GT4 RS CS",
     classification: "Silver",
     number: "18",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471898.jpg",
@@ -565,12 +565,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Matt Travis",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche Cayman 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche Cayman 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "19",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F357%2F%2FFH1_6966.jpg",
@@ -583,12 +583,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Terry Borcheller",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Toyota GR Supra",
+    "vehicle": "Toyota GR Supra",
     classification: "Am",
     number: "20",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472061.jpg",
@@ -601,12 +601,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Ian James",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "24",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_51026f.jpg",
@@ -619,12 +619,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Michael O'Brien",
      " nationality": "United Kingdom",
       "rating": "Silver"
       },
-    vehicle: "McLaren 570s GT4",
+    "vehicle": "McLaren 570s GT4",
     classification: "Pro-Am",
     number: "26",
     carImage: prive26,
@@ -637,12 +637,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Cole Ciraulo",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "Silver",
     number: "32",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_54248f.jpg",
@@ -655,12 +655,12 @@
      " nationality": "Canada",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Michai Stephens",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "Silver",
     number: "34",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471906.jpg",
@@ -673,12 +673,12 @@
      " nationality": "Brazil",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Paulo Carcasci",
      " nationality": "Brazil",
       "rating": "Am"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "Am",
     number: "35",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472370.jpg",
@@ -691,12 +691,12 @@
      " nationality": "United Kingdom",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "James Clay",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Am",
     number: "36",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F363%2F%2F061822_VIR_bcpix2388329.jpg",
@@ -709,12 +709,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Guy Cosmo",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "Pro-Am",
     number: "39",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_54281f.jpg",
@@ -727,12 +727,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Jason Hart",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "47",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472023.jpg",
@@ -745,12 +745,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Eric Curran",
      " nationality": "USA",
       "rating": "Gold"
       },
-    vehicle: "Saleen 1",
+    "vehicle": "Saleen 1",
     classification: "Pro-Am",
     number: "49",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472326.jpg" ,
@@ -763,12 +763,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Aaron Povoledo",
      " nationality": "Canada",
       "rating": "Silver"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "50",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471970.jpg",
@@ -781,12 +781,12 @@
      " nationality": "USA",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Zac Anderson",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Silver",
     number: "51",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2473005.jpg",
@@ -799,12 +799,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "John Capestro-Dubets",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Pro-Am",
     number: "52",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335932.jpg",
@@ -817,12 +817,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Alex Filsinger",
      " nationality": "Canada",
       "rating": "Bronze"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Am",
     number: "53",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2473009.jpg",
@@ -835,12 +835,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Justin Piscitell",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "Pro-Am",
     number: "55",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471948.jpg",
@@ -853,12 +853,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Matt Rivard",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Ginetta G56 GT4",
+    "vehicle": "Ginetta G56 GT4",
     classification: "Am",
     number: "60",
     carImage: "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F387%2F%2FJL4_3937.JPG",
@@ -871,12 +871,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Derek DeBoer",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "66",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2473022.jpg",
@@ -889,12 +889,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "John Geesbreght",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "Silver",
     number: "68",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472342.jpg",
@@ -907,12 +907,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Aaron Telitz",
      " nationality": "USA",
       "rating": "Gold"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "Pro-Am",
     number: "69",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10903_RL_Sonomaf.jpg",
@@ -925,12 +925,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Jaden Lander",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "Am",
     number: "72",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472210.jpg",
@@ -943,12 +943,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Kyle Marcelli",
      " nationality": "Canada",
       "rating": "Gold"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "Pro-Am",
     number: "79",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F361%2F%2F4010CA28-E887-4091-BE2C-F04F0FE575BE_01.jpg",
@@ -961,12 +961,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Johan Schwartz",
      " nationality": "Denmark",
       "rating": "Bronze"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Am",
     number: "80",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471957.jpg",
@@ -979,12 +979,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Devin Jones",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Pro-Am",
     number: "82",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472362.jpg",
@@ -997,12 +997,12 @@
      " nationality": "Colombia",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Juan Martinez",
      " nationality": "Colombia",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "83",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471978.jpg",
@@ -1015,12 +1015,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Jon Branam",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "Am",
     number: "89",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_54211f.jpg",
@@ -1033,12 +1033,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Al Carter",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Am",
     number: "98",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F366%2F%2FT6P_0562.JPG",
@@ -1051,12 +1051,12 @@
      " nationality": "USA",
       "rating": "Silver"
       },
-    driver2: {
+    "driver2": {
       "name": "Dominic Starkweather",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "Silver",
     number: "112",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_51097f.jpg",
@@ -1069,12 +1069,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Elliot Skeer",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Porscher 718 Cayman GT4 RS CS",
+    "vehicle": "Porscher 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "120",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472994.jpg",
@@ -1087,12 +1087,12 @@
      " nationality": "Hong Kong",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Billy Johnson",
      " nationality": "USA",
       "rating": "Gold"
       },
-    vehicle: "Ford Mustang GT4",
+    "vehicle": "Ford Mustang GT4",
     classification: "Pro-Am",
     number: "124",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471920.jpg",
@@ -1105,12 +1105,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Ryan Hall",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "Am",
     number: "152",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F363%2F%2FFH1_5121.jpg",
@@ -1123,12 +1123,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Francis Selldorff",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "Pro-Am",
     number: "319",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472258.jpg",
@@ -1141,12 +1141,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Andy Pilgrim",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "Am",
     number: "427",
     carImage: "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479488.jpg",
@@ -1159,12 +1159,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Sean Whalen",
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "Am",
     number: "888",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471980.jpg",
@@ -1177,12 +1177,12 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    driver2: {
+    "driver2": {
       "name": "Tom Dyer",
      " nationality": "USA",
       "rating": "Silver"
       },
-    vehicle: "Audi R8 LMS GT4",
+    "vehicle": "Audi R8 LMS GT4",
     classification: "Pro-Am",
     number: "930",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F347%2F%2F09174_RL_Sonomaf.jpg",
@@ -1195,7 +1195,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "1",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388686.jpg",
@@ -1208,7 +1208,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "24",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335201.jpg",
@@ -1221,7 +1221,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "26",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337526.jpg",
@@ -1234,7 +1234,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "29",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285717.jpg",
@@ -1247,7 +1247,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "30",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335276.jpg",
@@ -1260,7 +1260,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "44",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335313_1.jpg",
@@ -1273,7 +1273,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "51",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F372%2F%2FFH2_5315.jpg",
@@ -1286,7 +1286,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "54",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335132.jpg",
@@ -1299,7 +1299,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "57",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FRL_VIR_45119f.jpg",
@@ -1312,7 +1312,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M2 CS(Cup)",
+    "vehicle": "BMW M2 CS(Cup)",
     classification: "TCX",
     number: "97",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FFH2_3259.jpg",
@@ -1325,7 +1325,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M240iR (2019 EVO)",
+    "vehicle": "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "06",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041522_Sonoma_bcpix2269379.jpg",
@@ -1337,7 +1337,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Type-R",
+    "vehicle": "Honda Civic Type-R",
     classification: "TC",
     number: "8",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335272.jpg",
@@ -1350,7 +1350,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Type-R",
+    "vehicle": "Honda Civic Type-R",
     classification: "TC",
     number: "9",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388750.jpg",
@@ -1363,7 +1363,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "BMW M240iR (2019 EVO)",
+    "vehicle": "BMW M240iR (2019 EVO)",
     classification: "TC",
     number: "09",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FRL_VIR_45218f.jpg",
@@ -1376,7 +1376,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Nissan 370z TC Spec",
+    "vehicle": "Nissan 370z TC Spec",
     classification: "TC",
     number: "18",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2021%2F58%2F318%2F%2F060521_VIR_bcpix_1751219.jpg",
@@ -1389,7 +1389,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Type-R",
+    "vehicle": "Honda Civic Type-R",
     classification: "TC",
     number: "37",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337180.jpg",
@@ -1402,7 +1402,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Type-R",
+    "vehicle": "Honda Civic Type-R",
     classification: "TC",
     number: "42",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F07898_RL_Sonomaf.jpg",
@@ -1415,7 +1415,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "MINI JCW Pro TC",
+    "vehicle": "MINI JCW Pro TC",
     classification: "TC",
     number: "60",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335148.jpg",
@@ -1428,7 +1428,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Mazda 3",
+    "vehicle": "Mazda 3",
     classification: "TC",
     number: "70",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285091.jpg",
@@ -1441,7 +1441,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Type-R",
+    "vehicle": "Honda Civic Type-R",
     classification: "TC",
     number: "73",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337380.jpg",
@@ -1454,7 +1454,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Hyundai Veloster N TC",
+    "vehicle": "Hyundai Veloster N TC",
     classification: "TC",
     number: "78",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388720.jpg",
@@ -1467,7 +1467,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Hyundai Veloster N TC",
+    "vehicle": "Hyundai Veloster N TC",
     classification: "TC",
     number: "88",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F369%2F%2F061822_VIR_bcpix2388680.jpg",
@@ -1480,7 +1480,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Si",
+    "vehicle": "Honda Civic Si",
     classification: "TCA",
     number: "2",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F364%2F%2F_RM27919.JPG",
@@ -1493,7 +1493,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Si",
+    "vehicle": "Honda Civic Si",
     classification: "TCA",
     number: "5",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285137.jpg",
@@ -1506,7 +1506,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Si",
+    "vehicle": "Honda Civic Si",
     classification: "TCA",
     number: "16",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FRL_VIR_45074f.jpg",
@@ -1519,7 +1519,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Si",
+    "vehicle": "Honda Civic Si",
     classification: "TCA",
     number: "20",
     carImage: "",
@@ -1532,7 +1532,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Subaru BRZ",
+    "vehicle": "Subaru BRZ",
     classification: "TCA",
     number: "21",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F64%2F359%2F%2F041622_Sonoma_bcpix2285116.jpg",
@@ -1545,7 +1545,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Subaru BRZ",
+    "vehicle": "Subaru BRZ",
     classification: "TCA",
     number: "22",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F363%2F%2F051922_NOLA_bcpix2337247.jpg",
@@ -1558,7 +1558,7 @@
      " nationality": "China",
       "rating": "N/A"
       },
-    vehicle: "Subaru BRZ",
+    "vehicle": "Subaru BRZ",
     classification: "TCA",
     number: "23",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F376%2F%2FT6P_4941.jpg",
@@ -1571,7 +1571,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Hyundai Elantra N-Line",
+    "vehicle": "Hyundai Elantra N-Line",
     classification: "TCA",
     number: "33",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FJL4_4510.JPG",
@@ -1584,7 +1584,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "MINI JCW",
+    "vehicle": "MINI JCW",
     classification: "TCA",
     number: "61",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FJL4_2636.JPG",
@@ -1597,7 +1597,7 @@
      " nationality": "Canada",
       "rating": "N/A"
       },
-    vehicle: "MINI JCW",
+    "vehicle": "MINI JCW",
     classification: "TCA",
     number: "62",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F66%2F370%2F%2FJL4_2629.JPG",
@@ -1610,7 +1610,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Si",
+    "vehicle": "Honda Civic Si",
     classification: "TCA",
     number: "77",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335115.jpg",
@@ -1623,7 +1623,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Hyundai Elantra N-Line",
+    "vehicle": "Hyundai Elantra N-Line",
     classification: "TCA",
     number: "98",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335233.jpg",
@@ -1636,7 +1636,7 @@
      " nationality": "USA",
       "rating": "N/A"
       },
-    vehicle: "Honda Civic Si",
+    "vehicle": "Honda Civic Si",
     classification: "TCA",
     number: "780",
     carImage: "https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F376%2F%2FT6P_4931.jpg",
@@ -1649,7 +1649,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 911 GT3-R (991.ii)",
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
     classification: "SRO3",
     number: "00",
     carImage: "",
@@ -1662,7 +1662,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "2",
     carImage: gmg2a,
@@ -1675,7 +1675,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Mercedes-AMG GT3",
+    "vehicle": "Mercedes-AMG GT3",
     classification: "SRO3",
     number: "04",
     carImage: crwd04a,
@@ -1688,7 +1688,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "8",
     carImage: flm8,
@@ -1701,7 +1701,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "15",
     carImage: bsport15,
@@ -1714,7 +1714,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "GT4",
     number: "016",
     carImage: hattori016,
@@ -1727,7 +1727,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "19",
     carImage: nola19a,
@@ -1740,7 +1740,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "GT4",
     number: "21",
     carImage: carrus21a,
@@ -1753,7 +1753,7 @@
      " nationality": "Serbia",
       "rating": "Bronze"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "GT4",
     number: "22",
     carImage: srq22,
@@ -1766,7 +1766,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "25",
     carImage: hort25a,
@@ -1779,7 +1779,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Audi R8 LMS",
+    "vehicle": "Audi R8 LMS",
     classification: "SRO3",
     number: "27",
     carImage: dask27,
@@ -1792,7 +1792,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "BMW M4 GT4",
+    "vehicle": "BMW M4 GT4",
     classification: "GT4",
     number: "28",
     carImage: srq28,
@@ -1805,7 +1805,7 @@
      " nationality": "Brazil",
       "rating": "Bronze"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "GT4",
     number: "35",
     carImage: "",
@@ -1818,7 +1818,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Ferrari 488 GT3",
+    "vehicle": "Ferrari 488 GT3",
     classification: "SRO3",
     number: "37",
     carImage: triarsi37a,
@@ -1831,7 +1831,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "GT4",
     number: "39",
     carImage: cameron39a,
@@ -1844,7 +1844,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "50",
     carImage: chouest50a,
@@ -1857,7 +1857,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "55",
     carImage: accerlate55a,
@@ -1870,7 +1870,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Ferrari 458 Italia GT3",
+    "vehicle": "Ferrari 458 Italia GT3",
     classification: "SRO3",
     number: "56",
     carImage: SKI56,
@@ -1883,7 +1883,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Audi R8 LMS GT2",
+    "vehicle": "Audi R8 LMS GT2",
     classification: "GT2",
     number: "58",
     carImage: gmg58,
@@ -1896,7 +1896,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Ginetta G56 GT4",
+    "vehicle": "Ginetta G56 GT4",
     classification: "GT4",
     number: "60",
     carImage: dexter60,
@@ -1909,7 +1909,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "GT4",
     number: "67",
     carImage: smooge67,
@@ -1922,7 +1922,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Toyota GR Supra GT4",
+    "vehicle": "Toyota GR Supra GT4",
     classification: "GT4",
     number: "69",
     carImage: smooge67,
@@ -1935,7 +1935,7 @@
      " nationality": "Germany",
       "rating": "Bronze"
       },
-    vehicle: "Callaway Corvette C7 GT3-R",
+    "vehicle": "Callaway Corvette C7 GT3-R",
     classification: "SRO3",
     number: "70",
     carImage: mish70,
@@ -1948,7 +1948,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "71",
     carImage: gmg71,
@@ -1961,7 +1961,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "GT4",
     number: "79",
     carImage: renn79a,
@@ -1974,7 +1974,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Lamborghini Huracan GT3",
+    "vehicle": "Lamborghini Huracan GT3",
     classification: "SRO3",
     number: "88",
     carImage: zelus88a,
@@ -1987,7 +1987,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Mercedes-AMG GT4",
+    "vehicle": "Mercedes-AMG GT4",
     classification: "GT4",
     number: "89",
     carImage: renn89a,
@@ -2000,7 +2000,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "99",
     carImage: rotek99,
@@ -2013,7 +2013,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 RS CS",
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
     classification: "GT4",
     number: "120",
     carImage: premier120a,
@@ -2026,7 +2026,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Ford Mustang GT4",
+    "vehicle": "Ford Mustang GT4",
     classification: "GT4",
     number: "124",
     carImage: arg124,
@@ -2039,7 +2039,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Lamborghini Huracan GT3",
+    "vehicle": "Lamborghini Huracan GT3",
     classification: "SRO3",
     number: "191",
     carImage: zelus191,
@@ -2052,7 +2052,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Aston Martin Vantage AMR GT4",
+    "vehicle": "Aston Martin Vantage AMR GT4",
     classification: "GT4",
     number: "888",
     carImage: zelus888,
@@ -2065,7 +2065,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 Clubsport MR",
+    "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
     classification: "GT4",
     number: "3",
     carImage: "",
@@ -2078,7 +2078,7 @@
      " nationality": "USA",
       "rating": "Bronze"
       },
-    vehicle: "Porsche 718 Cayman GT4 Clubsport MR",
+    "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
     classification: "GT4",
     number: "427",
     carImage: "",
