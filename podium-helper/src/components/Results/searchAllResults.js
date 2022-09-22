@@ -20,8 +20,8 @@ export default function SearchAllResults(list, searchValue) {
     const allDrivers = () => {
       const driverArray = [];
       for (const result of allPlaceResults()) {
-        if (result) driverArray.push(result.driver1.name)
-        if (result && result.driver2) driverArray.push(result.driver2.name)
+        if (result) driverArray.push(result.driver1)
+        if (result && result.driver2) driverArray.push(result.driver2)
       }
       return driverArray;
     }
