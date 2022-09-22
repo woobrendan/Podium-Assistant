@@ -5,7 +5,6 @@ import axios from "axios";
 export default function useEntries() {
   const [drivers, setDrivers] = useState([]);
   const [vehicles, setVehicles] = useState([]);
-  const [fastLaps, setFastLaps] = useState([]);
   const [resultHistory, setResultHistory] = useState([]);
   const [events, setEvents] = useState([]);
   const [series, setSeries] = useState([]);
@@ -15,19 +14,17 @@ export default function useEntries() {
     const promise1 = axios.get(`http://localhost:2020/api/results`);
     const promise2 = axios.get(`http://localhost:8080/api/drivers`);
     const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
-    const promise4 = axios.get(`http://localhost:8080/api/fastlaps`);
     const promise5 = axios.get('http://localhost:8080/api/events');
     const promise6 = axios.get('http://localhost:8080/api/series');
     const promise7 = axios.get('http://localhost:8080/api/class');
-    Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7])
+    Promise.all([promise1, promise2, promise3, promise5, promise6, promise7])
       .then((all) => {
         setResultHistory(all[0].data);
         setDrivers(all[1].data);
         setVehicles(all[2].data);
-        setFastLaps(all[3].data);
-        setEvents(all[4].data);
-        setSeries(all[5].data);
-        setClassCategory(all[6].data);
+        setEvents(all[3].data);
+        setSeries(all[4].data);
+        setClassCategory(all[5].data);
       })
       .catch((err) => console.log("Error from Promise:", err));
   }, [])
@@ -45,14 +42,14 @@ export default function useEntries() {
     return vehicle;
   });
 
-  fastLaps.map((lap) => {
-    for (const driver of drivers) {
-      if (driver.id === lap.driver_id) {
-        lap.driver = driver.name;
-      }
-    }
-    return lap;
-  });
+  // fastLaps.map((lap) => {
+  //   for (const driver of drivers) {
+  //     if (driver.id === lap.driver_id) {
+  //       lap.driver = driver.name;
+  //     }
+  //   }
+  //   return lap;
+  // });
 
   //loop through results take the placement winner id and match the id with the vehicle id
   // resultHistory.map((result) => {
@@ -72,51 +69,50 @@ export default function useEntries() {
 
   //groups togethter results with same id, returns array of arrays 
   // returns [[{result1}, {result1}]...]
-  const groupMe = (resultArr) => {
-    const group = [];
-    resultArr.forEach(result => {
-      if (!group[result.result_id - 1]) {
-        group[result.result_id - 1] = [];
-      } 
-      group[result.result_id - 1].push(result)
-    })
-    return group;
-  }
+  // const groupMe = (resultArr) => {
+  //   const group = [];
+  //   resultArr.forEach(result => {
+  //     if (!group[result.result_id - 1]) {
+  //       group[result.result_id - 1] = [];
+  //     } 
+  //     group[result.result_id - 1].push(result)
+  //   })
+  //   return group;
+  // }
   //create array of objects, where each object holds all the info pertaining to one series race result
-  const resultInfoGrouped = (groupArr) => {
-    const arrOfResults = [];
-    for (const result of groupArr) {
-      const indivResult = {
-        date: result[0].date,
-        series: result[0].series,
-        event: result[0].event
-      }
-      for (let i = 1; i <= result.length; i++) {
-        indivResult[`result${i}`] = result[i - 1];
-      }
-      arrOfResults.push(indivResult)
-    }
-    return arrOfResults
-  }
+  // const resultInfoGrouped = (groupArr) => {
+  //   const arrOfResults = [];
+  //   for (const result of groupArr) {
+  //     const indivResult = {
+  //       date: result[0].date,
+  //       series: result[0].series,
+  //       event: result[0].event
+  //     }
+  //     for (let i = 1; i <= result.length; i++) {
+  //       indivResult[`result${i}`] = result[i - 1];
+  //     }
+  //     arrOfResults.push(indivResult)
+  //   }
+  //   return arrOfResults
+  // }
 
-  // add fast lap to array of objects  for each result, adding the fast lap into  to that obj
-  const addFastLap = (resultArr) => {
-    for (let f = 0; f < fastLaps.length; f++)  {
-      for (let r = 0; r < resultArr.length; r++) {
-        if (fastLaps[f].id === resultArr[r].result1.fast_lap) {
-          resultArr[r][`fastLap`] = fastLaps[f];
-        }
-      }
-    }
-    return resultArr
-  }
+  // // add fast lap to array of objects  for each result, adding the fast lap into  to that obj
+  // const addFastLap = (resultArr) => {
+  //   for (let f = 0; f < fastLaps.length; f++)  {
+  //     for (let r = 0; r < resultArr.length; r++) {
+  //       if (fastLaps[f].id === resultArr[r].result1.fast_lap) {
+  //         resultArr[r][`fastLap`] = fastLaps[f];
+  //       }
+  //     }
+  //   }
+  //   return resultArr
+  // }
  
-  const groupResults = addFastLap(resultInfoGrouped(groupMe(resultHistory)))
+  // const groupResults = addFastLap(resultInfoGrouped(groupMe(resultHistory)))
 
   return {
     drivers,
     vehicles: vehicles.sort(compareCarNumber),
-    fastLaps,
     resultHistory,
     events,
     series,
