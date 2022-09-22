@@ -12,16 +12,19 @@
       "class": "SRO3",
       "firstPlace": {
         "driver1": "Jason Daskalos",
+        "number": "27",
         "vehicle": "Audi R8 LMS",
         "team": "Daskalos Motorsports"
       },
       "secondPlace": {
         "driver1": "Scott Smithson",
+        "number": "08",
         "vehicle": "Mercedes-AMG GT3",
         "team": "DXDT Racing"
       },
       "thirdPlace": {
         "driver1": "George Kurtz",
+        "number": "04",
         "vehicle": "Mercedes-AMG GT3",
         "team": "Riley Motorsports w/ CrowdStrike Racing"
       }
@@ -30,16 +33,19 @@
       "class": "GT4",
       "firstPlace": {
         "driver1": "Marko Radisic",
+        "number": "22",
         "vehicle": "BMW M4 GT4",
         "team": "SRQ Motorsports"
       },
       "secondPlace": {
         "driver1": "Derek DeBoer",
+        "number": "66",
         "vehicle": "Porsche 718 Cayman GT4 CS MR",
         "team": "The Racers Group"
       },
       "thirdPlace": {
         "driver1": "Moisey Uretsky",
+        "number": "55",
         "vehicle": "Aston Martin Vantage GT4",
         "team": "Accelerating Peformance"
       }
@@ -48,6 +54,7 @@
       "class": "GT2",
       "firstPlace": {
         "driver1": "CJ Moses",
+        "number": "58",
         "vehicle": "Audi R8 LMS GT2",
         "team": "GMG Racing"
       }
@@ -56,6 +63,7 @@
       "class": "Masters",
       "firstPlace": {
         "driver1": "David Askew",
+        "number": "63",
         "vehicle": "Mercedes-AMG GT3",
         "team": "DXDT Racing"
       }
@@ -74,16 +82,19 @@
       "class": "SRO3",
       "firstPlace": {
         "driver1": "George Kurtz",
+        "number": "04",
         "vehicle": "Mercedes-AMG GT3",
         "team": "Riley Motorsports w/ CrowdStrike Racing"
       },
       "secondPlace": {
         "driver1": "Scott Smithson",
+        "number": "08",
         "vehicle": "Mercedes-AMG GT3",
         "team": "DXDT Racing"
       },
       "thirdPlace": {
         "driver1": "Justin Wetherill",
+        "number": "37",
         "vehicle": "Ferrari 488 GT3",
         "team": "Triarsi Competizione"
       }
@@ -92,16 +103,19 @@
       "class": "GT4",
       "firstPlace": {
         "driver1": "Jason Bell",
+        "number": "2",
         "vehicle": "Aston Martin Vantage GT4",
         "team": "GMG Racing"
       },
       "secondPlace": {
         "driver1": "Chris Gumprecht",
+        "number": "79",
         "vehicle": "Mercedes-AMG GT4",
         "team": "RENNtech Motorsports"
       },
       "thirdPlace": {
         "driver1": "Moisey Uretsky",
+        "number": "55",
         "vehicle": "Aston Martin Vantage GT4",
         "team": "Accelerating Peformance"
       }
@@ -110,6 +124,7 @@
       "class": "GT2",
       "firstPlace": {
         "driver1": "CJ Moses",
+        "number": "58",
         "vehicle": "Audi R8 LMS GT2",
         "team": "GMG Racing"
       }
@@ -118,6 +133,7 @@
       "class": "Masters",
       "firstPlace": {
         "driver1": "Ziad Ghandour",
+        "number": "9",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "TR3 Racing"
       }
