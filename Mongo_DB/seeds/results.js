@@ -283,7 +283,7 @@
       "secondPlace": {
         "driver1": "Charlie Scardina",
         "driver2": "Onofrio Triarsi",
-        "number": "23s",
+        "number": "23",
         "vehicle": "Ferrari 488 GT3",
         "team": "Triarsi Competizione"
       }
@@ -302,16 +302,19 @@
       "class": "SRO3",
       "firstPlace": {
         "driver1": "Jason Daskalos",
+        "number": "27",
         "vehicle": "Audi R8 LMS",
         "team": "Daskalos Motorsports"
       },
       "secondPlace": {
         "driver1": "George Kurtz",
+        "number": "04",
         "vehicle": "Mercedes-AMG GT3",
         "team": "CrowdStrike Racing by Riley Motorsports"
       },
       "thirdPlace": {
         "driver1": "Jason Harward",
+        "number": "88",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "Zelus Motorsports"
       }
@@ -320,8 +323,9 @@
       "class": "GT4",
       "firstPlace": {
         "driver1": "Steve Dinan",
+        "number": "930",
         "vehicle": "Audi R8 LMS GT4",
-        "team": "Wright Motorsports"
+        "team": "CarBahn w/ Peregrine Racing"
       },
       "secondPlace": {
         "driver1": "Todd Coleman",
