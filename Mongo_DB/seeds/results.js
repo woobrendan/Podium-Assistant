@@ -256,5 +256,68 @@
         "team": "Triarsi Competizione"
       }
     }
+  },
+  {
+    "series": "GT America",
+    "date": "04-16-2022",
+    "event": "Sonoma Raceway",
+    "fastLap": {
+      "driver": "Jason Harward",
+      "vehicle": "Lamborghini Huracan GT3",
+      "time": "1:41.653"
+    },
+    "result1": {
+      "class": "SRO3",
+      "firstPlace": {
+        "driver1": "Jason Daskalos",
+        "vehicle": "Audi R8 LMS",
+        "team": "Daskalos Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "George Kurtz",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "Jason Harward",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
+      }
+    },
+    "result2": {
+      "class": "GT4",
+      "firstPlace": {
+        "driver1": "Steve Dinan",
+        "vehicle": "Audi R8 LMS GT4",
+        "team": "Wright Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Ashton Harrison",
+        "driver2": "Mario Farnbacher",
+        "vehicle": "Acura NSX GT3",
+        "team": "Racers Edge Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "George Kurtz",
+        "driver2": "Colin Braun",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Jean-Claude Saada",
+        "driver2": "Conrad Grunewald",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "AF Corse"
+      },
+      "secondPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
+      }
+    }
   }
 ]
