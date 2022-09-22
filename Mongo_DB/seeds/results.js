@@ -292,32 +292,26 @@
         "team": "Wright Motorsports"
       },
       "secondPlace": {
-        "driver1": "Ashton Harrison",
-        "driver2": "Mario Farnbacher",
-        "vehicle": "Acura NSX GT3",
-        "team": "Racers Edge Motorsports"
+        "driver1": "Todd Coleman",
+        "number": "69",
+        "vehicle": "Toyota GR Supra GT4",
+        "team": "Smooge Racing"
       },
       "thirdPlace": {
-        "driver1": "George Kurtz",
-        "driver2": "Colin Braun",
-        "vehicle": "Mercedes-AMG GT3",
-        "team": "CrowdStrike Racing by Riley Motorsports"
+        "driver1": "Jose DaSilva",
+        "number": "67",
+        "vehicle": "Toyota GR Supra GT4",
+        "team": "Smooge Racing"
       }
     },
     "result3": {
-      "class": "Am",
+      "class": "Masters",
       "firstPlace": {
-        "driver1": "Jean-Claude Saada",
-        "driver2": "Conrad Grunewald",
-        "vehicle": "Ferrari 488 GT3",
-        "team": "AF Corse"
+        "driver1": "Mirco Shultis",
+        "number": "70",
+        "vehicle": "Callaway Corvette C7 GT3",
+        "team": "Mishumotors"
       },
-      "secondPlace": {
-        "driver1": "Charlie Scardina",
-        "driver2": "Onofrio Triarsi",
-        "vehicle": "Ferrari 488 GT3",
-        "team": "Triarsi Competizione"
-      }
     }
   }
 ]
