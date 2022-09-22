@@ -153,18 +153,21 @@
       "firstPlace": {
         "driver1": "Jordan Pepper",
         "driver2": "Andrea Caldarelli",
+        "number": "1",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "K-PAX Racing"
       },
       "secondPlace": {
         "driver1": "Steven Aghakhani",
         "driver2": "Loris Spinelli",
+        "number": "6",
         "vehicle": "Mercedes-AMG GT3",
         "team": "US Racetronics"
       },
       "thirdPlace": {
         "driver1": "Misha Goikhberg",
         "driver2": "Giacomo Altoe",
+        "number": "3",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "K-PAX Racing"
       }
@@ -174,18 +177,21 @@
       "firstPlace": {
         "driver1": "Charlie Luck",
         "driver2": "Jan Heylen",
+        "number": "45",
         "vehicle": "Porsche 911 GT3-R (991.ii)",
         "team": "Wright Motorsports"
       },
       "secondPlace": {
         "driver1": "George Kurtz",
         "driver2": "Colin Braun",
+        "number": "04",
         "vehicle": "Mercedes-AMG GT3",
         "team": "CrowdStrike Racing by Riley Motorsports"
       },
       "thirdPlace": {
         "driver1": "Chandlerr Hull",
         "driver2": "Bill Auberlen",
+        "number": "04",
         "vehicle": "BMW M4 GT3",
         "team": "BimmerWorlds"
       }
@@ -195,12 +201,14 @@
       "firstPlace": {
         "driver1": "Jean-Claude Saada",
         "driver2": "Conrad Grunewald",
+        "number": "61",
         "vehicle": "Ferrari 488 GT3",
         "team": "AF Corse"
       },
       "secondPlace": {
         "driver1": "Charlie Scardina",
         "driver2": "Onofrio Triarsi",
+        "number": "23",
         "vehicle": "Ferrari 488 GT3",
         "team": "Triarsi Competizione"
       }
@@ -220,18 +228,21 @@
       "firstPlace": {
         "driver1": "Jordan Pepper",
         "driver2": "Andrea Caldarelli",
+        "number": "1",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "K-PAX Racing"
       },
       "secondPlace": {
         "driver1": "Russell Ward",
         "driver2": "Philip Ellis",
+        "number": "33",
         "vehicle": "Mercedes-AMG GT3",
         "team": "Winward Racing"
       },
       "thirdPlace": {
         "driver1": "Misha Goikhberg",
         "driver2": "Giacomo Altoe",
+        "number": "3",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "K-PAX Racing"
       }
@@ -241,18 +252,21 @@
       "firstPlace": {
         "driver1": "Charlie Luck",
         "driver2": "Jan Heylen",
+        "number": "45",
         "vehicle": "Porsche 911 GT3-R (991.ii)",
         "team": "Wright Motorsports"
       },
       "secondPlace": {
         "driver1": "Ashton Harrison",
         "driver2": "Mario Farnbacher",
+        "number": "93",
         "vehicle": "Acura NSX GT3",
         "team": "Racers Edge Motorsports"
       },
       "thirdPlace": {
         "driver1": "George Kurtz",
         "driver2": "Colin Braun",
+        "number": "04",
         "vehicle": "Mercedes-AMG GT3",
         "team": "CrowdStrike Racing by Riley Motorsports"
       }
@@ -262,12 +276,14 @@
       "firstPlace": {
         "driver1": "Jean-Claude Saada",
         "driver2": "Conrad Grunewald",
+        "number": "61",
         "vehicle": "Ferrari 488 GT3",
         "team": "AF Corse"
       },
       "secondPlace": {
         "driver1": "Charlie Scardina",
         "driver2": "Onofrio Triarsi",
+        "number": "23s",
         "vehicle": "Ferrari 488 GT3",
         "team": "Triarsi Competizione"
       }
