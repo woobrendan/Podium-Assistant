@@ -19,21 +19,21 @@ export default function ResultTableBbody(props) {
   const checkPodium = () => {
     const allResults = [];
     if(!first.driver2) {
-      allResults.push(createDataSingleDriver('1st', first.number, first.driver1.name, first.team, first.vehicle))
+      allResults.push(createDataSingleDriver('1st', first.number, first.driver1, first.team, first.vehicle))
       if (second) {
-        allResults.push(createDataSingleDriver('2nd', second.number, second.driver1.name, second.team, second.vehicle));
+        allResults.push(createDataSingleDriver('2nd', second.number, second.driver1, second.team, second.vehicle));
       } 
       if (third) {
-        allResults.push(createDataSingleDriver('3rd', third.number, third.driver1.name, third.team, third.vehicle));
+        allResults.push(createDataSingleDriver('3rd', third.number, third.driver1, third.team, third.vehicle));
       }
       return allResults; 
     } else {
-      allResults.push(createDataTwoDriver('1st', first.number, first.driver1.name, first.driver2.name, first.team, first.vehicle));
+      allResults.push(createDataTwoDriver('1st', first.number, first.driver1, first.driver2, first.team, first.vehicle));
       if (second) {
-        allResults.push(createDataTwoDriver('2nd', second.number, second.driver1.name, second.driver2.name, second.team, second.vehicle));
+        allResults.push(createDataTwoDriver('2nd', second.number, second.driver1, second.driver2, second.team, second.vehicle));
       } 
       if (third) {
-        allResults.push(createDataTwoDriver('3rd', third.number, third.driver1.name, third.driver2.name, third.team, third.vehicle));
+        allResults.push(createDataTwoDriver('3rd', third.number, third.driver1, third.driver2, third.team, third.vehicle));
       }
       return allResults;
     }
