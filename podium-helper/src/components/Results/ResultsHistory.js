@@ -6,10 +6,10 @@ import SearchAllResults from './SearchAllResults';
 import BackToTopButton from '../BackToTopButton';
 
 function ResultsHistory() {
-  const { groupResults, mongoResults } = useEntries()
+  const { resultHistory } = useEntries()
   const [searchValue, setSearchValue] = useState('');
 
-  const allResults = SearchAllResults(mongoResults, searchValue).map((result, index) => (
+  const allResults = SearchAllResults(resultHistory, searchValue).map((result, index) => (
     <ResultTableHeader results={result} key={index} />
   ));
 
