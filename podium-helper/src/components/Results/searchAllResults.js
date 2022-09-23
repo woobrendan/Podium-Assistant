@@ -5,13 +5,13 @@ export default function SearchAllResults(list, searchValue) {
   const filtered = list.filter(val => {
 
     const allPlaceResults = () => {
-      const all = [val.result1.first_place, val.result1.second_place, val.result1.third_place];
+      const all = [val.result1.firstPlace, val.result1.secondPlace, val.result1.thirdPlace];
 
       if (val.result2) {
-        all.push(val.result2.first_place, val.result2.second_place, val.result2.third_place);
+        all.push(val.result2.firstPlace, val.result2.secondPlace, val.result2.thirdPlace);
       }
       if (val.result3) {
-        all.push(val.result3.first_place, val.result3.second_place, val.result3.third_place);
+        all.push(val.result3.firstPlace, val.result3.secondPlace, val.result3.thirdPlace);
       }
       return all;
     }
