@@ -12,9 +12,9 @@ function createDataSingleDriver(place, number, driver1, team, car) {
 export default function ResultTableBbody(props) {
 
   const podium = props.results;
-  const first = podium.first_place;
-  const second = podium.second_place;
-  const third = podium.third_place;
+  const first = podium.firstPlace;
+  const second = podium.secondPlace;
+  const third = podium.thirdPlace;
 
   const checkPodium = () => {
     const allResults = [];
