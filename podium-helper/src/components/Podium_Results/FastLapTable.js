@@ -7,7 +7,7 @@ function createFastLap(driver, lapTime) {
 
 function FastLapTable(props) {
   const fastLap = props.fastLap;
-  const rows = [createFastLap(fastLap.driver, fastLap.laptime)]
+  const rows = [createFastLap(fastLap.driver, fastLap.time)]
       
   return (
     <>
