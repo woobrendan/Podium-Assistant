@@ -74,10 +74,58 @@ const resultSchema = new mongoose.Schema({
           required: true
         }
       }
+    },
+    result2: {
+      class: {
+        type: String,
+        required: true
+      },
+      firstPlace: {
+        driver: {
+          type: String,
+          required: true
+        },
+        vehicle: {
+          type: String,
+          required: true
+        },
+        team: {
+          type: String,
+          required: true
+        }
+      },
+      secondPlace: {
+        driver: {
+          type: String,
+          required: true
+        },
+        vehicle: {
+          type: String,
+          required: true
+        },
+        team: {
+          type: String,
+          required: true
+        }
+      },
+      thirdPlace: {
+        driver: {
+          type: String,
+          required: true
+        },
+        vehicle: {
+          type: String,
+          required: true
+        },
+        team: {
+          type: String,
+          required: true
+        }
+      }
     }
 })
 
-module.exports = mongoose.model('results', entriesSchema)
+module.exports = mongoose.model('results', resultSchema)
 
 // classification: {
 //   type: String,
