@@ -126,8 +126,3 @@ const resultSchema = new mongoose.Schema({
 })
 
 module.exports = mongoose.model('results', resultSchema)
-
-// classification: {
-//   type: String,
-//   required: true
-// }
