@@ -189,5 +189,72 @@
         "team": "Triarsi Competizione"
       }
     }
+  },
+  {
+    "series": "GT World Challenge America",
+    "date": "04-17-2022",
+    "event": "Sonoma Raceway",
+    "fastLap": {
+      "driver": "Jordan Pepper",
+      "vehicle": "Lamborghini Huracan GT3",
+      "time": "1:37.208"
+    },
+    "result1": {
+      "class": "Pro",
+      "firstPlace": {
+        "driver1": "Jordan Pepper",
+        "driver2": "Andrea Caldarelli",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      },
+      "secondPlace": {
+        "driver1": "Russell Ward",
+        "driver2": "Philip Ellis",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "Winward Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Misha Goikhberg",
+        "driver2": "Giacomo Altoe",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      }
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Charlie Luck",
+        "driver2": "Jan Heylen",
+        "vehicle": "Porsche 911 GT3-R (991.ii)",
+        "team": "Wright Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Ashton Harrison",
+        "driver2": "Mario Farnbacher",
+        "vehicle": "Acura NSX GT3",
+        "team": "Racers Edge Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "George Kurtz",
+        "driver2": "Colin Braun",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Jean-Claude Saada",
+        "driver2": "Conrad Grunewald",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "AF Corse"
+      },
+      "secondPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
+      }
+    }
   }
 ]
