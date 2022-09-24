@@ -7,7 +7,7 @@ import '../../Styling/result.scss';
 function ResultTableHeader(props) {
   const podiums = props.results;
   const podium1 = podiums.result1;
-  const singleDriver = podium1.first_place.driver2 ? false : true
+  const singleDriver = podium1.firstPlace.driver2 ? false : true
 
   return (
     <div id='result-table-container'>
@@ -30,7 +30,7 @@ function ResultTableHeader(props) {
               <TableCell>Place</TableCell>
               <TableCell align="right">#</TableCell>
               <TableCell align="right">Driver 1</TableCell>
-              {podium1.first_place.driver2 && <TableCell align="right">Driver 2</TableCell>}
+              {podium1.firstPlace.driver2 && <TableCell align="right">Driver 2</TableCell>}
               <TableCell align="right">Team</TableCell>
               <TableCell align="right">Vehicle</TableCell>
             </TableRow>
