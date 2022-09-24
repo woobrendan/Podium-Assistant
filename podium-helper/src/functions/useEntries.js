@@ -10,6 +10,7 @@ export default function useEntries() {
   const [events, setEvents] = useState([]);
   const [series, setSeries] = useState([]);
   const [classCategory, setClassCategory] = useState([]);
+  const [mongoResults, setMongoResults] = useState([])
 
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:8080/api/results`);
@@ -19,7 +20,8 @@ export default function useEntries() {
     const promise5 = axios.get('http://localhost:8080/api/events');
     const promise6 = axios.get('http://localhost:8080/api/series');
     const promise7 = axios.get('http://localhost:8080/api/class');
-    Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7])
+    const promise8 = axios.get('http://localhost:2020/api/results');
+    Promise.all([promise1, promise2, promise3, promise4, promise5, promise6, promise7, promise8])
       .then((all) => {
         setResultHistory(all[0].data);
         setDrivers(all[1].data);
@@ -28,6 +30,7 @@ export default function useEntries() {
         setEvents(all[4].data);
         setSeries(all[5].data);
         setClassCategory(all[6].data);
+        setMongoResults(all[7].data)
       })
       .catch((err) => console.log("Error from Promise:", err));
   }, [])
@@ -121,6 +124,7 @@ export default function useEntries() {
     groupResults,
     events,
     series,
-    classCategory
+    classCategory,
+    mongoResults
   }
 }
