@@ -55,9 +55,71 @@
     "result4": {
       "class": "Masters",
       "firstPlace": {
-        "driver": "David Askewe",
+        "driver": "David Askew",
         "vehicle": "Mercedes-AMG GT3",
         "team": "DXDT Racing"
+      }
+    }
+  },
+  {
+    "series": "GT America",
+    "date": "02-26-2022",
+    "event": "St. Petersburg",
+    "fastLap": {
+      "driver": "Justin Wetherill",
+      "vehicle": "Ferrari 488 GT3",
+      "time": "1:13.642"
+    },
+    "result1": {
+      "class": "SRO3",
+      "firstPlace": {
+        "driver": "George Kurtz",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "Riley Motorsports w/ CrowdStrike Racing"
+      },
+      "secondPlace": {
+        "driver": "Scott Smithson",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "DXDT Racing"
+      },
+      "thirdPlace": {
+        "driver": "Justin Wetherill",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
+      }
+    },
+    "result2": {
+      "class": "GT4",
+      "firstPlace": {
+        "driver": "Jason Bell",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "GMG Racing"
+      },
+      "secondPlace": {
+        "driver": "Chris Gumprecht",
+        "vehicle": "Mercedes-AMG GT4",
+        "team": "RENNtech Motorsports"
+      },
+      "thirdPlace": {
+        "driver": "Moisey Uretsky",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Accelerating Peformance"
+      }
+    },
+    "result3": {
+      "class": "GT2",
+      "firstPlace": {
+        "driver": "CJ Moses",
+        "vehicle": "Audi R8 LMS GT2",
+        "team": "GMG Racing"
+      }
+    },
+    "result4": {
+      "class": "Masters",
+      "firstPlace": {
+        "driver": "Ziad Ghandour",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "TR3 Racing"
       }
     }
   }
