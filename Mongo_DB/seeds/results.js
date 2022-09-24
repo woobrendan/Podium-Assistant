@@ -154,37 +154,39 @@
       }
     },
     "result2": {
-      "class": "GT4",
+      "class": "Pro/Am",
       "firstPlace": {
-        "driver": "Jason Bell",
-        "vehicle": "Aston Martin Vantage GT4",
-        "team": "GMG Racing"
+        "driver1": "Charlie Luck",
+        "driver2": "Jan Heylen",
+        "vehicle": "Porsche 911 GT3-R (991.ii)",
+        "team": "Wright Motorsports"
       },
       "secondPlace": {
-        "driver": "Chris Gumprecht",
-        "vehicle": "Mercedes-AMG GT4",
-        "team": "RENNtech Motorsports"
+        "driver1": "George Kurtz",
+        "driver2": "Colin Braun",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
       },
       "thirdPlace": {
-        "driver": "Moisey Uretsky",
-        "vehicle": "Aston Martin Vantage GT4",
-        "team": "Accelerating Peformance"
+        "driver1": "Chandlerr Hull",
+        "driver2": "Bill Auberlen",
+        "vehicle": "BMW M4 GT3",
+        "team": "BimmerWorlds"
       }
     },
     "result3": {
-      "class": "GT2",
+      "class": "Am",
       "firstPlace": {
-        "driver": "CJ Moses",
-        "vehicle": "Audi R8 LMS GT2",
-        "team": "GMG Racing"
-      }
-    },
-    "result4": {
-      "class": "Masters",
-      "firstPlace": {
-        "driver": "Ziad Ghandour",
-        "vehicle": "Lamborghini Huracan GT3",
-        "team": "TR3 Racing"
+        "driver1": "Jean-Claude Saada",
+        "driver2": "Conrad Grunewald",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "AF Corse"
+      },
+      "secondPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
       }
     }
   }
