@@ -47,13 +47,17 @@
     "result3": {
       "class": "GT2",
       "firstPlace": {
-        //driver info
+        "driver": "CJ Moses",
+        "vehicle": "Audi R8 LMS GT2",
+        "team": "GMG Racing"
       }
     },
     "result4": {
       "class": "Masters",
       "firstPlace": {
-        //driver info
+        "driver": "David Askewe",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "DXDT Racing"
       }
     }
   }
