@@ -1087,16 +1087,16 @@
     "result3": {
       "class": "TCA",
       "firstPlace": {
-        "driver1": "Gresham Wagner",
-        "number": "21",
-        "vehicle": "Subaru BRZ",
-        "team": "TechSport Racing"
-      },
-      "secondPlace": {
         "driver1": "Carter Fartuch",
         "number": "16",
         "vehicle": "Honda Civic Si",
         "team": "Skip Barber Racing"
+      },
+      "secondPlace": {
+        "driver1": "Devon Anderson",
+        "number": "22",
+        "vehicle": "Subaru BRZ",
+        "team": "TechSport Racing"
       },
       "thirdPlace": {
         "driver1": "Spencer Bucknum",
