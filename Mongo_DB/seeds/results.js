@@ -990,22 +990,22 @@
         "driver1": "Adam Adelson",
         "driver2": "Elliot Skeer",
         "number": "120",
-        "vehicle": "Porsche 718 Cayman RS CS",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
         "team": "Premier Racing"
       },
       "secondPlace": {
-        "driver1": "Tom Capizzi",
-        "driver2": "John Capestro Dubets",
-        "number": "52",
-        "vehicle": "BMW M4 GT4",
+        "driver1": "Scott Noble",
+        "driver2": "Jason Hart",
+        "number": "47",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
         "team": "AutoTechnic Racing"
       },
       "thirdPlace": {
-        "driver1": "Gray Newell",
-        "driver2": "Ian James",
-        "number": "24",
-        "vehicle": "Aston Martin Vantage GT4",
-        "team": "Heart of Racing Team"
+        "driver1": "James Walker Jr",
+        "driver2": "Devin Jones",
+        "number": "82",
+        "vehicle": "BMW M4 GT4",
+        "team": "BimmerWorld"
       }
     },
     "result3": {
