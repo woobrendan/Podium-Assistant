@@ -1138,24 +1138,24 @@
     },
     "result2": {
       "class": "TC",
-      "firstPlace": {
+      "secondPlace": {
+        "driver1": "Clay Williams",
+        "number": "60",
+        "vehicle": "MINI JCW Pro TC",
+        "team": "MINI JCW Team"
+      },
+      "secondPlace": {
+        "driver1": "Jeff Ricca",
+        "number": "78",
+        "vehicle": "Hyundai Veloster N DCT TC",
+        "team": "GenRacer / Ricca Autosport"
+      },
+      "thirdPlace": {
         "driver1": "Kevin Boehm",
         "number": "9",
         "vehicle": "Honda Civic Type-R",
         "team": "Skip Barber Racing"
-      },
-      "secondPlace": {
-        "driver1": "Mat Pombo",
-        "number": "37",
-        "vehicle": "Honda Civic Type-R",
-        "team": "LA Honda World"
-      },
-      "thirdPlace": {
-        "driver1": "Matthew Ibrarhim",
-        "number": "06",
-        "vehicle": "BMW 240iR",
-        "team": "DRS & Garagistic"
-      },
+      }
     },
     "result3": {
       "class": "TCA",
