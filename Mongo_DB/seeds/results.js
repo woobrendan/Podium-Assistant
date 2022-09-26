@@ -1011,26 +1011,26 @@
     "result3": {
       "class": "Am",
       "firstPlace": {
-        "driver1": "James Clay",
-        "driver2": "Charlie Postins",
-        "number": "36",
-        "vehicle": "BMW M4 GT4",
-        "team": "BimmerWorld"
-      },
-      "secondPlace": {
-        "driver1": "Nelson Calle",
-        "driver2": "Juan Martinez",
-        "number": "83",
-        "vehicle": "Porsche 718 Cayman GT4 RS CS",
-        "team": "RS1"
-      },
-      "thirdPlace": {
         "driver1": "Alain Stad",
         "driver2": "Seth Thomas",
         "number": "19",
         "vehicle": "Porsche 718 Cayman GT4 RS CS",
         "team": "NOLAsport"
-      }
+      },
+      "secondPlace": {
+        "driver1": "Matt Guiver",
+        "driver2": "Sean Whalen",
+        "number": "888",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Zelus Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Jason Alexandridis",
+        "driver2": "Derek DeeBoer",
+        "number": "66",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "The Racers Group"
+      },
     }
   }
 ]
