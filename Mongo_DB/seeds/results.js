@@ -718,5 +718,80 @@
         "team": "LA Honda World"
       }
     }
-  }
+  },
+  {
+    "series": "GT World Challenge America",
+    "date": "05-21-2022",
+    "event": "NOLA Motorsport Park",
+    "fastLap": {
+      "driver": "Giacomo Altoe",
+      "vehicle": "Lamborghini Huracan GT3",
+      "time": "1:34.800"
+    },
+    "result1": {
+      "class": "Pro",
+      "firstPlace": {
+        "driver1": "Michele Beretta",
+        "driver2": "Andrea Caldarelli",
+        "number": "1",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      },
+      "secondPlace": {
+        "driver1": "Misha Goikhberg",
+        "driver2": "Jordan Pepper",
+        "number": "3",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Steven Aghakhani",
+        "driver2": "Loris Spinelli",
+        "number": "3",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "US Racetronics"
+      }
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Charlie Luck",
+        "driver2": "Jan Heylen",
+        "number": "45",
+        "vehicle": "Porsche 911 GT3-R (991.ii)",
+        "team": "Wright Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Ashton Harrison",
+        "driver2": "Mario Farnbacher",
+        "number": "93",
+        "vehicle": "Acura NSX GT3",
+        "team": "Racers Edge Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "George Kurtz",
+        "driver2": "Colin Braun",
+        "number": "04",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Jean-Claude Saada",
+        "driver2": "Conrad Grunewald",
+        "number": "61",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "AF Corse"
+      },
+      "secondPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "number": "23",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
+      }
+    }
+  },
 ]
