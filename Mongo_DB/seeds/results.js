@@ -779,18 +779,18 @@
     "result3": {
       "class": "Am",
       "firstPlace": {
-        "driver1": "Jean-Claude Saada",
-        "driver2": "Conrad Grunewald",
-        "number": "61",
-        "vehicle": "Ferrari 488 GT3",
-        "team": "AF Corse"
-      },
-      "secondPlace": {
         "driver1": "Charlie Scardina",
         "driver2": "Onofrio Triarsi",
         "number": "23",
         "vehicle": "Ferrari 488 GT3",
         "team": "Triarsi Competizione"
+      },
+      "secondPlace": {
+        "driver1": "Jean-Claude Saada",
+        "driver2": "Conrad Grunewald",
+        "number": "61",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "AF Corse"
       }
     }
   },
