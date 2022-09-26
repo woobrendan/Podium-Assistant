@@ -950,5 +950,87 @@
         "team": "NOLAsport"
       }
     }
+  },
+  {
+    "series": "Pirelli GT4 America",
+    "date": "05-22-2022",
+    "event": "NOLA Motorsport Park",
+    "fastLap": {
+      "driver": "Stevan McAleer",
+      "vehicle": "Porsche 718 Cayman GT4 RS CS",
+      "time": "1:44.321"
+    },
+    "result1": {
+      "class": "Silver",
+      "firstPlace": {
+        "driver1": "Eric Filgueiras",
+        "driver2": "Stevan McAleer",
+        "number": "18",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "RS1"
+      },
+      "secondPlace": {
+        "driver1": "Ryan Dexter",
+        "driver2": "Dominic Starkweather",
+        "number": "112",
+        "vehicle": "Toyota GR Supra GT4",
+        "team": "Smooge Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Austen Smith",
+        "driver2": "Zac Anderson",
+        "number": "51",
+        "vehicle": "BMW M4 GT4",
+        "team": "AutoTechnic Racing"
+      }
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Adam Adelson",
+        "driver2": "Elliot Skeer",
+        "number": "120",
+        "vehicle": "Porsche 718 Cayman RS CS",
+        "team": "Premier Racing"
+      },
+      "secondPlace": {
+        "driver1": "Tom Capizzi",
+        "driver2": "John Capestro Dubets",
+        "number": "52",
+        "vehicle": "BMW M4 GT4",
+        "team": "AutoTechnic Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Gray Newell",
+        "driver2": "Ian James",
+        "number": "24",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Heart of Racing Team"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "James Clay",
+        "driver2": "Charlie Postins",
+        "number": "36",
+        "vehicle": "BMW M4 GT4",
+        "team": "BimmerWorld"
+      },
+      "secondPlace": {
+        "driver1": "Nelson Calle",
+        "driver2": "Juan Martinez",
+        "number": "83",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "RS1"
+      },
+      "thirdPlace": {
+        "driver1": "Alain Stad",
+        "driver2": "Seth Thomas",
+        "number": "19",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "NOLAsport"
+      }
+    }
   }
 ]
