@@ -1072,17 +1072,17 @@
         "team": "Skip Barber Racing"
       },
       "secondPlace": {
-        "driver1": "Clay Williams",
-        "number": "60",
-        "vehicle": "MINI Cooper JCW Pro TC",
-        "team": "MINI JCW Team"
-      },
-      "thirdPlace": {
         "driver1": "Mat Pombo",
         "number": "37",
         "vehicle": "Honda Civic Type-R",
         "team": "LA Honda World"
-      }
+      },
+      "thirdPlace": {
+        "driver1": "Matthew Ibrarhim",
+        "number": "06",
+        "vehicle": "BMW 240iR",
+        "team": "DRS & Garagistic"
+      },
     },
     "result3": {
       "class": "TCA",
