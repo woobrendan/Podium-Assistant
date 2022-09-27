@@ -1418,16 +1418,16 @@
     "result2": {
       "class": "GT4",
       "firstPlace": {
-        "driver1": "Adam Adelson",
-        "number": "120",
-        "vehicle": "Porsche 718 Cayman GT4 CS MR",
-        "team": "Premier Racing"
-      },
-      "secondPlace": {
         "driver1": "Moisey Uretsky",
         "number": "55",
         "vehicle": "Aston Martin Vantage GT4",
         "team": "Accelerating Peformance"
+      },
+      "secondPlace": {
+        "driver1": "Robb Holland",
+        "number": "99",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "Rotek Racing"
       },
       "thirdPlace": {
         "driver1": "Jason Bell",
@@ -1448,10 +1448,10 @@
     "result4": {
       "class": "Masters",
       "firstPlace": {
-        "driver1": "Jeff Burton",
-        "number": "191",
-        "vehicle": "Lamborghini Huracan GT3",
-        "team": "Zelus Motorsports"
+        "driver1": "Andy Pilgrim",
+        "number": "56",
+        "vehicle": "Ferrari 488 Italia GT3",
+        "team": "SKI Autosports"
       }
     }
   },
