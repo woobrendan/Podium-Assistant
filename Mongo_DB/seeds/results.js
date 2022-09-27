@@ -1348,22 +1348,22 @@
     "result2": {
       "class": "GT4",
       "firstPlace": {
-        "driver1": "Marko Radisic",
-        "number": "22",
-        "vehicle": "BMW M4 GT4",
-        "team": "SRQ Motorsports"
+        "driver1": "Adam Adelson",
+        "number": "120",
+        "vehicle": "Porsche 718 Cayman GT4 CS MR",
+        "team": "Premier Racing"
       },
       "secondPlace": {
-        "driver1": "Derek DeBoer",
-        "number": "66",
-        "vehicle": "Porsche 718 Cayman GT4 CS MR",
-        "team": "The Racers Group"
-      },
-      "thirdPlace": {
         "driver1": "Moisey Uretsky",
         "number": "55",
         "vehicle": "Aston Martin Vantage GT4",
         "team": "Accelerating Peformance"
+      },
+      "thirdPlace": {
+        "driver1": "Jason Bell",
+        "number": "2",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "GMG Racing"
       }
     },
     "result3": {
@@ -1378,10 +1378,10 @@
     "result4": {
       "class": "Masters",
       "firstPlace": {
-        "driver1": "David Askew",
-        "number": "63",
-        "vehicle": "Mercedes-AMG GT3",
-        "team": "DXDT Racing"
+        "driver1": "Jeff Burton",
+        "number": "191",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
       }
     }
   },
