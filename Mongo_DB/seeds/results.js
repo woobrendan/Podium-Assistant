@@ -1215,25 +1215,25 @@
     "result2": {
       "class": "Pro/Am",
       "firstPlace": {
-        "driver1": "George Kurtz",
-        "driver2": "Colin Braun",
-        "number": "04",
-        "vehicle": "Mercedes-AMG GT3",
-        "team": "CrowdStrike Racing by Riley Motorsports"
+        "driver1": "Justin Wetherill",
+        "driver2": "Ryan Dalziel",
+        "number": "13",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
       },
       "secondPlace": {
-        "driver1": "Ashton Harrison",
-        "driver2": "Mario Farnbacher",
-        "number": "93",
-        "vehicle": "Acura NSX GT3",
-        "team": "Racers Edge Motorsports"
+        "driver1": "Charlie Luck",
+        "driver2": "Jan Heylen",
+        "number": "45",
+        "vehicle": "Porsche 911 GT3-R (991.ii)",
+        "team": "Wright Motorsports"
       },
       "thirdPlace": {
-        "driver1": "Chandler Hull",
-        "driver2": "Bill Auberlen",
-        "number": "94",
-        "vehicle": "BMW M4 GT3",
-        "team": "BimmerWorld"
+        "driver1": "David Askew",
+        "driver2": "Dirk Mueller",
+        "number": "63",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "DXDT Racing"
       }
     },
     "result3": {
