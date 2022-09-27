@@ -1314,5 +1314,75 @@
         "team": "Triarsi Competizione"
       }
     }
-  }
+  },
+  {
+    "series": "GT America",
+    "date": "06-18-2022",
+    "event": "VIRginia International Raceway",
+    "fastLap": {
+      "driver": "Geoge Kurtz",
+      "vehicle": "Mercedes-AMG GT3",
+      "time": "1:46.353"
+    },
+    "result1": {
+      "class": "SRO3",
+      "firstPlace": {
+        "driver1": "George Kurtz",
+        "number": "04",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "Riley Motorsports w/ CrowdStrike Racing"
+      },
+      "secondPlace": {
+        "driver1": "Jeff Burton",
+        "number": "191",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "Jason Harward",
+        "number": "88",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
+      }
+    },
+    "result2": {
+      "class": "GT4",
+      "firstPlace": {
+        "driver1": "Marko Radisic",
+        "number": "22",
+        "vehicle": "BMW M4 GT4",
+        "team": "SRQ Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Derek DeBoer",
+        "number": "66",
+        "vehicle": "Porsche 718 Cayman GT4 CS MR",
+        "team": "The Racers Group"
+      },
+      "thirdPlace": {
+        "driver1": "Moisey Uretsky",
+        "number": "55",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Accelerating Peformance"
+      }
+    },
+    "result3": {
+      "class": "GT2",
+      "firstPlace": {
+        "driver1": "CJ Moses",
+        "number": "58",
+        "vehicle": "Audi R8 LMS GT2",
+        "team": "GMG Racing"
+      }
+    },
+    "result4": {
+      "class": "Masters",
+      "firstPlace": {
+        "driver1": "David Askew",
+        "number": "63",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "DXDT Racing"
+      }
+    }
+  },
 ]
