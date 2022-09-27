@@ -1244,13 +1244,74 @@
         "number": "23",
         "vehicle": "Ferrari 488 GT3",
         "team": "Triarsi Competizione"
+      }
+    }
+  },
+  {
+    "series": "GT World Challenge America",
+    "date": "06-19-2022",
+    "event": "VIRginia International Raceway",
+    "fastLap": {
+      "driver": "Giacomo Altoe",
+      "vehicle": "Lamborghini Huracan GT3",
+      "time": "1:44.232"
+    },
+    "result1": {
+      "class": "Pro",
+      "firstPlace": {
+        "driver1": "Michele Beretta",
+        "driver2": "Andrea Caldarelli",
+        "number": "1",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
       },
       "secondPlace": {
-        "driver1": "Jean-Claude Saada",
-        "driver2": "Conrad Grunewald",
-        "number": "61",
+        "driver1": "Michael Dinan",
+        "driver2": "Robby Foley",
+        "number": "96",
+        "vehicle": "BMW M4 GT3",
+        "team": "US Racetronics"
+      },
+      "thirdPlace": {
+        "driver1": "Misha Goikhberg",
+        "driver2": "Jordan Pepper",
+        "number": "3",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      },
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Justin Wetherill",
+        "driver2": "Ryan Dalziel",
+        "number": "13",
         "vehicle": "Ferrari 488 GT3",
-        "team": "AF Corse"
+        "team": "Triarsi Competizione"
+      },
+      "secondPlace": {
+        "driver1": "Charlie Luck",
+        "driver2": "Jan Heylen",
+        "number": "45",
+        "vehicle": "Porsche 911 GT3-R (991.ii)",
+        "team": "Wright Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "David Askew",
+        "driver2": "Dirk Mueller",
+        "number": "63",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "DXDT Racing"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "number": "23",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
       }
     }
   }
