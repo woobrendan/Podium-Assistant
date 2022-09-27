@@ -1178,5 +1178,80 @@
         "team": "Skip Barber Racing School"
       }
     }
+  },
+  {
+    "series": "GT World Challenge America",
+    "date": "06-18-2022",
+    "event": "VIRginia International Raceway",
+    "fastLap": {
+      "driver": "Loris Spinelli",
+      "vehicle": "Mercedes-AMG GT3",
+      "time": "1:44.150"
+    },
+    "result1": {
+      "class": "Pro",
+      "firstPlace": {
+        "driver1": "Michele Beretta",
+        "driver2": "Andrea Caldarelli",
+        "number": "1",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      },
+      "secondPlace": {
+        "driver1": "Michael Dinan",
+        "driver2": "Robby Foley",
+        "number": "96",
+        "vehicle": "BMW M4 GT3",
+        "team": "US Racetronics"
+      },
+      "thirdPlace": {
+        "driver1": "Misha Goikhberg",
+        "driver2": "Jordan Pepper",
+        "number": "3",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      },
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "George Kurtz",
+        "driver2": "Colin Braun",
+        "number": "04",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "Ashton Harrison",
+        "driver2": "Mario Farnbacher",
+        "number": "93",
+        "vehicle": "Acura NSX GT3",
+        "team": "Racers Edge Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "Chandler Hull",
+        "driver2": "Bill Auberlen",
+        "number": "94",
+        "vehicle": "BMW M4 GT3",
+        "team": "BimmerWorld"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "number": "23",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
+      },
+      "secondPlace": {
+        "driver1": "Jean-Claude Saada",
+        "driver2": "Conrad Grunewald",
+        "number": "61",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "AF Corse"
+      }
+    }
   }
 ]
