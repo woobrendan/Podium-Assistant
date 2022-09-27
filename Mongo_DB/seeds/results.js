@@ -4,7 +4,7 @@
     "date": "02-25-2022",
     "event": "St. Petersburg",
     "fastLap": {
-      "driver": "Geoge Kurtz",
+      "driver": "George Kurtz",
       "vehicle": "Mercedes-AMG GT3",
       "time": "1:13.964"
     },
@@ -1320,7 +1320,7 @@
     "date": "06-18-2022",
     "event": "VIRginia International Raceway",
     "fastLap": {
-      "driver": "Geoge Kurtz",
+      "driver": "George Kurtz",
       "vehicle": "Mercedes-AMG GT3",
       "time": "1:46.353"
     },
@@ -1343,6 +1343,76 @@
         "number": "88",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "Zelus Motorsports"
+      }
+    },
+    "result2": {
+      "class": "GT4",
+      "firstPlace": {
+        "driver1": "Adam Adelson",
+        "number": "120",
+        "vehicle": "Porsche 718 Cayman GT4 CS MR",
+        "team": "Premier Racing"
+      },
+      "secondPlace": {
+        "driver1": "Moisey Uretsky",
+        "number": "55",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Accelerating Peformance"
+      },
+      "thirdPlace": {
+        "driver1": "Jason Bell",
+        "number": "2",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "GMG Racing"
+      }
+    },
+    "result3": {
+      "class": "GT2",
+      "firstPlace": {
+        "driver1": "CJ Moses",
+        "number": "58",
+        "vehicle": "Audi R8 LMS GT2",
+        "team": "GMG Racing"
+      }
+    },
+    "result4": {
+      "class": "Masters",
+      "firstPlace": {
+        "driver1": "Jeff Burton",
+        "number": "191",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "Zelus Motorsports"
+      }
+    }
+  },
+  {
+    "series": "GT America",
+    "date": "06-19-2022",
+    "event": "VIRginia International Raceway",
+    "fastLap": {
+      "driver": "Jason Harward",
+      "vehicle": "Lamborghini Huracan GT3",
+      "time": "1:46.414"
+    },
+    "result1": {
+      "class": "SRO3",
+      "firstPlace": {
+        "driver1": "George Kurtz",
+        "number": "04",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "Riley Motorsports w/ CrowdStrike Racing"
+      },
+      "secondPlace": {
+        "driver1": "Andy Pilgrim",
+        "number": "56",
+        "vehicle": "Ferrari 488 Italia GT3",
+        "team": "SKI Autosports"
+      },
+      "thirdPlace": {
+        "driver1": "Jason Daskalos",
+        "number": "27",
+        "vehicle": "Audi R8 LMS",
+        "team": "Daskalos Motorsports"
       }
     },
     "result2": {
