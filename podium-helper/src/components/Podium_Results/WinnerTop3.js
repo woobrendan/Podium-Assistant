@@ -16,9 +16,9 @@ function Podium(props) {
   const {vehicles} = useEntries();
   const [winners, setWinners] = useState({
     class:'',
-    first_place: '',
-    second_place: '',
-    third_place: ''
+    firstPlace: '',
+    secondPlace: '',
+    thirdPlace: ''
   });
 
   const [isError, setIsError] = useState(false);
@@ -31,7 +31,7 @@ function Podium(props) {
   }
 
   const handleSubmit = () => {
-    const isFirstPlace = winners.first_place;
+    const isFirstPlace = winners.firstPlace;
     if (!isFirstPlace && props.series !== 'GT America') {
       setIsError(true);
     } else {
@@ -127,10 +127,10 @@ function Podium(props) {
               </InputLabel>
               <Select
                 className="form-control"
-                name="first_place"
+                name="firstPlace"
                 label="first place"
                 error={isError}
-                value={winners.first_place}
+                value={winners.firstPlace}
                 onChange={handleWinners}
               >
                 {mappedDrivers}
@@ -151,9 +151,9 @@ function Podium(props) {
             </InputLabel>
             <Select
               className="form-control"
-              name="second_place"
+              name="secondPlace"
               label="second place"
-              value={winners.second_place}
+              value={winners.secondPlace}
               onChange={handleWinners}
             >
               {mappedDrivers}
@@ -174,9 +174,9 @@ function Podium(props) {
             </InputLabel>
             <Select
               className="form-control"
-              name="third_place"
+              name="thirdPlace"
               label="third place"
-              value={winners.third_place}
+              value={winners.thirdPlace}
               onChange={handleWinners}
             >
               {mappedDrivers}
