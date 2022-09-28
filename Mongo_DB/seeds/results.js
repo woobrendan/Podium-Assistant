@@ -1539,28 +1539,28 @@
   },
   {
     "series": "Pirelli GT4 America",
-    "date": "04-17-2022",
-    "event": "Sonoma Raceway",
+    "date": "06-19-2022",
+    "event": "VIRGinia International Raceway",
     "fastLap": {
-      "driver": "Eric Filgueiras",
-      "vehicle": "Porsche 718 Cayman GT4 RS CS",
-      "time": "1:47.022"
+      "driver": "Tom Dyer",
+      "vehicle": "Audi R8 LMS GT4",
+      "time": "1:53.632"
     },
     "result1": {
       "class": "Silver",
       "firstPlace": {
-        "driver1": "Eric Filgueiras",
-        "driver2": "Stevan McAleer",
-        "number": "18",
-        "vehicle": "Porsche 718 Cayman GT4 RS CS",
-        "team": "RS1"
-      },
-      "secondPlace": {
         "driver1": "Gavin Sanders",
         "driver2": "Michai Stephens",
         "number": "34",
         "vehicle": "Mercedes-AMG GT4",
         "team": "Conquest Racing"
+      },
+      "secondPlace": {
+        "driver1": "Kevin Conway",
+        "driver2": "John Geesbreght",
+        "number": "68",
+        "vehicle": "Toyota GR Supra GT4",
+        "team": "Smooge Racing"
       },
       "thirdPlace": {
         "driver1": "Austen Smith",
