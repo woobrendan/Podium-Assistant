@@ -432,7 +432,7 @@
         "driver2": "Michai Stephens",
         "number": "34",
         "vehicle": "Mercedes-AMG GT4",
-        "team": "Winward Racing"
+        "team": "Conquest Racing"
       },
       "thirdPlace": {
         "driver1": "Austen Smith",
@@ -514,7 +514,7 @@
         "driver2": "Michai Stephens",
         "number": "34",
         "vehicle": "Mercedes-AMG GT4",
-        "team": "Winward Racing"
+        "team": "Conquest Racing"
       },
       "thirdPlace": {
         "driver1": "Austen Smith",
@@ -1458,7 +1458,7 @@
   {
     "series": "Pirelli GT4 America",
     "date": "06-18-2022",
-    "event": "Sonoma Raceway",
+    "event": "VIRginia Raceway",
     "fastLap": {
       "driver": "Andy Lee",
       "vehicle": "Aston Martin Vantage GT4",
@@ -1478,7 +1478,7 @@
         "driver2": "Michai Stephens",
         "number": "34",
         "vehicle": "Mercedes-AMG GT4",
-        "team": "Winward Racing"
+        "team": "Conquest Racing"
       },
       "thirdPlace": {
         "driver1": "Kris Wilson",
@@ -1523,17 +1523,17 @@
       },
       "secondPlace": {
         "driver1": "Alain Stad",
-        "driver2": "Thomas Merrill",
+        "driver2": "Seth Thomas",
         "number": "19",
         "vehicle": "Porsche 718 Cayman GT4 RS CS",
         "team": "NOLAsport"
       },
       "thirdPlace": {
-        "driver1": "Jason Alexandridis",
-        "driver2": "Derek DeBoer",
-        "number": "66",
+        "driver1": "Nelson Calle",
+        "driver2": "Juan Martinez",
+        "number": "83",
         "vehicle": "Porsche 718 Cayman GT4 RS CS",
-        "team": "The Racers Group"
+        "team": "RS1"
       }
     }
   },
@@ -1560,7 +1560,7 @@
         "driver2": "Michai Stephens",
         "number": "34",
         "vehicle": "Mercedes-AMG GT4",
-        "team": "Winward Racing"
+        "team": "Conquest Racing"
       },
       "thirdPlace": {
         "driver1": "Austen Smith",
