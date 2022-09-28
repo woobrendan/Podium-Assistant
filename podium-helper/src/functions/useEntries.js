@@ -36,6 +36,8 @@ export default function useEntries() {
           vehicle.driver1 = driver;
         } else if (!vehicle.driver2 && driver.id !== vehicle.driver1.id) {
           vehicle.driver2 = driver;
+        } else if (!vehicle.driver3 && driver.id !== vehicle.driver1.id && driver.id !== vehicle.driver2.id ) {
+          vehicle.driver3 = driver;
         }
       }
     }
