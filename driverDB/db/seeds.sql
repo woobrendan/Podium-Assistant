@@ -101,9 +101,9 @@ INSERT INTO teams (name, country) VALUES
 ('BGB Motorsports', 'USA'),
 ('Stephen Cameron Racing', 'USA'),
 ('AF Corse - Francorchamps', 'Italy'),
-('Sun Energy 1 Racing by Akkodis ASP'),
-('Mercedes-AMG Team Craft-Bamboo Racing'),
-('Andretti Autosport x Vital Speed');
+('Sun Energy 1 Racing by Akkodis ASP', 'USA'),
+('Mercedes-AMG Team Craft-Bamboo Racing', 'Hong Kong'),
+('Andretti Autosport x Vital Speed', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
@@ -265,7 +265,18 @@ VALUES
 ('Porsche 718 Cayman GT4 RS CS', '71', 2, 16, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg'),
 ('Porsche 718 Cayman GT4 RS CS', '420', 3, 69, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg'),
 ('Porsche 718 Cayman GT4 Clubsport MR', '427', 3, 62, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479488.jpg'),
-('Honda Civic Si', '77', 7 , 50, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335115.jpg');
+('Honda Civic Si', '77', 7 , 50, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335115.jpg'),
+('Lamborghini Huracan GT3', '1', 1, 1, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F299%2F%2FFH1_6911.jpg'),
+('Lamborghini Huracan GT3', '3', 1, 1, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F81%2F285%2F%2F_RM28469.JPG'),
+('Mercedes-AMG GT3', '04', 2, 2, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FDY-12A86I3525.jpg'),
+('Mercedes-AMG GT3', '6', 1, 3, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10314f.jpg'),
+('Mercedes-AMG GT3', '08', 3, 4, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2FVIR_GTWCA_Q_GM_2403291.JPG'),
+('Ferrari 488 GT3', '13', 2, 7, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F293%2F%2FRL_VIR_45437f_1.jpg'),
+('Ferrari 488 GT3', '23', 2, 7, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F304%2F%2FT6P_8515.JPG'),
+('Porsche 911 GT3-R (991.ii)', '032', 2, 16, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F313%2F%2F082122_RDAM_bcpix2526519.jpg'),
+('Mercedes-AMG GT3', '33', 1, 59, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F301%2F%2FT6P_6471.jpg'),
+('Ferrari 488 GT3', '34', 1, 27, 5, ''),
+('BMW M4 GT3', '38', 4, 8, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387612DN-severe-noise.jpg');
 
 
 
