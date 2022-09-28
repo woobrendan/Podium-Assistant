@@ -1455,4 +1455,168 @@
       }
     }
   },
+  {
+    "series": "Pirelli GT4 America",
+    "date": "06-18-2022",
+    "event": "Sonoma Raceway",
+    "fastLap": {
+      "driver": "Andy Lee",
+      "vehicle": "Aston Martin Vantage GT4",
+      "time": "1:54.727"
+    },
+    "result1": {
+      "class": "Silver",
+      "firstPlace": {
+        "driver1": "Eric Filgueiras",
+        "driver2": "Stevan McAleer",
+        "number": "18",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "RS1"
+      },
+      "secondPlace": {
+        "driver1": "Gavin Sanders",
+        "driver2": "Michai Stephens",
+        "number": "34",
+        "vehicle": "Mercedes-AMG GT4",
+        "team": "Winward Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Kris Wilson",
+        "driver2": "Cole Ciraulo",
+        "number": "32",
+        "vehicle": "Mercedes-AMG GT4",
+        "team": "Capstone Motorsports"
+      }
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Bryan Putt",
+        "driver2": "Kenton Koch",
+        "number": "15",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "BSport Racing"
+      },
+      "secondPlace": {
+        "driver1": "Scott Noble",
+        "driver2": "Jason Hart",
+        "number": "47",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "NOLAsport"
+      },
+      "thirdPlace": {
+        "driver1": "Elias Sabo",
+        "driver2": "Andy Lee",
+        "number": "8",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Flying Lizard Motorsports"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "James Clay",
+        "driver2": "Charlie Postins",
+        "number": "36",
+        "vehicle": "BMW M4 GT4",
+        "team": "BimmerWorld"
+      },
+      "secondPlace": {
+        "driver1": "Alain Stad",
+        "driver2": "Thomas Merrill",
+        "number": "19",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "NOLAsport"
+      },
+      "thirdPlace": {
+        "driver1": "Jason Alexandridis",
+        "driver2": "Derek DeBoer",
+        "number": "66",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "The Racers Group"
+      }
+    }
+  },
+  {
+    "series": "Pirelli GT4 America",
+    "date": "04-17-2022",
+    "event": "Sonoma Raceway",
+    "fastLap": {
+      "driver": "Eric Filgueiras",
+      "vehicle": "Porsche 718 Cayman GT4 RS CS",
+      "time": "1:47.022"
+    },
+    "result1": {
+      "class": "Silver",
+      "firstPlace": {
+        "driver1": "Eric Filgueiras",
+        "driver2": "Stevan McAleer",
+        "number": "18",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "RS1"
+      },
+      "secondPlace": {
+        "driver1": "Gavin Sanders",
+        "driver2": "Michai Stephens",
+        "number": "34",
+        "vehicle": "Mercedes-AMG GT4",
+        "team": "Winward Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Austen Smith",
+        "driver2": "Zac Anderson",
+        "number": "51",
+        "vehicle": "BMW M4 GT4",
+        "team": "AutoTechnic Racing"
+      }
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Bryan Putt",
+        "driver2": "Kenton Koch",
+        "number": "15",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "BSport Racing"
+      },
+      "secondPlace": {
+        "driver1": "Ross Chouest",
+        "driver2": "Aaron Povoledo",
+        "number": "50",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Chouest Povoledo Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Scott Noble",
+        "driver2": "Jason Hart",
+        "number": "47",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "NOLAsport"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Ben Anderson",
+        "driver2": "Matt Rivard",
+        "number": "36",
+        "vehicle": "Ginetta G56 GT4",
+        "team": "Dexter Racing"
+      },
+      "secondPlace": {
+        "driver1": "James Clay",
+        "driver2": "Charlie Postins",
+        "number": "36",
+        "vehicle": "BMW M4 GT4",
+        "team": "BimmerWorld"
+      },
+      "thirdPlace": {
+        "driver1": "Kyle Washington",
+        "driver2": "James Sofronas",
+        "number": "032",
+        "vehicle": "Porsche 718 Cayman GT4 RS CS",
+        "team": "GMG Racing"
+      }
+    }
+  }
 ]
