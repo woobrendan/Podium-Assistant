@@ -1573,25 +1573,25 @@
     "result2": {
       "class": "Pro/Am",
       "firstPlace": {
-        "driver1": "Bryan Putt",
-        "driver2": "Kenton Koch",
-        "number": "15",
-        "vehicle": "Aston Martin Vantage GT4",
-        "team": "BSport Racing"
-      },
-      "secondPlace": {
-        "driver1": "Ross Chouest",
-        "driver2": "Aaron Povoledo",
-        "number": "50",
-        "vehicle": "Aston Martin Vantage GT4",
-        "team": "Chouest Povoledo Racing"
-      },
-      "thirdPlace": {
         "driver1": "Scott Noble",
         "driver2": "Jason Hart",
         "number": "47",
         "vehicle": "Porsche 718 Cayman GT4 RS CS",
         "team": "NOLAsport"
+      },
+      "secondPlace": {
+        "driver1": "Gray Newell",
+        "driver2": "Ian James",
+        "number": "24",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Heart of Racing Team"
+      },
+      "thirdPlace": {
+        "driver1": "Elias Sabo",
+        "driver2": "Andy Lee",
+        "number": "8",
+        "vehicle": "Aston Martin Vantage GT4",
+        "team": "Flying Lizard Motorsports"
       }
     },
     "result3": {
