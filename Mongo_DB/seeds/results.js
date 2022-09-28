@@ -6,7 +6,7 @@
     "fastLap": {
       "driver": "George Kurtz",
       "vehicle": "Mercedes-AMG GT3",
-      "time": "1:13.964"
+      "laptime": "1:13.964"
     },
     "result1": {
       "class": "SRO3",
@@ -76,7 +76,7 @@
     "fastLap": {
       "driver": "Justin Wetherill",
       "vehicle": "Ferrari 488 GT3",
-      "time": "1:13.642"
+      "laptime": "1:13.642"
     },
     "result1": {
       "class": "SRO3",
@@ -146,7 +146,7 @@
     "fastLap": {
       "driver": "Jordan Pepper",
       "vehicle": "Lamborghini Huracan GT3",
-      "time": "1:37.310"
+      "laptime": "1:37.310"
     },
     "result1": {
       "class": "Pro",
@@ -221,7 +221,7 @@
     "fastLap": {
       "driver": "Jordan Pepper",
       "vehicle": "Lamborghini Huracan GT3",
-      "time": "1:37.208"
+      "laptime": "1:37.208"
     },
     "result1": {
       "class": "Pro",
@@ -296,7 +296,7 @@
     "fastLap": {
       "driver": "Jason Harward",
       "vehicle": "Lamborghini Huracan GT3",
-      "time": "1:41.653"
+      "laptime": "1:41.653"
     },
     "result1": {
       "class": "SRO3",
@@ -357,7 +357,7 @@
     "fastLap": {
       "driver": "Jason Harward",
       "vehicle": "Lamborghini Huracan GT3",
-      "time": "1:39.433"
+      "laptime": "1:39.433"
     },
     "result1": {
       "class": "SRO3",
@@ -416,7 +416,7 @@
     "fastLap": {
       "driver": "Eric Filgueiras",
       "vehicle": "Porsche 718 Cayman GT4 RS CS",
-      "time": "1:46.124"
+      "laptime": "1:46.124"
     },
     "result1": {
       "class": "Silver",
@@ -498,7 +498,7 @@
     "fastLap": {
       "driver": "Eric Filgueiras",
       "vehicle": "Porsche 718 Cayman GT4 RS CS",
-      "time": "1:47.022"
+      "laptime": "1:47.022"
     },
     "result1": {
       "class": "Silver",
@@ -580,7 +580,7 @@
     "fastLap": {
       "driver": "Jacob Ruud",
       "vehicle": "BMW M2 CS",
-      "time": "1:52.331"
+      "laptime": "1:52.331"
     },
     "result1": {
       "class": "TCX",
@@ -653,7 +653,7 @@
     "fastLap": {
       "driver": "Lucas Catania",
       "vehicle": "BMW M2 CS",
-      "time": "1:52.246"
+      "laptime": "1:52.246"
     },
     "result1": {
       "class": "TCX",
@@ -726,7 +726,7 @@
     "fastLap": {
       "driver": "Giacomo Altoe",
       "vehicle": "Lamborghini Huracan GT3",
-      "time": "1:34.800"
+      "laptime": "1:34.800"
     },
     "result1": {
       "class": "Pro",
@@ -801,7 +801,7 @@
     "fastLap": {
       "driver": "Loris Spinelli",
       "vehicle": "Mercedes-AMG GT3",
-      "time": "1:35.183"
+      "laptime": "1:35.183"
     },
     "result1": {
       "class": "Pro",
@@ -876,7 +876,7 @@
     "fastLap": {
       "driver": "Eric Filgueiras",
       "vehicle": "Porsche 718 Cayman GT4 RS CS",
-      "time": "1:59.057"
+      "laptime": "1:59.057"
     },
     "result1": {
       "class": "Silver",
@@ -958,7 +958,7 @@
     "fastLap": {
       "driver": "Stevan McAleer",
       "vehicle": "Porsche 718 Cayman GT4 RS CS",
-      "time": "1:44.321"
+      "laptime": "1:44.321"
     },
     "result1": {
       "class": "Silver",
@@ -1040,7 +1040,7 @@
     "fastLap": {
       "driver": "Jacob Ruud",
       "vehicle": "BMW M2 CS",
-      "time": "1:50.529"
+      "laptime": "1:50.529"
     },
     "result1": {
       "class": "TCX",
@@ -1113,7 +1113,7 @@
     "fastLap": {
       "driver": "Lucas Catania",
       "vehicle": "BMW M2 CS",
-      "time": "1:51.072"
+      "laptime": "1:51.072"
     },
     "result1": {
       "class": "TCX",
@@ -1186,7 +1186,7 @@
     "fastLap": {
       "driver": "Loris Spinelli",
       "vehicle": "Mercedes-AMG GT3",
-      "time": "1:44.150"
+      "laptime": "1:44.150"
     },
     "result1": {
       "class": "Pro",
@@ -1254,7 +1254,7 @@
     "fastLap": {
       "driver": "Giacomo Altoe",
       "vehicle": "Lamborghini Huracan GT3",
-      "time": "1:44.232"
+      "laptime": "1:44.232"
     },
     "result1": {
       "class": "Pro",
@@ -1322,7 +1322,7 @@
     "fastLap": {
       "driver": "George Kurtz",
       "vehicle": "Mercedes-AMG GT3",
-      "time": "1:46.353"
+      "laptime": "1:46.353"
     },
     "result1": {
       "class": "SRO3",
@@ -1392,7 +1392,7 @@
     "fastLap": {
       "driver": "Jason Harward",
       "vehicle": "Lamborghini Huracan GT3",
-      "time": "1:46.414"
+      "laptime": "1:46.414"
     },
     "result1": {
       "class": "SRO3",
@@ -1462,7 +1462,7 @@
     "fastLap": {
       "driver": "Andy Lee",
       "vehicle": "Aston Martin Vantage GT4",
-      "time": "1:54.727"
+      "laptime": "1:54.727"
     },
     "result1": {
       "class": "Silver",
@@ -1544,7 +1544,7 @@
     "fastLap": {
       "driver": "Tom Dyer",
       "vehicle": "Audi R8 LMS GT4",
-      "time": "1:53.632"
+      "laptime": "1:53.632"
     },
     "result1": {
       "class": "Silver",
