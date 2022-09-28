@@ -2,7 +2,8 @@ INSERT INTO series (name) VALUES
 ('GT World Challenge America'),
 ('Pirelli GT4 America'),
 ('GT America'),
-('TC America');
+('TC America'),
+('Intercontinental GT Challenge');
 
 INSERT INTO class (name) VALUES
 ('Pro'),
@@ -97,7 +98,12 @@ INSERT INTO teams (name, country) VALUES
 ('Lone Star Racing', 'USA'),
 ('G2 Racing/GSpeed', 'USA'),
 ('FTG Racing', 'USA'),
-('BGB Motorsports', 'USA');
+('BGB Motorsports', 'USA'),
+('Stephen Cameron Racing', 'USA'),
+('AF Corse - Francorchamps', 'Italy'),
+('Sun Energy 1 Racing by Akkodis ASP'),
+('Mercedes-AMG Team Craft-Bamboo Racing'),
+('Andretti Autosport x Vital Speed');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
