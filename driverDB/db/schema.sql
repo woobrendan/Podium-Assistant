@@ -68,8 +68,8 @@ CREATE TABLE results (
 CREATE TABLE podiums (
   id SERIAL PRIMARY KEY NOT NULL,
   class_id INTEGER REFERENCES class(id),
-  first_place INTEGER REFERENCES vehicles(id),
-  second_place INTEGER REFERENCES vehicles(id),
-  third_place INTEGER REFERENCES vehicles(id),
+  firstPlace INTEGER REFERENCES vehicles(id),
+  secondPlace INTEGER REFERENCES vehicles(id),
+  thirdPlace INTEGER REFERENCES vehicles(id),
   result_id INTEGER REFERENCES results(id)
 );
