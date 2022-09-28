@@ -28,7 +28,7 @@ module.exports = (db) => {
     // create backend of query string, creating n of $n values
     const podiumQueryStringBuilder = () => {
       let string = `
-        INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES  (`;
+        INSERT INTO podiums (class_id, firstPlace, secondPlace, thirdPlace, result_id) VALUES  (`;
       const numOfResultInputs = getNumOfResults() * 5;
       for (let i = 1; i <= numOfResultInputs; i++) {
         if (i === numOfResultInputs) {
@@ -45,15 +45,15 @@ module.exports = (db) => {
     // Create array of values to be passed to query string input into SQL
     const podiumValues = (resultId) => {
       const allResults = [];
-      allResults.push(result1.class, result1.first_place, result1.second_place, result1.third_place, resultId)
+      allResults.push(result1.class, result1.firstPlace, result1.secondPlace, result1.thirdPlace, resultId)
       if (result2) {
-        allResults.push(result2.class, result2.first_place, result2.second_place, result2.third_place, resultId)
+        allResults.push(result2.class, result2.firstPlace, result2.secondPlace, result2.thirdPlace, resultId)
       }
       if (result3) {
-        allResults.push(result3.class, result3.first_place, result3.second_place, result3.third_place, resultId)
+        allResults.push(result3.class, result3.firstPlace, result3.secondPlace, result3.thirdPlace, resultId)
       }
       if (result4) {
-        allResults.push(result4.class, result4.first_place, result4.second_place, result4.third_place, resultId)
+        allResults.push(result4.class, result4.firstPlace, result4.secondPlace, result4.thirdPlace, resultId)
       }
       return allResults;
     }
