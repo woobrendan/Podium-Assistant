@@ -564,7 +564,7 @@ INSERT INTO results (date, event_id, series_id, fastlap_id) VALUES
 ('2022-07-23', 5, 4, 30),
 ('2022-07-24', 5, 4, 31);
 
-INSERT INTO podiums (class_id, first_place, second_place, third_place, result_id) VALUES
+INSERT INTO podiums (class_id, firstPlace, secondPlace, thirdPlace, result_id) VALUES
 (1, 1, 19, 2, 1),
 (2, 8, 12, 14, 1),
 (3, 9, NULL, NULL, 1),
