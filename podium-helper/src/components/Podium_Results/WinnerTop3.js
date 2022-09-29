@@ -9,7 +9,7 @@ const classOptions = {
   gta: ['SRO3', 'GT4', 'Masters', 'GT2'],
   pgt4a: ['Silver', 'Pro-Am', 'Am'],
   tca: ['TCX', 'TC', 'TCA'],
-  igtc: ['Pro', 'Silver Cup', 'Pro-Am', 'Am'],
+  igtc: ['Pro', 'Silver', 'Pro-Am', 'Am'],
 }
 
 function Podium(props) {
@@ -54,11 +54,6 @@ function Podium(props) {
   }
 
   const getClassArr = (series) => {
-    // if (series === 'Pirelli GT4 America') return classOptions.pgt4a
-    // else if (series === 'GT America') return classOptions.gta
-    // else if (series === 'TC America') return classOptions.tca
-    // else return classOptions.gtwca
-
     switch(series) {
       case 'GT World Challenge America': return classOptions.gtwca
       case 'Pirelli GT4 America': return classOptions.pgt4a
@@ -77,9 +72,19 @@ function Podium(props) {
   //determine if entry is single or two drivers and return corresponding menu item
   const numOfDriverMenuItem = (entry) => {
     if (!entry.driver2) {
-      return <MenuItem key={`${entry.number} ${entry.driver1.name}`} value={entry}>#{entry.number} - {entry.driver1.name} </MenuItem>
+      return <MenuItem key={`${entry.number} ${entry.driver1.name}`} value={entry}>
+          #{entry.number} - {entry.driver1.name} 
+        </MenuItem>
+    } else if (entry.driver2 && !entry.driver3) {
+
+      return <MenuItem key={`${entry.number} ${entry.driver1.name}`} value={entry}>
+          #{entry.number} - {entry.driver1.name} & {entry.driver2.name}
+        </MenuItem>
     } else {
-      return <MenuItem key={`${entry.number} ${entry.driver1.name}`} value={entry}>#{entry.number} - {entry.driver1.name} & {entry.driver2.name}</MenuItem>
+
+      return <MenuItem key={`${entry.number} ${entry.driver1.name}`} value={entry}>
+          #{entry.number} - {entry.driver1.name} & {entry.driver2.name} & {entry.driver3.name}
+        </MenuItem>
     }
   }
   const mappedDrivers = vehicles
