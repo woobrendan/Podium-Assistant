@@ -1,17 +1,18 @@
 import {useState} from 'react';
 import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
-import { gtwca, tcam, gt4a, gtam } from '../../functions/helperFunc';
+import useEntries from '../../functions/useEntries';
 
-const seriesNameList = [gtwca, gtam, gt4a, tcam]
 
 function Series(props) {
   const [seriesName, setSeriesName] = useState('');
+  const { series } = useEntries();
+
   const handleChange = (event) => {
     setSeriesName(event.target.value);
     props.getValue(event.target.name, event.target.value)
   };
 
-  const mappedSeries = seriesNameList.map((series, index) => <MenuItem key={index} value={series}>{series}</MenuItem>)
+  const mappedSeries = series.map((seriesName, index) => <MenuItem key={index} value={seriesName}>{seriesName}</MenuItem>)
 
   return (
     <Box
