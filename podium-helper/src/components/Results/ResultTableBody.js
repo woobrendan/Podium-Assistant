@@ -64,7 +64,7 @@ export default function ResultTableBbody(props) {
     <>
       <TableHead>
         <TableRow>
-          <TableCell colSpan={6} align='center'>{podium.class}</TableCell>
+          <TableCell colSpan={7} align='center'>{podium.class}</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
