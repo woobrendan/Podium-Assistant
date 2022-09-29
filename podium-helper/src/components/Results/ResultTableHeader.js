@@ -7,7 +7,12 @@ import '../../Styling/result.scss';
 function ResultTableHeader(props) {
   const podiums = props.results;
   const podium1 = podiums.result1;
-  const singleDriver = podium1.firstPlace.driver2 ? false : true
+  const columnLength = (result) => {
+    const first = result.firstPlace;
+    if (first.driver3) return 4;
+    else if (first.driver2 && !first.driver3) return 3;
+    else return 2
+  }
 
   return (
     <div id='result-table-container'>
@@ -16,7 +21,7 @@ function ResultTableHeader(props) {
           <TableHead className="result-table-head">
             <TableRow>
               <TableCell 
-                colSpan={singleDriver ? 2 : 3} 
+                colSpan={columnLength(podium1)} 
                 align='center'
               >
                 {podiums.event}
