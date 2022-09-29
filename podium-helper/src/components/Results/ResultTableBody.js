@@ -9,7 +9,7 @@ function createDataSingleDriver(place, number, driver1, team, car) {
   return { place, number, driver1, team, car };
 }
 
-const createDataThreeDriver = (place, number, driver1, driver2, team, car) => {
+const createDataThreeDriver = (place, number, driver1, driver2, driver3, team, car) => {
   return { place, number, driver1, driver2, driver3, team, car };
 }
 
