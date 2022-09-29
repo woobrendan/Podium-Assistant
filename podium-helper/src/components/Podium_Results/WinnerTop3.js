@@ -8,7 +8,8 @@ const classOptions = {
   gtwca: ['Pro', 'Pro-Am', 'Am'],
   gta: ['SRO3', 'GT4', 'Masters', 'GT2'],
   pgt4a: ['Silver', 'Pro-Am', 'Am'],
-  tca: ['TCX', 'TC', 'TCA']
+  tca: ['TCX', 'TC', 'TCA'],
+  igtc: ['Pro', 'Silver Cup', 'Pro-Am', 'Am'],
 }
 
 function Podium(props) {
@@ -53,10 +54,18 @@ function Podium(props) {
   }
 
   const getClassArr = (series) => {
-    if (series === 'Pirelli GT4 America') return classOptions.pgt4a
-    else if (series === 'GT America') return classOptions.gta
-    else if (series === 'TC America') return classOptions.tca
-    else return classOptions.gtwca
+    // if (series === 'Pirelli GT4 America') return classOptions.pgt4a
+    // else if (series === 'GT America') return classOptions.gta
+    // else if (series === 'TC America') return classOptions.tca
+    // else return classOptions.gtwca
+
+    switch(series) {
+      case 'GT World Challenge America': return classOptions.gtwca
+      case 'Pirelli GT4 America': return classOptions.pgt4a
+      case 'GT America': return classOptions.gta
+      case 'TC America': return classOptions.tca
+      default: return classOptions.igtc
+    }
   }
 
   const mappedClass = getClassArr(props.series)
