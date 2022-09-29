@@ -42,12 +42,20 @@ export default function useEntries() {
     return vehicle;
   });
 
+  const getSeriesNames = () => {
+    const list = [];
+    for (const serie of series) {
+      list.push(serie.name)
+    }
+    return list;
+  }
+
   return {
     drivers,
     vehicles: vehicles.sort(compareCarNumber),
     resultHistory,
     events,
-    series,
+    series: getSeriesNames(),
     classCategory
   }
 }
