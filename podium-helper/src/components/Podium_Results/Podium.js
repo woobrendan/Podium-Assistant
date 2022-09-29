@@ -128,7 +128,7 @@ function Podium() {
       ...prev,
       [name]: value
     }))
-    if (value === 'GT America') {
+    if (value === 'GT America' || 'Intercontinental GT Challenge') {
       setShowWinnerTable((prev) => ({
         ...prev,
         result4: true
