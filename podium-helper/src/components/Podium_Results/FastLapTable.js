@@ -13,13 +13,13 @@ function FastLapTable(props) {
     <>
       <TableHead>
         <TableRow>
-          <TableCell colSpan={6} align='center'>CrowdStrike Fast Lap</TableCell>
+          <TableCell colSpan={7} align='center'>CrowdStrike Fast Lap</TableCell>
         </TableRow>
       </TableHead>
       <TableHead>
         <TableRow>
           <TableCell colSpan={3}>Driver</TableCell>
-          <TableCell align="right" colSpan={3}>Lap Time</TableCell>
+          <TableCell align="right" colSpan={4}>Lap Time</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -29,7 +29,7 @@ function FastLapTable(props) {
             sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
           >
             <TableCell component="th" scope="row" colSpan={3}>{row.driver}</TableCell>
-            <TableCell align="right" colSpan={3}>{row.lapTime}</TableCell>
+            <TableCell align="right" colSpan={4}>{row.lapTime}</TableCell>
           </TableRow>
         ))}
       </TableBody>
