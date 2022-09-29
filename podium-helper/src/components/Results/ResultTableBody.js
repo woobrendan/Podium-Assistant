@@ -56,6 +56,7 @@ export default function ResultTableBbody(props) {
       if (third) {
         allResults.push(createDataThreeDriver('3rd', third.number, third.driver1.name, third.driver2.name, third.driver3.name, third.team, third.vehicle));
       }
+      return allResults;
     }
   }
 
