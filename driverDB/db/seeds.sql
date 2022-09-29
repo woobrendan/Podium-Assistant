@@ -511,7 +511,19 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('John Tecce', 'Bronze', 'USA', 69, 156),
 ('Andy Pilgrim', 'Bronze', 'USA', 62, 157),
 ('Anthony Bartone', 'Bronze', 'USA', 62, 157),
-('Mario Biundo', 'N/A', 'USA', 50, 158);
+('Mario Biundo', 'N/A', 'USA', 50, 158),
+('Michele Beretta', 'Silver', 'Italy', 1, 159),
+('Andrea Caldarelli', 'Platinum', 'Italy', 1, 159),
+('Marco Mapelli', 'Platinum', 'Italy', 1, 159),
+('Misha Goikhberg', 'Silver', 'Canada', 1, 160),
+('Jordan Pepper', 'Gold', 'South Africa', 1, 160),
+('Franck Perera', 'Platinum', 'France', 1, 160),
+('George Kurtz', 'Bronze', 'USA', 2, 161),
+('Colin Braun', 'Gold', 'USA', 2, 161),
+('Ben Keating', 'Bronze', 'USA', 2, 161),
+('Steven Aghakhani', 'Silver', 'USA', 3, 162),
+('Loris Spinelli', 'Silver', 'Italy', 3, 162),
+('Tristan Vautier', 'Gold', 'France', 3, 162);
 
 
 
