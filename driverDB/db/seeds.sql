@@ -523,7 +523,28 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Ben Keating', 'Bronze', 'USA', 2, 161),
 ('Steven Aghakhani', 'Silver', 'USA', 3, 162),
 ('Loris Spinelli', 'Silver', 'Italy', 3, 162),
-('Tristan Vautier', 'Gold', 'France', 3, 162);
+('Tristan Vautier', 'Gold', 'France', 3, 162),
+('David Askew', 'Bronze', 'USA', 4, 163),
+('Scott Smithson', 'Bronze', 'USA', 4, 163),
+('Valentin Pierburg', 'Bronze', 'Germany', 4, 163),
+('Justin Wetherill', 'Bronze', 'USA', 7, 164),
+('Conrad Grunewald', 'Bronze', 'USA', 7, 164),
+('Ryan Dalziel', 'Gold', 'Scotland', 7, 164),
+('Charlie Scardina', 'Bronze', 'USA', 7, 165),
+('Onofrio Triasi', 'Bronze', 'USA', 7, 165),
+('Alessio Rovera', 'Gold', 'Italy', 7, 165),
+('Kyle Washington', 'Bronze', 'USA', 16, 166),
+('James Sofronas', 'Bronze', 'USA', 16, 166),
+('Klaus Bachler', 'Gold', 'Austria', 16, 166),
+('Russell Ward', 'Silver', 'USA', 59 , 167),
+('Philip Ellis', 'Gold', 'Switzerland', 59, 167),
+('Jules Gounon', 'Platinum', 'France', 59, 167),
+('Alessandro Balzan', 'Gold', 'Italy', 27, 168),
+('Cedric Sbirrazzuoli', 'Silver', 'Monaco', 27, 168),
+('Daniel Mancinelli', 'Silver', 'Italy', 27, 168),
+('Samantha Tan', 'Bronze', 'Canada', 8, 169),
+('Nick Wittmer', 'Silver', 'Canada', 8, 169),
+('Harry Gottsacker', 'Silver', 'USA', 8, 169);
 
 
 
