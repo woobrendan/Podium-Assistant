@@ -51,7 +51,7 @@ const gtwca = "GT World Challenge America";
 const tcam = "TC America";
 const gtam = "GT America";
 const gt4a = "Pirelli GT4 America";
-const igtc = 'Intercontinental GT World Challenge'
+const igtc = 'Intercontinental GT Challenge'
 
 export {
   getIdFromArray,
