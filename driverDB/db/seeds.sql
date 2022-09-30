@@ -276,7 +276,14 @@ VALUES
 ('Porsche 911 GT3-R (991.ii)', '032', 2, 16, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F313%2F%2F082122_RDAM_bcpix2526519.jpg'),
 ('Mercedes-AMG GT3', '33', 1, 59, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F301%2F%2FT6P_6471.jpg'),
 ('Ferrari 488 GT3', '34', 1, 27, 5, ''),
-('BMW M4 GT3', '38', 4, 8, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387612DN-severe-noise.jpg');
+('BMW M4 GT3', '38', 4, 8, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387612DN-severe-noise.jpg'),
+('Mercedes-AMG GT3', 2, 70, 5, ''),
+('Acura NSX GT3', '43', 2, 9, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387571.jpg'),
+('Porsche 911 GT3-R (991.ii)', '45', 2, 10, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10326f.jpg'),
+('Ferrari 488 GT3', '51', 1, 71, 5, ''),
+('Ferrari 488 GT3', '71', 1, 71, 5, '');
+
+
 
 
 
