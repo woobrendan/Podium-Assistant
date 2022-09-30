@@ -1024,9 +1024,9 @@
         "vehicle": "Aston Martin Vantage GT4",
         "team": "Zelus Motorsports"
       },
-      "secondPlace": {
+      "thirdPlace": {
         "driver1": "Jason Alexandridis",
-        "driver2": "Derek DeeBoer",
+        "driver2": "Derek DeBoer",
         "number": "66",
         "vehicle": "Porsche 718 Cayman GT4 RS CS",
         "team": "The Racers Group"
@@ -1138,7 +1138,7 @@
     },
     "result2": {
       "class": "TC",
-      "secondPlace": {
+      "firstPlace": {
         "driver1": "Clay Williams",
         "number": "60",
         "vehicle": "MINI JCW Pro TC",
