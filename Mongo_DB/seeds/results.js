@@ -403,10 +403,12 @@
     },
     "result3": {
       "class": "Masters",
-      "driver1": "Jeff Burton",
+      "firstPlace": {
+        "driver1": "Jeff Burton",
         "number": "191",
         "vehicle": "Lamborghini Huracan GT3",
         "team": "Zelus Motorsports"
+      }
     }
   },
   {
