@@ -277,12 +277,15 @@ VALUES
 ('Mercedes-AMG GT3', '33', 1, 59, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F301%2F%2FT6P_6471.jpg'),
 ('Ferrari 488 GT3', '34', 1, 27, 5, ''),
 ('BMW M4 GT3', '38', 4, 8, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387612DN-severe-noise.jpg'),
-('Mercedes-AMG GT3', 2, 70, 5, ''),
+('Mercedes-AMG GT3', '39', 2, 70, 5, ''),
 ('Acura NSX GT3', '43', 2, 9, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387571.jpg'),
 ('Porsche 911 GT3-R (991.ii)', '45', 2, 10, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10326f.jpg'),
 ('Ferrari 488 GT3', '51', 1, 71, 5, ''),
-('Ferrari 488 GT3', '71', 1, 71, 5, '');
-
+('Mercedes-AMG GT3', '63', 1, 4, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10359f.jpg'),
+('Ferrari 488 GT3', '71', 1, 71, 5, ''),
+('Mercedes-AMG GT3', '75', 2, 72, 5, ''),
+('Mercedes-AMG GT3', '77', 1, 73, 5, ''),
+('Lamborghini Huracan GT3', '88', 3, 12, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FFH1_3959.jpg'),
 
 
 
