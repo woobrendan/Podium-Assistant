@@ -588,7 +588,16 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Jon Branam', 'Bronze', 'USA', 5, 179),
 ('Ashton Harrison', 'Bronze', 'USA', 13, 180),
 ('Mario Farnbacher', 'Gold', 'Gemany', 13, 180),
-('Christina Nielson', 'Bronze', 'Denmark', 13, 180);
+('Christina Nielson', 'Bronze', 'Denmark', 13, 180),
+('Chandler Hull', 'Bronze', 'USA', 14, 181),
+('Richard Heistand', 'Bronze', 'USA', 14, 181),
+('Bill Auberlen', 'Gold', 'USA', 14, 181),
+('Michael Dinan', 'Silver', 'USA', 15, 182),
+('Robby Foley', 'Silver', 'USA', 15, 182),
+('John Edwards', 'Platinum', 'USA', 15, 182),
+('Jarett Andretti', 'Silver', 'USA', 74, 183),
+('Jeff Westphal', 'Gold', 'USA', 74, 183),
+('Ryan Briscoe', 'Platinum', 'Australia', 74, 183);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
