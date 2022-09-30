@@ -10,7 +10,8 @@ import GTWCA from '../../images/GTWCA.png';
 import PGT4A from '../../images/PGT4A.png';
 import GTAM from '../../images/GTAM.png';
 import TCAM from '../../images/TCAM.png';
-import {gtwca, tcam, gtam, gt4a} from '../../functions/helperFunc'
+import IGTC from '../../images/igtc.jpeg';
+import {gtwca, tcam, gtam, gt4a, igtc} from '../../functions/helperFunc'
 
 
 
@@ -32,9 +33,10 @@ function DriverDetails(props) {
 
   const getSeriesLogo = (series) => {
     switch(series){
-      case "Pirelli GT4 America": return PGT4A;
-      case "TC America": return TCAM;
-      case "GT America": return GTAM;
+      case igtc: return IGTC;
+      case gt4a: return PGT4A;
+      case tcam: return TCAM;
+      case gtam: return GTAM;
       default: return GTWCA;
     }
   }
