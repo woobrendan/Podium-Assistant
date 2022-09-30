@@ -557,8 +557,18 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Daniel Mancinelli', 'Silver', 'Italy', 27, 168),
 ('Samantha Tan', 'Bronze', 'Canada', 8, 169),
 ('Nick Wittmer', 'Silver', 'Canada', 8, 169),
-('Harry Gottsacker', 'Silver', 'USA', 8, 169);
-
+('Harry Gottsacker', 'Silver', 'USA', 8, 169),
+('Chris Cagnazzi', 'Bronze', 'USA', 70, 170),
+('Shane Lewis', 'Bronze', 'USA', 70, 170),
+('Guy Cosmo', 'Silver', 'USA', 70, 170),
+('Charlie Luck', 'Bronze', 'USA', 10, 172),
+('Jan Heylen', 'Gold', 'Belgium', 10, 172),
+('Elia Erhart', 'Bronze', 'Germany', 10, 172),
+('Erin Vogel', 'Bronze', 'USA', 9, 171),
+('Michael Cooper', 'Gold', 'USA', 9, 171),
+('Pierre Ragues', 'France', 'Silver', 71, 173),
+('Davide Rigon', 'Italy', 'Platinum', 71, 173),
+('Miguel Molina', 'Spain', 'Platinum', 71, 173);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
