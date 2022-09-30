@@ -578,8 +578,17 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Kenny Habul', 'Bronze', 'USA', 72, 176),
 ('Martin Konrad', 'Bronze', 'Austria', 72, 176),
 ('Dominik Baumann', 'Gold', 'Austria', 72, 176),
-('Jason Harward', 'Bronze', 'USA', 12, 177),
-('Seth Lucas', 'Bronze', 'USA', 12, 177);
+('Jason Harward', 'Bronze', 'USA', 12, 178),
+('Seth Lucas', 'Bronze', 'USA', 12, 178),
+('Daniel Morad', 'Silver', 'Canada', 73, 177),
+('Raffaele Marciello', 'Platinum', 'Switzerland', 73, 177),
+('Daniel Juncadella', 'Platinum', 'Spain', 73, 177),
+('Jeff Burton', 'Bronze', 'USA', 5, 179),
+('Corey Lewis', 'Silver', 'USA', 5, 179),
+('Jon Branam', 'Bronze', 'USA', 5, 179),
+('Ashton Harrison', 'Bronze', 'USA', 13, 180),
+('Mario Farnbacher', 'Gold', 'Gemany', 13, 180),
+('Christina Nielson', 'Bronze', 'Denmark', 13, 180);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
