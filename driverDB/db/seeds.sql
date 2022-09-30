@@ -286,8 +286,11 @@ VALUES
 ('Mercedes-AMG GT3', '75', 2, 72, 5, ''),
 ('Mercedes-AMG GT3', '77', 1, 73, 5, ''),
 ('Lamborghini Huracan GT3', '88', 3, 12, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FFH1_3959.jpg'),
-
-
+('Lamborghini Huracan GT3', '91', 2, 5, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F300%2F%2F072222_WGI_bcpix2462628.jpg'),
+('Acura NSX GT3', '93', 2, 13, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_09976f.jpg'),
+('BMW M4 GT3', '94', 2, 14, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FRL_VIR_43517f.jpg'),
+('BMW M4 GT3', '96', 1, 15, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FMRM_5040.JPG'),
+('Ferrari 488 GT3', '218', 1, 74, 5, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
