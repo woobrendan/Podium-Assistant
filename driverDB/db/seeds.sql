@@ -104,7 +104,8 @@ INSERT INTO teams (name, country) VALUES
 ('Sun Energy 1 Racing by Akkodis ASP', 'USA'),
 ('Mercedes-AMG Team Craft-Bamboo Racing', 'Hong Kong'),
 ('Andretti Autosport x Vital Speed', 'USA'),
-('STR38 Motorsports', 'USA');
+('STR38 Motorsports', 'USA'),
+('HART Alabama', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
@@ -295,7 +296,9 @@ VALUES
 ('BMW M4 GT4', '38', 3, 75, 2, ''),
 ('Porsche 718 Cayman GT4 RS CS', '47', 9, 17, 3, ''),
 ('BMW M4 GT4', '52', 9, 31, 3, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335932.jpg'),
-('BMW M2 CS', '38', 5, 75, 4, '');
+('BMW M2 CS', '38', 5, 75, 4, ''),
+('Mini JCW', '63', 8, 51, 4, ''),
+('Honda Civic Type-R', 7, 76, 4, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
@@ -610,7 +613,8 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Scott Noble', 'Bronze', 'USA', 17, 185),
 ('Tom Capizzi', 'Bronze', 'USA', 31, 186),
 ('Chris Walsh', 'N/A', 'USA', 75, 187),
-('Bruce Myrehn' , 'N/A', 'USA', 51, 188);
+('Bruce Myrehn' , 'N/A', 'USA', 51, 188),
+('Karl Hertel', 'N/A', 'USA', 76, 189);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
