@@ -298,7 +298,7 @@ VALUES
 ('BMW M4 GT4', '52', 9, 31, 3, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335932.jpg'),
 ('BMW M2 CS', '38', 5, 75, 4, ''),
 ('Mini JCW', '63', 8, 51, 4, ''),
-('Honda Civic Type-R', 7, 76, 4, '');
+('Honda Civic Type-R', '93', 7, 76, 4, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
