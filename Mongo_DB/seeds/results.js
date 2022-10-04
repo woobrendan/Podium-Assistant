@@ -1660,10 +1660,10 @@
         "team": "Skip Barber Racing"
       },
       "secondPlace": {
-        "driver1": "Mat Pombo",
-        "number": "37",
-        "vehicle": "Honda Civic Type-R",
-        "team": "LA Honda World"
+        "driver1": "Jeff Ricca",
+        "number": "78",
+        "vehicle": "Hyundai Veloster N DCT TC",
+        "team": "Genracer / Ricca Autosport"
       },
       "thirdPlace": {
         "driver1": "Clay Williams",
@@ -1675,22 +1675,22 @@
     "result3": {
       "class": "TCA",
       "firstPlace": {
-        "driver1": "Carter Fartuch",
-        "number": "16",
-        "vehicle": "Honda Civic Si",
-        "team": "Skip Barber Racing"
-      },
-      "secondPlace": {
         "driver1": "Gresham Wagner",
         "number": "21",
         "vehicle": "Subaru BRZ",
         "team": "TechSport Racing"
       },
       "thirdPlace": {
-        "driver1": "Spencer Bucknum",
-        "number": "5",
+        "driver1": "Carter Fartuch",
+        "number": "16",
         "vehicle": "Honda Civic Si",
-        "team": "LA Honda World"
+        "team": "Skip Barber Racing"
+      },
+      "secondPlace": {
+        "driver1": "Devin Anderson",
+        "number": "22",
+        "vehicle": "Subaru BRZ",
+        "team": "TechSport Racing"
       }
     }
   },
