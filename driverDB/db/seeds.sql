@@ -608,7 +608,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Ramana Lagemann', 'Bronze', 'USA', 75, 184),
 ('Robert Mau', 'Bronze', 'USA', 75, 184),
 ('Scott Noble', 'Bronze', 'USA', 17, 185),
-('Tom Capizzi', 'Bronze', 'USA', 31, 186);
+('Tom Capizzi', 'Bronze', 'USA', 31, 186),
+('Chris Walsh', 'N/A', 'USA', 75, 187),
+('Bruce Myrehn' , 'N/A', 'USA', 51, 188);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
