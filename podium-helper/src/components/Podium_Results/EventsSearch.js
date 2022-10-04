@@ -1,27 +1,20 @@
 import {useState, useEffect} from 'react';
 import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
 import axios from 'axios';
+import useEntries from '../../functions/useEntries';
 
 
 
 function EventSearch(props) {
   const [eventName, setEventName] = useState('');
-  const [eventList, setEventList] = useState([]);
-
-  useEffect(() => {
-    axios.get('http://localhost:8080/api/events')
-    .then((res) => {
-      setEventList(res.data)
-    })
-    .catch((err) => console.log("Error:", err));
-  }, [])
+  const { events } = useEntries();
 
   const handleChange = (event) => {
     setEventName(event.target.value);
     props.getValue(event.target.name, event.target.value)
   };
 
-  const mappedEvents = eventList.map((event) => <MenuItem key={event.id} value={event.name}>{event.name}</MenuItem>)
+  const mappedEvents = events.map((event) => <MenuItem key={event.id} value={event.name}>{event.name}</MenuItem>)
 
   return (
     <Box
