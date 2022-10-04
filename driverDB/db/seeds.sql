@@ -293,7 +293,9 @@ VALUES
 ('BMW M4 GT3', '96', 1, 15, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FMRM_5040.JPG'),
 ('Ferrari 488 GT3', '218', 1, 74, 5, ''),
 ('BMW M4 GT4', '38', 3, 75, 2, ''),
+('Porsche 718 Cayman GT4 RS CS', '47', 9, 17, 3, ''),
 ('BMW M4 GT4', '52', 9, 31, 3, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335932.jpg'),
+('BMW M2 CS', '38', 5, 75, 4, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
