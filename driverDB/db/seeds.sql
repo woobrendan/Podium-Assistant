@@ -292,7 +292,8 @@ VALUES
 ('BMW M4 GT3', '94', 2, 14, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FRL_VIR_43517f.jpg'),
 ('BMW M4 GT3', '96', 1, 15, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FMRM_5040.JPG'),
 ('Ferrari 488 GT3', '218', 1, 74, 5, ''),
-('BMW M4 GT4', '38', 3, 75, 2, '');
+('BMW M4 GT4', '38', 3, 75, 2, ''),
+('BMW M4 GT4', '52', 9, 31, 3, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335932.jpg'),
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
@@ -603,7 +604,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Jeff Westphal', 'Gold', 'USA', 74, 183),
 ('Ryan Briscoe', 'Platinum', 'Australia', 74, 183),
 ('Ramana Lagemann', 'Bronze', 'USA', 75, 184),
-('Robert Mau', 'Bronze', 'USA', 75, 184);
+('Robert Mau', 'Bronze', 'USA', 75, 184),
+('Scott Noble', 'Bronze', 'USA', 17, 185),
+('Tom Capizzi', 'Bronze', 'USA', 31, 186);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
