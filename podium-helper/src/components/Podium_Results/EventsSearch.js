@@ -1,6 +1,5 @@
-import {useState, useEffect} from 'react';
+import { useState } from 'react';
 import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
-import axios from 'axios';
 import useEntries from '../../functions/useEntries';
 
 
