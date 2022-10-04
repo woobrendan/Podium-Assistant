@@ -1,4 +1,4 @@
-import {gtwca, gt4a, gtam} from '../functions/helperFunc';
+import {gtwca, gt4a, gtam, igtc} from '../functions/helperFunc';
 
 const sortByVehicleType = (listOfEntries) => {
   const gt3 = [];
@@ -16,6 +16,7 @@ const sortByVehicleType = (listOfEntries) => {
 
 const sortBySeries = (listOfEntries) => {
   const gtwc = [];
+  const igtcList = [];
   const gta = [];
   const gt4 = [];
   const tc = [];
@@ -24,9 +25,10 @@ const sortBySeries = (listOfEntries) => {
     if (nameOfSeries === gtwca) gtwc.push(entry)
     else if (nameOfSeries === gtam) gta.push(entry)
     else if (nameOfSeries === gt4a) gt4.push(entry)
+    else if (nameOfSeris === igtc) igtcList.push(entry)
     else tc.push(entry)
   })
-  return [...gtwc, ...gta, ...gt4, ...tc]
+  return [...gtwc, ...igtcList, ...gta, ...gt4, ...tc]
 }
 
 
