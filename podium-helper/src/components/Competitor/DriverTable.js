@@ -7,22 +7,14 @@ function createData(name, nationality, rating) {
 
 function DriverTable(props) {
   const tableRows = (drivers) => {
-    if (!drivers.driver2) {
-      return [
-        createData(drivers.driver1.name, drivers.driver1.nationality, drivers.driver1.rating)
-      ]
-    } else if (drivers.driver2 && !drivers.driver3){
-      return  [
-        createData(drivers.driver1.name, drivers.driver1.nationality, drivers.driver1.rating),
-        createData(drivers.driver2.name, drivers.driver2.nationality, drivers.driver2.rating)
-      ]
-    } else {
-      return [
-        createData(drivers.driver1.name, drivers.driver1.nationality, drivers.driver1.rating),
-        createData(drivers.driver2.name, drivers.driver2.nationality, drivers.driver2.rating),
-        createData(drivers.driver3.name, drivers.driver3.nationality, drivers.driver3.rating)
-      ]
+    const data = [createData(drivers.driver1.name, drivers.driver1.nationality, drivers.driver1.rating)];
+    if (drivers.driver2) {
+      data.push(createData(drivers.driver2.name, drivers.driver2.nationality, drivers.driver2.rating))
     }
+    if (drivers.driver3) {
+      data.push(createData(drivers.driver3.name, drivers.driver3.nationality, drivers.driver3.rating))
+    }
+    return data
   }
 
   return (
