@@ -27,6 +27,7 @@ import tca from '../images/tca.png';
 import gtam_gt3 from '../images/gtam_gt3.png';
 import gtam_gt2 from '../images/gtam_gt2.png';
 import gtam_gt4 from '../images/gtam_gt4.png';
+import gtwca_silver from '../images/gtwca_silver.png'
 import {gtwca} from './helperFunc'
 
 const getManufLogo = (vehicle) => {
@@ -54,7 +55,7 @@ const getClassBannerImg = (nameOfClass, series) => {
     case "Pro": return gtwca_pro;
     case "Pro-Am": return series === gtwca ? gtwca_ProAm : gt4_proam;
     case "Am": return series === gtwca ? gtwca_am : gt4_am;
-    case "Silver": return gt4_silver;
+    case "Silver": return series === igtc ? gtwca_silver : gt4_silver;
     case "TCX": return tcx;
     case "TC": return tc;
     case "TCA": return tca;
