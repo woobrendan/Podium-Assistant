@@ -43,9 +43,10 @@ const sortByClass = (listOfEntries) => {
   const pro = [];
   const gt3proam = [];
   const gt4proam = [];
+  const gt3Silver = []
   const gt3am = [];
   const gt4am = [];
-  const silver = [];
+  const gt4aSilver = [];
   const sro3 = [];
   const masters = []
   const gt2 = [];
@@ -93,7 +94,7 @@ const sortByClass = (listOfEntries) => {
         break;
     }
   })
-  return [...pro, ...gt3proam, ...gt3am, ...sro3, ...masters, ...gt2, ...gt4, ...gt4proam, ...silver, ...gt4am, ...tcx, ...tc, ...tca ]
+  return [...pro, ...gt3proam, ...gt3Silver, ...gt3am, ...sro3, ...masters, ...gt2, ...gt4, ...gt4proam, ...silver, ...gt4am, ...tcx, ...tc, ...tca ]
 }
 
 export {
