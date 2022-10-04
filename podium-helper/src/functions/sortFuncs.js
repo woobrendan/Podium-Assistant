@@ -62,17 +62,13 @@ const sortByClass = (listOfEntries) => {
         pro.push(entry);
         break;
       case 'Pro-Am': 
-        nameOfSeries === gtwca 
-          ? gt3proam.push(entry) 
-          : gt4proam.push(entry);
+        nameOfSeries === gt4a ? gt4proam.push(entry) : gt3proam.push(entry);
         break;
       case 'Am': 
-        nameOfSeries === gtwca
-          ? gt3am.push(entry) 
-          : gt4am.push(entry);
+        nameOfSeries === gt4a ? gt4am.push(entry) : gt3am.push(entry);
         break;
       case 'Silver': 
-        silver.push(entry);
+        nameOfSeries === gt4a ? gt4aSilver.push(entry) : gt3Silver.push(entry);
         break;
       case 'SRO3': 
         sro3.push(entry);
