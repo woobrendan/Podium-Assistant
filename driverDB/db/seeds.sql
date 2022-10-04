@@ -103,7 +103,8 @@ INSERT INTO teams (name, country) VALUES
 ('AF Corse - Francorchamps', 'Italy'),
 ('Sun Energy 1 Racing by Akkodis ASP', 'USA'),
 ('Mercedes-AMG Team Craft-Bamboo Racing', 'Hong Kong'),
-('Andretti Autosport x Vital Speed', 'USA');
+('Andretti Autosport x Vital Speed', 'USA'),
+('STR38 Motorsports', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
@@ -290,7 +291,8 @@ VALUES
 ('Acura NSX GT3', '93', 2, 13, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_09976f.jpg'),
 ('BMW M4 GT3', '94', 2, 14, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FRL_VIR_43517f.jpg'),
 ('BMW M4 GT3', '96', 1, 15, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FMRM_5040.JPG'),
-('Ferrari 488 GT3', '218', 1, 74, 5, '');
+('Ferrari 488 GT3', '218', 1, 74, 5, ''),
+('BMW M4 GT4', '38', 3, 75, 2, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
@@ -599,7 +601,9 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('John Edwards', 'Platinum', 'USA', 15, 182),
 ('Jarett Andretti', 'Silver', 'USA', 74, 183),
 ('Jeff Westphal', 'Gold', 'USA', 74, 183),
-('Ryan Briscoe', 'Platinum', 'Australia', 74, 183);
+('Ryan Briscoe', 'Platinum', 'Australia', 74, 183),
+('Ramana Lagemann', 'Bronze', 'USA', 75, 184),
+('Robert Mau', 'Bronze', 'USA', 75, 184);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
