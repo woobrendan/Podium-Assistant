@@ -25,6 +25,7 @@ function DriverDetails(props) {
     "entry-detail_PGT4A": series === gt4a,
     "entry-detail_TCA": series === tcam,
     "entry-detail_GTA": series === gtam,
+    "entry-detail_IGTC": series === igtc
   })
 
   const handleToggle = () => {
