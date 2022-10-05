@@ -25,7 +25,7 @@ const sortBySeries = (listOfEntries) => {
     if (nameOfSeries === gtwca) gtwc.push(entry)
     else if (nameOfSeries === gtam) gta.push(entry)
     else if (nameOfSeries === gt4a) gt4.push(entry)
-    else if (nameOfSeris === igtc) igtcList.push(entry)
+    else if (nameOfSeries === igtc) igtcList.push(entry)
     else tc.push(entry)
   })
   return [...gtwc, ...igtcList, ...gta, ...gt4, ...tc]
@@ -96,7 +96,7 @@ const sortByClass = (listOfEntries) => {
         break;
     }
   })
-  return [...pro, ...gt3proam, ...gt3Silver, ...gt3am, ...sro3, ...masters, ...gt2, ...gt4, ...gt4proam, ...silver, ...gt4am, ...tcx, ...tc, ...tca ]
+  return [...pro, ...gt3proam, ...gt3Silver, ...gt3am, ...sro3, ...masters, ...gt2, ...gt4, ...gt4proam, ...gt4aSilver, ...gt4am, ...tcx, ...tc, ...tca ]
 }
 
 export {
