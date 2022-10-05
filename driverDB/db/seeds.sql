@@ -529,7 +529,7 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Matt Forbush', 'Bronze', 'USA', 64, 154),
 ('Caleb Bacon', 'Silver', 'USA', 64, 154),
 ('Jay Logan', 'Bronze', 'USA', 16, 155),
-('Joel Miller', 'Gold', 'USA', 16, 155),
+('Alex Premat', 'Gold', 'France', 16, 155),
 ('Thomas Collingwood', 'Bronze', 'Canada', 69, 156),
 ('John Tecce', 'Bronze', 'USA', 69, 156),
 ('Andy Pilgrim', 'Bronze', 'USA', 62, 157),
