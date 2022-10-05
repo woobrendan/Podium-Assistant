@@ -91,7 +91,7 @@ const sortByClass = (listOfEntries) => {
       case 'TC': 
         tc.push(entry);
         break;
-      case 'TCA': 
+      default: 
         tca.push(entry);
         break;
     }
