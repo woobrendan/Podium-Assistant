@@ -1739,21 +1739,21 @@
         "team": "Genracer / Ricca Autosport"
       },
       "thirdPlace": {
-        "driver1": "Clay Williams",
+        "driver1": "Nicholas Barbato",
         "number": "60",
-        "vehicle": "MINI Cooper JCW Pro TC",
-        "team": "MINI JCW Team"
+        "vehicle": "Hyundai Veloster N DCT TC",
+        "team": "Genracer / Ricca Autosport"
       }
     },
     "result3": {
       "class": "TCA",
-      "firstPlace": {
-        "driver1": "Gresham Wagner",
-        "number": "21",
-        "vehicle": "Subaru BRZ",
-        "team": "TechSport Racing"
-      },
       "thirdPlace": {
+        "driver1": "Cristian Perocarpi",
+        "number": "61",
+        "vehicle": "Mini JCW",
+        "team": "MINI JCW Team"
+      },
+      "firstPlace": {
         "driver1": "Carter Fartuch",
         "number": "16",
         "vehicle": "Honda Civic Si",
