@@ -53,8 +53,8 @@ const getManufLogo = (vehicle) => {
 const getClassBannerImg = (nameOfClass, series) => {
   switch(nameOfClass) {
     case "Pro": return gtwca_pro;
-    case "Pro-Am": return series === gtwca ? gtwca_ProAm : gt4_proam;
-    case "Am": return series === gtwca ? gtwca_am : gt4_am;
+    case "Pro-Am": return series === gt4a ?  gt4_proam : gtwca_ProAm;
+    case "Am": return series === gtwca ? gt4_am : gtwca_am;
     case "Silver": return series === igtc ? gtwca_silver : gt4_silver;
     case "TCX": return tcx;
     case "TC": return tc;
