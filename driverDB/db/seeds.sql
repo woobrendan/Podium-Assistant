@@ -105,7 +105,8 @@ INSERT INTO teams (name, country) VALUES
 ('Mercedes-AMG Team Craft-Bamboo Racing', 'Hong Kong'),
 ('Andretti Autosport x Vital Speed', 'USA'),
 ('STR38 Motorsports', 'USA'),
-('HART Alabama', 'USA');
+('HART Alabama', 'USA'),
+('ACI Motorsports', 'USA');
 
 
 INSERT INTO vehicles (car,  number, class_id, team_id, series_id, image)
@@ -298,7 +299,8 @@ VALUES
 ('BMW M4 GT4', '52', 9, 31, 3, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F350%2F%2F051922_NOLA_bcpix2335932.jpg'),
 ('BMW M2 CS', '38', 5, 75, 4, ''),
 ('Mini JCW', '63', 8, 51, 4, ''),
-('Honda Civic Type-R', '93', 7, 76, 4, '');
+('Honda Civic Type-R', '93', 7, 76, 4, ''),
+('Porsche 718 Cayman GT4 RS CS', '7', 9, 77, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
