@@ -28,7 +28,7 @@ import gtam_gt3 from '../images/gtam_gt3.png';
 import gtam_gt2 from '../images/gtam_gt2.png';
 import gtam_gt4 from '../images/gtam_gt4.png';
 import gtwca_silver from '../images/gtwca_silver.png'
-import {gtwca} from './helperFunc'
+import {gtwca, gt4a, igtc} from './helperFunc'
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes('Porsche')) return porscheLogo
