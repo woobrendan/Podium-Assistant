@@ -28,7 +28,7 @@ import gtam_gt3 from '../images/gtam_gt3.png';
 import gtam_gt2 from '../images/gtam_gt2.png';
 import gtam_gt4 from '../images/gtam_gt4.png';
 import gtwca_silver from '../images/gtwca_silver.png'
-import {gtwca, gt4a, igtc} from './helperFunc'
+import { gt4a } from './helperFunc'
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes('Porsche')) return porscheLogo
@@ -54,8 +54,8 @@ const getClassBannerImg = (nameOfClass, series) => {
   switch(nameOfClass) {
     case "Pro": return gtwca_pro;
     case "Pro-Am": return series === gt4a ?  gt4_proam : gtwca_ProAm;
-    case "Am": return series === gtwca ? gt4_am : gtwca_am;
-    case "Silver": return series === igtc ? gtwca_silver : gt4_silver;
+    case "Am": return series === gt4a ? gt4_am : gtwca_am;
+    case "Silver": return series === gt4a ? gt4_silver : gtwca_silver;
     case "TCX": return tcx;
     case "TC": return tc;
     case "TCA": return tca;
