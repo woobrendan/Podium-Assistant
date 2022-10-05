@@ -1694,4 +1694,77 @@
       }
     }
   },
+  {
+    "series": "TC America",
+    "date": "06-19-2022",
+    "event": "VIRgina International Raceway",
+    "fastLap": {
+      "driver": "Lucas Catania",
+      "vehicle": "BMW M2 CS",
+      "laptime": "1:59.608"
+    },
+    "result1": {
+      "class": "TCX",
+      "thirdPlace": {
+        "driver1": "Colin Garrett",
+        "number": "44",
+        "vehicle": "BMW M2 CS",
+        "team": "Rooster Hall Racing"
+      },
+      "secondPlace": {
+        "driver1": "Stephen Cugliari",
+        "number": "57",
+        "vehicle": "BMW M2 CS",
+        "team": "Accerlating Performance"
+      },
+      "firstPlace": {
+        "driver1": "Jacob Ruud",
+        "number": "1",
+        "vehicle": "BMW M2 CS",
+        "team": "Fast Tracking Racing"
+      }
+    },
+    "result2": {
+      "class": "TC",
+      "firstPlace": {
+        "driver1": "Kevin Boehm",
+        "number": "9",
+        "vehicle": "Honda Civic Type-R",
+        "team": "Skip Barber Racing"
+      },
+      "secondPlace": {
+        "driver1": "Jeff Ricca",
+        "number": "78",
+        "vehicle": "Hyundai Veloster N DCT TC",
+        "team": "Genracer / Ricca Autosport"
+      },
+      "thirdPlace": {
+        "driver1": "Clay Williams",
+        "number": "60",
+        "vehicle": "MINI Cooper JCW Pro TC",
+        "team": "MINI JCW Team"
+      }
+    },
+    "result3": {
+      "class": "TCA",
+      "firstPlace": {
+        "driver1": "Gresham Wagner",
+        "number": "21",
+        "vehicle": "Subaru BRZ",
+        "team": "TechSport Racing"
+      },
+      "thirdPlace": {
+        "driver1": "Carter Fartuch",
+        "number": "16",
+        "vehicle": "Honda Civic Si",
+        "team": "Skip Barber Racing"
+      },
+      "secondPlace": {
+        "driver1": "Devin Anderson",
+        "number": "22",
+        "vehicle": "Subaru BRZ",
+        "team": "TechSport Racing"
+      }
+    }
+  },
 ]
