@@ -11,10 +11,16 @@ function DriverTable(props) {
       return [
         createData(drivers.driver1.name, drivers.driver1.nationality, drivers.driver1.rating)
       ]
-    } else {
+    } else if (drivers.driver2 && !drivers.driver3){
       return  [
         createData(drivers.driver1.name, drivers.driver1.nationality, drivers.driver1.rating),
         createData(drivers.driver2.name, drivers.driver2.nationality, drivers.driver2.rating)
+      ]
+    } else {
+      return [
+        createData(drivers.driver1.name, drivers.driver1.nationality, drivers.driver1.rating),
+        createData(drivers.driver2.name, drivers.driver2.nationality, drivers.driver2.rating),
+        createData(drivers.driver3.name, drivers.driver3.nationality, drivers.driver3.rating)
       ]
     }
   }
