@@ -11,6 +11,10 @@ function createDoubleDriverData(carNum, teamName, driver1, driver2, vehicle) {
   return { carNum, teamName, driver1, driver2, vehicle };
 }
 
+const createThreeDriverData = (carNum, teamName, driver1, driver2, driver3, vehicle) => {
+  return { carNum, teamName, driver1, driver2, driver3, vehicle };
+}
+
 function EntryDashboard() {
 
   const {vehicles} = useEntries();
@@ -18,11 +22,12 @@ function EntryDashboard() {
   const tableRows = (entries) => {
     const allEntries = []
     for (const entry of entries) {
-      console.log('entry', entry)
       if (!entry.driver2) {
         allEntries.push(createSingleDriverData(entry.number, entry.team, entry.driver1.name, entry.vehicle))
-      } else {
+      } else if (entry.driver2 && !entry.driver3) {
         allEntries.push(createDoubleDriverData(entry.number, entry.team, entry.driver1.name, entry.driver2.name, entry.vehicle))
+      } else {
+        allEntries.push(createThreeDriverData(entry.number, entry.team, entry.driver1.name, entry.driver2.name, entry.driver3.name, entry.vehicle))
       }
     }
     return allEntries;
@@ -30,7 +35,6 @@ function EntryDashboard() {
 
   return (
     <div>
-
     <TableContainer component={Paper} className="entry-dashboard-table">
       <Table sx={{ minWidth: 300 }} aria-label="simple table">
         <TableHead>
