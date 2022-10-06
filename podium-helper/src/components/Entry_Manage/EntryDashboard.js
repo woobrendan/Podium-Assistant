@@ -4,16 +4,16 @@ import EditButton from './EditButton';
 import '../../Styling/entryDash.scss'
 
 
-function createSingleDriverData(carNum, teamName, driver1, vehicle) {
-  return { carNum, teamName, driver1, vehicle };
+function createSingleDriverData(carNum, series, teamName, driver1, vehicle) {
+  return { carNum, series, teamName, driver1, vehicle };
 }
 
-function createDoubleDriverData(carNum, teamName, driver1, driver2, vehicle) {
-  return { carNum, teamName, driver1, driver2, vehicle };
+function createDoubleDriverData(carNum, series, teamName, driver1, driver2, vehicle) {
+  return { carNum, series, teamName, driver1, driver2, vehicle };
 }
 
-const createThreeDriverData = (carNum, teamName, driver1, driver2, driver3, vehicle) => {
-  return { carNum, teamName, driver1, driver2, driver3, vehicle };
+const createThreeDriverData = (carNum, series, teamName, driver1, driver2, driver3, vehicle) => {
+  return { carNum, series, teamName, driver1, driver2, driver3, vehicle };
 }
 
 function EntryDashboard() {
@@ -24,11 +24,11 @@ function EntryDashboard() {
     const allEntries = []
     for (const entry of entries) {
       if (!entry.driver2) {
-        allEntries.push(createSingleDriverData(entry.number, entry.team, entry.driver1.name, entry.vehicle))
+        allEntries.push(createSingleDriverData(entry.number, entry.series, entry.team, entry.driver1.name, entry.vehicle))
       } else if (entry.driver2 && !entry.driver3) {
-        allEntries.push(createDoubleDriverData(entry.number, entry.team, entry.driver1.name, entry.driver2.name, entry.vehicle))
+        allEntries.push(createDoubleDriverData(entry.number, entry.series, entry.team, entry.driver1.name, entry.driver2.name, entry.vehicle))
       } else {
-        allEntries.push(createThreeDriverData(entry.number, entry.team, entry.driver1.name, entry.driver2.name, entry.driver3.name, entry.vehicle))
+        allEntries.push(createThreeDriverData(entry.number, entry.series, entry.team, entry.driver1.name, entry.driver2.name, entry.driver3.name, entry.vehicle))
       }
     }
     return allEntries;
@@ -40,6 +40,7 @@ function EntryDashboard() {
         <TableHead>
           <TableRow>
             <TableCell>Number</TableCell>
+            <TableCell align="right">Series</TableCell>
             <TableCell align="right">Team Name</TableCell>
             <TableCell align="right">Driver 1</TableCell>
             <TableCell align="right">Driver 2</TableCell>
@@ -55,6 +56,7 @@ function EntryDashboard() {
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
               <TableCell component="th" scope="row">{entry.carNum}</TableCell>
+              <TableCell align="right">{entry.series}</TableCell>
               <TableCell align="right">{entry.teamName}</TableCell>
               <TableCell align="right">{entry.driver1}</TableCell>
               {entry.driver2 
