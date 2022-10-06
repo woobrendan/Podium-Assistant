@@ -300,7 +300,8 @@ VALUES
 ('BMW M2 CS', '38', 5, 75, 4, ''),
 ('Mini JCW', '63', 8, 51, 4, ''),
 ('Honda Civic Type-R', '93', 7, 76, 4, ''),
-('Porsche 718 Cayman GT4 RS CS', '7', 2, 77, 2, '');
+('Porsche 718 Cayman GT4 RS CS', '7', 2, 77, 2, ''),
+('Audi R8 LMS', '888', 10, 12, 3, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
@@ -618,7 +619,8 @@ INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
 ('Bruce Myrehn' , 'N/A', 'USA', 51, 188),
 ('Karl Hertel', 'N/A', 'USA', 76, 189),
 ('Curt Swearingin', 'Bronze', 'USA', 77, 190),
-('Parker Thompson', 'Bronze', 'USA', 77, 190);
+('Parker Thompson', 'Bronze', 'USA', 77, 190),
+('Jason Harward', 'Bronze', 'USA', 12, 191);
 
 
 INSERT INTO fastlaps (driver_id, laptime) VALUES
