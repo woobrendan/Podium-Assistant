@@ -189,11 +189,11 @@
         "team": "CrowdStrike Racing by Riley Motorsports"
       },
       "thirdPlace": {
-        "driver1": "Chandlerr Hull",
+        "driver1": "Chandler Hull",
         "driver2": "Bill Auberlen",
         "number": "94",
         "vehicle": "BMW M4 GT3",
-        "team": "BimmerWorlds"
+        "team": "BimmerWorld"
       }
     },
     "result3": {
@@ -1817,23 +1817,16 @@
         "team": "CrowdStrike Racing by Riley Motorsports"
       },
       "thirdPlace": {
-        "driver1": "Chandlerr Hull",
-        "driver2": "Bill Auberlen",
-        "number": "94",
-        "vehicle": "BMW M4 GT3",
-        "team": "BimmerWorlds"
+        "driver1": "Erin Vogel",
+        "driver2": "Michael Cooper",
+        "number": "43",
+        "vehicle": "Acura NSX GT3",
+        "team": "RealTime Racing"
       }
     },
     "result3": {
       "class": "Am",
       "firstPlace": {
-        "driver1": "Jean-Claude Saada",
-        "driver2": "Conrad Grunewald",
-        "number": "61",
-        "vehicle": "Ferrari 488 GT3",
-        "team": "AF Corse"
-      },
-      "secondPlace": {
         "driver1": "Charlie Scardina",
         "driver2": "Onofrio Triarsi",
         "number": "23",
