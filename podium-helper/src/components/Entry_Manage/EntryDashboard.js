@@ -17,10 +17,6 @@ function EntryDashboard() {
   const {vehicles} = useEntries();
   const [entries, setEntries] = useState([]);
 
-  useEffect(() => {
-    setEntries(vehicles)
-  }, [vehicles]);
-
   const tableRows = (entries) => {
     const allEntries = []
     for (const entry of entries) {
@@ -49,7 +45,7 @@ function EntryDashboard() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableRows(entries).map((entry, index) => (
+          {tableRows(vehicles).map((entry, index) => (
             <TableRow
               key={index}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
