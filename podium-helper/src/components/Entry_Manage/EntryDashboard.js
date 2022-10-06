@@ -39,6 +39,7 @@ function EntryDashboard() {
             <TableCell align="right">Team Name</TableCell>
             <TableCell align="right">Driver 1</TableCell>
             <TableCell align="right">Driver 2</TableCell>
+            <TableCell align="right">Driver 3</TableCell>
             <TableCell align="right">Vehicle</TableCell>
             <TableCell align="right">+/-</TableCell>
           </TableRow>
@@ -54,6 +55,10 @@ function EntryDashboard() {
               <TableCell align="right">{entry.driver1}</TableCell>
               {entry.driver2 
                 ? <TableCell align="right">{entry.driver2}</TableCell>
+                : <TableCell align="right">N/A</TableCell>
+              }
+              {entry.driver3 
+                ? <TableCell align="right">{entry.driver3}</TableCell>
                 : <TableCell align="right">N/A</TableCell>
               }
               <TableCell align="right">{entry.vehicle}</TableCell>
