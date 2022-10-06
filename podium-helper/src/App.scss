@@ -1,5 +1,16 @@
 .App {
   text-align: center;
+
+  .search-sort-options {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    .MuiInputLabel-root {
+      color: red;
+    }
+  }
 }
 
 .App-logo {
