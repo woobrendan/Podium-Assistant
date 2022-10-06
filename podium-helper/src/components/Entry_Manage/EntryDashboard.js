@@ -1,6 +1,5 @@
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@mui/material'
 import useEntries from '../../functions/useEntries';
-import {useState, useEffect} from 'react'
 import EditButton from './EditButton';
 
 
@@ -15,7 +14,6 @@ function createDoubleDriverData(carNum, teamName, driver1, driver2, vehicle) {
 function EntryDashboard() {
 
   const {vehicles} = useEntries();
-  const [entries, setEntries] = useState([]);
 
   const tableRows = (entries) => {
     const allEntries = []
