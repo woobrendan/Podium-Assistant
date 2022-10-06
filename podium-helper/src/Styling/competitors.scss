@@ -8,17 +8,6 @@
   -o-background-size: cover;
   background-size: cover;
 
-  .search-sort-options {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 40px;
-    padding-bottom: 20px;
-
-    .MuiInputLabel-root {
-      color: red;
-    }
-  }
-
   .MuiFormControl-root {
     width: 60%;
   }
