@@ -1,6 +1,7 @@
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@mui/material'
 import useEntries from '../../functions/useEntries';
 import EditButton from './EditButton';
+import '../../Styling/entryDash.scss'
 
 
 function createSingleDriverData(carNum, teamName, driver1, vehicle) {
