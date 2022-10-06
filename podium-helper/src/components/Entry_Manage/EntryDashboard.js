@@ -18,6 +18,7 @@ function EntryDashboard() {
   const tableRows = (entries) => {
     const allEntries = []
     for (const entry of entries) {
+      console.log('entry', entry)
       if (!entry.driver2) {
         allEntries.push(createSingleDriverData(entry.number, entry.team, entry.driver1.name, entry.vehicle))
       } else {
@@ -50,8 +51,11 @@ function EntryDashboard() {
             >
               <TableCell component="th" scope="row">{entry.carNum}</TableCell>
               <TableCell align="right">{entry.teamName}</TableCell>
-              <TableCell colSpan={entry.driver2 ? 1 : 2} align="right">{entry.driver1}</TableCell>
-              {entry.driver2 && <TableCell align="right">{entry.driver2}</TableCell>}
+              <TableCell align="right">{entry.driver1}</TableCell>
+              {entry.driver2 
+                ? <TableCell align="right">{entry.driver2}</TableCell>
+                : <TableCell align="right">N/A</TableCell>
+              }
               <TableCell align="right">{entry.vehicle}</TableCell>
               <TableCell align="right"><EditButton/></TableCell>
             </TableRow>
