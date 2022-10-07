@@ -1,13 +1,16 @@
-.MuiTableContainer-root {
+.entry-dashboard {
 
-  #entry-manager-head {
+  .MuiTableContainer-root {
 
-    background-color: #3e3d3d;
+    #entry-manager-head {
 
-    th {
-      color: red;
-      font-weight: bold;
+      background-color: #3e3d3d;
+
+      th {
+        color: red;
+        font-weight: bold;
+      }
+
     }
-
   }
 }
