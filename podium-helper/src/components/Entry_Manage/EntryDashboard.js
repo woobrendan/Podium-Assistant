@@ -3,11 +3,14 @@ import ToggleSort from '../Competitor/toggleSort';
 import '../../Styling/entryDash.scss'
 import {useState} from 'react';
 import { TextField } from '@mui/material'
+import useEntries from '../../functions/useEntries';
 
 function EntryDashboard() {
 
   const [searchValue, setSearchValue] = useState('');
   const [option, setOption] = useState('');
+
+  const {vehicles} = useEntries();
 
   const getSortOption = (option) => setOption(option);
 
@@ -28,7 +31,7 @@ function EntryDashboard() {
           onChange={e => {setSearchValue(e.target.value)}}
         />
       </div>
-    <EntryRows />
+    <EntryRows filteredEntries={vehicles}/>
     </>
   )
 }
