@@ -6,6 +6,7 @@ import {useState} from 'react';
 import { TextField } from '@mui/material'
 import useEntries from '../../functions/useEntries';
 import {sortBySeries, sortByVehicleType, sortByManufacturer, sortByClass} from '../../functions/sortFuncs';
+import NoResults from '../NoResults';
 
 function EntryDashboard() {
 
