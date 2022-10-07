@@ -27,6 +27,10 @@ function EntryDashboard() {
     }
   }
 
+  const sortedEntries = searchResults.length > 0 
+    ? <EntryRows filteredEntries={setSortOption(option, searchResults)}/>
+    : <NoResults />
+
   //take in vehicles from useEntries
   //filter those by search
   //pass those remaining entries down to entryrows
@@ -44,7 +48,7 @@ function EntryDashboard() {
           onChange={e => {setSearchValue(e.target.value)}}
         />
       </div>
-    <EntryRows filteredEntries={searchResults}/>
+    {sortedEntries}
     </>
   )
 }
