@@ -8,8 +8,12 @@ function EntryDashboard() {
 
   const [searchValue, setSearchValue] = useState('');
   const [option, setOption] = useState('');
-  
+
   const getSortOption = (option) => setOption(option);
+
+  //take in vehicles from useEntries
+  //filter those by search
+  //pass those remaining entries down to entryrows
 
   return (
     <>
