@@ -14,9 +14,7 @@ const createThreeDriverData = (carNum, series, teamName, driver1, driver2, drive
   return { carNum, series, teamName, driver1, driver2, driver3, vehicle };
 }
 
-function EntryRows() {
-
-  const {vehicles} = useEntries();
+function EntryRows(props) {
 
   const tableRows = (entries) => {
     const allEntries = []
@@ -48,7 +46,7 @@ function EntryRows() {
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableRows(vehicles).map((entry, index) => (
+          {tableRows(props.filteredEntries).map((entry, index) => (
             <TableRow
               key={index}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
