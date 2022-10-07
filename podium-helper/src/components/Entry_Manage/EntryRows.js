@@ -34,7 +34,7 @@ function EntryRows(props) {
     <TableContainer component={Paper} className="entry-dashboard-table">
       <Table sx={{ minWidth: 300 }} aria-label="simple table">
         <TableHead>
-          <TableRow>
+          <TableRow id="entry-manager-head">
             <TableCell>Number</TableCell>
             <TableCell align="right">Series</TableCell>
             <TableCell align="right">Team Name</TableCell>
