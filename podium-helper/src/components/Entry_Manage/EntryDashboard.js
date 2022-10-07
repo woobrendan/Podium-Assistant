@@ -5,6 +5,7 @@ import '../../Styling/entryDash.scss'
 import {useState} from 'react';
 import { TextField } from '@mui/material'
 import useEntries from '../../functions/useEntries';
+import {sortBySeries, sortByVehicleType, sortByManufacturer, sortByClass} from '../../functions/sortFuncs';
 
 function EntryDashboard() {
 
@@ -12,9 +13,19 @@ function EntryDashboard() {
   const [option, setOption] = useState('');
 
   const {vehicles} = useEntries();
-  const searchResults = searchAllEntries(vehicles, searchValue)
-
+  
   const getSortOption = (option) => setOption(option);
+  
+  const searchResults = searchAllEntries(vehicles, searchValue);
+  const setSortOption = (sortOption, entryArray) => {
+    switch(sortOption) {
+      case 'Number': return entryArray
+      case 'Manufacturer': return sortByManufacturer(entryArray)
+      case 'Vehicle Type': return sortByVehicleType(entryArray)
+      case 'Class': return sortByClass(entryArray)
+      default: return sortBySeries(entryArray)
+    }
+  }
 
   //take in vehicles from useEntries
   //filter those by search
