@@ -301,7 +301,7 @@ VALUES
 ('Mini JCW', '63', 8, 51, 4, ''),
 ('Honda Civic Type-R', '93', 7, 76, 4, ''),
 ('Porsche 718 Cayman GT4 RS CS', '7', 2, 77, 2, ''),
-('Audi R8 LMS', '888', 10, 12, 3, '');
+('Audi R8 LMS', '888', 8, 12, 3, '');
 
 
 INSERT INTO drivers (name, rating, nationality, team_id, vehicle_id) VALUES
