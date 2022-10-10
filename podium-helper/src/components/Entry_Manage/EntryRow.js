@@ -1,7 +1,10 @@
+import { TableCell, TableRow } from '@mui/material';
+import EditButton from './EditButton';
+
 function EntryRow(props) {
 
   const entry = props.entry;
-  
+
   return (
     <TableRow
       key={props.index}
