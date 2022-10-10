@@ -1,6 +1,5 @@
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@mui/material'
 import EntryRow from './EntryRow';
-import EditButton from './EditButton';
 
 function createSingleDriverData(carNum, series, teamName, driver1, vehicle) {
   return { carNum, series, teamName, driver1, vehicle };
@@ -47,26 +46,7 @@ function EntryRows(props) {
         </TableHead>
         <TableBody>
           {tableRows(props.filteredEntries).map((entry, index) => (
-            <EntryRow entry={entry}/> 
-            // <TableRow
-            //   key={index}
-            //   sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-            // >
-            //   <TableCell component="th" scope="row">{entry.carNum}</TableCell>
-            //   <TableCell align="right">{entry.series}</TableCell>
-            //   <TableCell align="right">{entry.teamName}</TableCell>
-            //   <TableCell align="right">{entry.driver1}</TableCell>
-            //   {entry.driver2 
-            //     ? <TableCell align="right">{entry.driver2}</TableCell>
-            //     : <TableCell align="right">-</TableCell>
-            //   }
-            //   {entry.driver3 
-            //     ? <TableCell align="right">{entry.driver3}</TableCell>
-            //     : <TableCell align="right">-</TableCell>
-            //   }
-            //   <TableCell align="right">{entry.vehicle}</TableCell>
-            //   <TableCell align="right"><EditButton/></TableCell>
-            // </TableRow>
+            <EntryRow entry={entry} key={index}/> 
           ))}
         </TableBody>
       </Table>
