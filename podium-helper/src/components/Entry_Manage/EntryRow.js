@@ -2,8 +2,11 @@ import { TableCell, TableRow } from '@mui/material';
 import EditButton from './EditButton';
 
 function EntryRow(props) {
-
+  const [editStatus, setEditStatus] = useState(false)
   const entry = props.entry;
+  const getEditStatus = (status) => {
+    status ? setEditStatus(true) : setEditStatus(false)
+  }
 
   return (
     <TableRow
@@ -23,7 +26,7 @@ function EntryRow(props) {
         : <TableCell align="right">-</TableCell>
       }
       <TableCell align="right">{entry.vehicle}</TableCell>
-      <TableCell align="right"><EditButton/></TableCell>
+      <TableCell align="right"><EditButton getEditStatus={getEditStatus}/></TableCell>
     </TableRow>
   )
 }
