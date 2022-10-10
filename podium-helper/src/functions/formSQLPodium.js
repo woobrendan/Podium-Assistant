@@ -1,12 +1,13 @@
 import { getIdFromArray, getVehicleId } from './helperFunc';
 
-const copyResults = (results) => {
+// create copy of results useState to get proper values to pass. change values of drivers into their id number for backend
+const formSQLPodium = (results) => {
 
   const result1 = results.result1;
   const result2 = results.result2;
   const result3 = results.result3;
   const result4 = results.result4;
-  
+
   const copy = {
     ...results,
     result1: {
@@ -43,3 +44,5 @@ const copyResults = (results) => {
   }
   return copy;
 }
+
+module.exports = formSQLPodium;
