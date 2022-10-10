@@ -1,5 +1,6 @@
 import { TableCell, TableRow } from '@mui/material';
 import EditButton from './EditButton';
+import {useState} from 'react'
 
 function EntryRow(props) {
   const [editStatus, setEditStatus] = useState(false)
@@ -26,7 +27,9 @@ function EntryRow(props) {
         : <TableCell align="right">-</TableCell>
       }
       <TableCell align="right">{entry.vehicle}</TableCell>
-      <TableCell align="right"><EditButton getEditStatus={getEditStatus}/></TableCell>
+      <TableCell align="right">
+        <EditButton getEditStatus={getEditStatus} editStatus={editStatus}/>
+      </TableCell>
     </TableRow>
   )
 }
