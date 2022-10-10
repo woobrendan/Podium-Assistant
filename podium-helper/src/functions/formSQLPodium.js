@@ -1,4 +1,12 @@
-const copyResults = () => {
+import { getIdFromArray, getVehicleId } from './helperFunc';
+
+const copyResults = (results) => {
+
+  const result1 = results.result1;
+  const result2 = results.result2;
+  const result3 = results.result3;
+  const result4 = results.result4;
+  
   const copy = {
     ...results,
     result1: {
