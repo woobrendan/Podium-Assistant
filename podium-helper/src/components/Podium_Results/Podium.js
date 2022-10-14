@@ -97,20 +97,11 @@ function Podium() {
       }
       return copy;
     }
-    console.log('mongoResult', mongoResult(results, value))
-
-    // const promise1 = axios.post(`http://localhost:8080/results/new`, {
-    //   results: copyResults()
-    // });
 
     axios.post(`http://localhost:2020/api/results/new`, {
       results: mongoResult(results, value)
-    });
-    // axios
-    //   .post('http://localhost:8080/results/new', {
-    //     results: copyResults()
-    //   })
-    //   .catch(err => console.log(err.message))
+    })
+    .catch(err => console.log(err.message))
   }
 
   const handleRacePodiumSubmit = (value) => {
