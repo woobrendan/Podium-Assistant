@@ -1956,7 +1956,7 @@
     },
     "result3": {
       "class": "Masters",
-      firstPlace: {
+      "firstPlace": {
         "driver1": "Jeff Burton",
         "number": "191",
         "vehicle": "Lamborghini Huracan GT3",
