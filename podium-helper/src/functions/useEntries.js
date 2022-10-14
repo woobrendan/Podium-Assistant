@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import {compareCarNumber} from './helperFunc';
+import { compareCarNumber, getToday } from './helperFunc';
 import axios from "axios";
 
 export default function useEntries() {
@@ -9,6 +9,7 @@ export default function useEntries() {
   const [events, setEvents] = useState([]);
   const [series, setSeries] = useState([]);
   const [classCategory, setClassCategory] = useState([]);
+  const [currentEventName, setCurrentEventName] = useState('')
 
   useEffect(() => {
     const promise1 = axios.get(`http://localhost:2020/api/results`);
@@ -25,6 +26,7 @@ export default function useEntries() {
         setEvents(all[3].data);
         setSeries(all[4].data);
         setClassCategory(all[5].data);
+        eventByDate(all[3].data)
       })
       .catch((err) => console.log("Error from Promise:", err));
   }, [])
@@ -52,12 +54,26 @@ export default function useEntries() {
     return list;
   }
 
+  const eventByDate = (events) => {
+    const month = Number(getToday().split('-')[0])
+    console.log('events', events)
+    if (month <= 2 ) setCurrentEventName(events[0].name)
+    else if (month <= 4 && month > 2) setCurrentEventName(events[1].name)
+    else if (month === 5) setCurrentEventName(events[2].name)
+    else if (month === 6) setCurrentEventName(events[3].name)
+    else if (month === 7) setCurrentEventName(events[4].name)
+    else if (month === 8) setCurrentEventName(events[6].name)
+    else if (month === 9) setCurrentEventName(events[7].name)
+    else return setCurrentEventName(events[8].name)
+  }
+
   return {
     drivers,
     vehicles: vehicles.sort(compareCarNumber),
     resultHistory,
     events,
     series: getSeriesNames(),
-    classCategory
+    classCategory,
+    currentEventName
   }
 }
