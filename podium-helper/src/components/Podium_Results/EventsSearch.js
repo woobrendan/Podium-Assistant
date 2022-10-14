@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
 import useEntries from '../../functions/useEntries';
 
@@ -7,6 +7,10 @@ import useEntries from '../../functions/useEntries';
 function EventSearch(props) {
   const { events, currentEventName } = useEntries();
   const [eventName, setEventName] = useState(currentEventName);
+
+  useEffect(() => {
+    setEventName(currentEventName)
+  }, [currentEventName])
   
   const handleChange = (event) => {
     setEventName(event.target.value);
