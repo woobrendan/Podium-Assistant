@@ -56,7 +56,6 @@ export default function useEntries() {
 
   const eventByDate = (events) => {
     const month = Number(getToday().split('-')[0])
-    console.log('events', events)
     if (month <= 2 ) setCurrentEventName(events[0].name)
     else if (month <= 4 && month > 2) setCurrentEventName(events[1].name)
     else if (month === 5) setCurrentEventName(events[2].name)
