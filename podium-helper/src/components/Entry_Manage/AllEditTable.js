@@ -1,4 +1,5 @@
 import { DataGrid } from '@mui/x-data-grid';
+import React from 'react'
 
 export default function AllEditTable(props) {
   
@@ -6,7 +7,13 @@ export default function AllEditTable(props) {
     return {...entry, id: index}
   })
 
-  const rows = idMappedEntries
+  const rows = idMappedEntries;
+  const getRowSpacing = React.useCallback((params) => {
+    return {
+      top: params.isFirstVisible ? 0 : 5,
+      bottom: params.isLastVisible ? 0 : 5,
+    };
+  }, []);
 
   return (
     <div className="Edit-Table" style={{ height: 750, width: '100%' }}>
@@ -15,6 +22,7 @@ export default function AllEditTable(props) {
         columns={columns}
         experimentalFeatures={{ newEditingApi: true }}
         getRowHeight={() => 'auto'}
+        getRowSpacing={getRowSpacing}
       />
     </div>
   )
