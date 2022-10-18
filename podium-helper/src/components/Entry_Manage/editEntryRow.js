@@ -1,8 +1,11 @@
 import { TableCell, TableRow } from '@mui/material';
+import EditButton from './EditButton';
 
-function EditEntryRow() {
-return (
-  <TableRow
+function EditEntryRow(props) {
+  const entry = props.entry
+  
+  return (
+    <TableRow
       key={props.index}
       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
     >
@@ -20,10 +23,10 @@ return (
       }
       <TableCell align="right">{entry.vehicle}</TableCell>
       <TableCell align="right">
-        <EditButton getEditStatus={getEditStatus} editStatus={editStatus}/>
+        <EditButton getEditStatus={props.getEditStatus} editStatus={true}/>
       </TableCell>
     </TableRow>
-)
+  )
 }
 
 export default EditEntryRow;
