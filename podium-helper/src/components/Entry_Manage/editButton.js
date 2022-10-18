@@ -4,10 +4,6 @@ import { Button } from '@mui/material'
 function EditButton(props) {
   const [edit, setEdit] = useState(props.editStatus);
   const onClick = () => {
-    !edit 
-    ? setEdit(true) 
-    : setEdit(false)
-
     if (!edit) {
       setEdit(true);
       props.getEditStatus(true)
