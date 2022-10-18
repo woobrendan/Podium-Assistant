@@ -3,11 +3,10 @@ import React from 'react'
 
 export default function AllEditTable(props) {
   
-  const idMappedEntries = props.allEntries.map((entry, index) => {
+  const rows = props.allEntries.map((entry, index) => {
     return {...entry, id: index}
   })
 
-  const rows = idMappedEntries;
   const getRowSpacing = React.useCallback((params) => {
     return {
       top: params.isFirstVisible ? 0 : 5,
