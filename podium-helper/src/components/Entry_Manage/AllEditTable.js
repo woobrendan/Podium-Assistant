@@ -14,6 +14,7 @@ export default function AllEditTable(props) {
         rows={rows}
         columns={columns}
         experimentalFeatures={{ newEditingApi: true }}
+        getRowHeight={() => 'auto'}
       />
     </div>
   )
@@ -21,7 +22,7 @@ export default function AllEditTable(props) {
 
 const columns = [
   { field: 'carNum', headerName: 'Number', type: 'number', width: 80, editable: true, align: 'center' },
-  { field: 'series', headerName: 'Series', editable: false, align: 'center' },
+  { field: 'series', headerName: 'Series', width: 180, editable: false, align: 'center' },
   { field: 'teamName', headerName: 'Team Name', editable: false, align: 'center' },
   { field: 'driver1', headerName: 'Driver 1', width: 180, editable: true, align: 'center' },
   { field: 'driver2', headerName: 'Driver 2', width: 180, editable: true, align: 'center' },
