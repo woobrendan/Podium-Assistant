@@ -7,12 +7,20 @@ function EditButton(props) {
     !edit 
     ? setEdit(true) 
     : setEdit(false)
+
+    if (!edit) {
+      setEdit(true);
+      props.getEditStatus(true)
+    } else {
+      setEdit(false);
+      props.getEditStatus(false)
+    }
   }
 
   return (
     edit 
-    ? <Button variant="contained" onClick={onClick}>Confirm</Button>
-    : <Button variant="outlined"  onClick={onClick}>Edit</Button>  
+      ? <Button variant="contained" onClick={onClick}>Confirm</Button>
+      : <Button variant="outlined"  onClick={onClick}>Edit</Button>  
   )
 }
 
