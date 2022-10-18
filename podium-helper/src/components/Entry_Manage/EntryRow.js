@@ -33,6 +33,7 @@ function EntryRow(props) {
           <EditButton getEditStatus={getEditStatus} editStatus={editStatus}/>
         </TableCell>
       </TableRow>}
+      {editStatus && <EditEntryRow entry={entry} getEditStatus={getEditStatus}/>}
     </>
   )
 }
