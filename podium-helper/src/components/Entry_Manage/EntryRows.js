@@ -1,5 +1,6 @@
 import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper} from '@mui/material'
 import EntryRow from './EntryRow';
+import AllEditTable from './AllEditTable';
 
 function createSingleDriverData(carNum, series, teamName, driver1, vehicle) {
   return { carNum, series, teamName, driver1, vehicle };
@@ -30,27 +31,28 @@ function EntryRows(props) {
   }
 
   return (
-    <TableContainer component={Paper} className="entry-dashboard-table">
-      <Table sx={{ minWidth: 300 }} aria-label="simple table">
-        <TableHead>
-          <TableRow id="entry-manager-head">
-            <TableCell>Number</TableCell>
-            <TableCell align="right">Series</TableCell>
-            <TableCell align="right">Team Name</TableCell>
-            <TableCell align="right">Driver 1</TableCell>
-            <TableCell align="right">Driver 2</TableCell>
-            <TableCell align="right">Driver 3</TableCell>
-            <TableCell align="right">Vehicle</TableCell>
-            <TableCell align="right">+/-</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {tableRows(props.filteredEntries).map((entry, index) => (
-            <EntryRow entry={entry} key={index}/> 
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+    // <TableContainer component={Paper} className="entry-dashboard-table">
+    //   <Table sx={{ minWidth: 300 }} aria-label="simple table">
+    //     <TableHead>
+    //       <TableRow id="entry-manager-head">
+    //         <TableCell>Number</TableCell>
+    //         <TableCell align="right">Series</TableCell>
+    //         <TableCell align="right">Team Name</TableCell>
+    //         <TableCell align="right">Driver 1</TableCell>
+    //         <TableCell align="right">Driver 2</TableCell>
+    //         <TableCell align="right">Driver 3</TableCell>
+    //         <TableCell align="right">Vehicle</TableCell>
+    //         <TableCell align="right">+/-</TableCell>
+    //       </TableRow>
+    //     </TableHead>
+    //     <TableBody>
+    //       {tableRows(props.filteredEntries).map((entry, index) => (
+    //         <EntryRow entry={entry} key={index}/> 
+    //       ))}
+    //     </TableBody>
+    //   </Table>
+    // </TableContainer>
+    <AllEditTable allEntries={tableRows(props.filteredEntries)} />
   )
 }
 
