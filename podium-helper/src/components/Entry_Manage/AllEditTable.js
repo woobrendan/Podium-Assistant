@@ -1,5 +1,12 @@
+import { DataGrid } from '@mui/x-data-grid';
+
 export default function AllEditTable(props) {
-  const rows = props.allEntries
+  
+  const idMappedEntries = props.allEntries.map((entry, index) => {
+    return {...entry, id: index}
+  })
+  
+  const rows = idMappedEntries
   const columns = [
     { field: 'number', headerName: 'Number', type: 'number', width: 180, editable: true },
     { field: 'series', headerName: 'Series', editable: false },
