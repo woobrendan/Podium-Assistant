@@ -433,6 +433,24 @@
     series: "Pirelli GT4 America"
   },
   {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Zane Hodgen",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "Cameron Lawrence",
+     " nationality": "USA",
+      "rating": "Silver"
+      },
+    "vehicle": "Mercedes-AMG GT4",
+    classification: "Pro-Am",
+    number: "4",
+    carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F69%2F373%2F%2F081922_RDAM_bcpix2508904.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
     "team": "NOLASPORT",
     "driver1": {
       "name": "Sam Owen",
@@ -538,6 +556,24 @@
     classification: "Pro-Am",
     number: "016",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F361%2F%2F6EA05358-3894-4E31-BC18-A7648479B18C_01.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
+    "team": "Forbush Performance",
+    "driver1": {
+      "name": "Damon Surzyshyn",
+     " nationality": "Canada",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "Gregory Liefooghe",
+     " nationality": "USA",
+      "rating": "Silver"
+      },
+    "vehicle": "Toyota GR Supra GT4",
+    classification: "Pro-Am",
+    number: "16",
+    carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F69%2F372%2F%2F081922_RDAM_bcpix2507624.jpg",
     series: "Pirelli GT4 America"
   },
   {
@@ -649,7 +685,7 @@
     series: "Pirelli GT4 America"
   },
   {
-    "team": "Capstone Motorsportrs",
+    "team": "Capstone Motorsports",
     "driver1": {
       "name": "Kris Wilson",
      " nationality": "USA",
@@ -664,6 +700,24 @@
     classification: "Silver",
     number: "32",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_54248f.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Kyle Washington",
+    " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "James Sofronas",
+    " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "032",
+    carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10948_RL_Sonomaf.jpg",
     series: "Pirelli GT4 America"
   },
   {
