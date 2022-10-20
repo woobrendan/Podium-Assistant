@@ -266,7 +266,7 @@ VALUES
 ('Ferrari 488 GT3', '34', 1, 27, 1, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F77%2F319%2F%2FSRO22_Sebring_4677__FL.jpg'),
 ('Toyota GR Supra GT4', '33', 4, 64, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F70%2F383%2F%2FSRO22_Sebring_4246__FL.jpg'),
 ('Porsche 718 Cayman GT4 RS CS', '71', 2, 16, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg'),
-('Porsche 718 Cayman GT4 RS CS', '420', 3, 69, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg'),
+('Porsche 718 Cayman GT4 RS CS', '420', 3, 69, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F70%2F378%2F%2FRL_SRO_Sebring_04211.jpg'),
 ('Porsche 718 Cayman GT4 Clubsport MR', '427', 3, 62, 2, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479488.jpg'),
 ('Honda Civic Si', '77', 7 , 50, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F367%2F%2F051922_NOLA_bcpix2335115.jpg'),
 ('Lamborghini Huracan GT3', '1', 1, 1, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F299%2F%2FFH1_6911.jpg'),
