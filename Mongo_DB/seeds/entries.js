@@ -721,6 +721,24 @@
     series: "Pirelli GT4 America"
   },
   {
+    "team": "Forbush Performance",
+    "driver1": {
+      "name": "Matt Forbush",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "Caleb Bacon",
+     " nationality": "USA",
+      "rating": "Silver"
+      },
+    "vehicle": "Toyota GR Supra",
+    classification: "Silver",
+    number: "33",
+    carImage: "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F401%2F%2F080622_NSHVL_bcpix2487408.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
     "team": "Conquest Racing/JWF Motorsports",
     "driver1": {
       "name": "Gavin Sanders",
@@ -772,6 +790,24 @@
     classification: "Am",
     number: "36",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F363%2F%2F061822_VIR_bcpix2388329.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
+    "team": "STR38 Motorsports",
+    "driver1": {
+      "name": "Ramana Lagemann",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "Robert Mau",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "vehicle": "BMW M4 GT4",
+    classification: "Am",
+    number: "38",
+    carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F71%2F384%2F%2FSRO22_INDY_1396__FL.jpg",
     series: "Pirelli GT4 America"
   },
   {
@@ -916,6 +952,24 @@
     classification: "Pro-Am",
     number: "55",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471948.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
+    "team": "G2 Racing / GSpeed",
+    "driver1": {
+      "name": "Grayson Farischon",
+     " nationality": "USA",
+      "rating": "Silver"
+      },
+    "driver2": {
+      "name": "Mike Skeen",
+     " nationality": "USA",
+      "rating": "Silver"
+      },
+    "vehicle": "BMW M4 GT4",
+    classification: "Am",
+    number: "59",
+    carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F69%2F373%2F%2F081922_RDAM_bcpix2509091.jpg",
     series: "Pirelli GT4 America"
   },
   {
