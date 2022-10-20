@@ -14,6 +14,7 @@ export default function searchAllEntries(list, searchValue) {
     else if (driver2 && driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())) return val; 
     else if (val.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
     else if (val.number.includes(searchValue)) return val;
+    else if (val.class.includes(searchValue)) return val;
   });
   return filtered;
 }
