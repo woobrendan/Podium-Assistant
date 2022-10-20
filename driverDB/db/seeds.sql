@@ -294,12 +294,12 @@ VALUES
 ('BMW M4 GT3', '94', 2, 14, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FRL_VIR_43517f.jpg'),
 ('BMW M4 GT3', '96', 1, 15, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F78%2F325%2F%2FSRO22_INDY_3996__FL.jpg'),
 ('Ferrari 488 GT3', '218', 1, 74, 5, 'https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F78%2F320%2F%2F100322_PLM_bcpix2631249.jpg'),
-('BMW M4 GT4', '38', 3, 75, 2, ''),
+('BMW M4 GT4', '38', 3, 75, 2, 'https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F71%2F384%2F%2FSRO22_INDY_1396__FL.jpg'),
 ('Porsche 718 Cayman GT4 RS CS', '47', 9, 17, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1515__FL.jpg'),
 ('BMW M4 GT4', '52', 9, 31, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1496__FL.jpg'),
-('BMW M2 CS', '38', 5, 75, 4, ''),
+('BMW M2 CS', '38', 5, 75, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F70%2F396%2F%2F100922_PLM_bcpix2659529.jpg'),
 ('Mini JCW', '63', 7, 51, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F69%2F388%2F%2FSRO22_Sebring_2297__FL.jpg'),
-('Honda Civic Type-R', '93', 7, 76, 4, ''),
+('Honda Civic Type-R', '93', 7, 76, 4, 'https://www.tcamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F70%2F396%2F%2F100922_PLM_bcpix2659275.jpg'),
 ('Porsche 718 Cayman GT4 RS CS', '7', 2, 77, 2, ''),
 ('Audi R8 LMS', '888', 8, 12, 3, 'https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1527__FL.jpg');
 
