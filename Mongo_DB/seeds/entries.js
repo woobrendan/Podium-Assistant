@@ -1045,6 +1045,24 @@
     series: "Pirelli GT4 America"
   },
   {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Jay Logan",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "Alex Premat",
+     " nationality": "France",
+      "rating": "Gold"
+      },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    classification: "Pro-Am",
+    number: "71",
+    carImage: "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387211.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
     "team": "KRUGSPEED",
     "driver1": {
       "name": "Anthony Geraci",
@@ -1258,6 +1276,24 @@
     classification: "Pro-Am",
     number: "319",
     carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472258.jpg",
+    series: "Pirelli GT4 America"
+  },
+  {
+    "team": "BMB Motorsports",
+    "driver1": {
+      "name": "Thomas Collingwood",
+     " nationality": "Canada",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "John Tecce",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    classification: "Am",
+    number: "420",
+    carImage: "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F70%2F378%2F%2FRL_SRO_Sebring_04211.jpg",
     series: "Pirelli GT4 America"
   },
   {
