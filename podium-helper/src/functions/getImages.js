@@ -14,6 +14,7 @@ import corvette from '../images/corvette.png'
 import hyundai from '../images/hyundai.png';
 import nissan from '../images/nissan.png';
 import saleen from '../images/saleen.png';
+import ford from '../images/ford.png';
 import sro from '../images/SRO.jpg';
 import gtwca_pro from '../images/gtwca_pro.png';
 import gtwca_am from '../images/gtwca_am.png';
@@ -47,6 +48,7 @@ const getManufLogo = (vehicle) => {
   else if (vehicle.includes('Hyundai')) return hyundai;
   else if (vehicle.includes('Nissan')) return nissan;
   else if (vehicle.includes('Saleen')) return saleen;
+  else if (vehicle.includes('Ford')) return ford;
   else return sro;
 }
 
