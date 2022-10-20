@@ -181,6 +181,24 @@
     series: "GT World Challenge America"
   },
   {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "James Sofronas",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "driver2": {
+      "name": "Kyle Washington",
+     " nationality": "USA",
+      "rating": "Bronze"
+      },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    classification: "Am",
+    number: "23",
+    carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F313%2F%2F082122_RDAM_bcpix2526519.jpg",
+    series: "GT World Challenge America"
+  },
+  {
     "team": "Winward Racing",
     "driver1": {
       "name": "Russell Ward",
@@ -213,7 +231,7 @@
     "vehicle": "Ferrari 488 GT3",
     classification: "Pro",
     number: "34",
-    carImage: "",
+    carImage: "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F77%2F319%2F%2FSRO22_Sebring_4677__FL.jpg",
     series: "GT World Challenge America"
   },
   {
