@@ -1835,4 +1835,72 @@
       }
     }
   },
+  {
+    "series": "GT World Challenge America",
+    "date": "07-24-2022",
+    "event": "Watkins Glen",
+    "fastLap": {
+      "driver": "Loris Spinelli",
+      "vehicle": "Mercedes-AMG GT3",
+      "laptime": "1:45.183"
+    },
+    "result1": {
+      "class": "Pro",
+      "thirdPlace": {
+        "driver1": "Michael Dinan",
+        "driver2": "Robby Foley",
+        "number": "96",
+        "vehicle": "BMW M4 GT3",
+        "team": "Turner Motorsport"
+      },
+      "secondPlace": {
+        "driver1": "Michele Beretta",
+        "driver2": "Andrea Caldarelli",
+        "number": "1",
+        "vehicle": "Lamborghini Huracan GT3",
+        "team": "K-PAX Racing"
+      },
+      "firstPlace": {
+        "driver1": "Russell Ward",
+        "driver2": "Philip Ellis",
+        "number": "33",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "Winward Racing"
+      }
+    },
+    "result2": {
+      "class": "Pro/Am",
+      "firstPlace": {
+        "driver1": "Charlie Luck",
+        "driver2": "Jan Heylen",
+        "number": "45",
+        "vehicle": "Porsche 911 GT3-R (991.ii)",
+        "team": "Wright Motorsports"
+      },
+      "secondPlace": {
+        "driver1": "George Kurtz",
+        "driver2": "Colin Braun",
+        "number": "04",
+        "vehicle": "Mercedes-AMG GT3",
+        "team": "CrowdStrike Racing by Riley Motorsports"
+      },
+      "thirdPlace": {
+        "driver1": "Erin Vogel",
+        "driver2": "Michael Cooper",
+        "number": "43",
+        "vehicle": "Acura NSX GT3",
+        "team": "RealTime Racing"
+      }
+    },
+    "result3": {
+      "class": "Am",
+      "firstPlace": {
+        "driver1": "Charlie Scardina",
+        "driver2": "Onofrio Triarsi",
+        "number": "23",
+        "vehicle": "Ferrari 488 GT3",
+        "team": "Triarsi Competizione"
+      }
+    }
+  },
 ]
