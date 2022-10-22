@@ -98,7 +98,7 @@ function Podium() {
     }
 
     const mongoResult = () => {
-      const 
+      
       const copy = {
         ...results,
         result1: {
@@ -114,7 +114,19 @@ function Podium() {
       // result2: {...results.result1},
       // result1: {...results.result1},
       // result1: {...results.result1}
-    }
+      }
+      if (result2) {
+        copy['result2'] = {
+          ...results.result2,
+          firstPlace: {
+            driver1: result2.firstPlace.driver1.name,
+            driver2: result2.firstPlace.driver2.name,
+            number: result2.firstPlace.number,
+            vehicle: result2.firstPlace.vehicle,
+            team: result2.firstPlace.team
+          }
+        }
+      }
     return copy
   }
     console.log('mongo', mongoResult)
