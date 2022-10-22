@@ -11,12 +11,18 @@ const mongoResult = (results) => {
       ...results.result1,
       firstPlace: {
         driver1: result1.firstPlace.driver1.name,
-        driver2: result1.firstPlace.driver2.name,
+        // driver2: result1.firstPlace.driver2.name,
         number: result1.firstPlace.number,
         vehicle: result1.firstPlace.vehicle,
         team: result1.firstPlace.team
       }
     }
+  }
+  if (result1.firstPlace.driver2) {
+    copy.result1.firstPlace.driver2 = result1.firstPlace.driver2.name
+  }
+  if (result1.firstPlace.driver3) {
+    copy.result1.firstPlace.driver3 = result1.firstPlace.driver3.name
   }
 
   if (result1.secondPlace) {
