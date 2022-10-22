@@ -110,10 +110,16 @@ function Podium() {
             vehicle: result1.firstPlace.vehicle,
             team: result1.firstPlace.team
           }
-        },
-      // result2: {...results.result1},
-      // result1: {...results.result1},
-      // result1: {...results.result1}
+        }
+
+      if (result1.secondPlace) {
+        copy.result1.secondPlace = {
+          driver1: result1.secondPlace.driver1.name,
+          driver2: result1.secondPlace.driver2.name,
+          number: result1.secondPlace.number,
+          vehicle: result1.secondPlace.vehicle,
+          team: result1.secondPlace.team
+        }
       }
       if (result2) {
         copy['result2'] = {
