@@ -28,6 +28,17 @@ const mongoResult = (results) => {
       team: result1.secondPlace.team
     }
   }
+
+  if (result1.thirdPlace) {
+    copy.result1.thirdPlace = {
+      driver1: result1.thirdPlace.driver1.name,
+      driver2: result1.thirdPlace.driver2.name,
+      number: result1.thirdPlace.number,
+      vehicle: result1.thirdPlace.vehicle,
+      team: result1.thirdPlace.team
+    }
+  }
+
   if (result2) {
     copy['result2'] = {
       ...results.result2,
