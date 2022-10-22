@@ -18,6 +18,8 @@ const mongoResult = (results) => {
       }
     }
   }
+
+  //checking result 1 for second or third drivers
   if (result1.firstPlace.driver2) {
     copy.result1.firstPlace.driver2 = result1.firstPlace.driver2.name
   }
@@ -25,14 +27,23 @@ const mongoResult = (results) => {
     copy.result1.firstPlace.driver3 = result1.firstPlace.driver3.name
   }
 
+  //begin checking for result2
+
   if (result1.secondPlace) {
     copy.result1.secondPlace = {
       driver1: result1.secondPlace.driver1.name,
-      driver2: result1.secondPlace.driver2.name,
+      // driver2: result1.secondPlace.driver2.name,
       number: result1.secondPlace.number,
       vehicle: result1.secondPlace.vehicle,
       team: result1.secondPlace.team
     }
+  }
+
+  if (result1.secondPlace.driver2) {
+    copy.result1.secondPlace.driver2 = result1.secondPlace.driver2.name
+  }
+  if (result1.secondPlace.driver3) {
+    copy.result1.secondPlace.driver3 = result1.secondPlace.driver3.name
   }
 
   if (result1.thirdPlace) {
