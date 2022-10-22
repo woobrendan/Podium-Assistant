@@ -11,4 +11,10 @@ router.get('/', async (req, res) => {
   }
 })
 
+router.post('/new', async (req, res) => {
+  const newResult = new Results({
+    
+  })
+})
+
 module.exports = router;
