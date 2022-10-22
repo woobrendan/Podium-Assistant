@@ -139,6 +139,19 @@ function Podium() {
           }
         }
       }
+
+      if (result4) {
+        copy['result4'] = {
+          ...results.result4,
+          firstPlace: {
+            driver1: result4.firstPlace.driver1.name,
+            driver2: result4.firstPlace.driver2.name,
+            number: result4.firstPlace.number,
+            vehicle: result4.firstPlace.vehicle,
+            team: result4.firstPlace.team
+          }
+        }
+      }
     return copy
   }
     console.log('mongo', mongoResult)
