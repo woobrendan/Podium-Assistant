@@ -97,13 +97,33 @@ function Podium() {
       return copy;
     }
 
-    const mongoResult = {...results}
+    const mongoResult = () => {
+      const 
+      const copy = {
+        ...results,
+        result1: {
+          ...results.result1,
+          firstPlace: {
+            driver1: result1.firstPlace.driver1.name,
+            driver2: result1.firstPlace.driver2.name,
+            number: result1.firstPlace.number,
+            vehicle: result1.firstPlace.vehicle,
+            team: result1.firstPlace.team
+          }
+        },
+      // result2: {...results.result1},
+      // result1: {...results.result1},
+      // result1: {...results.result1}
+    }
+    return copy
+  }
+    console.log('mongo', mongoResult)
 
     const promise1 = axios.post(`http://localhost:8080/results/new`, {
       results: copyResults()
     });
     const promise2 = axios.post(`http://localhost:2020/api/results/new`, {
-      results: mongoResult
+      results: mongoResult()
     });
     // axios
     //   .post('http://localhost:8080/results/new', {
