@@ -1773,7 +1773,7 @@
     "event": "Watkins Glen",
     "fastLap": {
       "driver": "Philip Ellis",
-      "vehicle": "Lamborghini Huracan GT3",
+      "vehicle": "Mercedes-AMG GT3",
       "laptime": "1:44.472"
     },
     "result1": {
