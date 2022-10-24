@@ -177,18 +177,16 @@ const mongoResult = (results, fastLap) => {
   }
 
     //// Result 4, First Place //////
-    if (result4) {
-      copy['result4'] = {
-        class: result4.class,
-        firstPlace: {
-          driver1: result4.firstPlace.driver1.name,
-          number: result4.firstPlace.number,
-          vehicle: result4.firstPlace.vehicle,
-          team: result4.firstPlace.team
-        }
+  if (result4) {
+    copy['result4'] = {
+      class: result4.class,
+      firstPlace: {
+        driver1: result4.firstPlace.driver1.name,
+        number: result4.firstPlace.number,
+        vehicle: result4.firstPlace.vehicle,
+        team: result4.firstPlace.team
       }
     }
-  
     if (result4.firstPlace.driver2) {
       copy.result4.firstPlace.driver2 = result4.firstPlace.driver2.name
     }
@@ -229,6 +227,7 @@ const mongoResult = (results, fastLap) => {
     if (result4.thirdPlace.driver3) {
       copy.result4.thirdPlace.driver3 = result4.thirdPlace.driver3.name
     }
+  }
 
   return copy
 }
