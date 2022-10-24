@@ -10,6 +10,7 @@ import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../functions/useEntries';
 import { getIdFromArray, getToday, printPage, getVehicleId } from '../../functions/helperFunc';
+import mongoResult from '../../functions/formMongoResult';
 
 function Podium() {
   const {drivers, events, series, classCategory, vehicles} = useEntries(); 
@@ -96,7 +97,7 @@ function Podium() {
       }
       return copy;
     }
-
+    console.log('mongoResult', mongoResult(results))
   //   const mongoResult = () => {
       
   //     const copy = {
@@ -200,7 +201,7 @@ function Podium() {
       ...prev,
       [name]: value
     }))
-    if (value === 'GT America' || 'Intercontinental GT Challenge') {
+    if (value === 'GT America' || value === 'Intercontinental GT Challenge') {
       setShowWinnerTable((prev) => ({
         ...prev,
         result4: true
