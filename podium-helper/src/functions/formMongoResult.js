@@ -15,7 +15,7 @@ const mongoResult = (results, fastLap) => {
       laptime: fastLap.laptime
     },
     result1: {
-      ...results.result1,
+      class: result1.class,
       firstPlace: {
         driver1: result1.firstPlace.driver1.name,
         // driver2: result1.firstPlace.driver2.name,
@@ -34,8 +34,7 @@ const mongoResult = (results, fastLap) => {
     copy.result1.firstPlace.driver3 = result1.firstPlace.driver3.name
   }
 
-  //begin checking for second place result
-
+  //// Result 1, Second Place //////
   if (result1.secondPlace) {
     copy.result1.secondPlace = {
       driver1: result1.secondPlace.driver1.name,
@@ -52,6 +51,7 @@ const mongoResult = (results, fastLap) => {
     copy.result1.secondPlace.driver3 = result1.secondPlace.driver3.name
   }
 
+  //// Result 1, Third Place //////
   if (result1.thirdPlace) {
     copy.result1.thirdPlace = {
       driver1: result1.thirdPlace.driver1.name,
@@ -62,24 +62,30 @@ const mongoResult = (results, fastLap) => {
   }
 
   if (result1.thirdPlace.driver2) {
-    copy.result1.hirdPlace.driver2 = result1.thirdPlace.driver2.name
+    copy.result1.thirdPlace.driver2 = result1.thirdPlace.driver2.name
   }
   if (result1.thirdPlace.driver3) {
     copy.result1.thirdPlace.driver3 = result1.thirdPlace.driver3.name
   }
 
-  // if (result2) {
-  //   copy['result2'] = {
-  //     ...results.result2,
-  //     firstPlace: {
-  //       driver1: result2.firstPlace.driver1.name,
-  //       driver2: result2.firstPlace.driver2.name,
-  //       number: result2.firstPlace.number,
-  //       vehicle: result2.firstPlace.vehicle,
-  //       team: result2.firstPlace.team
-  //     }
-  //   }
-  // }
+  if (result2) {
+    copy['result2'] = {
+      class: result2.class,
+      firstPlace: {
+        driver1: result2.firstPlace.driver1.name,
+        number: result2.firstPlace.number,
+        vehicle: result2.firstPlace.vehicle,
+        team: result2.firstPlace.team
+      }
+    }
+  }
+
+  if (result2.firstPlace.driver2) {
+    copy.result2.firstPlace.driver2 = result2.firstPlace.driver2.name
+  }
+  if (result2.firstPlace.driver3) {
+    copy.result2.firstPlace.driver3 = result2.firstPlace.driver3.name
+  }
   // if (result3) {
   //   copy['result3'] = {
   //     ...results.result3,
