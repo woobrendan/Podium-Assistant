@@ -176,18 +176,59 @@ const mongoResult = (results, fastLap) => {
     copy.result3.thirdPlace.driver3 = result3.thirdPlace.driver3.name
   }
 
-  // if (result4) {
-  //   copy['result4'] = {
-  //     ...results.result4,
-  //     firstPlace: {
-  //       driver1: result4.firstPlace.driver1.name,
-  //       driver2: result4.firstPlace.driver2.name,
-  //       number: result4.firstPlace.number,
-  //       vehicle: result4.firstPlace.vehicle,
-  //       team: result4.firstPlace.team
-  //     }
-  //   }
-  // }
+    //// Result 4, First Place //////
+    if (result4) {
+      copy['result4'] = {
+        class: result4.class,
+        firstPlace: {
+          driver1: result4.firstPlace.driver1.name,
+          number: result4.firstPlace.number,
+          vehicle: result4.firstPlace.vehicle,
+          team: result4.firstPlace.team
+        }
+      }
+    }
+  
+    if (result4.firstPlace.driver2) {
+      copy.result4.firstPlace.driver2 = result4.firstPlace.driver2.name
+    }
+    if (result4.firstPlace.driver3) {
+      copy.result4.firstPlace.driver3 = result4.firstPlace.driver3.name
+    }
+  
+    //// Result 4, Second Place //////
+    if (result4.secondPlace) {
+      copy.result4.secondPlace = {
+        driver1: result4.secondPlace.driver1.name,
+        number: result4.secondPlace.number,
+        vehicle: result4.secondPlace.vehicle,
+        team: result4.secondPlace.team
+      }
+    }
+  
+    if (result4.secondPlace.driver2) {
+      copy.result4.secondPlace.driver2 = result4.secondPlace.driver2.name
+    }
+    if (result4.secondPlace.driver3) {
+      copy.result4.secondPlace.driver3 = result4.secondPlace.driver3.name
+    }
+  
+     //// Result 4, Third Place //////
+     if (result4.thirdPlace) {
+      copy.result4.thirdPlace = {
+        driver1: result4.thirdPlace.driver1.name,
+        number: result4.thirdPlace.number,
+        vehicle: result4.thirdPlace.vehicle,
+        team: result4.thirdPlace.team
+      }
+    }
+  
+    if (result4.thirdPlace.driver2) {
+      copy.result4.thirdPlace.driver2 = result4.thirdPlace.driver2.name
+    }
+    if (result4.thirdPlace.driver3) {
+      copy.result4.thirdPlace.driver3 = result4.thirdPlace.driver3.name
+    }
 
   return copy
 }
