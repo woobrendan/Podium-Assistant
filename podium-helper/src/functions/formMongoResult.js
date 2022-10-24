@@ -4,7 +4,6 @@ const mongoResult = (results, fastLap) => {
   const result2 = results.result2;
   const result3 = results.result3;
   const result4 = results.result4;
-  console.log('result1', result1)
       
   const copy = {
     date: results.date,
