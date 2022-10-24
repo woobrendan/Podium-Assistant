@@ -1,12 +1,19 @@
-const mongoResult = (results) => {
+const mongoResult = (results, fastLap) => {
 
   const result1 = results.result1;
   const result2 = results.result2;
   const result3 = results.result3;
   const result4 = results.result4;
+  console.log('result1', result1)
       
   const copy = {
-    ...results,
+    date: results.date,
+    event: results.event,
+    series: results.series,
+    fastLap: {
+      driver: fastLap.driver,
+      laptime: fastLap.laptime
+    },
     result1: {
       ...results.result1,
       firstPlace: {
@@ -18,6 +25,7 @@ const mongoResult = (results) => {
       }
     }
   }
+  console.log('copy', copy)
 
   //checking result 1 for second or third drivers
   if (result1.firstPlace.driver2) {
@@ -93,5 +101,8 @@ const mongoResult = (results) => {
       }
     }
   }
-return copy
+
+  return copy
 }
+
+export default mongoResult;
