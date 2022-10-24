@@ -97,7 +97,7 @@ function Podium() {
       }
       return copy;
     }
-    console.log('mongoResult', mongoResult(results))
+    console.log('mongoResult', mongoResult(results, value))
   //   const mongoResult = () => {
       
   //     const copy = {
