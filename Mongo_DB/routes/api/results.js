@@ -12,9 +12,12 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/new', async (req, res) => {
+
   const newResult = new Results({
-    
+    ...req.body.results
   })
+  await newResult.save()
+  res.send(newResult)
 })
 
 module.exports = router;
