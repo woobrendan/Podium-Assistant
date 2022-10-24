@@ -68,6 +68,7 @@ const mongoResult = (results, fastLap) => {
     copy.result1.thirdPlace.driver3 = result1.thirdPlace.driver3.name
   }
 
+  //// Result 2, First Place //////
   if (result2) {
     copy['result2'] = {
       class: result2.class,
@@ -85,6 +86,40 @@ const mongoResult = (results, fastLap) => {
   }
   if (result2.firstPlace.driver3) {
     copy.result2.firstPlace.driver3 = result2.firstPlace.driver3.name
+  }
+
+  //// Result 2, Second Place //////
+  if (result2.secondPlace) {
+    copy.result2.secondPlace = {
+      driver1: result2.secondPlace.driver1.name,
+      number: result2.secondPlace.number,
+      vehicle: result2.secondPlace.vehicle,
+      team: result2.secondPlace.team
+    }
+  }
+
+  if (result2.secondPlace.driver2) {
+    copy.result2.secondPlace.driver2 = result2.secondPlace.driver2.name
+  }
+  if (result2.secondPlace.driver3) {
+    copy.result2.secondPlace.driver3 = result2.secondPlace.driver3.name
+  }
+
+   //// Result 2, Third Place //////
+   if (result2.thirdPlace) {
+    copy.result2.thirdPlace = {
+      driver1: result2.thirdPlace.driver1.name,
+      number: result2.thirdPlace.number,
+      vehicle: result2.thirdPlace.vehicle,
+      team: result2.thirdPlace.team
+    }
+  }
+
+  if (result2.thirdPlace.driver2) {
+    copy.result2.thirdPlace.driver2 = result2.thirdPlace.driver2.name
+  }
+  if (result2.thirdPlace.driver3) {
+    copy.result2.thirdPlace.driver3 = result2.thirdPlace.driver3.name
   }
   // if (result3) {
   //   copy['result3'] = {
