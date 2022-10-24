@@ -79,47 +79,47 @@ const mongoResult = (results, fastLap) => {
         team: result2.firstPlace.team
       }
     }
-  }
 
-  if (result2.firstPlace.driver2) {
-    copy.result2.firstPlace.driver2 = result2.firstPlace.driver2.name
-  }
-  if (result2.firstPlace.driver3) {
-    copy.result2.firstPlace.driver3 = result2.firstPlace.driver3.name
-  }
-
-  //// Result 2, Second Place //////
-  if (result2.secondPlace) {
-    copy.result2.secondPlace = {
-      driver1: result2.secondPlace.driver1.name,
-      number: result2.secondPlace.number,
-      vehicle: result2.secondPlace.vehicle,
-      team: result2.secondPlace.team
+    if (result2.firstPlace.driver2) {
+      copy.result2.firstPlace.driver2 = result2.firstPlace.driver2.name
     }
-  }
-
-  if (result2.secondPlace.driver2) {
-    copy.result2.secondPlace.driver2 = result2.secondPlace.driver2.name
-  }
-  if (result2.secondPlace.driver3) {
-    copy.result2.secondPlace.driver3 = result2.secondPlace.driver3.name
-  }
-
-   //// Result 2, Third Place //////
-   if (result2.thirdPlace) {
-    copy.result2.thirdPlace = {
-      driver1: result2.thirdPlace.driver1.name,
-      number: result2.thirdPlace.number,
-      vehicle: result2.thirdPlace.vehicle,
-      team: result2.thirdPlace.team
+    if (result2.firstPlace.driver3) {
+      copy.result2.firstPlace.driver3 = result2.firstPlace.driver3.name
     }
-  }
 
-  if (result2.thirdPlace.driver2) {
-    copy.result2.thirdPlace.driver2 = result2.thirdPlace.driver2.name
-  }
-  if (result2.thirdPlace.driver3) {
-    copy.result2.thirdPlace.driver3 = result2.thirdPlace.driver3.name
+    //// Result 2, Second Place //////
+    if (result2.secondPlace) {
+      copy.result2.secondPlace = {
+        driver1: result2.secondPlace.driver1.name,
+        number: result2.secondPlace.number,
+        vehicle: result2.secondPlace.vehicle,
+        team: result2.secondPlace.team
+      }
+    }
+
+    if (result2.secondPlace.driver2) {
+      copy.result2.secondPlace.driver2 = result2.secondPlace.driver2.name
+    }
+    if (result2.secondPlace.driver3) {
+      copy.result2.secondPlace.driver3 = result2.secondPlace.driver3.name
+    }
+
+    //// Result 2, Third Place //////
+    if (result2.thirdPlace) {
+      copy.result2.thirdPlace = {
+        driver1: result2.thirdPlace.driver1.name,
+        number: result2.thirdPlace.number,
+        vehicle: result2.thirdPlace.vehicle,
+        team: result2.thirdPlace.team
+      }
+    }
+
+    if (result2.thirdPlace.driver2) {
+      copy.result2.thirdPlace.driver2 = result2.thirdPlace.driver2.name
+    }
+    if (result2.thirdPlace.driver3) {
+      copy.result2.thirdPlace.driver3 = result2.thirdPlace.driver3.name
+    }
   }
 
    //// Result 3, First Place //////
@@ -133,47 +133,47 @@ const mongoResult = (results, fastLap) => {
         team: result3.firstPlace.team
       }
     }
-  }
-
-  if (result3.firstPlace.driver2) {
-    copy.result3.firstPlace.driver2 = result3.firstPlace.driver2.name
-  }
-  if (result3.firstPlace.driver3) {
-    copy.result3.firstPlace.driver3 = result3.firstPlace.driver3.name
-  }
-
-  //// Result 3, Second Place //////
-  if (result3.secondPlace) {
-    copy.result3.secondPlace = {
-      driver1: result3.secondPlace.driver1.name,
-      number: result3.secondPlace.number,
-      vehicle: result3.secondPlace.vehicle,
-      team: result3.secondPlace.team
+    
+    if (result3.firstPlace.driver2) {
+      copy.result3.firstPlace.driver2 = result3.firstPlace.driver2.name
     }
-  }
-
-  if (result3.secondPlace.driver2) {
-    copy.result3.secondPlace.driver2 = result3.secondPlace.driver2.name
-  }
-  if (result3.secondPlace.driver3) {
-    copy.result3.secondPlace.driver3 = result3.secondPlace.driver3.name
-  }
-
-   //// Result 3, Third Place //////
-   if (result3.thirdPlace) {
-    copy.result3.thirdPlace = {
-      driver1: result3.thirdPlace.driver1.name,
-      number: result3.thirdPlace.number,
-      vehicle: result3.thirdPlace.vehicle,
-      team: result3.thirdPlace.team
+    if (result3.firstPlace.driver3) {
+      copy.result3.firstPlace.driver3 = result3.firstPlace.driver3.name
     }
-  }
 
-  if (result3.thirdPlace.driver2) {
-    copy.result3.thirdPlace.driver2 = result3.thirdPlace.driver2.name
-  }
-  if (result3.thirdPlace.driver3) {
-    copy.result3.thirdPlace.driver3 = result3.thirdPlace.driver3.name
+    //// Result 3, Second Place //////
+    if (result3.secondPlace) {
+      copy.result3.secondPlace = {
+        driver1: result3.secondPlace.driver1.name,
+        number: result3.secondPlace.number,
+        vehicle: result3.secondPlace.vehicle,
+        team: result3.secondPlace.team
+      }
+    }
+
+    if (result3.secondPlace.driver2) {
+      copy.result3.secondPlace.driver2 = result3.secondPlace.driver2.name
+    }
+    if (result3.secondPlace.driver3) {
+      copy.result3.secondPlace.driver3 = result3.secondPlace.driver3.name
+    }
+
+    //// Result 3, Third Place //////
+    if (result3.thirdPlace) {
+      copy.result3.thirdPlace = {
+        driver1: result3.thirdPlace.driver1.name,
+        number: result3.thirdPlace.number,
+        vehicle: result3.thirdPlace.vehicle,
+        team: result3.thirdPlace.team
+      }
+    }
+
+    if (result3.thirdPlace.driver2) {
+      copy.result3.thirdPlace.driver2 = result3.thirdPlace.driver2.name
+    }
+    if (result3.thirdPlace.driver3) {
+      copy.result3.thirdPlace.driver3 = result3.thirdPlace.driver3.name
+    }
   }
 
     //// Result 4, First Place //////
