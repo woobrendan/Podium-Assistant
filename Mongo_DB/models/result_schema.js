@@ -20,7 +20,7 @@ const resultSchema = new mongoose.Schema({
       vehicle: {
         type: String,
       },
-      time: {
+      laptime: {
         type: String,
       }
     },
