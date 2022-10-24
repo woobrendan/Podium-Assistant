@@ -30,7 +30,13 @@ const resultSchema = new mongoose.Schema({
         required: true
       },
       firstPlace: {
-        driver: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
           type: String,
         },
         vehicle: {
@@ -41,7 +47,13 @@ const resultSchema = new mongoose.Schema({
         }
       },
       secondPlace: {
-        driver: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
           type: String,
         },
         vehicle: {
@@ -52,7 +64,13 @@ const resultSchema = new mongoose.Schema({
         }
       },
       thirdPlace: {
-        driver: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
           type: String,
         },
         vehicle: {
@@ -68,7 +86,13 @@ const resultSchema = new mongoose.Schema({
         type: String,
       },
       firstPlace: {
-        driver: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
           type: String,
         },
         vehicle: {
@@ -79,7 +103,13 @@ const resultSchema = new mongoose.Schema({
         }
       },
       secondPlace: {
-        driver: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
           type: String,
         },
         vehicle: {
@@ -90,7 +120,125 @@ const resultSchema = new mongoose.Schema({
         }
       },
       thirdPlace: {
-        driver: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
+          type: String,
+        },
+        vehicle: {
+          type: String,
+        },
+        team: {
+          type: String,
+        }
+      }
+    },
+    result3: {
+      class: {
+        type: String,
+      },
+      firstPlace: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
+          type: String,
+        },
+        vehicle: {
+          type: String,
+        },
+        team: {
+          type: String,
+        }
+      },
+      secondPlace: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
+          type: String,
+        },
+        vehicle: {
+          type: String,
+        },
+        team: {
+          type: String,
+        }
+      },
+      thirdPlace: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
+          type: String,
+        },
+        vehicle: {
+          type: String,
+        },
+        team: {
+          type: String,
+        }
+      }
+    },
+    result4: {
+      class: {
+        type: String,
+      },
+      firstPlace: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
+          type: String,
+        },
+        vehicle: {
+          type: String,
+        },
+        team: {
+          type: String,
+        }
+      },
+      secondPlace: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
+          type: String,
+        },
+        vehicle: {
+          type: String,
+        },
+        team: {
+          type: String,
+        }
+      },
+      thirdPlace: {
+        driver1: {
+          type: String,
+        },
+        driver2: {
+          type: String,
+        },
+        driver3: {
           type: String,
         },
         vehicle: {
