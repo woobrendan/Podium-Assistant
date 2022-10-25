@@ -17,7 +17,7 @@ function EventSearch(props) {
     props.getValue(event.target.name, event.target.value)
   };
 
-  const mappedEvents = events.map((event) => <MenuItem key={event.id} value={event.name}>{event.name}</MenuItem>)
+  const mappedEvents = events.map((event, index) => <MenuItem key={index} value={event.name}>{event.name}</MenuItem>)
 
   return (
     <Box
