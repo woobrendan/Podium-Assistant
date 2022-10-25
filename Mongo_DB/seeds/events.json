@@ -2,5 +2,37 @@
   {
     "name": "St. Pete Grand Prix",
     "date": "February 24-26, 2022"
+  },
+  {
+    "name": "Sonoma Raceway', 'April 14-17, 2022",
+    "date": "April 14-17, 2022"
+  },
+  {
+    "name": "NOLA Motorsports Park",
+    "date": "May 19-22, 2022"
+  },
+  {
+    "name": "VIRginia International Raceway",
+    "date": "June 17-19, 2022"
+  },
+  {
+    "name": "Watkins Glen",
+    "date": "July 22-24, 2022"
+  },
+  {
+    "name": "Music City Grand Prix",
+    "date": "August 5-7, 2022"
+  },
+  {
+    "name": "Road America",
+    "date": "August 19-21, 2022"
+  },
+  {
+    "name": "Sebring International Raceway",
+    "date": "September 23-25, 2022"
+  },
+  {
+    "name": "Indianapolis Motor Speedway",
+    "date": "October 7-9, 2022"
   }
 ]
