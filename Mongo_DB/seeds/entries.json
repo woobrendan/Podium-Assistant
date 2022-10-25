@@ -1827,7 +1827,7 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
     "number": "2",
-    "carImage": gmg2a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2480122.jpg",
     "series": "GT America"
   },
   {
@@ -1840,7 +1840,7 @@
     "vehicle": "Mercedes-AMG GT3",
     "classification": "SRO3",
     "number": "04",
-    "carImage": crwd04a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F394%2F%2F072322_WGI_bcpix2467465.jpg",
     "series": "GT America"
   },
   {
@@ -1853,7 +1853,7 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
     "number": "8",
-    "carImage": flm8,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F379%2F%2F041422_Sonoma_bcpix2264608.jpg",
     "series": "GT America"
   },
   {
@@ -1866,7 +1866,7 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
     "number": "15",
-    "carImage": bsport15,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F397%2F%2F072422_WGI_bcpix2474293.jpg",
     "series": "GT America"
   },
   {
