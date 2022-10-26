@@ -71,7 +71,7 @@ export default function useEntries() {
     vehicles: vehicles.sort(compareCarNumber),
     resultHistory,
     events,
-    series: getSeriesNames(),
+    series,
     classCategory,
     currentEventName
   }
