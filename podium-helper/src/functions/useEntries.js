@@ -16,7 +16,7 @@ export default function useEntries() {
     const promise2 = axios.get(`http://localhost:8080/api/drivers`);
     const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
     const promise5 = axios.get('http://localhost:2020/api/events');
-    const promise6 = axios.get('http://localhost:8080/api/series');
+    const promise6 = axios.get('http://localhost:2020/api/series');
     const promise7 = axios.get('http://localhost:8080/api/class');
     Promise.all([promise1, promise2, promise3, promise5, promise6, promise7])
       .then((all) => {
