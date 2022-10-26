@@ -12,7 +12,7 @@ function Series(props) {
     props.getValue(event.target.name, event.target.value)
   };
 
-  const mappedSeries = series.map((seriesName, index) => <MenuItem key={index} value={seriesName}>{seriesName}</MenuItem>)
+  const mappedSeries = series.map((serie, index) => <MenuItem key={index} value={serie}>{serie.name}</MenuItem>)
 
   return (
     <Box
