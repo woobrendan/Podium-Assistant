@@ -2022,7 +2022,7 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
     "number": "55",
-    "carImage": accerlate55a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1010__FL.jpg",
     "series": "GT America"
   },
   {
@@ -2035,7 +2035,7 @@
     "vehicle": "Ferrari 458 Italia GT3",
     "classification": "SRO3",
     "number": "56",
-    "carImage": SKI56,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F418%2F%2F100822_PLM_bcpix2658045.jpg",
     "series": "GT America"
   },
   {
@@ -2048,7 +2048,7 @@
     "vehicle": "Audi R8 LMS GT2",
     "classification": "GT2",
     "number": "58",
-    "carImage": gmg58,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F418%2F%2F100822_PLM_bcpix2658065.jpg",
     "series": "GT America"
   },
   {
@@ -2061,7 +2061,7 @@
     "vehicle": "Ginetta G56 GT4",
     "classification": "GT4",
     "number": "60",
-    "carImage": dexter60,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F387%2F%2FJL4_3937.JPG",
     "series": "GT America"
   },
   {
