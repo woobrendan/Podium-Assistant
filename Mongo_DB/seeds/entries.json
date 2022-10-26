@@ -1918,7 +1918,7 @@
     "vehicle": "BMW M4 GT4",
     "classification": "GT4",
     "number": "22",
-    "carImage": srq22,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2480192.jpg",
     "series": "GT America"
   },
   {
@@ -1931,7 +1931,7 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
     "number": "25",
-    "carImage": hort25a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F394%2F%2F072322_WGI_bcpix2467442.jpg",
     "series": "GT America"
   },
   {
@@ -1944,7 +1944,7 @@
     "vehicle": "Audi R8 LMS",
     "classification": "SRO3",
     "number": "27",
-    "carImage": dask27,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F399%2F%2FFH5_9666.jpg",
     "series": "GT America"
   },
   {
@@ -1957,7 +1957,7 @@
     "vehicle": "BMW M4 GT4",
     "classification": "GT4",
     "number": "28",
-    "carImage": srq28,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F73%2F376%2F%2F022622_StPete_bcpix2208288.jpg",
     "series": "GT America"
   },
   {
