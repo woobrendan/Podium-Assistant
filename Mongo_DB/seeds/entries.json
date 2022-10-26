@@ -2178,7 +2178,7 @@
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
     "classification": "GT4",
     "number": "120",
-    "carImage": premier120a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1529__FL.jpg",
     "series": "GT America"
   },
   {
@@ -2191,7 +2191,7 @@
     "vehicle": "Ford Mustang GT4",
     "classification": "GT4",
     "number": "124",
-    "carImage": arg124,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F418%2F%2F100822_PLM_bcpix2658006.jpg",
     "series": "GT America"
   },
   {
@@ -2204,7 +2204,7 @@
     "vehicle": "Lamborghini Huracan GT3",
     "classification": "SRO3",
     "number": "191",
-    "carImage": zelus191,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1020__FL.jpg",
     "series": "GT America"
   },
   {
@@ -2217,7 +2217,7 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
     "number": "888",
-    "carImage": zelus888,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F77%2F406%2F%2F082022_RDAM_bcpix2516307.jpg",
     "series": "GT America"
   },
   {
