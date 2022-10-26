@@ -666,24 +666,6 @@
     "series": "Pirelli GT4 America"
   },
   {
-    "team": "Prive Motorsports/Topp Racing",
-    "driver1": {
-      "name": "Thomas Surgent",
-      " nationality": "USA",
-      "rating": "Bronze"
-    },
-    "driver2": {
-      "name": "Michael O'Brien",
-      " nationality": "United Kingdom",
-      "rating": "Silver"
-    },
-    "vehicle": "McLaren 570s GT4",
-    "classification": "Pro-Am",
-    "number": "26",
-    "carImage": prive26,
-    "series": "Pirelli GT4 America"
-  },
-  {
     "team": "Capstone Motorsports",
     "driver1": {
       "name": "Kris Wilson",
@@ -2230,7 +2212,7 @@
     "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
     "classification": "GT4",
     "number": "3",
-    "carImage": "",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F78%2F414%2F%2F092522_Seb_bcpix2590201.jpg",
     "series": "GT America"
   },
   {
@@ -2243,7 +2225,7 @@
     "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
     "classification": "GT4",
     "number": "427",
-    "carImage": "",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F78%2F410%2F%2FRL_SRO_Sebring_02600.jpg",
     "series": "GT America"
   }
 ]
