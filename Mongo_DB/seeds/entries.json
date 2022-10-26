@@ -1879,7 +1879,7 @@
     "vehicle": "Toyota GR Supra GT4",
     "classification": "GT4",
     "number": "016",
-    "carImage": hattori016,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F397%2F%2F072422_WGI_bcpix2474340.jpg",
     "series": "GT America"
   },
   {
@@ -1892,7 +1892,7 @@
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
     "classification": "GT4",
     "number": "19",
-    "carImage": nola19a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F379%2F%2F00341_RL_Sonomaf.jpg",
     "series": "GT America"
   },
   {
@@ -1905,7 +1905,7 @@
     "vehicle": "Toyota GR Supra GT4",
     "classification": "GT4",
     "number": "21",
-    "carImage": carrus21a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2480153.jpg",
     "series": "GT America"
   },
   {
