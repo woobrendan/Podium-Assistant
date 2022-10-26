@@ -11,9 +11,11 @@ import DatePicker from './DatePicker';
 import useEntries from '../../functions/useEntries';
 import { getIdFromArray, getToday, printPage, getVehicleId } from '../../functions/helperFunc';
 import mongoResult from '../../functions/formMongoResult';
+import WinnerPodium from './WinnerPodium'
 
 function Podium() {
   const {drivers, events, series, classCategory, vehicles} = useEntries(); 
+  // console.log('series', series)
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -91,6 +93,19 @@ function Podium() {
     }
   }
 
+  const numOfPodiumDisplays = (series) => {
+    const classifications = series.class
+    const mappedSeries = classifications.map((classification, index) => 
+      <WinnerPodium
+        seriesName={series.name} 
+        onClick={handleRacePodiumSubmit}
+        results={results}
+        classification={classification}
+      />
+    )
+    return mappedSeries;
+  }
+
   return (
     <div className="race-results-container">
       <div className="results-details">
@@ -99,7 +114,7 @@ function Podium() {
         {showWinnerTable.misc && <EventSearch getValue={getValue}/>}
         {showWinnerTable.misc && <Series getValue={getValue}/>}
       </div>
-      {showWinnerTable.result1 && 
+      {/* {showWinnerTable.result1 && 
         <WinnerTop3 
           series={results.series} 
           onClick={handleRacePodiumSubmit}
@@ -126,7 +141,9 @@ function Podium() {
           onClick={handleRacePodiumSubmit}
           results={results}
         />
-      }
+      } */}
+      {results.series && numOfPodiumDisplays(results.series)}
+
       {showWinnerTable.fastLap && 
         <FastLap 
           onClick={handleFastLapSumbit}
