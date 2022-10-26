@@ -2126,7 +2126,7 @@
     "vehicle": "Mercedes-AMG GT4",
     "classification": "GT4",
     "number": "79",
-    "carImage": renn79a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F388%2F%2F061822_VIR_bcpix2387199.jpg",
     "series": "GT America"
   },
   {
@@ -2139,7 +2139,7 @@
     "vehicle": "Lamborghini Huracan GT3",
     "classification": "SRO3",
     "number": "88",
-    "carImage": zelus88a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F418%2F%2F100822_PLM_bcpix2658220.jpg",
     "series": "GT America"
   },
   {
@@ -2152,7 +2152,7 @@
     "vehicle": "Mercedes-AMG GT4",
     "classification": "GT4",
     "number": "89",
-    "carImage": renn89a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F389%2F%2FRL_VIR_54211f.jpg",
     "series": "GT America"
   },
   {
@@ -2165,7 +2165,7 @@
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
     "classification": "GT4",
     "number": "99",
-    "carImage": rotek99,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1489__FL.jpg",
     "series": "GT America"
   },
   {
