@@ -1970,7 +1970,7 @@
     "vehicle": "Mercedes-AMG GT4",
     "classification": "GT4",
     "number": "35",
-    "carImage": "",
+    "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472370.jpg",
     "series": "GT America"
   },
   {
@@ -1983,7 +1983,7 @@
     "vehicle": "Ferrari 488 GT3",
     "classification": "SRO3",
     "number": "37",
-    "carImage": triarsi37a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2479476.jpg",
     "series": "GT America"
   },
   {
@@ -1996,7 +1996,7 @@
     "vehicle": "Mercedes-AMG GT4",
     "classification": "GT4",
     "number": "39",
-    "carImage": cameron39a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F409%2F%2F080422_NSHVL_bcpix2479389.jpg",
     "series": "GT America"
   },
   {
@@ -2009,7 +2009,7 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
     "number": "50",
-    "carImage": chouest50a,
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1053__FL.jpg",
     "series": "GT America"
   },
   {
