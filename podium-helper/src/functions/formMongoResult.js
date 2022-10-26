@@ -8,7 +8,7 @@ const mongoResult = (results, fastLap) => {
   const copy = {
     date: results.date,
     event: results.event,
-    series: results.series,
+    series: results.series.name,
     fastLap: {
       driver: fastLap.driver,
       laptime: fastLap.laptime
