@@ -28,10 +28,6 @@ function Podium() {
 
   //toggle control for winnertop3 card
   const [showWinnerTable, setShowWinnerTable] = useState({
-    result1: true,
-    result2: true,
-    result3: true,
-    result4: false,
     fastLap: true,
     misc: true,
     printPage: false
@@ -83,12 +79,6 @@ function Podium() {
       ...prev,
       [name]: value
     }))
-    if (value === 'GT America' || value === 'Intercontinental GT Challenge') {
-      setShowWinnerTable((prev) => ({
-        ...prev,
-        result4: true
-      }));
-    }
   }
 
   const numOfPodiumDisplays = (series) => {
