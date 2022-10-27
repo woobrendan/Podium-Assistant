@@ -19,10 +19,6 @@ function Podium() {
     date: getToday(),
     series: '',
     event: '',
-    result1: '',
-    result2: '',
-    result3: '',
-    result4: '',
     fastLap: ''
   });
 
