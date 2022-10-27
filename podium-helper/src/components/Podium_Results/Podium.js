@@ -45,8 +45,7 @@ function Podium() {
       fastLap: false,
       misc: false,
       printPage: true,
-      result3: false,
-      result4: false
+
     }));
 
     axios.post(`http://localhost:2020/api/results/new`, {
@@ -85,6 +84,7 @@ function Podium() {
     const classifications = series.class
     const mappedSeries = classifications.map((classification, index) => 
       <WinnerPodium
+        key={index}
         seriesName={series.name} 
         onClick={handleRacePodiumSubmit}
         results={results}
@@ -105,7 +105,7 @@ function Podium() {
 
       {results.series && numOfPodiumDisplays(results.series)}
 
-      {showWinnerTable.fastLap && 
+      {results.series && 
         <FastLap 
           onClick={handleFastLapSumbit}
           series={results.series}
