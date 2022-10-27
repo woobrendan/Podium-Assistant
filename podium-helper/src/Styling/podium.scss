@@ -5,6 +5,12 @@
   padding-bottom: 50px;
   margin-top: 50px;
 
+  .results-details {
+    display: inherit;
+    justify-content: space-around;
+    width: 100%;
+  }
+
   #result-table-container {
     margin: 40px;
   }
