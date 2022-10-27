@@ -59,20 +59,9 @@ function WinnerPodium(props) {
   return (
     <div className="results-container">
       <Card sx={{ minWidth: 450 }}>
-      <div className="class-container">
-        <Box
-          component="form"
-          sx={{
-            '& .MuiTextField-root': { m: 1, width: '25ch' },
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <Typography variant="h5" gutterBottom component="div">
-            {props.classification}
-          </Typography>
-        </Box>
-      </div>
+        <Typography variant="h5" gutterBottom component="div">
+          {props.classification}
+        </Typography>
       <div className="placement-container">
         <div className="finishing-spot">
           <h3>1<sup>st</sup></h3>
