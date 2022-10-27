@@ -33,34 +33,6 @@ function WinnerPodium(props) {
     }
   }
 
-  // const usedClassOptions = (result) => {
-  //   const usedClasses = [];
-  //   const podiums = [];
-  //   podiums.push(result.result1, result.result2, result.result3, result.result4)
-  //   for (const podium of podiums) {
-  //     if (podium.class) {
-  //       usedClasses.push(podium.class)
-  //     }
-  //   }
-  //   return usedClasses;
-  // }
-
-  // const getClassArr = (series) => {
-  //   switch(series) {
-  //     case 'GT World Challenge America': return classOptions.gtwca
-  //     case 'Pirelli GT4 America': return classOptions.pgt4a
-  //     case 'GT America': return classOptions.gta
-  //     case 'TC America': return classOptions.tca
-  //     default: return classOptions.igtc
-  //   }
-  // }
-
-  // const mappedClass = getClassArr(props.series)
-  //   .filter(option => !usedClassOptions(props.results).includes(option))
-  //   .map((option, index) => 
-  //     <MenuItem key={index} value={option}>{option}</MenuItem>
-  //   )
-
   //determine if entry is single or two drivers and return corresponding menu item
   const numOfDriverMenuItem = (entry) => {
     if (!entry.driver2) {
@@ -96,21 +68,9 @@ function WinnerPodium(props) {
           noValidate
           autoComplete="off"
         >
-          <h1>{props.classification}</h1>
-          {/* <FormControl sx={{ minWidth: 150 }}>
-            <InputLabel htmlFor="exampleFormControlSelect2">
-              Class
-            </InputLabel>
-            <Select
-              className="form-control"
-              name="class"
-              label='class'
-              value={winners.class}
-              onChange={handleWinners}
-            >
-              {mappedClass}
-            </Select>
-          </FormControl> */}
+          <Typography variant="h5" gutterBottom component="div">
+            {props.classification}
+          </Typography>
         </Box>
       </div>
       <div className="placement-container">
