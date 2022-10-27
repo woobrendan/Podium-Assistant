@@ -1,5 +1,4 @@
 import {useState} from 'react'
-import WinnerTop3 from './WinnerTop3';
 import { Button } from '@mui/material';
 import '../../Styling/podium.scss'
 import FastLap from './FastLap';
@@ -15,7 +14,6 @@ import WinnerPodium from './WinnerPodium'
 
 function Podium() {
   const {drivers, events, series, classCategory, vehicles} = useEntries(); 
-  // console.log('series', series)
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -114,34 +112,7 @@ function Podium() {
         {showWinnerTable.misc && <EventSearch getValue={getValue}/>}
         {showWinnerTable.misc && <Series getValue={getValue}/>}
       </div>
-      {/* {showWinnerTable.result1 && 
-        <WinnerTop3 
-          series={results.series} 
-          onClick={handleRacePodiumSubmit}
-          results={results}
-        />
-      }
-      {showWinnerTable.result2 && 
-        <WinnerTop3 
-          series={results.series} 
-          onClick={handleRacePodiumSubmit}
-          results={results}
-        />
-      }
-      {showWinnerTable.result3 && 
-        <WinnerTop3 
-          series={results.series} 
-          onClick={handleRacePodiumSubmit}
-          results={results}
-        />
-      }
-      {showWinnerTable.result4 && 
-        <WinnerTop3 
-          series={results.series} 
-          onClick={handleRacePodiumSubmit}
-          results={results}
-        />
-      } */}
+
       {results.series && numOfPodiumDisplays(results.series)}
 
       {showWinnerTable.fastLap && 
