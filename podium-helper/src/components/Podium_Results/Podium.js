@@ -106,20 +106,14 @@ function Podium() {
   return (
     <div className="race-results-container">
       <div className="results-details">
-        {showWinnerTable.misc && 
-          <DatePicker getValue={getValue} today={getToday()}/>}
-        {showWinnerTable.misc && <EventSearch getValue={getValue}/>}
-        {showWinnerTable.misc && <Series getValue={getValue}/>}
+        {showWinnerTable.misc && <DatePicker getValue={getValue} today={getToday()} />}
+        {showWinnerTable.misc && <EventSearch getValue={getValue} />}
+        {showWinnerTable.misc && <Series getValue={getValue} />}
       </div>
-
-      {results.series && numOfPodiumDisplays(results.series)}
-
-      {results.series && 
-        <FastLap 
-          onClick={handleFastLapSumbit}
-          series={results.series}
-        />
-      }
+      <div className="podium_results_container">
+        {results.series && numOfPodiumDisplays(results.series)}
+      </div>
+      {results.series && <FastLap onClick={handleFastLapSumbit}series={results.series} />}
       {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
       {!showWinnerTable.fastLap && <ResultTableHeader results={results}/>}
     </div>
