@@ -8,7 +8,6 @@ export default function useEntries() {
   const [resultHistory, setResultHistory] = useState([]);
   const [events, setEvents] = useState([]);
   const [series, setSeries] = useState([]);
-  const [classCategory, setClassCategory] = useState([]);
   const [currentEventName, setCurrentEventName] = useState('')
 
   useEffect(() => {
@@ -62,7 +61,6 @@ export default function useEntries() {
     resultHistory,
     events,
     series,
-    classCategory,
     currentEventName
   }
 }
