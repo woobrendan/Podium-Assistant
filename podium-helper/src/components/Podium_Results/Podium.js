@@ -63,7 +63,7 @@ function Podium() {
   // }
 
       
-    const handleRacePodiumSubmit = (value) => {
+    const handleRacePodiumSubmit = (value, resultNumber) => {
       const result1 = results.result1;
       const result2 = results.result2;
       const result3 = results.result3;
@@ -76,25 +76,32 @@ function Podium() {
         if (result) existingResults.push(result)
       }
 
-      const podiumNumber = () => {
-        if (!result1) return 'result1'
-        else if (!result2) return 'result2'
-        else if (!result3) return 'result3'
-        else return 'result4'
-      }
+      // const podiumNumber = () => {
+      //   if (!result1) return 'result1';
 
-      
+      //   for (const result of existingResults) {
+      //     if (result.class !== value.class) {
+      //       if (!result2) return 'result2'
+      //       else if (!result3) return 'result3'
+      //       else return 'result4'
+      //     } else {
 
+      //     }
+      //   }
+
+      // }
+
+    
 
     setResults((prev) => ({
       ...prev,
-      [podiumNumber()]: value
+      [`result${resultNumber}`]: value
     }));
 
-    setShowWinnerTable((prev) => ({
-      ...prev,
-      [podiumNumber()]: false
-    }));
+    // setShowWinnerTable((prev) => ({
+    //   ...prev,
+    //   [`result${resultNumber}`]: false
+    // }));
   }
 
   //grab value and name from component and set result usestate
@@ -114,6 +121,7 @@ function Podium() {
         onClick={handleRacePodiumSubmit}
         results={results}
         classification={classification}
+        resultNum={index+1}
       />
     )
     return mappedSeries;
