@@ -15,6 +15,7 @@ function WinnerPodium(props) {
   });
 
   const [isError, setIsError] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleWinners = event => {
     setWinners((prev) => ({
@@ -146,7 +147,8 @@ function WinnerPodium(props) {
                   Must be a First Place Finisher
                 </Typography>
               )}
-      <Button variant="outlined" color="error" onClick={handleSubmit}>Submit</Button>
+      {!isSubmitted && <Button variant="outlined" color="error" onClick={handleSubmit}>Submit</Button>}
+      
       </Card>
     </div>
   )
