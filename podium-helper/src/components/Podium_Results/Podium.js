@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useState , useEffect } from 'react'
 import { Button } from '@mui/material';
 import '../../Styling/podium.scss'
 import FastLap from './FastLap';
@@ -14,7 +14,7 @@ import WinnerPodium from './WinnerPodium';
 // import { useNavigate } from 'react-router-dom';
 
 function Podium() {
-  const { drivers } = useEntries(); 
+  const { drivers, currentEventName } = useEntries(); 
   // const navigate = useNavigate();
 
   const [results, setResults] = useState({
@@ -24,24 +24,31 @@ function Podium() {
     fastLap: ''
   });
 
+  useEffect(() => {
+    setResults((prev) => ({
+      ...prev,
+      event: currentEventName
+    }))
+  }, [currentEventName])
+  
   //toggle control for winnertop3 card
   const [showWinnerTable, setShowWinnerTable] = useState({
     fastLap: true,
     misc: true,
     printPage: false
   })
-
+  
   const handleFastLapSumbit = (value) => {
-
+    
     // remove fast lap, series, date and event boxes, show print button
     setShowWinnerTable((prev) => ({
       ...prev,
       fastLap: false,
       misc: false,
       printPage: true,
-
+      
     }));
-
+    
     axios.post(`http://localhost:2020/api/results/new`, {
       results: mongoResult(results, value)
     })
@@ -55,14 +62,14 @@ function Podium() {
   //   navigate('/single_race_podium')
   // }
 
-  //onclick grab results and put into array
-  const handleRacePodiumSubmit = (value) => {
-    const podiumNumber = () => {
-      if (!results.result1) return 'result1'
-      else if (!results.result2) return 'result2'
-      else if (!results.result3) return 'result3'
-      else return 'result4'
-    }
+      
+    const handleRacePodiumSubmit = (value) => {
+      const podiumNumber = () => {
+        if (!results.result1) return 'result1'
+        else if (!results.result2) return 'result2'
+        else if (!results.result3) return 'result3'
+        else return 'result4'
+      }
     setResults((prev) => ({
       ...prev,
       [podiumNumber()]: value
