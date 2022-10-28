@@ -147,8 +147,8 @@ function WinnerPodium(props) {
                   Must be a First Place Finisher
                 </Typography>
               )}
-      {!isSubmitted && <Button variant="outlined" color="error" onClick={handleSubmit}>Submit</Button>}
-      
+      {!isSubmitted && <Button variant="contained" color="error" onClick={handleSubmit}>Submit</Button>}
+      {isSubmitted && <Button variant="outlined" color="success" onClick={handleSubmit}>Update</Button>}
       </Card>
     </div>
   )
