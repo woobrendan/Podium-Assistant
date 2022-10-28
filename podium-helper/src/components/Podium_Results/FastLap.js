@@ -20,6 +20,11 @@ function FastLap(props) {
     }))
   }
 
+  const handleClick = () => {
+    props.getValue("fastLap", fastTime)
+    setIsSubmitted(true)
+  }
+
   //take in entry object and get every single driver into list
   const singleDrivers = (entryArray) => {
     const drivers = [];
