@@ -5,6 +5,7 @@ import Podium from './components/Podium_Results/Podium';
 import NavBar from './components/NavBar';
 import Results from './components/Results/ResultsHistory';
 import EntryDashboard from './components/Entry_Manage/EntryDashboard';
+import SingleRacePodium from './components/Results/SingleRacePodium';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/competitors" element={<DriverSearch />} />
           <Route path="/results" element={<Results />} />
           <Route path="/entry-dashboard" element={<EntryDashboard />} />
+          <Route path="/single_race_podium" element={<SingleRacePodium />} />
         </Routes>
       </div>
     </Router>
