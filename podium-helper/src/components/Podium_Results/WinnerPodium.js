@@ -30,7 +30,7 @@ function WinnerPodium(props) {
       setIsError(true);
     } else {
       if (isError) setIsError(false);
-      props.onClick(winners)
+      props.onClick(winners, props.resultNum)
       setIsSubmitted(true)
     }
   }
