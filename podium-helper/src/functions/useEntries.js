@@ -17,15 +17,13 @@ export default function useEntries() {
     const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
     const promise5 = axios.get('http://localhost:2020/api/events');
     const promise6 = axios.get('http://localhost:2020/api/series');
-    const promise7 = axios.get('http://localhost:8080/api/class');
-    Promise.all([promise1, promise2, promise3, promise5, promise6, promise7])
+    Promise.all([promise1, promise2, promise3, promise5, promise6])
       .then((all) => {
         setResultHistory(all[0].data);
         setDrivers(all[1].data);
         setVehicles(all[2].data);
         setEvents(all[3].data);
         setSeries(all[4].data);
-        setClassCategory(all[5].data);
         eventByDate(all[3].data)
       })
       .catch((err) => console.log("Error from Promise:", err));
