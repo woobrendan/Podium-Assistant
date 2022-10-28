@@ -46,14 +46,6 @@ export default function useEntries() {
     return vehicle;
   });
 
-  const getSeriesNames = () => {
-    const list = [];
-    for (const serie of series) {
-      list.push(serie.name)
-    }
-    return list;
-  }
-
   const eventByDate = (events) => {
     const month = Number(getToday().split('-')[0])
     if (month <= 2 ) setCurrentEventName(events[0].name)
