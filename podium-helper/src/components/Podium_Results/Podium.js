@@ -8,7 +8,7 @@ import EventSearch from './EventsSearch';
 import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../functions/useEntries';
-import { getIdFromArray, getToday, printPage, getVehicleId } from '../../functions/helperFunc';
+import { getToday, printPage } from '../../functions/helperFunc';
 import mongoResult from '../../functions/formMongoResult';
 import WinnerPodium from './WinnerPodium';
 // import { useNavigate } from 'react-router-dom';
