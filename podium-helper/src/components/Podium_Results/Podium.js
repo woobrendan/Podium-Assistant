@@ -11,11 +11,11 @@ import useEntries from '../../functions/useEntries';
 import { getIdFromArray, getToday, printPage, getVehicleId } from '../../functions/helperFunc';
 import mongoResult from '../../functions/formMongoResult';
 import WinnerPodium from './WinnerPodium';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 function Podium() {
   const { drivers } = useEntries(); 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -32,10 +32,6 @@ function Podium() {
   })
 
   const handleFastLapSumbit = (value) => {
-    setResults((prev) => ({
-      ...prev,
-      fastLap: {...value, id: getIdFromArray(value.driver, drivers)}
-    }));
 
     // remove fast lap, series, date and event boxes, show print button
     setShowWinnerTable((prev) => ({
@@ -49,8 +45,15 @@ function Podium() {
     axios.post(`http://localhost:2020/api/results/new`, {
       results: mongoResult(results, value)
     })
+    // .then(() => {
+    //   handleFinalSubmit()
+    // })
     .catch(err => console.log(err.message))
   }
+
+  // const handleFinalSubmit = () => {
+  //   navigate('/single_race_podium')
+  // }
 
   //onclick grab results and put into array
   const handleRacePodiumSubmit = (value) => {
