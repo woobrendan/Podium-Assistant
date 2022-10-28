@@ -10,10 +10,12 @@ import DatePicker from './DatePicker';
 import useEntries from '../../functions/useEntries';
 import { getIdFromArray, getToday, printPage, getVehicleId } from '../../functions/helperFunc';
 import mongoResult from '../../functions/formMongoResult';
-import WinnerPodium from './WinnerPodium'
+import WinnerPodium from './WinnerPodium';
+import { useNavigate } from 'react-router-dom';
 
 function Podium() {
-  const {drivers, events, series, classCategory, vehicles} = useEntries(); 
+  const { drivers } = useEntries(); 
+  const navigate = useNavigate();
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -50,6 +52,7 @@ function Podium() {
     .catch(err => console.log(err.message))
   }
 
+  //onclick grab results and put into array
   const handleRacePodiumSubmit = (value) => {
     const podiumNumber = () => {
       if (!results.result1) return 'result1'
