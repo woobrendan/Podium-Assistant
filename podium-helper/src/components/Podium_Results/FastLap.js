@@ -11,6 +11,7 @@ function FastLap(props) {
     driver: '',
     laptime: ''
   });
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleChange = (event) => {
     setFastTime((prev) => ({
@@ -98,13 +99,15 @@ function FastLap(props) {
               onChange={handleChange}
             />
           </Box>
-          <Button 
+          {/* <Button 
             variant="outlined" 
             color="error" 
             onClick={() => props.onClick(fastTime)}
           >
             Submit
-          </Button>
+          </Button> */}
+          {!isSubmitted && <Button variant="contained" color="error" onClick={handleClick}>Submit</Button>}
+          {isSubmitted && <Button variant="contained" color="success" onClick={handleClick}>Update</Button>}
         </Card>
       </div>
     </div>
