@@ -39,6 +39,11 @@ function Podium() {
   })
   
   const handleFastLapSumbit = (value) => {
+
+    setResults((prev) => ({
+      ...prev,
+      fastLap: value
+    }))
     
     // remove fast lap, series, date and event boxes, show print button
     setShowWinnerTable((prev) => ({
@@ -64,33 +69,17 @@ function Podium() {
 
       
     const handleRacePodiumSubmit = (value, resultNumber) => {
-      const result1 = results.result1;
-      const result2 = results.result2;
-      const result3 = results.result3;
-      const result4 = results.result4;
+      // const result1 = results.result1;
+      // const result2 = results.result2;
+      // const result3 = results.result3;
+      // const result4 = results.result4;
 
-      const allResults = [result1, result2, result3, result4];
-      const existingResults = [];
+      // const allResults = [result1, result2, result3, result4];
+      // const existingResults = [];
 
-      for (const result of allResults) {
-        if (result) existingResults.push(result)
-      }
-
-      // const podiumNumber = () => {
-      //   if (!result1) return 'result1';
-
-      //   for (const result of existingResults) {
-      //     if (result.class !== value.class) {
-      //       if (!result2) return 'result2'
-      //       else if (!result3) return 'result3'
-      //       else return 'result4'
-      //     } else {
-
-      //     }
-      //   }
-
+      // for (const result of allResults) {
+      //   if (result) existingResults.push(result)
       // }
-
     
 
     setResults((prev) => ({
