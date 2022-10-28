@@ -31,6 +31,7 @@ function WinnerPodium(props) {
     } else {
       if (isError) setIsError(false);
       props.onClick(winners)
+      setIsSubmitted(true)
     }
   }
 
@@ -148,7 +149,7 @@ function WinnerPodium(props) {
                 </Typography>
               )}
       {!isSubmitted && <Button variant="contained" color="error" onClick={handleSubmit}>Submit</Button>}
-      {isSubmitted && <Button variant="outlined" color="success" onClick={handleSubmit}>Update</Button>}
+      {isSubmitted && <Button variant="contained" color="success" onClick={handleSubmit}>Update</Button>}
       </Card>
     </div>
   )
