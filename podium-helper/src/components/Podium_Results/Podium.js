@@ -11,11 +11,11 @@ import useEntries from '../../functions/useEntries';
 import { getToday, printPage } from '../../functions/helperFunc';
 import mongoResult from '../../functions/formMongoResult';
 import WinnerPodium from './WinnerPodium';
-// import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Podium() {
   const { currentEventName } = useEntries(); 
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -63,9 +63,16 @@ function Podium() {
     .catch(err => console.log(err.message))
   }
 
-  // const handleFinalSubmit = () => {
-  //   navigate('/single_race_podium')
-  // }
+  const handleFinalSubmit = async () => {
+    try {
+      await axios.post(`http://localhost:2020/api/results/new`, {
+        results: mongoResult(results, results.fastLap)
+      })
+      await navigate('/single_race_podium')
+    } catch (err) {
+      console.error(err)
+    }
+  }
 
       
   const handleRacePodiumSubmit = (value, resultNumber) => {
@@ -113,7 +120,7 @@ function Podium() {
         <Button 
           variant="contained" 
           color="success"
-          onClick={handleFastLapSumbit}
+          onClick={handleFinalSubmit}
         >
           Submit All
         </Button>
