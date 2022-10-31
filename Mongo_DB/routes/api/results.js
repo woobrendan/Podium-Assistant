@@ -22,7 +22,7 @@ router.post('/new', async (req, res) => {
 
 router.get('/recent', async (req, res) => {
   try {
-    const result = await Results.find().sort({_id: -1})
+    const result = await Results.findOne().sort({_id: -1})
     res.json(result)
   } catch (err) {
     res.status(500).json({message: err.message})
