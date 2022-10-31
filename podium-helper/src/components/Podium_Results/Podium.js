@@ -68,29 +68,11 @@ function Podium() {
   // }
 
       
-    const handleRacePodiumSubmit = (value, resultNumber) => {
-      // const result1 = results.result1;
-      // const result2 = results.result2;
-      // const result3 = results.result3;
-      // const result4 = results.result4;
-
-      // const allResults = [result1, result2, result3, result4];
-      // const existingResults = [];
-
-      // for (const result of allResults) {
-      //   if (result) existingResults.push(result)
-      // }
-    
-
+  const handleRacePodiumSubmit = (value, resultNumber) => {
     setResults((prev) => ({
       ...prev,
       [`result${resultNumber}`]: value
     }));
-
-    // setShowWinnerTable((prev) => ({
-    //   ...prev,
-    //   [`result${resultNumber}`]: false
-    // }));
   }
 
   //grab value and name from component and set result usestate
@@ -126,7 +108,7 @@ function Podium() {
       <div className="podium_results_container">
         {results.series && numOfPodiumDisplays(results.series)}
       </div>
-      {results.series && <FastLap onClick={handleFastLapSumbit}series={results.series} />}
+      {results.series && <FastLap getValue={getValue} series={results.series} />}
       {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
       {!showWinnerTable.fastLap && <ResultTableHeader results={results}/>}
     </div>
