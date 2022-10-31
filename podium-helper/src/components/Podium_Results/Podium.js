@@ -109,6 +109,15 @@ function Podium() {
         {results.series && numOfPodiumDisplays(results.series)}
       </div>
       {results.series && <FastLap getValue={getValue} series={results.series} />}
+      {results.series && 
+        <Button 
+          variant="contained" 
+          color="success"
+          onClick={handleFastLapSumbit}
+        >
+          Submit All
+        </Button>
+      }
       {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
       {!showWinnerTable.fastLap && <ResultTableHeader results={results}/>}
     </div>
