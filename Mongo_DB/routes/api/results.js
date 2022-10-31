@@ -20,13 +20,13 @@ router.post('/new', async (req, res) => {
   res.send(newResult)
 })
 
-router.get(('/newest', async (req, res) => {
+router.get('/recent', async (req, res) => {
   try {
-    const result = await Result.find().sort({_id: -1})
+    const result = await Results.find().sort({_id: -1})
     res.json(result)
   } catch (err) {
     res.status(500).json({message: err.message})
   }
-}))
+})
 
 module.exports = router;
