@@ -14,7 +14,7 @@ import WinnerPodium from './WinnerPodium';
 // import { useNavigate } from 'react-router-dom';
 
 function Podium() {
-  const { drivers, currentEventName } = useEntries(); 
+  const { currentEventName } = useEntries(); 
   // const navigate = useNavigate();
 
   const [results, setResults] = useState({
