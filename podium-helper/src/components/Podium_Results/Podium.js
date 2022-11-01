@@ -125,8 +125,6 @@ function Podium() {
           Submit All
         </Button>
       }
-      {showWinnerTable.printPage && <Button variant="contained" color="success" onClick={printPage}>Print Page</Button>}
-      {!showWinnerTable.fastLap && <ResultTableHeader results={results}/>}
     </div>
   )
 }
