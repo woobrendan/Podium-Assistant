@@ -21,10 +21,9 @@ function SingleRacePodium() {
 
 
   return (
-    // <ResultTableHeader results={recentResult}/>
     <>
-      {/* {resultsMe} */}
-      {recentResult.result1 && <ResultTableHeader results={recentResult}/>}
+      {recentResult.result1 
+        && <ResultTableHeader results={recentResult}/>}
     </>
   )
 }
