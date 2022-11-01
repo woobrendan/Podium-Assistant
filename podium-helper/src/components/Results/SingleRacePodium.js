@@ -5,30 +5,19 @@ import axios from "axios";
 function SingleRacePodium() {
 
   const [recentResult, setRecentResult] = useState({})
-    
+  
   useEffect(() => {
-    axios.get('http://localhost:2020/api/results/recent')
-      .then(res => {
-        setRecentResult({...res.data})
-      })
-      .catch(err => {
-        console.error('Error:', err)
-      })
+    getAndSet()
   }, [])
 
-  const returnTable = async () => {
+  const getAndSet = async () => {
     try {
       const result = await axios.get('http://localhost:2020/api/results/recent')
-      const resultArr = [result.data];
-      console.log('arr', resultArr)
-
-      return <ResultTableHeader results={resultArr} />
-
+      setRecentResult({...result.data})
     } catch (err) {
       console.error(err)
     }
   }
-
 
 
   return (
