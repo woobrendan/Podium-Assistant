@@ -1,13 +1,10 @@
 import ResultTableHeader from "./ResultTableHeader";
-import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
 function SingleRacePodium() {
-  const { results } = useParams()
-  const [recentResult, setRecentResult] = useState({})
 
-  console.log('recent', recentResult === false)
+  const [recentResult, setRecentResult] = useState({})
     
   useEffect(() => {
     axios.get('http://localhost:2020/api/results/recent')
