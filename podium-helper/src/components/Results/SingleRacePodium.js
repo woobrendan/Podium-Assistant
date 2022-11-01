@@ -24,13 +24,15 @@ function SingleRacePodium() {
 
   return (
     <>
-      {recentResult.result1 
-        && <ResultTableHeader results={recentResult}/>}
       <Button 
         onClick={() => printPage()}
+        variant="contained" 
+        color="success"
       >
         Print Page
       </Button>
+      {recentResult.result1 
+        && <ResultTableHeader results={recentResult}/>}
     </>
   )
 }
