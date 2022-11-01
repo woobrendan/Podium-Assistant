@@ -47,14 +47,13 @@ export default function ResultTableBbody(props) {
       return allResults;
     }
       else {
-
-        allResults.push(createDataThreeDriver('1st', first.number, first.driver1.name || first.driver1, first.driver2.name || first.driver2, first.driver3.name, first.team, first.vehicle));
+        allResults.push(createDataThreeDriver('1st', first.number, first.driver1.name || first.driver1, first.driver2.name || first.driver2, first.driver3.name || first.driver3, first.team, first.vehicle));
 
       if (second) {
-        allResults.push(createDataThreeDriver('2nd', second.number, second.driver1.name || second.driver1, second.driver2.name || second.driver2, second.driver3.name, second.team, second.vehicle));
+        allResults.push(createDataThreeDriver('2nd', second.number, second.driver1.name || second.driver1, second.driver2.name || second.driver2, second.driver3.name || second.driver3, second.team, second.vehicle));
       } 
       if (third) {
-        allResults.push(createDataThreeDriver('3rd', third.number, third.driver1.name || third.driver1, third.driver2.name || third.driver2, third.driver3.name, third.team, third.vehicle));
+        allResults.push(createDataThreeDriver('3rd', third.number, third.driver1.name || third.driver1, third.driver2.name || third.driver2, third.driver3.name || third.driver3, third.team, third.vehicle));
       }
       return allResults;
     }
