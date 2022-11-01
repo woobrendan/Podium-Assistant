@@ -22,6 +22,12 @@
   }
 }
 
+.recent-podium-container {
+  .MuiButton-root {
+    margin-top: 30px;
+  }
+}
+
 @media print {
   body * {
     visibility: hidden;
