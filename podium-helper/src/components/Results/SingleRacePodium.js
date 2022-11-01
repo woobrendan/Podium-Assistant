@@ -1,6 +1,6 @@
 import ResultTableHeader from "./ResultTableHeader";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 function SingleRacePodium() {
@@ -9,21 +9,36 @@ function SingleRacePodium() {
 
   axios.get('http://localhost:2020/api/results/recent')
     .then(res => {
-      console.log('data', res.data)
-      setRecentResult([res.data])
+      setRecentResult(res.data)
     })
     .catch(err => {
       console.error('Error:', err)
     })
-    console.log('recent', recentResult)
+
+    console.log('recent', recentResult === true)
+    
+
+  const returnTable = async () => {
+    try {
+      const result = await axios.get('http://localhost:2020/api/results/recent')
+      const resultArr = [result.data];
+      console.log('arr', resultArr)
+
+      return <ResultTableHeader results={resultArr} />
+
+    } catch (err) {
+      console.error(err)
+    }
+  }
 
 
 
   return (
-    <ResultTableHeader results={recentResult}/>
-    // <>
-    //   <h1>Hello</h1>
-    // </>
+    // <ResultTableHeader results={recentResult}/>
+    <>
+      {/* {resultsMe} */}
+      {recentResult.length  && <ResultTableHeader results={recentResult}/>}
+    </>
   )
 }
 
