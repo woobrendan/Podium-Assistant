@@ -1,6 +1,8 @@
 import ResultTableHeader from "./ResultTableHeader";
 import { useState, useEffect } from "react";
+import { printPage } from "../../functions/helperFunc";
 import axios from "axios";
+import { Button } from "@mui/material";
 
 function SingleRacePodium() {
 
@@ -24,6 +26,11 @@ function SingleRacePodium() {
     <>
       {recentResult.result1 
         && <ResultTableHeader results={recentResult}/>}
+      <Button 
+        onClick={() => printPage()}
+      >
+        Print Page
+      </Button>
     </>
   )
 }
