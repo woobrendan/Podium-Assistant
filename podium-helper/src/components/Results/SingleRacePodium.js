@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { printPage } from "../../functions/helperFunc";
 import axios from "axios";
 import { Button } from "@mui/material";
+import '../../App.scss'
 
 function SingleRacePodium() {
 
@@ -23,7 +24,7 @@ function SingleRacePodium() {
 
 
   return (
-    <>
+    <div className="recent-podium-container">
       <Button 
         onClick={() => printPage()}
         variant="contained" 
@@ -33,7 +34,7 @@ function SingleRacePodium() {
       </Button>
       {recentResult.result1 
         && <ResultTableHeader results={recentResult}/>}
-    </>
+    </div>
   )
 }
 
