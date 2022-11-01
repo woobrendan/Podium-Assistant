@@ -5,18 +5,19 @@ import axios from "axios";
 
 function SingleRacePodium() {
   const { results } = useParams()
-  const [recentResult, setRecentResult] = useState([])
+  const [recentResult, setRecentResult] = useState({})
 
-  axios.get('http://localhost:2020/api/results/recent')
-    .then(res => {
-      setRecentResult(res.data)
-    })
-    .catch(err => {
-      console.error('Error:', err)
-    })
-
-    console.log('recent', recentResult === true)
+  console.log('recent', recentResult === false)
     
+  useEffect(() => {
+    axios.get('http://localhost:2020/api/results/recent')
+      .then(res => {
+        setRecentResult({...res.data})
+      })
+      .catch(err => {
+        console.error('Error:', err)
+      })
+  }, [])
 
   const returnTable = async () => {
     try {
@@ -37,7 +38,7 @@ function SingleRacePodium() {
     // <ResultTableHeader results={recentResult}/>
     <>
       {/* {resultsMe} */}
-      {recentResult.length  && <ResultTableHeader results={recentResult}/>}
+      {recentResult.result1 && <ResultTableHeader results={recentResult}/>}
     </>
   )
 }
