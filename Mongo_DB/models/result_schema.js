@@ -44,6 +44,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       secondPlace: {
@@ -61,6 +64,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       thirdPlace: {
@@ -78,6 +84,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       }
     },
@@ -100,6 +109,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       secondPlace: {
@@ -117,6 +129,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       thirdPlace: {
@@ -134,6 +149,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       }
     },
@@ -156,6 +174,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       secondPlace: {
@@ -173,6 +194,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       thirdPlace: {
@@ -190,6 +214,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       }
     },
@@ -212,6 +239,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       secondPlace: {
@@ -229,6 +259,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       },
       thirdPlace: {
@@ -246,6 +279,9 @@ const resultSchema = new mongoose.Schema({
         },
         team: {
           type: String,
+        },
+        number: {
+          type: String
         }
       }
     }
