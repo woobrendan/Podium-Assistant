@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { printPage } from "../../functions/helperFunc";
 import axios from "axios";
 import { Button } from "@mui/material";
-import '../../Styling/App.scss'
+import '../../Styling/result.scss'
 
 function SingleRacePodium() {
 
