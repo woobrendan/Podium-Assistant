@@ -5,10 +5,9 @@ import FastLap from './FastLap';
 import Series from './Series';
 import axios from 'axios';
 import EventSearch from './EventsSearch';
-import ResultTableHeader from '../Results/ResultTableHeader';
 import DatePicker from './DatePicker';
 import useEntries from '../../functions/useEntries';
-import { getToday, printPage } from '../../functions/helperFunc';
+import { getToday } from '../../functions/helperFunc';
 import mongoResult from '../../functions/formMongoResult';
 import WinnerPodium from './WinnerPodium';
 import { useNavigate } from 'react-router-dom';
@@ -37,31 +36,6 @@ function Podium() {
     misc: true,
     printPage: false
   })
-  
-  const handleFastLapSumbit = (value) => {
-
-    setResults((prev) => ({
-      ...prev,
-      fastLap: value
-    }))
-    
-    // remove fast lap, series, date and event boxes, show print button
-    setShowWinnerTable((prev) => ({
-      ...prev,
-      fastLap: false,
-      misc: false,
-      printPage: true,
-      
-    }));
-    
-    axios.post(`http://localhost:2020/api/results/new`, {
-      results: mongoResult(results, value)
-    })
-    // .then(() => {
-    //   handleFinalSubmit()
-    // })
-    .catch(err => console.log(err.message))
-  }
 
   const handleFinalSubmit = async () => {
     try {
