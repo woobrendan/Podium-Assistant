@@ -11,8 +11,7 @@ function ResultTableHeader(props) {
   const columnLength = (result) => {
     const first = result.firstPlace;
     if (first.driver3) return 4;
-    else if (first.driver2 && !first.driver3) return 3;
-    else return 2
+    else return 3
   }
 
   return (
@@ -27,8 +26,8 @@ function ResultTableHeader(props) {
               >
                 {podiums.event}
               </TableCell>
-              <TableCell colSpan={1} align='center'>{podiums.series}</TableCell>
-              <TableCell colSpan={2} align='center'>{dateToString(podiums.date)}</TableCell>
+              <TableCell colSpan={1} align='right'>{podiums.series}</TableCell>
+              <TableCell colSpan={2} align='right'>{dateToString(podiums.date)}</TableCell>
             </TableRow>
           </TableHead>
           <TableHead>
