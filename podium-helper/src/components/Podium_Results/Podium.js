@@ -30,12 +30,6 @@ function Podium() {
     }))
   }, [currentEventName])
   
-  //toggle control for winnertop3 card
-  const [showWinnerTable, setShowWinnerTable] = useState({
-    fastLap: true,
-    misc: true,
-    printPage: false
-  })
 
   const handleFinalSubmit = async () => {
     try {
@@ -82,9 +76,9 @@ function Podium() {
   return (
     <div className="race-results-container">
       <div className="results-details">
-        {showWinnerTable.misc && <DatePicker getValue={getValue} today={getToday()} />}
-        {showWinnerTable.misc && <EventSearch getValue={getValue} />}
-        {showWinnerTable.misc && <Series getValue={getValue} />}
+        <DatePicker getValue={getValue} today={getToday()} />
+        <EventSearch getValue={getValue} />
+        <Series getValue={getValue} />
       </div>
       <div className="podium_results_container">
         {results.series && numOfPodiumDisplays(results.series)}
