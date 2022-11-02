@@ -37,7 +37,7 @@ function DriverSearch() {
   return (
     <div className="competitors-container">
       <div className="search-sort-options">
-        <ToggleSort getOption={getSortOption} />
+        <ToggleSort getOption={getSortOption} component="competitor"/>
         <TextField 
           className="form-control"
           label="Search" 
