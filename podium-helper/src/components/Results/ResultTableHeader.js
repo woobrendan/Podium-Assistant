@@ -3,6 +3,7 @@ import {Table, TableCell, TableContainer, TableHead, TableRow, Paper} from '@mui
 import ResultTableBody from './ResultTableBody';
 import FastLapTable from '../Podium_Results/FastLapTable';
 import '../../Styling/result.scss';
+import { dateToString } from '../../functions/helperFunc';
 
 function ResultTableHeader(props) {
   const podiums = props.results;
@@ -27,7 +28,7 @@ function ResultTableHeader(props) {
                 {podiums.event}
               </TableCell>
               <TableCell colSpan={1} align='center'>{podiums.series}</TableCell>
-              <TableCell colSpan={2} align='center'>{podiums.date}</TableCell>
+              <TableCell colSpan={2} align='center'>{dateToString(podiums.date)}</TableCell>
             </TableRow>
           </TableHead>
           <TableHead>
