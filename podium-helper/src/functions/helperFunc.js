@@ -47,6 +47,15 @@ const compareCarNumber = (a, b) => {
   return 0;
 } 
 
+const dateToString = (date) => {
+  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  const dateArr = date.split('-')
+  const monthNum = Number(dateArr[0]) - 1;
+  const day = Number(dateArr[1])
+  const monthName = months[monthNum]
+  return `${monthName} ${day}, ${Number(dateArr[2])}`
+}
+
 const gtwca = "GT World Challenge America";
 const tcam = "TC America";
 const gtam = "GT America";
@@ -64,5 +73,6 @@ export {
   tcam,
   gtam,
   gt4a,
-  igtc
+  igtc,
+  dateToString
 }
