@@ -6,6 +6,8 @@
   }
 }
 #result-table-container {
+  display: flex;
+  justify-content: center;
 
   .result-table-head {
     background-color: #282828;
