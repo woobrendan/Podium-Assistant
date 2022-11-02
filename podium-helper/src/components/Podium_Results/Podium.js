@@ -68,7 +68,7 @@ function Podium() {
       await axios.post(`http://localhost:2020/api/results/new`, {
         results: mongoResult(results, results.fastLap)
       })
-      await navigate('/single_race_podium')
+      await navigate('/recent')
     } catch (err) {
       console.error(err)
     }
