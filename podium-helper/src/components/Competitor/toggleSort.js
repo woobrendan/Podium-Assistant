@@ -38,7 +38,7 @@ export default function ToggleSort(props) {
           className="form-control"
         >
           <InputLabel>
-            Sort By
+            {props.component === 'competitor' ? 'Sort By' : 'Filter'}
           </InputLabel>
           <Select
             className="form-control"
