@@ -8,11 +8,6 @@ import { dateToString } from '../../functions/helperFunc';
 function ResultTableHeader(props) {
   const podiums = props.results;
   const podium1 = podiums.result1;
-  const columnLength = (result) => {
-    const first = result.firstPlace;
-    if (first.driver3) return 4;
-    else return 3
-  }
 
   return (
     <div id='result-table-container'>
@@ -21,7 +16,7 @@ function ResultTableHeader(props) {
           <TableHead className="result-table-head">
             <TableRow>
               <TableCell 
-                colSpan={columnLength(podium1)} 
+                colSpan={podium1.firstPlace.driver3 ? 4 : 3} 
                 align='center'
               >
                 {podiums.event}
