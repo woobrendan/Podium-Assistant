@@ -4,14 +4,15 @@ import ResultTableHeader from './ResultTableHeader';
 import useEntries from '../../functions/useEntries.js';
 import SearchAllResults from './SearchAllResults';
 import BackToTopButton from '../BackToTopButton';
-import ToggleSort from '../Competitor/toggleSort';
+import EventSearch from '../Podium_Results/EventsSearch';
 
 function ResultsHistory() {
   const { resultHistory } = useEntries()
   const [searchValue, setSearchValue] = useState('');
-  const [sortValue, setSortValue] = useState('');
+  const [event, setEvent] = useState('');
 
-  const getSortOption = (option) => setSortValue(option)
+  const getValue = (name, value) => setEvent(value)
+
 
   const allResults = SearchAllResults(resultHistory, searchValue).map((result, index) => (
     <ResultTableHeader results={result} key={index} />
@@ -22,7 +23,7 @@ function ResultsHistory() {
       <Typography gutterBottom variant="h3" component="div">
         Result History
       </Typography>
-      <ToggleSort getOption={getSortOption} component="results"/>
+      <EventSearch getValue={getValue}/>
       <TextField 
         label='Search' 
         variant="outlined" 
