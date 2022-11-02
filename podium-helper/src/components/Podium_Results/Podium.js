@@ -36,13 +36,13 @@ function Podium() {
       await axios.post(`http://localhost:2020/api/results/new`, {
         results: mongoResult(results, results.fastLap)
       })
-      await navigate('/recent')
+      navigate('/recent')
     } catch (err) {
       console.error(err)
     }
   }
 
-      
+  //sent to WinnerPodium as onclick to get podium result X and set to results
   const handleRacePodiumSubmit = (value, resultNumber) => {
     setResults((prev) => ({
       ...prev,
@@ -50,7 +50,7 @@ function Podium() {
     }));
   }
 
-  //grab value and name from component and set result usestate
+  //grab value and name (for key) from component and set result state
   const getValue = (name, value) => {
     setResults((prev) => ({
       ...prev,
@@ -58,6 +58,7 @@ function Podium() {
     }))
   }
 
+  //dynamically render appropriate amount of WinnerPodium components based on need per series class requirements
   const numOfPodiumDisplays = (series) => {
     const classifications = series.class
     const mappedSeries = classifications.map((classification, index) => 
