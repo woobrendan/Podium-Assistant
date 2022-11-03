@@ -2,7 +2,7 @@
   {
     "series": "GT America",
     "date": "02-25-2022",
-    "event": "St. Petersburg",
+    "event": "St. Petersburg Grand Prix",
     "fastLap": {
       "driver": "George Kurtz",
       "vehicle": "Mercedes-AMG GT3",
@@ -72,7 +72,7 @@
   {
     "series": "GT America",
     "date": "02-26-2022",
-    "event": "St. Petersburg",
+    "event": "St. Petersburg Grand Prix",
     "fastLap": {
       "driver": "Justin Wetherill",
       "vehicle": "Ferrari 488 GT3",
@@ -724,7 +724,7 @@
   {
     "series": "GT World Challenge America",
     "date": "05-21-2022",
-    "event": "NOLA Motorsport Park",
+    "event": "NOLA Motorsports Park",
     "fastLap": {
       "driver": "Giacomo Altoe",
       "vehicle": "Lamborghini Huracan GT3",
@@ -799,7 +799,7 @@
   {
     "series": "GT World Challenge America",
     "date": "05-22-2022",
-    "event": "NOLA Motorsport Park",
+    "event": "NOLA Motorsports Park",
     "fastLap": {
       "driver": "Loris Spinelli",
       "vehicle": "Mercedes-AMG GT3",
@@ -874,7 +874,7 @@
   {
     "series": "Pirelli GT4 America",
     "date": "05-21-2022",
-    "event": "NOLA Motorsport Park",
+    "event": "NOLA Motorsports Park",
     "fastLap": {
       "driver": "Eric Filgueiras",
       "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -956,7 +956,7 @@
   {
     "series": "Pirelli GT4 America",
     "date": "05-22-2022",
-    "event": "NOLA Motorsport Park",
+    "event": "NOLA Motorsports Park",
     "fastLap": {
       "driver": "Stevan McAleer",
       "vehicle": "Porsche 718 Cayman GT4 RS CS",
