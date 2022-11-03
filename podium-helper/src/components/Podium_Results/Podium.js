@@ -4,7 +4,7 @@ import '../../Styling/podium.scss'
 import FastLap from './FastLap';
 import Series from './Series';
 import axios from 'axios';
-import EventSearch from './EventsSearch';
+import EventSearch from '../EventsSearch';
 import DatePicker from './DatePicker';
 import useEntries from '../../functions/useEntries';
 import { getToday } from '../../functions/helperFunc';
