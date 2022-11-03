@@ -6,10 +6,12 @@ import useEntries from '../../functions/useEntries';
 
 function EventSearch(props) {
   const { events, currentEventName } = useEntries();
-  const [eventName, setEventName] = useState(currentEventName);
+  const [eventName, setEventName] = useState('');
 
   useEffect(() => {
-    setEventName(currentEventName)
+    props.component === 'podium' 
+      ? setEventName(currentEventName) 
+      : setEventName('')
   }, [currentEventName])
   
   const handleChange = (event) => {
