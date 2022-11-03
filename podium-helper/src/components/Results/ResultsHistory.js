@@ -10,7 +10,7 @@ function ResultsHistory() {
   const { resultHistory } = useEntries()
   const [searchValue, setSearchValue] = useState('');
   const [event, setEvent] = useState('');
-  const [filteredResults, setFilteredResults] = useState(resultHistory)
+  const [filteredResults, setFilteredResults] = useState([])
 
   const getValue = (name, value) => setEvent(value)
   
@@ -19,7 +19,7 @@ function ResultsHistory() {
       const filtered = resultHistory.filter((result) => {
         if (event === result.event) return result
       })
-      setFilteredResults(filtered)
+      return filtered;
     }
   }
   useEffect(() => {
