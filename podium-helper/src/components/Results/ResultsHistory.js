@@ -1,5 +1,5 @@
-import {useState} from 'react';
-import {Typography, TextField} from '@mui/material'
+import { useState, useEffect } from 'react';
+import { Typography, TextField } from '@mui/material'
 import ResultTableHeader from './ResultTableHeader';
 import useEntries from '../../functions/useEntries.js';
 import SearchAllResults from './SearchAllResults';
@@ -10,21 +10,25 @@ function ResultsHistory() {
   const { resultHistory } = useEntries()
   const [searchValue, setSearchValue] = useState('');
   const [event, setEvent] = useState('');
-  const [filteredResults, setFilteredResults] = useState([])
+  const [filteredResults, setFilteredResults] = useState(resultHistory)
 
   const getValue = (name, value) => setEvent(value)
-  console.log('result', resultHistory)
   
   const filterByEvent = () => {
     if (event) {
-      resultHistory.filter((result) => {
+      const filtered = resultHistory.filter((result) => {
         if (event === result.event) return result
       })
+      setFilteredResults(filtered)
     }
   }
+  useEffect(() => {
+    event ? setFilteredResults(filterByEvent()) 
+          : setFilteredResults(resultHistory)
+  }, [event, resultHistory])
 
 
-  const allResults = SearchAllResults(resultHistory, searchValue).map((result, index) => (
+  const allResults = SearchAllResults(filteredResults, searchValue).map((result, index) => (
     <ResultTableHeader results={result} key={index} />
   ));
 
