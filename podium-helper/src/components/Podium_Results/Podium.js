@@ -78,7 +78,7 @@ function Podium() {
     <div className="race-results-container">
       <div className="results-details">
         <DatePicker getValue={getValue} today={getToday()} />
-        <EventSearch getValue={getValue} />
+        <EventSearch getValue={getValue} component="podium" />
         <Series getValue={getValue} />
       </div>
       <div className="podium_results_container">
