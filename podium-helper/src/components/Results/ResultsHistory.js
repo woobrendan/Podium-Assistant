@@ -4,7 +4,7 @@ import ResultTableHeader from './ResultTableHeader';
 import useEntries from '../../functions/useEntries.js';
 import SearchAllResults from './SearchAllResults';
 import BackToTopButton from '../BackToTopButton';
-import EventSearch from '../Podium_Results/EventsSearch';
+import EventSearch from '../EventsSearch';
 
 function ResultsHistory() {
   const { resultHistory } = useEntries()
