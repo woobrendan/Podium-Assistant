@@ -3,15 +3,23 @@ import {compareDate} from '../../functions/helperFunc'
 export default function SearchAllResults(list, searchValue) {
 
   const filtered = list.filter(val => {
+    console.log('val', val)
+    const result1 = result1
+    const result2 = result2
+    const result3 = result3
+    const result4 = result4
 
     const allPlaceResults = () => {
-      const all = [val.result1.firstPlace, val.result1.secondPlace, val.result1.thirdPlace];
+      const all = [result1.firstPlace, result1.secondPlace, result1.thirdPlace];
 
-      if (val.result2) {
-        all.push(val.result2.firstPlace, val.result2.secondPlace, val.result2.thirdPlace);
+      if (result2) {
+        all.push(result2.firstPlace, result2.secondPlace, result2.thirdPlace);
       }
-      if (val.result3) {
-        all.push(val.result3.firstPlace, val.result3.secondPlace, val.result3.thirdPlace);
+      if (result3) {
+        all.push(result3.firstPlace, result3.secondPlace, result3.thirdPlace);
+      }
+      if (result4) {
+        all.push(result4.firstPlace, result4.secondPlace, result4.thirdPlace);
       }
       return all;
     }
@@ -22,6 +30,7 @@ export default function SearchAllResults(list, searchValue) {
       for (const result of allPlaceResults()) {
         if (result) driverArray.push(result.driver1)
         if (result && result.driver2) driverArray.push(result.driver2)
+        if (result && result.driver3) driverArray.push(result.driver3)
       }
       return driverArray;
     }
@@ -36,8 +45,8 @@ export default function SearchAllResults(list, searchValue) {
 
     
     if (!searchValue) return val;
-    if (val.result1.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
-    if (val.result1.event.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    if (result1.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    if (result1.event.toLowerCase().includes(searchValue.toLowerCase())) return val;
 
     for (const driver of allDrivers()) {
       if (driver.toLowerCase().includes(searchValue.toLowerCase())) return val
