@@ -10,8 +10,18 @@ function ResultsHistory() {
   const { resultHistory } = useEntries()
   const [searchValue, setSearchValue] = useState('');
   const [event, setEvent] = useState('');
+  const [filteredResults, setFilteredResults] = useState([])
 
   const getValue = (name, value) => setEvent(value)
+  console.log('result', resultHistory)
+  
+  const filterByEvent = () => {
+    if (event) {
+      resultHistory.filter((result) => {
+        if (event === result.event) return result
+      })
+    }
+  }
 
 
   const allResults = SearchAllResults(resultHistory, searchValue).map((result, index) => (
