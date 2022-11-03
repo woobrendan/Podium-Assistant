@@ -37,14 +37,16 @@ function ResultsHistory() {
       <Typography gutterBottom variant="h3" component="div">
         Result History
       </Typography>
-      <EventSearch getValue={getValue}/>
-      <TextField 
-        label='Search' 
-        variant="outlined" 
-        color="error"
-        value={searchValue}
-        onChange={e => {setSearchValue(e.target.value)}}
-      />
+      <div className="filter-details" >
+        <EventSearch getValue={getValue}/>
+        <TextField 
+          label='Search' 
+          variant="outlined" 
+          color="error"
+          value={searchValue}
+          onChange={e => {setSearchValue(e.target.value)}}
+        />
+      </div>
       <div className="result-history-list">
         {allResults}
       </div>
