@@ -3,11 +3,11 @@ import {compareDate} from '../../functions/helperFunc'
 export default function SearchAllResults(list, searchValue) {
 
   const filtered = list.filter(val => {
-    console.log('val', val)
-    const result1 = result1
-    const result2 = result2
-    const result3 = result3
-    const result4 = result4
+    
+    const result1 = val.result1
+    const result2 = val.result2
+    const result3 = val.result3
+    const result4 = val.result4
 
     const allPlaceResults = () => {
       const all = [result1.firstPlace, result1.secondPlace, result1.thirdPlace];
@@ -45,8 +45,8 @@ export default function SearchAllResults(list, searchValue) {
 
     
     if (!searchValue) return val;
-    if (result1.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
-    if (result1.event.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    if (val.series.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    if (val.event.toLowerCase().includes(searchValue.toLowerCase())) return val;
 
     for (const driver of allDrivers()) {
       if (driver.toLowerCase().includes(searchValue.toLowerCase())) return val
@@ -56,7 +56,7 @@ export default function SearchAllResults(list, searchValue) {
       if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) return val;
     }
 
-    for (const team of categoryArray('team')) {
+    for (const team of categoryArray('team')) {     
       if (team.toLowerCase().includes(searchValue.toLowerCase())) return val;
     }
 
