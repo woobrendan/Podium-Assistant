@@ -9,11 +9,7 @@ function BackToTopButton() {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        setBackToTopButton(true)
-      } else {
-        setBackToTopButton(false)
-      }
+      window.scrollY > 100 ? setBackToTopButton(true) : setBackToTopButton(false)
     })
   }, [])
 
@@ -26,9 +22,9 @@ function BackToTopButton() {
   return (
     <div className="backToTopButton">
       {backToTopButton &&
-      <IconButton onClick={scrollUp} id="To-Top-Button">
-        <ArrowCircleUpTwoToneIcon  />
-      </IconButton>
+        <IconButton onClick={scrollUp} id="To-Top-Button">
+          <ArrowCircleUpTwoToneIcon  />
+        </IconButton>
       }
     </div>
   )
