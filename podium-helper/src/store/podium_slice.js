@@ -6,6 +6,9 @@ const podiumSlice = createSlice({
     podiumsArray: [],
   },
   reducers: {
+    setResultHistory(state, action) {
+      state.podiumsArray = action.payload;
+    },
     addPodium(state, action) {},
     editPodium(state, action) {},
   },
