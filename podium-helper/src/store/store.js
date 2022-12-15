@@ -4,8 +4,8 @@ import podiumSlice from "./podium_slice";
 
 const store = configureStore({
   reducer: {
-    entry: entrySlice,
-    podium: podiumSlice,
+    entry: entrySlice.reducer,
+    podium: podiumSlice.reducer,
   },
 });
 
