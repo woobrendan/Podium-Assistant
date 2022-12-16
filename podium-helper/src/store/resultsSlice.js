@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { addResultToDB } from "./resultsActions";
 
 const resultsSlice = createSlice({
   name: "results",
@@ -9,11 +10,12 @@ const resultsSlice = createSlice({
     setResultHistory(state, action) {
       state.resultsArray = action.payload;
     },
-    addresults(state, action) {
+    addResults(state, action) {
       const result = action.payload;
       state.resultsArray.push({
         ...result,
       });
+      addResultToDB(result);
     },
     editresults(state, action) {},
   },
