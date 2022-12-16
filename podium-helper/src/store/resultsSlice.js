@@ -9,7 +9,12 @@ const resultsSlice = createSlice({
     setResultHistory(state, action) {
       state.resultsArray = action.payload;
     },
-    addresults(state, action) {},
+    addresults(state, action) {
+      const result = action.payload;
+      state.resultsArray.push({
+        ...result,
+      });
+    },
     editresults(state, action) {},
   },
 });
