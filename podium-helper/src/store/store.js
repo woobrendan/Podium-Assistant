@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import entrySlice from "./entry_slice";
-import podiumSlice from "./podium_slice";
+import resultsSlice from "./resultsSlice";
 
 const store = configureStore({
   reducer: {
     entry: entrySlice.reducer,
-    podium: podiumSlice.reducer,
+    results: resultsSlice.reducer,
   },
 });
 
