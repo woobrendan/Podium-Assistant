@@ -16,3 +16,20 @@ export const fetchData = () => {
     }
   };
 };
+
+export const addResultToDB = (result) => {
+  return async (dispatch) => {
+    const sendResults = async () => {
+      const res = await fetch("http://localhost:2020/api/results/new", {
+        method: "PUT",
+        body: JSON.stringify(result),
+      });
+    };
+
+    try {
+      await sendResults();
+    } catch {
+      console.err(err);
+    }
+  };
+};
