@@ -24,11 +24,11 @@ export const addResultToDB = (result) => {
         method: "PUT",
         body: JSON.stringify(result),
       });
+      const data = await res.json();
     };
-
     try {
       await sendResults();
-    } catch {
+    } catch (err) {
       console.err(err);
     }
   };
