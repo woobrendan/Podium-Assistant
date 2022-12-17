@@ -1,41 +1,28 @@
 import ResultTableHeader from "./ResultTableHeader";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { printPage } from "../../functions/helperFunc";
-import axios from "axios";
 import { Button } from "@mui/material";
-import '../../Styling/result.scss'
+import "../../Styling/result.scss";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchData } from "../../store/resultsActions";
 
 function RecentPodium() {
+  const dispatch = useDispatch();
+  const results = useSelector((state) => state.results.resultsArray);
+  const recent = results[results.length - 1];
 
-  const [recentResult, setRecentResult] = useState({})
-  
   useEffect(() => {
-    getAndSet()
-  }, [])
-
-  const getAndSet = async () => {
-    try {
-      const result = await axios.get('http://localhost:2020/api/results/recent')
-      setRecentResult({...result.data})
-    } catch (err) {
-      console.error(err)
-    }
-  }
-
+    dispatch(fetchData());
+  }, [dispatch]);
 
   return (
     <div className="recent-podium-container">
-      <Button 
-        onClick={() => printPage()}
-        variant="contained" 
-        color="success"
-      >
+      <Button onClick={() => printPage()} variant="contained" color="success">
         Print Page
       </Button>
-      {recentResult.result1 
-        && <ResultTableHeader results={recentResult}/>}
+      {recent && <ResultTableHeader results={recent} />}
     </div>
-  )
+  );
 }
 
-export default RecentPodium
+export default RecentPodium;
