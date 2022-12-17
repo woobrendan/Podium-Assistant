@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import "../../Styling/podium.scss";
 import FastLap from "./FastLap";
 import Series from "./Series";
-import axios from "axios";
+// import axios from "axios";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
 import useEntries from "../../functions/useEntries";
@@ -44,6 +44,7 @@ function Podium() {
     //   console.error(err);
     // }
     dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
+    navigate("/recent");
   };
 
   //sent to WinnerPodium as onclick to get podium result X and set to results
