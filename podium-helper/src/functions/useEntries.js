@@ -1,27 +1,21 @@
 import { useState, useEffect } from "react";
-import { compareCarNumber, getToday } from "./helperFunc";
+import { compareCarNumber } from "./helperFunc";
 import axios from "axios";
 
 export default function useEntries() {
   const [drivers, setDrivers] = useState([]);
   const [vehicles, setVehicles] = useState([]);
-  const [resultHistory, setResultHistory] = useState([]);
-  const [events, setEvents] = useState([]);
   const [series, setSeries] = useState([]);
-  const [currentEventName, setCurrentEventName] = useState("");
 
   useEffect(() => {
-    const promise2 = axios.get(`http://localhost:8080/api/drivers`);
-    const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
-    const promise5 = axios.get("http://localhost:2020/api/events");
-    const promise6 = axios.get("http://localhost:2020/api/series");
-    Promise.all([promise2, promise3, promise5, promise6])
+    const promise1 = axios.get(`http://localhost:8080/api/drivers`);
+    const promise2 = axios.get(`http://localhost:8080/api/vehicles`);
+    const promise3 = axios.get("http://localhost:2020/api/series");
+    Promise.all([promise1, promise2, promise3])
       .then((all) => {
         setDrivers(all[0].data);
         setVehicles(all[1].data);
-        setEvents(all[2].data);
-        setSeries(all[3].data);
-        eventByDate(all[2].data);
+        setSeries(all[2].data);
       })
       .catch((err) => console.log("Error from Promise:", err));
   }, []);
@@ -45,24 +39,9 @@ export default function useEntries() {
     return vehicle;
   });
 
-  const eventByDate = (events) => {
-    const month = Number(getToday().split("-")[0]);
-    if (month <= 2) setCurrentEventName(events[0].name);
-    else if (month <= 4 && month > 2) setCurrentEventName(events[1].name);
-    else if (month === 5) setCurrentEventName(events[2].name);
-    else if (month === 6) setCurrentEventName(events[3].name);
-    else if (month === 7) setCurrentEventName(events[4].name);
-    else if (month === 8) setCurrentEventName(events[6].name);
-    else if (month === 9) setCurrentEventName(events[7].name);
-    else return setCurrentEventName(events[8].name);
-  };
-
   return {
     drivers,
     vehicles: vehicles.sort(compareCarNumber),
-    resultHistory,
-    events,
     series,
-    currentEventName,
   };
 }
