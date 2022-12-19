@@ -1,4 +1,5 @@
 import { resultsActions } from "./resultsSlice";
+import axios from "axios";
 
 export const fetchData = () => {
   return async (dispatch) => {
@@ -17,19 +18,16 @@ export const fetchData = () => {
   };
 };
 
-export const addResultToDB = (result) => {
-  return async (dispatch) => {
-    const sendResults = async () => {
-      const res = await fetch("http://localhost:2020/api/results/new", {
-        method: "PUT",
-        body: JSON.stringify(result),
-      });
-      const data = await res.json();
-    };
-    try {
-      await sendResults();
-    } catch (err) {
-      console.err(err);
-    }
+export const addResultToDB = async (result) => {
+  const sendResults = async () => {
+    const res = await axios.post("http://localhost:2020/api/results/new", {
+      results: result,
+    });
+    const data = await res.json();
   };
+  try {
+    await sendResults();
+  } catch (err) {
+    console.log("Error:", err);
+  }
 };
