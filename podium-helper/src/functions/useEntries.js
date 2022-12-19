@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { compareCarNumber, getToday } from './helperFunc';
+import { compareCarNumber, getToday } from "./helperFunc";
 import axios from "axios";
 
 export default function useEntries() {
@@ -8,25 +8,23 @@ export default function useEntries() {
   const [resultHistory, setResultHistory] = useState([]);
   const [events, setEvents] = useState([]);
   const [series, setSeries] = useState([]);
-  const [currentEventName, setCurrentEventName] = useState('')
+  const [currentEventName, setCurrentEventName] = useState("");
 
   useEffect(() => {
-    const promise1 = axios.get(`http://localhost:2020/api/results`);
     const promise2 = axios.get(`http://localhost:8080/api/drivers`);
     const promise3 = axios.get(`http://localhost:8080/api/vehicles`);
-    const promise5 = axios.get('http://localhost:2020/api/events');
-    const promise6 = axios.get('http://localhost:2020/api/series');
-    Promise.all([promise1, promise2, promise3, promise5, promise6])
+    const promise5 = axios.get("http://localhost:2020/api/events");
+    const promise6 = axios.get("http://localhost:2020/api/series");
+    Promise.all([promise2, promise3, promise5, promise6])
       .then((all) => {
-        setResultHistory(all[0].data);
-        setDrivers(all[1].data);
-        setVehicles(all[2].data);
-        setEvents(all[3].data);
-        setSeries(all[4].data);
-        eventByDate(all[3].data)
+        setDrivers(all[0].data);
+        setVehicles(all[1].data);
+        setEvents(all[2].data);
+        setSeries(all[3].data);
+        eventByDate(all[2].data);
       })
       .catch((err) => console.log("Error from Promise:", err));
-  }, [])
+  }, []);
 
   vehicles.map((vehicle) => {
     for (const driver of drivers) {
@@ -35,7 +33,11 @@ export default function useEntries() {
           vehicle.driver1 = driver;
         } else if (!vehicle.driver2 && driver.id !== vehicle.driver1.id) {
           vehicle.driver2 = driver;
-        } else if (!vehicle.driver3 && driver.id !== vehicle.driver1.id && driver.id !== vehicle.driver2.id ) {
+        } else if (
+          !vehicle.driver3 &&
+          driver.id !== vehicle.driver1.id &&
+          driver.id !== vehicle.driver2.id
+        ) {
           vehicle.driver3 = driver;
         }
       }
@@ -44,16 +46,16 @@ export default function useEntries() {
   });
 
   const eventByDate = (events) => {
-    const month = Number(getToday().split('-')[0])
-    if (month <= 2 ) setCurrentEventName(events[0].name)
-    else if (month <= 4 && month > 2) setCurrentEventName(events[1].name)
-    else if (month === 5) setCurrentEventName(events[2].name)
-    else if (month === 6) setCurrentEventName(events[3].name)
-    else if (month === 7) setCurrentEventName(events[4].name)
-    else if (month === 8) setCurrentEventName(events[6].name)
-    else if (month === 9) setCurrentEventName(events[7].name)
-    else return setCurrentEventName(events[8].name)
-  }
+    const month = Number(getToday().split("-")[0]);
+    if (month <= 2) setCurrentEventName(events[0].name);
+    else if (month <= 4 && month > 2) setCurrentEventName(events[1].name);
+    else if (month === 5) setCurrentEventName(events[2].name);
+    else if (month === 6) setCurrentEventName(events[3].name);
+    else if (month === 7) setCurrentEventName(events[4].name);
+    else if (month === 8) setCurrentEventName(events[6].name);
+    else if (month === 9) setCurrentEventName(events[7].name);
+    else return setCurrentEventName(events[8].name);
+  };
 
   return {
     drivers,
@@ -61,6 +63,6 @@ export default function useEntries() {
     resultHistory,
     events,
     series,
-    currentEventName
-  }
+    currentEventName,
+  };
 }
