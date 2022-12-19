@@ -1,4 +1,5 @@
 import axios from "axios";
+import { entryActions } from "./entry_slice";
 
 export const fetchEntry = () => {
   return async (dispatch) => {
