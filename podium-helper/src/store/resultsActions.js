@@ -19,14 +19,10 @@ export const fetchData = () => {
 };
 
 export const addResultToDB = async (result) => {
-  const sendResults = async () => {
-    const res = await axios.post("http://localhost:2020/api/results/new", {
+  try {
+    await axios.post("http://localhost:2020/api/results/new", {
       results: result,
     });
-    const data = await res.json();
-  };
-  try {
-    await sendResults();
   } catch (err) {
     console.log("Error:", err);
   }
