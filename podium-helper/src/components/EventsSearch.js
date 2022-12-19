@@ -1,39 +1,37 @@
-import { useState, useEffect } from 'react';
-import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
-import useEntries from '../functions/useEntries';
+import { useState, useEffect } from "react";
+import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
+import useEntries from "../functions/useEntries";
 
-
-
-function EventSearch(props) {
+function EventSearch({ component, getValue }) {
   const { events, currentEventName } = useEntries();
-  const [eventName, setEventName] = useState('');
+  const [eventName, setEventName] = useState("");
 
   useEffect(() => {
-    props.component === 'podium' 
-      ? setEventName(currentEventName) 
-      : setEventName('')
-  }, [currentEventName])
-  
+    component === "podium" ? setEventName(currentEventName) : setEventName("");
+  }, [currentEventName]);
+
   const handleChange = (event) => {
     setEventName(event.target.value);
-    props.getValue(event.target.name, event.target.value)
+    getValue(event.target.name, event.target.value);
   };
 
-  const mappedEvents = events.map((event, index) => <MenuItem key={index} value={event.name}>{event.name}</MenuItem>)
+  const mappedEvents = events.map((event, index) => (
+    <MenuItem key={index} value={event.name}>
+      {event.name}
+    </MenuItem>
+  ));
 
   return (
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 1, width: '25ch' },
+        "& .MuiTextField-root": { m: 1, width: "25ch" },
       }}
       noValidate
       autoComplete="off"
     >
       <FormControl sx={{ minWidth: 300 }}>
-        <InputLabel htmlFor="Series">
-          Events
-        </InputLabel>
+        <InputLabel htmlFor="Series">Events</InputLabel>
         <Select
           className="form-control"
           name="event"
@@ -45,7 +43,7 @@ function EventSearch(props) {
         </Select>
       </FormControl>
     </Box>
-  )
+  );
 }
 
-export default EventSearch
+export default EventSearch;
