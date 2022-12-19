@@ -3,7 +3,6 @@ import { Button } from "@mui/material";
 import "../../Styling/podium.scss";
 import FastLap from "./FastLap";
 import Series from "./Series";
-// import axios from "axios";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
 import useEntries from "../../functions/useEntries";
@@ -34,15 +33,6 @@ function Podium() {
   }, [currentEventName]);
 
   const handleFinalSubmit = () => {
-    // console.log("mongResult", mongoResult(results, results.fastLap));
-    // try {
-    //   await axios.post(`http://localhost:2020/api/results/new`, {
-    //     results: mongoResult(results, results.fastLap),
-    //   });
-    //   navigate("/recent");
-    // } catch (err) {
-    //   console.error(err);
-    // }
     dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
     navigate("/recent");
   };
