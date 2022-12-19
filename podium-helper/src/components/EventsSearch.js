@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
-import useEntries from "../functions/useEntries";
+import useEvents from "../functions/useEvents";
 
 function EventSearch({ component, getValue }) {
-  const { events, currentEventName } = useEntries();
+  const { events, currentEventName } = useEvents();
   const [eventName, setEventName] = useState("");
 
   useEffect(() => {
