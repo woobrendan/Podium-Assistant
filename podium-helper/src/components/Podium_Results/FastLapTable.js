@@ -1,41 +1,47 @@
-import {TableBody, TableCell, TableHead, TableRow} from '@mui/material'
-import '../../Styling/result.scss';
+import { TableBody, TableCell, TableHead, TableRow } from "@mui/material";
+import "../../Styling/result.scss";
 
 function createFastLap(driver, lapTime) {
   return { driver, lapTime };
 }
 
-function FastLapTable(props) {
-  const fastLap = props.fastLap;
-  const rows = [createFastLap(fastLap.driver, fastLap.laptime)]
-      
+function FastLapTable({ fastLap }) {
+  const rows = [createFastLap(fastLap.driver, fastLap.laptime)];
+
   return (
     <>
       <TableHead>
         <TableRow>
-          <TableCell colSpan={7} align='center'>CrowdStrike Fast Lap</TableCell>
+          <TableCell colSpan={7} align="center">
+            CrowdStrike Fast Lap
+          </TableCell>
         </TableRow>
       </TableHead>
       <TableHead>
         <TableRow>
           <TableCell colSpan={3}>Driver</TableCell>
-          <TableCell align="right" colSpan={4}>Lap Time</TableCell>
+          <TableCell align="right" colSpan={4}>
+            Lap Time
+          </TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
         {rows.map((row) => (
           <TableRow
             key={row.driver}
-            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+            sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
           >
-            <TableCell component="th" scope="row" colSpan={3}>{row.driver}</TableCell>
-            <TableCell align="right" colSpan={4}>{row.lapTime}</TableCell>
+            <TableCell component="th" scope="row" colSpan={3}>
+              {row.driver}
+            </TableCell>
+            <TableCell align="right" colSpan={4}>
+              {row.lapTime}
+            </TableCell>
           </TableRow>
         ))}
       </TableBody>
     </>
-  )
+  );
 }
 
 export default FastLapTable;
-
