@@ -89,8 +89,8 @@ function DriverDetails({ entry }) {
             <br></br>
             <img
               className="class-banner-img"
-              src={getClassBannerImg(entry.class, series)}
-              alt={entry.class}
+              src={getClassBannerImg(entry.classification, series)}
+              alt={entry.classification}
             />
             <div className={`car-number-${entry.number.length}`}>
               #{entry.number}
@@ -103,7 +103,7 @@ function DriverDetails({ entry }) {
               <Elevation
                 series={series}
                 car={entry.vehicle}
-                class={entry.class}
+                class={entry.classification}
               />
               <DriverTable drivers={entry} />
             </div>
