@@ -9,16 +9,24 @@ import {
   Box,
   MenuItem,
 } from "@mui/material";
-import { useState } from "react";
-import useEntries from "../../functions/useEntries";
+import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchEntry } from "../../store/entryActions";
 
 function FastLap({ series, getValue }) {
-  const { vehicles } = useEntries();
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchEntry());
+  }, [dispatch]);
+
+  const entries = useSelector((state) => state.entry.entriesArray);
 
   const [fastTime, setFastTime] = useState({
     driver: "",
     laptime: "",
   });
+
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (event) => {
@@ -63,7 +71,7 @@ function FastLap({ series, getValue }) {
     return drivers;
   };
 
-  const mapSingleDrivers = singleDrivers(vehicles).map((option, index) => {
+  const mapSingleDrivers = singleDrivers(entries).map((option, index) => {
     return (
       <MenuItem key={index} value={option.driver}>
         #{option.number} - {option.driver}{" "}
@@ -117,21 +125,13 @@ function FastLap({ series, getValue }) {
               onChange={handleChange}
             />
           </Box>
-          {/* <Button 
-            variant="outlined" 
-            color="error" 
-            onClick={() => props.onClick(fastTime)}
-          >
-            Submit
-          </Button> */}
-          {!isSubmitted && (
-            <Button variant="contained" color="error" onClick={handleClick}>
-              Submit
-            </Button>
-          )}
-          {isSubmitted && (
+          {isSubmitted ? (
             <Button variant="contained" color="success" onClick={handleClick}>
               Update
+            </Button>
+          ) : (
+            <Button variant="contained" color="error" onClick={handleClick}>
+              Submit
             </Button>
           )}
         </Card>
