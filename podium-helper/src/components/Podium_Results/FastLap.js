@@ -1,62 +1,75 @@
-import { FormControl, InputLabel, Select, TextField, Button, Typography, Card, Box, MenuItem } from '@mui/material';
-import {useState} from 'react';
-import useEntries from '../../functions/useEntries';
+import {
+  FormControl,
+  InputLabel,
+  Select,
+  TextField,
+  Button,
+  Typography,
+  Card,
+  Box,
+  MenuItem,
+} from "@mui/material";
+import { useState } from "react";
+import useEntries from "../../functions/useEntries";
 
-
-function FastLap(props) {
-
-  const {vehicles} = useEntries();
+function FastLap({ series, getValue }) {
+  const { vehicles } = useEntries();
 
   const [fastTime, setFastTime] = useState({
-    driver: '',
-    laptime: ''
+    driver: "",
+    laptime: "",
   });
-  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (event) => {
     setFastTime((prev) => ({
       ...prev,
-      [event.target.name]: event.target.value
-    }))
-  }
+      [event.target.name]: event.target.value,
+    }));
+  };
 
   const handleClick = () => {
-    props.getValue("fastLap", fastTime)
-    setIsSubmitted(true)
-  }
+    getValue("fastLap", fastTime);
+    setIsSubmitted(true);
+  };
 
   //take in entry object and get every single driver into list
   const singleDrivers = (entryArray) => {
     const drivers = [];
-    const seriesFilteredDrivers = entryArray.filter(entry => entry.series === props.series.name)
+    const seriesFilteredDrivers = entryArray.filter(
+      (entry) => entry.series === series.name,
+    );
     for (const entry of seriesFilteredDrivers) {
       drivers.push({
-        number: entry.number, 
+        number: entry.number,
         driver: entry.driver1.name,
-        vehicle: entry.vehicle
+        vehicle: entry.vehicle,
       });
       if (entry.driver2) {
         drivers.push({
-          number: entry.number, 
+          number: entry.number,
           driver: entry.driver2.name,
-          vehicle: entry.vehicle
+          vehicle: entry.vehicle,
         });
       }
       if (entry.driver3) {
         drivers.push({
-          number: entry.number, 
+          number: entry.number,
           driver: entry.driver3.name,
-          vehicle: entry.vehicle
+          vehicle: entry.vehicle,
         });
       }
     }
     return drivers;
-  }
+  };
 
-  const mapSingleDrivers = singleDrivers(vehicles)
-    .map((option, index) => 
-    {return <MenuItem key={index} value={option.driver}>#{option.number} - {option.driver} </MenuItem>}
-    )
+  const mapSingleDrivers = singleDrivers(vehicles).map((option, index) => {
+    return (
+      <MenuItem key={index} value={option.driver}>
+        #{option.number} - {option.driver}{" "}
+      </MenuItem>
+    );
+  });
 
   return (
     <div className="results-container">
@@ -68,7 +81,7 @@ function FastLap(props) {
           <Box
             component="form"
             sx={{
-              '& .MuiTextField-root': { m: 1, width: '25ch' },
+              "& .MuiTextField-root": { m: 1, width: "25ch" },
             }}
             noValidate
             autoComplete="off"
@@ -80,7 +93,7 @@ function FastLap(props) {
               <Select
                 className="form-control"
                 name="driver"
-                label='Driver'
+                label="Driver"
                 value={fastTime.driver}
                 onChange={handleChange}
               >
@@ -91,7 +104,7 @@ function FastLap(props) {
           <Box
             component="form"
             sx={{
-              '& .MuiTextField-root': { m: 1, width: '25ch' },
+              "& .MuiTextField-root": { m: 1, width: "25ch" },
             }}
             noValidate
             autoComplete="off"
@@ -111,12 +124,20 @@ function FastLap(props) {
           >
             Submit
           </Button> */}
-          {!isSubmitted && <Button variant="contained" color="error" onClick={handleClick}>Submit</Button>}
-          {isSubmitted && <Button variant="contained" color="success" onClick={handleClick}>Update</Button>}
+          {!isSubmitted && (
+            <Button variant="contained" color="error" onClick={handleClick}>
+              Submit
+            </Button>
+          )}
+          {isSubmitted && (
+            <Button variant="contained" color="success" onClick={handleClick}>
+              Update
+            </Button>
+          )}
         </Card>
       </div>
     </div>
-  )
+  );
 }
 
-export default FastLap
+export default FastLap;
