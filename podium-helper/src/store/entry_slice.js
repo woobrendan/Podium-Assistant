@@ -2,16 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const entrySlice = createSlice({
   name: "entries",
-  initialState: { entries: [] },
+  initialState: { entriesArray: [] },
   reducers: {
     setEntries(state, action) {
-      state.entries = action.payload;
+      state.entriesArray = action.payload;
     },
     addEntry(state, action) {},
     removeEntry(state, action) {},
   },
 });
 
-export const entryActions = entrySlice;
+export const entryActions = entrySlice.actions;
 
 export default entrySlice;
