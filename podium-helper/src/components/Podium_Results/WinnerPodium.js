@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   FormControl,
   InputLabel,
@@ -10,16 +10,24 @@ import {
   Box,
 } from "@mui/material";
 import "../../Styling/winnerTop3.scss";
-import useEntries from "../../functions/useEntries";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchEntry } from "../../store/entryActions";
 
 function WinnerPodium(props) {
-  const { vehicles } = useEntries();
   const [winners, setWinners] = useState({
     class: props.classification,
     firstPlace: "",
     secondPlace: "",
     thirdPlace: "",
   });
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchEntry());
+  }, [dispatch]);
+
+  const entries = useSelector((state) => state.entry.entriesArray);
 
   const [isError, setIsError] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -65,10 +73,11 @@ function WinnerPodium(props) {
       );
     }
   };
-  const mappedDrivers = vehicles
+  const mappedDrivers = entries
     .filter(
       (entry) =>
-        entry.series === props.seriesName && entry.class === winners.class,
+        entry.series === props.seriesName &&
+        entry.classification === winners.class,
     )
     .map((entry) => numOfDriverMenuItem(entry));
 
