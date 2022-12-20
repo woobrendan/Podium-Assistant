@@ -83,8 +83,8 @@ function DriverDetails({ entry }) {
             <CardMedia
               component="img"
               height="180"
-              image={entry.image}
-              alt={entry.car}
+              image={entry.carImage}
+              alt={entry.vehicle}
             />
             <br></br>
             <img
