@@ -73,6 +73,8 @@ function WinnerPodium(props) {
       );
     }
   };
+
+  //Loop through all entries and return entries that match the selected classification
   const mappedDrivers = entries
     .filter(
       (entry) =>
