@@ -95,9 +95,7 @@ function FastLap({ series, getValue }) {
             autoComplete="off"
           >
             <FormControl sx={{ minWidth: 250 }}>
-              <InputLabel htmlFor="exampleFormControlSelect2">
-                Driver
-              </InputLabel>
+              <InputLabel>Driver</InputLabel>
               <Select
                 className="form-control"
                 name="driver"
