@@ -3,7 +3,6 @@ import "../../Styling/competitors.scss";
 import { TextField } from "@mui/material";
 import { useState, useEffect } from "react";
 import BackToTopButton from "../BackToTopButton";
-import useEntries from "../../functions/useEntries";
 import ToggleSort from "./toggleSort";
 import searchAllEntries from "./searchAllEntries";
 import { fetchEntry } from "../../store/entryActions";
@@ -19,19 +18,17 @@ import { useDispatch, useSelector } from "react-redux";
 function DriverSearch() {
   const [searchValue, setSearchValue] = useState("");
   const [option, setOption] = useState("");
-  const { vehicles } = useEntries();
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchEntry());
   }, [dispatch]);
 
-  const entries = useSelector((state) => state.entry.entries);
-  console.log("entries", entries);
+  const entries = useSelector((state) => state.entry.entriesArray);
 
   const getSortOption = (option) => setOption(option);
 
-  const searchResult = searchAllEntries(vehicles, searchValue);
+  const searchResult = searchAllEntries(entries, searchValue);
 
   const setSortOption = (sortOption, entryArray) => {
     switch (sortOption) {
