@@ -3,7 +3,7 @@ import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import useEntries from "../../functions/useEntries";
 import axios from "axios";
 
-function Series(props) {
+function Series({ getValue }) {
   const [seriesName, setSeriesName] = useState("");
   // const { series } = useEntries();
   const [series, setSeries] = useState([]);
@@ -26,7 +26,7 @@ function Series(props) {
 
   const handleChange = (event) => {
     setSeriesName(event.target.value);
-    props.getValue(event.target.name, event.target.value);
+    getValue(event.target.name, event.target.value);
   };
 
   const mappedSeries = series.map((serie, index) => (
