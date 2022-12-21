@@ -1,11 +1,9 @@
 import { useState, useEffect } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
-import useEntries from "../../functions/useEntries";
 import axios from "axios";
 
 function Series({ getValue }) {
   const [seriesName, setSeriesName] = useState("");
-  // const { series } = useEntries();
   const [series, setSeries] = useState([]);
 
   useEffect(() => {
