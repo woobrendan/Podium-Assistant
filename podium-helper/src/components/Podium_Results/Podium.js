@@ -5,7 +5,7 @@ import FastLap from "./FastLap";
 import Series from "./Series";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
-import useEntries from "../../functions/useEntries";
+import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/helperFunc";
 import mongoResult from "../../functions/formMongoResult";
 import WinnerPodium from "./WinnerPodium";
@@ -14,7 +14,7 @@ import { useDispatch } from "react-redux";
 import { resultsActions } from "../../store/resultsSlice";
 
 function Podium() {
-  const { currentEventName } = useEntries();
+  const { currentEventName } = useEvents();
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
