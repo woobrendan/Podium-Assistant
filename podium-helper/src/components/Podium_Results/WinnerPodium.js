@@ -53,6 +53,7 @@ const WinnerPodium = ({
       (entry) =>
         entry.series === seriesName && entry.classification === winners.class,
     )
+    .sort((a, b) => a.number - b.number)
     .map((entry) => numOfDriverMenuItem(entry));
 
   return (
