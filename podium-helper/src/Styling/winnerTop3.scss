@@ -8,8 +8,25 @@
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    span {
+      color: red;
+    }
+
+    .MuiButton-root {
+      max-width: 200px;
+      align-self: center;
+      margin-top: 10px;
+    }
   }
-  
+
   .series-container {
     margin-top: 20px;
   }
@@ -33,5 +50,4 @@
       flex-direction: column;
     }
   }
-
 }
