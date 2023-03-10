@@ -3,14 +3,9 @@ import { entryActions } from "./entry_slice";
 
 export const fetchEntry = () => {
   return async (dispatch) => {
-    const fetchHandler = async () => {
-      const entries = await axios.get("http://localhost:2020/api/entries");
-      return entries.data;
-    };
-
     try {
-      const entries = await fetchHandler();
-      dispatch(entryActions.setEntries(entries));
+      const entries = await axios.get("http://localhost:2020/api/entries");
+      dispatch(entryActions.setEntries(entries.data));
     } catch (err) {
       console.error(err);
     }
