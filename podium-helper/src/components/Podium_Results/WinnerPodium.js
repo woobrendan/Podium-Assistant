@@ -96,16 +96,13 @@ const WinnerPodium = ({
           </div>
         </div>
         {isError && <span>Must be a First Place Finisher</span>}
-
-        {isSubmitted ? (
-          <Button variant="contained" color="success" onClick={handleSubmit}>
-            Update
-          </Button>
-        ) : (
-          <Button variant="contained" color="error" onClick={handleSubmit}>
-            Submit
-          </Button>
-        )}
+        <Button
+          variant="contained"
+          color={isSubmitted ? "success" : "error"}
+          onClick={handleSubmit}
+        >
+          {isSubmitted ? "Update" : "Submit"}
+        </Button>
       </Card>
     </div>
   );
