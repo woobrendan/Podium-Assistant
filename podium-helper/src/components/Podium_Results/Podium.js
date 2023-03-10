@@ -55,10 +55,9 @@ function Podium() {
 
   //dynamically render appropriate amount of WinnerPodium components based on need per series class requirements
   const numOfPodiumDisplays = (series) => {
-    const classifications = series.class;
-    const mappedSeries = classifications.map((classification, index) => (
+    const mappedSeries = series.class.map((classification, index) => (
       <WinnerPodium
-        key={index}
+        key={classification}
         seriesName={series.name}
         onClick={handleRacePodiumSubmit}
         results={results}
