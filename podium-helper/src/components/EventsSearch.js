@@ -15,31 +15,22 @@ function EventSearch({ component, getValue }) {
     getValue(event.target.name, event.target.value);
   };
 
-  const mappedEvents = events.map((event, index) => (
-    <MenuItem key={index} value={event.name}>
-      {event.name}
-    </MenuItem>
-  ));
-
   return (
-    <Box
-      component="form"
-      sx={{
-        "& .MuiTextField-root": { m: 1, width: "25ch" },
-      }}
-      noValidate
-      autoComplete="off"
-    >
+    <Box component="form">
       <FormControl sx={{ minWidth: 300 }}>
         <InputLabel htmlFor="Series">Events</InputLabel>
         <Select
           className="form-control"
           name="event"
-          label="Event"
+          label="Events"
           value={eventName}
           onChange={handleChange}
         >
-          {mappedEvents}
+          {events.map((event, index) => (
+            <MenuItem key={index} value={event.name}>
+              {event.name}
+            </MenuItem>
+          ))}
         </Select>
       </FormControl>
     </Box>
