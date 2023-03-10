@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Button, Typography, MenuItem, Card } from "@mui/material";
+import { Button, Card } from "@mui/material";
 import "../../Styling/winnerTop3.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchEntry } from "../../store/entryActions";
@@ -57,10 +57,8 @@ const WinnerPodium = ({
 
   return (
     <div className="results-container">
-      <Card sx={{ minWidth: 450 }}>
-        <Typography variant="h5" gutterBottom component="div">
-          {classification}
-        </Typography>
+      <Card>
+        <h2>{classification}</h2>
         <div className="placement-container">
           <div className="finishing-spot">
             <h3>
@@ -97,11 +95,7 @@ const WinnerPodium = ({
             />
           </div>
         </div>
-        {isError && (
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Must be a First Place Finisher
-          </Typography>
-        )}
+        {isError && <span>Must be a First Place Finisher</span>}
 
         {isSubmitted ? (
           <Button variant="contained" color="success" onClick={handleSubmit}>
