@@ -13,8 +13,12 @@ const useEvents = () => {
   const getEventList = async () => {
     try {
       const eventList = await axios.get("http://localhost:2020/api/events");
-      setEvents(eventList.data);
-      eventByDate(eventList.data);
+      const year = Number(getToday().split("-")[2]);
+      const currentYearEvents = eventList.data.filter(
+        (event) => event.year === year,
+      );
+      setEvents(currentYearEvents);
+      eventByDate(currentYearEvents);
     } catch (err) {
       console.log("Error:", err);
     }
