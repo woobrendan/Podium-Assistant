@@ -1,58 +1,62 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
 const entriesSchema = new mongoose.Schema({
-    team: {
+  team: {
+    type: String,
+    required: true,
+  },
+  driver1: {
+    name: {
       type: String,
-      required: true
+      required: true,
     },
-    driver1: {
-      name: {
-        type: String,
-        required: true
-      },
-      rating: {
-        type: String,
-        required: false
-      },
-      nationality: {
-        type: String,
-        required: true
-      }
-    },
-    driver2: {
-      name: {
-        type: String,
-        required: true
-      },
-      rating: {
-        type: String,
-        required: false
-      },
-      nationality: {
-        type: String,
-        required: true
-      }
-    },
-    vehicle: {
+    rating: {
       type: String,
-      required: true
+      required: false,
     },
-    classification: {
+    nationality: {
       type: String,
-      required: true
+      required: true,
     },
-    number: {
+  },
+  driver2: {
+    name: {
       type: String,
-      required: true
+      required: true,
     },
-    carImage: {
+    rating: {
       type: String,
-      required: false
+      required: false,
     },
-    series: {
+    nationality: {
       type: String,
-      required: true
-    }
-})
+      required: true,
+    },
+  },
+  vehicle: {
+    type: String,
+    required: true,
+  },
+  classification: {
+    type: String,
+    required: true,
+  },
+  number: {
+    type: String,
+    required: true,
+  },
+  carImage: {
+    type: String,
+    required: false,
+  },
+  series: {
+    type: String,
+    required: true,
+  },
+  year: {
+    type: Number,
+    required: false,
+  },
+});
 
-module.exports = mongoose.model('Entry', entriesSchema)
+module.exports = mongoose.model("Entry", entriesSchema);
