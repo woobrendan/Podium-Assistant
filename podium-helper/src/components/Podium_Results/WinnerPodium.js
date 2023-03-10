@@ -1,17 +1,9 @@
 import { useState, useEffect } from "react";
-import {
-  FormControl,
-  InputLabel,
-  Select,
-  Button,
-  Typography,
-  MenuItem,
-  Card,
-  Box,
-} from "@mui/material";
+import { Button, Typography, MenuItem, Card } from "@mui/material";
 import "../../Styling/winnerTop3.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchEntry } from "../../store/entryActions";
+import PlacementInput from "./PlacementInput";
 
 const WinnerPodium = ({
   seriesName,
@@ -26,17 +18,15 @@ const WinnerPodium = ({
     secondPlace: "",
     thirdPlace: "",
   });
+  const [isError, setIsError] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const entries = useSelector((state) => state.entry.entriesArray);
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(fetchEntry());
   }, [dispatch]);
-
-  const entries = useSelector((state) => state.entry.entriesArray);
-
-  const [isError, setIsError] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleWinners = (event) => {
     setWinners((prev) => ({
@@ -107,76 +97,27 @@ const WinnerPodium = ({
             </h3>
           </div>
           <div className="finishing-drivers">
-            <Box
-              component="form"
-              sx={{
-                "& .MuiTextField-root": { m: 1, width: "25ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <FormControl sx={{ minWidth: 300 }}>
-                <InputLabel htmlFor="exampleFormControlSelect2">
-                  First Place
-                </InputLabel>
-                <Select
-                  className="form-control"
-                  name="firstPlace"
-                  label="first place"
-                  error={isError}
-                  value={winners.firstPlace}
-                  onChange={handleWinners}
-                >
-                  {mappedDrivers}
-                </Select>
-              </FormControl>
-            </Box>
-            <Box
-              component="form"
-              sx={{
-                "& .MuiTextField-root": { m: 1, width: "25ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <FormControl sx={{ minWidth: 300 }}>
-                <InputLabel htmlFor="exampleFormControlSelect2">
-                  Second Place
-                </InputLabel>
-                <Select
-                  className="form-control"
-                  name="secondPlace"
-                  label="second place"
-                  value={winners.secondPlace}
-                  onChange={handleWinners}
-                >
-                  {mappedDrivers}
-                </Select>
-              </FormControl>
-            </Box>
-            <Box
-              component="form"
-              sx={{
-                "& .MuiTextField-root": { m: 1, width: "25ch" },
-              }}
-              noValidate
-              autoComplete="off"
-            >
-              <FormControl sx={{ minWidth: 300 }}>
-                <InputLabel htmlFor="exampleFormControlSelect2">
-                  Third Place
-                </InputLabel>
-                <Select
-                  className="form-control"
-                  name="thirdPlace"
-                  label="third place"
-                  value={winners.thirdPlace}
-                  onChange={handleWinners}
-                >
-                  {mappedDrivers}
-                </Select>
-              </FormControl>
-            </Box>
+            <PlacementInput
+              name="firstPlace"
+              handleWinners={handleWinners}
+              mappedDrivers={mappedDrivers}
+              label="First Place"
+              value={winners.firstPlace}
+            />
+            <PlacementInput
+              name="secondPlace"
+              handleWinners={handleWinners}
+              mappedDrivers={mappedDrivers}
+              label="Second Place"
+              value={winners.secondPlace}
+            />
+            <PlacementInput
+              name="thirdPlace"
+              handleWinners={handleWinners}
+              mappedDrivers={mappedDrivers}
+              label="Third Place"
+              value={winners.thirdPlace}
+            />
           </div>
         </div>
         {isError && (
