@@ -13,9 +13,15 @@ import "../../Styling/winnerTop3.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchEntry } from "../../store/entryActions";
 
-function WinnerPodium(props) {
+const WinnerPodium = ({
+  seriesName,
+  classification,
+  onClick,
+  results,
+  resultNum,
+}) => {
   const [winners, setWinners] = useState({
-    class: props.classification,
+    class: classification,
     firstPlace: "",
     secondPlace: "",
     thirdPlace: "",
@@ -41,11 +47,11 @@ function WinnerPodium(props) {
 
   const handleSubmit = () => {
     const isFirstPlace = winners.firstPlace;
-    if (!isFirstPlace && props.seriesName !== "GT America") {
+    if (!isFirstPlace && seriesName !== "GT America") {
       setIsError(true);
     } else {
       if (isError) setIsError(false);
-      props.onClick(winners, props.resultNum);
+      onClick(winners, resultNum);
       setIsSubmitted(true);
     }
   };
@@ -78,8 +84,7 @@ function WinnerPodium(props) {
   const mappedDrivers = entries
     .filter(
       (entry) =>
-        entry.series === props.seriesName &&
-        entry.classification === winners.class,
+        entry.series === seriesName && entry.classification === winners.class,
     )
     .map((entry) => numOfDriverMenuItem(entry));
 
@@ -87,7 +92,7 @@ function WinnerPodium(props) {
     <div className="results-container">
       <Card sx={{ minWidth: 450 }}>
         <Typography variant="h5" gutterBottom component="div">
-          {props.classification}
+          {classification}
         </Typography>
         <div className="placement-container">
           <div className="finishing-spot">
@@ -192,6 +197,6 @@ function WinnerPodium(props) {
       </Card>
     </div>
   );
-}
+};
 
 export default WinnerPodium;
