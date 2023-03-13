@@ -522,5 +522,187 @@
     "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2480153.jpg",
     "series": "GT America",
     "year": 2023
+  },
+  {
+    "team": "Heart of Racing Team",
+    "driver1": {
+      "name": "Gray Newell",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "25",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F394%2F%2F072322_WGI_bcpix2467442.jpg",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Chouest Povoledo Racing",
+    "driver1": {
+      "name": "Ross Chouest",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "50",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1053__FL.jpg",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Archangel Motorsports",
+    "driver1": {
+      "name": "Todd Coleman",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "69",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "TR3 Racing",
+    "driver1": {
+      "name": "Paul Kiebler",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "77",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Rotek Racing",
+    "driver1": {
+      "name": "Robb Holland",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "GT4",
+    "number": "099",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F79%2F415%2F%2FSRO22_INDY_1489__FL.jpg",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Rotek Racing",
+    "driver1": {
+      "name": "Chris Alliegro",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "GT4",
+    "number": "098",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "TKO Motorsports",
+    "driver1": {
+      "name": "Memo Gidley",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "101",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "TKO Motorsports",
+    "driver1": {
+      "name": "David Traitel",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Bentley Continental GT3",
+    "classification": "SRO3",
+    "number": "102",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Flying Lizard Motorsports",
+    "driver1": {
+      "name": "Andy Wilzoch",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "SRO3",
+    "number": "460",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Flying Lizard Motorsports",
+    "driver1": {
+      "name": "Elias Sabo",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "8",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F72%2F379%2F%2F041422_Sonoma_bcpix2264608.jpg",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Flying Lizard Motorsports",
+    "driver1": {
+      "name": "Jason Bell",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "2",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2480122.jpg",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Flying Lizard Motorsports",
+    "driver1": {
+      "name": "Slade",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "GT4",
+    "number": "11",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "CRP Racing",
+    "driver1": {
+      "name": "Todd Treffert",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "TBD",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
   }
 ]
