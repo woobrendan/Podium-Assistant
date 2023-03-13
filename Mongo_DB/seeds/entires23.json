@@ -340,5 +340,187 @@
     "carImage": "",
     "series": "GT World Challenge America",
     "year": 2023
+  },
+  {
+    "team": "CrowdStrike w/ Riley Motorsports",
+    "driver1": {
+      "name": "George Kurtz",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "04",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F394%2F%2F072322_WGI_bcpix2467465.jpg",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "DXDT Racing",
+    "driver1": {
+      "name": "Scott Smithson",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "08",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2FVIR_GTWCA_Q_GM_2403291.JPG",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Lone Star Racing",
+    "driver1": {
+      "name": "Marc Austin",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "011",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "CRP Racing",
+    "driver1": {
+      "name": "Jason Daskalos",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "27",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Kyle Washington",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "SRO3",
+    "number": "32",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "OnlyFans Racing w/ P1 Groupe by MRS",
+    "driver1": {
+      "name": "Alex Vogel",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "SRO3",
+    "number": "043",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "MISHUMOTORS",
+    "driver1": {
+      "name": "Mirco Schultis",
+      " nationality": "Germany",
+      "rating": "Bronze"
+    },
+    "vehicle": "Callaway Corvette Z06R GT3",
+    "classification": "SRO3",
+    "number": "70",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "DXDT Racing",
+    "driver1": {
+      "name": "Jeff Burton",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "91",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Wright Motorsports",
+    "driver1": {
+      "name": "Adam Adelson",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "SRO3",
+    "number": "120",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "RealTime Racing",
+    "driver1": {
+      "name": "Anthony Bartone",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "427",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Blackdog Speed Shop",
+    "driver1": {
+      "name": "Tony Gaples",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Chevrolet Camaro GT4-R",
+    "classification": "GT4",
+    "number": "5",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "AutoTechnic Racing",
+    "driver1": {
+      "name": "Rob Walker",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "GT4",
+    "number": "253",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Carrus Callas Race Team",
+    "driver1": {
+      "name": "Nick Shanny",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Toyota Gazoo Racing GR Supra GT4",
+    "classification": "GT4",
+    "number": "21",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2480153.jpg",
+    "series": "GT America",
+    "year": 2023
   }
 ]
