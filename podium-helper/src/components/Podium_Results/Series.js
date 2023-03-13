@@ -28,20 +28,13 @@ function Series({ getValue }) {
   };
 
   const mappedSeries = series.map((serie, index) => (
-    <MenuItem key={index} value={serie}>
+    <MenuItem key={index} value={serie} data-testid={serie.name}>
       {serie.name}
     </MenuItem>
   ));
 
   return (
-    <Box
-      component="form"
-      sx={{
-        "& .MuiTextField-root": { m: 1, width: "25ch" },
-      }}
-      noValidate
-      autoComplete="off"
-    >
+    <Box data-testid="series_dropdown">
       <FormControl sx={{ minWidth: 300 }}>
         <InputLabel htmlFor="Series">Series</InputLabel>
         <Select
