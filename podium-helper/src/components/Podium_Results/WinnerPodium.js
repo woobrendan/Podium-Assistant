@@ -79,6 +79,7 @@ const WinnerPodium = ({
               mappedDrivers={mappedDrivers}
               label="First Place"
               value={winners.firstPlace}
+              boxNum={resultNum}
             />
             <PlacementInput
               name="secondPlace"
@@ -86,6 +87,7 @@ const WinnerPodium = ({
               mappedDrivers={mappedDrivers}
               label="Second Place"
               value={winners.secondPlace}
+              boxNum={resultNum}
             />
             <PlacementInput
               name="thirdPlace"
@@ -93,6 +95,7 @@ const WinnerPodium = ({
               mappedDrivers={mappedDrivers}
               label="Third Place"
               value={winners.thirdPlace}
+              boxNum={resultNum}
             />
           </div>
         </div>
