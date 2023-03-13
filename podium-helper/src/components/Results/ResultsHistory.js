@@ -23,9 +23,7 @@ function ResultsHistory() {
 
   const filterByEvent = () => {
     if (event) {
-      const filtered = results.filter((result) => {
-        if (event === result.event) return result;
-      });
+      const filtered = results.filter((result) => event === result.event);
       return filtered;
     }
   };
