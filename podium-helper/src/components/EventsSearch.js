@@ -16,7 +16,7 @@ function EventSearch({ component, getValue }) {
   };
 
   return (
-    <Box component="form">
+    <Box data-testid="event_dropdown">
       <FormControl sx={{ minWidth: 300 }}>
         <InputLabel htmlFor="Series">Events</InputLabel>
         <Select
@@ -27,7 +27,7 @@ function EventSearch({ component, getValue }) {
           onChange={handleChange}
         >
           {events.map((event, index) => (
-            <MenuItem key={index} value={event.name}>
+            <MenuItem key={index} value={event.name} data-testid={event.name}>
               {event.name}
             </MenuItem>
           ))}
