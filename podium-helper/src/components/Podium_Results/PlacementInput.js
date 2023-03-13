@@ -6,9 +6,10 @@ const PlacementInput = ({
   handleWinners,
   mappedDrivers,
   label,
+  boxNum,
 }) => {
   return (
-    <Box>
+    <Box data-testid={`${name}_podium_${boxNum}`}>
       <FormControl sx={{ minWidth: 300 }}>
         <InputLabel>{label}</InputLabel>
         <Select
