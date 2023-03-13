@@ -80,59 +80,50 @@ function FastLap({ series, getValue }) {
   });
 
   return (
-    <div className="results-container">
-      <div className="fast-lap-container">
-        <Card sx={{ minWidth: 450 }}>
-          <Typography variant="h5" gutterBottom component="div">
-            CrowdStrike Fast Lap
-          </Typography>
-          <Box
-            component="form"
-            sx={{
-              "& .MuiTextField-root": { m: 1, width: "25ch" },
-            }}
-            noValidate
-            autoComplete="off"
+    <Card sx={{ minWidth: 450 }} className="fast-lap-container">
+      <h2>CrowdStrike Fast Lap</h2>
+      <Box
+        component="form"
+        sx={{
+          "& .MuiTextField-root": { m: 1, width: "25ch" },
+        }}
+        noValidate
+        autoComplete="off"
+      >
+        <FormControl sx={{ minWidth: 250 }}>
+          <InputLabel>Driver</InputLabel>
+          <Select
+            className="form-control"
+            name="driver"
+            label="Driver"
+            value={fastTime.driver}
+            onChange={handleChange}
           >
-            <FormControl sx={{ minWidth: 250 }}>
-              <InputLabel>Driver</InputLabel>
-              <Select
-                className="form-control"
-                name="driver"
-                label="Driver"
-                value={fastTime.driver}
-                onChange={handleChange}
-              >
-                {mapSingleDrivers}
-              </Select>
-            </FormControl>
-          </Box>
-          <Box
-            component="form"
-            sx={{
-              "& .MuiTextField-root": { m: 1, width: "25ch" },
-            }}
-            noValidate
-            autoComplete="off"
-          >
-            <TextField
-              id="outlined"
-              label="Fast Lap"
-              name="laptime"
-              value={fastTime.lapTime}
-              onChange={handleChange}
-            />
-          </Box>
-          <Button
-            variant="contained"
-            color={isSubmitted ? "success" : "error"}
-            onClick={handleClick}
-          >
-            {isSubmitted ? "Update" : "Submit"}
-          </Button>
-        </Card>
-      </div>
-    </div>
+            {mapSingleDrivers}
+          </Select>
+        </FormControl>
+      </Box>
+      <Box
+        sx={{
+          "& .MuiTextField-root": { m: 1, width: "25ch" },
+        }}
+      >
+        <TextField
+          id="outlined"
+          label="Fast Lap"
+          name="laptime"
+          value={fastTime.lapTime}
+          onChange={handleChange}
+        />
+      </Box>
+      <Button
+        variant="contained"
+        color={isSubmitted ? "success" : "error"}
+        onClick={handleClick}
+      >
+        {isSubmitted ? "Update" : "Submit"}
+      </Button>
+    </Card>
   );
 }
 
