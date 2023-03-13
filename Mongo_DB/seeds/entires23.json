@@ -259,8 +259,84 @@
       "rating": "Silver"
     },
     "vehicle": "Porsche 911 GT3-R (991.ii)",
-    "classification": "Pro-Am",
+    "classification": "Pro",
     "number": "53",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "DXDT Racing",
+    "driver1": {
+      "name": "Jeff Burton",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Corey Lewis",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "91",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Racers Edge Motorsports",
+    "driver1": {
+      "name": "Ashton Harrison",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Mario Farnbacher",
+      " nationality": "Germany",
+      "rating": "Gold"
+    },
+    "vehicle": "Acura NSX GT3 EVO22",
+    "classification": "Pro",
+    "number": "93",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_09976f.jpg",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "BimmerWorld",
+    "driver1": {
+      "name": "Chandler Hull",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Bill Auberlen",
+      " nationality": "USA",
+      "rating": "Gold"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "Pro",
+    "number": "94",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F296%2F%2FRL_VIR_43517f.jpg",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Wright Motorsports",
+    "driver1": {
+      "name": "Adam Adelson",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Elliott Skeer",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Pro-Am",
+    "number": "120",
     "carImage": "",
     "series": "GT World Challenge America",
     "year": 2023
