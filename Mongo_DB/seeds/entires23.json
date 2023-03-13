@@ -1,0 +1,59 @@
+[
+  {
+    "team": "Crowdstrike Racing with Riley Motorsports",
+    "driver1": {
+      "name": "George Kurtz",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Colin Braun",
+      " nationality": "USA",
+      "rating": "Gold"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "04",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FDY-12A86I3525.jpg",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Aston Martin Racing - TRG",
+    "driver1": {
+      "name": "Derek DeBoer",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Ross Gunn",
+      " nationality": "Great Britain",
+      "rating": "Gold"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT3",
+    "classification": "Pro-Am",
+    "number": "007",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "DXDT Racing",
+    "driver1": {
+      "name": "Scott Smithson",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Bryan Sellers",
+      " nationality": "USA",
+      "rating": "Gold"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "08",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2FVIR_GTWCA_Q_GM_2403291.JPG",
+    "series": "GT World Challenge America",
+    "year": 2023
+  }
+]
