@@ -11,32 +11,19 @@ describe("Creating New Podiums", () => {
 
   beforeEach(() => {
     cy.visit("http://localhost:3000/");
-  });
 
-  it("Should select event", () => {
-    cy.get("#mui-component-select-event")
-      .parent()
-      .click()
-      .get('ul > li[data-value="Sonoma Raceway"]')
-      .click();
-  });
+    //select event then series
+    cy.get('[data-testid="event_dropdown"]').click();
+    cy.get('[data-testid="Sonoma Raceway"]').click();
 
-  it("Should select Series", () => {
     cy.get('[data-testid="series_dropdown"]').click();
     cy.get('[data-testid="GT World Challenge America"]').click();
   });
 
-  it("Should select Class", () => {
-    cy.get("#mui-component-select-series")
-      .parent()
-      .click()
-      .get('ul > li[data-value="GT World Challenge America"]')
-      .click();
-
-    cy.get(".class-container")
-      .first()
-      .click()
-      .get('ul > li[data-value="Pro"]')
-      .click();
+  it("Should render table at end with chosen results", () => {
+    const proEntry = "#3 - Misha Goikhberg & Jordan Pepper";
+    cy.get('[data-testid="firstPlace_podium_1"]').click();
+    cy.get("li").contains(proEntry).click();
+    cy.get('[data-testid="firstPlace_podium_1"]').contains(proEntry);
   });
 });
