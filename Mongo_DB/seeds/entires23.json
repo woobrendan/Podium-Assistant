@@ -3,12 +3,12 @@
     "team": "Crowdstrike Racing with Riley Motorsports",
     "driver1": {
       "name": "George Kurtz",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Colin Braun",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT3",
@@ -22,12 +22,12 @@
     "team": "Aston Martin Racing - TRG",
     "driver1": {
       "name": "Derek DeBoer",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Ross Gunn",
-      " nationality": "Great Britain",
+      "nationality": "Great Britain",
       "rating": "Gold"
     },
     "vehicle": "Aston Martin Vantage AMR GT3",
@@ -41,18 +41,227 @@
     "team": "DXDT Racing",
     "driver1": {
       "name": "Scott Smithson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Bryan Sellers",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT3",
     "classification": "Pro-Am",
     "number": "08",
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2FVIR_GTWCA_Q_GM_2403291.JPG",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "TR3 Racing",
+    "driver1": {
+      "name": "Ziad Ghandour",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Daniel Morad",
+      "nationality": "Canada",
+      "rating": "Gold"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "9",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "James Sofronas",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "TBD",
+      "nationality": "TBD",
+      "rating": "TBD"
+    },
+    "vehicle": "Audi R8 LMS ",
+    "classification": "Pro-Am",
+    "number": "14",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "ACI Motorsport",
+    "driver1": {
+      "name": "Pedro Torres",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Spencer Pumpelly",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Pro-Am",
+    "number": "16",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Esses Racing w/ Mercendes-Benz of Austin",
+    "driver1": {
+      "name": "Will Hardeman",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Adam Carroll",
+      "nationality": "Great Britain",
+      "rating": "Gold"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "19",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Conquest Racing",
+    "driver1": {
+      "name": "Manny Franco",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Alessandro Balzan",
+      "nationality": "Italy",
+      "rating": "Gold"
+    },
+    "vehicle": "Ferrari 296 GT3",
+    "classification": "Pro",
+    "number": "21",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "RS1",
+    "driver1": {
+      "name": "Eric Filgueiras",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Stevan McAleer",
+      "nationality": "Great Britain",
+      "rating": "Gold"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Pro-Am",
+    "number": "28",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Triarsi Competizione",
+    "driver1": {
+      "name": "Justin Wetherill",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Ryan Dalziel",
+      " nationality": "Scotland",
+      "rating": "Gold"
+    },
+    "vehicle": "Ferrari 296 GT3",
+    "classification": "Pro-Am",
+    "number": "33",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "ST Racing",
+    "driver1": {
+      "name": "Samantha Tan",
+      " nationality": "Canada",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "John Edwards",
+      " nationality": "USA",
+      "rating": "Platinum"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "Pro-Am",
+    "number": "38",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2F061822_VIR_bcpix2387612DN-severe-noise.jpg",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "RealTime Racing",
+    "driver1": {
+      "name": "Andy Pilrgrim",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Anthony Bartone",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Am",
+    "number": "43",
+    "carImage": "",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Wright Motorsports",
+    "driver1": {
+      "name": "Charlie Luck",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Jan Heylen",
+      " nationality": "Belgium",
+      "rating": "Gold"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Pro-Am",
+    "number": "45",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F75%2F305%2F%2FRL_WG_SRO_10326f.jpg",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "MDK Motorsports",
+    "driver1": {
+      "name": "Trenton Estep",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Seth Lucas",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Pro-Am",
+    "number": "53",
+    "carImage": "",
     "series": "GT World Challenge America",
     "year": 2023
   }
