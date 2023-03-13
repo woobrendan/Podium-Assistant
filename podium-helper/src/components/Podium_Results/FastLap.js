@@ -123,15 +123,13 @@ function FastLap({ series, getValue }) {
               onChange={handleChange}
             />
           </Box>
-          {isSubmitted ? (
-            <Button variant="contained" color="success" onClick={handleClick}>
-              Update
-            </Button>
-          ) : (
-            <Button variant="contained" color="error" onClick={handleClick}>
-              Submit
-            </Button>
-          )}
+          <Button
+            variant="contained"
+            color={isSubmitted ? "success" : "error"}
+            onClick={handleClick}
+          >
+            {isSubmitted ? "Update" : "Submit"}
+          </Button>
         </Card>
       </div>
     </div>
