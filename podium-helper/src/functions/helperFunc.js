@@ -1,66 +1,79 @@
 // use to get driver and event ID based on given name as string
 const getIdFromArray = (name, arr) => {
-  for (const val of arr)  {
+  for (const val of arr) {
     if (val.name === name) {
       return val.id;
     }
   }
-}
+};
 
 const getVehicleId = (num, vehicles) => {
   for (const vehicle of vehicles) {
-    if (vehicle.number === num)  {
+    if (vehicle.number === num) {
       return vehicle.id;
     }
   }
-}
+};
 
 const getToday = () => {
   let today = new Date();
-  const dd = String(today.getDate()).padStart(2, '0');
-  const mm = String(today.getMonth() + 1).padStart(2, '0');
+  const dd = String(today.getDate()).padStart(2, "0");
+  const mm = String(today.getMonth() + 1).padStart(2, "0");
   const year = today.getFullYear();
   return `${mm}-${dd}-${year}`;
-}
+};
 
 const printPage = () => {
-  window.print()
-}
+  window.print();
+};
 
 const compareDate = (a, b) => {
   if (a.date < b.date) {
-    return -1
+    return 1;
   }
   if (a.date > b.date) {
-    return 1
+    return -1;
   }
   return 0;
-}  
+};
 
 const compareCarNumber = (a, b) => {
   if (Number(a.number) < Number(b.number)) {
-    return -1
+    return -1;
   }
   if (Number(a.number) > Number(b.number)) {
-    return 1
+    return 1;
   }
   return 0;
-} 
+};
 
 const dateToString = (date) => {
-  const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-  const dateArr = date.split('-')
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  const dateArr = date.split("-");
   const monthNum = Number(dateArr[0]) - 1;
-  const day = Number(dateArr[1])
-  const monthName = months[monthNum]
-  return `${monthName} ${day}, ${Number(dateArr[2])}`
-}
+  const day = Number(dateArr[1]);
+  const monthName = months[monthNum];
+  return `${monthName} ${day}, ${Number(dateArr[2])}`;
+};
 
 const gtwca = "GT World Challenge America";
 const tcam = "TC America";
 const gtam = "GT America";
 const gt4a = "Pirelli GT4 America";
-const igtc = 'Intercontinental GT Challenge'
+const igtc = "Intercontinental GT Challenge";
 
 export {
   getIdFromArray,
@@ -74,5 +87,5 @@ export {
   gtam,
   gt4a,
   igtc,
-  dateToString
-}
+  dateToString,
+};
