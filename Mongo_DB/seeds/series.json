@@ -40,5 +40,12 @@
       "Silver",
       "Am"
     ]
+  },
+  {
+    "name": "Toyota GR Cup",
+    "class": [
+      "Dealer",
+      "Am"
+    ]
   }
 ]
