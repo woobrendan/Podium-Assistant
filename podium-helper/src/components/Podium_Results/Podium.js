@@ -67,8 +67,14 @@ function Podium() {
       {results.series && (
         <FastLap getValue={getValue} series={results.series} />
       )}
-      {results.series && (
-        <Button variant="contained" color="success" onClick={handleFinalSubmit}>
+      {results.fastLap && (
+        <Button
+          variant="contained"
+          color="success"
+          id="podium__submit_all"
+          onClick={handleFinalSubmit}
+          data-testid="podium__submit_all"
+        >
           Submit All
         </Button>
       )}
