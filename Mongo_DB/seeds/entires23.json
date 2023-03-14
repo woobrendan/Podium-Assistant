@@ -1084,5 +1084,81 @@
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
-  }
+  },
+  {
+    "team": "Archangel Motorsports",
+    "driver1": {
+      "name": "Todd Coleman",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "TBD",
+      " nationality": "USA",
+      "rating": "TBD"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Pro-Am",
+    "number": "69",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Copeland Motorsports",
+    "driver1": {
+      "name": "Tyler Maxson",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Tyler Gonzalez",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Toyota Gazoo Racing GR Supra GT4",
+    "classification": "Silver",
+    "number": "74",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "TR3 Racing",
+    "driver1": {
+      "name": "Paul Kielber",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "TBD",
+      " nationality": "USA",
+      "rating": "TBD"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Am",
+    "number": "77",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "BimmerWorld",
+    "driver1": {
+      "name": "James Walker Jr",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Tyler McQuarrie",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Pro-Am",
+    "number": "82",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
 ]
