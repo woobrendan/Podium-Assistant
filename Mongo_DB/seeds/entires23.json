@@ -1161,4 +1161,61 @@
     "series": "Pirelli GT4 America",
     "year": 2023
   },
+  {
+    "team": "STR38 Motorsports",
+    "driver1": {
+      "name": "Robert Mau",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Chris Allen",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "88",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "RENNtech Motorsports",
+    "driver1": {
+      "name": "Thomas Johnson",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Michael Auriemma",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Mercedes-AMG GT4",
+    "classification": "Am",
+    "number": "89",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Random Vandals Racing",
+    "driver1": {
+      "name": "Kevin Boehm",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Kenton Koch",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Pro-Am",
+    "number": "92",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  }
 ]
