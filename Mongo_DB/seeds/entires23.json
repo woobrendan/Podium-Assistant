@@ -704,5 +704,233 @@
     "carImage": "",
     "series": "GT America",
     "year": 2023
+  },
+  {
+    "team": "ACI Motorsports",
+    "driver1": {
+      "name": "Curt Swearingin",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Kay Van Berlo",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "Pro-Am",
+    "number": "7",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Zotz Racing/ CCDP Racing",
+    "driver1": {
+      "name": "Christian Ruppel",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Eric Zitza",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "Am",
+    "number": "09",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "RS1",
+    "driver1": {
+      "name": "Roland Krainz",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Austin Krainz",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "Am",
+    "number": "18",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "ACI Motorsports",
+    "driver1": {
+      "name": "Francis Selldorff",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Andrew David",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "Silver",
+    "number": "19",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Carrus Callas Race Team",
+    "driver1": {
+      "name": "Nick Shanny",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Terry Borcheller",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Toyota Gazoo Racing GR Supra",
+    "classification": "Am",
+    "number": "20",
+    "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472061.jpg",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Heart of Racing Team",
+    "driver1": {
+      "name": "Gray Newell",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Ian James",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Pro-Am",
+    "number": "24",
+    "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F67%2F364%2F%2FRL_VIR_51026f.jpg",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Heart of Racing Team",
+    "driver1": {
+      "name": "Hannah Grisham",
+      " nationality": "USA",
+      "rating": "Bronze*"
+    },
+    "driver2": {
+      "name": "Rianna O'Meara-Hunt",
+      " nationality": "New Zealand",
+      "rating": "Bronze*"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Am",
+    "number": "26",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "JTR Motorsports Engineering",
+    "driver1": {
+      "name": "Peter Atwater",
+      " nationality": "USA",
+      "rating": "Bronze*"
+    },
+    "driver2": {
+      "name": "Luca Mars",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Mercedes-AMG GT4",
+    "classification": "Pro-Am",
+    "number": "29",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Kyle Washington",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "James Sofronas",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "Am",
+    "number": "32",
+    "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10948_RL_Sonomaf.jpg",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Conquest Racing/JMF Motorsports",
+    "driver1": {
+      "name": "Michai Stephens",
+      " nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Jesse Webb",
+      " nationality": "Canada",
+      "rating": "Silver"
+    },
+    "vehicle": "Mercedes-AMG GT4",
+    "classification": "Silver",
+    "number": "34",
+    "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2471906.jpg",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Conquest Racing",
+    "driver1": {
+      "name": "Custodio Toledo",
+      " nationality": "Brazil",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Paulo Carcasci",
+      " nationality": "Brazil",
+      "rating": "Am"
+    },
+    "vehicle": "Mercedes-AMG GT4",
+    "classification": "Am",
+    "number": "35",
+    "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472370.jpg",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "BimmerWorld",
+    "driver1": {
+      "name": "Charlie Postins",
+      " nationality": "Great Britain",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "James Clay",
+      " nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "36",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
   }
 ]
