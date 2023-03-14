@@ -4,7 +4,6 @@ import {
   Select,
   TextField,
   Button,
-  Typography,
   Card,
   Box,
   MenuItem,
@@ -13,7 +12,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchEntry } from "../../store/entryActions";
 
-function FastLap({ series, getValue }) {
+const FastLap = ({ series, getValue }) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -114,6 +113,6 @@ function FastLap({ series, getValue }) {
       </Button>
     </Card>
   );
-}
+};
 
 export default FastLap;
