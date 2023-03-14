@@ -1,4 +1,5 @@
 import { MenuItem } from "@mui/material";
+import WinnerPodium from "../components/Podium_Results/WinnerPodium";
 
 //determine if entry is single or two drivers and return corresponding menu item
 const numOfDriverMenuItem = (entry) => {
@@ -24,4 +25,19 @@ const numOfDriverMenuItem = (entry) => {
   }
 };
 
-export { numOfDriverMenuItem };
+//dynamically render appropriate amount of WinnerPodium components based on need per series class requirements
+const numOfPodiumDisplays = (series, submit, results) => {
+  const mappedSeries = series.class.map((classification, index) => (
+    <WinnerPodium
+      key={classification}
+      seriesName={series.name}
+      onClick={submit}
+      results={results}
+      classification={classification}
+      resultNum={index + 1}
+    />
+  ));
+  return mappedSeries;
+};
+
+export { numOfDriverMenuItem, numOfPodiumDisplays };
