@@ -36,10 +36,8 @@ function ResultsHistory() {
   );
 
   return (
-    <div className="result-container">
-      <Typography gutterBottom variant="h3" component="div">
-        Result History
-      </Typography>
+    <section className="result-container">
+      <h1>Result History</h1>
       <div className="filter-details">
         <EventSearch getValue={getValue} />
         <TextField
@@ -54,7 +52,7 @@ function ResultsHistory() {
       </div>
       <div className="result-history-list">{allResults}</div>
       <BackToTopButton />
-    </div>
+    </section>
   );
 }
 
