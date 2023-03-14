@@ -13,7 +13,7 @@ import { useDispatch } from "react-redux";
 import { resultsActions } from "../../store/resultsSlice";
 import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
 
-function Podium() {
+const Podium = () => {
   const { currentEventName } = useEvents();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -54,7 +54,7 @@ function Podium() {
   };
 
   return (
-    <div className="race-results-container">
+    <section className="race-results-container">
       <div className="results-details">
         <DatePicker getValue={getValue} today={getToday()} />
         <EventSearch getValue={getValue} component="podium" />
@@ -78,8 +78,8 @@ function Podium() {
           Submit All
         </Button>
       )}
-    </div>
+    </section>
   );
-}
+};
 
 export default Podium;
