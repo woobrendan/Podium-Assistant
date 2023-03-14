@@ -8,10 +8,10 @@ import DatePicker from "./DatePicker";
 import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/helperFunc";
 import mongoResult from "../../functions/formMongoResult";
-import WinnerPodium from "./WinnerPodium";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { resultsActions } from "../../store/resultsSlice";
+import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
 
 function Podium() {
   const { currentEventName } = useEvents();
@@ -53,21 +53,6 @@ function Podium() {
     }));
   };
 
-  //dynamically render appropriate amount of WinnerPodium components based on need per series class requirements
-  const numOfPodiumDisplays = (series) => {
-    const mappedSeries = series.class.map((classification, index) => (
-      <WinnerPodium
-        key={classification}
-        seriesName={series.name}
-        onClick={handleRacePodiumSubmit}
-        results={results}
-        classification={classification}
-        resultNum={index + 1}
-      />
-    ));
-    return mappedSeries;
-  };
-
   return (
     <div className="race-results-container">
       <div className="results-details">
@@ -76,7 +61,8 @@ function Podium() {
         <Series getValue={getValue} />
       </div>
       <div className="podium_results_container">
-        {results.series && numOfPodiumDisplays(results.series)}
+        {results.series &&
+          numOfPodiumDisplays(results.series, handleRacePodiumSubmit, results)}
       </div>
       {results.series && (
         <FastLap getValue={getValue} series={results.series} />
