@@ -7,7 +7,7 @@ import EventSearch from "../EventsSearch";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../store/resultsActions";
 
-function ResultsHistory() {
+const ResultsHistory = () => {
   const dispatch = useDispatch();
   const [searchValue, setSearchValue] = useState("");
   const [event, setEvent] = useState("");
@@ -23,17 +23,12 @@ function ResultsHistory() {
 
   const filterByEvent = () => {
     if (event) {
-      const filtered = results.filter((result) => event === result.event);
-      return filtered;
+      return results.filter((result) => event === result.event);
     }
   };
   useEffect(() => {
     event ? setFilteredResults(filterByEvent()) : setFilteredResults(results);
   }, [event, results]);
-
-  const allResults = SearchAllResults(filteredResults, searchValue).map(
-    (result, index) => <ResultTableHeader results={result} key={index} />,
-  );
 
   return (
     <section className="result-container">
@@ -50,10 +45,14 @@ function ResultsHistory() {
           }}
         />
       </div>
-      <div className="result-history-list">{allResults}</div>
+      <div className="result-history-list">
+        {SearchAllResults(filteredResults, searchValue).map((result, index) => (
+          <ResultTableHeader results={result} key={index} />
+        ))}
+      </div>
       <BackToTopButton />
     </section>
   );
-}
+};
 
 export default ResultsHistory;
