@@ -80,17 +80,10 @@ function FastLap({ series, getValue }) {
   });
 
   return (
-    <Card sx={{ minWidth: 450 }} className="fast-lap-container">
+    <Card className="fast-lap-container">
       <h2>CrowdStrike Fast Lap</h2>
-      <Box
-        component="form"
-        sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
-        }}
-        noValidate
-        autoComplete="off"
-      >
-        <FormControl sx={{ minWidth: 250 }}>
+      <Box className="fast_lap__input">
+        <FormControl>
           <InputLabel>Driver</InputLabel>
           <Select
             className="form-control"
@@ -103,11 +96,7 @@ function FastLap({ series, getValue }) {
           </Select>
         </FormControl>
       </Box>
-      <Box
-        sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
-        }}
-      >
+      <Box className="fast_lap__input">
         <TextField
           id="outlined"
           label="Fast Lap"
