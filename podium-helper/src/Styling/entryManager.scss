@@ -1,0 +1,12 @@
+#entry_manager {
+  display: flex;
+  justify-content: center;
+
+  .MuiTableHead-root {
+    background-color: #282828;
+
+    .MuiTableCell-root {
+      color: red;
+    }
+  }
+}
