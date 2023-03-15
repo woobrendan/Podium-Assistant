@@ -1,8 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Button, Card } from "@mui/material";
 import "../../Styling/winnerTop3.scss";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchEntry } from "../../store/entryActions";
 import PlacementInput from "./PlacementInput";
 import { numOfDriverMenuItem } from "../../functions/podiumResultHelpers";
 
@@ -10,8 +8,8 @@ const WinnerPodium = ({
   seriesName,
   classification,
   onClick,
-  results,
   resultNum,
+  entries,
 }) => {
   const [winners, setWinners] = useState({
     class: classification,
@@ -21,13 +19,6 @@ const WinnerPodium = ({
   });
   const [isError, setIsError] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const entries = useSelector((state) => state.entry.entriesArray);
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchEntry());
-  }, [dispatch]);
 
   const handleWinners = (event) => {
     setWinners((prev) => ({
