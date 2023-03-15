@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Typography, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 import ResultTableHeader from "./ResultTableHeader";
 import SearchAllResults from "./SearchAllResults";
 import BackToTopButton from "../BackToTopButton";
