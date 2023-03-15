@@ -8,19 +8,9 @@ import {
   Box,
   MenuItem,
 } from "@mui/material";
-import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchEntry } from "../../store/entryActions";
+import { useState } from "react";
 
-const FastLap = ({ series, getValue }) => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchEntry());
-  }, [dispatch]);
-
-  const entries = useSelector((state) => state.entry.entriesArray);
-
+const FastLap = ({ series, getValue, entries }) => {
   const [fastTime, setFastTime] = useState({
     driver: "",
     laptime: "",
@@ -67,7 +57,7 @@ const FastLap = ({ series, getValue }) => {
         });
       }
     }
-    return drivers;
+    return drivers.sort((a, b) => a.number - b.number);
   };
 
   const mapSingleDrivers = singleDrivers(entries).map((option, index) => {
