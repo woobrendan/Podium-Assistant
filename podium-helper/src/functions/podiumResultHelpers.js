@@ -26,7 +26,7 @@ const numOfDriverMenuItem = (entry) => {
 };
 
 //dynamically render appropriate amount of WinnerPodium components based on need per series class requirements
-const numOfPodiumDisplays = (series, submit, results) => {
+const numOfPodiumDisplays = (series, submit, results, entries) => {
   const mappedSeries = series.class.map((classification, index) => (
     <WinnerPodium
       key={classification}
@@ -35,6 +35,7 @@ const numOfPodiumDisplays = (series, submit, results) => {
       results={results}
       classification={classification}
       resultNum={index + 1}
+      entries={entries}
     />
   ));
   return mappedSeries;
