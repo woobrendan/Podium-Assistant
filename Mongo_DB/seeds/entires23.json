@@ -1217,5 +1217,157 @@
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
+  },
+  {
+    "team": "OGH Valkyrie Velocity",
+    "driver1": {
+      "name": "Rob Ferriol",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "TBD",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Pro-Am",
+    "number": "95",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "OGH Valkyrie Velocity",
+    "driver1": {
+      "name": "Chris Walsh",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Dominic Starkweather",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Silver",
+    "number": "96",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "OGH Valkyrie Velocity",
+    "driver1": {
+      "name": "Sean Gibbons",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Sam Owen",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Am",
+    "number": "97",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Rotek Racing",
+    "driver1": {
+      "name": "Robb Holland",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Alain Stad",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Am",
+    "number": "099",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "AutoTechnic Racing",
+    "driver1": {
+      "name": "Rob Walker",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Satakal Khalsa",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "253",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "van der Steur Racing",
+    "driver1": {
+      "name": "Brady Behrman",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Coby Shield",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Pro-Am",
+    "number": "428",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "SP Motorsports",
+    "driver1": {
+      "name": "Anderson Tanoto",
+      "nationality": "Indonesia",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Jaden Conwright",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Am",
+    "number": "899",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Hanley Motorsports",
+    "driver1": {
+      "name": "Parker Thompson",
+      "nationality": "Canada",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Daniel Hanley",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Toyota Gazoo Racing GR Supra GT4",
+    "classification": "Pro-Am",
+    "number": "999",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
   }
 ]
