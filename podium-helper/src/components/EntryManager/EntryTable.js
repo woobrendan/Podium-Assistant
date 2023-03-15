@@ -9,6 +9,7 @@ import {
   Paper,
 } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
+import EntryBodyRows from "./EntryBodyRows";
 
 const EntryTable = () => {
   const dispatch = useDispatch();
@@ -30,14 +31,15 @@ const EntryTable = () => {
           <TableRow>
             <TableCell>Series</TableCell>
             <TableCell align="right">#</TableCell>
+            <TableCell align="right">Team</TableCell>
             <TableCell align="right">Driver 1</TableCell>
             <TableCell align="right">Driver 2</TableCell>
             <TableCell align="right">Driver 3</TableCell>
-            <TableCell align="right">Team</TableCell>
             <TableCell align="right">Vehicle</TableCell>
             <TableCell align="right">Edit</TableCell>
           </TableRow>
         </TableHead>
+        <EntryBodyRows entries={entries} />
       </Table>
     </TableContainer>
   );
