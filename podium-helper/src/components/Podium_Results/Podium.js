@@ -9,9 +9,10 @@ import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/helperFunc";
 import mongoResult from "../../functions/formMongoResult";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { resultsActions } from "../../store/resultsSlice";
 import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
+import { fetchEntry } from "../../store/entryActions";
 
 const Podium = () => {
   const { currentEventName } = useEvents();
@@ -31,6 +32,12 @@ const Podium = () => {
       event: currentEventName,
     }));
   }, [currentEventName]);
+
+  useEffect(() => {
+    dispatch(fetchEntry());
+  }, [dispatch]);
+
+  const entries = useSelector((state) => state.entry.entriesArray);
 
   const handleFinalSubmit = () => {
     dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
@@ -62,10 +69,19 @@ const Podium = () => {
       </div>
       <div className="podium_results_container">
         {results.series &&
-          numOfPodiumDisplays(results.series, handleRacePodiumSubmit, results)}
+          numOfPodiumDisplays(
+            results.series,
+            handleRacePodiumSubmit,
+            results,
+            entries,
+          )}
       </div>
       {results.series && (
-        <FastLap getValue={getValue} series={results.series} />
+        <FastLap
+          getValue={getValue}
+          series={results.series}
+          entries={entries}
+        />
       )}
       {results.fastLap && (
         <Button
