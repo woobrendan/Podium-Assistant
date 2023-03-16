@@ -20,6 +20,17 @@ const EntryBodyRows = ({ entries }) => {
     }
   };
 
+  const sortEntries = () => {
+    const entryArr = {};
+    entries.forEach((entry) => {
+      const series = entry.series;
+      entryArr[series]
+        ? entryArr[series].push(entry)
+        : (entryArr[series] = [entry]);
+    });
+    return entryArr;
+  };
+
   return (
     <TableBody>
       {entries.map((entry, index) => (
