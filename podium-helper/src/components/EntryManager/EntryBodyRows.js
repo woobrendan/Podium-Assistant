@@ -20,20 +20,28 @@ const EntryBodyRows = ({ entries }) => {
     }
   };
 
-  const sortEntries = () => {
-    const entryArr = {};
+  const sortEntries = (entries) => {
+    const entryObj = {};
+    const entryArr = [];
     entries.forEach((entry) => {
       const series = entry.series;
-      entryArr[series]
-        ? entryArr[series].push(entry)
-        : (entryArr[series] = [entry]);
+      entryObj[series]
+        ? entryObj[series].push(entry)
+        : (entryObj[series] = [entry]);
     });
-    return entryArr;
+
+    for (const series in entryObj) {
+      const sorted = entryObj[series].sort((a, b) => a.number - b.number);
+      if (series !== "GT World Challenge America") entryArr.push(...sorted);
+    }
+    return entryObj["GT World Challenge America"]
+      ? [...entryObj["GT World Challenge America"], ...entryArr]
+      : entryArr;
   };
 
   return (
     <TableBody>
-      {entries.map((entry, index) => (
+      {sortEntries(entries).map((entry, index) => (
         <TableRow
           key={index}
           sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
