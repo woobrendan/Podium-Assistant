@@ -1,24 +1,9 @@
-import { TableBody, TableRow, TableCell } from "@mui/material";
+import { TableBody, TableRow, TableCell, Button } from "@mui/material";
+import { useState } from "react";
+import { shortenName } from "../../functions/helperFunc";
 
 const EntryBodyRows = ({ entries }) => {
-  const shortenName = (series) => {
-    switch (series) {
-      case "GT World Challenge America":
-        return "GTWCA";
-      case "GT America":
-        return "GTA";
-      case "Pirelli GT4 America":
-        return "PGT4A";
-      case "TC America":
-        return "TCAM";
-      case "Intercontinental GT Challenge":
-        return "IGTC";
-      case "Toyota GR Cup":
-        return "GR Cup";
-      default:
-        return "SRO";
-    }
-  };
+  const [showModal, setShowModal] = useState(false);
 
   const sortEntries = (entries) => {
     const entryObj = {};
@@ -59,7 +44,14 @@ const EntryBodyRows = ({ entries }) => {
             {entry.driver3 ? entry.driver3.name : ""}
           </TableCell>
           <TableCell align="right">{entry.vehicle}</TableCell>
-          <TableCell align="right">Edit</TableCell>
+          <TableCell align="right">
+            <Button
+              variant="contained"
+              onClick={() => setShowModal(!showModal)}
+            >
+              Edit
+            </Button>
+          </TableCell>
         </TableRow>
       ))}
     </TableBody>
