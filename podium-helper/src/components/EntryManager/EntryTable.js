@@ -21,6 +21,25 @@ const EntryTable = () => {
 
   const entries = useSelector((state) => state.entry.entriesArray);
 
+  const sortEntries = (entries) => {
+    const entryObj = {};
+    const entryArr = [];
+    entries.forEach((entry) => {
+      const series = entry.series;
+      entryObj[series]
+        ? entryObj[series].push(entry)
+        : (entryObj[series] = [entry]);
+    });
+
+    for (const series in entryObj) {
+      const sorted = entryObj[series].sort((a, b) => a.number - b.number);
+      if (series !== "GT World Challenge America") entryArr.push(...sorted);
+    }
+    return entryObj["GT World Challenge America"]
+      ? [...entryObj["GT World Challenge America"], ...entryArr]
+      : entryArr;
+  };
+
   return (
     <section id="entry_manager">
       <TableContainer sx={{ minWidth: 600, maxWidth: 1000 }} component={Paper}>
@@ -37,7 +56,9 @@ const EntryTable = () => {
               <TableCell align="right">Edit</TableCell>
             </TableRow>
           </TableHead>
-          <EntryBodyRows entries={entries} />
+          {sortEntries(entries).map((entry, index) => (
+            <EntryBodyRows entry={entry} key={index} />
+          ))}
         </Table>
       </TableContainer>
     </section>
