@@ -18,7 +18,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
   };
 
   // console.log("entry", entry);
-  console.log("modal", modalEntry);
+  // console.log("modal", modalEntry);
 
   const onInputChange = (e) => {
     setModalEntry((prev) => ({
@@ -31,6 +31,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
     const nameVal = e.target.name;
     let keyVal = "";
     const driverNum = nameVal.includes("1") ? "driver1" : "driver2";
+
     if (nameVal.includes("nationality")) {
       keyVal = "nationality";
     } else if (nameVal.includes("name")) {
@@ -71,15 +72,16 @@ const EditModal = ({ entry, handleToggle, show }) => {
           label="Vehicle"
         />
         <section className="input_driver">
-          <EditDriver entry={modalEntry} onChange={onDriverChange} />
-          <section className="input_driver_2">
-            <InputContainer
-              val={modalEntry.driver2.name}
-              name="driver2"
-              onInputChange={onInputChange}
-              label="Driver 2"
-            />
-          </section>
+          <EditDriver
+            entry={modalEntry}
+            onChange={onDriverChange}
+            driverNum="1"
+          />
+          <EditDriver
+            entry={modalEntry}
+            onChange={onDriverChange}
+            driverNum="2"
+          />
         </section>
         <Button
           variant="contained"
