@@ -8,7 +8,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
   const [modalEntry, setModalEntry] = useState({
     ...entry,
     driver1: { ...entry.driver1 },
-    driver2: { ...entry.driver2 },
+    ...(entry.driver2 ? { driver2: { ...entry.driver2 } } : {}),
   });
 
   const handleSubmit = (e) => {
@@ -18,7 +18,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
   };
 
   // console.log("entry", entry);
-  // console.log("modal", modalEntry);
+  console.log("modal", modalEntry);
 
   const onInputChange = (e) => {
     setModalEntry((prev) => ({
@@ -77,11 +77,13 @@ const EditModal = ({ entry, handleToggle, show }) => {
             onChange={onDriverChange}
             driverNum="1"
           />
-          <EditDriver
-            entry={modalEntry}
-            onChange={onDriverChange}
-            driverNum="2"
-          />
+          {modalEntry.driver2 && (
+            <EditDriver
+              entry={modalEntry}
+              onChange={onDriverChange}
+              driverNum="2"
+            />
+          )}
         </section>
         <Button
           variant="contained"
