@@ -22,12 +22,12 @@
     "team": "K-PAX Racing",
     "driver1": {
       "name": "Michele Beretta",
-      " nationality": "Italy",
+      "nationality": "Italy",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Andrea Calderlli",
-      " nationality": "Italy",
+      "nationality": "Italy",
       "rating": "Platinum"
     },
     "vehicle": "Lamborghini Huracan GT3",
@@ -41,12 +41,12 @@
     "team": "K-PAX Racing",
     "driver1": {
       "name": "Misha Goikhberg",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Jordan Pepper",
-      " nationality": "South Africa",
+      "nationality": "South Africa",
       "rating": "Gold"
     },
     "vehicle": "Lamborghini Huracan GT3",
@@ -60,12 +60,12 @@
     "team": "Crowdstrike Racing with Riley Motorsports",
     "driver1": {
       "name": "George Kurtz",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Colin Braun",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT3",
@@ -79,12 +79,12 @@
     "team": "US Racetronics",
     "driver1": {
       "name": "Steven Aghakhani",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Loris Spinelli",
-      " nationality": "Italy",
+      "nationality": "Italy",
       "rating": "Silver"
     },
     "vehicle": "Mercedes-AMG GT3",
@@ -98,12 +98,12 @@
     "team": "DXDT Racing",
     "driver1": {
       "name": "Scott Smithson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Bryan Sellers",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT3",
@@ -117,12 +117,12 @@
     "team": "TR3 Racing",
     "driver1": {
       "name": "Ziad Ghandour",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Giacomo Altoe",
-      " nationality": "Italy",
+      "nationality": "Italy",
       "rating": "Gold"
     },
     "vehicle": "Lamborghini Huracan GT3 EVO",
@@ -136,12 +136,12 @@
     "team": "Ian Lacy Racing",
     "driver1": {
       "name": "Frank Gannett",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Drew Staveley",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT3",
@@ -155,12 +155,12 @@
     "team": "Triarsi Competizione",
     "driver1": {
       "name": "Justin Wetherill",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Ryan Dalziel",
-      " nationality": "Scotland",
+      "nationality": "Scotland",
       "rating": "Gold"
     },
     "vehicle": "Ferrari 488 GT3 EVO",
@@ -174,12 +174,12 @@
     "team": "Triarsi Competizione",
     "driver1": {
       "name": "Charlie Scardina",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Onofrio Triarsi",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Ferrari 488 GT3 EVO",
@@ -193,12 +193,12 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "James Sofronas",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Kyle Washington",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 911 GT3-R (991.ii)",
@@ -212,12 +212,12 @@
     "team": "Winward Racing",
     "driver1": {
       "name": "Russell Ward",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Philip Ellis",
-      " nationality": "Switzerland",
+      "nationality": "Switzerland",
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT3",
@@ -231,12 +231,12 @@
     "team": "Conquest Racing",
     "driver1": {
       "name": "Manny Franco",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Alessandro Balzan",
-      " nationality": "Italy",
+      "nationality": "Italy",
       "rating": "Gold"
     },
     "vehicle": "Ferrari 488 GT3",
@@ -250,12 +250,12 @@
     "team": "ST Racing",
     "driver1": {
       "name": "Samantha Tan",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Nick Wittmer",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT3",
@@ -269,12 +269,12 @@
     "team": "RealTime Racing",
     "driver1": {
       "name": "Erin Vogel",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Michael Cooper",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Acura NSX GT3",
@@ -288,12 +288,12 @@
     "team": "Wright Motorsports",
     "driver1": {
       "name": "Charlie Luck",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Jan Heylen",
-      " nationality": "Belgium",
+      "nationality": "Belgium",
       "rating": "Gold"
     },
     "vehicle": "Porsche 911 GT3-R (991.ii)",
@@ -307,12 +307,12 @@
     "team": "AF Corse",
     "driver1": {
       "name": "Jean-Claude Saada",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Conrad Grunewald",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Ferrari 488 GT3",
@@ -326,12 +326,12 @@
     "team": "DXDT Racing",
     "driver1": {
       "name": "David Askew",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Dirk Mueller",
-      " nationality": "Germany",
+      "nationality": "Germany",
       "rating": "Platinum"
     },
     "vehicle": "Mercedes-AMG GT3",
@@ -345,12 +345,12 @@
     "team": "Zelus Motorsports",
     "driver1": {
       "name": "Jason Harward",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Madison Snow",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Lamborghini Huracan GT3 EVO",
@@ -364,12 +364,12 @@
     "team": "Zelus Motorsports",
     "driver1": {
       "name": "Jeff Burton",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Corey Lewis",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Lamborghini Huracan GT3 EVO",
@@ -383,12 +383,12 @@
     "team": "Racers Edge Motorsports",
     "driver1": {
       "name": "Ashton Harrison",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Mario Farnbacher",
-      " nationality": "Germany",
+      "nationality": "Germany",
       "rating": "Gold"
     },
     "vehicle": "Acura NSX GT3",
@@ -402,12 +402,12 @@
     "team": "BimmerWorld",
     "driver1": {
       "name": "Chandler Hull",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Bill Auberlen",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "BMW M4 GT3",
@@ -421,12 +421,12 @@
     "team": "Turner Motorsport",
     "driver1": {
       "name": "Michael Dinan",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Robby Foley",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT3",
@@ -440,12 +440,12 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "Jason Bell",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Andrew Davis",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -459,12 +459,12 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "Zane Hodgen",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Cameron Lawrence",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -478,12 +478,12 @@
     "team": "NOLASPORT",
     "driver1": {
       "name": "Sam Owen",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Sean Gibbons",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -497,12 +497,12 @@
     "team": "Flying Lizard Motorsport",
     "driver1": {
       "name": "Elias Sabo",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Andy Lee",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -516,12 +516,12 @@
     "team": "Fast Track Racing",
     "driver1": {
       "name": "Tim Horrell",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Raphael Matos",
-      " nationality": "Brazil",
+      "nationality": "Brazil",
       "rating": "Gold"
     },
     "vehicle": "BMW M4 GT4",
@@ -535,12 +535,12 @@
     "team": "Fast Track Racing",
     "driver1": {
       "name": "Damon Surzyshyn",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Gregory Liefooghe",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
@@ -554,12 +554,12 @@
     "team": "BSport Racing",
     "driver1": {
       "name": "Bryan Putt",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Kenton Koch",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -573,12 +573,12 @@
     "team": "Hattori Motorsports",
     "driver1": {
       "name": "Seth Lucas",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Matt Plumb",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -592,12 +592,12 @@
     "team": "Forbush Performance",
     "driver1": {
       "name": "Damon Surzyshyn",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Gregory Liefooghe",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -611,12 +611,12 @@
     "team": "The Racers Group",
     "driver1": {
       "name": "James Rappaport",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Todd Hetherington",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -630,12 +630,12 @@
     "team": "RS1",
     "driver1": {
       "name": "Eric Filgueiras",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Stevan McAleer",
-      " nationality": "Scotland",
+      "nationality": "Scotland",
       "rating": "Silver"
     },
     "vehicle": "Porsche Cayman 718 Cayman GT4 RS CS",
@@ -649,12 +649,12 @@
     "team": "NOLASPORT",
     "driver1": {
       "name": "Alain Stad",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Matt Travis",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche Cayman 718 Cayman GT4 RS CS",
@@ -668,12 +668,12 @@
     "team": "Carrus Callas Race Team",
     "driver1": {
       "name": "Nick Shanny",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Terry Borcheller",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Toyota GR Supra",
@@ -687,12 +687,12 @@
     "team": "Heart of Racing Team",
     "driver1": {
       "name": "Gray Newell",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Ian James",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -706,12 +706,12 @@
     "team": "Capstone Motorsports",
     "driver1": {
       "name": "Kris Wilson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Cole Ciraulo",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -725,12 +725,12 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "Kyle Washington",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "James Sofronas",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -744,12 +744,12 @@
     "team": "Forbush Performance",
     "driver1": {
       "name": "Matt Forbush",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Caleb Bacon",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Toyota GR Supra",
@@ -763,12 +763,12 @@
     "team": "Conquest Racing/JWF Motorsports",
     "driver1": {
       "name": "Gavin Sanders",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Michai Stephens",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -782,12 +782,12 @@
     "team": "Conquest Racing",
     "driver1": {
       "name": "Custodio Toledo",
-      " nationality": "Brazil",
+      "nationality": "Brazil",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Paulo Carcasci",
-      " nationality": "Brazil",
+      "nationality": "Brazil",
       "rating": "Am"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -801,12 +801,12 @@
     "team": "BimmerWorld",
     "driver1": {
       "name": "Charlie Postins",
-      " nationality": "United Kingdom",
+      "nationality": "United Kingdom",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "James Clay",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -820,12 +820,12 @@
     "team": "STR38 Motorsports",
     "driver1": {
       "name": "Ramana Lagemann",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Robert Mau",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -839,12 +839,12 @@
     "team": "Cameron Racing",
     "driver1": {
       "name": "Chris Cagnazzi",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Guy Cosmo",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -858,12 +858,12 @@
     "team": "NOLASPORT",
     "driver1": {
       "name": "Scott Noble",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Jason Hart",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -877,12 +877,12 @@
     "team": "Team Saleen",
     "driver1": {
       "name": "Steve Saleen",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Eric Curran",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "Saleen 1",
@@ -896,12 +896,12 @@
     "team": "Chouest Povoledo Racing",
     "driver1": {
       "name": "Ross Chouest",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Aaron Povoledo",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -915,12 +915,12 @@
     "team": "AutoTechnic Racing",
     "driver1": {
       "name": "Austen Smith",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Zac Anderson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
@@ -934,12 +934,12 @@
     "team": "AutoTechnic Racing",
     "driver1": {
       "name": "Tom Capizzi",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "John Capestro-Dubets",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
@@ -953,12 +953,12 @@
     "team": "AutoTechnic Racing",
     "driver1": {
       "name": "Rob Walker",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Alex Filsinger",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -972,12 +972,12 @@
     "team": "Accerlating Performance",
     "driver1": {
       "name": "Moisey Uretsky",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Justin Piscitell",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -991,12 +991,12 @@
     "team": "G2 Racing / GSpeed",
     "driver1": {
       "name": "Grayson Farischon",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Mike Skeen",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
@@ -1010,12 +1010,12 @@
     "team": "Dexter Racing",
     "driver1": {
       "name": "Ben Anderson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Matt Rivard",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Ginetta G56 GT4",
@@ -1029,12 +1029,12 @@
     "team": "The Racers Group",
     "driver1": {
       "name": "Jason Alexandridis",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Derek DeBoer",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -1048,12 +1048,12 @@
     "team": "Smooge Racing",
     "driver1": {
       "name": "Kevin Conway",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "John Geesbreght",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -1067,12 +1067,12 @@
     "team": "Smooge Racing",
     "driver1": {
       "name": "Todd Coleman",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Aaron Telitz",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -1086,12 +1086,12 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "Jay Logan",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Alex Premat",
-      " nationality": "France",
+      "nationality": "France",
       "rating": "Gold"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -1105,12 +1105,12 @@
     "team": "KRUGSPEED",
     "driver1": {
       "name": "Anthony Geraci",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Jaden Lander",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -1124,12 +1124,12 @@
     "team": "RENNtech Motorsports",
     "driver1": {
       "name": "Chris Gumprecht",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Kyle Marcelli",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -1143,12 +1143,12 @@
     "team": "Rooster Hall Racing",
     "driver1": {
       "name": "Todd Brown",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Johan Schwartz",
-      " nationality": "Denmark",
+      "nationality": "Denmark",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -1162,12 +1162,12 @@
     "team": "BimmerWorld",
     "driver1": {
       "name": "James Walker Jr",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Devin Jones",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
@@ -1181,12 +1181,12 @@
     "team": "RS1",
     "driver1": {
       "name": "Nelson Calle",
-      " nationality": "Colombia",
+      "nationality": "Colombia",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Juan Martinez",
-      " nationality": "Colombia",
+      "nationality": "Colombia",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -1200,12 +1200,12 @@
     "team": "RENNtech Motorsports",
     "driver1": {
       "name": "Paul Kiebler",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Jon Branam",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -1219,12 +1219,12 @@
     "team": "Random Vandals Racing",
     "driver1": {
       "name": "Paul Sparta",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Al Carter",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -1238,12 +1238,12 @@
     "team": "Dexter Racing",
     "driver1": {
       "name": "Ryan Dexter",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "driver2": {
       "name": "Dominic Starkweather",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -1257,12 +1257,12 @@
     "team": "Premier Racing",
     "driver1": {
       "name": "Adam Adelson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Elliot Skeer",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Porscher 718 Cayman GT4 RS CS",
@@ -1276,12 +1276,12 @@
     "team": "ARG/Rotek Racing",
     "driver1": {
       "name": "Edgar Lau",
-      " nationality": "Hong Kong",
+      "nationality": "Hong Kong",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Billy Johnson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Gold"
     },
     "vehicle": "Ford Mustang GT4",
@@ -1295,12 +1295,12 @@
     "team": "Team ACP - Tangerine Associates",
     "driver1": {
       "name": "Alex Amine",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Ryan Hall",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -1314,12 +1314,12 @@
     "team": "Indian Summer Racing",
     "driver1": {
       "name": "Travis Washay",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Francis Selldorff",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -1333,12 +1333,12 @@
     "team": "BMB Motorsports",
     "driver1": {
       "name": "Thomas Collingwood",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "John Tecce",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -1352,12 +1352,12 @@
     "team": "Regal Motorsports",
     "driver1": {
       "name": "Anthony Bartone",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Andy Pilgrim",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -1371,12 +1371,12 @@
     "team": "Zelus Motorsports",
     "driver1": {
       "name": "Matt Guiver",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Sean Whalen",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -1390,12 +1390,12 @@
     "team": "CarBahn w/ Peregrine Racing",
     "driver1": {
       "name": "Mark Siegel",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "driver2": {
       "name": "Tom Dyer",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Audi R8 LMS GT4",
@@ -1409,7 +1409,7 @@
     "team": "Fast Track Racing",
     "driver1": {
       "name": "Jacob Ruud",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1423,7 +1423,7 @@
     "team": "Rigid Speed",
     "driver1": {
       "name": "Joesph Catania",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1437,7 +1437,7 @@
     "team": "Rigid Speed",
     "driver1": {
       "name": "Lucas Catania",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1451,7 +1451,7 @@
     "team": "Fast Track Racing",
     "driver1": {
       "name": "Olivia Askew",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1465,7 +1465,7 @@
     "team": "HARD Motorsports",
     "driver1": {
       "name": "Steve Streimer",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1479,7 +1479,7 @@
     "team": "Rooster Hall Racing",
     "driver1": {
       "name": "Colin Garrett",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1493,7 +1493,7 @@
     "team": "Homewrecker Racing LLC",
     "driver1": {
       "name": "Brett Scorggin",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1507,7 +1507,7 @@
     "team": "Fast Track Racing",
     "driver1": {
       "name": "Garrett Adams",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1521,7 +1521,7 @@
     "team": "Accerlating Performance",
     "driver1": {
       "name": "Stephen Cugliari",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1535,7 +1535,7 @@
     "team": "Random Vandals Racing",
     "driver1": {
       "name": "Jessica Tracy",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M2 CS(Cup)",
@@ -1549,7 +1549,7 @@
     "team": "DRS & Garagistic",
     "driver1": {
       "name": "Matthew Ibrahim",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M240iR (2019 EVO)",
@@ -1563,7 +1563,7 @@
     "team": "VGRT",
     "driver1": {
       "name": "Celso Neto",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Type-R",
@@ -1577,7 +1577,7 @@
     "team": "Skip Barber Racing School",
     "driver1": {
       "name": "Kevin Boehm",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Type-R",
@@ -1591,7 +1591,7 @@
     "team": "DRS & Garagistic",
     "driver1": {
       "name": "Kris Valdez",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "BMW M240iR (2019 EVO)",
@@ -1605,7 +1605,7 @@
     "team": "TechSport Racing",
     "driver1": {
       "name": "Jason Weaver",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Nissan 370z TC Spec",
@@ -1619,7 +1619,7 @@
     "team": "LA Honda World Racing",
     "driver1": {
       "name": "Mat Pombo",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Type-R",
@@ -1633,7 +1633,7 @@
     "team": "Skip Barber Racing SChool",
     "driver1": {
       "name": "Ken Fukuda",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Type-R",
@@ -1647,7 +1647,7 @@
     "team": "MINI JCW Team",
     "driver1": {
       "name": "Clay Williams",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "MINI JCW Pro TC",
@@ -1661,7 +1661,7 @@
     "team": "FTG Racing",
     "driver1": {
       "name": "Joey Jordan",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Mazda 3",
@@ -1675,7 +1675,7 @@
     "team": "LA Honda World Racing",
     "driver1": {
       "name": "Mike Lamara",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Type-R",
@@ -1689,7 +1689,7 @@
     "team": "Genracer / Ricca Autosport",
     "driver1": {
       "name": "Jeff Ricca",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Hyundai Veloster N TC",
@@ -1703,7 +1703,7 @@
     "team": "Genracer / Ricca Autosport",
     "driver1": {
       "name": "Nicholas Barbato",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Hyundai Veloster N TC",
@@ -1717,7 +1717,7 @@
     "team": "Skip Barber Racing School",
     "driver1": {
       "name": "Colin Harrison",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Si",
@@ -1731,7 +1731,7 @@
     "team": "LA Honda World Racing",
     "driver1": {
       "name": "Spencer Bucknum",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Si",
@@ -1745,7 +1745,7 @@
     "team": "Skip Barber Racing School",
     "driver1": {
       "name": "Carter Fartuch",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Si",
@@ -1759,7 +1759,7 @@
     "team": "Skip Barber Racing School",
     "driver1": {
       "name": "Mike Ogren",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Si",
@@ -1773,7 +1773,7 @@
     "team": "TechSport Racing",
     "driver1": {
       "name": "Gresham Wagner",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Subaru BRZ",
@@ -1787,7 +1787,7 @@
     "team": "TechSport Racing",
     "driver1": {
       "name": "Devin Anderson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Subaru BRZ",
@@ -1801,7 +1801,7 @@
     "team": "TechSport Racing",
     "driver1": {
       "name": "Shaoyi Che",
-      " nationality": "China",
+      "nationality": "China",
       "rating": "N/A"
     },
     "vehicle": "Subaru BRZ",
@@ -1815,7 +1815,7 @@
     "team": "Bryan Herta Autosport w/ Curb-Agajanian",
     "driver1": {
       "name": "Tyler Delgado",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Hyundai Elantra N-Line",
@@ -1829,7 +1829,7 @@
     "team": "MINI JCW Team",
     "driver1": {
       "name": "Christian Perocarpi",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "MINI JCW",
@@ -1843,7 +1843,7 @@
     "team": "MINI JCW Team",
     "driver1": {
       "name": "PJ Groenke",
-      " nationality": "Canada",
+      "nationality": "Canada",
       "rating": "N/A"
     },
     "vehicle": "MINI JCW",
@@ -1857,7 +1857,7 @@
     "team": "LA Honda World Racing",
     "driver1": {
       "name": "Mario Biundo",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Si",
@@ -1871,7 +1871,7 @@
     "team": "Bryan Herta Autosport w/ Curb-Agajanian",
     "driver1": {
       "name": "Branyon Tiner",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Hyundai Elantra N-Line",
@@ -1885,7 +1885,7 @@
     "team": "VGRT",
     "driver1": {
       "name": "Sally McNulty",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Honda Civic Si",
@@ -1899,7 +1899,7 @@
     "team": "Team Hardpoint",
     "driver1": {
       "name": "PJ Hyett",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 911 GT3-R (991.ii)",
@@ -1913,7 +1913,7 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "Jason Bell",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -1927,7 +1927,7 @@
     "team": "CrowdStrike w/ Riley Motorsports",
     "driver1": {
       "name": "George Kurtz",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Mercedes-AMG GT3",
@@ -1941,7 +1941,7 @@
     "team": "Flying Lizard Motorsports",
     "driver1": {
       "name": "Elias Sabo",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -1955,7 +1955,7 @@
     "team": "BSport Racing",
     "driver1": {
       "name": "Bryan Putt",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -1969,7 +1969,7 @@
     "team": "Hattori Motorsports",
     "driver1": {
       "name": "Seth Lucas",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -1983,7 +1983,7 @@
     "team": "NOLASPORT",
     "driver1": {
       "name": "Alain Stad",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -1997,7 +1997,7 @@
     "team": "Carrus Callas Race Team",
     "driver1": {
       "name": "Nick Shanny",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -2011,7 +2011,7 @@
     "team": "SRQ Motorsports Motorsports",
     "driver1": {
       "name": "Marko Radisic",
-      " nationality": "Serbia",
+      "nationality": "Serbia",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -2025,7 +2025,7 @@
     "team": "Heart of Racing Team",
     "driver1": {
       "name": "Gray Newell",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -2039,7 +2039,7 @@
     "team": "Daskalos Motorsports",
     "driver1": {
       "name": "Jason Daskalos",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Audi R8 LMS",
@@ -2053,7 +2053,7 @@
     "team": "SRQ Motorsports Group",
     "driver1": {
       "name": "Rick Uhler",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "BMW M4 GT4",
@@ -2067,7 +2067,7 @@
     "team": "Conquest Racing",
     "driver1": {
       "name": "Custodio Toledo",
-      " nationality": "Brazil",
+      "nationality": "Brazil",
       "rating": "Bronze"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -2081,7 +2081,7 @@
     "team": "Triarsi Competizione",
     "driver1": {
       "name": "Justin Wetherill",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Ferrari 488 GT3",
@@ -2095,7 +2095,7 @@
     "team": "Cameron Racing",
     "driver1": {
       "name": "Chris Cagnazzi",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -2109,7 +2109,7 @@
     "team": "Chouest Povoledo Racing",
     "driver1": {
       "name": "Ross Chouest",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -2123,7 +2123,7 @@
     "team": "Accelerating Performance",
     "driver1": {
       "name": "Moisey Uretsky",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -2137,7 +2137,7 @@
     "team": "SKI Autosports",
     "driver1": {
       "name": "Andy Pilgrim",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Ferrari 458 Italia GT3",
@@ -2151,7 +2151,7 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "CJ Moses",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Audi R8 LMS GT2",
@@ -2165,7 +2165,7 @@
     "team": "Dexter Racing",
     "driver1": {
       "name": "Matthew Ibrahim",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Ginetta G56 GT4",
@@ -2179,7 +2179,7 @@
     "team": "Smooge Racing",
     "driver1": {
       "name": "Jose DaSilva",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -2193,7 +2193,7 @@
     "team": "Smooge Racing",
     "driver1": {
       "name": "Todd Coleman",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Toyota GR Supra GT4",
@@ -2207,7 +2207,7 @@
     "team": "MISHUMOTORS",
     "driver1": {
       "name": "Mirco Schultis",
-      " nationality": "Germany",
+      "nationality": "Germany",
       "rating": "Bronze"
     },
     "vehicle": "Callaway Corvette C7 GT3-R",
@@ -2221,7 +2221,7 @@
     "team": "GMG Racing",
     "driver1": {
       "name": "Jay Logan",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -2235,7 +2235,7 @@
     "team": "RENNtech Motorsports",
     "driver1": {
       "name": "Chris Gumprecht",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -2249,7 +2249,7 @@
     "team": "Zelus Motorsports",
     "driver1": {
       "name": "Jason Harward",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Lamborghini Huracan GT3",
@@ -2263,7 +2263,7 @@
     "team": "RENNtech Motorsports",
     "driver1": {
       "name": "Paul Kiebler",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Mercedes-AMG GT4",
@@ -2277,7 +2277,7 @@
     "team": "Rotek Racing",
     "driver1": {
       "name": "Robb Holland",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -2291,7 +2291,7 @@
     "team": "Premier Racing",
     "driver1": {
       "name": "Adam Adelson",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -2305,7 +2305,7 @@
     "team": "ARG/Rotek Racing",
     "driver1": {
       "name": "Chris Alliegro",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Ford Mustang GT4",
@@ -2319,7 +2319,7 @@
     "team": "Zelus Motorsports",
     "driver1": {
       "name": "Jeff Burton",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Lamborghini Huracan GT3",
@@ -2333,7 +2333,7 @@
     "team": "Zelus Motorsports",
     "driver1": {
       "name": "Sean Whalen",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -2347,7 +2347,7 @@
     "team": "Regal Motorsports LLC/Bartone Bros",
     "driver1": {
       "name": "Andy Pilgrim",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
@@ -2361,7 +2361,7 @@
     "team": "Regal Motorsports LLC/Bartone Bros",
     "driver1": {
       "name": "Anthony Bartone",
-      " nationality": "USA",
+      "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
