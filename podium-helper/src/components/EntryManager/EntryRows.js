@@ -32,6 +32,7 @@ const EntryRows = ({ entry }) => {
         <EditModal
           handleToggle={() => setShowModal(!showModal)}
           show={showModal}
+          entry={entry}
         />
       )}
     </>
