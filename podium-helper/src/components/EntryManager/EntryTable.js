@@ -42,7 +42,7 @@ const EntryTable = () => {
 
   return (
     <section id="entry_manager">
-      <TableContainer sx={{ minWidth: 600, maxWidth: 1000 }} component={Paper}>
+      <TableContainer sx={{ minWidth: 600 }} component={Paper}>
         <Table>
           <TableHead>
             <TableRow>
@@ -53,6 +53,7 @@ const EntryTable = () => {
               <TableCell align="right">Driver 2</TableCell>
               <TableCell align="right">Driver 3</TableCell>
               <TableCell align="right">Vehicle</TableCell>
+              <TableCell align="right">Class</TableCell>
               <TableCell align="right">Edit</TableCell>
             </TableRow>
           </TableHead>
