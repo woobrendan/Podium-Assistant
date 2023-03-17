@@ -1,6 +1,6 @@
 const InputContainer = ({ onInputChange, val, label, name }) => {
   return (
-    <div className={`editModal_input`}>
+    <div className={`editModal_input input_${name}`}>
       <label>{label}:</label>
       <input
         type="input"
