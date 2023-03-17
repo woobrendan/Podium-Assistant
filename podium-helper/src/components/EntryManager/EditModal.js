@@ -1,6 +1,7 @@
 import { Modal, Box, Button } from "@mui/material";
 import { useState } from "react";
 import "../../Styling/modal.scss";
+import EditDriver from "./EditDriver";
 import InputContainer from "./InputContainer";
 
 const EditModal = ({ entry, handleToggle, show }) => {
@@ -17,12 +18,33 @@ const EditModal = ({ entry, handleToggle, show }) => {
   };
 
   // console.log("entry", entry);
-  // console.log("modal", modalEntry);
+  console.log("modal", modalEntry);
 
   const onInputChange = (e) => {
     setModalEntry((prev) => ({
       ...prev,
       [e.target.name]: e.target.value,
+    }));
+  };
+
+  const onDriverChange = (e) => {
+    const nameVal = e.target.name;
+    let keyVal = "";
+    const driverNum = nameVal.includes("1") ? "driver1" : "driver2";
+    if (nameVal.includes("nationality")) {
+      keyVal = "nationality";
+    } else if (nameVal.includes("name")) {
+      keyVal = "name";
+    } else {
+      keyVal = "rating";
+    }
+
+    setModalEntry((prev) => ({
+      ...prev,
+      [driverNum]: {
+        ...prev[driverNum],
+        [keyVal]: e.target.value,
+      },
     }));
   };
 
@@ -48,19 +70,16 @@ const EditModal = ({ entry, handleToggle, show }) => {
           onInputChange={onInputChange}
           label="Vehicle"
         />
-        <section className="driver_inputs">
-          <InputContainer
-            val={modalEntry.driver1.name}
-            name="driver1"
-            onInputChange={onInputChange}
-            label="Driver 1"
-          />
-          <InputContainer
-            val={modalEntry.driver2.name}
-            name="driver2"
-            onInputChange={onInputChange}
-            label="Driver 2"
-          />
+        <section className="input_driver">
+          <EditDriver entry={modalEntry} onChange={onDriverChange} />
+          <section className="input_driver_2">
+            <InputContainer
+              val={modalEntry.driver2.name}
+              name="driver2"
+              onInputChange={onInputChange}
+              label="Driver 2"
+            />
+          </section>
         </section>
         <Button
           variant="contained"
