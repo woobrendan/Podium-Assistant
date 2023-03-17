@@ -1,6 +1,6 @@
 const InputContainer = ({ onInputChange, val, label, name }) => {
   return (
-    <div className={`editModal_input__${comp}`}>
+    <div className={`editModal_input`}>
       <label>{label}:</label>
       <input
         type="input"
@@ -17,3 +17,5 @@ const InputContainer = ({ onInputChange, val, label, name }) => {
     </div>
   );
 };
+
+export default InputContainer;
