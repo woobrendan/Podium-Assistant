@@ -22,6 +22,7 @@ const EntryRows = ({ entry }) => {
           {entry.driver3 ? entry.driver3.name : ""}
         </TableCell>
         <TableCell align="right">{entry.vehicle}</TableCell>
+        <TableCell align="right">{entry.classification}</TableCell>
         <TableCell align="right">
           <Button variant="contained" onClick={() => setShowModal(!showModal)}>
             Edit
