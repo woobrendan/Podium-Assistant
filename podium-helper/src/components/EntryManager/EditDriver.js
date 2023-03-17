@@ -1,24 +1,25 @@
 import InputContainer from "./InputContainer";
 
-const EditDriver = ({ entry }) => {
+const EditDriver = ({ entry, onChange, driverNum }) => {
+  const driver = `driver${driverNum}`;
   return (
-    <section className="input_driver_1">
+    <section className={`input_driver_${driverNum}`}>
       <InputContainer
-        val={entry.driver1.name}
-        name="driver1.name"
-        onInputChange={onInputChange}
-        label="Driver 1"
+        val={entry[driver].name}
+        name={`driver ${driverNum} name`}
+        onInputChange={onChange}
+        label={`Driver ${driverNum}`}
       />
       <InputContainer
-        val={entry.driver1.nationality}
-        name="driver1.nationality"
-        onInputChange={onInputChange}
+        val={entry[driver].nationality}
+        name={`driver ${driverNum} nationality`}
+        onInputChange={onChange}
         label="Nationality"
       />
       <InputContainer
-        val={entry.driver1.raing}
-        name="driver1.rating"
-        onInputChange={onInputChange}
+        val={entry[driver].rating}
+        name={`driver ${driverNum} rating`}
+        onInputChange={onChange}
         label="FIA Rating"
       />
     </section>
