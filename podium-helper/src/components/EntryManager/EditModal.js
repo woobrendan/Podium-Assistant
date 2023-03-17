@@ -1,6 +1,7 @@
 import { Modal, Box, Button } from "@mui/material";
 import { useState } from "react";
 import "../../Styling/modal.scss";
+import InputContainer from "./InputContainer";
 
 const EditModal = ({ entry, handleToggle, show }) => {
   const [modalEntry, setModalEntry] = useState({
@@ -29,15 +30,38 @@ const EditModal = ({ entry, handleToggle, show }) => {
     <Modal open={show} onClose={handleToggle}>
       <Box id="edit_modal">
         <h2>Series: {modalEntry.series}</h2>
-        <div className="input__class_container">
-          <label>Class: </label>
-          <input
-            type="input"
-            value={modalEntry.classification}
-            name="classification"
-            onChange={(e) => onInputChange(e)}
+        <InputContainer
+          val={modalEntry.classification}
+          name="classification"
+          onInputChange={onInputChange}
+          label="Class"
+        />
+        <InputContainer
+          val={modalEntry.number}
+          name="number"
+          onInputChange={onInputChange}
+          label="Number"
+        />
+        <InputContainer
+          val={modalEntry.vehicle}
+          name="vehicle"
+          onInputChange={onInputChange}
+          label="Vehicle"
+        />
+        <section className="driver_inputs">
+          <InputContainer
+            val={modalEntry.driver1.name}
+            name="driver1"
+            onInputChange={onInputChange}
+            label="Driver 1"
           />
-        </div>
+          <InputContainer
+            val={modalEntry.driver2.name}
+            name="driver2"
+            onInputChange={onInputChange}
+            label="Driver 2"
+          />
+        </section>
         <Button
           variant="contained"
           className="edit_modal_update"
