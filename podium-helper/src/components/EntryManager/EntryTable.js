@@ -9,7 +9,7 @@ import {
   Paper,
 } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
-import EntryBodyRows from "./EntryBodyRows";
+import EntryRows from "./EntryRows";
 import "../../Styling/entryManager.scss";
 
 const EntryTable = () => {
@@ -57,7 +57,7 @@ const EntryTable = () => {
             </TableRow>
           </TableHead>
           {sortEntries(entries).map((entry, index) => (
-            <EntryBodyRows entry={entry} key={index} />
+            <EntryRows entry={entry} key={index} />
           ))}
         </Table>
       </TableContainer>
