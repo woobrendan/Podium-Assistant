@@ -13,4 +13,16 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 2% 2% 2% 6%;
+  background-color: red;
+
+  .editModal_input {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .driver_inputs {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
