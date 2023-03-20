@@ -2,7 +2,7 @@ import { Modal, Box, Button } from "@mui/material";
 import { useState } from "react";
 import "../../Styling/modal.scss";
 import EditDriver from "./EditDriver";
-import InputContainer from "./InputContainer";
+import EditVehicle from "./EditVehicle";
 
 const EditModal = ({ entry, handleToggle, show }) => {
   const [modalEntry, setModalEntry] = useState({
@@ -53,24 +53,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
     <Modal open={show} onClose={handleToggle}>
       <Box id="edit_modal">
         <h2>Series: {modalEntry.series}</h2>
-        <InputContainer
-          val={modalEntry.classification}
-          name="classification"
-          onInputChange={onInputChange}
-          label="Class"
-        />
-        <InputContainer
-          val={modalEntry.number}
-          name="number"
-          onInputChange={onInputChange}
-          label="Number"
-        />
-        <InputContainer
-          val={modalEntry.vehicle}
-          name="vehicle"
-          onInputChange={onInputChange}
-          label="Vehicle"
-        />
+        <EditVehicle entry={modalEntry} onInputChange={onInputChange} />
         <section className="input_driver">
           <EditDriver
             entry={modalEntry}
