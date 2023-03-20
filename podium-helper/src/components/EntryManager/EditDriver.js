@@ -3,7 +3,7 @@ import InputContainer from "./InputContainer";
 const EditDriver = ({ entry, onChange, driverNum }) => {
   const driver = `driver${driverNum}`;
   return (
-    <section className={`input_driver_${driverNum}`}>
+    <section className={`input_driver_container_${driverNum}`}>
       <InputContainer
         val={entry[driver].name}
         name={`driver ${driverNum} name`}
