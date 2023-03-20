@@ -3,6 +3,8 @@ import { useState } from "react";
 import "../../Styling/modal.scss";
 import EditDriver from "./EditDriver";
 import EditVehicle from "./EditVehicle";
+import { useDispatch } from "react-redux";
+import { entryActions } from "../../store/entry_slice";
 
 const EditModal = ({ entry, handleToggle, show }) => {
   const [modalEntry, setModalEntry] = useState({
@@ -11,14 +13,17 @@ const EditModal = ({ entry, handleToggle, show }) => {
     ...(entry.driver2 ? { driver2: { ...entry.driver2 } } : {}),
   });
 
+  const dispatch = useDispatch();
+
   const handleSubmit = (e) => {
     // no errors
     handleToggle();
+    dispatch(entryActions.updateEntry(modalEntry));
     //patch route update id entry
   };
 
   // console.log("entry", entry);
-  console.log("modal", modalEntry);
+  // console.log("modal", modalEntry);
 
   const onInputChange = (e) => {
     setModalEntry((prev) => ({
@@ -71,7 +76,8 @@ const EditModal = ({ entry, handleToggle, show }) => {
           )}
         </section>
         <Button
-          variant="contained"
+          variant="outlined"
+          color="error"
           className="edit_modal_update"
           onClick={(e) => handleSubmit(e)}
         >
