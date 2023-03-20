@@ -49,12 +49,14 @@ const EditModal = ({ entry, handleToggle, show }) => {
     }));
   };
 
+  const duo = modalEntry.driver2 ? "two_driver" : "single_driver";
+
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="edit_modal">
         <h2>Series: {modalEntry.series}</h2>
         <EditVehicle entry={modalEntry} onInputChange={onInputChange} />
-        <section className="input_driver">
+        <section className={`input_driver_container ${duo}`}>
           <EditDriver
             entry={modalEntry}
             onChange={onDriverChange}
