@@ -7,6 +7,7 @@ import {
   TableHead,
   TableRow,
   Paper,
+  TableBody,
 } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import EntryRows from "./EntryRows";
@@ -57,9 +58,11 @@ const EntryTable = () => {
               <TableCell align="right">Edit</TableCell>
             </TableRow>
           </TableHead>
-          {sortEntries(entries).map((entry, index) => (
-            <EntryRows entry={entry} key={index} />
-          ))}
+          <TableBody>
+            {sortEntries(entries).map((entry, index) => (
+              <EntryRows entry={entry} key={index} />
+            ))}
+          </TableBody>
         </Table>
       </TableContainer>
     </section>
