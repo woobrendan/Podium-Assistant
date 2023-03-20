@@ -14,15 +14,32 @@
   justify-content: space-evenly;
   padding: 2% 2% 2% 6%;
   background-color: red;
+  color: white;
+  font-weight: 400;
 
-  .editModal_input {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .driver_inputs {
+  .input_driver {
     display: flex;
     justify-content: space-around;
     width: 100%;
+  }
+
+  .input_vehicle_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    width: 100%;
+
+    .input_classification {
+      width: 10%;
+    }
+
+    .input_number {
+      width: 15%;
+    }
+
+    .editModal_input {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
