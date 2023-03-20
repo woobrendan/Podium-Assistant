@@ -2,7 +2,7 @@ import InputContainer from "./InputContainer";
 
 const EditVehicle = ({ entry, onInputChange }) => {
   return (
-    <section className="input_vehicle">
+    <section className="input_vehicle_container">
       <InputContainer
         val={entry.classification}
         name="classification"
