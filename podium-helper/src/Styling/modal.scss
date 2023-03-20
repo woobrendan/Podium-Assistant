@@ -17,10 +17,22 @@
   color: white;
   font-weight: 400;
 
-  .input_driver {
+  .input_driver_container {
     display: flex;
     justify-content: space-around;
     width: 100%;
+
+    &.single_driver {
+      .input_driver_container_1 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .editModal_input {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 
   .input_vehicle_container {
@@ -42,4 +54,8 @@
       flex-direction: column;
     }
   }
+
+  // .single_driver {
+  //   display: flex;
+  // }
 }
