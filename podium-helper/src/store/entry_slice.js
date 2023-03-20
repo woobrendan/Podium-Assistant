@@ -9,6 +9,14 @@ const entrySlice = createSlice({
     },
     addEntry(state, action) {},
     removeEntry(state, action) {},
+    updateEntry(state, action) {
+      const entries = [...state.entriesArray];
+      const newEntries = entries.map((entry) =>
+        entry._id === action.payload._id ? { ...action.payload } : entry,
+      );
+
+      state.entriesArray = [...newEntries];
+    },
   },
 });
 
