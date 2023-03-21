@@ -19,6 +19,26 @@ const createEntry = (req: Request, res: Response) => {
     .catch((error) => res.status(500).json({ error }));
 };
 
+const getEntryById = async (req: Request, res: Response) => {
+  const entryId = req.params.entryId;
+  try {
+    const entry = await Entries.findById(entryId);
+    return entry
+      ? res.status(200).json({ entry })
+      : res.status(400).json({ message: "Entry Not Found" });
+  } catch (error) {
+    return res.status(500).json({ error });
+  }
+};
+
+const getAllEntries = async (req: Request, res: Response) => {
+  return Entries.find()
+    .then((entry) => res.status(201).json({ entry }))
+    .catch((error) => res.status(500).json({ error }));
+};
+
 export default {
   createEntry,
+  getEntryById,
+  getAllEntries,
 };
