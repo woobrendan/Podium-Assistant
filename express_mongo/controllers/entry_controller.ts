@@ -54,8 +54,21 @@ const updateEntry = async (req: Request, res: Response) => {
     .catch((error) => res.status(500).json({ error }));
 };
 
+const deleteEntry = (req: Request, res: Response) => {
+  const entryId = req.params.entryId;
+  return Entries.findByIdAndDelete(entryId)
+    .then((entry) =>
+      entry
+        ? res.status(201).json({ message: "Deleted" })
+        : res.status(404).json({ message: "Not Found" }),
+    )
+    .catch((error) => res.status(500).json({ error }));
+};
+
 export default {
   createEntry,
   getEntryById,
   getAllEntries,
+  updateEntry,
+  deleteEntry,
 };
