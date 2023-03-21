@@ -20,6 +20,7 @@
     "@types/mongoose": "^5.11.97",
     "@types/node": "^18.15.3",
     "dotenv": "^16.0.3",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.21",
     "typescript": "^5.0.2"
   }
