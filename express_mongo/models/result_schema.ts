@@ -1,4 +1,7 @@
 import mongoose, { Document, Schema } from "mongoose";
+import { FullResultInterface } from "./result_models";
+
+export interface ResultModel extends FullResultInterface, Document {}
 
 const resultSchema: Schema = new Schema({
   series: { type: String, required: true },
@@ -119,4 +122,4 @@ const resultSchema: Schema = new Schema({
   },
 });
 
-module.exports = mongoose.model("results", resultSchema);
+export default mongoose.model<ResultModel>("Result", resultSchema);
