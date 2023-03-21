@@ -4,7 +4,7 @@ export interface DriverInfo {
   nationality: string;
 }
 
-export interface Entry {
+export interface EntryInterface {
   team: string;
   vehicle: string;
   series: string;
@@ -13,4 +13,6 @@ export interface Entry {
   driver2?: DriverInfo;
   driver3?: DriverInfo;
   classification: string;
+  carImage: string;
+  year: number;
 }
