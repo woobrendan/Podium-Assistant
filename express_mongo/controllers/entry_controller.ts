@@ -37,6 +37,23 @@ const getAllEntries = async (req: Request, res: Response) => {
     .catch((error) => res.status(500).json({ error }));
 };
 
+const updateEntry = async (req: Request, res: Response) => {
+  const entryId = req.params.entryId;
+  return Entries.findById(entryId)
+    .then((entry) => {
+      if (entry) {
+        entry.set(req.body);
+        return entry
+          .save()
+          .then((entry) => res.status(201).json({ entry }))
+          .catch((error) => res.status(500).json({ error }));
+      } else {
+        res.status(404).json({ message: "Entry not found" });
+      }
+    })
+    .catch((error) => res.status(500).json({ error }));
+};
+
 export default {
   createEntry,
   getEntryById,
