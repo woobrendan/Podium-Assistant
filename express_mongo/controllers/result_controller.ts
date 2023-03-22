@@ -20,6 +20,23 @@ const getResultById = async (req: Request, res: Response) => {
   }
 };
 
+const updateResult = async (req: Request, res: Response) => {
+  const resultId = req.params.resultId;
+  return Result.findById(resultId)
+    .then((result) => {
+      if (result) {
+        result.set(req.body);
+        return result
+          .save()
+          .then((result) => res.status(201).json({ result }))
+          .catch((error) => res.status(500).json({ error }));
+      } else {
+        res.status(404).json({ message: "Result not found" });
+      }
+    })
+    .catch((error) => res.status(500).json({ error }));
+};
+
 const deleteResult = (req: Request, res: Response) => {
   const resultId = req.params.resultId;
   return Result.findByIdAndDelete(resultId)
@@ -34,5 +51,6 @@ const deleteResult = (req: Request, res: Response) => {
 export default {
   getAllResults,
   getResultById,
+  updateResult,
   deleteResult,
 };
