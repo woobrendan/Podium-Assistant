@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import http from "http";
 import { config } from "./config/config";
 import entryRoute from "./routes/entriesRoutes";
+import resultRoute from "./routes/resultRoutes";
 
 const morgan = require("morgan");
 const router = express();
@@ -53,6 +54,7 @@ const startServer = () => {
 
   //** Routes */
   router.use("/entries", entryRoute);
+  router.use("/results", resultRoute);
 
   //** Error handling */
   router.use((req, res, next) => {
