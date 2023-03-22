@@ -1,5 +1,4 @@
-import { NextFunction, Request, Response } from "express";
-import mongoose from "mongoose";
+import { Request, Response } from "express";
 import Event from "../models/events_schema";
 
 const getAllEvents = async (req: Request, res: Response) => {
