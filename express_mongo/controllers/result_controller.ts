@@ -2,6 +2,59 @@ import { Request, Response } from "express";
 import mongoose from "mongoose";
 import Result from "../models/result_schema";
 
+const createResult = (req: Request, res: Response) => {
+  const r3 = req.body.result3
+    ? {
+        result3: {
+          ...req.body.result3,
+          firstPlace: { ...req.body.result3.firstPlace },
+          secondPlace: { ...req.body.result3.secondPlace },
+          thirdPlace: { ...req.body.result3.thirdPlace },
+        },
+      }
+    : {};
+  const result = new Result({
+    ...req.body,
+    fastLap: { ...req.body.fastLap },
+    result1: {
+      ...req.body.result1,
+      firstPlace: { ...req.body.result1.firstPlace },
+      secondPlace: { ...req.body.result1.secondPlace },
+      thirdPlace: { ...req.body.result1.thirdPlace },
+    },
+    ...(req.body.result2
+      ? {
+          result2: {
+            ...req.body.result2,
+            firstPlace: { ...req.body.result2.firstPlace },
+            secondPlace: { ...req.body.result2.secondPlace },
+            thirdPlace: { ...req.body.result2.thirdPlace },
+          },
+        }
+      : {}),
+    ...(req.body.result3
+      ? {
+          result3: {
+            ...req.body.result3,
+            firstPlace: { ...req.body.result3.firstPlace },
+            secondPlace: { ...req.body.result3.secondPlace },
+            thirdPlace: { ...req.body.result3.thirdPlace },
+          },
+        }
+      : {}),
+    ...(req.body.result4
+      ? {
+          result4: {
+            ...req.body.result4,
+            firstPlace: { ...req.body.result4.firstPlace },
+            secondPlace: { ...req.body.result4.secondPlace },
+            thirdPlace: { ...req.body.result4.thirdPlace },
+          },
+        }
+      : {}),
+  });
+};
+
 const getAllResults = async (req: Request, res: Response) => {
   return Result.find()
     .then((results) => res.status(201).json({ results }))
