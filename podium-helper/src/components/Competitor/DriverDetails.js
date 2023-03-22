@@ -8,7 +8,7 @@ import {
   Avatar,
 } from "@mui/material";
 import DriverTable from "./DriverTable";
-import Elevation from "./elevationPaper";
+import EntryHighlights from "./EntryHighlights";
 import classNames from "classnames";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
@@ -20,7 +20,7 @@ import TCAM from "../../images/TCAM.png";
 import IGTC from "../../images/igtc.jpeg";
 import { gtwca, tcam, gtam, gt4a, igtc } from "../../functions/helperFunc";
 
-function DriverDetails({ entry }) {
+const DriverDetails = ({ entry }) => {
   const [entryInfo, setEntryInfo] = useState(false);
   const series = entry.series;
 
@@ -100,7 +100,7 @@ function DriverDetails({ entry }) {
         <CardContent>
           {entryInfo && (
             <div className="entry-details">
-              <Elevation
+              <EntryHighlihts
                 series={series}
                 car={entry.vehicle}
                 class={entry.classification}
@@ -123,6 +123,6 @@ function DriverDetails({ entry }) {
       </Card>
     </div>
   );
-}
+};
 
 export default DriverDetails;
