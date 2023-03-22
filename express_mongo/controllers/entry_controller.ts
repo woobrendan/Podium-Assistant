@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import mongoose from "mongoose";
 import Entries from "../models/entry_schema";
 
-const createEntry = (req: Request, res: Response) => {
+const createEntry = async (req: Request, res: Response) => {
   const entry = new Entries({
     _id: new mongoose.Types.ObjectId(),
     ...req.body,
@@ -13,10 +13,17 @@ const createEntry = (req: Request, res: Response) => {
     ...(req.body.driver3 ? { driver3: { ...req.body.driver3 } } : {}),
   });
 
-  return entry
-    .save()
-    .then((entry) => res.status(201).json({ entry }))
-    .catch((error) => res.status(500).json({ error }));
+  try {
+    const savedEntry = await entry.save();
+    res.status(200).json({ savedEntry });
+  } catch (error) {
+    res.status(500).json({ error });
+  }
+
+  // return entry
+  //   .save()
+  //   .then((entry) => res.status(201).json({ entry }))
+  //   .catch((error) => res.status(500).json({ error }));
 };
 
 const getEntryById = async (req: Request, res: Response) => {
