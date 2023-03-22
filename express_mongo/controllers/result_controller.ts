@@ -3,16 +3,6 @@ import mongoose from "mongoose";
 import Result from "../models/result_schema";
 
 const createResult = (req: Request, res: Response) => {
-  const r3 = req.body.result3
-    ? {
-        result3: {
-          ...req.body.result3,
-          firstPlace: { ...req.body.result3.firstPlace },
-          secondPlace: { ...req.body.result3.secondPlace },
-          thirdPlace: { ...req.body.result3.thirdPlace },
-        },
-      }
-    : {};
   const result = new Result({
     ...req.body,
     fastLap: { ...req.body.fastLap },
@@ -27,8 +17,12 @@ const createResult = (req: Request, res: Response) => {
           result2: {
             ...req.body.result2,
             firstPlace: { ...req.body.result2.firstPlace },
-            secondPlace: { ...req.body.result2.secondPlace },
-            thirdPlace: { ...req.body.result2.thirdPlace },
+            ...(req.body.result2.secondPlace
+              ? { secondPlace: { ...req.body.result2.secondPlace } }
+              : {}),
+            ...(req.body.result2.thirdPlace
+              ? { thirdPlace: { ...req.body.result2.thirdPlace } }
+              : {}),
           },
         }
       : {}),
@@ -37,8 +31,12 @@ const createResult = (req: Request, res: Response) => {
           result3: {
             ...req.body.result3,
             firstPlace: { ...req.body.result3.firstPlace },
-            secondPlace: { ...req.body.result3.secondPlace },
-            thirdPlace: { ...req.body.result3.thirdPlace },
+            ...(req.body.result3.secondPlace
+              ? { secondPlace: { ...req.body.result3.secondPlace } }
+              : {}),
+            ...(req.body.result3.thirdPlace
+              ? { thirdPlace: { ...req.body.result3.thirdPlace } }
+              : {}),
           },
         }
       : {}),
@@ -47,12 +45,21 @@ const createResult = (req: Request, res: Response) => {
           result4: {
             ...req.body.result4,
             firstPlace: { ...req.body.result4.firstPlace },
-            secondPlace: { ...req.body.result4.secondPlace },
-            thirdPlace: { ...req.body.result4.thirdPlace },
+            ...(req.body.result4.secondPlace
+              ? { secondPlace: { ...req.body.result4.secondPlace } }
+              : {}),
+            ...(req.body.result4.thirdPlace
+              ? { thirdPlace: { ...req.body.result4.thirdPlace } }
+              : {}),
           },
         }
       : {}),
   });
+
+  return result
+    .save()
+    .then((result) => res.status(201).json({ result }))
+    .catch((error) => res.status(500).json({ error }));
 };
 
 const getAllResults = async (req: Request, res: Response) => {
@@ -106,4 +113,5 @@ export default {
   getResultById,
   updateResult,
   deleteResult,
+  createResult,
 };
