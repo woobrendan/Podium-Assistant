@@ -1,4 +1,4 @@
-import {Grid, Box, Paper} from '@mui/material'
+import { Grid, Box, Paper } from '@mui/material'
 import { createTheme, ThemeProvider, styled } from '@mui/material/styles';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -12,8 +12,8 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const lightTheme = createTheme({ palette: { mode: 'light' } });
 
-export default function Elevation(props) {
-  const details = [props.series, props.car, props.class];
+const EntryHighlights = ({ series, car, class }) => {
+  const details = [series, car, class]
 
   return (
       <Grid container spacing={3} className="elevation-details">
@@ -37,3 +37,5 @@ export default function Elevation(props) {
       </Grid>
   );
 }
+
+export default EntryHighlights
