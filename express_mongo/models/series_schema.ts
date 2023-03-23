@@ -11,4 +11,4 @@ const seriesSchema: Schema = new Schema({
   class: { type: [String] },
 });
 
-export default mongoose.model<SeriesModel>("series", seriesSchema);
+export default mongoose.model<SeriesModel>("Series", seriesSchema);
