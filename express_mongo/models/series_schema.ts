@@ -8,6 +8,7 @@ export interface SeriesModel extends Series, Document {}
 
 const seriesSchema: Schema = new Schema({
   name: { type: String, required: true },
+  class: { type: [String] },
 });
 
 export default mongoose.model<SeriesModel>("series", seriesSchema);
