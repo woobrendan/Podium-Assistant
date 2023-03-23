@@ -3,15 +3,9 @@ import axios from "axios";
 
 export const fetchData = () => {
   return async (dispatch) => {
-    const fetchHandler = async () => {
-      const res = await fetch("http://localhost:2020/results");
-      const data = await res.json();
-      return data;
-    };
-
     try {
-      const results = await fetchHandler();
-      dispatch(resultsActions.setResultHistory(results));
+      const results = await axios.get("http://localhost:2020/results");
+      dispatch(resultsActions.setResultHistory(results.data.results));
     } catch (err) {
       console.error(err);
     }
