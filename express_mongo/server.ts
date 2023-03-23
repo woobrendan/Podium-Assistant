@@ -5,6 +5,7 @@ import { config } from "./config/config";
 import entryRoute from "./routes/entriesRoutes";
 import resultRoute from "./routes/resultRoutes";
 import eventRoute from "./routes/eventRoutes";
+import seriesRoute from "./routes/seriesRoutes";
 
 const morgan = require("morgan");
 const router = express();
@@ -59,6 +60,7 @@ const startServer = () => {
 
   //** API Routes */
   router.use("/api/events", eventRoute);
+  router.use("/api/series", seriesRoute);
 
   //** Error handling */
   router.use((req, res, next) => {
