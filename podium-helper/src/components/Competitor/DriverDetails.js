@@ -100,10 +100,10 @@ const DriverDetails = ({ entry }) => {
         <CardContent>
           {entryInfo && (
             <div className="entry-details">
-              <EntryHighlihts
+              <EntryHighlights
                 series={series}
                 car={entry.vehicle}
-                class={entry.classification}
+                classification={entry.classification}
               />
               <DriverTable drivers={entry} />
             </div>
