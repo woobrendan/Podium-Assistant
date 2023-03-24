@@ -8,13 +8,9 @@ function Series({ getValue }) {
 
   useEffect(() => {
     const getAndSetSeries = async () => {
-      const getData = async () => {
-        const res = await axios.get("http://localhost:2020/api/series");
-        return res.data;
-      };
       try {
-        const seriesList = await getData();
-        setSeries(seriesList);
+        const seriesList = await axios.get("http://localhost:2020/api/series");
+        setSeries(seriesList.data.series);
       } catch (err) {
         console.error(err);
       }
