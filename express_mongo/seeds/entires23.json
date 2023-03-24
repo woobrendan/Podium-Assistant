@@ -83,9 +83,9 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "TBD",
-      "nationality": "TBD",
-      "rating": "TBD"
+      "name": "Tom Dyer",
+      "nationality": "USA",
+      "rating": ""
     },
     "vehicle": "Audi R8 LMS ",
     "classification": "Pro-Am",
@@ -164,7 +164,7 @@
       "rating": "Gold"
     },
     "vehicle": "Porsche 911 GT3-R (991.ii)",
-    "classification": "Pro-Am",
+    "classification": "Pro",
     "number": "28",
     "carImage": "",
     "series": "GT World Challenge America",
@@ -1368,6 +1368,174 @@
     "number": "999",
     "carImage": "",
     "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "AOA Racing",
+    "driver1": {
+      "name": "Kenny Schmied",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TCX",
+    "number": "14",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Fast Track Racing",
+    "driver1": {
+      "name": "Adam Gleason",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TCX",
+    "number": "21",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Rigid Speed Racing",
+    "driver1": {
+      "name": "Joesph Catania",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TCX",
+    "number": "24",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Rigid Speed Racing",
+    "driver1": {
+      "name": "Lucas Catania",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TCX",
+    "number": "26",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Rooster Hall Racing",
+    "driver1": {
+      "name": "Colin Garrett",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TCX",
+    "number": "44",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "LA Honda World Racing",
+    "driver1": {
+      "name": "Kyle Loh",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Type-R TCX",
+    "classification": "TCX",
+    "number": "73",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Ian Lacy Racing",
+    "driver1": {
+      "name": "Christopher DeFreitas",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Type-R TCX",
+    "classification": "TCX",
+    "number": "93",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "VGRT",
+    "driver1": {
+      "name": "Daijiro Yoshihara",
+      "nationality": "Japan",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Type-R TCX",
+    "classification": "TCX",
+    "number": "99",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Skip Barber Racing School",
+    "driver1": {
+      "name": "Celso Neto",
+      "nationality": "Brazil",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Type-R",
+    "classification": "TC",
+    "number": "7",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "MINI JCW Team",
+    "driver1": {
+      "name": "Cristian Perocarpi",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Mini JCW Pro TC",
+    "classification": "TC",
+    "number": "37",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "MINI JCW Team",
+    "driver1": {
+      "name": "Clayton Williams",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Mini JCW Pro TC",
+    "classification": "TC",
+    "number": "60",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "GenRacer / Ricca Autosport",
+    "driver1": {
+      "name": "Jeff Ricca",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Hyundai Elantra N TC",
+    "classification": "TC",
+    "number": "78",
+    "carImage": "",
+    "series": "TC America",
     "year": 2023
   }
 ]
