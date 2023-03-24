@@ -1537,5 +1537,187 @@
     "carImage": "",
     "series": "TC America",
     "year": 2023
+  },
+  {
+    "team": "VGRT",
+    "driver1": {
+      "name": "Michael Hurczyn",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Type-R",
+    "classification": "TC",
+    "number": "8",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "DRS",
+    "driver1": {
+      "name": "Kris Valdez",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Type-R",
+    "classification": "TC",
+    "number": "11",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Skiper Barber Racing School",
+    "driver1": {
+      "name": "Ken Fakuda",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Type-R",
+    "classification": "TC",
+    "number": "42",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "GenRacer",
+    "driver1": {
+      "name": "Sally McNulty",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Hyundai Veloster N DCT TC",
+    "classification": "TC",
+    "number": "780",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "LA Honda World Racing",
+    "driver1": {
+      "name": "Spencer Bucknum",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Si FE1",
+    "classification": "TCA",
+    "number": "5",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "LA Honda World Racing",
+    "driver1": {
+      "name": "Mario Biundo",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Si",
+    "classification": "TCA",
+    "number": "07",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Skip Barber Racing School",
+    "driver1": {
+      "name": "Cooper Broll",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Si FE1",
+    "classification": "TCA",
+    "number": "19",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "TechSport Racing",
+    "driver1": {
+      "name": "Devin Anderson",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Subaru BRZ",
+    "classification": "TCA",
+    "number": "22",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "TechSport Racing",
+    "driver1": {
+      "name": "Shaoyi Che",
+      "nationality": "China",
+      "rating": "N/A"
+    },
+    "vehicle": "Subaru BRZ",
+    "classification": "TCA",
+    "number": "23",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "MINI JCW Team",
+    "driver1": {
+      "name": "PJ Groenke",
+      "nationality": "Canada",
+      "rating": "N/A"
+    },
+    "vehicle": "Mini JCW",
+    "classification": "TCA",
+    "number": "62",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "MINI JCW Team",
+    "driver1": {
+      "name": "Carlos Tesler-Mabe",
+      "nationality": "Canada",
+      "rating": "N/A"
+    },
+    "vehicle": "Mini JCW",
+    "classification": "TCA",
+    "number": "64",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "MINI JCW Team",
+    "driver1": {
+      "name": "Landon Lewis",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Mini JCW",
+    "classification": "TCA",
+    "number": "63",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "VGRT",
+    "driver1": {
+      "name": "Ruben Iglesias Jr",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Si FE1",
+    "classification": "TCA",
+    "number": "88",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
   }
 ]
