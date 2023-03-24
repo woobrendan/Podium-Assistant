@@ -14,7 +14,7 @@ const useEvents = () => {
     try {
       const eventList = await axios.get("http://localhost:2020/api/events");
       const year = Number(getToday().split("-")[2]);
-      const currentYearEvents = eventList.data.filter(
+      const currentYearEvents = eventList.data.events.filter(
         (event) => event.year === year,
       );
       setEvents(currentYearEvents);
