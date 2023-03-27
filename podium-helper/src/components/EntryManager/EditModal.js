@@ -5,6 +5,7 @@ import EditDriver from "./EditDriver";
 import EditVehicle from "./EditVehicle";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
+import axios from "axios";
 
 const EditModal = ({ entry, handleToggle, show }) => {
   const [modalEntry, setModalEntry] = useState({
@@ -19,6 +20,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
     // no errors
     handleToggle();
     dispatch(entryActions.updateEntry(modalEntry));
+    axios.patch(`http://localhost:2020/entries/${modalEntry._id}`, modalEntry);
     //patch route update id entry
   };
 
