@@ -6,7 +6,7 @@ import NavBar from "./components/NavBar";
 import Results from "./components/Results/ResultsHistory";
 import EntryDashboard from "./components/Entry_Manage/EntryDashboard";
 import RecentPodium from "./components/Results/RecentPodium";
-import EntryTable from "./components/EntryManager/EntryTable";
+import EntryManager from "./components/EntryManager/EntryManager";
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
           <Route path="/results" element={<Results />} />
           <Route path="/entry-dashboard" element={<EntryDashboard />} />
           <Route path="/recent" element={<RecentPodium />} />
-          <Route path="/entryManager" element={<EntryTable />} />
+          <Route path="/entryManager" element={<EntryManager />} />
         </Routes>
       </div>
     </Router>
