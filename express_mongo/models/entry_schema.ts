@@ -16,6 +16,16 @@ const entrySchema: Schema = new Schema({
     rating: { type: String, required: false },
     nationality: { type: String, required: true },
   },
+  driver2: {
+    name: { type: String },
+    rating: { type: String },
+    nationality: { type: String },
+  },
+  driver3: {
+    name: { type: String },
+    rating: { type: String },
+    nationality: { type: String },
+  },
 });
 
 export default mongoose.model<EntryModel>("Entries", entrySchema);
