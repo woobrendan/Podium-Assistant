@@ -2084,5 +2084,89 @@
     "carImage": "",
     "series": "Toyota GR Cup",
     "year": 2023
+  },
+  {
+    "team": "Copeland Motorsports",
+    "driver1": {
+      "name": "Paul Bocuse",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "71",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Precision Racing LA",
+    "driver1": {
+      "name": "Aidan Yoder",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "73",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "BSI Racing",
+    "driver1": {
+      "name": "Steven Clemons",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "76",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "VGRT",
+    "driver1": {
+      "name": "Ruben Iglesias Jr.",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "88",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "VGRT",
+    "driver1": {
+      "name": "Canaan O'Connll",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "98",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Copeland Motorsports",
+    "driver1": {
+      "name": "Drake Kemper",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "99",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
   }
 ]
