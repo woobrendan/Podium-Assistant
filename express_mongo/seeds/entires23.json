@@ -1,6 +1,6 @@
 [
   {
-    "team": "Crowdstrike Racing with Riley Motorsports",
+    "team": "Crowdstrike by Riley",
     "driver1": {
       "name": "George Kurtz",
       "nationality": "USA",
@@ -85,7 +85,7 @@
     "driver2": {
       "name": "Tom Dyer",
       "nationality": "USA",
-      "rating": ""
+      "rating": "Silver"
     },
     "vehicle": "Audi R8 LMS ",
     "classification": "Pro-Am",
@@ -342,7 +342,7 @@
     "year": 2023
   },
   {
-    "team": "CrowdStrike w/ Riley Motorsports",
+    "team": "CrowdStrike by Riley",
     "driver1": {
       "name": "George Kurtz",
       "nationality": "USA",
@@ -366,6 +366,20 @@
     "classification": "SRO3",
     "number": "08",
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F74%2F294%2F%2FVIR_GTWCA_Q_GM_2403291.JPG",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "TR3 Racing",
+    "driver1": {
+      "name": "Ziad Ghandour",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "9",
+    "carImage": "",
     "series": "GT America",
     "year": 2023
   },
@@ -407,6 +421,20 @@
     "vehicle": "Porsche 911 GT3-R (991.ii)",
     "classification": "SRO3",
     "number": "32",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "CRP Racing",
+    "driver1": {
+      "name": "Todd Treffert",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "SRO3",
+    "number": "41",
     "carImage": "",
     "series": "GT America",
     "year": 2023
@@ -687,20 +715,6 @@
     "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
     "classification": "GT4",
     "number": "11",
-    "carImage": "",
-    "series": "GT America",
-    "year": 2023
-  },
-  {
-    "team": "CRP Racing",
-    "driver1": {
-      "name": "Todd Treffert",
-      "nationality": "USA",
-      "rating": "Bronze"
-    },
-    "vehicle": "Mercedes-AMG GT3",
-    "classification": "SRO3",
-    "number": "TBD",
     "carImage": "",
     "series": "GT America",
     "year": 2023
