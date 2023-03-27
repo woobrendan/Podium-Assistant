@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-import { fetchEntry } from "../../store/entryActions";
 import {
   Table,
   TableCell,
@@ -9,38 +7,10 @@ import {
   Paper,
   TableBody,
 } from "@mui/material";
-import { useDispatch, useSelector } from "react-redux";
 import EntryRows from "./EntryRows";
 import "../../Styling/entryManager.scss";
 
 const EntryTable = ({ entries }) => {
-  // const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   dispatch(fetchEntry());
-  // }, [dispatch]);
-
-  // const entries = useSelector((state) => state.entry.entriesArray);
-
-  // const sortEntries = (entries) => {
-  //   const entryObj = {};
-  //   const entryArr = [];
-  //   entries.forEach((entry) => {
-  //     const series = entry.series;
-  //     entryObj[series]
-  //       ? entryObj[series].push(entry)
-  //       : (entryObj[series] = [entry]);
-  //   });
-
-  //   for (const series in entryObj) {
-  //     const sorted = entryObj[series].sort((a, b) => a.number - b.number);
-  //     if (series !== "GT World Challenge America") entryArr.push(...sorted);
-  //   }
-  //   return entryObj["GT World Challenge America"]
-  //     ? [...entryObj["GT World Challenge America"], ...entryArr]
-  //     : entryArr;
-  // };
-
   return (
     <section id="entry_manager">
       <TableContainer sx={{ minWidth: 600 }} component={Paper}>
