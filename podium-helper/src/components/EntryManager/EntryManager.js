@@ -1,5 +1,7 @@
 import EntryTable from "./EntryTable";
 import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { fetchEntry } from "../../store/entryActions";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
