@@ -13,33 +13,33 @@ import { useDispatch, useSelector } from "react-redux";
 import EntryRows from "./EntryRows";
 import "../../Styling/entryManager.scss";
 
-const EntryTable = () => {
-  const dispatch = useDispatch();
+const EntryTable = ({ entries }) => {
+  // const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchEntry());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchEntry());
+  // }, [dispatch]);
 
-  const entries = useSelector((state) => state.entry.entriesArray);
+  // const entries = useSelector((state) => state.entry.entriesArray);
 
-  const sortEntries = (entries) => {
-    const entryObj = {};
-    const entryArr = [];
-    entries.forEach((entry) => {
-      const series = entry.series;
-      entryObj[series]
-        ? entryObj[series].push(entry)
-        : (entryObj[series] = [entry]);
-    });
+  // const sortEntries = (entries) => {
+  //   const entryObj = {};
+  //   const entryArr = [];
+  //   entries.forEach((entry) => {
+  //     const series = entry.series;
+  //     entryObj[series]
+  //       ? entryObj[series].push(entry)
+  //       : (entryObj[series] = [entry]);
+  //   });
 
-    for (const series in entryObj) {
-      const sorted = entryObj[series].sort((a, b) => a.number - b.number);
-      if (series !== "GT World Challenge America") entryArr.push(...sorted);
-    }
-    return entryObj["GT World Challenge America"]
-      ? [...entryObj["GT World Challenge America"], ...entryArr]
-      : entryArr;
-  };
+  //   for (const series in entryObj) {
+  //     const sorted = entryObj[series].sort((a, b) => a.number - b.number);
+  //     if (series !== "GT World Challenge America") entryArr.push(...sorted);
+  //   }
+  //   return entryObj["GT World Challenge America"]
+  //     ? [...entryObj["GT World Challenge America"], ...entryArr]
+  //     : entryArr;
+  // };
 
   return (
     <section id="entry_manager">
@@ -59,7 +59,7 @@ const EntryTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {sortEntries(entries).map((entry, index) => (
+            {entries.map((entry, index) => (
               <EntryRows entry={entry} key={index} />
             ))}
           </TableBody>
