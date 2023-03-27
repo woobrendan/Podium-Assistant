@@ -1681,7 +1681,7 @@
   {
     "team": "MINI JCW Team",
     "driver1": {
-      "name": "Carlos Tesler-Mabe",
+      "name": "Alain Lauziere ",
       "nationality": "Canada",
       "rating": "N/A"
     },
@@ -1707,6 +1707,21 @@
     "year": 2023
   },
   {
+    "team": "Skip Barber Racing School",
+    "driver1": {
+      "name": "William Lambros",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Honda Civic Si FE1",
+    "classification": "TCA",
+    "number": "77",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  
+  {
     "team": "VGRT",
     "driver1": {
       "name": "Ruben Iglesias Jr",
@@ -1718,6 +1733,146 @@
     "number": "88",
     "carImage": "",
     "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "TechSport",
+    "driver1": {
+      "name": "Gresham Wagner",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "5",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Godwin Motorsports",
+    "driver1": {
+      "name": "Will Rodgers",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "6",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Zotz Racing",
+    "driver1": {
+      "name": "Michael Garcia",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "7",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Smooge Racing",
+    "driver1": {
+      "name": "Isabella Robusto",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "8",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Precision Racing LA",
+    "driver1": {
+      "name": "Cat Lauren",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "09",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "PJM / VGRT",
+    "driver1": {
+      "name": "Mark Pombo",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "10",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "RVA Graphics Motorsports by Speed Syndicate",
+    "driver1": {
+      "name": "Farran Davis",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "11",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Tommy McCarthy Racing",
+    "driver1": {
+      "name": "Tommy McCarthy",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "23",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Nitro Motorsports",
+    "driver1": {
+      "name": "William Sawalich",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "24",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "McCumbee McAleer Racing",
+    "driver1": {
+      "name": "Lev Uretsky",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Dealer",
+    "number": "27",
+    "carImage": "",
+    "series": "Toyota GR Cup",
     "year": 2023
   }
 ]
