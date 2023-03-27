@@ -1,29 +1,29 @@
-import React from 'react'
-import { Box, Toolbar, AppBar} from '@mui/material'
-import SRO from '../images/SRO.jpg';
-import '../Styling/navBar.scss';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Box, Toolbar, AppBar } from "@mui/material";
+import SRO from "../images/SRO.jpg";
+import "../Styling/navBar.scss";
+import { Link } from "react-router-dom";
 
-function NavBar() {
-
+const NavBar = () => {
   return (
     <div className="nav-bar">
       <Box sx={{ flexGrow: 1 }}>
-        <AppBar position="static" sx={{bgcolor: '#FF0000'}}>
+        <AppBar position="static" sx={{ bgcolor: "#FF0000" }}>
           <Toolbar>
             <div className="navbar-links">
-              <a className='img-container' href="https://www.sro-america.com/">
+              <a className="img-container" href="https://www.sro-america.com/">
                 <img src={SRO} alt="SRO" />
               </a>
-              <Link to='/'>New Podium</Link>
-              <Link to='/Competitors'>Competitors</Link>
-              <Link to='/Results'>Results</Link>
+              <Link to="/">New Podium</Link>
+              <Link to="/Competitors">Competitors</Link>
+              <Link to="/Results">Results</Link>
+              <Link to="/entryManager">Admin</Link>
             </div>
           </Toolbar>
         </AppBar>
       </Box>
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
