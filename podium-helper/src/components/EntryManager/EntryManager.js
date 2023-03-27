@@ -2,6 +2,7 @@ import EntryTable from "./EntryTable";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchEntry } from "../../store/entryActions";
+import Series from "../Podium_Results/Series";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
@@ -34,6 +35,9 @@ const EntryManager = () => {
 
   return (
     <>
+      <section className="entryManager_filter_container">
+        <Series />
+      </section>
       <EntryTable entries={sortEntries(entries)} />
     </>
   );
