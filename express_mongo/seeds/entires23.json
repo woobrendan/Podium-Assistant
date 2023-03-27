@@ -739,6 +739,25 @@
     "year": 2023
   },
   {
+    "team": "Flying Lizard Motorsports",
+    "driver1": {
+      "name": "Elias Sabo",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Andy Lee",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Pro-Am",
+    "number": "8",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
     "team": "Zotz Racing/ CCDP Racing",
     "driver1": {
       "name": "Christian Ruppel",
