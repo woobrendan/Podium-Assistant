@@ -1972,5 +1972,117 @@
     "carImage": "",
     "series": "Toyota GR Cup",
     "year": 2023
+  },
+  {
+    "team": "Copeland Motorsports",
+    "driver1": {
+      "name": "Tyler Gonzalez",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "57",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Pura Vida Team",
+    "driver1": {
+      "name": "Amadeo Quiros",
+      "nationality": "Costa Rica",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "58",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Smooge Racing",
+    "driver1": {
+      "name": "Bailey Monette",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "66",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Smooge Racing",
+    "driver1": {
+      "name": "Joey DaSilva",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "67",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Smooge Racing",
+    "driver1": {
+      "name": "Mia Lovell",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "68",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "OpenRoad Racing",
+    "driver1": {
+      "name": "Adam Isman",
+      "nationality": "Canada",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "69",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Nitro Motorsports",
+    "driver1": {
+      "name": "Tyler Wettengel",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "80",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Nitro Motorsports",
+    "driver1": {
+      "name": "Toni Breidinger",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "70",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
   }
 ]
