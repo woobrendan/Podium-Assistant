@@ -1290,6 +1290,25 @@
     "year": 2023
   },
   {
+    "team": "STR38 Motorsports",
+    "driver1": {
+      "name": "Robert Mau",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Chris Allen",
+      "nationality": "USA",
+      "rating": "Bronze*"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "438",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
     "team": "RENNtech Motorsports",
     "driver1": {
       "name": "Thomas Johnson",
@@ -1323,6 +1342,25 @@
     "vehicle": "BMW M4 GT4",
     "classification": "Pro-Am",
     "number": "92",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Random Vandals Racing",
+    "driver1": {
+      "name": "Paul Sparta",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Al Carter",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "98",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
@@ -1492,7 +1530,7 @@
       "rating": "Silver"
     },
     "vehicle": "Toyota Gazoo Racing GR Supra GT4",
-    "classification": "Pro-Am",
+    "classification": "Silver",
     "number": "999",
     "carImage": "",
     "series": "Pirelli GT4 America",
