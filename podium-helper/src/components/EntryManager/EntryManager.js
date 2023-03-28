@@ -9,6 +9,7 @@ import "../../Styling/entryManager.scss";
 const EntryManager = () => {
   const data = useSelector((state) => state.entry.entriesArray);
   const [entries, setEntries] = useState(data);
+  const [series, setSeries] = useState("");
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -41,7 +42,7 @@ const EntryManager = () => {
   return (
     <section id="entry_manager">
       <div className="entryManager_filter_container">
-        <Series />
+        <Series getValue={(name, val) => setSeries(val.name)} />
       </div>
       <EntryTable entries={sortEntries(entries)} />
     </section>
