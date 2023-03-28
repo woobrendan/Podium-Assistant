@@ -21,35 +21,33 @@ const EntryManager = () => {
   }, [dispatch]);
 
   const sortEntries = (entries) => {
-    const entryObj = {};
-    const entryArr = [];
-    entries.forEach((entry) => {
-      const series = entry.series;
-      entryObj[series]
-        ? entryObj[series].push(entry)
-        : (entryObj[series] = [entry]);
-    });
+    if (!series) {
+      const entryObj = {};
+      const entryArr = [];
+      entries.forEach((entry) => {
+        const series = entry.series;
+        entryObj[series]
+          ? entryObj[series].push(entry)
+          : (entryObj[series] = [entry]);
+      });
 
-    for (const series in entryObj) {
-      const sorted = entryObj[series].sort((a, b) => a.number - b.number);
-      if (series !== "GT World Challenge America") entryArr.push(...sorted);
+      for (const series in entryObj) {
+        const sorted = entryObj[series].sort((a, b) => a.number - b.number);
+        if (series !== "GT World Challenge America") entryArr.push(...sorted);
+      }
+      return entryObj["GT World Challenge America"]
+        ? [...entryObj["GT World Challenge America"], ...entryArr]
+        : entryArr;
+    } else {
+      const filtered = entries.filter((entry) => entry.series === series);
+      return filtered.sort((a, b) => a.number - b.number);
     }
-    return entryObj["GT World Challenge America"]
-      ? [...entryObj["GT World Challenge America"], ...entryArr]
-      : entryArr;
-  };
-
-  const handleSeriesChange = (name, val) => {
-    const seriesName = val.name;
-    setSeries(seriesName);
-    const filtered = entries.filter((entry) => entry.series === seriesName);
-    setEntries(filtered);
   };
 
   return (
     <section id="entry_manager">
       <div className="entryManager_filter_container">
-        <Series getValue={handleSeriesChange} />
+        <Series getValue={(name, val) => setSeries(val.name)} />
       </div>
       <EntryTable entries={sortEntries(entries)} />
     </section>
