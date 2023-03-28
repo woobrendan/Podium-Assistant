@@ -803,13 +803,51 @@
       "rating": "Silver"
     },
     "driver2": {
-      "name": "Andrew David",
+      "name": "Andrew Davis",
       "nationality": "USA",
       "rating": "Silver"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
     "classification": "Silver",
     "number": "19",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "TechSport Racing",
+    "driver1": {
+      "name": "Eric Powell",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Colin Harrison",
+      "nationality": "USA",
+      "rating": "Bronze*"
+    },
+    "vehicle": "Nissan Z GT4",
+    "classification": "Pro-Am",
+    "number": "22",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "TechSport Racing",
+    "driver1": {
+      "name": "Tyler Stone",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Bryan Heitkotter",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Nissan Z GT4",
+    "classification": "Pro-Am",
+    "number": "23",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
