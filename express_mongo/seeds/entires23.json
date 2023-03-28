@@ -608,6 +608,25 @@
     "year": 2023
   },
   {
+    "team": "TR3 Racing",
+    "driver1": {
+      "name": "Paul Kiebler",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Jon Branam",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Am",
+    "number": "77",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
     "team": "Rotek Racing",
     "driver1": {
       "name": "Robb Holland",
@@ -1081,6 +1100,25 @@
     "year": 2023
   },
   {
+    "team": "NOLASPORT",
+    "driver1": {
+      "name": "Nelson Calle",
+      "nationality": "Columbia",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Juan Martinez",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Am",
+    "number": "83",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
     "team": "Black Swan Racing",
     "driver1": {
       "name": "Tim Pappas",
@@ -1164,13 +1202,13 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "TBD",
+      "name": "Billy Johnson",
       "nationality": "USA",
-      "rating": "TBD"
+      "rating": "Gold"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "Pro-Am",
-    "number": "69",
+    "number": "069",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
@@ -1235,17 +1273,17 @@
   {
     "team": "STR38 Motorsports",
     "driver1": {
-      "name": "Robert Mau",
+      "name": "Jon Miller",
       "nationality": "USA",
-      "rating": "Bronze"
+      "rating": "Silver"
     },
     "driver2": {
-      "name": "Chris Allen",
+      "name": "Chandler Hull",
       "nationality": "USA",
-      "rating": "Bronze"
+      "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
-    "classification": "Am",
+    "classification": "Silver",
     "number": "88",
     "carImage": "",
     "series": "Pirelli GT4 America",
@@ -1297,8 +1335,8 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "TBD",
-      "nationality": "USA",
+      "name": "Mac Clark",
+      "nationality": "Canada",
       "rating": "Silver"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
@@ -1380,6 +1418,25 @@
     "vehicle": "BMW M4 GT4",
     "classification": "Am",
     "number": "253",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "AutoTechnic Racing",
+    "driver1": {
+      "name": "John Dubets",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Zac Anderson",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "51",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
