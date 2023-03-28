@@ -8,11 +8,10 @@ import {
   TableBody,
 } from "@mui/material";
 import EntryRows from "./EntryRows";
-import "../../Styling/entryManager.scss";
 
 const EntryTable = ({ entries }) => {
   return (
-    <section id="entry_manager">
+    <section id="entryManager_table">
       <TableContainer sx={{ minWidth: 600 }} component={Paper}>
         <Table>
           <TableHead>
