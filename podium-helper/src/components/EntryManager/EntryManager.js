@@ -21,7 +21,7 @@ const EntryManager = () => {
   }, [dispatch]);
 
   const sortEntries = (entries) => {
-    if (!series) {
+    if (!series || series === "All") {
       const entryObj = {};
       const entryArr = [];
       entries.forEach((entry) => {
@@ -47,7 +47,10 @@ const EntryManager = () => {
   return (
     <section id="entry_manager">
       <div className="entryManager_filter_container">
-        <Series getValue={(name, val) => setSeries(val.name)} />
+        <Series
+          getValue={(name, val) => setSeries(val.name)}
+          comp="entryManager"
+        />
       </div>
       <EntryTable entries={sortEntries(entries)} />
     </section>
