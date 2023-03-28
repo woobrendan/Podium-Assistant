@@ -36,7 +36,7 @@ const Series = ({ getValue, comp }) => {
 
   const mappedSeries = series.map((serie, index) => (
     <MenuItem key={index} value={serie} data-testid={serie.name}>
-      {serie.name}
+      {serie === "All" ? "All" : serie.name}
     </MenuItem>
   ));
 
