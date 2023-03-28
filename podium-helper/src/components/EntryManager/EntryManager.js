@@ -39,10 +39,17 @@ const EntryManager = () => {
       : entryArr;
   };
 
+  const handleSeriesChange = (name, val) => {
+    const seriesName = val.name;
+    setSeries(seriesName);
+    const filtered = entries.filter((entry) => entry.series === seriesName);
+    setEntries(filtered);
+  };
+
   return (
     <section id="entry_manager">
       <div className="entryManager_filter_container">
-        <Series getValue={(name, val) => setSeries(val.name)} />
+        <Series getValue={handleSeriesChange} />
       </div>
       <EntryTable entries={sortEntries(entries)} />
     </section>
