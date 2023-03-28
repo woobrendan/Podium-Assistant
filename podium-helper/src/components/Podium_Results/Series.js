@@ -1,8 +1,15 @@
 import { useState, useEffect } from "react";
-import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
+import {
+  FormControl,
+  InputLabel,
+  Select,
+  Box,
+  MenuItem,
+  List,
+} from "@mui/material";
 import axios from "axios";
 
-function Series({ getValue }) {
+const Series = ({ getValue, comp }) => {
   const [seriesName, setSeriesName] = useState("");
   const [series, setSeries] = useState([]);
 
@@ -10,7 +17,11 @@ function Series({ getValue }) {
     const getAndSetSeries = async () => {
       try {
         const seriesList = await axios.get("http://localhost:2020/api/series");
-        setSeries(seriesList.data.series);
+        const list =
+          comp === "entryManager"
+            ? ["All", ...seriesList.data.series]
+            : seriesList.data.series;
+        setSeries(list);
       } catch (err) {
         console.error(err);
       }
@@ -45,6 +56,6 @@ function Series({ getValue }) {
       </FormControl>
     </Box>
   );
-}
+};
 
 export default Series;
