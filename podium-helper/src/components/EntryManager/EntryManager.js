@@ -1,19 +1,23 @@
 import EntryTable from "./EntryTable";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { fetchEntry } from "../../store/entryActions";
 import Series from "../Podium_Results/Series";
 import "../../Styling/entryManager.scss";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
+  const data = useSelector((state) => state.entry.entriesArray);
+  const [entries, setEntries] = useState(data);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    setEntries(data);
+  }, [data]);
 
   useEffect(() => {
     dispatch(fetchEntry());
   }, [dispatch]);
-
-  const entries = useSelector((state) => state.entry.entriesArray);
 
   const sortEntries = (entries) => {
     const entryObj = {};
