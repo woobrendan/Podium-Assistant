@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchEntry } from "../../store/entryActions";
 import Series from "../Podium_Results/Series";
+import "../../Styling/entryManager.scss";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
@@ -34,12 +35,12 @@ const EntryManager = () => {
   };
 
   return (
-    <>
-      <section className="entryManager_filter_container">
+    <section id="entry_manager">
+      <div className="entryManager_filter_container">
         <Series />
-      </section>
+      </div>
       <EntryTable entries={sortEntries(entries)} />
-    </>
+    </section>
   );
 };
 
