@@ -1,10 +1,33 @@
 import { Modal, Box, Button } from "@mui/material";
+import { useState } from "react";
+import InputContainer from "./InputContainer";
 
-const AddEntry = () => {
+const AddEntry = ({ show, handleToggle }) => {
+  const [newEntry, setNewEntry] = useState({
+    team: "",
+    driver1: {
+      name: "",
+      nationality: "",
+      rating: "",
+    },
+
+    vehicle: "",
+    classification: "",
+    number: "",
+    carImage: "",
+    series: "",
+    year: 2023,
+  });
+
   return (
     <Modal open={show} onClose={handleToggle}>
-      <Box id="edit_modal">
-        <h2>Series: {modalEntry.series}</h2>
+      <Box id="addEntry_modal">
+        <InputContainer
+          val={newEntry.series}
+          name="series"
+          onInputChange={onInputChange}
+          label="Series"
+        />
         <EditVehicle entry={modalEntry} onInputChange={onInputChange} />
         <section className={`input_driver_container ${duo}`}>
           <EditDriver
