@@ -23,6 +23,7 @@ const AddEntry = ({ show, handleToggle }) => {
   });
 
   const driverNum = newEntry.series === (gtwca || gt4a) ? 2 : 1;
+  const driverPair = newEntry.series === (gtwca || gt4a) ? "duo" : "single";
 
   const onInputChange = (e) => {
     setNewEntry((prev) => ({
@@ -80,14 +81,13 @@ const AddEntry = ({ show, handleToggle }) => {
       },
     }));
   };
-  console.log("driverNum", driverNum);
 
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="addEntry_modal">
         <Series getValue={getSeries} />
         <EditVehicle entry={newEntry} onInputChange={onInputChange} />
-        <section className={`input_driver_container ${driverNum}`}>
+        <section className={`input_driver_container ${driverPair}`}>
           {newEntry.series && (
             <EditDriver
               entry={newEntry}
