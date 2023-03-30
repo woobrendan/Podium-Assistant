@@ -1,9 +1,9 @@
 import { Modal, Box, Button } from "@mui/material";
 import { useState } from "react";
-import InputContainer from "./InputContainer";
 import EditVehicle from "./EditVehicle";
 import EditDriver from "./EditDriver";
 import Series from "../Podium_Results/Series";
+import { gtwca, gt4a } from "../../functions/helperFunc";
 
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState({
@@ -22,6 +22,8 @@ const AddEntry = ({ show, handleToggle }) => {
     year: 2023,
   });
 
+  const driverNum = newEntry.series === gtwca || gt4a ? 2 : 1;
+
   const onInputChange = (e) => {
     setNewEntry((prev) => ({
       ...prev,
@@ -38,25 +40,49 @@ const AddEntry = ({ show, handleToggle }) => {
 
   const handleSubmit = (e) => {};
 
+  const onDriverChange = (e) => {
+    const nameVal = e.target.name;
+    let keyVal = "";
+    const driverNum = nameVal.includes("1") ? "driver1" : "driver2";
+
+    if (nameVal.includes("nationality")) {
+      keyVal = "nationality";
+    } else if (nameVal.includes("name")) {
+      keyVal = "name";
+    } else {
+      keyVal = "rating";
+    }
+
+    setNewEntry((prev) => ({
+      ...prev,
+      [driverNum]: {
+        ...prev[driverNum],
+        [keyVal]: e.target.value,
+      },
+    }));
+  };
+
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="addEntry_modal">
         <Series getValue={getValue} />
         <EditVehicle entry={newEntry} onInputChange={onInputChange} />
-        {/* <section className={`input_driver_container ${duo}`}>
-          <EditDriver
-            entry={modalEntry}
-            onChange={onDriverChange}
-            driverNum="1"
-          />
-          {modalEntry.driver2 && (
+        <section className={`input_driver_container ${driverNum}`}>
+          {newEntry.series && (
             <EditDriver
-              entry={modalEntry}
+              entry={newEntry}
+              onChange={onDriverChange}
+              driverNum="1"
+            />
+          )}
+          {/* {driverNum === 2 && (
+            <EditDriver
+              entry={newEntry}
               onChange={onDriverChange}
               driverNum="2"
             />
-          )}
-        </section> */}
+          )} */}
+        </section>
         <Button
           variant="outlined"
           color="error"
