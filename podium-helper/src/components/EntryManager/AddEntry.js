@@ -1,6 +1,8 @@
 import { Modal, Box, Button } from "@mui/material";
 import { useState } from "react";
 import InputContainer from "./InputContainer";
+import EditVehicle from "./EditVehicle";
+import EditDriver from "./EditDriver";
 
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState({
@@ -19,6 +21,15 @@ const AddEntry = ({ show, handleToggle }) => {
     year: 2023,
   });
 
+  const onInputChange = (e) => {
+    setNewEntry((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = (e) => {};
+
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="addEntry_modal">
@@ -28,8 +39,8 @@ const AddEntry = ({ show, handleToggle }) => {
           onInputChange={onInputChange}
           label="Series"
         />
-        <EditVehicle entry={modalEntry} onInputChange={onInputChange} />
-        <section className={`input_driver_container ${duo}`}>
+        <EditVehicle entry={newEntry} onInputChange={onInputChange} />
+        {/* <section className={`input_driver_container ${duo}`}>
           <EditDriver
             entry={modalEntry}
             onChange={onDriverChange}
@@ -42,7 +53,7 @@ const AddEntry = ({ show, handleToggle }) => {
               driverNum="2"
             />
           )}
-        </section>
+        </section> */}
         <Button
           variant="outlined"
           color="error"
