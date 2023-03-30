@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect } from "react";
+import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 
 const Classification = () => {
   const [series, setSeries] = useState([]);
@@ -32,7 +33,22 @@ const Classification = () => {
     );
   };
 
-  return <></>;
+  return (
+    <Box data-testid="class_dropdown">
+      <FormControl sx={{ minWidth: 300 }}>
+        <InputLabel>Class</InputLabel>
+        <Select
+          className="form-control"
+          name="classification"
+          label="Class"
+          value={className}
+          onChange={handleChange}
+        >
+          {mappedSeries}
+        </Select>
+      </FormControl>
+    </Box>
+  );
 };
 
 export default Classficiation;
