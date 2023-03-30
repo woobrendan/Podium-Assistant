@@ -3,53 +3,59 @@ import mongoose from "mongoose";
 import Result from "../models/result_schema";
 
 const createResult = (req: Request, res: Response) => {
+  console.log("req", req.body);
+  const incomingResult = req.body.results;
   const result = new Result({
-    ...req.body,
-    fastLap: { ...req.body.fastLap },
+    ...incomingResult,
+    fastLap: { ...incomingResult.fastLap },
     result1: {
-      ...req.body.result1,
-      firstPlace: { ...req.body.result1.firstPlace },
-      secondPlace: { ...req.body.result1.secondPlace },
-      thirdPlace: { ...req.body.result1.thirdPlace },
+      ...incomingResult.result1,
+      firstPlace: { ...incomingResult.result1.firstPlace },
+      ...(incomingResult.result2.secondPlace
+        ? { secondPlace: { ...incomingResult.result1.secondPlace } }
+        : {}),
+      ...(incomingResult.result2.thirdPlace
+        ? { thirdPlace: { ...incomingResult.result1.thirdPlace } }
+        : {}),
     },
-    ...(req.body.result2
+    ...(incomingResult.result2
       ? {
           result2: {
-            ...req.body.result2,
-            firstPlace: { ...req.body.result2.firstPlace },
-            ...(req.body.result2.secondPlace
-              ? { secondPlace: { ...req.body.result2.secondPlace } }
+            ...incomingResult.result2,
+            firstPlace: { ...incomingResult.result2.firstPlace },
+            ...(incomingResult.result2.secondPlace
+              ? { secondPlace: { ...incomingResult.result2.secondPlace } }
               : {}),
-            ...(req.body.result2.thirdPlace
-              ? { thirdPlace: { ...req.body.result2.thirdPlace } }
+            ...(incomingResult.result2.thirdPlace
+              ? { thirdPlace: { ...incomingResult.result2.thirdPlace } }
               : {}),
           },
         }
       : {}),
-    ...(req.body.result3
+    ...(incomingResult.result3
       ? {
           result3: {
-            ...req.body.result3,
-            firstPlace: { ...req.body.result3.firstPlace },
-            ...(req.body.result3.secondPlace
-              ? { secondPlace: { ...req.body.result3.secondPlace } }
+            ...incomingResult.result3,
+            firstPlace: { ...incomingResult.result3.firstPlace },
+            ...(incomingResult.result3.secondPlace
+              ? { secondPlace: { ...incomingResult.result3.secondPlace } }
               : {}),
-            ...(req.body.result3.thirdPlace
-              ? { thirdPlace: { ...req.body.result3.thirdPlace } }
+            ...(incomingResult.result3.thirdPlace
+              ? { thirdPlace: { ...incomingResult.result3.thirdPlace } }
               : {}),
           },
         }
       : {}),
-    ...(req.body.result4
+    ...(incomingResult.result4
       ? {
           result4: {
-            ...req.body.result4,
-            firstPlace: { ...req.body.result4.firstPlace },
-            ...(req.body.result4.secondPlace
-              ? { secondPlace: { ...req.body.result4.secondPlace } }
+            ...incomingResult.result4,
+            firstPlace: { ...incomingResult.result4.firstPlace },
+            ...(incomingResult.result4.secondPlace
+              ? { secondPlace: { ...incomingResult.result4.secondPlace } }
               : {}),
-            ...(req.body.result4.thirdPlace
-              ? { thirdPlace: { ...req.body.result4.thirdPlace } }
+            ...(incomingResult.result4.thirdPlace
+              ? { thirdPlace: { ...incomingResult.result4.thirdPlace } }
               : {}),
           },
         }
