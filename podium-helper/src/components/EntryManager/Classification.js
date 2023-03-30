@@ -33,6 +33,19 @@ const Classification = () => {
     );
   };
 
+  const mappedClasses = getSeriesClasses(series).map(
+    (classification, index) => (
+      <MenuItem key={index} value={classification} data-testid={classification}>
+        {classification}
+      </MenuItem>
+    ),
+  );
+
+  const handleChange = (event) => {
+    setClassName(event.target.value);
+    getValue(event.target.name, event.target.value);
+  };
+
   return (
     <Box data-testid="class_dropdown">
       <FormControl sx={{ minWidth: 300 }}>
@@ -44,11 +57,11 @@ const Classification = () => {
           value={className}
           onChange={handleChange}
         >
-          {mappedSeries}
+          {mappedClasses}
         </Select>
       </FormControl>
     </Box>
   );
 };
 
-export default Classficiation;
+export default Classification;
