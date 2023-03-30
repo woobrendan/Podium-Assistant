@@ -2,10 +2,20 @@ import axios from "axios";
 import { useEffect } from "react";
 
 const Classification = () => {
+  const [series, setSeries] = useState([]);
+  const [className, setClassName] = useState("");
+
   useEffect(() => {
     const getClasses = async () => {
-      const series = await axios.get("http://localhost:2020/api/series");
+      try {
+        const series = await axios.get("http://localhost:2020/api/series");
+        setSeries(series.data.series);
+      } catch (error) {
+        console.log("Error fetching series", error);
+      }
     };
+
+    getClasses();
   }, []);
 
   const getSeriesClasses = (series) => {
