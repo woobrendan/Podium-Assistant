@@ -30,14 +30,6 @@ const Classification = ({ onInputChange }) => {
       .sort();
   };
 
-  const mappedClasses = getSeriesClasses(series).map(
-    (classification, index) => (
-      <MenuItem key={index} value={classification} data-testid={classification}>
-        {classification}
-      </MenuItem>
-    ),
-  );
-
   const handleChange = (event) => {
     setClassName(event.target.value);
     onInputChange(event);
@@ -54,7 +46,15 @@ const Classification = ({ onInputChange }) => {
           value={className}
           onChange={handleChange}
         >
-          {mappedClasses}
+          {getSeriesClasses(series).map((classification, index) => (
+            <MenuItem
+              key={index}
+              value={classification}
+              data-testid={classification}
+            >
+              {classification}
+            </MenuItem>
+          ))}
         </Select>
       </FormControl>
     </Box>
