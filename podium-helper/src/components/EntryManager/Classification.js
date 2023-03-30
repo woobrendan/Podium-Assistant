@@ -25,12 +25,12 @@ const Classification = ({ onInputChange }) => {
 
     //loop through each series and push all classes togeher, then filter out duplicates
     const classList = [];
-    for (const series of seriesList) {
-      classList.push(...series.class);
+    for (const serie of series) {
+      classList.push(...serie.class);
     }
-    return classList.filter(
-      (className, index) => classList.indexOf(className) === index,
-    );
+    return classList
+      .filter((className, index) => classList.indexOf(className) === index)
+      .sort();
   };
 
   console.log("class", getSeriesClasses(series));
