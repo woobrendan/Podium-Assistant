@@ -1,8 +1,8 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 
-const Classification = () => {
+const Classification = ({ onInputChange }) => {
   const [series, setSeries] = useState([]);
   const [className, setClassName] = useState("");
 
@@ -33,6 +33,8 @@ const Classification = () => {
     );
   };
 
+  console.log("class", getSeriesClasses(series));
+
   const mappedClasses = getSeriesClasses(series).map(
     (classification, index) => (
       <MenuItem key={index} value={classification} data-testid={classification}>
@@ -43,7 +45,7 @@ const Classification = () => {
 
   const handleChange = (event) => {
     setClassName(event.target.value);
-    getValue(event.target.name, event.target.value);
+    onInputChange(event);
   };
 
   return (
