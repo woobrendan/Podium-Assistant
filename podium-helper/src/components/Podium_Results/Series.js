@@ -1,12 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  FormControl,
-  InputLabel,
-  Select,
-  Box,
-  MenuItem,
-  List,
-} from "@mui/material";
+import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import axios from "axios";
 
 const Series = ({ getValue, comp }) => {
