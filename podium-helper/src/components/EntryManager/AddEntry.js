@@ -3,6 +3,7 @@ import { useState } from "react";
 import InputContainer from "./InputContainer";
 import EditVehicle from "./EditVehicle";
 import EditDriver from "./EditDriver";
+import Series from "../Podium_Results/Series";
 
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState({
@@ -28,6 +29,13 @@ const AddEntry = ({ show, handleToggle }) => {
     }));
   };
 
+  const getValue = (name, val) => {
+    setNewEntry((prev) => ({
+      ...prev,
+      [name]: val.name,
+    }));
+  };
+
   const handleSubmit = (e) => {};
 
   return (
@@ -39,6 +47,7 @@ const AddEntry = ({ show, handleToggle }) => {
           onInputChange={onInputChange}
           label="Series"
         />
+        <Series getValue={getValue} />
         <EditVehicle entry={newEntry} onInputChange={onInputChange} />
         {/* <section className={`input_driver_container ${duo}`}>
           <EditDriver
