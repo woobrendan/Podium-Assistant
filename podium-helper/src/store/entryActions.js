@@ -11,3 +11,11 @@ export const fetchEntry = () => {
     }
   };
 };
+
+export const addEntryToDB = async (entry) => {
+  try {
+    await axios.post("http://localhost:2020/entries", entry);
+  } catch (err) {
+    console.log("Error:", err);
+  }
+};
