@@ -34,4 +34,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  .duo {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 4%;
+  }
 }
