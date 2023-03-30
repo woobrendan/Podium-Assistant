@@ -29,4 +29,9 @@
   background-color: red;
   color: white;
   font-weight: 400;
+
+  .editModal_input {
+    display: flex;
+    flex-direction: column;
+  }
 }
