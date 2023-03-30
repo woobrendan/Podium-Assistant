@@ -16,12 +16,18 @@ const EditModal = ({ entry, handleToggle, show }) => {
 
   const dispatch = useDispatch();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     // no errors
     handleToggle();
     dispatch(entryActions.updateEntry(modalEntry));
-    axios.patch(`http://localhost:2020/entries/${modalEntry._id}`, modalEntry);
-    //patch route update id entry
+    try {
+      axios.patch(
+        `http://localhost:2020/entries/${modalEntry._id}`,
+        modalEntry,
+      );
+    } catch (error) {
+      console.log("Error updating Entry", error);
+    }
   };
 
   // console.log("entry", entry);
