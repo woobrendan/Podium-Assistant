@@ -4,8 +4,8 @@ import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
 
-const DatePicker = ({ getValue }) => {
-  const [date, setDate] = React.useState(props.today);
+const DatePicker = ({ getValue, today }) => {
+  const [date, setDate] = React.useState(today);
 
   const handleChange = (newValue) => {
     const newDate = newValue.toISOString().split("T")[0];
