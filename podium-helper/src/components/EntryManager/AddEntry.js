@@ -41,12 +41,6 @@ const AddEntry = ({ show, handleToggle }) => {
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="addEntry_modal">
-        <InputContainer
-          val={newEntry.series}
-          name="series"
-          onInputChange={onInputChange}
-          label="Series"
-        />
         <Series getValue={getValue} />
         <EditVehicle entry={newEntry} onInputChange={onInputChange} />
         {/* <section className={`input_driver_container ${duo}`}>
