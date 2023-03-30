@@ -4,12 +4,15 @@ import { useEffect, useState } from "react";
 import { fetchEntry } from "../../store/entryActions";
 import Series from "../Podium_Results/Series";
 import "../../Styling/entryManager.scss";
+import { Button } from "@mui/material";
+import AddEntry from "./AddEntry";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
   const data = useSelector((state) => state.entry.entriesArray);
   const [entries, setEntries] = useState(data);
   const [series, setSeries] = useState("");
+  const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -47,12 +50,16 @@ const EntryManager = () => {
   return (
     <section id="entry_manager">
       <div className="entryManager_filter_container">
+        <Button variant="outlined" onClick={() => setShowModal(!showModal)}>
+          Add Entry
+        </Button>
         <Series
           getValue={(name, val) => setSeries(val.name)}
           comp="entryManager"
         />
       </div>
       <EntryTable entries={sortEntries(entries)} />
+      <AddEntry show={showModal} />
     </section>
   );
 };
