@@ -1,14 +1,10 @@
+import Classification from "./Classification";
 import InputContainer from "./InputContainer";
 
 const EditVehicle = ({ entry, onInputChange }) => {
   return (
     <section className="input_vehicle_container">
-      <InputContainer
-        val={entry.classification}
-        name="classification"
-        onInputChange={onInputChange}
-        label="Class"
-      />
+      <Classification onInputChange={onInputChange} />
       <InputContainer
         val={entry.number}
         name="number"
