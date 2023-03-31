@@ -4,6 +4,8 @@ import EditVehicle from "./EditVehicle";
 import EditDriver from "./EditDriver";
 import Series from "../Podium_Results/Series";
 import { gtwca, gt4a } from "../../functions/helperFunc";
+import { useDispatch } from "react-redux";
+import { entryActions } from "../../store/entry_slice";
 
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState({
@@ -24,6 +26,7 @@ const AddEntry = ({ show, handleToggle }) => {
 
   const driverNum = newEntry.series === (gtwca || gt4a) ? 2 : 1;
   const driverPair = newEntry.series === (gtwca || gt4a) ? "duo" : "single";
+  const dispatch = useDispatch();
 
   const onInputChange = (e) => {
     setNewEntry((prev) => ({
@@ -58,7 +61,9 @@ const AddEntry = ({ show, handleToggle }) => {
     }
   };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    dispatch(entryActions.addEntry(newEntry));
+  };
 
   const onDriverChange = (e) => {
     const nameVal = e.target.name;
