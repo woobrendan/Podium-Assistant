@@ -12,7 +12,13 @@ const entrySlice = createSlice({
       addEntryToDB(action.payload);
       state.entriesArray = [...state.entriesArray, action.payload];
     },
-    removeEntry(state, action) {},
+    removeEntry(state, action) {
+      const entries = [...state.entriesArray];
+      const adjusted = entries.filter(
+        (entry) => entry._id !== action.payload._id,
+      );
+      state.entriesArray = adjusted;
+    },
     updateEntry(state, action) {
       const entries = [...state.entriesArray];
       const newEntries = entries.map((entry) =>
