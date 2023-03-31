@@ -19,7 +19,7 @@
     "year": 2023
   },
   {
-    "team": "Aston Martin Racing - TRG",
+    "team": "TRG - The Racers Group",
     "driver1": {
       "name": "Derek DeBoer",
       "nationality": "USA",
@@ -211,7 +211,7 @@
   {
     "team": "RealTime Racing",
     "driver1": {
-      "name": "Andy Pilrgrim",
+      "name": "Andy Pilgrim",
       "nationality": "USA",
       "rating": "Bronze"
     },
@@ -2347,6 +2347,25 @@
     "number": "009",
     "carImage": "",
     "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "NOLASPORT",
+    "driver1": {
+      "name": "Matt Travis",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Jason Hart",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Pro-Am", 
+    "number": "47",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
     "year": 2023
   }
 ]
