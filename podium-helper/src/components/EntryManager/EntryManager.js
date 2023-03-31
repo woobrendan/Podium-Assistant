@@ -59,7 +59,10 @@ const EntryManager = () => {
         />
       </div>
       <EntryTable entries={sortEntries(entries)} />
-      <AddEntry show={showModal} />
+      <AddEntry
+        show={showModal}
+        handleToggle={() => setShowModal(!showModal)}
+      />
     </section>
   );
 };
