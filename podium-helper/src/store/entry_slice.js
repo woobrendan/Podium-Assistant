@@ -10,6 +10,7 @@ const entrySlice = createSlice({
     },
     addEntry(state, action) {
       addEntryToDB(action.payload);
+      state.entriesArray = [...state.entriesArray, action.payload];
     },
     removeEntry(state, action) {},
     updateEntry(state, action) {
