@@ -1039,7 +1039,7 @@
     "classification": "Pro-Am",
     "number": "37",
     "carImage": "",
-    "series": "GT America",
+    "series": "Pirelli GT4 America",
     "year": 2023
   },
   {
@@ -2333,6 +2333,20 @@
     "number": "99",
     "carImage": "",
     "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "TRG - The Racers Group",
+    "driver1": {
+      "name": "Tim Vantage",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4", 
+    "number": "009",
+    "carImage": "",
+    "series": "GT America",
     "year": 2023
   }
 ]
