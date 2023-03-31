@@ -22,7 +22,7 @@ const AddEntry = ({ show, handleToggle }) => {
     year: 2023,
   });
 
-  const driverNum = newEntry.series === gtwca || gt4a ? 2 : 1;
+  const driverNum = newEntry.series === (gtwca || gt4a) ? 2 : 1;
 
   const onInputChange = (e) => {
     setNewEntry((prev) => ({
@@ -36,6 +36,25 @@ const AddEntry = ({ show, handleToggle }) => {
       ...prev,
       [name]: val.name,
     }));
+  };
+
+  const getSeries = (name, val) => {
+    const seriesName = val.name;
+    setNewEntry((prev) => ({
+      ...prev,
+      [name]: seriesName,
+    }));
+
+    if (seriesName === gtwca || gt4a) {
+      setNewEntry((prev) => ({
+        ...prev,
+        driver2: {
+          name: "",
+          nationality: "",
+          rating: "",
+        },
+      }));
+    }
   };
 
   const handleSubmit = (e) => {};
@@ -61,11 +80,12 @@ const AddEntry = ({ show, handleToggle }) => {
       },
     }));
   };
+  console.log("driverNum", driverNum);
 
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="addEntry_modal">
-        <Series getValue={getValue} />
+        <Series getValue={getSeries} />
         <EditVehicle entry={newEntry} onInputChange={onInputChange} />
         <section className={`input_driver_container ${driverNum}`}>
           {newEntry.series && (
@@ -75,13 +95,13 @@ const AddEntry = ({ show, handleToggle }) => {
               driverNum="1"
             />
           )}
-          {/* {driverNum === 2 && (
+          {driverNum === 2 && (
             <EditDriver
               entry={newEntry}
               onChange={onDriverChange}
               driverNum="2"
             />
-          )} */}
+          )}
         </section>
         <Button
           variant="outlined"
