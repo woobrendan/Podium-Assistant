@@ -15,14 +15,11 @@ const EditModal = ({ entry, handleToggle, show }) => {
 
   const dispatch = useDispatch();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = () => {
     // no errors
     handleToggle();
     dispatch(entryActions.updateEntry(modalEntry));
   };
-
-  // console.log("entry", entry);
-  // console.log("modal", modalEntry);
 
   const onInputChange = (e) => {
     setModalEntry((prev) => ({
@@ -54,8 +51,6 @@ const EditModal = ({ entry, handleToggle, show }) => {
   };
 
   const duo = modalEntry.driver2 ? "two_driver" : "single_driver";
-
-  //add team name to modal
 
   return (
     <Modal open={show} onClose={handleToggle}>
