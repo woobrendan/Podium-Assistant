@@ -6,6 +6,7 @@ import Series from "../Podium_Results/Series";
 import { gtwca, gt4a } from "../../functions/helperFunc";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
+import InputContainer from "./InputContainer";
 
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState({
@@ -35,12 +36,12 @@ const AddEntry = ({ show, handleToggle }) => {
     }));
   };
 
-  const getValue = (name, val) => {
-    setNewEntry((prev) => ({
-      ...prev,
-      [name]: val.name,
-    }));
-  };
+  // const getValue = (name, val) => {
+  //   setNewEntry((prev) => ({
+  //     ...prev,
+  //     [name]: val.name,
+  //   }));
+  // };
 
   const getSeries = (name, val) => {
     const seriesName = val.name;
@@ -63,6 +64,7 @@ const AddEntry = ({ show, handleToggle }) => {
 
   const handleSubmit = (e) => {
     dispatch(entryActions.addEntry(newEntry));
+    handleToggle();
   };
 
   const onDriverChange = (e) => {
@@ -91,6 +93,12 @@ const AddEntry = ({ show, handleToggle }) => {
     <Modal open={show} onClose={handleToggle}>
       <Box id="addEntry_modal">
         <Series getValue={getSeries} />
+        <InputContainer
+          val={newEntry.team}
+          name="team"
+          onInputChange={onInputChange}
+          label="Team"
+        />
         <EditVehicle entry={newEntry} onInputChange={onInputChange} />
         <section className={`input_driver_container ${driverPair}`}>
           {newEntry.series && (
