@@ -20,14 +20,6 @@ const EditModal = ({ entry, handleToggle, show }) => {
     // no errors
     handleToggle();
     dispatch(entryActions.updateEntry(modalEntry));
-    try {
-      axios.patch(
-        `http://localhost:2020/entries/${modalEntry._id}`,
-        modalEntry,
-      );
-    } catch (error) {
-      console.log("Error updating Entry", error);
-    }
   };
 
   // console.log("entry", entry);
@@ -63,6 +55,8 @@ const EditModal = ({ entry, handleToggle, show }) => {
   };
 
   const duo = modalEntry.driver2 ? "two_driver" : "single_driver";
+
+  //add team name to modal
 
   return (
     <Modal open={show} onClose={handleToggle}>
