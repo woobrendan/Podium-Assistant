@@ -5,7 +5,6 @@ import EditDriver from "./EditDriver";
 import EditVehicle from "./EditVehicle";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
-import axios from "axios";
 
 const EditModal = ({ entry, handleToggle, show }) => {
   const [modalEntry, setModalEntry] = useState({
@@ -61,8 +60,13 @@ const EditModal = ({ entry, handleToggle, show }) => {
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="edit_modal">
+        <h1>{modalEntry.team}</h1>
         <h2>Series: {modalEntry.series}</h2>
-        <EditVehicle entry={modalEntry} onInputChange={onInputChange} />
+        <EditVehicle
+          entry={modalEntry}
+          onInputChange={onInputChange}
+          classification={modalEntry.classification}
+        />
         <section className={`input_driver_container ${duo}`}>
           <EditDriver
             entry={modalEntry}
