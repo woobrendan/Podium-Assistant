@@ -17,7 +17,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 40%;
-  height: 200px;
+  height: 70%;
   min-height: 350px;
   border: 2px solid black;
   box-shadow: 10px 5px 5px black;
@@ -40,5 +40,11 @@
     justify-content: space-between;
     width: 80%;
     margin: 4%;
+  }
+}
+
+#class_dropdown {
+  .MuiFormControl-root {
+    min-width: 120px;
   }
 }
