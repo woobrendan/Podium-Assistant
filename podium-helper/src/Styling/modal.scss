@@ -17,14 +17,15 @@
   color: white;
   font-weight: 400;
 
-  h2 {
-    margin: 0;
+  h1 {
+    margin-bottom: 0;
   }
 
   .input_driver_container {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin: 5%;
 
     .editModal_input {
       display: flex;
