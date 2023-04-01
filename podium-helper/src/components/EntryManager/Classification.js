@@ -2,9 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 
-const Classification = ({ onInputChange }) => {
+const Classification = ({ onInputChange, classification }) => {
   const [series, setSeries] = useState([]);
-  const [className, setClassName] = useState("");
+  const [className, setClassName] = useState(
+    classification ? classification : "",
+  );
 
   useEffect(() => {
     const getClasses = async () => {
