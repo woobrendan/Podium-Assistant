@@ -38,8 +38,8 @@ const Classification = ({ onInputChange, classification }) => {
   };
 
   return (
-    <Box data-testid="class_dropdown">
-      <FormControl sx={{ minWidth: 300 }}>
+    <Box id="class_dropdown">
+      <FormControl>
         <InputLabel>Class</InputLabel>
         <Select
           className="form-control"
