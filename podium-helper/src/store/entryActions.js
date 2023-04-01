@@ -19,3 +19,11 @@ export const addEntryToDB = async (entry) => {
     console.log("Error:", err);
   }
 };
+
+export const updateEntry = async (entry) => {
+  try {
+    axios.patch(`http://localhost:2020/entries/${entry._id}`, entry);
+  } catch (error) {
+    console.log("Error updating Entry", error);
+  }
+};
