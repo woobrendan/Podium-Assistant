@@ -16,6 +16,7 @@ const entrySchema: Schema = new Schema({
     rating: { type: String, required: false },
     nationality: { type: String },
   },
+  isFemale: { type: Boolean },
 });
 
 export default mongoose.model<GREntryModel>("GREntries", entrySchema);
