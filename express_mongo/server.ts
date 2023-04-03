@@ -58,7 +58,7 @@ const startServer = () => {
   //** Routes */
   router.use("/entries", entryRoute);
   router.use("/results", resultRoute);
-  router.use("/gr_cup_entries", resultRoute);
+  router.use("/gr_cup_entries", grCupRoute);
 
   //** API Routes */
   router.use("/api/events", eventRoute);
