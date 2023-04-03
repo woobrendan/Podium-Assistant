@@ -3,15 +3,23 @@ import { addEntryToDB, updateEntry } from "./entryActions";
 
 const entrySlice = createSlice({
   name: "entries",
-  initialState: { entriesArray: [] },
+  initialState: {
+    entriesArray: [],
+    grCup: [],
+  },
   reducers: {
     setEntries(state, action) {
       state.entriesArray = action.payload;
     },
+    setGREntries(state, action) {
+      state.grCup = action.payload;
+    },
+
     addEntry(state, action) {
       addEntryToDB(action.payload);
       state.entriesArray = [...state.entriesArray, action.payload];
     },
+
     removeEntry(state, action) {
       const entries = [...state.entriesArray];
       const adjusted = entries.filter(
@@ -19,6 +27,7 @@ const entrySlice = createSlice({
       );
       state.entriesArray = adjusted;
     },
+
     updateEntry(state, action) {
       updateEntry(action.payload);
       const entries = [...state.entriesArray];
