@@ -1188,7 +1188,7 @@
       "rating": "Silver"
     },
     "vehicle": "Toyota Gazoo Racing GR Supra GT4",
-    "classification": "Silver",
+    "classification": "Pro-Am",
     "number": "68",
     "carImage": "",
     "series": "Pirelli GT4 America",
@@ -1340,7 +1340,7 @@
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
-    "classification": "Pro-Am",
+    "classification": "Silver   ",
     "number": "92",
     "carImage": "",
     "series": "Pirelli GT4 America",
@@ -1473,7 +1473,7 @@
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
-    "classification": "Am",
+    "classification": "Silver",
     "number": "51",
     "carImage": "",
     "series": "Pirelli GT4 America",
