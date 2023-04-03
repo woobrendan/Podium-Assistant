@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import mongoose from "mongoose";
-import GREntries from "../models/entry_schema";
+import GREntries from "../models/grCupEntry_schema";
 
 const createEntry = async (req: Request, res: Response) => {
   const entry = new GREntries({
