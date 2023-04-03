@@ -6,6 +6,7 @@ import entryRoute from "./routes/entriesRoutes";
 import resultRoute from "./routes/resultRoutes";
 import eventRoute from "./routes/eventRoutes";
 import seriesRoute from "./routes/seriesRoutes";
+import grCupRoute from "./routes/grCupRoutes";
 
 const morgan = require("morgan");
 const router = express();
@@ -57,6 +58,7 @@ const startServer = () => {
   //** Routes */
   router.use("/entries", entryRoute);
   router.use("/results", resultRoute);
+  router.use("/gr_cup_entries", resultRoute);
 
   //** API Routes */
   router.use("/api/events", eventRoute);
