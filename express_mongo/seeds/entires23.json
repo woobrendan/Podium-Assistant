@@ -1933,5 +1933,47 @@
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
+  },
+  {
+    "team": "DXDT Racing",
+    "driver1": {
+      "name": "Jeff Burton",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Masters",
+    "number": "91",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Flying Lizard Motorsports",
+    "driver1": {
+      "name": "Andy Wilzoch",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Masters",
+    "number": "460",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "MISHUMOTORS",
+    "driver1": {
+      "name": "Mirco Schultis",
+      "nationality": "Germany",
+      "rating": "Bronze"
+    },
+    "vehicle": "Callaway Corvette Z06R GT3",
+    "classification": "Masters",
+    "number": "70",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
   }
 ]
