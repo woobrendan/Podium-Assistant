@@ -4,7 +4,7 @@ interface FastLapInterface {
   laptime: string;
 }
 
-interface SingleResultInterface {
+interface EntryResultInterfance {
   team: string;
   vehicle: string;
   number: string;
@@ -13,13 +13,19 @@ interface SingleResultInterface {
   driver3?: string;
 }
 
+interface ResultInterface {
+  firstPlace: EntryResultInterfance;
+  secondPlace?: EntryResultInterfance;
+  thirdPlace?: EntryResultInterfance;
+}
+
 export interface FullResultInterface {
   series: string;
   date: string;
   event: string;
   fastLap: FastLapInterface;
-  result1: SingleResultInterface;
-  result2?: SingleResultInterface;
-  result3?: SingleResultInterface;
-  result4?: SingleResultInterface;
+  result1: ResultInterface;
+  result2?: ResultInterface;
+  result3?: ResultInterface;
+  result4?: ResultInterface;
 }
