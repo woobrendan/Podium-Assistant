@@ -6,7 +6,7 @@ import Series from "./Series";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
 import useEvents from "../../functions/useEvents";
-import { getToday } from "../../functions/helperFunc";
+import { getToday, grCup } from "../../functions/helperFunc";
 import mongoResult from "../../functions/formMongoResult";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -37,7 +37,12 @@ const Podium = () => {
     dispatch(fetchEntry());
   }, [dispatch]);
 
-  const entries = useSelector((state) => state.entry.entriesArray);
+  const SROEntries = useSelector((state) => state.entry.entriesArray);
+  const grCupEntries = useSelector((state) => state.entry.grCup);
+
+  let entries = results.series === grCup ? grCupEntries : SROEntries;
+  // console.log("entries", entries);
+  // console.log("series", results.series);
 
   const handleFinalSubmit = () => {
     dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
