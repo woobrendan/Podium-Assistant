@@ -11,8 +11,7 @@
     "number": "5",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Godwin Motorsports",
@@ -26,8 +25,7 @@
     "number": "6",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Zotz Racing",
@@ -41,8 +39,7 @@
     "number": "7",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Smooge Racing",
@@ -56,8 +53,7 @@
     "number": "8",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": true
+    "year": 2023
   },
   {
     "team": "Precision Racing LA",
@@ -71,8 +67,7 @@
     "number": "09",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": true
+    "year": 2023
   },
   {
     "team": "PJM / VGRT",
@@ -86,8 +81,7 @@
     "number": "10",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "RVA Graphics Motorsports by Speed Syndicate",
@@ -101,8 +95,7 @@
     "number": "11",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Tommy McCarthy Racing",
@@ -116,8 +109,7 @@
     "number": "23",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Nitro Motorsports",
@@ -131,8 +123,7 @@
     "number": "24",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "McCumbee McAleer Racing",
@@ -146,8 +137,7 @@
     "number": "27",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "McCumbee McAleer Racing",
@@ -161,8 +151,7 @@
     "number": "28",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Zotz Racing",
@@ -176,8 +165,7 @@
     "number": "30",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "RVA Graphics Motorsports by Speed Syndicate",
@@ -191,8 +179,7 @@
     "number": "31",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Precision Racing LA",
@@ -206,8 +193,7 @@
     "number": "37",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "PJM / VGRT",
@@ -221,8 +207,7 @@
     "number": "44",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Lucas Racing",
@@ -236,8 +221,7 @@
     "number": "46",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "TechSport Racing",
@@ -251,8 +235,7 @@
     "number": "55",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Copeland Motorsports",
@@ -266,8 +249,7 @@
     "number": "57",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Pura Vida Team",
@@ -281,8 +263,7 @@
     "number": "58",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Smooge Racing",
@@ -296,8 +277,7 @@
     "number": "66",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Smooge Racing",
@@ -311,8 +291,7 @@
     "number": "67",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Smooge Racing",
@@ -341,8 +320,7 @@
     "number": "69",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Nitro Motorsports",
@@ -356,8 +334,7 @@
     "number": "80",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Nitro Motorsports",
@@ -371,8 +348,7 @@
     "number": "70",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": true
+    "year": 2023
   },
   {
     "team": "Copeland Motorsports",
@@ -386,8 +362,7 @@
     "number": "71",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Precision Racing LA",
@@ -401,8 +376,7 @@
     "number": "73",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "BSI Racing",
@@ -416,8 +390,7 @@
     "number": "76",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "VGRT",
@@ -431,8 +404,7 @@
     "number": "88",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "VGRT",
@@ -446,8 +418,7 @@
     "number": "98",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
   },
   {
     "team": "Copeland Motorsports",
@@ -461,7 +432,48 @@
     "number": "99",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": false
+    "year": 2023
+  },
+  {
+    "team": "Nitro Motorsports",
+    "driver1": {
+      "name": "Toni Breidinger",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Female", 
+    "number": "70",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Smooge Racing",
+    "driver1": {
+      "name": "Isabella Robusto",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Female",
+    "number": "8",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Precision Racing LA",
+    "driver1": {
+      "name": "Cat Lauren",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Female",
+    "number": "09",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
   }
 ]
