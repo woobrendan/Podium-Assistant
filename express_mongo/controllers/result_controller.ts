@@ -11,10 +11,10 @@ const createResult = (req: Request, res: Response) => {
     result1: {
       ...incomingResult.result1,
       firstPlace: { ...incomingResult.result1.firstPlace },
-      ...(incomingResult.result2.secondPlace
+      ...(incomingResult.result1.secondPlace
         ? { secondPlace: { ...incomingResult.result1.secondPlace } }
         : {}),
-      ...(incomingResult.result2.thirdPlace
+      ...(incomingResult.result1.thirdPlace
         ? { thirdPlace: { ...incomingResult.result1.thirdPlace } }
         : {}),
     },
