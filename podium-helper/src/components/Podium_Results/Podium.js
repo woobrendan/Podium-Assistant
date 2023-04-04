@@ -62,6 +62,8 @@ const Podium = () => {
   const getValue = (name, value) => {
     if (value.name === grCup) {
       setEntries(grCupEntries);
+    } else if (name === "series") {
+      setEntries(SROEntries);
     }
 
     setResults((prev) => ({
