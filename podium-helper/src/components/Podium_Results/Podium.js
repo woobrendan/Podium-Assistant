@@ -43,13 +43,6 @@ const Podium = () => {
     }
   }, [currentEventName, entries.length, SROEntries]);
 
-  // useEffect(() => {
-  //   setResults((prev) => ({
-  //     ...prev,
-  //     event: currentEventName,
-  //   }));
-  // }, [currentEventName]);
-
   useEffect(() => {
     dispatch(fetchEntry());
   }, [dispatch]);
