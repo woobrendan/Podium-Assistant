@@ -44,8 +44,8 @@
   {
     "name": "Toyota GR Cup",
     "class": [
-      "Dealer",
-      "Am"
+      "Am",
+      "Dealer"
     ]
   }
 ]
