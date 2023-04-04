@@ -45,7 +45,8 @@
     "name": "Toyota GR Cup",
     "class": [
       "Am",
-      "Dealer"
+      "Dealer",
+      "Female"
     ]
   }
 ]
