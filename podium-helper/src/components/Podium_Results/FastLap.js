@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { grCup } from "../../functions/helperFunc";
+import { singleDrivers } from "../../functions/podiumResultHelpers";
 
 const FastLap = ({ series, getValue, entries }) => {
   const [fastTime, setFastTime] = useState({
@@ -31,43 +32,15 @@ const FastLap = ({ series, getValue, entries }) => {
     setIsSubmitted(true);
   };
 
-  //take in entry object and get every single driver into list
-  const singleDrivers = (entryArray) => {
-    const drivers = [];
-    const seriesFilteredDrivers = entryArray.filter(
-      (entry) => entry.series === series.name,
-    );
-    for (const entry of seriesFilteredDrivers) {
-      drivers.push({
-        number: entry.number,
-        driver: entry.driver1.name,
-        vehicle: entry.vehicle,
-      });
-      if (entry.driver2) {
-        drivers.push({
-          number: entry.number,
-          driver: entry.driver2.name,
-          vehicle: entry.vehicle,
-        });
-      }
-      if (entry.driver3) {
-        drivers.push({
-          number: entry.number,
-          driver: entry.driver3.name,
-          vehicle: entry.vehicle,
-        });
-      }
-    }
-    return drivers.sort((a, b) => a.number - b.number);
-  };
-
-  const mapSingleDrivers = singleDrivers(entries).map((option, index) => {
-    return (
-      <MenuItem key={index} value={option.driver}>
-        #{option.number} - {option.driver}{" "}
-      </MenuItem>
-    );
-  });
+  const mapSingleDrivers = singleDrivers(entries, series).map(
+    (option, index) => {
+      return (
+        <MenuItem key={index} value={option.driver}>
+          #{option.number} - {option.driver}{" "}
+        </MenuItem>
+      );
+    },
+  );
 
   return (
     <Card className="fast-lap-container">
