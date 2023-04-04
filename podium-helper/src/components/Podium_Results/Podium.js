@@ -31,19 +31,28 @@ const Podium = () => {
   const [entries, setEntries] = useState([]);
 
   useEffect(() => {
+    //update event name in results
     setResults((prev) => ({
       ...prev,
       event: currentEventName,
     }));
-  }, [currentEventName]);
+
+    // update entries when SRO entries changes/set
+    if (entries.length === 0) {
+      setEntries(SROEntries);
+    }
+  }, [currentEventName, entries.length, SROEntries]);
+
+  // useEffect(() => {
+  //   setResults((prev) => ({
+  //     ...prev,
+  //     event: currentEventName,
+  //   }));
+  // }, [currentEventName]);
 
   useEffect(() => {
     dispatch(fetchEntry());
   }, [dispatch]);
-
-  useEffect(() => {
-    setEntries(SROEntries);
-  }, [SROEntries]);
 
   const handleFinalSubmit = () => {
     dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
