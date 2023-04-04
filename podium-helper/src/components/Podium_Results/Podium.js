@@ -18,6 +18,8 @@ const Podium = () => {
   const { currentEventName } = useEvents();
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const SROEntries = useSelector((state) => state.entry.entriesArray);
+  const grCupEntries = useSelector((state) => state.entry.grCup);
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -25,6 +27,8 @@ const Podium = () => {
     event: "",
     fastLap: "",
   });
+
+  const [entries, setEntries] = useState([]);
 
   useEffect(() => {
     setResults((prev) => ({
@@ -37,12 +41,9 @@ const Podium = () => {
     dispatch(fetchEntry());
   }, [dispatch]);
 
-  const SROEntries = useSelector((state) => state.entry.entriesArray);
-  const grCupEntries = useSelector((state) => state.entry.grCup);
-
-  let entries = results.series === grCup ? grCupEntries : SROEntries;
-  // console.log("entries", entries);
-  // console.log("series", results.series);
+  useEffect(() => {
+    setEntries(SROEntries);
+  }, [SROEntries]);
 
   const handleFinalSubmit = () => {
     dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
@@ -59,6 +60,10 @@ const Podium = () => {
 
   //grab value and name (for key) from component and set result state
   const getValue = (name, value) => {
+    if (value.name === grCup) {
+      setEntries(grCupEntries);
+    }
+
     setResults((prev) => ({
       ...prev,
       [name]: value,
