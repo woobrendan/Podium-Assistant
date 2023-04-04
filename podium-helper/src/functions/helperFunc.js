@@ -93,6 +93,7 @@ const tcam = "TC America";
 const gtam = "GT America";
 const gt4a = "Pirelli GT4 America";
 const igtc = "Intercontinental GT Challenge";
+const grCup = "Toyota GR Cup";
 
 export {
   getIdFromArray,
@@ -106,6 +107,7 @@ export {
   gtam,
   gt4a,
   igtc,
+  grCup,
   dateToString,
   shortenName,
 };
