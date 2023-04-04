@@ -41,4 +41,34 @@ const numOfPodiumDisplays = (series, submit, results, entries) => {
   return mappedSeries;
 };
 
-export { numOfDriverMenuItem, numOfPodiumDisplays };
+//take in entry object and get every single driver into list. List is used for Fast Lap component
+const singleDrivers = (entryArray, series) => {
+  const drivers = [];
+  const seriesFilteredDrivers = entryArray.filter(
+    (entry) => entry.series === series.name,
+  );
+  for (const entry of seriesFilteredDrivers) {
+    drivers.push({
+      number: entry.number,
+      driver: entry.driver1.name,
+      vehicle: entry.vehicle,
+    });
+    if (entry.driver2) {
+      drivers.push({
+        number: entry.number,
+        driver: entry.driver2.name,
+        vehicle: entry.vehicle,
+      });
+    }
+    if (entry.driver3) {
+      drivers.push({
+        number: entry.number,
+        driver: entry.driver3.name,
+        vehicle: entry.vehicle,
+      });
+    }
+  }
+  return drivers.sort((a, b) => a.number - b.number);
+};
+
+export { numOfDriverMenuItem, numOfPodiumDisplays, singleDrivers };
