@@ -9,6 +9,7 @@ import {
   MenuItem,
 } from "@mui/material";
 import { useState } from "react";
+import { grCup } from "../../functions/helperFunc";
 
 const FastLap = ({ series, getValue, entries }) => {
   const [fastTime, setFastTime] = useState({
@@ -70,7 +71,7 @@ const FastLap = ({ series, getValue, entries }) => {
 
   return (
     <Card className="fast-lap-container">
-      <h2>CrowdStrike Fast Lap</h2>
+      <h2>{series.name === grCup ? "Fast Lap" : "CrowdStrike Fast Lap"}</h2>
       <Box className="fast_lap__input">
         <FormControl>
           <InputLabel>Driver</InputLabel>
