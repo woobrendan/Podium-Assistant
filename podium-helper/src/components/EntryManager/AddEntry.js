@@ -8,22 +8,24 @@ import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer";
 
-const AddEntry = ({ show, handleToggle }) => {
-  const [newEntry, setNewEntry] = useState({
-    team: "",
-    driver1: {
-      name: "",
-      nationality: "",
-      rating: "",
-    },
+const initialEntryState = {
+  team: "",
+  driver1: {
+    name: "",
+    nationality: "",
+    rating: "",
+  },
 
-    vehicle: "",
-    classification: "",
-    number: "",
-    carImage: "",
-    series: "",
-    year: 2023,
-  });
+  vehicle: "",
+  classification: "",
+  number: "",
+  carImage: "",
+  series: "",
+  year: 2023,
+};
+
+const AddEntry = ({ show, handleToggle }) => {
+  const [newEntry, setNewEntry] = useState(initialEntryState);
 
   const driverNum = newEntry.series === (gtwca || gt4a) ? 2 : 1;
   const driverPair = newEntry.series === (gtwca || gt4a) ? "duo" : "single";
@@ -57,6 +59,7 @@ const AddEntry = ({ show, handleToggle }) => {
 
   const handleSubmit = (e) => {
     dispatch(entryActions.addEntry(newEntry));
+    setNewEntry(initialEntryState);
     handleToggle();
   };
 
@@ -119,7 +122,7 @@ const AddEntry = ({ show, handleToggle }) => {
           className="edit_modal_update"
           onClick={(e) => handleSubmit(e)}
         >
-          Update
+          Add
         </Button>
       </Box>
     </Modal>
