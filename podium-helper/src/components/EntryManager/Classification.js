@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 
 const Classification = ({ onInputChange, classification }) => {
-  const [series, setSeries] = useState([]);
+  const [seriesList, setSeriesList] = useState([]);
   const [className, setClassName] = useState(
     classification ? classification : "",
   );
@@ -12,7 +12,7 @@ const Classification = ({ onInputChange, classification }) => {
     const getClasses = async () => {
       try {
         const series = await axios.get("http://localhost:2020/api/series");
-        setSeries(series.data.series);
+        setSeriesList(series.data.series);
       } catch (error) {
         console.log("Error fetching series", error);
       }
@@ -48,7 +48,7 @@ const Classification = ({ onInputChange, classification }) => {
           value={className}
           onChange={handleChange}
         >
-          {getSeriesClasses(series).map((classification, index) => (
+          {getSeriesClasses(seriesList).map((classification, index) => (
             <MenuItem
               key={index}
               value={classification}
