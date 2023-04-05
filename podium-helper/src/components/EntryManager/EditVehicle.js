@@ -1,12 +1,13 @@
 import Classification from "./Classification";
 import InputContainer from "./InputContainer";
 
-const EditVehicle = ({ entry, onInputChange, classification }) => {
+const EditVehicle = ({ entry, onInputChange, classification, series }) => {
   return (
     <section className="input_vehicle_container">
       <Classification
         onInputChange={onInputChange}
         classification={classification}
+        series={series}
       />
       <InputContainer
         val={entry.number}
