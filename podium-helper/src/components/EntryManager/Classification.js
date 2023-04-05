@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 
-const Classification = ({ onInputChange, classification }) => {
+const Classification = ({ onInputChange, classification, series }) => {
   const [seriesList, setSeriesList] = useState([]);
   const [className, setClassName] = useState(
     classification ? classification : "",
@@ -21,11 +21,19 @@ const Classification = ({ onInputChange, classification }) => {
     getClasses();
   }, []);
 
-  const getSeriesClasses = (series) => {
+  const getSeriesClasses = (seriesList) => {
+    // if series prop exists, then take that name and only return the class list for that series
+    if (series) {
+      for (const serie of seriesList) {
+        if (serie.name === series) {
+          return serie.class;
+        }
+      }
+    }
     //loop through each series and push all classes togeher, then filter out duplicates
     const classList = [];
-    for (const serie of series) {
-      classList.push(...serie.class);
+    for (const series of seriesList) {
+      classList.push(...series.class);
     }
     return classList
       .filter((className, index) => classList.indexOf(className) === index)
