@@ -16,15 +16,3 @@ export interface EntryInterface {
   carImage: string;
   year: number;
 }
-
-export interface GrCupEntryInterface {
-  team: string;
-  vehicle: string;
-  series: string;
-  number: string;
-  driver1: DriverInfo;
-  classification: string;
-  carImage: string;
-  year: number;
-  isFemale: boolean;
-}
