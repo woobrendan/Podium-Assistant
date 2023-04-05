@@ -5,14 +5,10 @@ const entrySlice = createSlice({
   name: "entries",
   initialState: {
     entriesArray: [],
-    grCup: [],
   },
   reducers: {
     setEntries(state, action) {
       state.entriesArray = action.payload;
-    },
-    setGREntries(state, action) {
-      state.grCup = action.payload;
     },
 
     addEntry(state, action) {
