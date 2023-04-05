@@ -92,7 +92,11 @@ const AddEntry = ({ show, handleToggle }) => {
           onInputChange={onInputChange}
           label="Team"
         />
-        <EditVehicle entry={newEntry} onInputChange={onInputChange} />
+        <EditVehicle
+          entry={newEntry}
+          onInputChange={onInputChange}
+          series={newEntry.series}
+        />
         <section className={`input_driver_container ${driverPair}`}>
           {newEntry.series && (
             <EditDriver
