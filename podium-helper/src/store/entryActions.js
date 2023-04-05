@@ -5,9 +5,7 @@ export const fetchEntry = () => {
   return async (dispatch) => {
     try {
       const entries = await axios.get("http://localhost:2020/entries");
-      const gr = await axios.get("http://localhost:2020/gr_cup_entries");
       dispatch(entryActions.setEntries(entries.data.entry));
-      dispatch(entryActions.setGREntries(gr.data.entry));
     } catch (err) {
       console.error(err);
     }
