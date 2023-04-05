@@ -3,8 +3,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 40%;
-  height: 200px;
+  width: 80vw;
+  height: 70vw;
   min-height: 350px;
   border: 2px solid black;
   box-shadow: 10px 5px 5px black;
@@ -35,7 +35,7 @@
     &.single_driver {
       .input_driver_container_1 {
         display: flex;
-        justify-content: space-between;
+        gap: 10%;
         width: 100%;
       }
     }
@@ -45,7 +45,7 @@
 
       section {
         display: flex;
-        justify-content: space-between;
+        gap: 10%;
         flex-direction: column;
       }
     }
