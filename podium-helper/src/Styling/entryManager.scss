@@ -41,14 +41,6 @@
     width: 100%;
   }
 
-  .input_driver_container {
-    section {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-    }
-  }
-
   .editModal_input {
     display: flex;
     flex-direction: column;
@@ -69,6 +61,12 @@
     width: 80%;
     margin: 4%;
     height: 30%;
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
   }
 
   .MuiButton-root {
