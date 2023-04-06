@@ -27,8 +27,10 @@ const initialEntryState = {
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState(initialEntryState);
 
-  const driverNum = newEntry.series === (gtwca || gt4a) ? 2 : 1;
-  const driverPair = newEntry.series === (gtwca || gt4a) ? "duo" : "single";
+  const driverNum =
+    newEntry.series === gtwca || newEntry.series === gt4a ? 2 : 1;
+  const driverPair =
+    newEntry.series === gtwca || newEntry.series === gt4a ? "duo" : "single";
   const dispatch = useDispatch();
 
   const onInputChange = (e) => {
