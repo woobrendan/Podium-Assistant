@@ -47,7 +47,7 @@ const AddEntry = ({ show, handleToggle }) => {
       [name]: seriesName,
     }));
 
-    if (seriesName === gtwca || gt4a) {
+    if (seriesName === gtwca || seriesName === gt4a) {
       setNewEntry((prev) => ({
         ...prev,
         driver2: {
