@@ -58,3 +58,11 @@
     min-width: 120px;
   }
 }
+
+#entry_manager {
+  .entryManager_filter_container {
+    display: flex;
+    justify-content: space-around;
+    margin: 3%;
+  }
+}
