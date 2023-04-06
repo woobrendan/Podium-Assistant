@@ -12,6 +12,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
     driver1: { ...entry.driver1 },
     ...(entry.driver2 ? { driver2: { ...entry.driver2 } } : {}),
   });
+  const [toBeDeleted, setToBeDeleted] = useState(false);
 
   const dispatch = useDispatch();
 
@@ -50,6 +51,8 @@ const EditModal = ({ entry, handleToggle, show }) => {
     }));
   };
 
+  const handleDelete = (entry) => {};
+
   const duo = modalEntry.driver2 ? "two_driver" : "single_driver";
 
   return (
@@ -84,6 +87,16 @@ const EditModal = ({ entry, handleToggle, show }) => {
         >
           Update
         </Button>
+        {toBeDeleted && (
+          <Button
+            variant="contained"
+            color="error"
+            data-testid="modal_delete_confirm"
+            onClick={() => handleDelete(modalEntry)}
+          >
+            Confirm Delete
+          </Button>
+        )}
       </Box>
     </Modal>
   );
