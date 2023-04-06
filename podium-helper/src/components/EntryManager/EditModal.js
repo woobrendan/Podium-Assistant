@@ -58,6 +58,15 @@ const EditModal = ({ entry, handleToggle, show }) => {
   return (
     <Modal open={show} onClose={handleToggle}>
       <Box id="edit_modal">
+        <Button
+          variant="outlined"
+          color="error"
+          className="edit_modal_delete"
+          data-testid="modal_delete"
+          onClick={() => setToBeDeleted(!toBeDeleted)}
+        >
+          {toBeDeleted ? "Cancel" : "Delete Entry"}
+        </Button>
         <h1>{modalEntry.team}</h1>
         <h2>Series: {modalEntry.series}</h2>
         <EditVehicle
