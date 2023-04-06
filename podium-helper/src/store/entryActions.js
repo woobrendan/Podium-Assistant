@@ -27,3 +27,11 @@ export const updateEntry = async (entry) => {
     console.log("Error updating Entry", error);
   }
 };
+
+export const deleteEntry = async (entry) => {
+  try {
+    axios.delete(`http://localhost:2020/entries/${entry._id}`);
+  } catch (error) {
+    console.log("Error deleting Entry", error);
+  }
+};
