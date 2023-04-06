@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import useEvents from "../functions/useEvents";
 
-function EventSearch({ component, getValue }) {
+const EventSearch = ({ component, getValue }) => {
   const { events, currentEventName } = useEvents();
   const [eventName, setEventName] = useState("");
 
@@ -35,6 +35,6 @@ function EventSearch({ component, getValue }) {
       </FormControl>
     </Box>
   );
-}
+};
 
 export default EventSearch;
