@@ -1,24 +1,23 @@
-import { TextField } from "@mui/material"
+import { TextField } from "@mui/material";
 
-function SearchBar() {
-
-  const [searchValue, setSearchValue] = useState('')
+const SearchBar = ({ getSearchValue }) => {
+  const [searchValue, setSearchValue] = useState("");
 
   const onChangeHandler = (event) => {
-    setSearchValue(event.target.value)
-    props.getSearchValue(event.target.value)
-  }
+    setSearchValue(event.target.value);
+    getSearchValue(event.target.value);
+  };
 
   return (
-    <TextField 
-      label='Search' 
-      variant="outlined" 
+    <TextField
+      label="Search"
+      variant="outlined"
       color="error"
       value={searchValue}
       // onChange={e => {setSearchValue(e.target.value)}}
       onChange={onChangeHandler}
     />
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
