@@ -30,6 +30,11 @@
   color: white;
   font-weight: 400;
 
+  .MuiFormLabel-root,
+  .MuiSelect-select {
+    color: white;
+  }
+
   .input_vehicle_container {
     display: flex;
     justify-content: space-around;
