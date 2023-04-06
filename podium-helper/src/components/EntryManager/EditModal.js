@@ -51,7 +51,10 @@ const EditModal = ({ entry, handleToggle, show }) => {
     }));
   };
 
-  const handleDelete = (entry) => {};
+  const handleDelete = (entry) => {
+    dispatch(entryActions.removeEntry(entry));
+    handleToggle();
+  };
 
   const duo = modalEntry.driver2 ? "two_driver" : "single_driver";
 
