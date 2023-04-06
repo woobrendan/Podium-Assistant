@@ -30,15 +30,15 @@
   color: white;
   font-weight: 400;
 
+  .input_vehicle_container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
   .editModal_input {
     display: flex;
     flex-direction: column;
-
-    .input_vehicle_container {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-    }
   }
 
   .single {
