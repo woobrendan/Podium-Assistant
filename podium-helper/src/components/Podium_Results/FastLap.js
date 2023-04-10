@@ -12,7 +12,7 @@ import { useState } from "react";
 import { grCup } from "../../functions/helperFunc";
 import { singleDrivers } from "../../functions/podiumResultHelpers";
 
-const FastLap = ({ series, getValue, entries }) => {
+const FastLap = ({ series, handleSubmit, entries }) => {
   const [fastTime, setFastTime] = useState({
     driver: "",
     laptime: "",
@@ -28,7 +28,7 @@ const FastLap = ({ series, getValue, entries }) => {
   };
 
   const handleClick = () => {
-    getValue("fastLap", fastTime);
+    handleSubmit(fastTime, "fastLap");
     setIsSubmitted(true);
   };
 
