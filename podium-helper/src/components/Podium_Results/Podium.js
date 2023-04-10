@@ -46,17 +46,24 @@ const Podium = () => {
 
   //** sent to WinnerPodium as onclick to get podium result X and set to results *//
   const handleRacePodiumSubmit = (value, resultNumber) => {
-    setResults((prev) => ({
-      ...prev,
-      [`result${resultNumber}`]: value,
-    }));
+    if (resultNumber === "fastLap") {
+      setResults((prev) => ({
+        ...prev,
+        fastLap: value,
+      }));
+    } else {
+      setResults((prev) => ({
+        ...prev,
+        [`result${resultNumber}`]: value,
+      }));
+    }
   };
 
   //grab value and name (for key) from component and set result state
-  const getValue = (name, value) => {
+  const getValue = (e) => {
     setResults((prev) => ({
       ...prev,
-      [name]: value,
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -78,7 +85,7 @@ const Podium = () => {
       </div>
       {results.series && (
         <FastLap
-          getValue={getValue}
+          handleSubmit={handleRacePodiumSubmit}
           series={results.series}
           entries={entries}
         />
