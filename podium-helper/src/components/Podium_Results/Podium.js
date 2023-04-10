@@ -18,8 +18,7 @@ const Podium = () => {
   const { currentEventName } = useEvents();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const SROEntries = useSelector((state) => state.entry.entriesArray);
-  const grCupEntries = useSelector((state) => state.entry.grCup);
+  const entries = useSelector((state) => state.entry.entriesArray);
 
   const [results, setResults] = useState({
     date: getToday(),
@@ -28,20 +27,13 @@ const Podium = () => {
     fastLap: "",
   });
 
-  const [entries, setEntries] = useState([]);
-
   useEffect(() => {
     //update event name in results
     setResults((prev) => ({
       ...prev,
       event: currentEventName,
     }));
-
-    // update entries when SRO entries changes/set
-    if (entries.length === 0) {
-      setEntries(SROEntries);
-    }
-  }, [currentEventName, entries.length, SROEntries]);
+  }, [currentEventName]);
 
   useEffect(() => {
     dispatch(fetchEntry());
@@ -52,7 +44,7 @@ const Podium = () => {
     navigate("/recent");
   };
 
-  //sent to WinnerPodium as onclick to get podium result X and set to results
+  //** sent to WinnerPodium as onclick to get podium result X and set to results *//
   const handleRacePodiumSubmit = (value, resultNumber) => {
     setResults((prev) => ({
       ...prev,
@@ -62,12 +54,6 @@ const Podium = () => {
 
   //grab value and name (for key) from component and set result state
   const getValue = (name, value) => {
-    if (value.name === grCup) {
-      setEntries(grCupEntries);
-    } else if (name === "series") {
-      setEntries(SROEntries);
-    }
-
     setResults((prev) => ({
       ...prev,
       [name]: value,
