@@ -1,44 +1,51 @@
-import { FormControl, InputLabel, Select, Box, MenuItem } from '@mui/material';
-import {useState} from 'react';
+import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
+import { useState } from "react";
 
-export default function ToggleSort(props) {
-  const [sortOption, setSortOption] = useState('');
+const ToggleSort = (props) => {
+  const [sortOption, setSortOption] = useState("");
 
-  
   const getSortOption = (component) => {
-    const competitorSortOptions = ['Number', 'Manufacturer', 'Vehicle Type', 'Class'];
-    const resultSortOptions = ['Event', 'Series']
-    const option = component === 'competitor' ? competitorSortOptions : resultSortOptions;
-    return option
-  }
+    const competitorSortOptions = [
+      "Number",
+      "Manufacturer",
+      "Vehicle Type",
+      "Class",
+    ];
+    const resultSortOptions = ["Event", "Series"];
+    const option =
+      component === "competitor" ? competitorSortOptions : resultSortOptions;
+    return option;
+  };
 
   const handleToggle = (event) => {
     setSortOption(event.target.value);
     props.getOption(event.target.value);
-  }
+  };
 
-  const mappedOptions = getSortOption(props.component).map(option => (
-    <MenuItem key={option} value={option}>{option}</MenuItem>
-  ))
+  const mappedOptions = getSortOption(props.component).map((option) => (
+    <MenuItem key={option} value={option}>
+      {option}
+    </MenuItem>
+  ));
 
   return (
     <div className="sort-option-selector">
       <Box
         component="form"
         sx={{
-          '& .MuiTextField-root': { m: 1, width: '25ch' },
+          "& .MuiTextField-root": { m: 1, width: "25ch" },
         }}
         noValidate
         autoComplete="off"
       >
-        <FormControl 
-          sx={{ minWidth: 150 }} 
+        <FormControl
+          sx={{ minWidth: 150 }}
           color="error"
           // focused={true}
           className="form-control"
         >
           <InputLabel>
-            {props.component === 'competitor' ? 'Sort By' : 'Filter'}
+            {props.component === "competitor" ? "Sort By" : "Filter"}
           </InputLabel>
           <Select
             className="form-control"
@@ -52,6 +59,7 @@ export default function ToggleSort(props) {
         </FormControl>
       </Box>
     </div>
-  )
-}
+  );
+};
 
+export default ToggleSort;
