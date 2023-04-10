@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { addEntryToDB, deleteEntry, updateEntry } from "./entryActions";
+import { deleteEntry, updateEntry } from "./entryActions";
 
 const entrySlice = createSlice({
   name: "entries",
@@ -12,7 +12,6 @@ const entrySlice = createSlice({
     },
 
     addEntry(state, action) {
-      addEntryToDB(action.payload);
       state.entriesArray = [...state.entriesArray, action.payload];
     },
 
