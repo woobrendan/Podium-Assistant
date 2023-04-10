@@ -28,11 +28,11 @@ const initialEntryState = {
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState(initialEntryState);
 
+  const dispatch = useDispatch();
   const driverNum =
     newEntry.series === gtwca || newEntry.series === gt4a ? 2 : 1;
   const driverPair =
     newEntry.series === gtwca || newEntry.series === gt4a ? "duo" : "single";
-  const dispatch = useDispatch();
 
   const onInputChange = (e) => {
     setNewEntry((prev) => ({
@@ -60,16 +60,15 @@ const AddEntry = ({ show, handleToggle }) => {
     }
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async () => {
     // no error
-
     try {
       const entry = await axios.post("http://localhost:2020/entries", newEntry);
       dispatch(entryActions.addEntry(entry.data.savedEntry));
       setNewEntry(initialEntryState);
       handleToggle();
     } catch (err) {
-      console.log("Error:", err);
+      console.log("Error Adding Entry:", err);
     }
   };
 
@@ -130,7 +129,7 @@ const AddEntry = ({ show, handleToggle }) => {
           variant="outlined"
           color="error"
           className="edit_modal_update"
-          onClick={(e) => handleSubmit(e)}
+          onClick={() => handleSubmit()}
         >
           Add
         </Button>
