@@ -7,6 +7,7 @@ import { gtwca, gt4a } from "../../functions/helperFunc";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer";
+import axios from "axios";
 
 const initialEntryState = {
   team: "",
@@ -59,10 +60,17 @@ const AddEntry = ({ show, handleToggle }) => {
     }
   };
 
-  const handleSubmit = (e) => {
-    dispatch(entryActions.addEntry(newEntry));
-    setNewEntry(initialEntryState);
-    handleToggle();
+  const handleSubmit = async (e) => {
+    // no error
+
+    try {
+      const entry = await axios.post("http://localhost:2020/entries", newEntry);
+      dispatch(entryActions.addEntry(entry.data.savedEntry));
+      setNewEntry(initialEntryState);
+      handleToggle();
+    } catch (err) {
+      console.log("Error:", err);
+    }
   };
 
   const onDriverChange = (e) => {
