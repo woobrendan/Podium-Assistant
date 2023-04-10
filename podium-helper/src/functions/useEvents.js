@@ -26,14 +26,17 @@ const useEvents = () => {
 
   const eventByDate = (events) => {
     const month = Number(getToday().split("-")[0]);
-    if (month <= 2) setCurrentEventName(events[0].name);
-    else if (month <= 4 && month > 2) setCurrentEventName(events[1].name);
-    else if (month === 5) setCurrentEventName(events[2].name);
-    else if (month === 6) setCurrentEventName(events[3].name);
-    else if (month === 7) setCurrentEventName(events[4].name);
+    const day = Number(getToday().split("-"));
+
+    if (month <= 3 && day < 6) setCurrentEventName(events[0].name);
+    else if (month <= 4 && day < 3) setCurrentEventName(events[1].name);
+    else if (month === 4) setCurrentEventName(events[2].name);
+    else if (month === 5) setCurrentEventName(events[3].name);
+    else if (month === 6) setCurrentEventName(events[4].name);
+    else if (month === 8 && day < 7) setCurrentEventName(events[5].name);
     else if (month === 8) setCurrentEventName(events[6].name);
     else if (month === 9) setCurrentEventName(events[7].name);
-    else return setCurrentEventName(events[8].name);
+    else if (month === 10) setCurrentEventName(events[8].name);
   };
 
   return { events, currentEventName };
