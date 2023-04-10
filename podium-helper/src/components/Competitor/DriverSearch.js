@@ -3,7 +3,7 @@ import "../../Styling/competitors.scss";
 import { TextField } from "@mui/material";
 import { useState, useEffect } from "react";
 import BackToTopButton from "../BackToTopButton";
-import ToggleSort from "./toggleSort";
+import ToggleSort from "./ToggleSort";
 import searchAllEntries from "./searchAllEntries";
 import { fetchEntry } from "../../store/entryActions";
 import NoResults from "../NoResults";
@@ -15,7 +15,7 @@ import {
 } from "../../functions/sortFuncs";
 import { useDispatch, useSelector } from "react-redux";
 
-function DriverSearch() {
+const DriverSearch = () => {
   const [searchValue, setSearchValue] = useState("");
   const [option, setOption] = useState("");
   const dispatch = useDispatch();
@@ -73,6 +73,6 @@ function DriverSearch() {
       <BackToTopButton />
     </div>
   );
-}
+};
 
 export default DriverSearch;
