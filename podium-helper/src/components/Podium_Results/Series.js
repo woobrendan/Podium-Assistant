@@ -24,7 +24,7 @@ const Series = ({ getValue, comp }) => {
 
   const handleChange = (event) => {
     setSeriesName(event.target.value);
-    getValue(event.target.name, event.target.value);
+    getValue(event);
   };
 
   const mappedSeries = series.map((serie, index) => (
@@ -42,7 +42,7 @@ const Series = ({ getValue, comp }) => {
           name="series"
           label="Series"
           value={seriesName}
-          onChange={handleChange}
+          onChange={(e) => handleChange(e)}
         >
           {mappedSeries}
         </Select>
