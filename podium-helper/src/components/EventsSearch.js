@@ -17,8 +17,8 @@ const EventSearch = ({ component, getValue }) => {
 
   return (
     <Box data-testid="event_dropdown">
-      <FormControl sx={{ minWidth: 300 }}>
-        <InputLabel htmlFor="Series">Events</InputLabel>
+      <FormControl>
+        <InputLabel>Events</InputLabel>
         <Select
           className="form-control"
           name="event"
