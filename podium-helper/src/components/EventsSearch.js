@@ -12,7 +12,7 @@ const EventSearch = ({ component, getValue }) => {
 
   const handleChange = (event) => {
     setEventName(event.target.value);
-    getValue(event.target.name, event.target.value);
+    getValue(event);
   };
 
   return (
@@ -24,7 +24,7 @@ const EventSearch = ({ component, getValue }) => {
           name="event"
           label="Events"
           value={eventName}
-          onChange={handleChange}
+          onChange={(e) => handleChange(e)}
         >
           {events.map((event, index) => (
             <MenuItem key={index} value={event.name} data-testid={event.name}>
