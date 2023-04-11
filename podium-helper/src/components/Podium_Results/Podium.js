@@ -86,7 +86,6 @@ const Podium = () => {
           <FastLap
             handleSubmit={handleRacePodiumSubmit}
             series={results.series}
-            entries={entries}
           />
         )}
       </div>
