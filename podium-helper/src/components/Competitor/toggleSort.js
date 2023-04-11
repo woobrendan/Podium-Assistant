@@ -1,7 +1,7 @@
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import { useState } from "react";
 
-const ToggleSort = (props) => {
+const ToggleSort = ({ getOption, component }) => {
   const [sortOption, setSortOption] = useState("");
 
   const getSortOption = (component) => {
@@ -19,10 +19,10 @@ const ToggleSort = (props) => {
 
   const handleToggle = (event) => {
     setSortOption(event.target.value);
-    props.getOption(event.target.value);
+    getOption(event.target.value);
   };
 
-  const mappedOptions = getSortOption(props.component).map((option) => (
+  const mappedOptions = getSortOption(component).map((option) => (
     <MenuItem key={option} value={option}>
       {option}
     </MenuItem>
@@ -45,7 +45,7 @@ const ToggleSort = (props) => {
           className="form-control"
         >
           <InputLabel>
-            {props.component === "competitor" ? "Sort By" : "Filter"}
+            {component === "competitor" ? "Sort By" : "Filter"}
           </InputLabel>
           <Select
             className="form-control"
