@@ -1,13 +1,7 @@
 import { TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 import "../../Styling/result.scss";
 
-function createFastLap(driver, lapTime) {
-  return { driver, lapTime };
-}
-
-function FastLapTable({ fastLap }) {
-  const rows = [createFastLap(fastLap.driver, fastLap.laptime)];
-
+const FastLapTable = ({ fastLap }) => {
   return (
     <>
       <TableHead>
@@ -26,22 +20,17 @@ function FastLapTable({ fastLap }) {
         </TableRow>
       </TableHead>
       <TableBody>
-        {rows.map((row) => (
-          <TableRow
-            key={row.driver}
-            sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-          >
-            <TableCell component="th" scope="row" colSpan={3}>
-              {row.driver}
-            </TableCell>
-            <TableCell align="right" colSpan={4}>
-              {row.lapTime}
-            </TableCell>
-          </TableRow>
-        ))}
+        <TableRow>
+          <TableCell component="th" scope="row" colSpan={3}>
+            {fastLap.driver}
+          </TableCell>
+          <TableCell align="right" colSpan={4}>
+            {fastLap.laptime}
+          </TableCell>
+        </TableRow>
       </TableBody>
     </>
   );
-}
+};
 
 export default FastLapTable;
