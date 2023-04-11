@@ -1,14 +1,17 @@
 import { TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 import "../../Styling/result.scss";
+import { grCup } from "../../functions/helperFunc";
 
-const FastLapTable = ({ fastLap }) => {
+const FastLapTable = ({ fastLap, series }) => {
+  const fastTitle = series === grCup ? "Fast Lap" : "CrowdStrike Fast Lap";
+  const { driver, laptime } = fastLap;
   return (
     <>
       <TableHead>
         <TableRow>
           <TableCell colSpan={2}>Driver</TableCell>
           <TableCell colSpan={3} align="center">
-            CrowdStrike Fast Lap
+            {fastTitle}
           </TableCell>
           <TableCell align="right" colSpan={2}>
             Lap Time
@@ -18,10 +21,10 @@ const FastLapTable = ({ fastLap }) => {
       <TableBody>
         <TableRow>
           <TableCell component="th" scope="row" colSpan={3}>
-            {fastLap.driver}
+            {driver}
           </TableCell>
           <TableCell align="right" colSpan={4}>
-            {fastLap.laptime}
+            {laptime}
           </TableCell>
         </TableRow>
       </TableBody>
