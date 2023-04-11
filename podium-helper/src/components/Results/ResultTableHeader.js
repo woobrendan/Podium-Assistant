@@ -14,27 +14,24 @@ import { dateToString } from "../../functions/helperFunc";
 
 const ResultTableHeader = ({ results }) => {
   const podium1 = results.result1;
+  const { event, series, date } = results;
 
   return (
-    <TableContainer
-      sx={{ minWidth: 600, maxWidth: 1000 }}
-      component={Paper}
-      id="result-table-container"
-    >
-      <Table aria-label="simple table">
+    <TableContainer component={Paper} id="result-table-container">
+      <Table>
         <TableHead className="result-table-head">
           <TableRow>
             <TableCell
               colSpan={podium1.firstPlace.driver3 ? 4 : 3}
               align="center"
             >
-              {results.event}
+              {event}
             </TableCell>
-            <TableCell colSpan={1} align="right">
-              {results.series}
+            <TableCell colSpan={2} align="center">
+              {series}
             </TableCell>
             <TableCell colSpan={2} align="right">
-              {dateToString(results.date)}
+              {dateToString(date)}
             </TableCell>
           </TableRow>
         </TableHead>
