@@ -6,7 +6,7 @@ import Series from "./Series";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
 import useEvents from "../../functions/useEvents";
-import { getToday, grCup } from "../../functions/helperFunc";
+import { getToday } from "../../functions/helperFunc";
 import mongoResult from "../../functions/formMongoResult";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -44,7 +44,7 @@ const Podium = () => {
     navigate("/recent");
   };
 
-  //** sent to WinnerPodium as onclick to get podium result X and set to results *//
+  //** sent to WinnerPodium to handle submission of podium result X and set to results, used for fast lap too *//
   const handleRacePodiumSubmit = (value, resultNumber) => {
     if (resultNumber === "fastLap") {
       setResults((prev) => ({
@@ -82,14 +82,14 @@ const Podium = () => {
             results,
             entries,
           )}
+        {results.series && (
+          <FastLap
+            handleSubmit={handleRacePodiumSubmit}
+            series={results.series}
+            entries={entries}
+          />
+        )}
       </div>
-      {results.series && (
-        <FastLap
-          handleSubmit={handleRacePodiumSubmit}
-          series={results.series}
-          entries={entries}
-        />
-      )}
       {results.fastLap && (
         <Button
           variant="contained"
