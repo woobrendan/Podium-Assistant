@@ -34,15 +34,16 @@ const FastLap = ({ series, handleSubmit }) => {
     setIsSubmitted(true);
   };
 
-  const mapSingleDrivers = singleDrivers(entries, series).map(
-    (option, index) => {
+  let mapSingleDrivers = null;
+  if (entries.length > 0) {
+    mapSingleDrivers = singleDrivers(entries, series).map((option, index) => {
       return (
-        <MenuItem key={index} value={option.driver}>
+        <MenuItem key={index} value={option}>
           #{option.number} - {option.driver}{" "}
         </MenuItem>
       );
-    },
-  );
+    });
+  }
 
   return (
     <Card className="fast-lap-container">
