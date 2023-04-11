@@ -14,12 +14,12 @@ import { singleDrivers } from "../../functions/podiumResultHelpers";
 import { useSelector } from "react-redux";
 
 const FastLap = ({ series, handleSubmit }) => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [fastTime, setFastTime] = useState({
     driver: "",
     laptime: "",
   });
 
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const entries = useSelector((state) => state.entry.entriesArray);
 
   const handleChange = (event) => {
@@ -38,7 +38,7 @@ const FastLap = ({ series, handleSubmit }) => {
   if (entries.length > 0) {
     mapSingleDrivers = singleDrivers(entries, series).map((option, index) => {
       return (
-        <MenuItem key={index} value={option}>
+        <MenuItem key={index} value={option.driver}>
           #{option.number} - {option.driver}{" "}
         </MenuItem>
       );
