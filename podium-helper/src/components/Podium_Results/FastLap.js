@@ -11,14 +11,16 @@ import {
 import { useState } from "react";
 import { grCup } from "../../functions/helperFunc";
 import { singleDrivers } from "../../functions/podiumResultHelpers";
+import { useSelector } from "react-redux";
 
-const FastLap = ({ series, handleSubmit, entries }) => {
+const FastLap = ({ series, handleSubmit }) => {
   const [fastTime, setFastTime] = useState({
     driver: "",
     laptime: "",
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const entries = useSelector((state) => state.entry.entriesArray);
 
   const handleChange = (event) => {
     setFastTime((prev) => ({
