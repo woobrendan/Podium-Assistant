@@ -6,15 +6,11 @@ const FastLapTable = ({ fastLap }) => {
     <>
       <TableHead>
         <TableRow>
-          <TableCell colSpan={7} align="center">
+          <TableCell colSpan={2}>Driver</TableCell>
+          <TableCell colSpan={3} align="center">
             CrowdStrike Fast Lap
           </TableCell>
-        </TableRow>
-      </TableHead>
-      <TableHead>
-        <TableRow>
-          <TableCell colSpan={3}>Driver</TableCell>
-          <TableCell align="right" colSpan={4}>
+          <TableCell align="right" colSpan={2}>
             Lap Time
           </TableCell>
         </TableRow>
