@@ -1,28 +1,31 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { getToday } from "./helperFunc";
+import { compareByDate } from "./sortFuncs";
 
 const useEvents = () => {
   const [events, setEvents] = useState([]);
   const [currentEventName, setCurrentEventName] = useState("");
 
   useEffect(() => {
+    const getEventList = async () => {
+      try {
+        const year = Number(getToday().split("-")[2]);
+        const eventList = await axios.get("http://localhost:2020/api/events");
+
+        // return list of events for the current year
+        const currentYearEvents = eventList.data.events.filter(
+          (event) => event.year === year,
+        );
+        const sortedEvents = currentYearEvents.sort(compareByDate);
+        setEvents(sortedEvents);
+        eventByDate(sortedEvents);
+      } catch (err) {
+        console.log("Error:", err);
+      }
+    };
     getEventList();
   }, []);
-
-  const getEventList = async () => {
-    try {
-      const eventList = await axios.get("http://localhost:2020/api/events");
-      const year = Number(getToday().split("-")[2]);
-      const currentYearEvents = eventList.data.events.filter(
-        (event) => event.year === year,
-      );
-      setEvents(currentYearEvents);
-      eventByDate(currentYearEvents);
-    } catch (err) {
-      console.log("Error:", err);
-    }
-  };
 
   const eventByDate = (events) => {
     const month = Number(getToday().split("-")[0]);
