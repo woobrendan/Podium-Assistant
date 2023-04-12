@@ -114,12 +114,34 @@ const sortByClass = (listOfEntries) => {
 };
 
 const compareByDate = (a, b) => {
-  const getEndDay = (dateStr) => {
-    return Number(dateStr.split("-"[1])); //[ 'April 28', '30' ]
+  const getMonthOrder = (monthStr) => {
+    const monthOrder = {
+      January: 0,
+      February: 1,
+      March: 2,
+      April: 3,
+      May: 4,
+      June: 5,
+      July: 6,
+      August: 7,
+      September: 8,
+      October: 9,
+      November: 10,
+      December: 11,
+    };
+    return monthOrder[monthStr];
   };
-  const aLastDay = getEndDay(a.date);
-  const bLastDay = getEndDay(b.date);
-  return aLastDay - bLastDay;
+
+  const [aMonth, aEndDay] = a.date.split(" ")[0].split("-").map(getMonthOrder);
+  console.log("aMonth", aMonth);
+  console.log("aEndDay", aEndDay);
+  const [bMonth, bEndDay] = b.date.split(" ")[0].split("-").map(getMonthOrder);
+
+  if (aMonth !== bMonth) {
+    return aMonth - bMonth;
+  }
+
+  return aEndDay - bEndDay;
 };
 
 export {
