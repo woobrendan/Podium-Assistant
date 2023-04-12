@@ -20,7 +20,7 @@ function RecentPodium() {
       <Button onClick={() => printPage()} variant="contained" color="success">
         Print Page
       </Button>
-      {recent && <ResultTableHeader results={recent} />}
+      {recent && <ResultTableHeader results={recent} recent={true} />}
     </div>
   );
 }
