@@ -1,3 +1,5 @@
+import { TableCell, TableHead, TableRow } from "@mui/material";
+
 const HardCharger = () => {
   return (
     <>
