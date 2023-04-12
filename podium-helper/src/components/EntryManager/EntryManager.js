@@ -54,7 +54,7 @@ const EntryManager = () => {
           Add Entry
         </Button>
         <Series
-          getValue={(name, val) => setSeries(val.name)}
+          getValue={(e) => setSeries(e.target.value.name)}
           comp="entryManager"
         />
       </div>
