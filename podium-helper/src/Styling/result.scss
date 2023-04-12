@@ -8,19 +8,20 @@
 #result-table-container {
   display: flex;
   justify-content: center;
+  min-width: 600px;
+  max-width: 95vw;
 
   .result-table-head {
     background-color: #282828;
   }
 
   margin: 30px;
-  
+
   .MuiTableHead-root {
     th {
       font-weight: bold;
       color: red;
     }
-
   }
 }
 
@@ -34,7 +35,8 @@
   body * {
     visibility: hidden;
   }
-  #result-table-container, #result-table-container * {
+  #result-table-container,
+  #result-table-container * {
     visibility: visible;
   }
   #result-table-container {
