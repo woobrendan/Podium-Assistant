@@ -14,7 +14,7 @@ import { dateToString } from "../../functions/helperFunc";
 
 const ResultTableHeader = ({ results }) => {
   const podium1 = results.result1;
-  const { event, series, date } = results;
+  const { event, series, date, fastLap } = results;
 
   return (
     <TableContainer component={Paper} id="result-table-container">
@@ -54,7 +54,7 @@ const ResultTableHeader = ({ results }) => {
         {results.result2 && <ResultTableBody results={results.result2} />}
         {results.result3 && <ResultTableBody results={results.result3} />}
         {results.result4 && <ResultTableBody results={results.result4} />}
-        <FastLapTable fastLap={results.fastLap} />
+        <FastLapTable fastLap={fastLap} series={series} />
       </Table>
     </TableContainer>
   );
