@@ -114,7 +114,12 @@ const sortByClass = (listOfEntries) => {
 };
 
 const compareByDate = (a, b) => {
-  const getMonthOrder = (monthStr) => {
+  const getDateValue = (dateStr) => {
+    const [month, days] = dateStr.split(" "); // ["April", "28-30"]
+    const endDay = Number(days.split("-")[1]);
+    return { month, endDay }; // {month: "April", endDay: 30}
+  };
+  const getMonthValue = (monthStr) => {
     const monthOrder = {
       January: 0,
       February: 1,
@@ -132,16 +137,17 @@ const compareByDate = (a, b) => {
     return monthOrder[monthStr];
   };
 
-  const [aMonth, aEndDay] = a.date.split(" ")[0].split("-").map(getMonthOrder);
-  console.log("aMonth", aMonth);
-  console.log("aEndDay", aEndDay);
-  const [bMonth, bEndDay] = b.date.split(" ")[0].split("-").map(getMonthOrder);
+  const aDate = getDateValue(a.date);
+  const bDate = getDateValue(b.date);
+
+  const aMonth = getMonthValue(aDate.month);
+  const bMonth = getMonthValue(bDate.month);
 
   if (aMonth !== bMonth) {
     return aMonth - bMonth;
   }
 
-  return aEndDay - bEndDay;
+  return aDate.endDay - bDate.endDay;
 };
 
 export {
