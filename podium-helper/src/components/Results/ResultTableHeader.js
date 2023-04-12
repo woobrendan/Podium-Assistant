@@ -11,8 +11,9 @@ import ResultTableBody from "./ResultTableBody";
 import FastLapTable from "../Podium_Results/FastLapTable";
 import "../../Styling/result.scss";
 import { dateToString } from "../../functions/helperFunc";
+import HardCharger from "../Podium_Results/HardCharger";
 
-const ResultTableHeader = ({ results }) => {
+const ResultTableHeader = ({ results, recent }) => {
   const podium1 = results.result1;
   const { event, series, date, fastLap } = results;
 
@@ -55,6 +56,7 @@ const ResultTableHeader = ({ results }) => {
         {results.result3 && <ResultTableBody results={results.result3} />}
         {results.result4 && <ResultTableBody results={results.result4} />}
         <FastLapTable fastLap={fastLap} series={series} />
+        {recent && <HardCharger />}
       </Table>
     </TableContainer>
   );
