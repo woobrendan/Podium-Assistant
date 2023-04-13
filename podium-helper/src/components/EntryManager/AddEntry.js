@@ -54,14 +54,18 @@ const AddEntry = ({ show, handleToggle }) => {
     // no error
     // series selected, team name in put
     const noErrors = checkEntryErrors(newEntry, error, customSetError);
-
-    try {
-      const entry = await axios.post("http://localhost:2020/entries", newEntry);
-      dispatch(entryActions.addEntry(entry.data.savedEntry));
-      setNewEntry(initialEntryState);
-      handleToggle();
-    } catch (err) {
-      console.log("Error Adding Entry:", err);
+    if (noErrors) {
+      try {
+        const entry = await axios.post(
+          "http://localhost:2020/entries",
+          newEntry,
+        );
+        dispatch(entryActions.addEntry(entry.data.savedEntry));
+        setNewEntry(initialEntryState);
+        handleToggle();
+      } catch (err) {
+        console.log("Error Adding Entry:", err);
+      }
     }
   };
 
