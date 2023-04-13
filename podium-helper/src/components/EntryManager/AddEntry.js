@@ -8,22 +8,7 @@ import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer";
 import axios from "axios";
-
-const initialEntryState = {
-  team: "",
-  driver1: {
-    name: "",
-    nationality: "",
-    rating: "",
-  },
-
-  vehicle: "",
-  classification: "",
-  number: "",
-  carImage: "",
-  series: "",
-  year: 2023,
-};
+import { initialEntryState } from "../../functions/entryManager";
 
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState(initialEntryState);
@@ -61,6 +46,7 @@ const AddEntry = ({ show, handleToggle }) => {
 
   const handleSubmit = async () => {
     // no error
+    // series selected, team name in put
     try {
       const entry = await axios.post("http://localhost:2020/entries", newEntry);
       dispatch(entryActions.addEntry(entry.data.savedEntry));
