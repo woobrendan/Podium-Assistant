@@ -25,14 +25,18 @@ const errorState = {
 
 const checkEntryErrors = (entry, error, setError) => {
   const { team, series, vehicle, classification, number } = entry;
-  const errorCopy = { ...error };
-  const { hasTeam, hasVehicle, hasClassification, hasNumber, hasSeries } =
-    errorCopy;
+  const errCopy = { ...error };
 
-  !team ? (hasTeam = false) : (hasTeam = true);
+  !team ? (errCopy.hasTeam = true) : (errCopy.hasTeam = false);
 
-  if (hasTeam || hasVehicle || hasClassification || hasNumber || hasSeries) {
-    setError(errorCopy);
+  if (
+    errCopy.hasTeam ||
+    errCopy.hasVehicle ||
+    errCopy.hasClassification ||
+    errCopy.hasNumber ||
+    errCopy.hasSeries
+  ) {
+    setError(errCopy);
     return false;
   }
 
