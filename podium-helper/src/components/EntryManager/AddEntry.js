@@ -8,12 +8,18 @@ import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer";
 import axios from "axios";
-import { initialEntryState } from "../../functions/entryManager";
+import {
+  initialEntryState,
+  errorState,
+  checkEntryErrors,
+} from "../../functions/entryManager";
 
 const AddEntry = ({ show, handleToggle }) => {
   const [newEntry, setNewEntry] = useState(initialEntryState);
+  const [error, setError] = useState(errorState);
 
   const dispatch = useDispatch();
+  const customSetError = (err) => setError(err);
   const driverNum =
     newEntry.series === gtwca || newEntry.series === gt4a ? 2 : 1;
   const driverPair =
@@ -47,6 +53,8 @@ const AddEntry = ({ show, handleToggle }) => {
   const handleSubmit = async () => {
     // no error
     // series selected, team name in put
+    const noErrors = checkEntryErrors(newEntry, error, customSetError);
+
     try {
       const entry = await axios.post("http://localhost:2020/entries", newEntry);
       dispatch(entryActions.addEntry(entry.data.savedEntry));
