@@ -41,8 +41,9 @@ const AddEntry = ({ show, handleToggle }) => {
     }));
   };
 
-  const getSeries = (name, val) => {
-    const seriesName = val.name;
+  const getSeries = (e) => {
+    const { name, value } = e.target;
+    const seriesName = value.name;
     setNewEntry((prev) => ({
       ...prev,
       [name]: seriesName,
