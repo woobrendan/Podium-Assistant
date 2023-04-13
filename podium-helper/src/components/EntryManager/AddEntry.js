@@ -47,18 +47,16 @@ const AddEntry = ({ show, handleToggle }) => {
     setNewEntry((prev) => ({
       ...prev,
       [name]: seriesName,
+      ...(seriesName === gtwca || seriesName === gt4a
+        ? {
+            driver2: {
+              name: "",
+              nationality: "",
+              rating: "",
+            },
+          }
+        : {}),
     }));
-
-    if (seriesName === gtwca || seriesName === gt4a) {
-      setNewEntry((prev) => ({
-        ...prev,
-        driver2: {
-          name: "",
-          nationality: "",
-          rating: "",
-        },
-      }));
-    }
   };
 
   const handleSubmit = async () => {
