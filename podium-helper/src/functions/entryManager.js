@@ -14,4 +14,13 @@ const initialEntryState = {
   year: 2023,
 };
 
-export { initialEntryState };
+const errorState = {
+  hasTeam: true,
+  hasVehicle: true,
+  hasClassification: true,
+  hasNumber: true,
+  hasSeries: true,
+  hasDriver: true,
+};
+
+export { initialEntryState, errorState };
