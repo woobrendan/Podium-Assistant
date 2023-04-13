@@ -15,12 +15,29 @@ const initialEntryState = {
 };
 
 const errorState = {
-  hasTeam: true,
-  hasVehicle: true,
-  hasClassification: true,
-  hasNumber: true,
-  hasSeries: true,
-  hasDriver: true,
+  hasTeam: false,
+  hasVehicle: false,
+  hasClassification: false,
+  hasNumber: false,
+  hasSeries: false,
+  hasDriver: false,
 };
 
-export { initialEntryState, errorState };
+const checkEntryErrors = (entry, error, setError) => {
+  const { team, series, vehicle, classification, number } = entry;
+  const errorCopy = { ...error };
+  const { hasTeam, hasVehicle, hasClassification, hasNumber, hasSeries } =
+    errorCopy;
+
+  !team ? (hasTeam = false) : (hasTeam = true);
+
+  if (hasTeam || hasVehicle || hasClassification || hasNumber || hasSeries) {
+    setError(errorCopy);
+    return false;
+  }
+
+  setError(errorState);
+  return true;
+};
+
+export { initialEntryState, errorState, checkEntryErrors };
