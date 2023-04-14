@@ -20,13 +20,23 @@ const errorState = {
   hasClassifErr: true,
   hasNumberErr: true,
   hasSeriesErr: true,
-  hasDriver: true,
+  hasDriverErr: true,
 };
 
 const checkEntryErrors = (entry, error, setError) => {
-  const { team, series, vehicle, classification, number } = entry;
+  const { team, series, vehicle, classification, number, driver1 } = entry;
   const errCopy = { ...error };
   const checkEmptyStr = (val) => (val === "" ? true : false);
+  const checkDriverVals = (driver) => {
+    for (const key in driver) {
+      if (checkEmptyStr(driver[key])) {
+        errCopy.hasDriverErr = true;
+        return;
+      }
+    }
+    errCopy.hasDriverErr = false;
+    return;
+  };
 
   checkEmptyStr(series)
     ? (errCopy.hasSeriesErr = true)
@@ -40,6 +50,10 @@ const checkEntryErrors = (entry, error, setError) => {
   checkEmptyStr(classification)
     ? (errCopy.hasClassifErr = true)
     : (errCopy.hasClassifErr = false);
+  checkEmptyStr(number)
+    ? (errCopy.hasNumberErr = true)
+    : (errCopy.hasNumberErr = false);
+  checkDriverVals(driver1);
 
   // loop through the error state, if a key returns true set error state to copy and exit
   for (const key in errCopy) {
