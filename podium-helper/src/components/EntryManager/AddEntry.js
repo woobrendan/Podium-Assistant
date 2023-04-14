@@ -20,8 +20,6 @@ const AddEntry = ({ show, handleToggle }) => {
 
   const dispatch = useDispatch();
   const customSetError = (err) => setError(err);
-  const driverNum =
-    newEntry.series === gtwca || newEntry.series === gt4a ? 2 : 1;
   const driverPair =
     newEntry.series === gtwca || newEntry.series === gt4a ? "duo" : "single";
 
@@ -51,8 +49,6 @@ const AddEntry = ({ show, handleToggle }) => {
   };
 
   const handleSubmit = async () => {
-    // no error
-    // series selected, team name in put
     const noErrors = checkEntryErrors(newEntry, error, customSetError);
     if (noErrors) {
       try {
@@ -114,7 +110,7 @@ const AddEntry = ({ show, handleToggle }) => {
               driverNum="1"
             />
           )}
-          {driverNum === 2 && (
+          {driverPair === "duo" && (
             <EditDriver
               entry={newEntry}
               onChange={onDriverChange}
