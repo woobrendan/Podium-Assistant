@@ -34,15 +34,11 @@ const checkEntryErrors = (entry, error, setError) => {
     ? (errCopy.hasClassification = true)
     : (errCopy.hasClassification = false);
 
-  if (
-    errCopy.hasTeam ||
-    errCopy.hasVehicle ||
-    errCopy.hasClassification ||
-    errCopy.hasNumber ||
-    errCopy.hasSeries
-  ) {
-    setError(errCopy);
-    return false;
+  for (const key in errCopy) {
+    if (errCopy[key]) {
+      setError(errCopy);
+      return false;
+    }
   }
 
   setError(errorState);
