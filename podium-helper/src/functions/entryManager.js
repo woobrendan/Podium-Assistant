@@ -15,12 +15,12 @@ const initialEntryState = {
 };
 
 const errorState = {
-  hasTeam: false,
-  hasVehicle: false,
-  hasClassification: false,
-  hasNumber: false,
-  hasSeries: false,
-  hasDriver: false,
+  hasTeamErr: true,
+  hasVehicleErr: true,
+  hasClassifErr: true,
+  hasNumberErr: true,
+  hasSeriesErr: true,
+  hasDriver: true,
 };
 
 const checkEntryErrors = (entry, error, setError) => {
@@ -29,15 +29,17 @@ const checkEntryErrors = (entry, error, setError) => {
   const checkEmptyStr = (val) => (val === "" ? true : false);
 
   checkEmptyStr(series)
-    ? (errCopy.hasSeries = true)
-    : (errCopy.hasSeries = false);
+    ? (errCopy.hasSeriesErr = true)
+    : (errCopy.hasSeriesErr = false);
   checkEmptyStr(vehicle)
-    ? (errCopy.hasVehicle = true)
-    : (errCopy.hasVehicle = false);
-  checkEmptyStr(team) ? (errCopy.hasTeam = true) : (errCopy.hasTeam = false);
+    ? (errCopy.hasVehicleErr = true)
+    : (errCopy.hasVehicleErr = false);
+  checkEmptyStr(team)
+    ? (errCopy.hasTeamErr = true)
+    : (errCopy.hasTeamErr = false);
   checkEmptyStr(classification)
-    ? (errCopy.hasClassification = true)
-    : (errCopy.hasClassification = false);
+    ? (errCopy.hasClassifErr = true)
+    : (errCopy.hasClassifErr = false);
 
   // loop through the error state, if a key returns true set error state to copy and exit
   for (const key in errCopy) {
