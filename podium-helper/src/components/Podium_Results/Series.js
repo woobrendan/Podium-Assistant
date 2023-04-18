@@ -35,8 +35,8 @@ const Series = ({ getValue, comp }) => {
 
   return (
     <Box data-testid="series_dropdown">
-      <FormControl sx={{ minWidth: 300 }}>
-        <InputLabel htmlFor="Series">Series</InputLabel>
+      <FormControl className="series_dropdown">
+        <InputLabel>Series</InputLabel>
         <Select
           className="form-control"
           name="series"
