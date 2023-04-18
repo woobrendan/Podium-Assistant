@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { fetchEntry } from "../../store/entryActions";
 import Series from "../Podium_Results/Series";
 import "../../Styling/entryManager.scss";
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import AddEntry from "./AddEntry";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
@@ -12,6 +12,7 @@ const EntryManager = () => {
   const data = useSelector((state) => state.entry.entriesArray);
   const [entries, setEntries] = useState(data);
   const [series, setSeries] = useState("");
+  const [searchValue, setSearchValue] = useState("");
   const [showModal, setShowModal] = useState(false);
   const dispatch = useDispatch();
 
@@ -56,6 +57,15 @@ const EntryManager = () => {
         <Series
           getValue={(e) => setSeries(e.target.value.name)}
           comp="entryManager"
+        />
+        <TextField
+          label="Search"
+          variant="outlined"
+          color="error"
+          value={searchValue}
+          onChange={(e) => {
+            setSearchValue(e.target.value);
+          }}
         />
       </div>
       <EntryTable entries={sortEntries(entries)} />
