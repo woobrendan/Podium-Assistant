@@ -54,11 +54,8 @@ const EntryManager = () => {
         <Button variant="outlined" onClick={() => setShowModal(!showModal)}>
           Add Entry
         </Button>
-        <Series
-          getValue={(e) => setSeries(e.target.value.name)}
-          comp="entryManager"
-        />
         <TextField
+          className="entryManager__search"
           label="Search"
           variant="outlined"
           color="error"
@@ -66,6 +63,10 @@ const EntryManager = () => {
           onChange={(e) => {
             setSearchValue(e.target.value);
           }}
+        />
+        <Series
+          getValue={(e) => setSeries(e.target.value.name)}
+          comp="entryManager"
         />
       </div>
       <EntryTable entries={sortEntries(entries)} />
