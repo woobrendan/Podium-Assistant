@@ -1,8 +1,8 @@
 import { compareDate } from "../../functions/helperFunc";
 
-export default function SearchAllResults(list, searchValue) {
+const SearchAllResults = (list, searchValue) => {
   const filtered = list.filter((val) => {
-    const { result1, result2, result3, result4 } = val;
+    const { result1, result2, result3, result4, series, event } = val;
     const allPlacements = [
       result1.firstPlace,
       result1.secondPlace,
@@ -41,26 +41,43 @@ export default function SearchAllResults(list, searchValue) {
       return newArray;
     };
 
-    if (!searchValue) return val;
-    if (val.series.toLowerCase().includes(searchValue.toLowerCase()))
+    //** Begin filtering based on search value */
+
+    if (!searchValue) {
       return val;
-    if (val.event.toLowerCase().includes(searchValue.toLowerCase())) return val;
+    }
+    if (series.toLowerCase().includes(searchValue.toLowerCase())) {
+      return val;
+    }
+    if (event.toLowerCase().includes(searchValue.toLowerCase())) {
+      return val;
+    }
 
     for (const driver of allDrivers()) {
-      if (driver.toLowerCase().includes(searchValue.toLowerCase())) return val;
+      if (driver.toLowerCase().includes(searchValue.toLowerCase())) {
+        return val;
+      }
     }
 
     for (const vehicle of categoryArray("vehicle")) {
-      if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) return val;
+      if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
+        return val;
+      }
     }
 
     for (const team of categoryArray("team")) {
-      if (team.toLowerCase().includes(searchValue.toLowerCase())) return val;
+      if (team.toLowerCase().includes(searchValue.toLowerCase())) {
+        return val;
+      }
     }
 
     for (const number of categoryArray("number")) {
-      if (number.includes(searchValue)) return val;
+      if (number.includes(searchValue)) {
+        return val;
+      }
     }
   });
   return filtered.sort(compareDate);
-}
+};
+
+export default SearchAllResults;
