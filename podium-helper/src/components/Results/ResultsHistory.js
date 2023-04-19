@@ -36,6 +36,7 @@ const ResultsHistory = () => {
       <div className="filter-details">
         <EventSearch getValue={getValue} />
         <TextField
+          className="result_search"
           label="Search"
           variant="outlined"
           color="error"
