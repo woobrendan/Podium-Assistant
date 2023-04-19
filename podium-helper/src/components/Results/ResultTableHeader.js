@@ -44,8 +44,10 @@ const ResultTableHeader = ({ results, recent }) => {
             {podium1.firstPlace.driver2 && (
               <TableCell align="right">Driver 2</TableCell>
             )}
-            {podium1.firstPlace.driver3 && (
+            {podium1.firstPlace.driver3 ? (
               <TableCell align="right">Driver 3</TableCell>
+            ) : (
+              <TableCell align="right"></TableCell>
             )}
             <TableCell align="right">Team</TableCell>
             <TableCell align="right">Vehicle</TableCell>
