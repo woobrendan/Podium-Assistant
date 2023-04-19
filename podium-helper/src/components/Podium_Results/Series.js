@@ -27,24 +27,21 @@ const Series = ({ getValue, comp }) => {
     getValue(event);
   };
 
-  const mappedSeries = series.map((serie, index) => (
-    <MenuItem key={index} value={serie} data-testid={serie.name}>
-      {serie === "All" ? "All" : serie.name}
-    </MenuItem>
-  ));
-
   return (
     <Box data-testid="series_dropdown">
       <FormControl className="series_dropdown">
         <InputLabel>Series</InputLabel>
         <Select
-          className="form-control"
           name="series"
           label="Series"
           value={seriesName}
           onChange={(e) => handleChange(e)}
         >
-          {mappedSeries}
+          {series.map((serie, index) => (
+            <MenuItem key={index} value={serie} data-testid={serie.name}>
+              {serie === "All" ? "All" : serie.name}
+            </MenuItem>
+          ))}
         </Select>
       </FormControl>
     </Box>
