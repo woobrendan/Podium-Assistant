@@ -1,4 +1,13 @@
 .result-container {
+  .filter-details {
+    .event_dropdown {
+      min-width: 150px;
+    }
+
+    .result_search {
+      min-width: 300px;
+    }
+  }
   .result-history-list {
     display: flex;
     flex-direction: column;
