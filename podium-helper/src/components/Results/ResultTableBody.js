@@ -163,7 +163,11 @@ export default function ResultTableBbody({ results }) {
             <TableCell align="right">{row.number}</TableCell>
             <TableCell align="right">{row.driver1}</TableCell>
             {row.driver2 && <TableCell align="right">{row.driver2}</TableCell>}
-            {row.driver3 && <TableCell align="right">{row.driver3}</TableCell>}
+            {row.driver3 ? (
+              <TableCell align="right">{row.driver3}</TableCell>
+            ) : (
+              <TableCell align="right">{}</TableCell>
+            )}
             <TableCell align="right">{row.team}</TableCell>
             <TableCell align="right">{row.car}</TableCell>
           </TableRow>
