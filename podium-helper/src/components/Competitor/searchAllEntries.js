@@ -1,49 +1,45 @@
-const searchAllEntries = (list, searchValue) => {
-  const filtered = list.filter((val) => {
-    const { driver1, driver2 } = val;
+const searchAllEntries = (entries, searchVal) => {
+  const filtered = entries.filter((val) => {
+    const { driver1, driver2, series, number, team, vehicle, classification } =
+      val;
 
-    if (!searchValue) return val;
-    if (driver1.name.toLowerCase().includes(searchValue.toLowerCase())) {
+    if (!searchVal) return val;
+    if (driver1.name.toLowerCase().includes(searchVal.toLowerCase())) {
       return val;
     }
-    if (
-      driver2 &&
-      driver2.name.toLowerCase().includes(searchValue.toLowerCase())
-    ) {
+    if (vehicle.toLowerCase().includes(searchVal.toLowerCase())) {
       return val;
     }
-    if (val.vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
+    if (team.toLowerCase().includes(searchVal.toLowerCase())) {
       return val;
     }
-    if (val.team.toLowerCase().includes(searchValue.toLowerCase())) {
+    if (driver1.rating.toLowerCase().includes(searchVal.toLowerCase())) {
       return val;
     }
-    if (driver1.rating.toLowerCase().includes(searchValue.toLowerCase())) {
+
+    if (driver1.nationality.toLowerCase().includes(searchVal.toLowerCase())) {
       return val;
     }
-    if (
-      driver2 &&
-      driver2.rating.toLowerCase().includes(searchValue.toLowerCase())
-    ) {
+    if (series.toLowerCase().includes(searchVal.toLowerCase())) {
       return val;
     }
-    if (driver1.nationality.toLowerCase().includes(searchValue.toLowerCase())) {
+    if (number.includes(searchVal)) {
       return val;
     }
-    if (
-      driver2 &&
-      driver2.nationality.toLowerCase().includes(searchValue.toLowerCase())
-    ) {
+    if (classification.includes(searchVal)) {
       return val;
     }
-    if (val.series.toLowerCase().includes(searchValue.toLowerCase())) {
-      return val;
-    }
-    if (val.number.includes(searchValue)) {
-      return val;
-    }
-    if (val.class.includes(searchValue)) {
-      return val;
+
+    if (driver2) {
+      if (driver2.nationality.toLowerCase().includes(searchVal.toLowerCase())) {
+        return val;
+      }
+      if (driver2.rating.toLowerCase().includes(searchVal.toLowerCase())) {
+        return val;
+      }
+      if (driver2.name.toLowerCase().includes(searchVal.toLowerCase())) {
+        return val;
+      }
     }
   });
   return filtered;
