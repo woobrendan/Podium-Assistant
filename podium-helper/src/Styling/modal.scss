@@ -39,6 +39,7 @@
     &.single_driver {
       .input_driver_container_1 {
         display: flex;
+        justify-content: space-around;
         gap: 10%;
         width: 100%;
       }
@@ -79,5 +80,15 @@
   }
   .MuiButton-root {
     background-color: black;
+
+    &.edit_modal_update {
+      margin-bottom: 2%;
+    }
+
+    &.edit_modal_delete {
+      position: absolute;
+      left: 2%;
+      top: 5%;
+    }
   }
 }
