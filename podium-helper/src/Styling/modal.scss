@@ -63,6 +63,13 @@
     justify-content: space-around;
     width: 100%;
 
+    #class_dropdown {
+      label,
+      .MuiInputBase-root {
+        color: white;
+      }
+    }
+
     .input_classification {
       width: 10%;
     }
