@@ -4,7 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80vw;
-  height: 70vw;
+  height: 70vh;
   min-height: 350px;
   border: 2px solid black;
   box-shadow: 10px 5px 5px black;
@@ -16,6 +16,10 @@
   background-color: red;
   color: white;
   font-weight: 400;
+
+  input {
+    min-height: 50%;
+  }
 
   h1 {
     margin-bottom: 0;
