@@ -4,7 +4,7 @@ import { TextField } from "@mui/material";
 import { useState, useEffect } from "react";
 import BackToTopButton from "../BackToTopButton";
 import ToggleSort from "./ToggleSort";
-import searchAllEntries from "./searchAllEntries";
+import searchAllEntries from "../../functions/searchAllEntries";
 import { fetchEntry } from "../../store/entryActions";
 import NoResults from "../NoResults";
 import {
