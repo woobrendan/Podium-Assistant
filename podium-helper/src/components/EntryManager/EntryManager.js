@@ -6,6 +6,7 @@ import Series from "../Podium_Results/Series";
 import "../../Styling/entryManager.scss";
 import { Button, TextField } from "@mui/material";
 import AddEntry from "./AddEntry";
+import searchAllEntries from "../../functions/searchAllEntries";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
@@ -25,10 +26,14 @@ const EntryManager = () => {
   }, [dispatch]);
 
   const sortEntries = (entries) => {
+    const searchEntries = searchAllEntries(entries, searchValue);
+    // sorting when no series is selected
     if (!series || series === "All") {
       const entryObj = {};
       const entryArr = [];
-      entries.forEach((entry) => {
+
+      // create hash map with key vals of series and value of entries
+      searchEntries.forEach((entry) => {
         const series = entry.series;
         entryObj[series]
           ? entryObj[series].push(entry)
@@ -43,7 +48,8 @@ const EntryManager = () => {
         ? [...entryObj["GT World Challenge America"], ...entryArr]
         : entryArr;
     } else {
-      const filtered = entries.filter((entry) => entry.series === series);
+      //sort when series is selected
+      const filtered = searchEntries.filter((entry) => entry.series === series);
       return filtered.sort((a, b) => a.number - b.number);
     }
   };
