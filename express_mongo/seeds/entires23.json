@@ -26,8 +26,8 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "Ross Gunn",
-      "nationality": "Great Britain",
+      "name": "Valentin Hasse Clot",
+      "nationality": "France",
       "rating": "Gold"
     },
     "vehicle": "Aston Martin Vantage AMR GT3",
@@ -460,7 +460,7 @@
       "nationality": "Germany",
       "rating": "Bronze"
     },
-    "vehicle": "Callaway Corvette Z06R GT3",
+    "vehicle": "Corvette C7 GT3-R",
     "classification": "SRO3",
     "number": "70",
     "carImage": "",
@@ -2451,6 +2451,48 @@
     "number": "09",
     "carImage": "",
     "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "SKI Autosports",
+    "driver1": {
+      "name": "Johnny O'Connell",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Ferrari 458 Italia",
+    "classification": "SRO3",
+    "number": "56",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "SKI Autosports",
+    "driver1": {
+      "name": "Johnny O'Connell",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Ferrari 458 Italia",
+    "classification": "Masters",
+    "number": "56",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Extreme Velocity Motorsports",
+    "driver1": {
+      "name": "Matt Joffe",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Masters",
+    "number": "99",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
     "year": 2023
   }
 ]
