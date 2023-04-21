@@ -29,7 +29,8 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin: 5%;
+    margin-top: 2%;
+    // margin: 5%;
 
     .editModal_input {
       display: flex;
@@ -37,6 +38,7 @@
     }
 
     &.single_driver {
+      margin-bottom: 2%;
       .input_driver_container_1 {
         display: flex;
         justify-content: space-around;
@@ -46,7 +48,7 @@
     }
 
     &.two_driver {
-      height: 40%;
+      min-height: 40%;
 
       section {
         display: flex;
