@@ -13,11 +13,7 @@ import classNames from "classnames";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import { getManufLogo, getClassBannerImg } from "../../functions/getImages";
-import GTWCA from "../../images/GTWCA.png";
-import PGT4A from "../../images/PGT4A.png";
-import GTAM from "../../images/GTAM.png";
-import TCAM from "../../images/TCAM.png";
-import IGTC from "../../images/igtc.jpeg";
+import { GTWCA, PGT4A, GTAM, TCAM, IGTC } from "../../images/series_logos";
 import {
   gtwca,
   tcam,
@@ -56,7 +52,7 @@ const DriverDetails = ({ entry }) => {
         return GTAM;
       // case GRCup
       default:
-        return gtwcaLogo;
+        return GTWCA;
     }
   };
 
