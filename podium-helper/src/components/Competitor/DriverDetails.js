@@ -18,7 +18,14 @@ import PGT4A from "../../images/PGT4A.png";
 import GTAM from "../../images/GTAM.png";
 import TCAM from "../../images/TCAM.png";
 import IGTC from "../../images/igtc.jpeg";
-import { gtwca, tcam, gtam, gt4a, igtc } from "../../functions/helperFunc";
+import {
+  gtwca,
+  tcam,
+  gtam,
+  gt4a,
+  igtc,
+  grCup,
+} from "../../functions/helperFunc";
 
 const DriverDetails = ({ entry }) => {
   const [entryInfo, setEntryInfo] = useState(false);
@@ -30,6 +37,7 @@ const DriverDetails = ({ entry }) => {
     "entry-detail_TCA": series === tcam,
     "entry-detail_GTA": series === gtam,
     "entry-detail_IGTC": series === igtc,
+    "entry-detail_GRCup": series === grCup,
   });
 
   const handleToggle = () => {
@@ -46,8 +54,9 @@ const DriverDetails = ({ entry }) => {
         return TCAM;
       case gtam:
         return GTAM;
+      // case GRCup
       default:
-        return GTWCA;
+        return gtwcaLogo;
     }
   };
 
