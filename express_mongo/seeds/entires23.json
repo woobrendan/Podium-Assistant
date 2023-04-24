@@ -2532,5 +2532,19 @@
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
+  },
+  {
+    "team": "Fast Track Racing",
+    "driver1": {
+      "name": "Maddie Aust",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TCX",
+    "number": "09",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
   }
 ]
