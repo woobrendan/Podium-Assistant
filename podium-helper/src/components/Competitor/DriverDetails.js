@@ -32,7 +32,7 @@ import {
 
 const DriverDetails = ({ entry }) => {
   const [entryInfo, setEntryInfo] = useState(false);
-  const series = entry.series;
+  const { series, carImage, vehicle, team, number, classification } = entry;
 
   const detailClass = classNames("entry-detail__item", {
     "entry-detail_GTWCA": series === gtwca,
@@ -48,20 +48,12 @@ const DriverDetails = ({ entry }) => {
   };
 
   const getSeriesLogo = (series) => {
-    switch (series) {
-      case igtc:
-        return IGTC;
-      case gt4a:
-        return PGT4A;
-      case tcam:
-        return TCAM;
-      case gtam:
-        return GTAM;
-      case grCup:
-        return GRCUP;
-      default:
-        return GTWCA;
-    }
+    if (series === igtc) return IGTC;
+    if (series === gt4a) return PGT4A;
+    if (series === tcam) return TCAM;
+    if (series === gtam) return GTAM;
+    if (series === grCup) return GRCUP;
+    return GTWCA;
   };
 
   return (
@@ -85,29 +77,27 @@ const DriverDetails = ({ entry }) => {
                   sx={{ bgcolor: "white", width: 59, height: 59 }}
                 />
               }
-              title={entry.team}
+              title={team}
             />
             <Avatar
               className="manufacturer-avatar"
-              alt={entry.vehicle}
-              src={getManufLogo(entry.vehicle)}
+              alt={vehicle}
+              src={getManufLogo(vehicle)}
               sx={{ bgcolor: "white", width: 59, height: 59 }}
             />
             <CardMedia
               component="img"
               height="180"
-              image={entry.carImage}
-              alt={entry.vehicle}
+              image={carImage}
+              alt={vehicle}
             />
             <br></br>
             <img
               className="class-banner-img"
-              src={getClassBannerImg(entry.classification, series)}
-              alt={entry.classification}
+              src={getClassBannerImg(classification, series)}
+              alt={classification}
             />
-            <div className={`car-number-${entry.number.length}`}>
-              #{entry.number}
-            </div>
+            <div className={`car-number-${number.length}`}>#{number}</div>
           </div>
         )}
         <CardContent>
@@ -115,8 +105,8 @@ const DriverDetails = ({ entry }) => {
             <div className="entry-details">
               <EntryHighlights
                 series={series}
-                car={entry.vehicle}
-                classification={entry.classification}
+                car={vehicle}
+                classification={classification}
               />
               <DriverTable drivers={entry} />
             </div>
