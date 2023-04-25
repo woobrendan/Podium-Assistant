@@ -13,7 +13,14 @@ import classNames from "classnames";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 import { getManufLogo, getClassBannerImg } from "../../functions/getImages";
-import { GTWCA, PGT4A, GTAM, TCAM, IGTC } from "../../images/series_logos";
+import {
+  GTWCA,
+  PGT4A,
+  GTAM,
+  TCAM,
+  IGTC,
+  GRCUP,
+} from "../../images/series_logos";
 import {
   gtwca,
   tcam,
@@ -50,7 +57,8 @@ const DriverDetails = ({ entry }) => {
         return TCAM;
       case gtam:
         return GTAM;
-      // case GRCup
+      case grCup:
+        return GRCUP;
       default:
         return GTWCA;
     }
