@@ -58,18 +58,10 @@ const DriverDetails = ({ entry }) => {
 
   return (
     <div className="competitor-card">
-      <Card
-        className={detailClass}
-        sx={{
-          maxWidth: 345,
-          minHeight: 375,
-          minWidth: 375,
-        }}
-      >
+      <Card className={detailClass}>
         {!entryInfo && (
           <div className="entry-media">
             <CardHeader
-              sx={{ minHeight: 100, maxwidth: 325 }}
               avatar={
                 <Avatar
                   alt={series}
