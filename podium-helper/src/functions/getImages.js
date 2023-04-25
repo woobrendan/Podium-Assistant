@@ -33,7 +33,7 @@ import {
   gtam_gt3,
   gtam_gt4,
 } from "../images/class_logos";
-import { gt4a } from "./helperFunc";
+import { grCup, gt4a } from "./helperFunc";
 
 const getManufLogo = (vehicle) => {
   if (vehicle.includes("Porsche")) return porscheLogo;
@@ -56,31 +56,28 @@ const getManufLogo = (vehicle) => {
   return sro;
 };
 
-const getClassBannerImg = (nameOfClass, series) => {
-  switch (nameOfClass) {
-    case "Pro-Am":
-      return series === gt4a ? gt4_proam : gtwca_ProAm;
-    case "Am":
-      return series === gt4a ? gt4_am : gtwca_am;
-    case "Silver":
-      return series === gt4a ? gt4_silver : gtwca_silver;
-    case "TCX":
-      return tcx;
-    case "TC":
-      return tc;
-    case "TCA":
-      return tca;
-    case "SRO3":
-      return gtam_gt3;
-    case "Masters":
-      return gtam_gt3;
-    case "GT4":
-      return gtam_gt4;
-    case "GT2":
-      return gtam_gt2;
-    default:
-      return gtwca_pro;
+// classif === classification
+const getClassBannerImg = (classif, series) => {
+  if (classif === "TCX") return tcx;
+  if (classif === "TC") return tc;
+  if (classif === "TCA") return tca;
+  if (classif === "SRO3" || classif === "Masters") return gtam_gt3;
+  if (classif === "GT4") return gtam_gt4;
+  if (classif === "GT2") return gtam_gt2;
+  // if (series === grCup) return
+
+  if (classif === "Pro-Am") {
+    return series === gt4a ? gt4_proam : gtwca_ProAm;
   }
+  if (classif === "Am") {
+    // if (series === grCup)
+    return series === gt4a ? gt4_am : gtwca_am;
+  }
+
+  if (classif === "Silver") {
+    return series === gt4a ? gt4_silver : gtwca_silver;
+  }
+  return gtwca_pro;
 };
 
 export { getClassBannerImg, getManufLogo };
