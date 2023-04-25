@@ -170,6 +170,19 @@
           rgb(255, 139, 7) 100%
         );
       }
+
+      .entry-detail__item {
+        max-width: 345px;
+        min-height: 375px;
+        min-width: 375px;
+
+        .entry-media {
+          .MuiCardHeader-root {
+            min-height: 100px;
+            max-width: 325px;
+          }
+        }
+      }
     }
 
     .MuiPaper-root {
