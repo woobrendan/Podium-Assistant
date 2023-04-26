@@ -59,7 +59,7 @@ import { gt4a } from "./helperFunc";
 const vehicleLogos = {
   Porsche: porscheLogo,
   BMW: bmwLogo,
-  Mercedes: mercedesLogo,
+  "Mercedes-AMG": mercedesLogo,
   Acura: acuraLogo,
   Aston: astonMartin,
   Ferrari: ferrari,
