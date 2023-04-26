@@ -161,6 +161,28 @@
             min-height: 100px;
             max-width: 325px;
           }
+
+          .car_number {
+            position: absolute;
+            top: 310px;
+            font-size: 80px;
+            color: white;
+            -webkit-text-stroke: 3px red;
+            font-family: "Sports Jersey", sans-serif;
+
+            &.len_2 {
+              left: -20px;
+            }
+
+            &.len_1 {
+              left: 0px;
+            }
+
+            &.len_3 {
+              left: -25px;
+              font-size: 70px;
+            }
+          }
         }
       }
     }
