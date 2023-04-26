@@ -62,20 +62,13 @@ const DriverDetails = ({ entry }) => {
         {!entryInfo && (
           <div className="entry-media">
             <CardHeader
-              avatar={
-                <Avatar
-                  alt={series}
-                  src={getSeriesLogo(series)}
-                  sx={{ bgcolor: "white", width: 59, height: 59 }}
-                />
-              }
+              avatar={<Avatar alt={series} src={getSeriesLogo(series)} />}
               title={team}
             />
             <Avatar
               className="manufacturer-avatar"
               alt={vehicle}
               src={getManufLogo(vehicle)}
-              sx={{ bgcolor: "white", width: 59, height: 59 }}
             />
             <CardMedia
               component="img"
@@ -89,7 +82,7 @@ const DriverDetails = ({ entry }) => {
               src={getClassBannerImg(classification, series)}
               alt={classification}
             />
-            <div className={`car-number-${number.length}`}>#{number}</div>
+            <div className={`car_number len_${number.length}`}>#{number}</div>
           </div>
         )}
         <CardContent>
