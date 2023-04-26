@@ -28,6 +28,10 @@ const sortBySeries = (listOfEntries) => {
     else if (nameOfSeries === igtc) igtcList.push(entry);
     else tc.push(entry);
   });
+
+  for (const series of [gtwc, igtcList, gta, gt4, tc]) {
+    series.sort((a, b) => a.number - b.number);
+  }
   return [...gtwc, ...igtcList, ...gta, ...gt4, ...tc];
 };
 
