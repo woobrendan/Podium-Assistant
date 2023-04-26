@@ -73,12 +73,6 @@
         font-family: "Sports Jersey", sans-serif;
       }
 
-      .MuiAvatar-root {
-        img {
-          object-fit: contain;
-        }
-      }
-
       .MuiTypography-body2 {
         color: white;
         font-size: 25px;
@@ -177,6 +171,15 @@
         min-width: 375px;
 
         .entry-media {
+          .MuiAvatar-root {
+            background-color: white;
+            width: 59px;
+            height: 59px;
+
+            img {
+              object-fit: contain;
+            }
+          }
           .MuiCardHeader-root {
             min-height: 100px;
             max-width: 325px;
