@@ -94,11 +94,10 @@ const DriverDetails = ({ entry }) => {
                 entryInfo ? setEntryInfo(false) : setEntryInfo(true)
               }
             >
-              {!entryInfo && (
-                <AddCircleOutlineIcon color="warning" fontSize="large" />
-              )}
-              {entryInfo && (
+              {entryInfo ? (
                 <RemoveCircleOutlineIcon color="warning" fontSize="large" />
+              ) : (
+                <AddCircleOutlineIcon color="warning" fontSize="large" />
               )}
             </Button>
           </div>
