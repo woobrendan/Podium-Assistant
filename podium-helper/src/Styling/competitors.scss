@@ -25,10 +25,6 @@
       margin: 10px;
       position: relative;
 
-      .class-banner-img {
-        width: 140px;
-      }
-
       .MuiCardHeader-content {
         span {
           font-family: "Bebas Neue", cursive;
@@ -141,6 +137,14 @@
         min-width: 375px;
 
         .entry-media {
+          .MuiCardMedia-root {
+            height: 180px;
+          }
+
+          .class-banner-img {
+            width: 140px;
+          }
+
           .manufacturer-avatar {
             position: absolute;
             top: 325px;
