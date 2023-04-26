@@ -43,10 +43,6 @@ const DriverDetails = ({ entry }) => {
     "entry-detail_GRCup": series === grCup,
   });
 
-  const handleToggle = () => {
-    entryInfo ? setEntryInfo(false) : setEntryInfo(true);
-  };
-
   const getSeriesLogo = (series) => {
     if (series === igtc) return IGTC;
     if (series === gt4a) return PGT4A;
@@ -70,12 +66,7 @@ const DriverDetails = ({ entry }) => {
               alt={vehicle}
               src={getManufLogo(vehicle)}
             />
-            <CardMedia
-              component="img"
-              height="180"
-              image={carImage}
-              alt={vehicle}
-            />
+            <CardMedia component="img" image={carImage} alt={vehicle} />
             <br></br>
             <img
               className="class-banner-img"
@@ -98,7 +89,11 @@ const DriverDetails = ({ entry }) => {
           )}
           <div className="driver-info-toggle">
             <h4>Details</h4>
-            <Button onClick={() => handleToggle()}>
+            <Button
+              onClick={() =>
+                entryInfo ? setEntryInfo(false) : setEntryInfo(true)
+              }
+            >
               {!entryInfo && (
                 <AddCircleOutlineIcon color="warning" fontSize="large" />
               )}
