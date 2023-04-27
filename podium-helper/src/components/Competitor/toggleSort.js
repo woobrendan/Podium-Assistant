@@ -31,12 +31,12 @@ const ToggleSort = ({ getOption, component }) => {
   return (
     <div className="sort-option-selector">
       <Box
-        component="form"
-        sx={{
-          "& .MuiTextField-root": { m: 1, width: "25ch" },
-        }}
-        noValidate
-        autoComplete="off"
+      // component="form"
+      // sx={{
+      //   "& .MuiTextField-root": { m: 1, width: "25ch" },
+      // }}
+      // noValidate
+      // autoComplete="off"
       >
         <FormControl
           sx={{ minWidth: 150 }}
