@@ -7,6 +7,7 @@ import {
   IGTC,
   GRCUP,
 } from "../../images/series_logos";
+import { tcam, gtam, gt4a, igtc, grCup } from "../../functions/helperFunc";
 import { getManufLogo, getClassBannerImg } from "../../functions/getImages";
 
 const EntryMedia = ({ entry }) => {
