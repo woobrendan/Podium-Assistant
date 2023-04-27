@@ -1,4 +1,26 @@
+import { CardHeader, Avatar, CardMedia } from "@mui/material";
+import {
+  GTWCA,
+  PGT4A,
+  GTAM,
+  TCAM,
+  IGTC,
+  GRCUP,
+} from "../../images/series_logos";
+import { getManufLogo, getClassBannerImg } from "../../functions/getImages";
+
 const EntryMedia = ({ entry }) => {
+  const { series, team, vehicle, carImage, classification, number } = entry;
+
+  const getSeriesLogo = (series) => {
+    if (series === igtc) return IGTC;
+    if (series === gt4a) return PGT4A;
+    if (series === tcam) return TCAM;
+    if (series === gtam) return GTAM;
+    if (series === grCup) return GRCUP;
+    return GTWCA;
+  };
+
   return (
     <div className="entry-media">
       <CardHeader
