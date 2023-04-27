@@ -1,26 +1,9 @@
 import { useState } from "react";
-import {
-  CardMedia,
-  CardContent,
-  Card,
-  Button,
-  CardHeader,
-  Avatar,
-} from "@mui/material";
-import DriverTable from "./DriverTable";
-import EntryHighlights from "./EntryHighlights";
+import { CardContent, Card, Button } from "@mui/material";
 import classNames from "classnames";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
-import { getManufLogo, getClassBannerImg } from "../../functions/getImages";
-import {
-  GTWCA,
-  PGT4A,
-  GTAM,
-  TCAM,
-  IGTC,
-  GRCUP,
-} from "../../images/series_logos";
+import EntryMedia from "./EntryMedia";
 import {
   gtwca,
   tcam,
@@ -44,39 +27,10 @@ const DriverDetails = ({ entry }) => {
     "entry-detail_GRCup": series === grCup,
   });
 
-  const getSeriesLogo = (series) => {
-    if (series === igtc) return IGTC;
-    if (series === gt4a) return PGT4A;
-    if (series === tcam) return TCAM;
-    if (series === gtam) return GTAM;
-    if (series === grCup) return GRCUP;
-    return GTWCA;
-  };
-
   return (
     <div className="competitor-card">
       <Card className={detailClass}>
-        {!entryInfo && (
-          <div className="entry-media">
-            <CardHeader
-              avatar={<Avatar alt={series} src={getSeriesLogo(series)} />}
-              title={team}
-            />
-            <Avatar
-              className="manufacturer-avatar"
-              alt={vehicle}
-              src={getManufLogo(vehicle)}
-            />
-            <CardMedia component="img" image={carImage} alt={vehicle} />
-            <br></br>
-            <img
-              className="class-banner-img"
-              src={getClassBannerImg(classification, series)}
-              alt={classification}
-            />
-            <div className={`car_number len_${number.length}`}>#{number}</div>
-          </div>
-        )}
+        {!entryInfo && <EntryMedia entry={entry} />}
         <CardContent>
           {entryInfo && <EntryDetails entry={entry} />}
           <div className="driver-info-toggle">
