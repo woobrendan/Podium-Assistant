@@ -1,4 +1,8 @@
-const EntryDetails = () => {
+import EntryHighlights from "./EntryHighlights";
+import DriverTable from "./DriverTable";
+
+const EntryDetails = ({ entry }) => {
+  const { series, vehicle, classification } = entry;
   return (
     <div className="entry-details">
       <EntryHighlights
