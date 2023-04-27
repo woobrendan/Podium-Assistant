@@ -29,6 +29,7 @@ import {
   igtc,
   grCup,
 } from "../../functions/helperFunc";
+import EntryDetails from "./EntryDetails";
 
 const DriverDetails = ({ entry }) => {
   const [entryInfo, setEntryInfo] = useState(false);
@@ -77,16 +78,7 @@ const DriverDetails = ({ entry }) => {
           </div>
         )}
         <CardContent>
-          {entryInfo && (
-            <div className="entry-details">
-              <EntryHighlights
-                series={series}
-                car={vehicle}
-                classification={classification}
-              />
-              <DriverTable drivers={entry} />
-            </div>
-          )}
+          {entryInfo && <EntryDetails entry={entry} />}
           <div className="driver-info-toggle">
             <h4>Details</h4>
             <Button
