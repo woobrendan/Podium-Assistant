@@ -16,7 +16,7 @@ import EntryDetails from "./EntryDetails";
 
 const DriverDetails = ({ entry }) => {
   const [entryInfo, setEntryInfo] = useState(false);
-  const { series, carImage, vehicle, team, number, classification } = entry;
+  const { series } = entry;
 
   const detailClass = classNames("entry-detail__item", {
     "entry-detail_GTWCA": series === gtwca,
