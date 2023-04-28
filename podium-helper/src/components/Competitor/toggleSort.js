@@ -29,36 +29,22 @@ const ToggleSort = ({ getOption, component }) => {
   ));
 
   return (
-    <div className="sort-option-selector">
-      <Box
-      // component="form"
-      // sx={{
-      //   "& .MuiTextField-root": { m: 1, width: "25ch" },
-      // }}
-      // noValidate
-      // autoComplete="off"
-      >
-        <FormControl
-          sx={{ minWidth: 150 }}
-          color="error"
-          // focused={true}
+    <Box className="sort-option-selector">
+      <FormControl sx={{ minWidth: 150 }} color="error">
+        <InputLabel>
+          {component === "competitor" ? "Sort By" : "Filter"}
+        </InputLabel>
+        <Select
           className="form-control"
+          name="sort-by"
+          label="Sort By"
+          value={sortOption}
+          onChange={handleToggle}
         >
-          <InputLabel>
-            {component === "competitor" ? "Sort By" : "Filter"}
-          </InputLabel>
-          <Select
-            className="form-control"
-            name="sort-by"
-            label="Sort By"
-            value={sortOption}
-            onChange={handleToggle}
-          >
-            {mappedOptions}
-          </Select>
-        </FormControl>
-      </Box>
-    </div>
+          {mappedOptions}
+        </Select>
+      </FormControl>
+    </Box>
   );
 };
 
