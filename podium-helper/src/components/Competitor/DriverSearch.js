@@ -59,7 +59,7 @@ const DriverSearch = () => {
       <div className="search-sort-options">
         <ToggleSort getOption={getSortOption} component="competitor" />
         <TextField
-          className="form-control"
+          className="competitor_search"
           label="Search"
           variant="outlined"
           color="error"
