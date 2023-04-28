@@ -747,7 +747,7 @@
     },
     "driver2": {
       "name": "Kay Van Berlo",
-      "nationality": "USA",
+      "nationality": "Netherlands",
       "rating": "Silver"
     },
     "vehicle": "Porsche 718 Cayman GT4 RS CS",
@@ -898,8 +898,8 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "Ian James",
-      "nationality": "USA",
+      "name": "Roman De Angelis",
+      "nationality": "Canada",
       "rating": "Silver"
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
@@ -1164,7 +1164,7 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "Isabella Robusto",
+      "name": "Tony Ave",
       "nationality": "USA",
       "rating": "Bronze"
     },
@@ -1228,25 +1228,6 @@
     "vehicle": "Toyota Gazoo Racing GR Supra GT4",
     "classification": "Silver",
     "number": "74",
-    "carImage": "",
-    "series": "Pirelli GT4 America",
-    "year": 2023
-  },
-  {
-    "team": "TR3 Racing",
-    "driver1": {
-      "name": "Paul Kielber",
-      "nationality": "USA",
-      "rating": "Bronze"
-    },
-    "driver2": {
-      "name": "TBD",
-      "nationality": "USA",
-      "rating": "TBD"
-    },
-    "vehicle": "Aston Martin Vantage AMR GT4",
-    "classification": "Am",
-    "number": "77",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
@@ -1969,7 +1950,7 @@
       "nationality": "Germany",
       "rating": "Bronze"
     },
-    "vehicle": "Callaway Corvette Z06R GT3",
+    "vehicle": "Corvette C7 GT3-R",
     "classification": "Masters",
     "number": "70",
     "carImage": "",
