@@ -37,11 +37,15 @@ const sortBySeries = (listOfEntries) => {
 
 const sortByManufacturer = (listOfEntries) => {
   const compareVehicles = (a, b) => {
-    if (a.vehicle < b.vehicle) return -1;
-    if (a.vehicle > b.vehicle) return 1;
+    const aVehicle = a.vehicle.toUpperCase();
+    const bVehicle = b.vehicle.toUpperCase();
+    if (aVehicle < bVehicle) return -1;
+    if (aVehicle > bVehicle) return 1;
     return 0;
   };
-  return listOfEntries.sort(compareVehicles);
+
+  const sorted = [...listOfEntries].sort(compareVehicles);
+  return sorted;
 };
 
 const sortByClass = (listOfEntries) => {
