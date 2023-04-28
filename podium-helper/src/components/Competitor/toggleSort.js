@@ -30,12 +30,11 @@ const ToggleSort = ({ getOption, component }) => {
 
   return (
     <Box className="sort-option-selector">
-      <FormControl sx={{ minWidth: 150 }} color="error">
+      <FormControl color="error">
         <InputLabel>
           {component === "competitor" ? "Sort By" : "Filter"}
         </InputLabel>
         <Select
-          className="form-control"
           name="sort-by"
           label="Sort By"
           value={sortOption}
