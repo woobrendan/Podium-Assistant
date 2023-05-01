@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 import { grCup } from "../../functions/helperFunc";
 
 const HardChargeCard = ({ series, handleSubmit }) => {
-  const [hardCharge, setHardCharge] = useState({ entry: "", gain: null });
+  const [hardCharge, setHardCharge] = useState({ entryNum: "", gain: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const entries = useSelector((state) => state.entry.entriesArray);
@@ -30,6 +30,8 @@ const HardChargeCard = ({ series, handleSubmit }) => {
     }));
   };
 
+  // console.log("entries", entries);
+
   return (
     <div className="results-container">
       <Card className="hard_charger_container podium_card">
@@ -41,17 +43,17 @@ const HardChargeCard = ({ series, handleSubmit }) => {
             <InputLabel>Entry</InputLabel>
             <Select
               className="form-control"
-              name="entry"
+              name="entryNum"
               label="Entry"
               value={hardCharge.entry}
               onChange={handleChange}
             >
               {entries
-                .filter((entry) => entry.series === series)
+                .filter((entry) => entry.series === series.name)
                 .map((entry) => {
                   return (
-                    <MenuItem key={index} value={entry}>
-                      #{entry.number} - {entry.driver1} & {entry.driver2}
+                    <MenuItem key={entry.number} value={entry.number}>
+                      #{entry.number}
                     </MenuItem>
                   );
                 })}
