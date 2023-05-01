@@ -1,15 +1,22 @@
 import { useState, useEffect } from "react";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+
+//** Style Sheets  */
 import "../../Styling/podium.scss";
+import "../../Styling/winnerTop3.scss";
+
+//** Components  */
 import FastLap from "./FastLap";
 import Series from "./Series";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
+import HardChargeCard from "./HardChargeCard";
+
 import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/helperFunc";
 import mongoResult from "../../functions/formMongoResult";
-import { useNavigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
 import { resultsActions } from "../../store/resultsSlice";
 import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
 import { fetchEntry } from "../../store/entryActions";
@@ -74,21 +81,24 @@ const Podium = () => {
         <EventSearch getValue={getValue} component="podium" />
         <Series getValue={getValue} />
       </div>
-      <div className="podium_results_container">
-        {results.series &&
-          numOfPodiumDisplays(
+      {results.series && (
+        <div className="podium_results_container">
+          {numOfPodiumDisplays(
             results.series,
             handleRacePodiumSubmit,
             results,
             entries,
           )}
-        {results.series && (
           <FastLap
             handleSubmit={handleRacePodiumSubmit}
             series={results.series}
           />
-        )}
-      </div>
+          <HardChargeCard
+            series={results.series}
+            handleSubmit={handleRacePodiumSubmit}
+          />
+        </div>
+      )}
       {results.fastLap && (
         <Button
           variant="contained"
