@@ -55,7 +55,15 @@
 
 .hard_charger_container,
 .fast-lap-container {
-  .fast_lap__input {
+  .podium_card {
+    justify-content: center;
+
+    h2 {
+      padding-bottom: 10%;
+    }
+  }
+
+  .podium_card__input {
     margin-bottom: 10px;
   }
 
