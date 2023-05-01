@@ -52,3 +52,20 @@
     }
   }
 }
+
+.hard_charger_container,
+.fast-lap-container {
+  .fast_lap__input {
+    margin-bottom: 10px;
+  }
+
+  .MuiFormControl-root {
+    min-width: 250px;
+  }
+
+  .MuiButton-root {
+    max-width: 200px;
+    align-self: center;
+    margin-top: 10px;
+  }
+}
