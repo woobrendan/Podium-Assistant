@@ -28,27 +28,4 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  .fast-lap-container {
-    // border: 1px solid;
-    // padding: 10px;
-    // box-shadow: 5px 10px #888888;
-    // min-width: 450px;
-    // display: flex;
-    // flex-direction: column;
-
-    .fast_lap__input {
-      margin-bottom: 10px;
-    }
-
-    .MuiFormControl-root {
-      min-width: 250px;
-    }
-
-    .MuiButton-root {
-      max-width: 200px;
-      align-self: center;
-      margin-top: 10px;
-    }
-  }
 }
