@@ -49,7 +49,7 @@ const FastLap = ({ series, handleSubmit }) => {
     <div className="results-container fast-lap-container">
       <Card className="podium_card">
         <h2>{series.name === grCup ? "Fast Lap" : "CrowdStrike Fast Lap"}</h2>
-        <Box className="fast_lap__input">
+        <Box className="fast_lap__input podium_card__input">
           <FormControl>
             <InputLabel>Driver</InputLabel>
             <Select
@@ -63,7 +63,7 @@ const FastLap = ({ series, handleSubmit }) => {
             </Select>
           </FormControl>
         </Box>
-        <Box className="fast_lap__input">
+        <Box className="fast_lap__input podium_card__input">
           <TextField
             id="outlined"
             label="Fast Lap"
