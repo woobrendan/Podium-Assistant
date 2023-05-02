@@ -6,6 +6,7 @@ import BackToTopButton from "../BackToTopButton";
 import EventSearch from "../EventsSearch";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchData } from "../../store/resultsActions";
+import { compareByDate } from "../../functions/sortFuncs";
 
 const ResultsHistory = () => {
   const dispatch = useDispatch();
@@ -26,8 +27,13 @@ const ResultsHistory = () => {
       return results.filter((result) => event === result.event);
     }
   };
+
+  console.log("results", results);
+
   useEffect(() => {
-    event ? setFilteredResults(filterByEvent()) : setFilteredResults(results);
+    event
+      ? setFilteredResults(filterByEvent())
+      : setFilteredResults(results.sort(compareByDate));
   }, [event, results]);
 
   return (
