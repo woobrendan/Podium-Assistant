@@ -15,21 +15,11 @@ const ResultsHistory = () => {
 
   const results = useSelector((state) => state.results.resultsArray);
 
-  const getValue = (name, value) => setEvent(value);
+  const getValue = (event) => setEvent(event.target.value);
 
   useEffect(() => {
     dispatch(fetchData());
   }, [dispatch]);
-
-  // const filterByEvent = () => {
-  //   if (event) {
-  //     return results.filter((result) => event === result.event);
-  //   } else {
-  //     return results;
-  //   }
-  // };
-
-  console.log("results", results);
 
   useEffect(() => {
     event
