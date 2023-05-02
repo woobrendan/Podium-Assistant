@@ -1,13 +1,15 @@
 import { resultsActions } from "./resultsSlice";
 import axios from "axios";
+import { compareResultDates } from "../functions/sortFuncs";
 
 export const fetchData = () => {
   return async (dispatch) => {
     try {
       const results = await axios.get("http://localhost:2020/results");
-      dispatch(resultsActions.setResultHistory(results.data.results));
+      const sortedResults = results.data.results.sort(compareResultDates);
+      dispatch(resultsActions.setResultHistory(sortedResults));
     } catch (err) {
-      console.error(err);
+      console.log("Error fetching results:", err);
     }
   };
 };
