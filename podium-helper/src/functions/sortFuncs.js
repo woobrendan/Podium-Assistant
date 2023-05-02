@@ -142,6 +142,11 @@ const compareByDate = (a, b) => {
       November: 10,
       December: 11,
     };
+
+    if (monthStr.length === 2) {
+      return Number(monthStr) - 1;
+    }
+
     return monthOrder[monthStr];
   };
 
