@@ -1,4 +1,4 @@
-import { compareDate } from "../../functions/helperFunc";
+import { compareResultDates } from "../../functions/sortFuncs";
 
 const SearchAllResults = (list, searchValue) => {
   const filtered = list.filter((val) => {
@@ -77,7 +77,7 @@ const SearchAllResults = (list, searchValue) => {
       }
     }
   });
-  return filtered.sort(compareDate);
+  return filtered.sort(compareResultDates);
 };
 
 export default SearchAllResults;
