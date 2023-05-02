@@ -1,14 +1,43 @@
 import { useState, useEffect } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import useEvents from "../functions/useEvents";
+import axios from "axios";
 
 const EventSearch = ({ component, getValue }) => {
-  const { events, currentEventName } = useEvents();
+  let { events, currentEventName } = useEvents();
   const [eventName, setEventName] = useState("");
 
   useEffect(() => {
     component === "podium" ? setEventName(currentEventName) : setEventName("");
   }, [currentEventName]);
+
+  useEffect(() => {
+    if (component !== "podium") {
+      getEvents();
+    }
+  }, []);
+
+  const getEvents = async () => {
+    try {
+      const data = await axios.get("http://localhost:2020/api/events");
+      const eventList = data.data.events;
+
+      const uniqueObjects = [];
+      const tempObject = {};
+
+      eventList.forEach((event) => {
+        const name = event.name;
+        if (!tempObject[name]) {
+          tempObject[name] = true;
+          uniqueObjects.push(event);
+        }
+      });
+
+      events = uniqueObjects;
+    } catch (err) {
+      console.log("Error fetching events: ", err);
+    }
+  };
 
   const handleChange = (event) => {
     setEventName(event.target.value);
