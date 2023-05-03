@@ -6,6 +6,7 @@ import axios from "axios";
 const EventSearch = ({ component, getValue }) => {
   let { events, currentEventName } = useEvents();
   const [eventName, setEventName] = useState("");
+  const [eventList, setEventList] = useState([]);
 
   useEffect(() => {
     component === "podium" ? setEventName(currentEventName) : setEventName("");
@@ -20,12 +21,12 @@ const EventSearch = ({ component, getValue }) => {
   const getEvents = async () => {
     try {
       const data = await axios.get("http://localhost:2020/api/events");
-      const eventList = data.data.events;
+      const eventArr = data.data.events;
 
       const uniqueObjects = [];
       const tempObject = {};
 
-      eventList.forEach((event) => {
+      eventArr.forEach((event) => {
         const name = event.name;
         if (!tempObject[name]) {
           tempObject[name] = true;
@@ -33,7 +34,7 @@ const EventSearch = ({ component, getValue }) => {
         }
       });
 
-      events = uniqueObjects;
+      setEventList(uniqueObjects);
     } catch (err) {
       console.log("Error fetching events: ", err);
     }
@@ -54,7 +55,7 @@ const EventSearch = ({ component, getValue }) => {
           value={eventName}
           onChange={(e) => handleChange(e)}
         >
-          {events.map((event, index) => (
+          {(component === "podium" ? events : eventList).map((event, index) => (
             <MenuItem key={index} value={event.name} data-testid={event.name}>
               {event.name}
             </MenuItem>
