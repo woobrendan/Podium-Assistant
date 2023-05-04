@@ -13,7 +13,7 @@ function createData(name, nationality, rating) {
   return { name, nationality, rating };
 }
 
-function DriverTable(props) {
+const DriverTable = ({ drivers }) => {
   const tableRows = (drivers) => {
     const data = [
       createData(
@@ -54,7 +54,7 @@ function DriverTable(props) {
           </TableRow>
         </TableHead>
         <TableBody>
-          {tableRows(props.drivers).map((row) => (
+          {tableRows(drivers).map((row) => (
             <TableRow
               key={row.name}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -70,6 +70,6 @@ function DriverTable(props) {
       </Table>
     </TableContainer>
   );
-}
+};
 
 export default DriverTable;
