@@ -9,36 +9,21 @@ import {
   Paper,
 } from "@mui/material";
 
-function createData(name, nationality, rating) {
+const createData = (name, nationality, rating) => {
   return { name, nationality, rating };
-}
+};
 
 const DriverTable = ({ drivers }) => {
   const tableRows = (drivers) => {
+    const { driver1, driver2, driver3 } = drivers;
     const data = [
-      createData(
-        drivers.driver1.name,
-        drivers.driver1.nationality,
-        drivers.driver1.rating,
-      ),
+      createData(driver1.name, driver1.nationality, driver1.rating),
     ];
     if (drivers.driver2) {
-      data.push(
-        createData(
-          drivers.driver2.name,
-          drivers.driver2.nationality,
-          drivers.driver2.rating,
-        ),
-      );
+      data.push(createData(driver2.name, driver2.nationality, driver2.rating));
     }
     if (drivers.driver3) {
-      data.push(
-        createData(
-          drivers.driver3.name,
-          drivers.driver3.nationality,
-          drivers.driver3.rating,
-        ),
-      );
+      data.push(createData(driver3.name, driver3.nationality, driver3.rating));
     }
     return data;
   };
@@ -59,9 +44,7 @@ const DriverTable = ({ drivers }) => {
               key={row.name}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
-                {row.name}
-              </TableCell>
+              <TableCell scope="row">{row.name}</TableCell>
               <TableCell align="right">{row.nationality}</TableCell>
               <TableCell align="right">{row.rating}</TableCell>
             </TableRow>
