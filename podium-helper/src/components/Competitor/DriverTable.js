@@ -45,7 +45,7 @@ function DriverTable(props) {
 
   return (
     <TableContainer component={Paper} className="driver-table">
-      <Table sx={{ minWidth: 300 }} aria-label="simple table">
+      <Table>
         <TableHead>
           <TableRow>
             <TableCell>Driver</TableCell>
