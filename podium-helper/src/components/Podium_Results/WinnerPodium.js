@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, Card } from "@mui/material";
-import "../../Styling/winnerTop3.scss";
+// import "../../Styling/winnerTop3.scss";
 import PlacementInput from "./PlacementInput";
 import { numOfDriverMenuItem } from "../../functions/podiumResultHelpers";
 
@@ -49,7 +49,7 @@ const WinnerPodium = ({
 
   return (
     <div className="results-container">
-      <Card>
+      <Card className="podium_card">
         <h2>{classification}</h2>
         <div className="placement-container">
           <div className="finishing-spot">
