@@ -1,12 +1,22 @@
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
-const HardChargeCard = () => {
+const HardChargeCard = ({ series, handleSubmit }) => {
   const [hardCharge, setHardCharge] = useState({ entry: "", gain: null });
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const entries = useSelector((state) => state.entry.entriesArray);
 
   const handleClick = () => {
     handleSubmit(hardCharge, "hardCharger");
     setIsSubmitted(true);
+  };
+
+  const handleChange = (event) => {
+    setHardCharge((prev) => ({
+      ...prev,
+      [event.target.name]: event.target.value,
+    }));
   };
 
   return (
@@ -30,7 +40,7 @@ const HardChargeCard = () => {
         <TextField
           id="outlined"
           label="Positions Gained"
-          name="positions"
+          name="gain"
           value={hardCharge.gain}
           onChange={handleChange}
         />
