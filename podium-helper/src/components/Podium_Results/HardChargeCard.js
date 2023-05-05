@@ -32,7 +32,15 @@ const HardChargeCard = ({ series, handleSubmit }) => {
             value={hardCharge.entry}
             onChange={handleChange}
           >
-            {mapSingleDrivers}
+            {entries
+              .filter((entry) => entry.series === series)
+              .map((entry) => {
+                return (
+                  <MenuItem key={index} value={entry}>
+                    #{entry.number} - {entry.driver1} & {entry.driver2}
+                  </MenuItem>
+                );
+              })}
           </Select>
         </FormControl>
       </Box>
