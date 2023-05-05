@@ -4,13 +4,14 @@
   flex-direction: column;
   justify-content: space-around;
 
-  .MuiPaper-root {
+  .podium_card {
     border: 1px solid;
     padding: 10px;
     box-shadow: 5px 10px #888888;
     min-width: 450px;
     display: flex;
     flex-direction: column;
+    min-height: 375px;
 
     h2 {
       margin-bottom: 0;
