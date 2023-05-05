@@ -1,4 +1,14 @@
+import { useState } from "react";
+
 const HardChargeCard = () => {
+  const [hardCharge, setHardCharge] = useState({ entry: "", gain: null });
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleClick = () => {
+    handleSubmit(hardCharge, "hardCharger");
+    setIsSubmitted(true);
+  };
+
   return (
     <Card className="hard_charger_container">
       <h2>{series.name === grCup ? "Hard Charger" : "E-Boost Hard Charger"}</h2>
