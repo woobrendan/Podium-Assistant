@@ -46,39 +46,41 @@ const FastLap = ({ series, handleSubmit }) => {
   }
 
   return (
-    <Card className="fast-lap-container">
-      <h2>{series.name === grCup ? "Fast Lap" : "CrowdStrike Fast Lap"}</h2>
-      <Box className="fast_lap__input">
-        <FormControl>
-          <InputLabel>Driver</InputLabel>
-          <Select
-            className="form-control"
-            name="driver"
-            label="Driver"
-            value={fastTime.driver}
+    <div className="results-container fast-lap-container">
+      <Card className="podium_card">
+        <h2>{series.name === grCup ? "Fast Lap" : "CrowdStrike Fast Lap"}</h2>
+        <Box className="fast_lap__input">
+          <FormControl>
+            <InputLabel>Driver</InputLabel>
+            <Select
+              className="form-control"
+              name="driver"
+              label="Driver"
+              value={fastTime.driver}
+              onChange={handleChange}
+            >
+              {mapSingleDrivers}
+            </Select>
+          </FormControl>
+        </Box>
+        <Box className="fast_lap__input">
+          <TextField
+            id="outlined"
+            label="Fast Lap"
+            name="laptime"
+            value={fastTime.lapTime}
             onChange={handleChange}
-          >
-            {mapSingleDrivers}
-          </Select>
-        </FormControl>
-      </Box>
-      <Box className="fast_lap__input">
-        <TextField
-          id="outlined"
-          label="Fast Lap"
-          name="laptime"
-          value={fastTime.lapTime}
-          onChange={handleChange}
-        />
-      </Box>
-      <Button
-        variant="contained"
-        color={isSubmitted ? "success" : "error"}
-        onClick={handleClick}
-      >
-        {isSubmitted ? "Update" : "Submit"}
-      </Button>
-    </Card>
+          />
+        </Box>
+        <Button
+          variant="contained"
+          color={isSubmitted ? "success" : "error"}
+          onClick={handleClick}
+        >
+          {isSubmitted ? "Update" : "Submit"}
+        </Button>
+      </Card>
+    </div>
   );
 };
 
