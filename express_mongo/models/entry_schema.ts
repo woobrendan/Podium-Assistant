@@ -29,3 +29,4 @@ const entrySchema: Schema = new Schema({
 });
 
 export default mongoose.model<EntryModel>("Entries", entrySchema);
+export { entrySchema };
