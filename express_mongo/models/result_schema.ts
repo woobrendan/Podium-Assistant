@@ -1,5 +1,6 @@
 import mongoose, { Document, Schema } from "mongoose";
 import { FullResultInterface } from "./result_models";
+import { entrySchema } from "./entry_schema";
 
 export interface ResultModel extends FullResultInterface, Document {}
 
@@ -11,6 +12,10 @@ const resultSchema: Schema = new Schema({
     driver: { type: String, required: true },
     vehicle: { type: String },
     laptime: { type: String, required: true },
+  },
+  hardCharger: {
+    entry: { type: entrySchema },
+    gain: { type: Number },
   },
   result1: {
     class: { type: String, required: true },
