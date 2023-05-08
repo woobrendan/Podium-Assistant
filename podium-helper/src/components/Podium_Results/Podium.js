@@ -53,28 +53,30 @@ const Podium = () => {
 
   //** sent to WinnerPodium to handle submission of podium result X and set to results, used for fast lap too *//
   const handleRacePodiumSubmit = (value, resultNumber) => {
-    if (resultNumber === "fastLap") {
-      setResults((prev) => ({
-        ...prev,
-        fastLap: value,
-      }));
-    } else if (resultNumber === "hardCharger") {
-      const seriesEntries = entries.filter(
-        (entry) => results.series.name === entry.series,
-      );
-      const entry = seriesEntries.find(
-        (entry) => value.entryNum === entry.number,
-      );
-      console.log("entry", entry);
-      setResults((prev) => ({
-        ...prev,
-        hardCharger: { entry, gain: value.gain },
-      }));
-    } else {
-      setResults((prev) => ({
-        ...prev,
-        [`result${resultNumber}`]: value,
-      }));
+    switch (resultNumber) {
+      case "fastLap":
+        setResults((prev) => ({
+          ...prev,
+          fastLap: value,
+        }));
+        break;
+
+      case "hardCharger":
+        const entry = entries
+          .filter((entry) => results.series.name === entry.series)
+          .find((entry) => value.entryNum === entry.number);
+
+        setResults((prev) => ({
+          ...prev,
+          hardCharger: { entry, gain: value.gain },
+        }));
+        break;
+
+      default:
+        setResults((prev) => ({
+          ...prev,
+          [`result${resultNumber}`]: value,
+        }));
     }
   };
 
