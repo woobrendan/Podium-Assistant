@@ -31,7 +31,7 @@ export interface FullResultInterface {
   date: string;
   event: string;
   fastLap: FastLapInterface;
-  hardCharge?: HardChargerInterface;
+  hardCharger?: HardChargerInterface;
   result1: ResultInterface;
   result2?: ResultInterface;
   result3?: ResultInterface;
