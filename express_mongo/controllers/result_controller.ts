@@ -3,11 +3,25 @@ import mongoose from "mongoose";
 import Result from "../models/result_schema";
 
 const createResult = (req: Request, res: Response) => {
-  console.log("req", req.body);
   const incomingResult = req.body.results;
   const result = new Result({
     ...incomingResult,
     fastLap: { ...incomingResult.fastLap },
+    ...(incomingResult.hardCharger
+      ? {
+          hardCharger: {
+            ...incomingResult,
+            entry: {
+              ...incomingResult.hardCharger.entry,
+              driver1: {
+                ...req.body.driver1,
+              },
+              ...(req.body.driver2 ? { driver2: { ...req.body.driver2 } } : {}),
+              ...(req.body.driver3 ? { driver3: { ...req.body.driver3 } } : {}),
+            },
+          },
+        }
+      : {}),
     result1: {
       ...incomingResult.result1,
       firstPlace: { ...incomingResult.result1.firstPlace },
