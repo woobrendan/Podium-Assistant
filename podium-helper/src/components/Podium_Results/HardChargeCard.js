@@ -30,15 +30,18 @@ const HardChargeCard = ({ series, handleSubmit }) => {
     }));
   };
 
-  // console.log("entries", entries);
+  // console.log(
+  //   "entries",
+  //   entries.filter((entry) => entry.series === series.name),
+  // );
 
   return (
-    <div className="results-container">
-      <Card className="hard_charger_container podium_card">
+    <div className="results-container hard_charger_container">
+      <Card className="podium_card">
         <h2>
           {series.name === grCup ? "Hard Charger" : "E-Boost Hard Charger"}
         </h2>
-        <Box className="hard_charger__input">
+        <Box className="hard_charger__input podium_card__input">
           <FormControl>
             <InputLabel>Entry</InputLabel>
             <Select
@@ -60,7 +63,7 @@ const HardChargeCard = ({ series, handleSubmit }) => {
             </Select>
           </FormControl>
         </Box>
-        <Box className="hard_charger__input">
+        <Box className="hard_charger__input podium_card__input">
           <TextField
             id="outlined"
             label="Positions Gained"
