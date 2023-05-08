@@ -62,13 +62,14 @@ const Podium = () => {
         break;
 
       case "hardCharger":
+        // take in value as vehicle number, get entries matching series then get matching car num
         const entry = entries
           .filter((entry) => results.series.name === entry.series)
           .find((entry) => value.entryNum === entry.number);
 
         setResults((prev) => ({
           ...prev,
-          hardCharger: { entry, gain: value.gain },
+          hardCharger: { entry, gain: Number(value.gain) },
         }));
         break;
 
