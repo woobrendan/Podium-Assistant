@@ -1,7 +1,14 @@
+import { EntryInterface } from "./models";
+
 interface FastLapInterface {
   driver: string;
   vehicle: string;
   laptime: string;
+}
+
+interface HardChargerInterface {
+  entry: EntryInterface;
+  gain: number;
 }
 
 interface EntryResultInterfance {
@@ -24,6 +31,7 @@ export interface FullResultInterface {
   date: string;
   event: string;
   fastLap: FastLapInterface;
+  hardCharge?: HardChargerInterface;
   result1: ResultInterface;
   result2?: ResultInterface;
   result3?: ResultInterface;
