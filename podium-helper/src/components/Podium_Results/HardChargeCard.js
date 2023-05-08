@@ -30,11 +30,6 @@ const HardChargeCard = ({ series, handleSubmit }) => {
     }));
   };
 
-  // console.log(
-  //   "entries",
-  //   entries.filter((entry) => entry.series === series.name),
-  // );
-
   return (
     <div className="results-container hard_charger_container">
       <Card className="podium_card">
@@ -48,7 +43,7 @@ const HardChargeCard = ({ series, handleSubmit }) => {
               className="form-control"
               name="entryNum"
               label="Entry"
-              value={hardCharge.entry}
+              value={hardCharge.entryNum}
               onChange={handleChange}
             >
               {entries
@@ -56,7 +51,8 @@ const HardChargeCard = ({ series, handleSubmit }) => {
                 .map((entry) => {
                   return (
                     <MenuItem key={entry.number} value={entry.number}>
-                      #{entry.number}
+                      #{entry.number} - {entry.driver1.name}{" "}
+                      {entry.driver2 ? `& ${entry.driver2.name}` : " "}
                     </MenuItem>
                   );
                 })}
