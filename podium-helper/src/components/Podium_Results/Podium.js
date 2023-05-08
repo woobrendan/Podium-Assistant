@@ -58,6 +58,18 @@ const Podium = () => {
         ...prev,
         fastLap: value,
       }));
+    } else if (resultNumber === "hardCharger") {
+      const seriesEntries = entries.filter(
+        (entry) => results.series.name === entry.series,
+      );
+      const entry = seriesEntries.find(
+        (entry) => value.entryNum === entry.number,
+      );
+      console.log("entry", entry);
+      setResults((prev) => ({
+        ...prev,
+        hardCharger: { entry, gain: value.gain },
+      }));
     } else {
       setResults((prev) => ({
         ...prev,
