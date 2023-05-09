@@ -20,7 +20,8 @@ interface EntryResultInterfance {
   driver3?: string;
 }
 
-interface ResultInterface {
+export interface ResultInterface {
+  class: string;
   firstPlace: EntryResultInterfance;
   secondPlace?: EntryResultInterfance;
   thirdPlace?: EntryResultInterfance;
