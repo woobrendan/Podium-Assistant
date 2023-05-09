@@ -1,10 +1,23 @@
 import { Request, Response } from "express";
 import mongoose from "mongoose";
 import Result from "../models/result_schema";
+import { resultBuilder } from "../functions/helperFunc";
+import { ResultInterface } from "../models/result_models";
 
 const createResult = (req: Request, res: Response) => {
-  const { fastLap, hardCharger, result1, result2, result3, result4 } =
-    req.body.results;
+  const { fastLap, hardCharger } = req.body.results;
+  const {
+    result1,
+    result2,
+    result3,
+    result4,
+  }: {
+    result1: ResultInterface;
+    result2?: ResultInterface;
+    result3?: ResultInterface;
+    result4?: ResultInterface;
+  } = req.body.results;
+
   const { entry } = hardCharger;
   const result = new Result({
     ...req.body.results,
@@ -32,48 +45,51 @@ const createResult = (req: Request, res: Response) => {
         : {}),
       ...(result1.thirdPlace ? { thirdPlace: { ...result1.thirdPlace } } : {}),
     },
-    ...(result2
-      ? {
-          result2: {
-            ...result2,
-            firstPlace: { ...result2.firstPlace },
-            ...(result2.secondPlace
-              ? { secondPlace: { ...result2.secondPlace } }
-              : {}),
-            ...(result2.thirdPlace
-              ? { thirdPlace: { ...result2.thirdPlace } }
-              : {}),
-          },
-        }
-      : {}),
-    ...(result3
-      ? {
-          result3: {
-            ...result3,
-            firstPlace: { ...result3.firstPlace },
-            ...(result3.secondPlace
-              ? { secondPlace: { ...result3.secondPlace } }
-              : {}),
-            ...(result3.thirdPlace
-              ? { thirdPlace: { ...result3.thirdPlace } }
-              : {}),
-          },
-        }
-      : {}),
-    ...(result4
-      ? {
-          result4: {
-            ...result4,
-            firstPlace: { ...result4.firstPlace },
-            ...(result4.secondPlace
-              ? { secondPlace: { ...result4.secondPlace } }
-              : {}),
-            ...(result4.thirdPlace
-              ? { thirdPlace: { ...result4.thirdPlace } }
-              : {}),
-          },
-        }
-      : {}),
+    ...(result2 ? { result2: { ...resultBuilder(result2) } } : {}),
+    ...(result3 ? { result3: { ...resultBuilder(result3) } } : {}),
+    ...(result4 ? { result4: { ...resultBuilder(result4) } } : {}),
+    // ...(result2
+    //   ? {
+    //       result2: {
+    //         ...result2,
+    //         firstPlace: { ...result2.firstPlace },
+    //         ...(result2.secondPlace
+    //           ? { secondPlace: { ...result2.secondPlace } }
+    //           : {}),
+    //         ...(result2.thirdPlace
+    //           ? { thirdPlace: { ...result2.thirdPlace } }
+    //           : {}),
+    //       },
+    //     }
+    //   : {}),
+    // ...(result3
+    //   ? {
+    //       result3: {
+    //         ...result3,
+    //         firstPlace: { ...result3.firstPlace },
+    //         ...(result3.secondPlace
+    //           ? { secondPlace: { ...result3.secondPlace } }
+    //           : {}),
+    //         ...(result3.thirdPlace
+    //           ? { thirdPlace: { ...result3.thirdPlace } }
+    //           : {}),
+    //       },
+    //     }
+    //   : {}),
+    // ...(result4
+    //   ? {
+    //       result4: {
+    //         ...result4,
+    //         firstPlace: { ...result4.firstPlace },
+    //         ...(result4.secondPlace
+    //           ? { secondPlace: { ...result4.secondPlace } }
+    //           : {}),
+    //         ...(result4.thirdPlace
+    //           ? { thirdPlace: { ...result4.thirdPlace } }
+    //           : {}),
+    //       },
+    //     }
+    //   : {}),
   });
 
   return result
