@@ -5,6 +5,7 @@ import Result from "../models/result_schema";
 const createResult = (req: Request, res: Response) => {
   const { fastLap, hardCharger, result1, result2, result3, result4 } =
     req.body.results;
+  const { entry } = hardCharger;
   const result = new Result({
     ...req.body.results,
     fastLap: { ...fastLap },
@@ -13,12 +14,12 @@ const createResult = (req: Request, res: Response) => {
           hardCharger: {
             ...hardCharger,
             entry: {
-              ...hardCharger.entry,
+              ...entry,
               driver1: {
-                ...req.body.driver1,
+                ...entry.driver1,
               },
-              ...(req.body.driver2 ? { driver2: { ...req.body.driver2 } } : {}),
-              ...(req.body.driver3 ? { driver3: { ...req.body.driver3 } } : {}),
+              ...(entry.driver2 ? { driver2: { ...entry.driver2 } } : {}),
+              ...(entry.driver3 ? { driver3: { ...entry.driver3 } } : {}),
             },
           },
         }
