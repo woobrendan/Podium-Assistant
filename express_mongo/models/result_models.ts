@@ -6,7 +6,7 @@ interface FastLapInterface {
   laptime: string;
 }
 
-interface HardChargerInterface {
+export interface HardChargerInterface {
   entry: EntryInterface;
   gain: number;
 }
