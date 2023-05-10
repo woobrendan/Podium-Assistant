@@ -5,12 +5,13 @@ const resultsSlice = createSlice({
   name: "results",
   initialState: {
     resultsArray: [],
-    recentPodium: {},
+    recentPodium: null,
   },
   reducers: {
     setResultHistory(state, action) {
       state.resultsArray = action.payload;
     },
+
     addResults(state, action) {
       const result = action.payload;
       state.resultsArray.push({
@@ -18,6 +19,10 @@ const resultsSlice = createSlice({
       });
       state.recentPodium = result;
       addResultToDB(result);
+    },
+
+    setRecentPodium(state, action) {
+      state.recentPodium = action.payload;
     },
     editresults(state, action) {},
   },
