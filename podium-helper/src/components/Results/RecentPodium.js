@@ -6,12 +6,9 @@ import "../../Styling/result.scss";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchData } from "../../store/resultsActions";
 
-function RecentPodium() {
+const RecentPodium = () => {
   const dispatch = useDispatch();
   const recentResult = useSelector((state) => state.results.recentPodium);
-  // const results = useSelector((state) => state.results.resultsArray);
-  // const recent = results[results.length - 1];
-  // console.log("recent result", recentResult);
 
   useEffect(() => {
     dispatch(fetchData());
@@ -25,9 +22,8 @@ function RecentPodium() {
       {recentResult && (
         <ResultTableHeader results={recentResult} recent={true} />
       )}
-      {/* <ResultTableHeader results={recentResult} recent={true} /> */}
     </div>
   );
-}
+};
 
 export default RecentPodium;
