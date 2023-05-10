@@ -8,6 +8,14 @@ const mongoResult = (results, fastLap) => {
       driver: fastLap.driver,
       laptime: fastLap.laptime,
     },
+    ...(hardCharger
+      ? {
+          hardCharger: {
+            ...hardCharger,
+            entry: { ...hardCharger.entry },
+          },
+        }
+      : {}),
     result1: {
       class: result1.class,
       firstPlace: {
@@ -18,14 +26,6 @@ const mongoResult = (results, fastLap) => {
       },
     },
   };
-
-  //** Check if Hard Charger */
-  if (hardCharger) {
-    copy.hardCharger = {
-      ...hardCharger,
-      entry: { ...hardCharger.entry },
-    };
-  }
 
   //checking result 1 for second or third drivers
   if (result1.firstPlace.driver2) {
@@ -146,6 +146,16 @@ const placementResult = (placeRes) => {
     number,
     vehicle,
     team,
+  };
+};
+
+const buildFullResult = (result) => {
+  const { firstPlace, secondPlace, thirdPlace } = result;
+  return {
+    ...result,
+    firstPlace: placementResult(firstPlace),
+    ...(secondPlace ? { secondPlace: { ...secondPlace } } : {}),
+    ...(thirdPlace ? { thirdPlace: { ...thirdPlace } } : {}),
   };
 };
 
