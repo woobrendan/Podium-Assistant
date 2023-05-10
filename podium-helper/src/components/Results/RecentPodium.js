@@ -11,18 +11,21 @@ function RecentPodium() {
   const recentResult = useSelector((state) => state.results.recentPodium);
   // const results = useSelector((state) => state.results.resultsArray);
   // const recent = results[results.length - 1];
+  // console.log("recent result", recentResult);
 
-  // useEffect(() => {
-  //   dispatch(fetchData());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(fetchData());
+  }, [dispatch]);
 
   return (
     <div className="recent-podium-container">
       <Button onClick={() => printPage()} variant="contained" color="success">
         Print Page
       </Button>
-      {/* {recent && <ResultTableHeader results={recentResult} recent={true} />} */}
-      <ResultTableHeader results={recentResult} recent={true} />
+      {recentResult && (
+        <ResultTableHeader results={recentResult} recent={true} />
+      )}
+      {/* <ResultTableHeader results={recentResult} recent={true} /> */}
     </div>
   );
 }
