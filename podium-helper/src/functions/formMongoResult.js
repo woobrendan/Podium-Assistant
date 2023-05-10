@@ -23,8 +23,8 @@ const placementResult = (placeRes) => {
   const { driver1, driver2, driver3, number, vehicle, team } = placeRes;
   return {
     driver1: driver1.name,
-    ...(driver2 ? { driver2: { ...driver2 } } : {}),
-    ...(driver3 ? { driver2: { ...driver3 } } : {}),
+    ...(driver2 ? { driver2: driver2.name } : {}),
+    ...(driver3 ? { driver3: driver3.name } : {}),
     number,
     vehicle,
     team,
