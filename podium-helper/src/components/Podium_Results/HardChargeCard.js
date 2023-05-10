@@ -48,9 +48,9 @@ const HardChargeCard = ({ series, handleSubmit }) => {
             >
               {entries
                 .filter((entry) => entry.series === series.name)
-                .map((entry) => {
+                .map((entry, index) => {
                   return (
-                    <MenuItem key={entry.number} value={entry.number}>
+                    <MenuItem key={index} value={entry.number}>
                       #{entry.number} - {entry.driver1.name}{" "}
                       {entry.driver2 ? `& ${entry.driver2.name}` : " "}
                     </MenuItem>
