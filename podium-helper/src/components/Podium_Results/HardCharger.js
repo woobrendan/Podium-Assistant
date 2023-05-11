@@ -1,7 +1,6 @@
 import { TableCell, TableHead, TableRow, TableBody } from "@mui/material";
 
 const HardCharger = ({ hardCharger }) => {
-  console.log(hardCharger);
   const { gain, entry } = hardCharger;
   let driverStr = `${entry.driver1.name}`;
 
@@ -28,11 +27,20 @@ const HardCharger = ({ hardCharger }) => {
       </TableHead>
       <TableBody>
         <TableRow>
-          <TableCell component="th" scope="row" colSpan={3}>
+          <TableCell component="th" scope="row" colSpan={2}>
             {driverStr}
           </TableCell>
-          <TableCell align="right" colSpan={4}>
-            {gain}
+          <TableCell align="left" colSpan={1}>
+            #{entry.number}
+          </TableCell>
+          <TableCell align="right" colSpan={1}>
+            {entry.team}
+          </TableCell>
+          <TableCell align="right" colSpan={1}>
+            {entry.vehicle}
+          </TableCell>
+          <TableCell align="right" colSpan={2}>
+            +{gain}
           </TableCell>
         </TableRow>
       </TableBody>
