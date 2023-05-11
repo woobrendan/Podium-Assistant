@@ -1,6 +1,18 @@
-import { TableCell, TableHead, TableRow } from "@mui/material";
+import { TableCell, TableHead, TableRow, TableBody } from "@mui/material";
 
-const HardCharger = () => {
+const HardCharger = ({ hardCharger }) => {
+  console.log(hardCharger);
+  const { gain, entry } = hardCharger;
+  let driverStr = `${entry.driver1.name}`;
+
+  if (entry.driver2) {
+    driverStr += ` & ${entry.driver2.name}`;
+  }
+
+  if (entry.driver3) {
+    driverStr += ` & ${entry.driver3.name}`;
+  }
+
   return (
     <>
       <TableHead>
@@ -14,6 +26,16 @@ const HardCharger = () => {
           </TableCell>
         </TableRow>
       </TableHead>
+      <TableBody>
+        <TableRow>
+          <TableCell component="th" scope="row" colSpan={3}>
+            {driverStr}
+          </TableCell>
+          <TableCell align="right" colSpan={4}>
+            {gain}
+          </TableCell>
+        </TableRow>
+      </TableBody>
     </>
   );
 };
