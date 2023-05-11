@@ -6,14 +6,8 @@ const HardCharger = ({ hardCharger }) => {
   const { series, number, team, vehicle } = entry;
 
   let driverStr = `${entry.driver1.name}`;
-
-  if (entry.driver2) {
-    driverStr += ` & ${entry.driver2.name}`;
-  }
-
-  if (entry.driver3) {
-    driverStr += ` & ${entry.driver3.name}`;
-  }
+  driverStr += entry.driver2 ? ` & ${entry.driver2.name}` : "";
+  driverStr += entry.driver3 ? ` & ${entry.driver3.name}` : "";
 
   return (
     <>
