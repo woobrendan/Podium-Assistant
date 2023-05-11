@@ -30,4 +30,4 @@ const getResult = (result) => {
   };
 };
 
-module.exports = formSQLPodium;
+export default formSQLPodium;
