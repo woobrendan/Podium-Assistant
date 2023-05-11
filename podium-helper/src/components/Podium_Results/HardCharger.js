@@ -1,7 +1,10 @@
 import { TableCell, TableHead, TableRow, TableBody } from "@mui/material";
+import { grCup } from "../../functions/helperFunc";
 
 const HardCharger = ({ hardCharger }) => {
   const { gain, entry } = hardCharger;
+  const { series, number, team, vehicle } = entry;
+
   let driverStr = `${entry.driver1.name}`;
 
   if (entry.driver2) {
@@ -18,7 +21,7 @@ const HardCharger = ({ hardCharger }) => {
         <TableRow>
           <TableCell colSpan={2}>Driver</TableCell>
           <TableCell colSpan={3} align="center">
-            E-Boost Hard Charger
+            {series === grCup ? "Hard Charger" : "E-Boost Hard Charger"}
           </TableCell>
           <TableCell align="right" colSpan={2}>
             Positions Gained
@@ -31,15 +34,15 @@ const HardCharger = ({ hardCharger }) => {
             {driverStr}
           </TableCell>
           <TableCell align="left" colSpan={1}>
-            #{entry.number}
-          </TableCell>
-          <TableCell align="right" colSpan={1}>
-            {entry.team}
-          </TableCell>
-          <TableCell align="right" colSpan={1}>
-            {entry.vehicle}
+            #{number}
           </TableCell>
           <TableCell align="right" colSpan={2}>
+            {team}
+          </TableCell>
+          <TableCell align="right" colSpan={1}>
+            {vehicle}
+          </TableCell>
+          <TableCell align="right" colSpan={1}>
             +{gain}
           </TableCell>
         </TableRow>
