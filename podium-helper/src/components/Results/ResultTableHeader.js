@@ -67,7 +67,7 @@ const ResultTableHeader = ({ results }) => {
         {result3 && <ResultTableBody results={result3} />}
         {result4 && <ResultTableBody results={result4} />}
         <FastLapTable fastLap={fastLap} series={series} />
-        {hardCharger && <HardCharger />}
+        {hardCharger && <HardCharger hardCharger={hardCharger} />}
       </Table>
     </TableContainer>
   );
