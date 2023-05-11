@@ -13,9 +13,18 @@ import "../../Styling/result.scss";
 import { dateToString } from "../../functions/helperFunc";
 import HardCharger from "../Podium_Results/HardCharger";
 
-const ResultTableHeader = ({ results, recent }) => {
-  const podium1 = results.result1;
-  const { event, series, date, fastLap } = results;
+const ResultTableHeader = ({ results }) => {
+  const {
+    event,
+    series,
+    date,
+    fastLap,
+    result1,
+    result2,
+    result3,
+    result4,
+    hardCharger,
+  } = results;
 
   return (
     <TableContainer component={Paper} id="result-table-container">
@@ -23,7 +32,7 @@ const ResultTableHeader = ({ results, recent }) => {
         <TableHead className="result-table-head">
           <TableRow>
             <TableCell
-              colSpan={podium1.firstPlace.driver3 ? 4 : 3}
+              colSpan={result1.firstPlace.driver3 ? 4 : 3}
               align="center"
             >
               {event}
@@ -41,10 +50,10 @@ const ResultTableHeader = ({ results, recent }) => {
             <TableCell>Place</TableCell>
             <TableCell align="right">#</TableCell>
             <TableCell align="right">Driver 1</TableCell>
-            {podium1.firstPlace.driver2 && (
+            {result1.firstPlace.driver2 && (
               <TableCell align="right">Driver 2</TableCell>
             )}
-            {podium1.firstPlace.driver3 ? (
+            {result1.firstPlace.driver3 ? (
               <TableCell align="right">Driver 3</TableCell>
             ) : (
               <TableCell align="right"></TableCell>
@@ -54,11 +63,11 @@ const ResultTableHeader = ({ results, recent }) => {
           </TableRow>
         </TableHead>
         <ResultTableBody results={results.result1} />
-        {results.result2 && <ResultTableBody results={results.result2} />}
-        {results.result3 && <ResultTableBody results={results.result3} />}
-        {results.result4 && <ResultTableBody results={results.result4} />}
+        {result2 && <ResultTableBody results={result2} />}
+        {result3 && <ResultTableBody results={result3} />}
+        {result4 && <ResultTableBody results={result4} />}
         <FastLapTable fastLap={fastLap} series={series} />
-        {recent && <HardCharger />}
+        {hardCharger && <HardCharger />}
       </Table>
     </TableContainer>
   );
