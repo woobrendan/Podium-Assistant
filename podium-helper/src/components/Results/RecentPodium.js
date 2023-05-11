@@ -19,9 +19,7 @@ const RecentPodium = () => {
       <Button onClick={() => printPage()} variant="contained" color="success">
         Print Page
       </Button>
-      {recentResult && (
-        <ResultTableHeader results={recentResult} recent={true} />
-      )}
+      {recentResult && <ResultTableHeader results={recentResult} />}
     </div>
   );
 };
