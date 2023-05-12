@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import axios from "axios";
+import { sortSeriesNames } from "../../functions/sortFuncs";
 
 const Series = ({ getValue, comp }) => {
   const [seriesName, setSeriesName] = useState("");
@@ -10,10 +11,9 @@ const Series = ({ getValue, comp }) => {
     const getAndSetSeries = async () => {
       try {
         const seriesList = await axios.get("http://localhost:2020/api/series");
+        const sortedSeries = seriesList.data.series.sort(sortSeriesNames);
         const list =
-          comp === "entryManager"
-            ? ["All", ...seriesList.data.series]
-            : seriesList.data.series;
+          comp === "entryManager" ? ["All", ...sortedSeries] : sortedSeries;
         setSeries(list);
       } catch (err) {
         console.error(err);
