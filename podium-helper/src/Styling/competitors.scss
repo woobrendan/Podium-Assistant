@@ -34,20 +34,22 @@
       .MuiPaper-root {
         background: inherit;
         min-width: 600px;
-      }
-
-      .MuiTypography-h2 {
+        color: rgba(250, 21, 21, 0.795);
         font-weight: bold;
-      }
 
-      .MuiTypography-body2 {
-        font-size: 20px;
-      }
+        img {
+          object-fit: contain;
+          background-color: white;
+          height: 140px;
+        }
 
-      img {
-        object-fit: contain;
-        background-color: white;
-        height: 140px;
+        h2 {
+          font-size: 3.5vw;
+        }
+
+        h5 {
+          font-size: 2vw;
+        }
       }
     }
 
