@@ -33,6 +33,7 @@
 
       .MuiPaper-root {
         background: inherit;
+        min-width: 600px;
       }
 
       .MuiTypography-h2 {
@@ -46,6 +47,7 @@
       img {
         object-fit: contain;
         background-color: white;
+        height: 140px;
       }
     }
 
