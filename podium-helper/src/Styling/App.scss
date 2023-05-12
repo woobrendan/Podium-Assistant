@@ -12,33 +12,10 @@
     }
   }
 
-  .No-Result {
-    height: 100vh;
-    margin-top: 10%;
-
-    .MuiPaper-root {
-      background: inherit;
-    }
-
-    .MuiTypography-h2 {
-      font-weight: bold;
-    }
-
-    .MuiTypography-body2 {
-      font-size: 20px;
-    }
-    
-    img {
-      object-fit: contain;
-      background-color: white;
-    }
-  }
-
   .filter-details {
-    display: flex;  
+    display: flex;
     justify-content: space-around;
   }
-
 }
 
 .App-logo {
