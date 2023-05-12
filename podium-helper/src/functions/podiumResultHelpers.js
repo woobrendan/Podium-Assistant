@@ -3,26 +3,16 @@ import WinnerPodium from "../components/Podium_Results/WinnerPodium";
 
 //determine if entry is single or two drivers and return corresponding menu item
 const numOfDriverMenuItem = (entry, index) => {
-  if (!entry.driver2) {
-    return (
-      <MenuItem key={index} value={entry}>
-        #{entry.number} - {entry.driver1.name}
-      </MenuItem>
-    );
-  } else if (entry.driver2 && !entry.driver3) {
-    return (
-      <MenuItem key={index} value={entry}>
-        #{entry.number} - {entry.driver1.name} & {entry.driver2.name}
-      </MenuItem>
-    );
-  } else {
-    return (
-      <MenuItem key={index} value={entry}>
-        #{entry.number} - {entry.driver1.name} & {entry.driver2.name} &{" "}
-        {entry.driver3.name}
-      </MenuItem>
-    );
-  }
+  const { driver1, driver2, driver3, number } = entry;
+  let driverStr = `#${number} - ${driver1.name}`;
+  driverStr += driver2 ? ` & ${driver2.name}` : "";
+  driverStr += driver3 ? ` & ${driver3.name}` : "";
+
+  return (
+    <MenuItem key={index} value={entry}>
+      {driverStr}
+    </MenuItem>
+  );
 };
 
 //dynamically render appropriate amount of WinnerPodium components based on need per series class requirements
