@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, CardMedia } from "@mui/material";
+import { Card, CardContent, CardMedia } from "@mui/material";
 import missing from "../images/Missing_car.png";
 
 const NoResults = () => {
@@ -7,12 +7,10 @@ const NoResults = () => {
       <Card>
         <CardMedia component="img" image={missing} alt="No Vehicles Found" />
         <CardContent>
-          <Typography gutterBottom variant="h2" component="div" color="error">
-            No Results Found
-          </Typography>
-          <Typography variant="body2" color="error">
+          <h2>No Results Found</h2>
+          <h5>
             We couldn't find what you were searching for. Try searching again
-          </Typography>
+          </h5>
         </CardContent>
       </Card>
     </div>
