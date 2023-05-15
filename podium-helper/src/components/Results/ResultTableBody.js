@@ -33,6 +33,7 @@ const ResultTableBody = ({ results }) => {
       if (num === 2) return "3rd";
     };
 
+    //** Loop through each placemnt, if that place exists create the data and push that arr */
     const placements = [firstPlace, secondPlace, thirdPlace];
     placements.forEach((placement, index) => {
       if (placement) {
