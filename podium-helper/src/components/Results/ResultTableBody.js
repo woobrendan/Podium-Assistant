@@ -9,6 +9,27 @@ function createDataSingleDriver(place, number, driver1, team, car) {
   return { place, number, driver1, team, car };
 }
 
+const createDriverData = (
+  place,
+  number,
+  driver1,
+  team,
+  car,
+  driver2 = null,
+  driver3 = null,
+) => {
+  const data = { place, number, driver1, team, car };
+  if (driver2) {
+    data.driver2 = driver2;
+  }
+
+  if (driver3) {
+    data.driver3 = driver3;
+  }
+
+  return data;
+};
+
 const createDataThreeDriver = (
   place,
   number,
@@ -21,7 +42,7 @@ const createDataThreeDriver = (
   return { place, number, driver1, driver2, driver3, team, car };
 };
 
-export default function ResultTableBbody({ results }) {
+const ResultTableBody = ({ results }) => {
   const first = results.firstPlace;
   const second = results.secondPlace;
   const third = results.thirdPlace;
@@ -175,4 +196,6 @@ export default function ResultTableBbody({ results }) {
       </TableBody>
     </>
   );
-}
+};
+
+export default ResultTableBody;
