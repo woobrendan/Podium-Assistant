@@ -52,6 +52,26 @@ const ResultTableBody = ({ results }) => {
     return allResults;
   };
 
+  const placementRows = checkPodium().map((row, index) => {
+    const { place, number, driver1, driver2, driver3, team, car } = row;
+    return (
+      <TableRow
+        key={index}
+        sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
+      >
+        <TableCell component="th" scope="row">
+          {place}
+        </TableCell>
+        <TableCell align="left">{number}</TableCell>
+        <TableCell align="right">{driver1}</TableCell>
+        <TableCell align="right">{driver2 ? driver2 : ""}</TableCell>
+        {driver3 && <TableCell align="right">{driver3}</TableCell>}
+        <TableCell align="right">{team}</TableCell>
+        <TableCell align="right">{car}</TableCell>
+      </TableRow>
+    );
+  });
+
   return (
     <>
       <TableHead>
@@ -61,28 +81,7 @@ const ResultTableBody = ({ results }) => {
           </TableCell>
         </TableRow>
       </TableHead>
-      <TableBody>
-        {checkPodium().map((row, index) => (
-          <TableRow
-            key={index}
-            sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-          >
-            <TableCell component="th" scope="row">
-              {row.place}
-            </TableCell>
-            <TableCell align="right">{row.number}</TableCell>
-            <TableCell align="right">{row.driver1}</TableCell>
-            {row.driver2 && <TableCell align="right">{row.driver2}</TableCell>}
-            {row.driver3 ? (
-              <TableCell align="right">{row.driver3}</TableCell>
-            ) : (
-              <TableCell align="right">{}</TableCell>
-            )}
-            <TableCell align="right">{row.team}</TableCell>
-            <TableCell align="right">{row.car}</TableCell>
-          </TableRow>
-        ))}
-      </TableBody>
+      <TableBody>{placementRows}</TableBody>
     </>
   );
 };
