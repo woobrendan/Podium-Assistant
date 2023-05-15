@@ -24,7 +24,7 @@ const HardCharger = ({ hardCharger }) => {
       </TableHead>
       <TableBody>
         <TableRow>
-          <TableCell component="th" scope="row" colSpan={2}>
+          <TableCell component="th" scope="row" colSpan={1}>
             {driverStr}
           </TableCell>
           <TableCell align="left" colSpan={1}>
