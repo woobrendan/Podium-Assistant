@@ -37,7 +37,7 @@ const ResultTableHeader = ({ results }) => {
             >
               {event}
             </TableCell>
-            <TableCell colSpan={2} align="center">
+            <TableCell colSpan={2} align="right">
               {series}
             </TableCell>
             <TableCell colSpan={2} align="right">
@@ -48,15 +48,13 @@ const ResultTableHeader = ({ results }) => {
         <TableHead>
           <TableRow>
             <TableCell>Place</TableCell>
-            <TableCell align="right">#</TableCell>
+            <TableCell align="left">#</TableCell>
             <TableCell align="right">Driver 1</TableCell>
-            {result1.firstPlace.driver2 && (
-              <TableCell align="right">Driver 2</TableCell>
-            )}
-            {result1.firstPlace.driver3 ? (
+            <TableCell align="right">
+              {result1.firstPlace.driver2 ? "Driver2" : ""}
+            </TableCell>
+            {result1.firstPlace.driver3 && (
               <TableCell align="right">Driver 3</TableCell>
-            ) : (
-              <TableCell align="right"></TableCell>
             )}
             <TableCell align="right">Team</TableCell>
             <TableCell align="right">Vehicle</TableCell>
