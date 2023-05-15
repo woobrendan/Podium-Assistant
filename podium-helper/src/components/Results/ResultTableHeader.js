@@ -26,15 +26,14 @@ const ResultTableHeader = ({ results }) => {
     hardCharger,
   } = results;
 
+  const { driver2, driver3 } = result1.firstPlace;
+
   return (
     <TableContainer component={Paper} id="result-table-container">
       <Table>
         <TableHead className="result-table-head">
           <TableRow>
-            <TableCell
-              colSpan={result1.firstPlace.driver3 ? 4 : 3}
-              align="center"
-            >
+            <TableCell colSpan={driver3 ? 4 : 3} align="center">
               {event}
             </TableCell>
             <TableCell colSpan={2} align="right">
@@ -50,12 +49,8 @@ const ResultTableHeader = ({ results }) => {
             <TableCell>Place</TableCell>
             <TableCell align="left">#</TableCell>
             <TableCell align="right">Driver 1</TableCell>
-            <TableCell align="right">
-              {result1.firstPlace.driver2 ? "Driver2" : ""}
-            </TableCell>
-            {result1.firstPlace.driver3 && (
-              <TableCell align="right">Driver 3</TableCell>
-            )}
+            <TableCell align="right">{driver2 ? "Driver2" : ""}</TableCell>
+            {driver3 && <TableCell align="right">Driver 3</TableCell>}
             <TableCell align="right">Team</TableCell>
             <TableCell align="right">Vehicle</TableCell>
           </TableRow>
