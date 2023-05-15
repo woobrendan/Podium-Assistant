@@ -27,45 +27,27 @@ const ResultTableBody = ({ results }) => {
 
   const checkPodium = () => {
     const allResults = [];
-    const first = [
-      "1st",
-      firstPlace.number,
-      firstPlace.driver1,
-      firstPlace.team,
-      firstPlace.vehicle,
-      firstPlace.driver2 ? firstPlace.driver2 : null,
-      firstPlace.driver3 ? firstPlace.driver3 : null,
-    ];
+    const getPlaceString = (num) => {
+      if (num === 0) return "1st";
+      if (num === 1) return "2nd";
+      if (num === 2) return "3rd";
+    };
 
-    allResults.push(createDriverData(...first));
-
-    if (secondPlace) {
-      const second = [
-        "2nd",
-        secondPlace.number,
-        secondPlace.driver1,
-        secondPlace.team,
-        secondPlace.vehicle,
-        secondPlace.driver2 ? secondPlace.driver2 : null,
-        secondPlace.driver3 ? secondPlace.driver3 : null,
-      ];
-
-      allResults.push(createDriverData(...second));
-    }
-
-    if (thirdPlace) {
-      const third = [
-        "3rd",
-        thirdPlace.number,
-        thirdPlace.driver1,
-        thirdPlace.team,
-        thirdPlace.vehicle,
-        thirdPlace.driver2 ? thirdPlace.driver2 : null,
-        thirdPlace.driver3 ? thirdPlace.driver3 : null,
-      ];
-
-      allResults.push(createDriverData(...third));
-    }
+    const placements = [firstPlace, secondPlace, thirdPlace];
+    placements.forEach((placement, index) => {
+      if (placement) {
+        const placementInfo = [
+          getPlaceString(index),
+          placement.number,
+          placement.driver1,
+          placement.team,
+          placement.vehicle,
+          placement.driver2 ? placement.driver2 : null,
+          placement.driver3 ? placement.driver3 : null,
+        ];
+        allResults.push(createDriverData(...placementInfo));
+      }
+    });
 
     return allResults;
   };
