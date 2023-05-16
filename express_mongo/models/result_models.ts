@@ -2,7 +2,7 @@ import { EntryInterface } from "./models";
 
 interface FastLapInterface {
   driver: string;
-  vehicle: string;
+  entry: EntryInterface;
   laptime: string;
 }
 
