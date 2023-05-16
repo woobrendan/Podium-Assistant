@@ -6,6 +6,8 @@ const FastLapTable = ({ fastLap, series }) => {
   const fastTitle = series === grCup ? "Fast Lap" : "CrowdStrike Fast Lap";
   const { driver, laptime, entry } = fastLap;
 
+  // Conditional render on entry for new results that use the entry value, whereas old results do not have entry value
+
   return (
     <>
       <TableHead>
