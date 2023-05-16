@@ -5,7 +5,7 @@ import { grCup } from "../../functions/helperFunc";
 const FastLapTable = ({ fastLap, series }) => {
   const fastTitle = series === grCup ? "Fast Lap" : "CrowdStrike Fast Lap";
   const { driver, laptime, entry } = fastLap;
-  const { number, team, vehicle } = entry;
+
   return (
     <>
       <TableHead>
@@ -21,19 +21,23 @@ const FastLapTable = ({ fastLap, series }) => {
       </TableHead>
       <TableBody>
         <TableRow>
-          <TableCell component="th" scope="row" colSpan={1}>
+          <TableCell component="th" scope="row" colSpan={entry ? 1 : 3}>
             {driver}
           </TableCell>
-          <TableCell align="left" colSpan={1}>
-            #{number}
-          </TableCell>
-          <TableCell align="right" colSpan={2}>
-            {team}
-          </TableCell>
-          <TableCell align="right" colSpan={1}>
-            {vehicle}
-          </TableCell>
-          <TableCell align="right" colSpan={1}>
+          {entry && (
+            <>
+              <TableCell align="left" colSpan={1}>
+                #{entry.number}
+              </TableCell>
+              <TableCell align="right" colSpan={2}>
+                {entry.team}
+              </TableCell>
+              <TableCell align="right" colSpan={1}>
+                {entry.vehicle}
+              </TableCell>
+            </>
+          )}
+          <TableCell align="right" colSpan={entry ? 1 : 3}>
             {laptime}
           </TableCell>
         </TableRow>
