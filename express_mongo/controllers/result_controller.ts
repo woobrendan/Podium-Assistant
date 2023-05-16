@@ -1,21 +1,27 @@
 import { Request, Response } from "express";
-import mongoose from "mongoose";
 import Result from "../models/result_schema";
 import { resultBuilder, hardChargeResult } from "../functions/helperFunc";
-import { ResultInterface } from "../models/result_models";
+import {
+  FastLapInterface,
+  HardChargerInterface,
+  ResultInterface,
+} from "../models/result_models";
 
 const createResult = (req: Request, res: Response) => {
-  const { fastLap, hardCharger } = req.body.results;
   const {
     result1,
     result2,
     result3,
     result4,
+    fastLap,
+    hardCharger,
   }: {
     result1: ResultInterface;
     result2?: ResultInterface;
     result3?: ResultInterface;
     result4?: ResultInterface;
+    fastLap: FastLapInterface;
+    hardCharger: HardChargerInterface;
   } = req.body.results;
 
   const result = new Result({
