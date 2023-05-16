@@ -55,6 +55,17 @@ const Podium = () => {
   const handleRacePodiumSubmit = (value, resultNumber) => {
     switch (resultNumber) {
       case "fastLap":
+        const entryVal = entries
+          // get matching series entries only
+          .filter((entry) => results.series.name === entry.series)
+          // loop through those entries, set drivers val to an array of driver objects, then find matching name
+          .find((entry) => {
+            const drivers = Object.values(entry).filter(
+              (val) => typeof val === "object",
+            );
+            return drivers.some((driver) => driver.name === value.driver);
+          });
+
         setResults((prev) => ({
           ...prev,
           fastLap: value,
