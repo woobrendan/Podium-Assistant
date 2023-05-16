@@ -68,7 +68,10 @@ const Podium = () => {
 
         setResults((prev) => ({
           ...prev,
-          fastLap: value,
+          fastLap: {
+            ...value,
+            entry: entryVal,
+          },
         }));
         break;
 
