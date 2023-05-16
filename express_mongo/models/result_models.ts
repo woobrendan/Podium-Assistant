@@ -1,6 +1,6 @@
 import { EntryInterface } from "./models";
 
-interface FastLapInterface {
+export interface FastLapInterface {
   driver: string;
   entry: EntryInterface;
   laptime: string;
