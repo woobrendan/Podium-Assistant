@@ -3,7 +3,7 @@ const mongoResult = (results, fastLap) => {
   return {
     ...results,
     series: series.name,
-    fastLap: { ...fastLap },
+    fastLap: { ...fastLap, entry: { ...fastLap.entry } },
     ...(hardCharger
       ? {
           hardCharger: {
