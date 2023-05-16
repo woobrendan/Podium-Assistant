@@ -10,7 +10,7 @@ const resultSchema: Schema = new Schema({
   event: { type: String, required: true },
   fastLap: {
     driver: { type: String, required: true },
-    vehicle: { type: String },
+    entry: { type: entrySchema },
     laptime: { type: String, required: true },
   },
   hardCharger: {
