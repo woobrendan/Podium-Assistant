@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    // <div className="nav-bar">
     <Box sx={{ flexGrow: 1 }} className="nav-bar">
       <AppBar position="static" sx={{ bgcolor: "#FF0000" }}>
         <Toolbar>
@@ -22,7 +21,6 @@ const NavBar = () => {
         </Toolbar>
       </AppBar>
     </Box>
-    // </div>
   );
 };
 
