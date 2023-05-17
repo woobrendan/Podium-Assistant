@@ -2072,7 +2072,7 @@
   {
     "team": "Nitro Motorsports",
     "driver1": {
-      "name": "William Sawalich",
+      "name": "Jesse Love Jr",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2212,7 +2212,7 @@
   {
     "team": "Pura Vida Team",
     "driver1": {
-      "name": "Amadeo Quiros",
+      "name": "Amadeo Quiros Martén",
       "nationality": "Costa Rica",
       "rating": "N/A"
     },
@@ -2667,6 +2667,20 @@
     "number": "34",
     "carImage": "",
     "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Eagles Canyon Racing",
+    "driver1": {
+      "name": "Andrew Gilleland",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "86",
+    "carImage": "",
+    "series": "Toyota GR Cup",
     "year": 2023
   }
 ]
