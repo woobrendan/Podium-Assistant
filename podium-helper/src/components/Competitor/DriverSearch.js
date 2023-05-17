@@ -26,8 +26,6 @@ const DriverSearch = () => {
 
   const entries = useSelector((state) => state.entry.entriesArray);
 
-  const getSortOption = (option) => setOption(option);
-
   const searchResult = searchAllEntries(entries, searchValue);
 
   const setSortOption = (sortOption, entryArray) => {
@@ -57,7 +55,10 @@ const DriverSearch = () => {
   return (
     <div className="competitors-container">
       <div className="search-sort-options">
-        <ToggleSort getOption={getSortOption} component="competitor" />
+        <ToggleSort
+          getOption={(option) => setOption(option)}
+          component="competitor"
+        />
         <TextField
           className="competitor_search"
           label="Search"
