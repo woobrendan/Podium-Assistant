@@ -442,7 +442,7 @@
   {
     "team": "OnlyFans Racing w/ P1 Groupe by MRS",
     "driver1": {
-      "name": "Alex Vogel",
+      "name": "Peter Pejascevich",
       "nationality": "USA",
       "rating": "Bronze"
     },
@@ -2526,6 +2526,48 @@
     "number": "09",
     "carImage": "",
     "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "James Sofronas",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Audi R8 LMS GT3 EVO II",
+    "classification": "SRO3",
+    "number": "14",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "James Sofronas",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Audi R8 LMS GT3 EVO II",
+    "classification": "Masters",
+    "number": "14",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Fast Track Racing",
+    "driver1": {
+      "name": "John Roberts",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "GT4",
+    "number": "11",
+    "carImage": "",
+    "series": "GT America",
     "year": 2023
   }
 ]
