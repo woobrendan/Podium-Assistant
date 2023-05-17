@@ -1444,7 +1444,7 @@
   {
     "team": "AutoTechnic Racing",
     "driver1": {
-      "name": "John Dubets",
+      "name": "John Capestro Dubets",
       "nationality": "USA",
       "rating": "Silver"
     },
@@ -2568,6 +2568,58 @@
     "number": "11",
     "carImage": "",
     "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Jay Logan",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "GT4",
+    "number": "71",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Flying Lizard Motorsports",
+    "driver1": {
+      "name": "Jason Bell",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Michael Cooper",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Pro-Am",
+    "number": "2",
+    "carImage": "https://www.gtamerica.us/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F76%2F398%2F%2F080422_NSHVL_bcpix2480122.jpg",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Jay Logan",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Alec Udell",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS Clubsport",
+    "classification": "Pro-Am",
+    "number": "71",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
     "year": 2023
   }
 ]
