@@ -21,7 +21,7 @@ mongoose
     startServer();
   })
   .catch((error) => {
-    console.log("Error connecting to server");
+    console.log("Error connecting to server: ", error);
   });
 
 //** Only Start Server if Mongo Connects */
