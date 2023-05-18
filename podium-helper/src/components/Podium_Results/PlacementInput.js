@@ -9,7 +9,7 @@ const PlacementInput = ({
   boxNum,
 }) => {
   return (
-    <Box data-testid={`${name}_podium_${boxNum}`}>
+    <Box data-testid={`${name}_podium_${boxNum}`} className="placement_input">
       <FormControl sx={{ minWidth: 300 }}>
         <InputLabel>{label}</InputLabel>
         <Select
