@@ -27,5 +27,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    .placement_input {
+      .MuiFormControl-root {
+        min-width: 300px;
+      }
+    }
   }
 }
