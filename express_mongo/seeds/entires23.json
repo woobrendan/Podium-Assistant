@@ -2263,8 +2263,7 @@
     "number": "68",
     "carImage": "",
     "series": "Toyota GR Cup",
-    "year": 2023,
-    "isFemale": true
+    "year": 2023
   },
   {
     "team": "OpenRoad Racing",
@@ -2679,6 +2678,20 @@
     "vehicle": "Toyota GR86",
     "classification": "Am", 
     "number": "86",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Smooge Racing",
+    "driver1": {
+      "name": "Mia Lovell",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Female", 
+    "number": "68",
     "carImage": "",
     "series": "Toyota GR Cup",
     "year": 2023
