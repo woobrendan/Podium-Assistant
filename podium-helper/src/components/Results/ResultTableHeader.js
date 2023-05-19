@@ -10,7 +10,7 @@ import {
 import ResultTableBody from "./ResultTableBody";
 import FastLapTable from "../Podium_Results/FastLapTable";
 import "../../Styling/result.scss";
-import { dateToString } from "../../functions/helperFunc";
+import { dateToString } from "../../functions/dateFuncs";
 import HardCharger from "../Podium_Results/HardCharger";
 
 const ResultTableHeader = ({ results }) => {
