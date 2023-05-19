@@ -71,18 +71,27 @@ const shortenName = (series) => {
   }
 };
 
+const shortMyName= (seriesName) => {
+  const obj = {
+    "GT World Challenge America": "GTWCA",
+    "GT America": "GTA",
+    "TC America": "TCAM",
+    "Pirelli GT4 America": "PGT4A",
+    "Toyota GR Cup": "GR Cup",
+    "Intercontinental GT Challenge": "IGTC"
+  }
+  return obj[seriesName]
+}
+
 const gtwca = "GT World Challenge America";
 const tcam = "TC America";
-const gtam = "GT America";
 const gt4a = "Pirelli GT4 America";
 const igtc = "Intercontinental GT Challenge";
 const grCup = "Toyota GR Cup";
 
 export {
-  getIdFromArray,
   getToday,
   printPage,
-  getVehicleId,
   compareDate,
   compareCarNumber,
   gtwca,
