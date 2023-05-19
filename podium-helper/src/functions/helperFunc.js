@@ -1,20 +1,3 @@
-// use to get driver and event ID based on given name as string
-const getIdFromArray = (name, arr) => {
-  for (const val of arr) {
-    if (val.name === name) {
-      return val.id;
-    }
-  }
-};
-
-const getVehicleId = (num, vehicles) => {
-  for (const vehicle of vehicles) {
-    if (vehicle.number === num) {
-      return vehicle.id;
-    }
-  }
-};
-
 const getToday = () => {
   let today = new Date();
   const dd = String(today.getDate()).padStart(2, "0");
