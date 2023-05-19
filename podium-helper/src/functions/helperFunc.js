@@ -52,36 +52,17 @@ const dateToString = (date) => {
   return `${monthName} ${day}, ${Number(dateArr[2])}`;
 };
 
-const shortenName = (series) => {
-  switch (series) {
-    case "GT World Challenge America":
-      return "GTWCA";
-    case "GT America":
-      return "GTA";
-    case "Pirelli GT4 America":
-      return "PGT4A";
-    case "TC America":
-      return "TCAM";
-    case "Intercontinental GT Challenge":
-      return "IGTC";
-    case "Toyota GR Cup":
-      return "GR Cup";
-    default:
-      return "SRO";
-  }
-};
-
-const shortMyName= (seriesName) => {
+const shortenName = (seriesName) => {
   const obj = {
     "GT World Challenge America": "GTWCA",
     "GT America": "GTA",
     "TC America": "TCAM",
     "Pirelli GT4 America": "PGT4A",
     "Toyota GR Cup": "GR Cup",
-    "Intercontinental GT Challenge": "IGTC"
-  }
-  return obj[seriesName]
-}
+    "Intercontinental GT Challenge": "IGTC",
+  };
+  return obj[seriesName];
+};
 
 const gtwca = "GT World Challenge America";
 const tcam = "TC America";
