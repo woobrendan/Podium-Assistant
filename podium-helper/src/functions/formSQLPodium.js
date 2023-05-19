@@ -1,5 +1,3 @@
-// import { getIdFromArray, getVehicleId } from "./helperFunc";
-
 // use to get driver and event ID based on given name as string
 const getIdFromArray = (name, arr) => {
   for (const val of arr) {
