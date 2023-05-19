@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { getToday } from "./helperFunc";
+import { getToday } from "./dateFuncs";
 import { compareByDate } from "./sortFuncs";
 
 const useEvents = () => {
