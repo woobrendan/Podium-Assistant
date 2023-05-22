@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { getToday } from "../../src/functions/helperFunc";
+import { getToday } from "../../src/functions/dateFuncs";
 
 describe("Creating New Podiums", () => {
   const formatDate = () => {
