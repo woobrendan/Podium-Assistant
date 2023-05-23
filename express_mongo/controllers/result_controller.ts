@@ -7,6 +7,7 @@ import {
   ResultInterface,
 } from "../models/result_models";
 
+//** CREATE ROUTE HANDLER */
 const createResult = (req: Request, res: Response) => {
   const {
     result1,
@@ -42,12 +43,14 @@ const createResult = (req: Request, res: Response) => {
     .catch((error) => res.status(500).json({ error }));
 };
 
+//** GET ALL ROUTE HANDLER */
 const getAllResults = async (req: Request, res: Response) => {
   return Result.find()
     .then((results) => res.status(201).json({ results }))
     .catch((error) => res.status(500).json({ error }));
 };
 
+//** GET BY ID ROUTE HANDLER */
 const getResultById = async (req: Request, res: Response) => {
   const resultId = req.params.resultId;
   try {
@@ -60,6 +63,7 @@ const getResultById = async (req: Request, res: Response) => {
   }
 };
 
+//** EDIT / UPDATE ROUTE HANDLER */
 const updateResult = async (req: Request, res: Response) => {
   const resultId = req.params.resultId;
   return Result.findById(resultId)
@@ -77,6 +81,7 @@ const updateResult = async (req: Request, res: Response) => {
     .catch((error) => res.status(500).json({ error }));
 };
 
+//** DELETE ROUTE HANDLER */
 const deleteResult = (req: Request, res: Response) => {
   const resultId = req.params.resultId;
   return Result.findByIdAndDelete(resultId)
