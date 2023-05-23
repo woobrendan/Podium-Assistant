@@ -13,7 +13,11 @@ import { useSelector } from "react-redux";
 import { grCup } from "../../functions/helperFunc";
 
 const HardChargeCard = ({ series, handleSubmit }) => {
-  const [hardCharge, setHardCharge] = useState({ entryNum: "", gain: "" });
+  const [hardCharge, setHardCharge] = useState({
+    entryNum: "",
+    startPos: "",
+    gain: "",
+  });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const entries = useSelector((state) => state.entry.entriesArray);
@@ -63,7 +67,14 @@ const HardChargeCard = ({ series, handleSubmit }) => {
         <Box className="hard_charger__input podium_card__input">
           <TextField
             id="outlined"
-            label="Positions Gained"
+            label="Starting Position"
+            name="startPos"
+            value={hardCharge.startPos}
+            onChange={handleChange}
+          />
+          <TextField
+            id="outlined"
+            label="Gain"
             name="gain"
             value={hardCharge.gain}
             onChange={handleChange}
