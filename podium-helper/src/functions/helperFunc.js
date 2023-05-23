@@ -36,6 +36,7 @@ const shortenName = (seriesName) => {
 
 const gtwca = "GT World Challenge America";
 const tcam = "TC America";
+const gtam = "GT America";
 const gt4a = "Pirelli GT4 America";
 const igtc = "Intercontinental GT Challenge";
 const grCup = "Toyota GR Cup";
