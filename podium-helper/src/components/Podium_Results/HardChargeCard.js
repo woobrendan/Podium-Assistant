@@ -48,6 +48,7 @@ const HardChargeCard = ({ series, handleSubmit }) => {
             >
               {entries
                 .filter((entry) => entry.series === series.name)
+                .sort((a, b) => a.number - b.number)
                 .map((entry, index) => {
                   return (
                     <MenuItem key={index} value={entry.number}>
