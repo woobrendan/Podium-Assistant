@@ -83,7 +83,11 @@ const Podium = () => {
 
         setResults((prev) => ({
           ...prev,
-          hardCharger: { entry, gain: Number(value.gain) },
+          hardCharger: {
+            entry,
+            gain: Number(value.gain),
+            startPos: Number(value.startPos),
+          },
         }));
         break;
 
