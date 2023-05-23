@@ -9,6 +9,7 @@ export interface FastLapInterface {
 export interface HardChargerInterface {
   entry: EntryInterface;
   gain: number;
+  startPos: number;
 }
 
 interface EntryResultInterfance {
