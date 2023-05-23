@@ -3,7 +3,7 @@ import { grCup } from "../../functions/helperFunc";
 
 const HardCharger = ({ hardCharger }) => {
   const { gain, entry } = hardCharger;
-  const { series, number, team, vehicle } = entry;
+  const { series, number, team, vehicle, startPos } = entry;
 
   let driverStr = `${entry.driver1.name}`;
   driverStr += entry.driver2 ? ` & ${entry.driver2.name}` : "";
@@ -14,10 +14,13 @@ const HardCharger = ({ hardCharger }) => {
       <TableHead>
         <TableRow>
           <TableCell colSpan={2}>Driver</TableCell>
-          <TableCell colSpan={3} align="center">
+          <TableCell colSpan={2} align="center">
             {series === grCup ? "Hard Charger" : "E-Boost Hard Charger"}
           </TableCell>
-          <TableCell align="right" colSpan={2}>
+          <TableCell align="right" colSpan={1}>
+            Start Position
+          </TableCell>
+          <TableCell align="right" colSpan={1}>
             Positions Gained
           </TableCell>
         </TableRow>
@@ -30,12 +33,17 @@ const HardCharger = ({ hardCharger }) => {
           <TableCell align="left" colSpan={1}>
             #{number}
           </TableCell>
-          <TableCell align="right" colSpan={2}>
+          <TableCell align="right" colSpan={1}>
             {team}
           </TableCell>
           <TableCell align="right" colSpan={1}>
             {vehicle}
           </TableCell>
+          {startPos && (
+            <TableCell align="right" colSpan={1}>
+              {startPos}
+            </TableCell>
+          )}
           <TableCell align="right" colSpan={1}>
             +{gain}
           </TableCell>
