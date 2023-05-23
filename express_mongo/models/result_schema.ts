@@ -16,6 +16,7 @@ const resultSchema: Schema = new Schema({
   hardCharger: {
     entry: { type: entrySchema },
     gain: { type: Number },
+    startPos: { type: Number },
   },
   result1: {
     class: { type: String, required: true },
