@@ -2,7 +2,7 @@ import { Modal, Box, Button } from "@mui/material";
 import { useState } from "react";
 import EditVehicle from "./EditVehicle";
 import EditDriver from "./EditDriver";
-import Series from "../Podium_Results/Series";
+import Series from "../Podium_Creation/Series";
 import { gtwca, gt4a } from "../../functions/helperFunc";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
