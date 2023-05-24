@@ -2,7 +2,7 @@ import EntryTable from "./EntryTable";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { fetchEntry } from "../../store/entryActions";
-import Series from "../Podium_Results/Series";
+import Series from "../Podium_Creation/Series";
 import "../../Styling/entryManager.scss";
 import { Button, TextField } from "@mui/material";
 import AddEntry from "./AddEntry";
