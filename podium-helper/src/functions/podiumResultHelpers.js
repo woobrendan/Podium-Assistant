@@ -1,5 +1,5 @@
 import { MenuItem } from "@mui/material";
-import WinnerPodium from "../components/Podium_Results/WinnerPodium";
+import WinnerPodium from "../components/Podium_Creation/WinnerPodium";
 
 //determine if entry is single or two drivers and return corresponding menu item
 const numOfDriverMenuItem = (entry, index) => {
