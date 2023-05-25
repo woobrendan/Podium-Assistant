@@ -22,13 +22,21 @@ const HardCharger = ({ hardCharger }) => {
       <TableHead>
         <TableRow>
           <TableCell colSpan={startPos ? 3 : 2}>Driver</TableCell>
-          {!startPos && <TableCell colSpan={1}>Team</TableCell>}
-          <TableCell align="right" colSpan={1}>
-            Start Position
-          </TableCell>
-          <TableCell align="right" colSpan={1}>
-            Finish Position
-          </TableCell>
+          {!startPos ? (
+            <>
+              <TableCell colSpan={2}>Team</TableCell>
+              <TableCell colSpan={1}>Vehicle</TableCell>
+            </>
+          ) : (
+            <>
+              <TableCell align="right" colSpan={1}>
+                Start Position
+              </TableCell>
+              <TableCell align="right" colSpan={1}>
+                Finish Position
+              </TableCell>
+            </>
+          )}
           <TableCell align="right" colSpan={1}>
             Positions Gained
           </TableCell>
@@ -43,7 +51,7 @@ const HardCharger = ({ hardCharger }) => {
             #{number}
           </TableCell>
           {!startPos && (
-            <TableCell align="right" colSpan={1}>
+            <TableCell align="left" colSpan={2}>
               {team}
             </TableCell>
           )}
