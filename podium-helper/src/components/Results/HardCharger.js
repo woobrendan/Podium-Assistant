@@ -8,6 +8,7 @@ const HardCharger = ({ hardCharger }) => {
   let driverStr = `${entry.driver1.name}`;
   driverStr += entry.driver2 ? ` & ${entry.driver2.name}` : "";
   driverStr += entry.driver3 ? ` & ${entry.driver3.name}` : "";
+  const finishPos = startPos - gain;
 
   return (
     <>
@@ -20,12 +21,16 @@ const HardCharger = ({ hardCharger }) => {
       </TableHead>
       <TableHead>
         <TableRow>
-          <TableCell colSpan={2}>Driver</TableCell>
+          <TableCell colSpan={1}>Driver</TableCell>
           <TableCell colSpan={1} align="left">
-            Num
+            #
           </TableCell>
+          <TableCell colSpan={1}>Team</TableCell>
           <TableCell align="right" colSpan={1}>
             Start Position
+          </TableCell>
+          <TableCell align="right" colSpan={1}>
+            Finish Position
           </TableCell>
           <TableCell align="right" colSpan={1}>
             Positions Gained
