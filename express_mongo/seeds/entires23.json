@@ -1885,7 +1885,7 @@
   {
     "team": "TRG - The Racers Group",
     "driver1": {
-      "name": "Tim Vantage",
+      "name": "Tim Savage",
       "nationality": "USA",
       "rating": "Bronze"
     },
@@ -2440,9 +2440,9 @@
       "nationality": "USA",
       "rating": "Bronze"
     },
-    "vehicle": "Ferrari 458 Italia",
+    "vehicle": "Audi R8 LMS",
     "classification": "SRO3",
-    "number": "56",
+    "number": "3",
     "carImage": "",
     "series": "GT America",
     "year": 2023
@@ -2454,9 +2454,9 @@
       "nationality": "USA",
       "rating": "Bronze"
     },
-    "vehicle": "Ferrari 458 Italia",
+    "vehicle": "Audi R8 LMS",
     "classification": "Masters",
-    "number": "56",
+    "number": "3",
     "carImage": "",
     "series": "GT America",
     "year": 2023
@@ -2713,6 +2713,34 @@
     "number": "096",
     "carImage": "",
     "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "Turner Motorsports",
+    "driver1": {
+      "name": "Vincent Barletta",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "SRO3",
+    "number": "096",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "CJ Moses",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Audi R8 LMS GT2",
+    "classification": "GT2",
+    "number": "58",
+    "carImage": "",
+    "series": "GT America",
     "year": 2023
   }
 ]
