@@ -59,9 +59,9 @@
   {
     "team": "TR3 Racing",
     "driver1": {
-      "name": "Ziad Ghandour",
+      "name": "Kenton Koch",
       "nationality": "USA",
-      "rating": "Bronze"
+      "rating": "Silver"
     },
     "driver2": {
       "name": "Daniel Morad",
@@ -69,7 +69,7 @@
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT3",
-    "classification": "Pro-Am",
+    "classification": "Pro",
     "number": "9",
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_2788__FL.jpg",
     "series": "GT World Challenge America",
@@ -211,17 +211,17 @@
   {
     "team": "RealTime Racing",
     "driver1": {
-      "name": "Andy Pilgrim",
-      "nationality": "USA",
-      "rating": "Bronze"
-    },
-    "driver2": {
       "name": "Anthony Bartone",
       "nationality": "USA",
       "rating": "Bronze"
     },
+    "driver2": {
+      "name": "Adam Christodoulou",
+      "nationality": "Great Britain",
+      "rating": "Gold"
+    },
     "vehicle": "Mercedes-AMG GT3",
-    "classification": "Am",
+    "classification": "Pro-Am",
     "number": "43",
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_3300__FL.jpg",
     "series": "GT World Challenge America",
@@ -2694,6 +2694,25 @@
     "number": "68",
     "carImage": "",
     "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Turner Motorsports",
+    "driver1": {
+      "name": "Vincent Barletta",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Robby Foley",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "Pro-Am",
+    "number": "096",
+    "carImage": "",
+    "series": "GT World Challenge America",
     "year": 2023
   }
 ]
