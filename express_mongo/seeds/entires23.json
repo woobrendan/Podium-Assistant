@@ -1164,7 +1164,7 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "Tony Ave",
+      "name": "Isabella Robusto",
       "nationality": "USA",
       "rating": "Bronze"
     },
@@ -1254,7 +1254,7 @@
   {
     "team": "STR38 Motorsports",
     "driver1": {
-      "name": "Jon Miller",
+      "name": "Harry Gottsacker",
       "nationality": "USA",
       "rating": "Silver"
     },
@@ -1590,7 +1590,7 @@
   {
     "team": "LA Honda World Racing",
     "driver1": {
-      "name": "Kyle Loh",
+      "name": "William Tally",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2741,6 +2741,20 @@
     "number": "58",
     "carImage": "",
     "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Rockwell Autosport Development",
+    "driver1": {
+      "name": "Eric Rockwell",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Hyundai Veloster Turbo TCA",
+    "classification": "TC",
+    "number": "15",
+    "carImage": "",
+    "series": "TC America",
     "year": 2023
   }
 ]
