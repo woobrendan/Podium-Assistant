@@ -197,9 +197,9 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "John Edwards",
+      "name": "Neil Verhagen",
       "nationality": "USA",
-      "rating": "Platinum"
+      "rating": "Gold"
     },
     "vehicle": "BMW M4 GT3",
     "classification": "Pro-Am",
@@ -442,7 +442,7 @@
   {
     "team": "OnlyFans Racing w/ P1 Groupe by MRS",
     "driver1": {
-      "name": "Peter Pejascevich",
+      "name": "Alex Vogel",
       "nationality": "USA",
       "rating": "Bronze"
     },
@@ -1045,17 +1045,17 @@
   {
     "team": "Rooster Hall Racing",
     "driver1": {
-      "name": "Colin Garrett",
-      "nationality": "USA",
-      "rating": "Bronze*"
-    },
-    "driver2": {
       "name": "Johan Schwartz",
       "nationality": "Denmark",
       "rating": "Bronze"
     },
+    "driver2": {
+      "name": "Colin Garrett",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
     "vehicle": "BMW M4 GT4",
-    "classification": "Am",
+    "classification": "Pro-Am",
     "number": "44",
     "carImage": "",
     "series": "Pirelli GT4 America",
@@ -2002,7 +2002,7 @@
   {
     "team": "Smooge Racing",
     "driver1": {
-      "name": "Isabella Robusto",
+      "name": "Will Robusto",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2755,6 +2755,25 @@
     "number": "15",
     "carImage": "",
     "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "Rooster Hall Racing",
+    "driver1": {
+      "name": "Michael Dayton",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Jason Griscavage",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "44",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
     "year": 2023
   }
 ]
