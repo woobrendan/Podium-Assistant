@@ -2775,5 +2775,19 @@
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
+  },
+  {
+    "team": "Flatrock Motorsports",
+    "driver1": {
+      "name": "Rusty Bittle",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
+    "classification": "GT4",
+    "number": "7",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
   }
 ]
