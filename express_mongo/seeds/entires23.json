@@ -641,6 +641,25 @@
     "year": 2023
   },
   {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Todd Parriott",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Tom Dyer",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "000",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
     "team": "TR3 Racing",
     "driver1": {
       "name": "Paul Kiebler",
@@ -1052,19 +1071,19 @@
     "year": 2023
   },
   {
-    "team": "Conquest Racing",
+    "team": "Conquest Racing/JMF Motorsports",
     "driver1": {
       "name": "Custodio Toledo",
       "nationality": "Brazil",
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "Paulo Carcasci",
-      "nationality": "Brazil",
-      "rating": "Am"
+      "name": "Cedric Sbirrazzuoli",
+      "nationality": "Monaco",
+      "rating": "Silver"
     },
     "vehicle": "Mercedes-AMG GT4",
-    "classification": "Am",
+    "classification": "Pro-Am",
     "number": "35",
     "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F68%2F370%2F%2F072322_WGI_bcpix2472370.jpg",
     "series": "Pirelli GT4 America",
@@ -1541,6 +1560,25 @@
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "Pro-Am",
     "number": "428",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "van der Steur Racing",
+    "driver1": {
+      "name": "Rory van der Steur",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Jamie Day",
+      "nationality": "Great Britain",
+      "rating": "Silver"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "Silver",
+    "number": "119",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
@@ -2910,6 +2948,25 @@
     "number": "86",
     "carImage": "",
     "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Crucial Motorsports",
+    "driver1": {
+      "name": "Kaia Teo",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Nick Longhi",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT4",
+    "classification": "Am",
+    "number": "000",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
     "year": 2023
   }
 ]
