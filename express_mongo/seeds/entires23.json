@@ -2044,13 +2044,27 @@
   {
     "team": "RVA Graphics Motorsports by Speed Syndicate",
     "driver1": {
-      "name": "Jack Woodfin",
+      "name": "Farrin Davis",
       "nationality": "USA",
       "rating": "N/A"
     },
     "vehicle": "Toyota GR86",
     "classification": "Am",
     "number": "11",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "BSI Racing",
+    "driver1": {
+      "name": "Jordan Segrini",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am",
+    "number": "18",
     "carImage": "",
     "series": "Toyota GR Cup",
     "year": 2023
@@ -2224,7 +2238,7 @@
     "year": 2023
   },
   {
-    "team": "Smooge Racing",
+    "team": "Precision Racing LA",
     "driver1": {
       "name": "Jaxon Bell",
       "nationality": "USA",
