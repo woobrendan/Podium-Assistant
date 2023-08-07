@@ -230,9 +230,9 @@
   {
     "team": "Wright Motorsports",
     "driver1": {
-      "name": "Charlie Luck",
+      "name": "Madison Snow",
       "nationality": "USA",
-      "rating": "Bronze"
+      "rating": "Silver"
     },
     "driver2": {
       "name": "Jan Heylen",
@@ -240,9 +240,28 @@
       "rating": "Gold"
     },
     "vehicle": "Porsche 911 GT3-R (991.ii)",
-    "classification": "Pro-Am",
+    "classification": "Pro",
     "number": "45",
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_3060__FL.jpg",
+    "series": "GT World Challenge America",
+    "year": 2023
+  },
+  {
+    "team": "TR3 Racing",
+    "driver1": {
+      "name": "Paul Kiebler",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Jon Branam",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Am",
+    "number": "77",
+    "carImage": "",
     "series": "GT World Challenge America",
     "year": 2023
   },
@@ -964,6 +983,25 @@
     "number": "32",
     "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10948_RL_Sonomaf.jpg",
     "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Kyle Washington",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "James Sofronas",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche GT3 R 992",
+    "classification": "Am",
+    "number": "32",
+    "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10948_RL_Sonomaf.jpg",
+    "series": "GT World Challenge America",
     "year": 2023
   },
   {
@@ -2086,7 +2124,7 @@
   {
     "team": "Nitro Motorsports",
     "driver1": {
-      "name": "Taylor Gray",
+      "name": "Brent Crews",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2800,6 +2838,34 @@
     "vehicle": "Porsche 718 Cayman GT4 Clubsport MR",
     "classification": "GT4",
     "number": "7",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "CDR Valkyrie",
+    "driver1": {
+      "name": "Amir Haleem",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Nissan GT-R Nismo GT3",
+    "classification": "SRO3",
+    "number": "66",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "CDR Valkyrie",
+    "driver1": {
+      "name": "Brian Lock",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Acura NSX GT3 EVO22",
+    "classification": "SRO3",
+    "number": "86",
     "carImage": "",
     "series": "GT America",
     "year": 2023
