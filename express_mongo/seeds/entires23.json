@@ -613,6 +613,34 @@
     "year": 2023
   },
   {
+    "team": "Archangel Motorsports",
+    "driver1": {
+      "name": "Scott Blind",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "045",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "GMG Racing",
+    "driver1": {
+      "name": "Todd Parriott",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "000",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
     "team": "TR3 Racing",
     "driver1": {
       "name": "Paul Kiebler",
@@ -1515,6 +1543,20 @@
     "number": "428",
     "carImage": "",
     "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "van der Steur Racing",
+    "driver1": {
+      "name": "Brady Behrman",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT4",
+    "classification": "GT4",
+    "number": "428",
+    "carImage": "",
+    "series": "GT America",
     "year": 2023
   },
   {
