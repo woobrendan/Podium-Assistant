@@ -1708,7 +1708,7 @@
   {
     "team": "LA Honda World Racing",
     "driver1": {
-      "name": "William Tally",
+      "name": "Matthew Pombo",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -1960,7 +1960,7 @@
   {
     "team": "MINI JCW Team",
     "driver1": {
-      "name": "Landon Lewis",
+      "name": "Bruce Myrehn",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2801,6 +2801,20 @@
     "year": 2023
   },
   {
+    "team": "AOA Racing",
+    "driver1": {
+      "name": "Clifton Lipple",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TC",
+    "number": "808",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
     "team": "Eagles Canyon Racing",
     "driver1": {
       "name": "Andrew Gilleland",
@@ -2967,6 +2981,20 @@
     "number": "000",
     "carImage": "",
     "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Kaplan Racing Systems",
+    "driver1": {
+      "name": "Aaron Kaplan",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "SRO3",
+    "number": "18",
+    "carImage": "",
+    "series": "TC America",
     "year": 2023
   }
 ]
