@@ -59,9 +59,9 @@
   {
     "team": "TR3 Racing",
     "driver1": {
-      "name": "Kenton Koch",
+      "name": "Ziad Ghandour",
       "nationality": "USA",
-      "rating": "Silver"
+      "rating": "Bronze"
     },
     "driver2": {
       "name": "Daniel Morad",
@@ -69,7 +69,7 @@
       "rating": "Gold"
     },
     "vehicle": "Mercedes-AMG GT3",
-    "classification": "Pro",
+    "classification": "Pro-Am",
     "number": "9",
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_2788__FL.jpg",
     "series": "GT World Challenge America",
@@ -635,7 +635,7 @@
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
-    "number": "000",
+    "number": "13",
     "carImage": "",
     "series": "GT America",
     "year": 2023
@@ -654,7 +654,7 @@
     },
     "vehicle": "Aston Martin Vantage AMR GT4",
     "classification": "GT4",
-    "number": "000",
+    "number": "13",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
@@ -1040,12 +1040,12 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "James Sofronas",
+      "name": "Jereon Bleekemolen",
       "nationality": "USA",
       "rating": "Bronze"
     },
     "vehicle": "Porsche GT3 R 992",
-    "classification": "Am",
+    "classification": "Pro-Am",
     "number": "32",
     "carImage": "https://www.gt4-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2022%2F65%2F348%2F%2F10948_RL_Sonomaf.jpg",
     "series": "GT World Challenge America",
@@ -1406,7 +1406,7 @@
       "rating": "Silver"
     },
     "vehicle": "BMW M4 GT4",
-    "classification": "Silver   ",
+    "classification": "Silver",
     "number": "92",
     "carImage": "",
     "series": "Pirelli GT4 America",
@@ -2978,7 +2978,7 @@
     },
     "vehicle": "BMW M4 GT4",
     "classification": "Am",
-    "number": "000",
+    "number": "80",
     "carImage": "",
     "series": "Pirelli GT4 America",
     "year": 2023
