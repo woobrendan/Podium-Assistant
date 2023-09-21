@@ -26,8 +26,8 @@
       "rating": "Bronze"
     },
     "driver2": {
-      "name": "Valentin Hasse Clot",
-      "nationality": "France",
+      "name": "Ross Gunn",
+      "nationality": "Great Britain",
       "rating": "Gold"
     },
     "vehicle": "Aston Martin Vantage AMR GT3",
@@ -2162,7 +2162,7 @@
   {
     "team": "RVA Graphics Motorsports by Speed Syndicate",
     "driver1": {
-      "name": "Jack Woodfin",
+      "name": "Farran Davis",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2204,7 +2204,7 @@
   {
     "team": "Nitro Motorsports",
     "driver1": {
-      "name": "Taylor Crews",
+      "name": "Corey Heim",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2364,7 +2364,7 @@
     },
     "vehicle": "Toyota GR86",
     "classification": "Am", 
-    "number": "66",
+    "number": "2",
     "carImage": "",
     "series": "Toyota GR Cup",
     "year": 2023
@@ -2993,6 +2993,53 @@
     "vehicle": "BMW M2 CS (Cup)",
     "classification": "SRO3",
     "number": "18",
+    "carImage": "",
+    "series": "TC America",
+    "year": 2023
+  },
+  {
+    "team": "BGB Motorsports",
+    "driver1": {
+      "name": "Thomas Collingwood",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "GT4",
+    "number": "81",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "BGB Motorsports",
+    "driver1": {
+      "name": "Thomas Collingwood",
+      "nationality": "Canada",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "John Tecce",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Porsche 718 Cayman GT4 RS CS",
+    "classification": "Am",
+    "number": "81",
+    "carImage": "",
+    "series": "Pirelli GT4 America",
+    "year": 2023
+  },
+  {
+    "team": "Extreme Velocity Motorsports",
+    "driver1": {
+      "name": "Joseph Pizzuto",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "BMW M2 CS (Cup)",
+    "classification": "TC America",
+    "number": "45",
     "carImage": "",
     "series": "TC America",
     "year": 2023
