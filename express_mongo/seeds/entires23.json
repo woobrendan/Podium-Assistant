@@ -3043,5 +3043,101 @@
     "carImage": "",
     "series": "TC America",
     "year": 2023
+  },
+  {
+    "team": "Grove Racing",
+    "driver1": {
+      "name": "Stephen Grove",
+      "nationality": "AUS",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Brenton Grove",
+      "nationality": "AUS",
+      "rating": "Silver"
+    },
+    "driver3": {
+      "name": "Earl Bamber",
+      "nationality": "NZL",
+      "rating": "Platinum"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Pro-Am",
+    "number": "4",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Crowdstrike by Riley",
+    "driver1": {
+      "name": "George Kurtz",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Colin Braun",
+      "nationality": "USA",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Nolan Siegel",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "04",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F336%2F%2FSRO23_SON_1959__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "TRG - The Racers Group",
+    "driver1": {
+      "name": "Derek DeBoer",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Valentin Hasse-Clot",
+      "nationality": "FRA",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Ben Tuck",
+      "nationality": "GBR",
+      "rating": "Silver"
+    },
+    "vehicle": "Aston Martin Vantage AMR GT3",
+    "classification": "Pro-Am",
+    "number": "007",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_2832__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "DXDT Racing",
+    "driver1": {
+      "name": "Scott Smithson",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Bryan Sellers",
+      "nationality": "USA",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Thomas Sargent",
+      "nationality": "AUS",
+      "rating": "Silver"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "08",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_3301__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
   }
 ]
