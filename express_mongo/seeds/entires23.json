@@ -3284,4 +3284,148 @@
     "series": "Intercontinental GT Challenge",
     "year": 2023
   },
+  {
+    "team": "Team WRT",
+    "driver1": {
+      "name": "Augusto Farfus",
+      "nationality": "BRA",
+      "rating": "Platinum"
+    },
+    "driver2": {
+      "name": "Charles Weerts",
+      "nationality": "BEL",
+      "rating": "Platinum"
+    },
+    "driver3": {
+      "name": "Maxime Martin",
+      "nationality": "BEL",
+      "rating": "Platinum"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "IGTC Pro",
+    "number": "31",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Triarsi Competizione",
+    "driver1": {
+      "name": "Justin Wetherill",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Ryan Dalziel",
+      "nationality": "Scotland",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Onofrio Triarsi",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Ferrari 296 GT3",
+    "classification": "Pro-Am",
+    "number": "33",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F336%2F%2FSRO23_SON_1907__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "ST Racing",
+    "driver1": {
+      "name": "Samantha Tan",
+      "nationality": "Canada",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Neil Verhagen",
+      "nationality": "USA",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Jake Walker",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "Pro-Am",
+    "number": "38",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F336%2F%2FSRO23_SON_1918__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Wright Motorsports",
+    "driver1": {
+      "name": "Madison Snow",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Jan Heylen",
+      "nationality": "Belgium",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Trent Hindman",
+      "nationality": "USA",
+      "rating": "Gold"
+    },
+    "vehicle": "Porsche GT3 992",
+    "classification": "FGTWCA Pro",
+    "number": "45",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_3060__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "MDK Motorsports",
+    "driver1": {
+      "name": "Trenton Estep",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Seth Lucas",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver3": {
+      "name": "TBC",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Porsche GT3 992",
+    "classification": "FGTWCA Pro",
+    "number": "53",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F335%2F%2FSRO23_SON_1596__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Mercedes-AMG Team Craft Bamboo Racing",
+    "driver1": {
+      "name": "Maximilian Götz",
+      "nationality": "DEU",
+      "rating": "Platinum"
+    },
+    "driver2": {
+      "name": "Jules Gounon",
+      "nationality": "FRA",
+      "rating": "Platinum"
+    },
+    "driver3": {
+      "name": "Raffaele Marciello",
+      "nationality": "ITA",
+      "rating": "Platinum"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "IGTC Pro",
+    "number": "77",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F335%2F%2FSRO23_SON_1596__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  }
 ]
