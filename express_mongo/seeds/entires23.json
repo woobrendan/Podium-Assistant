@@ -3427,5 +3427,149 @@
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F335%2F%2FSRO23_SON_1596__FL.jpg",
     "series": "Intercontinental GT Challenge",
     "year": 2023
+  },
+  {
+    "team": "DXDT Racing",
+    "driver1": {
+      "name": "Jeff Burton",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Corey Lewis",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver3": {
+      "name": "Philip Ellis",
+      "nationality": "GBR",
+      "rating": "Gold"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Pro-Am",
+    "number": "91",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F336%2F%2FSRO23_SON_1952__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Racers Edge Motorsports",
+    "driver1": {
+      "name": "Ashton Harrison",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Mario Farnbacher",
+      "nationality": "Germany",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "TBC",
+      "nationality": "Germany",
+      "rating": "Gold"
+    },
+    "vehicle": "Acura NSX GT3",
+    "classification": "FGTWCA Pro",
+    "number": "93",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_2779__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "BimmerWorld",
+    "driver1": {
+      "name": "Chandler Hull",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Bill Auberlen",
+      "nationality": "USA",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Robby Foley",
+      "nationality": "USA",
+      "rating": "Gold"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "FGTWCA Pro",
+    "number": "94",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F335%2F%2FSRO23_SON_1615__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Wright Motorsports",
+    "driver1": {
+      "name": "Adam Adelson",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Elliott Skeer",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver3": {
+      "name": "Callum Benjamin Ilott",
+      "nationality": "GBR",
+      "rating": "Platinum"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "Pro-Am",
+    "number": "120",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F84%2F343%2F%2FSRO23_NOLA_1151__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Sky Tempesta Racing",
+    "driver1": {
+      "name": "Jonathan Hui",
+      "nationality": "HKG",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Christopher Froggatt",
+      "nationality": "GBR",
+      "rating": "Silver"
+    },
+    "driver3": {
+      "name": "Edward Cheever III",
+      "nationality": "ITA",
+      "rating": "Gold"
+    },
+    "vehicle": "Ferrari 4888 GT3 Evo",
+    "classification": "Pro-Am",
+    "number": "535",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Mercedes-AMG Team Gruppe M Racing",
+    "driver1": {
+      "name": "Maro Engel",
+      "nationality": "DEU",
+      "rating": "Platinum"
+    },
+    "driver2": {
+      "name": "Daniel Juncadella",
+      "nationality": "ESP",
+      "rating": "Platinum"
+    },
+    "driver3": {
+      "name": "Luca Stolz",
+      "nationality": "DEU",
+      "rating": "Platinum"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "IGTC Pro",
+    "number": "999",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
   }
 ]
