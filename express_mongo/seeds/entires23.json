@@ -3139,5 +3139,149 @@
     "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_3301__FL.jpg",
     "series": "Intercontinental GT Challenge",
     "year": 2023
-  }
+  },
+  {
+    "team": "TR3 Racing",
+    "driver1": {
+      "name": "Paul Kiebler",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Jon Branam",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "driver3": {
+      "name": "Matt Bell",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Mercedes-AMG GT3",
+    "classification": "Am",
+    "number": "77",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Conquest Racing",
+    "driver1": {
+      "name": "Manny Franco",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Alessandro Balzan",
+      "nationality": "Italy",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Lilou Wadoux-Ducellier",
+      "nationality": "FRA",
+      "rating": "Silver"
+    },
+    "vehicle": "Ferrari 296 GT3",
+    "classification": "FGTWCA Pro",
+    "number": "21",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_2770__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Rearden Racing",
+    "driver1": {
+      "name": "Jake Pedersen",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Vesko Kozarov",
+      "nationality": "BGR",
+      "rating": "Silver"
+    },
+    "driver3": {
+      "name": "Christian Engelhart",
+      "nationality": "DEU",
+      "rating": "Gold"
+    },
+    "vehicle": "Porsche GT3 R 992",
+    "classification": "FGTWCA Pro",
+    "number": "85",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Huber Motorsport",
+    "driver1": {
+      "name": "Antares Au",
+      "nationality": "HKG",
+      "rating": "Bronze"
+    },
+    "driver2": {
+      "name": "Laurin Heinrich",
+      "nationality": "DEU",
+      "rating": "Silver"
+    },
+    "driver3": {
+      "name": "Alfred Renaauer",
+      "nationality": "DEU",
+      "rating": "Gold"
+    },
+    "vehicle": "Porsche GT3 R 992",
+    "classification": "Pro-Am",
+    "number": "20",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "RS1",
+    "driver1": {
+      "name": "Eric Filgueiras",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "driver2": {
+      "name": "Stevan McAleer",
+      "nationality": "Great Britain",
+      "rating": "Gold"
+    },
+    "driver3": {
+      "name": "Klaus Bachler",
+      "nationality": "AUT",
+      "rating": "Platinum"
+    },
+    "vehicle": "Porsche 911 GT3-R (991.ii)",
+    "classification": "FGTWCA Pro",
+    "number": "28",
+    "carImage": "https://www.gt-world-challenge-america.com/timthumb.php?w=800&src=%2Fimages%2Fgallery%2F2023%2F83%2F339%2F%2FSRO23_SON_2796__FL.jpg",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
+  {
+    "team": "Team WRT",
+    "driver1": {
+      "name": "Philipp Eng",
+      "nationality": "AUT",
+      "rating": "Platinum"
+    },
+    "driver2": {
+      "name": "Dries Vanthoor",
+      "nationality": "BEL",
+      "rating": "Platinum"
+    },
+    "driver3": {
+      "name": "Sheldon Van Der Linde",
+      "nationality": "ZAF",
+      "rating": "Platinum"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "IGTC Pro",
+    "number": "30",
+    "carImage": "",
+    "series": "Intercontinental GT Challenge",
+    "year": 2023
+  },
 ]
