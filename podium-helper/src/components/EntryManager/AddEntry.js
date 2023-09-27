@@ -21,16 +21,14 @@ const AddEntry = ({ show, handleToggle }) => {
     const dispatch = useDispatch();
     const customSetError = (err) => setError(err);
     const series = newEntry.series;
-    const driverPair = series === gtwca || series === gt4a ? "duo" : "single";
 
-    const numOfDrivers = "";
-    if (series === gtwca || series === gt4a) {
-        numOfDriver = "duo";
-    } else if (series === " Intercontinental GT Challenge") {
-        numOfDriver = "trio";
-    } else {
-        numOfDriver = single;
-    }
+    const driverPair = {
+        [gtwca]: "duo",
+        [gt4a]: "duo",
+        "Intercontinental GT Challenge": "trio",
+    };
+
+    const numOfDrivers = driverPair[series] || "single";
 
     const onInputChange = (e) => {
         setNewEntry((prev) => ({
