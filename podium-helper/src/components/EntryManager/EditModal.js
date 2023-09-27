@@ -78,20 +78,20 @@ const EditModal = ({ entry, handleToggle, show }) => {
                     <EditDriver
                         entry={modalEntry}
                         onChange={onDriverChange}
-                        driver="1"
+                        driverNum="1"
                     />
                     {modalEntry.driver2 && (
                         <EditDriver
                             entry={modalEntry}
                             onChange={onDriverChange}
-                            driver="2"
+                            driverNum="2"
                         />
                     )}
                     {modalEntry.driver3 && (
                         <EditDriver
                             entry={modalEntry}
                             onChange={onDriverChange}
-                            driver="3"
+                            driverNum="3"
                         />
                     )}
                 </section>
