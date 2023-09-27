@@ -60,11 +60,7 @@ const AddEntry = ({ show, handleToggle }) => {
     const getSeries = (e) => {
         const { name, value } = e.target;
         const seriesName = value.name;
-        const hasSecondDriver = (series) => {
-            return [gtwca, gt4a, "Intercontinental GT Challenge"].includes(
-                series,
-            );
-        };
+
         setNewEntry((prev) => ({
             ...prev,
             [name]: seriesName,
