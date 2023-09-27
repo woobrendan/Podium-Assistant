@@ -33,16 +33,16 @@ const EditModal = ({ entry, handleToggle, show }) => {
     const onDriverChange = (e) => {
         // driver 1 name/nationality/rating
         const nameVal = e.target.name;
+        const driverNums = {
+            "driver 1 name": "driver1",
+            "driver 2 name": "driver2",
+            "driver 3 name": "driver3",
+        };
 
-        let keyVal = "";
-        const driverNum = nameVal.includes("1") ? "driver1" : "driver2";
+        let keyVal = nameVal.split(" ")[2];
 
-        if (nameVal.includes("nationality")) {
-            keyVal = "nationality";
-        } else if (nameVal.includes("name")) {
-            keyVal = "name";
-        } else {
-            keyVal = "rating";
+        if (keyVal === "name") {
+            driverNum = driverNums[nameVal];
         }
 
         setModalEntry((prev) => ({
