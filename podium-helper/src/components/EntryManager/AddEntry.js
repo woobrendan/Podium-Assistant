@@ -52,6 +52,16 @@ const AddEntry = ({ show, handleToggle }) => {
                       },
                   }
                 : {}),
+
+            ...(seriesName === "Intercontinental GT Challenge"
+                ? {
+                      driver3: {
+                          name: "",
+                          nationality: "",
+                          rating: "",
+                      },
+                  }
+                : {}),
         }));
     };
 
