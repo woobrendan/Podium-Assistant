@@ -53,7 +53,13 @@ const EditModal = ({ entry, handleToggle, show }) => {
         handleToggle();
     };
 
-    const duo = modalEntry.driver2 ? "two_driver" : "single_driver";
+    const driverPair = {
+        [gtwca]: "2",
+        [gt4a]: "2",
+        "Intercontinental GT Challenge": "3",
+    };
+
+    const numOfDrivers = driverPair[series] || "1";
 
     return (
         <Modal open={show} onClose={handleToggle}>
@@ -74,7 +80,9 @@ const EditModal = ({ entry, handleToggle, show }) => {
                     onInputChange={onInputChange}
                     classification={modalEntry.classification}
                 />
-                <section className={`input_driver_container ${duo}`}>
+                <section
+                    className={`input_driver_container drivers_${numOfDrivers}`}
+                >
                     <EditDriver
                         entry={modalEntry}
                         onChange={onDriverChange}
