@@ -23,18 +23,37 @@ const AddEntry = ({ show, handleToggle }) => {
     const series = newEntry.series;
 
     const driverPair = {
-        [gtwca]: "duo",
-        [gt4a]: "duo",
-        "Intercontinental GT Challenge": "trio",
+        [gtwca]: "2",
+        [gt4a]: "2",
+        "Intercontinental GT Challenge": "3",
     };
 
-    const numOfDrivers = driverPair[series] || "single";
+    const numOfDrivers = driverPair[series] || "1";
 
     const onInputChange = (e) => {
         setNewEntry((prev) => ({
             ...prev,
             [e.target.name]: e.target.value,
         }));
+    };
+
+    const renderEditDrivers = () => {
+        const driverCount = parseInt(numOfDrivers);
+
+        return (
+            <section
+                className={`input_driver_container drivers_${numOfDrivers}`}
+            >
+                {[...Array(driverCount)].map((_, index) => (
+                    <EditDriver
+                        key={`driver-${index + 1}`}
+                        entry={newEntry}
+                        onChange={onDriverChange}
+                        driverNum={`${index + 1}`}
+                    />
+                ))}
+            </section>
+        );
     };
 
     const getSeries = (e) => {
@@ -120,22 +139,7 @@ const AddEntry = ({ show, handleToggle }) => {
                     onInputChange={onInputChange}
                     series={series}
                 />
-                <section className={`input_driver_container ${numOfDrivers}`}>
-                    {series && (
-                        <EditDriver
-                            entry={newEntry}
-                            onChange={onDriverChange}
-                            driverNum="1"
-                        />
-                    )}
-                    {numOfDrivers === "duo" && (
-                        <EditDriver
-                            entry={newEntry}
-                            onChange={onDriverChange}
-                            driverNum="2"
-                        />
-                    )}
-                </section>
+                {renderEditDrivers()}
                 <Button
                     variant="outlined"
                     color="error"
