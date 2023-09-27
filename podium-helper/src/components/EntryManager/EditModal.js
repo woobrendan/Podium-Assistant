@@ -33,22 +33,16 @@ const EditModal = ({ entry, handleToggle, show }) => {
     const onDriverChange = (e) => {
         // driver 1 name/nationality/rating
         const nameVal = e.target.name;
-        const driverNums = {
-            "driver 1 name": "driver1",
-            "driver 2 name": "driver2",
-            "driver 3 name": "driver3",
-        };
+
+        // returns driverX
+        const driver = nameVal.replace(/(\s\d+\s)/, "");
 
         let keyVal = nameVal.split(" ")[2];
 
-        if (keyVal === "name") {
-            driverNum = driverNums[nameVal];
-        }
-
         setModalEntry((prev) => ({
             ...prev,
-            [driverNum]: {
-                ...prev[driverNum],
+            [driver]: {
+                ...prev[driver],
                 [keyVal]: e.target.value,
             },
         }));
@@ -84,20 +78,20 @@ const EditModal = ({ entry, handleToggle, show }) => {
                     <EditDriver
                         entry={modalEntry}
                         onChange={onDriverChange}
-                        driverNum="1"
+                        driver="1"
                     />
                     {modalEntry.driver2 && (
                         <EditDriver
                             entry={modalEntry}
                             onChange={onDriverChange}
-                            driverNum="2"
+                            driver="2"
                         />
                     )}
                     {modalEntry.driver3 && (
                         <EditDriver
                             entry={modalEntry}
                             onChange={onDriverChange}
-                            driverNum="3"
+                            driver="3"
                         />
                     )}
                 </section>
