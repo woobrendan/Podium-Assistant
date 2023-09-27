@@ -8,6 +8,7 @@ import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer";
 import axios from "axios";
+import { driverInfo } from "./functions/entryFuncs";
 import {
     initialEntryState,
     errorState,
@@ -67,25 +68,9 @@ const AddEntry = ({ show, handleToggle }) => {
         setNewEntry((prev) => ({
             ...prev,
             [name]: seriesName,
-            ...(hasSecondDriver(seriesName)
-                ? {
-                      driver2: {
-                          name: "",
-                          nationality: "",
-                          rating: "",
-                      },
-                  }
-                : {}),
+            ...(driverPair !== "1" ? { driver2: driverInfo } : {}),
 
-            ...(seriesName === "Intercontinental GT Challenge"
-                ? {
-                      driver3: {
-                          name: "",
-                          nationality: "",
-                          rating: "",
-                      },
-                  }
-                : {}),
+            ...(driverPair === "3" ? { driver3: driverInfo } : {}),
         }));
     };
 
