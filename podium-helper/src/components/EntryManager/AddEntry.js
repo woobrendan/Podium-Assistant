@@ -1,9 +1,9 @@
+import { useState, useEffect } from "react";
 import { Modal, Box, Button } from "@mui/material";
-import { useState } from "react";
 import EditVehicle from "./EditVehicle";
 import EditDriver from "./EditDriver";
 import Series from "../Podium_Creation/Series";
-import { gtwca, gt4a } from "../../functions/helperFunc";
+import { gtwca, gt4a, igtc, tcam, gtam } from "../../functions/helperFunc";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer";
@@ -26,10 +26,10 @@ const AddEntry = ({ show, handleToggle }) => {
     const driverPair = {
         [gtwca]: "2",
         [gt4a]: "2",
-        "Intercontinental GT Challenge": "3",
+        [igtc]: "3",
+        [tcam]: "1",
+        [gtam]: "1",
     };
-
-    const numOfDrivers = driverPair[series] || "1";
 
     const onInputChange = (e) => {
         setNewEntry((prev) => ({
@@ -39,12 +39,12 @@ const AddEntry = ({ show, handleToggle }) => {
     };
 
     const renderEditDrivers = () => {
-        const driverCount = parseInt(numOfDrivers);
+        const driverNum = driverPair[newEntry.series];
+
+        const driverCount = parseInt(driverNum);
 
         return (
-            <section
-                className={`input_driver_container drivers_${numOfDrivers}`}
-            >
+            <section className={`input_driver_container drivers_${driverNum}`}>
                 {[...Array(driverCount)].map((_, index) => (
                     <EditDriver
                         key={`driver-${index + 1}`}
@@ -64,9 +64,9 @@ const AddEntry = ({ show, handleToggle }) => {
         setNewEntry((prev) => ({
             ...prev,
             [name]: seriesName,
-            ...(driverPair !== "1" ? { driver2: driverInfo } : {}),
+            ...(driverPair[seriesName] !== "1" ? { driver2: driverInfo } : {}),
 
-            ...(driverPair === "3" ? { driver3: driverInfo } : {}),
+            ...(driverPair[seriesName] === "3" ? { driver3: driverInfo } : {}),
         }));
     };
 
@@ -120,7 +120,7 @@ const AddEntry = ({ show, handleToggle }) => {
                     onInputChange={onInputChange}
                     series={series}
                 />
-                {renderEditDrivers()}
+                {newEntry.series && renderEditDrivers()}
                 <Button
                     variant="outlined"
                     color="error"
