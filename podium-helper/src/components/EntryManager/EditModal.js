@@ -52,6 +52,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
         handleToggle();
     };
 
+    // use driverPair and numOfDrivers to get classNames for styling, but also array to render correct num of EditDriver components
     const driverPair = {
         [gtwca]: "2",
         [gt4a]: "2",
