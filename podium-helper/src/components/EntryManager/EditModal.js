@@ -59,7 +59,26 @@ const EditModal = ({ entry, handleToggle, show }) => {
         "Intercontinental GT Challenge": "3",
     };
 
-    const numOfDrivers = driverPair[series] || "1";
+    const numOfDrivers = driverPair[modalEntry.series] || "1";
+
+    const renderEditDrivers = () => {
+        const driverCount = parseInt(numOfDrivers);
+
+        return (
+            <section
+                className={`input_driver_container drivers_${numOfDrivers}`}
+            >
+                {[...Array(driverCount)].map((_, index) => (
+                    <EditDriver
+                        key={`driver-${index + 1}`}
+                        entry={modalEntry}
+                        onChange={onDriverChange}
+                        driverNum={`${index + 1}`}
+                    />
+                ))}
+            </section>
+        );
+    };
 
     return (
         <Modal open={show} onClose={handleToggle}>
@@ -80,7 +99,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
                     onInputChange={onInputChange}
                     classification={modalEntry.classification}
                 />
-                <section
+                {/* <section
                     className={`input_driver_container drivers_${numOfDrivers}`}
                 >
                     <EditDriver
@@ -102,7 +121,8 @@ const EditModal = ({ entry, handleToggle, show }) => {
                             driverNum="3"
                         />
                     )}
-                </section>
+                </section> */}
+                {renderEditDrivers()}
                 <Button
                     variant="outlined"
                     color="error"
