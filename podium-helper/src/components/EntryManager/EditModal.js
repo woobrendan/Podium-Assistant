@@ -5,7 +5,7 @@ import EditDriver from "./EditDriver";
 import EditVehicle from "./EditVehicle";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
-import { gtwca, gt4a } from "../../functions/helperFunc";
+import { gtwca, gt4a, igtc, gtam, tcam } from "../../functions/helperFunc";
 
 const EditModal = ({ entry, handleToggle, show }) => {
     const [modalEntry, setModalEntry] = useState({
@@ -52,21 +52,20 @@ const EditModal = ({ entry, handleToggle, show }) => {
         handleToggle();
     };
 
-    // use driverPair and numOfDrivers to get classNames for styling, but also array to render correct num of EditDriver components
-    const driverPair = {
-        [gtwca]: "2",
-        [gt4a]: "2",
-        "Intercontinental GT Challenge": "3",
-    };
-
-    const numOfDrivers = driverPair[modalEntry.series] || "1";
-
     const renderEditDrivers = () => {
-        const driverCount = parseInt(numOfDrivers);
+        // use driverPair and numOfDrivers to get classNames for styling, but also array to render correct num of EditDriver components
+        const driverPair = {
+            [gtwca]: 2,
+            [gt4a]: 2,
+            [igtc]: 3,
+            [tcam]: 1,
+            [gtam]: 1,
+        };
+        const driverCount = driverPair[modalEntry.series];
 
         return (
             <section
-                className={`input_driver_container drivers_${numOfDrivers}`}
+                className={`input_driver_container drivers_${driverCount}`}
             >
                 {[...Array(driverCount)].map((_, index) => (
                     <EditDriver
