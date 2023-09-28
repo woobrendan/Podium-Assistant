@@ -5,6 +5,7 @@ import EditDriver from "./EditDriver";
 import EditVehicle from "./EditVehicle";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
+import { gtwca, gt4a } from "../../functions/helperFunc";
 
 const EditModal = ({ entry, handleToggle, show }) => {
     const [modalEntry, setModalEntry] = useState({
@@ -32,12 +33,10 @@ const EditModal = ({ entry, handleToggle, show }) => {
 
     const onDriverChange = (e) => {
         // driver 1 name/nationality/rating
-        const nameVal = e.target.name;
+        const nameVal = e.target.name.split(" ");
+        const driver = nameVal.slice(0, 2).join("");
 
-        // returns driverX
-        const driver = nameVal.replace(/(\s\d+\s)/, "");
-
-        let keyVal = nameVal.split(" ")[2];
+        const keyVal = nameVal[2];
 
         setModalEntry((prev) => ({
             ...prev,
@@ -99,29 +98,6 @@ const EditModal = ({ entry, handleToggle, show }) => {
                     onInputChange={onInputChange}
                     classification={modalEntry.classification}
                 />
-                {/* <section
-                    className={`input_driver_container drivers_${numOfDrivers}`}
-                >
-                    <EditDriver
-                        entry={modalEntry}
-                        onChange={onDriverChange}
-                        driverNum="1"
-                    />
-                    {modalEntry.driver2 && (
-                        <EditDriver
-                            entry={modalEntry}
-                            onChange={onDriverChange}
-                            driverNum="2"
-                        />
-                    )}
-                    {modalEntry.driver3 && (
-                        <EditDriver
-                            entry={modalEntry}
-                            onChange={onDriverChange}
-                            driverNum="3"
-                        />
-                    )}
-                </section> */}
                 {renderEditDrivers()}
                 <Button
                     variant="outlined"
