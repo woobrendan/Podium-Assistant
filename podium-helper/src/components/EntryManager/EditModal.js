@@ -98,6 +98,7 @@ const EditModal = ({ entry, handleToggle, show }) => {
                     entry={modalEntry}
                     onInputChange={onInputChange}
                     classification={modalEntry.classification}
+                    series={modalEntry.series}
                 />
                 {renderEditDrivers()}
                 <Button
