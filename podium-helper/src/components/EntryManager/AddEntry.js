@@ -89,12 +89,10 @@ const AddEntry = ({ show, handleToggle }) => {
 
     const onDriverChange = (e) => {
         // driver 1 name/nationality/rating
-        const nameVal = e.target.name;
+        const nameVal = e.target.name.split(" ");
+        const driver = nameVal.slice(0, 2).join("");
 
-        // returns driverX
-        const driver = nameVal.replace(/(\s\d+\s)/, "");
-
-        let keyVal = nameVal.split(" ")[2];
+        const keyVal = nameVal[2];
 
         setNewEntry((prev) => ({
             ...prev,
