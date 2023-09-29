@@ -46,7 +46,7 @@ const HardCharger = ({ hardCharger }) => {
             </TableHead>
             <TableBody>
                 <TableRow>
-                    <TableCell component="th" scope="row" colSpan={1}>
+                    <TableCell component="th" scope="row" colSpan={2}>
                         {driverStr}
                     </TableCell>
                     <TableCell align="left" colSpan={1}>
@@ -63,9 +63,14 @@ const HardCharger = ({ hardCharger }) => {
                             </TableCell>
                         </>
                     ) : (
-                        <TableCell align="left" colSpan={2}>
-                            {team}
-                        </TableCell>
+                        <>
+                            <TableCell align="left" colSpan={2}>
+                                {team}
+                            </TableCell>
+                            <TableCell align="left" colSpan={1}>
+                                {vehicle}
+                            </TableCell>
+                        </>
                     )}
                     {entry.driver3 && (
                         <TableCell align="right" colSpan={1}>
