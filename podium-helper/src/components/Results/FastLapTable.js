@@ -10,7 +10,7 @@ const FastLapTable = ({ fastLap, series }) => {
 
     return (
         <>
-            <TableHead>
+            <TableHead className="table_header">
                 <TableRow>
                     <TableCell colSpan={2}>Driver</TableCell>
                     <TableCell colSpan={3} align="center">
