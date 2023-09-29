@@ -12,9 +12,9 @@ const HardCharger = ({ hardCharger }) => {
 
     return (
         <>
-            <TableHead>
+            <TableHead className="table_header">
                 <TableRow>
-                    <TableCell colSpan={6} align="center">
+                    <TableCell colSpan={entry.driver3 ? 7 : 6} align="center">
                         {series === grCup
                             ? "Hard Charger"
                             : "E-Boost Hard Charger"}
