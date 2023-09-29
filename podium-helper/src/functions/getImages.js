@@ -1,37 +1,37 @@
 import {
-  bmwLogo,
-  porscheLogo,
-  mercedesLogo,
-  acuraLogo,
-  astonMartin,
-  ferrari,
-  ginetta,
-  honda,
-  lamborghini,
-  MINI,
-  toyota,
-  audi,
-  corvette,
-  hyundai,
-  nissan,
-  saleen,
-  ford,
+    bmwLogo,
+    porscheLogo,
+    mercedesLogo,
+    acuraLogo,
+    astonMartin,
+    ferrari,
+    ginetta,
+    honda,
+    lamborghini,
+    MINI,
+    toyota,
+    audi,
+    corvette,
+    hyundai,
+    nissan,
+    saleen,
+    ford,
 } from "../images/manuf__Logos";
 import sro from "../images/SRO.jpg";
 import {
-  gtwca_pro,
-  gtwca_am,
-  gtwca_ProAm,
-  gtwca_silver,
-  gt4_proam,
-  gt4_am,
-  gt4_silver,
-  tcx,
-  tc,
-  tca,
-  gtam_gt2,
-  gtam_gt3,
-  gtam_gt4,
+    gtwca_pro,
+    gtwca_am,
+    gtwca_ProAm,
+    gtwca_silver,
+    gt4_proam,
+    gt4_am,
+    gt4_silver,
+    tcx,
+    tc,
+    tca,
+    gtam_gt2,
+    gtam_gt3,
+    gtam_gt4,
 } from "../images/class_logos";
 import { gt4a } from "./helperFunc";
 
@@ -57,53 +57,55 @@ import { gt4a } from "./helperFunc";
 // };
 
 const vehicleLogos = {
-  Porsche: porscheLogo,
-  BMW: bmwLogo,
-  "Mercedes-AMG": mercedesLogo,
-  Acura: acuraLogo,
-  Aston: astonMartin,
-  Ferrari: ferrari,
-  Ginetta: ginetta,
-  Honda: honda,
-  Lamborghini: lamborghini,
-  MINI: MINI,
-  Toyota: toyota,
-  Audi: audi,
-  Corvette: corvette,
-  Hyundai: hyundai,
-  Nissan: nissan,
-  Saleen: saleen,
-  Ford: ford,
+    Porsche: porscheLogo,
+    BMW: bmwLogo,
+    "Mercedes-AMG": mercedesLogo,
+    Acura: acuraLogo,
+    Aston: astonMartin,
+    Ferrari: ferrari,
+    Ginetta: ginetta,
+    Honda: honda,
+    Lamborghini: lamborghini,
+    MINI: MINI,
+    Toyota: toyota,
+    Audi: audi,
+    Corvette: corvette,
+    Hyundai: hyundai,
+    Nissan: nissan,
+    Saleen: saleen,
+    Ford: ford,
 };
 
 const getManufLogo = (vehicle) => {
-  const vehicleName = vehicle.split(" ")[0];
-  const logo = vehicleLogos[vehicleName];
-  return logo ? logo : sro;
+    const vehicleName = vehicle.split(" ")[0];
+    const logo = vehicleLogos[vehicleName];
+    return logo ? logo : sro;
 };
 
-// classif === classification
 const getClassBannerImg = (classif, series) => {
-  if (classif === "TCX") return tcx;
-  if (classif === "TC") return tc;
-  if (classif === "TCA") return tca;
-  if (classif === "SRO3" || classif === "Masters") return gtam_gt3;
-  if (classif === "GT4") return gtam_gt4;
-  if (classif === "GT2") return gtam_gt2;
-  // if (series === grCup) return
+    const logos = {
+        TCX: tcx,
+        TC: tc,
+        TCA: tca,
+        SRO3: gtam_gt3,
+        Masters: gtam_gt3,
+        GT4: gtam_gt4,
+        GT2: gtam_gt2,
+        Silver: gt4_silver,
+        GT4PA: gt4_proam,
+        GTWCPA: gtwca_ProAm,
+        GT4am: gt4_am,
+        GTWCAM: gtwca_am,
+    };
 
-  if (classif === "Pro-Am") {
-    return series === gt4a ? gt4_proam : gtwca_ProAm;
-  }
-  if (classif === "Am") {
-    // if (series === grCup)
-    return series === gt4a ? gt4_am : gtwca_am;
-  }
+    if (classif === "Pro-Am") {
+        return series === gt4a ? gt4_proam : gtwca_ProAm;
+    }
+    if (classif === "Am") {
+        return series === gt4a ? gt4_am : gtwca_am;
+    }
 
-  if (classif === "Silver") {
-    return series === gt4a ? gt4_silver : gtwca_silver;
-  }
-  return gtwca_pro;
+    return logos[classif] || gtwca_pro;
 };
 
 export { getClassBannerImg, getManufLogo };
