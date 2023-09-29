@@ -84,28 +84,25 @@ const getManufLogo = (vehicle) => {
 
 const getClassBannerImg = (classif, series) => {
     const logos = {
-        TCX: tcx,
-        TC: tc,
-        TCA: tca,
-        SRO3: gtam_gt3,
-        Masters: gtam_gt3,
-        GT4: gtam_gt4,
-        GT2: gtam_gt2,
-        Silver: gt4_silver,
-        GT4PA: gt4_proam,
-        GTWCPA: gtwca_ProAm,
-        GT4am: gt4_am,
-        GTWCAM: gtwca_am,
+        TCX: { default: tcx },
+        TC: { default: tc },
+        TCA: { default: tca },
+        SRO3: { default: gtam_gt3 },
+        Masters: { default: gtam_gt3 },
+        GT4: { default: gtam_gt4 },
+        GT2: { default: gtam_gt2 },
+        Silver: { default: gt4_silver },
+        "Pro-Am": { [gt4a]: gt4_proam, default: gtwca_ProAm },
+        Am: { [gt4a]: gt4_am, default: gtwca_am },
     };
 
-    if (classif === "Pro-Am") {
-        return series === gt4a ? gt4_proam : gtwca_ProAm;
-    }
-    if (classif === "Am") {
-        return series === gt4a ? gt4_am : gtwca_am;
-    }
-
-    return logos[classif] || gtwca_pro;
+    return (
+        // check if classif exists, if so pass series value to return gt4a vals
+        (logos[classif] && logos[classif][series]) ||
+        // if that doesnt exists return the default value. if no classif key exists return pro
+        logos[classif]?.default ||
+        gtwca_pro
+    );
 };
 
 export { getClassBannerImg, getManufLogo };
