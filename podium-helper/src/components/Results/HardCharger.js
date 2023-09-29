@@ -52,15 +52,8 @@ const HardCharger = ({ hardCharger }) => {
                     <TableCell align="left" colSpan={1}>
                         #{number}
                     </TableCell>
-                    {!startPos && (
-                        <TableCell align="left" colSpan={2}>
-                            {team}
-                        </TableCell>
-                    )}
-                    <TableCell align="right" colSpan={1}>
-                        {vehicle}
-                    </TableCell>
-                    {startPos && (
+
+                    {startPos ? (
                         <>
                             <TableCell align="right" colSpan={1}>
                                 {startPos}
@@ -69,6 +62,10 @@ const HardCharger = ({ hardCharger }) => {
                                 {finishPos}
                             </TableCell>
                         </>
+                    ) : (
+                        <TableCell align="left" colSpan={2}>
+                            {team}
+                        </TableCell>
                     )}
                     {entry.driver3 && (
                         <TableCell align="right" colSpan={1}>
