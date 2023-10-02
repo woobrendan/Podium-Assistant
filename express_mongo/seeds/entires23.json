@@ -641,7 +641,7 @@
     "year": 2023
   },
   {
-    "team": "GMG Racing",
+    "team": "Flying Lizard Motorsports",
     "driver1": {
       "name": "Todd Parriott",
       "nationality": "USA",
@@ -2176,7 +2176,7 @@
   {
     "team": "BSI Racing",
     "driver1": {
-      "name": "Jordan Segrini",
+      "name": "Jordan RickSegrini",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2204,7 +2204,7 @@
   {
     "team": "Nitro Motorsports",
     "driver1": {
-      "name": "Corey Heim",
+      "name": "Giovanni Ruggiero",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -2803,7 +2803,7 @@
   {
     "team": "AOA Racing",
     "driver1": {
-      "name": "Clifton Lipple",
+      "name": "Jackson Lee",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -3614,4 +3614,32 @@
     "series": "GT America",
     "year": 2023
   },
+  {
+    "team": "Smooge Racing",
+    "driver1": {
+      "name": "John Geesbreght",
+      "nationality": "USA",
+      "rating": "Silver"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "66",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  },
+  {
+    "team": "Skip Barber Racing School",
+    "driver1": {
+      "name": "James Klimas",
+      "nationality": "USA",
+      "rating": "N/A"
+    },
+    "vehicle": "Toyota GR86",
+    "classification": "Am", 
+    "number": "61",
+    "carImage": "",
+    "series": "Toyota GR Cup",
+    "year": 2023
+  }
 ]
