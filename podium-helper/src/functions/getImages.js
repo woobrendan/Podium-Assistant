@@ -1,9 +1,4 @@
 import {
-    bmwLogo,
-    porscheLogo,
-    mercedesLogo,
-    acuraLogo,
-    astonMartin,
     ferrari,
     ginetta,
     honda,
@@ -22,7 +17,6 @@ import {
     gtwca_pro,
     gtwca_am,
     gtwca_ProAm,
-    gtwca_silver,
     gt4_proam,
     gt4_am,
     gt4_silver,
@@ -60,8 +54,8 @@ const getManufLogo = (vehicle) => {
             "https://1000logos.net/wp-content/uploads/2019/12/Chevrolet-Logo-2010.png",
     };
     const vehicleName = vehicle.split(" ")[0];
-    const logo = vehicleLogos[vehicleName];
-    return logo ? logo : sro;
+
+    return vehicleLogos[vehicleName] || sro;
 };
 
 const getClassBannerImg = (classif, series) => {
