@@ -403,7 +403,7 @@
     "year": 2023
   },
   {
-    "team": "Lone Star Racing",
+    "team": "Lone Star Racing / Mad Joker",
     "driver1": {
       "name": "Marc Austin",
       "nationality": "USA",
@@ -627,7 +627,7 @@
     "year": 2023
   },
   {
-    "team": "GMG Racing",
+    "team": "Flying Lizard Motorsports",
     "driver1": {
       "name": "Todd Parriott",
       "nationality": "USA",
@@ -3571,5 +3571,47 @@
     "carImage": "",
     "series": "Intercontinental GT Challenge",
     "year": 2023
-  }
+  },
+  {
+    "team": "Fast Track Racing",
+    "driver1": {
+      "name": "John Roberts",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "BMW M4 GT3",
+    "classification": "SRO3",
+    "number": "11",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Lone Star Racing",
+    "driver1": {
+      "name": "Dan Knox",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "Mercedes-AMG GT2",
+    "classification": "GT2",
+    "number": "80",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
+  {
+    "team": "Chicago Performance & Tuning, Co.",
+    "driver1": {
+      "name": "Kevin Woods",
+      "nationality": "USA",
+      "rating": "Bronze"
+    },
+    "vehicle": "KTM X-Bow GT2",
+    "classification": "GT2",
+    "number": "94",
+    "carImage": "",
+    "series": "GT America",
+    "year": 2023
+  },
 ]
