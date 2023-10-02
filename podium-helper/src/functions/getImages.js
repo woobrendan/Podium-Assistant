@@ -37,11 +37,13 @@ import { gt4a } from "./helperFunc";
 
 const getManufLogo = (vehicle) => {
     const vehicleLogos = {
-        Porsche: porscheLogo,
-        BMW: bmwLogo,
-        "Mercedes-AMG": mercedesLogo,
-        Acura: acuraLogo,
-        Aston: astonMartin,
+        Porsche:
+            "https://i.pinimg.com/originals/a2/59/80/a259802b31e3db1b4b3b78a3f7a66c49.png",
+        BMW: "https://yt3.googleusercontent.com/lwCVsjTlM4Lx1OiOgHj8bpXn9DAgWSv4q4CpB7nGpBWo_NnOLXAzbBJwAF6_n95FcSWSIZuA=s900-c-k-c0x00ffffff-no-rj",
+        "Mercedes-AMG":
+            "https://assets.stickpng.com/thumbs/620132e64babde0004ca417e.png",
+        Acura: "https://1000logos.net/wp-content/uploads/2018/09/acura-emblem-black.jpg",
+        Aston: "https://cdn.motor1.com/images/mgl/3WWeox/s1/aston-martin-new-logo.jpg",
         Ferrari: ferrari,
         Ginetta: ginetta,
         Honda: honda,
@@ -54,7 +56,8 @@ const getManufLogo = (vehicle) => {
         Nissan: nissan,
         Saleen: saleen,
         Ford: ford,
-        Chevrolet: 'https://1000logos.net/wp-content/uploads/2019/12/Chevrolet-Logo-2010.png'
+        Chevrolet:
+            "https://1000logos.net/wp-content/uploads/2019/12/Chevrolet-Logo-2010.png",
     };
     const vehicleName = vehicle.split(" ")[0];
     const logo = vehicleLogos[vehicleName];
