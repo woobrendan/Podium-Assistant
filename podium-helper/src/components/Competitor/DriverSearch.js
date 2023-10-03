@@ -8,72 +8,68 @@ import searchAllEntries from "../../functions/searchAllEntries";
 import { fetchEntry } from "../../store/entryActions";
 import NoResults from "../NoResults";
 import {
-  sortBySeries,
-  sortByVehicleType,
-  sortByManufacturer,
-  sortByClass,
+    sortBySeries,
+    sortByVehicleType,
+    sortByManufacturer,
+    sortByClass,
 } from "../../functions/sortFuncs";
 import { useDispatch, useSelector } from "react-redux";
 
 const DriverSearch = () => {
-  const [searchValue, setSearchValue] = useState("");
-  const [option, setOption] = useState("");
-  const dispatch = useDispatch();
+    const [searchValue, setSearchValue] = useState("");
+    const [option, setOption] = useState("");
+    const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchEntry());
-  }, [dispatch]);
+    useEffect(() => {
+        dispatch(fetchEntry());
+    }, [dispatch]);
 
-  const entries = useSelector((state) => state.entry.entriesArray);
+    const entries = useSelector((state) => state.entry.entriesArray);
 
-  const searchResult = searchAllEntries(entries, searchValue);
+    const searchResult = searchAllEntries(entries, searchValue);
 
-  const setSortOption = (sortOption, entryArray) => {
-    switch (sortOption) {
-      case "Number":
-        return entryArray;
-      case "Manufacturer":
-        return sortByManufacturer(entryArray);
-      case "Vehicle Type":
-        return sortByVehicleType(entryArray);
-      case "Class":
-        return sortByClass(entryArray);
-      default:
-        return sortBySeries(entryArray);
-    }
-  };
+    const setSortOption = (sortOption, entryArray) => {
+        const options = {
+            Number: entryArray,
+            Manufacturer: sortByManufacturer(entryArray),
+            "Vehicle Type": sortByVehicleType(entryArray),
+            Class: sortByClass(entryArray),
+        };
 
-  const mappedDrivers =
-    searchResult.length > 0 ? (
-      setSortOption(option, searchResult).map((entry, index) => (
-        <DriverDetails entry={entry} key={index} index={index} />
-      ))
-    ) : (
-      <NoResults />
+        return options[sortOption] || sortBySeries(entryArray);
+    };
+
+    const mappedDrivers =
+        searchResult.length > 0 ? (
+            setSortOption(option, searchResult).map((entry, index) => (
+                <DriverDetails entry={entry} key={index} index={index} />
+            ))
+        ) : (
+            <NoResults />
+        );
+
+    return (
+        <div className="competitors-container">
+            <div className="search-sort-options">
+                <ToggleSort
+                    getOption={(option) => setOption(option)}
+                    component="competitor"
+                />
+                <TextField
+                    className="competitor_search"
+                    label="Search"
+                    variant="outlined"
+                    color="error"
+                    value={searchValue}
+                    onChange={(e) => {
+                        setSearchValue(e.target.value);
+                    }}
+                />
+            </div>
+            <div className="entry_cards">{mappedDrivers}</div>
+            <BackToTopButton />
+        </div>
     );
-
-  return (
-    <div className="competitors-container">
-      <div className="search-sort-options">
-        <ToggleSort
-          getOption={(option) => setOption(option)}
-          component="competitor"
-        />
-        <TextField
-          className="competitor_search"
-          label="Search"
-          variant="outlined"
-          color="error"
-          value={searchValue}
-          onChange={(e) => {
-            setSearchValue(e.target.value);
-          }}
-        />
-      </div>
-      <div className="entry_cards">{mappedDrivers}</div>
-      <BackToTopButton />
-    </div>
-  );
 };
 
 export default DriverSearch;
