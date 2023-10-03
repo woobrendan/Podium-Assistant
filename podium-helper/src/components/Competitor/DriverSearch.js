@@ -1,18 +1,18 @@
-import DriverDetails from "./DriverDetails";
+import DriverDetails from "./DriverDetails.js";
 import "../../Styling/competitors.scss";
 import { TextField } from "@mui/material";
 import { useState, useEffect } from "react";
-import BackToTopButton from "../BackToTopButton";
-import ToggleSort from "./ToggleSort";
-import searchAllEntries from "../../functions/searchAllEntries";
-import { fetchEntry } from "../../store/entryActions";
-import NoResults from "../NoResults";
+import BackToTopButton from "../BackToTopButton.js";
+import ToggleSort from "./ToggleSort.js";
+import searchAllEntries from "../../functions/searchAllEntries.js";
+import { fetchEntry } from "../../store/entryActions.js";
+import NoResults from "../NoResults.js";
 import {
     sortBySeries,
     sortByVehicleType,
     sortByManufacturer,
     sortByClass,
-} from "../../functions/sortFuncs";
+} from "../../functions/sortFuncs.js";
 import { useDispatch, useSelector } from "react-redux";
 
 const DriverSearch = () => {
