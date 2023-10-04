@@ -1,19 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Modal, Box, Button } from "@mui/material";
-import EditVehicle from "./EditVehicle";
-import EditDriver from "./EditDriver";
-import Series from "../Podium_Creation/Series";
-import { gtwca, gt4a, igtc, tcam, gtam } from "../../functions/helperFunc";
+import EditVehicle from "./EditVehicle.js";
+import EditDriver from "./EditDriver.js";
+import Series from "../Podium_Creation/Series.js";
+import { gtwca, gt4a, igtc, tcam, gtam } from "../../functions/helperFunc.js";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
-import InputContainer from "./InputContainer";
+import InputContainer from "./InputContainer.js";
 import axios from "axios";
-import { driverInfo } from "./functions/entryFuncs";
+import { driverInfo } from "./functions/entryFuncs.js";
 import {
     initialEntryState,
     errorState,
     checkEntryErrors,
-} from "../../functions/entryManager";
+} from "../../functions/entryManager.js";
 
 const AddEntry = ({ show, handleToggle }) => {
     const [newEntry, setNewEntry] = useState(initialEntryState);
