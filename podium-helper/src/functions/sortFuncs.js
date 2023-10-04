@@ -24,7 +24,6 @@ const sortBySeries = (listOfEntries) => {
         [grCup]: [],
     };
     listOfEntries.forEach((entry) => {
-        console.log("entry", entry);
         series_list[entry.series].push(entry);
     });
 
@@ -32,13 +31,14 @@ const sortBySeries = (listOfEntries) => {
         series_list[key].sort((a, b) => a.number - b.number);
     }
 
-    return [].concat(
-        series_list.gtwc,
-        series_list.igtc,
-        series_list.gta,
-        series_list.gt4,
-        series_list.tc,
-    );
+    return [
+        ...series_list[gtwca],
+        ...series_list[igtc],
+        ...series_list[gtam],
+        ...series_list[gt4a],
+        ...series_list[tcam],
+        ...series_list[grCup],
+    ];
 };
 
 const sortByManufacturer = (listOfEntries) => {
