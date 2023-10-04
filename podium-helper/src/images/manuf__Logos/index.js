@@ -10,6 +10,7 @@ import hyundai from "./hyundai.png";
 import nissan from "./nissan.png";
 import saleen from "./saleen.png";
 import ford from "./ford.png";
+import mercedes from "./mercedes_amg.png";
 
 export {
     ferrari,
@@ -24,4 +25,5 @@ export {
     nissan,
     saleen,
     ford,
+    mercedes,
 };
