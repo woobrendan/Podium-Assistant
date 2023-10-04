@@ -1,4 +1,4 @@
-import { gtwca, gt4a, gtam, igtc } from "../functions/helperFunc";
+import { gtwca, gt4a, gtam, igtc, tcam, grCup } from "../functions/helperFunc";
 
 const sortByVehicleType = (listOfEntries) => {
     const gt3 = [];
@@ -15,34 +15,23 @@ const sortByVehicleType = (listOfEntries) => {
 };
 
 const sortBySeries = (listOfEntries) => {
-    // const gtwc = [];
-    // const igtcList = [];
-    // const gta = [];
-    // const gt4 = [];
-    // const tc = [];
     const series_list = {
-        gtwc: [],
-        igtc: [],
-        gta: [],
-        gt4: [],
-        tc: [],
+        [gtwca]: [],
+        [igtc]: [],
+        [gtam]: [],
+        [gt4a]: [],
+        [tcam]: [],
+        [grCup]: [],
     };
     listOfEntries.forEach((entry) => {
-        // const nameOfSeries = entry.series;
+        console.log("entry", entry);
         series_list[entry.series].push(entry);
-        // if (nameOfSeries === gtwca) gtwc.push(entry);
-        // else if (nameOfSeries === gtam) gta.push(entry);
-        // else if (nameOfSeries === gt4a) gt4.push(entry);
-        // else if (nameOfSeries === igtc) igtcList.push(entry);
-        // else tc.push(entry);
     });
 
     for (const key in series_list) {
         series_list[key].sort((a, b) => a.number - b.number);
     }
-    // for (const series of [gtwc, igtcList, gta, gt4, tc]) {
-    //     series.sort((a, b) => a.number - b.number);
-    // }
+
     return [].concat(
         series_list.gtwc,
         series_list.igtc,
