@@ -1,5 +1,17 @@
 import { compareResultDates } from "../../functions/sortFuncs";
 
+// Get all drivers from one result (all classes, one series, one race)
+const allDrivers = (placementArr) => {
+    const driverArray = [];
+    const filtered = placementArr.filter(Boolean);
+    for (const result of placementArr) {
+        if (result) driverArray.push(result.driver1);
+        if (result && result.driver2) driverArray.push(result.driver2);
+        if (result && result.driver3) driverArray.push(result.driver3);
+    }
+    return driverArray;
+};
+
 const SearchAllResults = (list, searchValue) => {
     const filtered = list.filter((val) => {
         const { result1, result2, result3, result4, series, event } = val;
@@ -15,17 +27,6 @@ const SearchAllResults = (list, searchValue) => {
             const { firstPlace, secondPlace, thirdPlace } = result;
             allPlacements.push(firstPlace, secondPlace, thirdPlace);
         }
-
-        // Get all drivers from one result (all classes, one series, one race)
-        const allDrivers = () => {
-            const driverArray = [];
-            for (const result of allPlacements) {
-                if (result) driverArray.push(result.driver1);
-                if (result && result.driver2) driverArray.push(result.driver2);
-                if (result && result.driver3) driverArray.push(result.driver3);
-            }
-            return driverArray;
-        };
 
         // filter through the entry object, keying into the obj using the category variable
         const categoryArray = (category) => {
@@ -48,7 +49,7 @@ const SearchAllResults = (list, searchValue) => {
             return val;
         }
 
-        for (const driver of allDrivers()) {
+        for (const driver of allDrivers(allPlacements)) {
             if (driver.toLowerCase().includes(searchValue.toLowerCase())) {
                 return val;
             }
