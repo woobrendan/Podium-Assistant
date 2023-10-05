@@ -11,6 +11,7 @@ import {
     nissan,
     saleen,
     ford,
+    mercedes,
 } from "../images/manuf__Logos";
 import sro from "../images/SRO.jpg";
 import {
@@ -34,8 +35,7 @@ const getManufLogo = (vehicle) => {
         Porsche:
             "https://i.pinimg.com/originals/a2/59/80/a259802b31e3db1b4b3b78a3f7a66c49.png",
         BMW: "https://yt3.googleusercontent.com/lwCVsjTlM4Lx1OiOgHj8bpXn9DAgWSv4q4CpB7nGpBWo_NnOLXAzbBJwAF6_n95FcSWSIZuA=s900-c-k-c0x00ffffff-no-rj",
-        "Mercedes-AMG":
-            "https://assets.stickpng.com/images/620132e64babde0004ca417e.png",
+        "Mercedes-AMG": mercedes,
         Acura: "https://1000logos.net/wp-content/uploads/2018/09/acura-emblem-black.jpg",
         Aston: "https://cdn.motor1.com/images/mgl/3WWeox/s1/aston-martin-new-logo.jpg",
         Ferrari: ferrari,
