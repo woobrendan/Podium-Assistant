@@ -1,9 +1,9 @@
 const searchAllEntries = (entries, searchVal) => {
-    const lowerVal = searchVal.toLowerCase().trim();
-
     if (!searchVal) {
         return entries;
     }
+
+    const lowerVal = searchVal.toLowerCase().trim();
 
     const checkField = (field) => field.toLowerCase().includes(lowerVal);
 
