@@ -23,6 +23,11 @@ const categoryArray = (category, placementArr) => {
 };
 
 const SearchAllResults = (list, searchValue) => {
+    const lowerVal = searchValue.toLowerCase().trim();
+
+    if (!searchValue) {
+        return list;
+    }
     const filtered = list.filter((val) => {
         const { result1, result2, result3, result4, series, event } = val;
         const allPlacements = [
@@ -40,36 +45,33 @@ const SearchAllResults = (list, searchValue) => {
 
         //** Begin filtering based on search value */
 
-        if (!searchValue) {
+        if (series.toLowerCase().includes(lowerVal)) {
             return val;
         }
-        if (series.toLowerCase().includes(searchValue.toLowerCase())) {
-            return val;
-        }
-        if (event.toLowerCase().includes(searchValue.toLowerCase())) {
+        if (event.toLowerCase().includes(lowerVal)) {
             return val;
         }
 
         for (const driver of allDrivers(allPlacements)) {
-            if (driver.toLowerCase().includes(searchValue.toLowerCase())) {
+            if (driver.toLowerCase().includes(lowerVal)) {
                 return val;
             }
         }
 
         for (const vehicle of categoryArray("vehicle", allPlacements)) {
-            if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
+            if (vehicle.toLowerCase().includes(lowerVal)) {
                 return val;
             }
         }
 
         for (const team of categoryArray("team", allPlacements)) {
-            if (team.toLowerCase().includes(searchValue.toLowerCase())) {
+            if (team.toLowerCase().includes(lowerVal)) {
                 return val;
             }
         }
 
         for (const number of categoryArray("number", allPlacements)) {
-            if (number.includes(searchValue)) {
+            if (number.includes(lowerVal)) {
                 return val;
             }
         }
