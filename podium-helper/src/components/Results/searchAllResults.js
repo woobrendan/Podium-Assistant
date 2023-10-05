@@ -13,23 +13,16 @@ const allDrivers = (placementArr) => {
     return driverArray;
 };
 
-// filter through the entry object, keying into the obj using the category variable
-const categoryArray = (category, placementArr) => {
-    const newArray = [];
-    for (const placeResult of placementArr) {
-        if (placeResult) newArray.push(placeResult[category]);
-    }
-    return newArray;
-};
-
 const SearchAllResults = (list, searchValue) => {
-    const lowerVal = searchValue.toLowerCase().trim();
-
     if (!searchValue) {
         return list;
     }
+
+    const lowerVal = searchValue.toLowerCase().trim();
+
     const filtered = list.filter((val) => {
         const { result1, result2, result3, result4, series, event } = val;
+
         const allPlacements = [
             result1.firstPlace,
             result1.secondPlace,
@@ -43,38 +36,58 @@ const SearchAllResults = (list, searchValue) => {
             allPlacements.push(firstPlace, secondPlace, thirdPlace);
         }
 
-        //** Begin filtering based on search value */
+        const checkField = (field) => field.toLowerCase().includes(lowerVal);
 
-        if (series.toLowerCase().includes(lowerVal)) {
-            return val;
-        }
-        if (event.toLowerCase().includes(lowerVal)) {
-            return val;
-        }
-
-        for (const driver of allDrivers(allPlacements)) {
-            if (driver.toLowerCase().includes(lowerVal)) {
-                return val;
+        // filter through the entry object, keying into the obj using the category variable
+        const categoryArray = (category) => {
+            const newArray = [];
+            for (const placeResult of allPlacements) {
+                if (placeResult) newArray.push(placeResult[category]);
             }
-        }
+            return newArray;
+        };
 
-        for (const vehicle of categoryArray("vehicle", allPlacements)) {
-            if (vehicle.toLowerCase().includes(lowerVal)) {
-                return val;
-            }
-        }
+        const fieldsToCheck = [
+            series.toLowerCase(),
+            event.toLowerCase(),
+            ...allDrivers(allPlacements).map((driver) => driver.toLowerCase()),
+            ...categoryArray("vehicle").map((vehicle) => vehicle.toLowerCase()),
+            ...categoryArray("team").map((team) => team.toLowerCase()),
+            ...categoryArray("number"),
+        ];
 
-        for (const team of categoryArray("team", allPlacements)) {
-            if (team.toLowerCase().includes(lowerVal)) {
-                return val;
-            }
-        }
+        // //** Begin filtering based on search value */
 
-        for (const number of categoryArray("number", allPlacements)) {
-            if (number.includes(lowerVal)) {
-                return val;
-            }
-        }
+        // if (series.toLowerCase().includes(lowerVal)) {
+        //     return val;
+        // }
+        // if (event.toLowerCase().includes(lowerVal)) {
+        //     return val;
+        // }
+
+        // for (const driver of allDrivers(allPlacements)) {
+        //     if (driver.toLowerCase().includes(lowerVal)) {
+        //         return val;
+        //     }
+        // }
+
+        // for (const vehicle of categoryArray("vehicle")) {
+        //     if (vehicle.toLowerCase().includes(lowerVal)) {
+        //         return val;
+        //     }
+        // }
+
+        // for (const team of categoryArray("team")) {
+        //     if (team.toLowerCase().includes(lowerVal)) {
+        //         return val;
+        //     }
+        // }
+
+        // for (const number of categoryArray("number")) {
+        //     if (number.includes(lowerVal)) {
+        //         return val;
+        //     }
+        // }
     });
     return filtered.sort(compareResultDates);
 };
