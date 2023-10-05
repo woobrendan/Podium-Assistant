@@ -20,6 +20,7 @@ const SearchAllResults = (list, searchValue) => {
 
     const lowerVal = searchValue.toLowerCase().trim();
 
+    //** begin filtering every result, where val is a full podium result */
     const filtered = list.filter((val) => {
         const { result1, result2, result3, result4, series, event } = val;
 
