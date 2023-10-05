@@ -13,6 +13,15 @@ const allDrivers = (placementArr) => {
     return driverArray;
 };
 
+// filter through the entry object, keying into the obj using the category variable
+const categoryArray = (category, placementArr) => {
+    const newArray = [];
+    for (const placeResult of placementArr) {
+        if (placeResult) newArray.push(placeResult[category]);
+    }
+    return newArray;
+};
+
 const SearchAllResults = (list, searchValue) => {
     const filtered = list.filter((val) => {
         const { result1, result2, result3, result4, series, event } = val;
@@ -28,15 +37,6 @@ const SearchAllResults = (list, searchValue) => {
             const { firstPlace, secondPlace, thirdPlace } = result;
             allPlacements.push(firstPlace, secondPlace, thirdPlace);
         }
-
-        // filter through the entry object, keying into the obj using the category variable
-        const categoryArray = (category) => {
-            const newArray = [];
-            for (const placeResult of allPlacements) {
-                if (placeResult) newArray.push(placeResult[category]);
-            }
-            return newArray;
-        };
 
         //** Begin filtering based on search value */
 
@@ -56,19 +56,19 @@ const SearchAllResults = (list, searchValue) => {
             }
         }
 
-        for (const vehicle of categoryArray("vehicle")) {
+        for (const vehicle of categoryArray("vehicle", allPlacements)) {
             if (vehicle.toLowerCase().includes(searchValue.toLowerCase())) {
                 return val;
             }
         }
 
-        for (const team of categoryArray("team")) {
+        for (const team of categoryArray("team", allPlacements)) {
             if (team.toLowerCase().includes(searchValue.toLowerCase())) {
                 return val;
             }
         }
 
-        for (const number of categoryArray("number")) {
+        for (const number of categoryArray("number", allPlacements)) {
             if (number.includes(searchValue)) {
                 return val;
             }
