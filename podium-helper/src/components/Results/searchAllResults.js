@@ -50,44 +50,14 @@ const SearchAllResults = (list, searchValue) => {
         const fieldsToCheck = [
             series.toLowerCase(),
             event.toLowerCase(),
+            // spreads an array of all driver names, all vehicles etc
             ...allDrivers(allPlacements).map((driver) => driver.toLowerCase()),
             ...categoryArray("vehicle").map((vehicle) => vehicle.toLowerCase()),
             ...categoryArray("team").map((team) => team.toLowerCase()),
             ...categoryArray("number"),
         ];
 
-        // //** Begin filtering based on search value */
-
-        // if (series.toLowerCase().includes(lowerVal)) {
-        //     return val;
-        // }
-        // if (event.toLowerCase().includes(lowerVal)) {
-        //     return val;
-        // }
-
-        // for (const driver of allDrivers(allPlacements)) {
-        //     if (driver.toLowerCase().includes(lowerVal)) {
-        //         return val;
-        //     }
-        // }
-
-        // for (const vehicle of categoryArray("vehicle")) {
-        //     if (vehicle.toLowerCase().includes(lowerVal)) {
-        //         return val;
-        //     }
-        // }
-
-        // for (const team of categoryArray("team")) {
-        //     if (team.toLowerCase().includes(lowerVal)) {
-        //         return val;
-        //     }
-        // }
-
-        // for (const number of categoryArray("number")) {
-        //     if (number.includes(lowerVal)) {
-        //         return val;
-        //     }
-        // }
+        return fieldsToCheck.some((field) => checkField(field));
     });
     return filtered.sort(compareResultDates);
 };
