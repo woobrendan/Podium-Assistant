@@ -4,10 +4,11 @@ import { compareResultDates } from "../../functions/sortFuncs";
 const allDrivers = (placementArr) => {
     const driverArray = [];
     const filtered = placementArr.filter(Boolean);
-    for (const result of placementArr) {
-        if (result) driverArray.push(result.driver1);
-        if (result && result.driver2) driverArray.push(result.driver2);
-        if (result && result.driver3) driverArray.push(result.driver3);
+
+    for (const result of filtered) {
+        driverArray.push(result.driver1);
+        if (result.driver2) driverArray.push(result.driver2);
+        if (result.driver3) driverArray.push(result.driver3);
     }
     return driverArray;
 };
