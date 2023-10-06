@@ -27,26 +27,25 @@ const ResultTableBody = ({ results }) => {
     const { firstPlace, secondPlace, thirdPlace } = results;
 
     const checkPodium = () => {
-        const allResults = [];
-
         //** Loop through each placemnt, if that place exists create the data and push that arr */
         const placements = [firstPlace, secondPlace, thirdPlace].filter(
             Boolean,
         );
-        placements.forEach((placement, index) => {
-            const placementInfo = [
-                getPlaceString(index),
-                placement.number,
-                placement.driver1,
-                placement.team,
-                placement.vehicle,
-                placement.driver2 ? placement.driver2 : null,
-                placement.driver3 ? placement.driver3 : null,
-            ];
-            allResults.push(createDriverData(...placementInfo));
-        });
 
-        return allResults;
+        return placements.map((placement, index) => {
+            const { number, driver1, driver2, driver3, team, vehicle } =
+                placement;
+
+            return createDriverData(
+                getPlaceString(index),
+                number,
+                driver1,
+                team,
+                vehicle,
+                driver2 || null,
+                driver3 || null,
+            );
+        });
     };
 
     const placementRows = checkPodium().map((row, index) => {
