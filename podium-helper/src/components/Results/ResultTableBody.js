@@ -1,5 +1,6 @@
 import { TableBody, TableCell, TableRow, TableHead } from "@mui/material";
 import "../../Styling/result.scss";
+import { getPlaceString } from "../../functions/helperFunc";
 
 const createDriverData = (
     place,
@@ -27,15 +28,6 @@ const ResultTableBody = ({ results }) => {
 
     const checkPodium = () => {
         const allResults = [];
-        const getPlaceString = (num) => {
-            const place = {
-                0: "1st",
-                1: "2nd",
-                2: "3rd",
-            };
-
-            return place[num];
-        };
 
         //** Loop through each placemnt, if that place exists create the data and push that arr */
         const placements = [firstPlace, secondPlace, thirdPlace];
