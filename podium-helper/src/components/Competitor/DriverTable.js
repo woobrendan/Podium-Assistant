@@ -36,15 +36,11 @@ const DriverTable = ({ drivers }) => {
             drivers.driver3,
         ].filter(Boolean);
 
-        const data = [];
-
-        for (const driver of driversArr) {
-            data.push(
-                createData(driver.name, driver.nationality, driver.rating),
-            );
-        }
-
-        return data;
+        return driversArr.map((driver) => ({
+            name: driver.name,
+            nationality: driver.nationality,
+            rating: driver.rating,
+        }));
     };
 
     return (
