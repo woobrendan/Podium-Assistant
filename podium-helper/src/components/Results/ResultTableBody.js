@@ -2,27 +2,6 @@ import { TableBody, TableCell, TableRow, TableHead } from "@mui/material";
 import "../../Styling/result.scss";
 import { getPlaceString } from "../../functions/helperFunc";
 
-const createDriverData = (
-    place,
-    number,
-    driver1,
-    team,
-    car,
-    driver2 = null,
-    driver3 = null,
-) => {
-    const data = { place, number, driver1, team, car };
-    if (driver2) {
-        data.driver2 = driver2;
-    }
-
-    if (driver3) {
-        data.driver3 = driver3;
-    }
-
-    return data;
-};
-
 const ResultTableBody = ({ results }) => {
     const { firstPlace, secondPlace, thirdPlace } = results;
 
@@ -36,15 +15,15 @@ const ResultTableBody = ({ results }) => {
             const { number, driver1, driver2, driver3, team, vehicle } =
                 placement;
 
-            return createDriverData(
-                getPlaceString(index),
+            return {
+                place: getPlaceString(index),
                 number,
                 driver1,
                 team,
-                vehicle,
-                driver2 || null,
-                driver3 || null,
-            );
+                car: vehicle,
+                drivere2: driver2 || null,
+                driver3: driver3 || null,
+            };
         });
     };
 
