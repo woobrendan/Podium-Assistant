@@ -30,20 +30,20 @@ const ResultTableBody = ({ results }) => {
         const allResults = [];
 
         //** Loop through each placemnt, if that place exists create the data and push that arr */
-        const placements = [firstPlace, secondPlace, thirdPlace];
+        const placements = [firstPlace, secondPlace, thirdPlace].filter(
+            Boolean,
+        );
         placements.forEach((placement, index) => {
-            if (placement) {
-                const placementInfo = [
-                    getPlaceString(index),
-                    placement.number,
-                    placement.driver1,
-                    placement.team,
-                    placement.vehicle,
-                    placement.driver2 ? placement.driver2 : null,
-                    placement.driver3 ? placement.driver3 : null,
-                ];
-                allResults.push(createDriverData(...placementInfo));
-            }
+            const placementInfo = [
+                getPlaceString(index),
+                placement.number,
+                placement.driver1,
+                placement.team,
+                placement.vehicle,
+                placement.driver2 ? placement.driver2 : null,
+                placement.driver3 ? placement.driver3 : null,
+            ];
+            allResults.push(createDriverData(...placementInfo));
         });
 
         return allResults;
