@@ -9,27 +9,8 @@ import {
     Paper,
 } from "@mui/material";
 
-const createData = (name, nationality, rating) => {
-    return { name, nationality, rating };
-};
-
 const DriverTable = ({ drivers }) => {
-    const tableRows = (drivers) => {
-        // const { driver1, driver2, driver3 } = drivers;
-        // const data = [
-        //     createData(driver1.name, driver1.nationality, driver1.rating),
-        // ];
-        // if (drivers.driver2) {
-        //     data.push(
-        //         createData(driver2.name, driver2.nationality, driver2.rating),
-        //     );
-        // }
-        // if (drivers.driver3) {
-        //     data.push(
-        //         createData(driver3.name, driver3.nationality, driver3.rating),
-        //     );
-        // }
-        // return data;
+    const tableRows = () => {
         const driversArr = [
             drivers.driver1,
             drivers.driver2,
@@ -54,7 +35,7 @@ const DriverTable = ({ drivers }) => {
                     </TableRow>
                 </TableHead>
                 <TableBody>
-                    {tableRows(drivers).map((row) => (
+                    {tableRows().map((row) => (
                         <TableRow
                             key={row.name}
                             sx={{
