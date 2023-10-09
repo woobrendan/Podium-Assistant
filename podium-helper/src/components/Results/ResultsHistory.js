@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { TextField } from "@mui/material";
 import ResultTableHeader from "./ResultTableHeader.js";
-import SearchAllResults from "./searchAllResults.js";
+import SearchAllResults from "./functions/searchAllResults.js";
 import BackToTopButton from "../BackToTopButton.js";
 import EventSearch from "../EventsSearch.js";
 import { useDispatch, useSelector } from "react-redux";

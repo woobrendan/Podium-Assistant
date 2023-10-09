@@ -1,4 +1,4 @@
-import { compareResultDates } from "../../functions/sortFuncs";
+import { compareResultDates } from "../../../functions/sortFuncs";
 
 // Get all drivers from one result (all classes, one series, one race)
 const allDrivers = (placementArr) => {
