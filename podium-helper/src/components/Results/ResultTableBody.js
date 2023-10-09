@@ -21,7 +21,7 @@ const ResultTableBody = ({ results }) => {
                 driver1,
                 team,
                 car: vehicle,
-                drivere2: driver2 || null,
+                driver2: driver2 || null,
                 driver3: driver3 || null,
             };
         });
