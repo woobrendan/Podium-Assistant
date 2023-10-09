@@ -2120,7 +2120,7 @@
   {
     "team": "Smooge Racing",
     "driver1": {
-      "name": "Will Robusto",
+      "name": "Corey Lewis",
       "nationality": "USA",
       "rating": "N/A"
     },
@@ -3143,9 +3143,9 @@
   {
     "team": "TR3 Racing",
     "driver1": {
-      "name": "Paul Kiebler",
+      "name": "Kenton Koch",
       "nationality": "USA",
-      "rating": "Bronze"
+      "rating": "Silver"
     },
     "driver2": {
       "name": "Jon Branam",
@@ -3159,7 +3159,7 @@
     },
     "vehicle": "Mercedes-AMG GT3",
     "classification": "Pro-Am",
-    "number": "77",
+    "number": "27",
     "carImage": "",
     "series": "Intercontinental GT Challenge",
     "year": 2023
@@ -3393,7 +3393,7 @@
       "rating": "Silver"
     },
     "driver3": {
-      "name": "TBC",
+      "name": "Matteo Cairoli",
       "nationality": "USA",
       "rating": "Silver"
     },
