@@ -10,7 +10,9 @@ const useEvents = () => {
     useEffect(() => {
         const getEventList = async () => {
             try {
-                const year = Number(getToday().split("-")[2]);
+                const date = new Date();
+                const year = date.getFullYear();
+                // const year = Number(getToday().split("-")[2]);
                 const eventList = await axios.get(
                     "http://localhost:2020/api/events",
                 );
