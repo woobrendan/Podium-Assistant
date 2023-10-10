@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { getToday } from "./dateFuncs";
 import { compareByDate } from "./sortFuncs";
 
 const useEvents = () => {
@@ -12,15 +11,12 @@ const useEvents = () => {
             try {
                 const date = new Date();
                 const year = date.getFullYear();
-                // const year = Number(getToday().split("-")[2]);
                 const eventList = await axios.get(
-                    "http://localhost:2020/api/events",
+                    `http://localhost:2020/api/events/${year}`,
                 );
 
                 // return list of events for the current year
-                const currentYearEvents = eventList.data.events.filter(
-                    (event) => event.year === year,
-                );
+                const currentYearEvents = eventList.data.events;
                 const sortedEvents = currentYearEvents.sort(compareByDate);
                 setEvents(sortedEvents);
                 eventByDate(sortedEvents);
