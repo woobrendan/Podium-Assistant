@@ -131,48 +131,6 @@ const sortByClass = (listOfEntries) => {
     ];
 };
 
-const compareByDate = (a, b) => {
-    const getDateValue = (dateStr) => {
-        const [month, days] = dateStr.split(" "); // ["April", "28-30"]
-        const endDay = Number(days.split("-")[1]);
-        return { month, endDay }; // {month: "April", endDay: 30}
-    };
-    const getMonthValue = (monthStr) => {
-        const monthOrder = {
-            January: 0,
-            February: 1,
-            March: 2,
-            April: 3,
-            May: 4,
-            June: 5,
-            July: 6,
-            August: 7,
-            September: 8,
-            October: 9,
-            November: 10,
-            December: 11,
-        };
-
-        if (monthStr.length === 2) {
-            return Number(monthStr) - 1;
-        }
-
-        return monthOrder[monthStr];
-    };
-
-    const aDate = getDateValue(a.date);
-    const bDate = getDateValue(b.date);
-
-    const aMonth = getMonthValue(aDate.month);
-    const bMonth = getMonthValue(bDate.month);
-
-    if (aMonth !== bMonth) {
-        return aMonth - bMonth;
-    }
-
-    return aDate.endDay - bDate.endDay;
-};
-
 const compareResultDates = (a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);
@@ -202,7 +160,6 @@ export {
     sortByVehicleType,
     sortByManufacturer,
     sortByClass,
-    compareByDate,
     compareResultDates,
     sortSeriesNames,
 };
