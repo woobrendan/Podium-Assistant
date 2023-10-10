@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { compareByDate } from "./sortFuncs";
+// import { compareByDate } from "./sortFuncs";
+import { compareStartDate } from "./dateFuncs";
 
 const useEvents = () => {
     const [events, setEvents] = useState([]);
@@ -17,7 +18,7 @@ const useEvents = () => {
 
                 // return list of events for the current year
                 const currentYearEvents = eventList.data.events;
-                const sortedEvents = currentYearEvents.sort(compareByDate);
+                const sortedEvents = currentYearEvents.sort(compareStartDate);
                 setEvents(sortedEvents);
                 eventByDate(sortedEvents);
             } catch (err) {
