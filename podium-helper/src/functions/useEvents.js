@@ -20,7 +20,9 @@ const useEvents = () => {
                 const currentYearEvents = eventList.data.events;
                 const sortedEvents = currentYearEvents.sort(compareStartDate);
                 setEvents(sortedEvents);
-                eventByDate(sortedEvents);
+                // eventByDate(sortedEvents);
+                console.log("event", getCurrentEvent(sortedEvents));
+                setCurrentEventName(getCurrentEvent(sortedEvents));
             } catch (err) {
                 console.log("Error:", err);
             }
@@ -46,25 +48,28 @@ const useEvents = () => {
 
     const getCurrentEvent = (events) => {
         const today = new Date();
+        let currentEvent = null;
 
         for (let i = 0; i < events.length; i++) {
             const eventStartDate = new Date(events[i].startDate);
 
             // check if today is past start date
             if (today >= eventStartDate) {
-                // check if today is not past start of next event
+                // check if today is not past start of next event, and isnt the last event
                 if (i < events.length - 1) {
                     const nextEvent = new Date(events[i + 1].startDate);
 
                     if (today < nextEvent) {
-                        return events[i].name;
+                        currentEvent = events[i].name;
+                        break;
                     }
+                } else {
+                    // returns last event
+                    currentEvent = events[i].name;
                 }
-            } else {
-                // returns last event
-                return events[i].name;
             }
         }
+        return currentEvent;
     };
 
     return { events, currentEventName };
