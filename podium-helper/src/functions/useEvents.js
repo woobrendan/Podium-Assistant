@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-// import { compareByDate } from "./sortFuncs";
 import { compareStartDate } from "./dateFuncs";
 
 const useEvents = () => {
@@ -20,8 +19,6 @@ const useEvents = () => {
                 const currentYearEvents = eventList.data.events;
                 const sortedEvents = currentYearEvents.sort(compareStartDate);
                 setEvents(sortedEvents);
-                // eventByDate(sortedEvents);
-                console.log("event", getCurrentEvent(sortedEvents));
                 setCurrentEventName(getCurrentEvent(sortedEvents));
             } catch (err) {
                 console.log("Error:", err);
@@ -29,22 +26,6 @@ const useEvents = () => {
         };
         getEventList();
     }, []);
-
-    const eventByDate = (events) => {
-        const currentDate = new Date();
-        const month = currentDate.getMonth() + 1;
-        const day = currentDate.getDate();
-
-        if (month <= 3 && day < 6) setCurrentEventName(events[0].name);
-        else if (month <= 4 && day < 3) setCurrentEventName(events[1].name);
-        else if (month === 4) setCurrentEventName(events[2].name);
-        else if (month === 5) setCurrentEventName(events[3].name);
-        else if (month === 6) setCurrentEventName(events[4].name);
-        else if (month === 8 && day < 7) setCurrentEventName(events[5].name);
-        else if (month === 8) setCurrentEventName(events[6].name);
-        else if (month === 9) setCurrentEventName(events[7].name);
-        else setCurrentEventName(events[8].name);
-    };
 
     const getCurrentEvent = (events) => {
         const today = new Date();
