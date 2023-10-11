@@ -88,5 +88,50 @@
     "name": "Indianapolis Motor Speedway",
     "date": "October 5-7",
     "year": 2023
+  },
+  {
+    "name": "Sonoma Raceway",
+    "date": "April 5 - 7",
+    "year": 2024
+  },
+  {
+    "name": "Long Beach Grand Prix",
+    "date": "April 19 - 21",
+    "year": 2024
+  },
+  {
+    "name": "Sebring International Raceway",
+    "date": "May 3 - 5",
+    "year": 2024
+  },
+  {
+    "name": "Circuit of the Americas",
+    "date": "May 19-21",
+    "year": 2023
+  },
+  {
+    "name": "VIRginia International Raceway",
+    "date": "June 16-18",
+    "year": 2023
+  },
+  {
+    "name": "Music City Grand Prix",
+    "date": "August 4-6",
+    "year": 2023
+  },
+  {
+    "name": "Road America",
+    "date": "August 18-20",
+    "year": 2023
+  },
+  {
+    "name": "Sebring International Raceway",
+    "date": "September 22-24",
+    "year": 2023
+  },
+  {
+    "name": "Indianapolis Motor Speedway",
+    "date": "October 5-7",
+    "year": 2023
   }
 ]
