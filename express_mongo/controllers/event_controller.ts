@@ -7,6 +7,20 @@ const getAllEvents = async (req: Request, res: Response) => {
     .catch((error) => res.status(500).json({ error }));
 };
 
+const getEventByYear = async (req: Request, res: Response) => {
+  const year = req.params.year
+
+  try {
+    const yearEvents = await Event.find({year: year})
+    return Event
+    ? res.status(200).json({events: yearEvents})
+    : res.status(400).json({message: "Events not found"})
+
+  } catch (error) {
+    return res.status(500).json({ error });
+  }
+ }
+
 const getEventById = async (req: Request, res: Response) => {
   const eventId = req.params.EventId;
   try {
