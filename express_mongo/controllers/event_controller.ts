@@ -20,17 +20,17 @@ const getEventByYear = async (req: Request, res: Response) => {
     }
 };
 
-const getEventById = async (req: Request, res: Response) => {
-    const eventId = req.params.EventId;
-    try {
-        const event = await Event.findById(eventId);
-        return Event
-            ? res.status(200).json({ event })
-            : res.status(400).json({ message: "Event Not Found" });
-    } catch (error) {
-        return res.status(500).json({ error });
-    }
-};
+// const getEventById = async (req: Request, res: Response) => {
+//     const eventId = req.params.EventId;
+//     try {
+//         const event = await Event.findById(eventId);
+//         return Event
+//             ? res.status(200).json({ event })
+//             : res.status(400).json({ message: "Event Not Found" });
+//     } catch (error) {
+//         return res.status(500).json({ error });
+//     }
+// };
 
 const updateEvent = async (req: Request, res: Response) => {
     const eventId = req.params.eventId;
@@ -51,7 +51,7 @@ const updateEvent = async (req: Request, res: Response) => {
 
 export default {
     getAllEvents,
-    getEventById,
+    // getEventById,
     updateEvent,
     getEventByYear,
 };
