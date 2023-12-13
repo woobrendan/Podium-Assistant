@@ -1,5 +1,8 @@
 import axios from "axios";
+import dotenv from "dotenv";
 import { entryActions } from "./entry_slice";
+
+dotenv.config();
 
 export const fetchEntry = () => {
     return async (dispatch) => {
@@ -12,7 +15,9 @@ export const fetchEntry = () => {
     };
 };
 
-const fetchApiEntries = () => {
+export const fetchApiEntries = () => {
+    const formId = process.env.FORM_ID;
+    const token = process.env.TKSPICE;
     try {
         const entries = await axios.get(
             "https://api.webconnex.com/v2/public/search/tickets",
@@ -26,7 +31,7 @@ const fetchApiEntries = () => {
                 },
             },
         );
-        fetch;
+        console.log("my val-----", entries);
     } catch (err) {}
 };
 
