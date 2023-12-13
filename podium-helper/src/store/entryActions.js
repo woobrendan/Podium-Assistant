@@ -1,8 +1,5 @@
 import axios from "axios";
-import dotenv from "dotenv";
 import { entryActions } from "./entry_slice";
-
-dotenv.config();
 
 export const fetchEntry = () => {
     return async (dispatch) => {
@@ -15,24 +12,27 @@ export const fetchEntry = () => {
     };
 };
 
-export const fetchApiEntries = () => {
+export const fetchApiEntries = async () => {
     const formId = process.env.FORM_ID;
     const token = process.env.TKSPICE;
+    console.log("token", token);
     try {
-        const entries = await axios.get(
-            "https://api.webconnex.com/v2/public/search/tickets",
-            {
-                params: {
-                    product: "ticketspice.com",
-                    formId: formId,
-                },
-                headers: {
-                    apiKey: token,
-                },
+        const url = "https://api.webconnex.com/v2/public/search/tickets";
+        const entries = await axios.get(url, {
+            params: {
+                product: "ticketspice.com",
+                formId: formId,
+                port: "443",
             },
-        );
+            headers: {
+                apiKey: token,
+                "User-Agent": `node v14.17.6`,
+            },
+        });
         console.log("my val-----", entries);
-    } catch (err) {}
+    } catch (err) {
+        console.log("Error fetching api", err);
+    }
 };
 
 export const updateEntry = async (entry) => {
