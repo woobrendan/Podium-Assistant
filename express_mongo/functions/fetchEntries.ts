@@ -1,7 +1,10 @@
+import dotenv from "dotenv";
+
+dotenv.config();
+
 export const fetchApiEntries = async () => {
-    //const formId = process.env.REACT_APP_FORM_ID;
     try {
-        const token = process.env.REACT_APP_TKSPICE;
+        const token = process.env.TKSPICE;
         const url = "https://api.webconnex.com/v2/public/search/tickets";
         const params = new URLSearchParams({
             product: "ticketspice.com",
