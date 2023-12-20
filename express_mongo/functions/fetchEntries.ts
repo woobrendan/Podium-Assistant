@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import axios from "axios";
+import { ApiEntryInterface } from "../models/models";
 
 dotenv.config();
 
@@ -21,8 +22,9 @@ export const fetchApiEntries = async () => {
             },
         });
 
-        console.log("my val-----", entries.data.data[1]);
-        //filter out lumirank first then pass to converter
+        const filtered = entries.data.data.filter(
+            (entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY",
+        );
         // take in data and process same as used in entrant file
     } catch (err) {
         console.log("Error fetching api", err);
