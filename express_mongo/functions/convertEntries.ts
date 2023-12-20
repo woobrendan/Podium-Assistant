@@ -1,4 +1,4 @@
-import { ApiEntryInterface, FieldData } from "../models/models";
+import { ApiEntryInterface } from "../models/models";
 
 const labels = [
     "Car Series", // GT4, GTWCA
@@ -15,8 +15,25 @@ const labels = [
     "Team Sponsors - Please seperate each Sponsor with a comma",
 ];
 
+const convertClassif = (classif: string): string | undefined => {
+    const classList: Record<string, string> = {
+        sro3: "SRO3",
+        gt4: "GT4",
+        gt2: "GT2",
+        proAm: "Pro-Am",
+        proPro: "Pro",
+        am: "Am",
+        silver: "Silver",
+        TCX: "TCX",
+        TC: "TC",
+        TCA: "TCA",
+    };
+
+    return classList[classif];
+};
+
 const convertEntry = (entry: ApiEntryInterface) => {
-    const newEntry = {
+    const newEntry: { [key: string]: any } = {
         id: entry.id,
         event: entry.eventLabel,
         created: entry.dateCreated,
@@ -28,7 +45,7 @@ const convertEntry = (entry: ApiEntryInterface) => {
                 label === "Championship / Class" &&
                 field.path.includes("carType.")
             ) {
-                //newEntry.class = conver
+                newEntry["class"] = convertClassif(field.label);
             }
         }
     }
