@@ -17,7 +17,7 @@ export interface EntryInterface {
     year: number;
 }
 
-interface FieldData {
+export interface FieldData {
     amount?: string;
     label: string;
     path: string;
