@@ -1,4 +1,4 @@
-import { ApiEntryInterface } from "../models/models";
+import { ApiEntryInterface, FieldData } from "../models/models";
 
 const labels = [
     "Car Series", // GT4, GTWCA
@@ -32,6 +32,16 @@ const convertClassif = (classif: string): string | undefined => {
     return classList[classif];
 };
 
+const getFieldPathVal = (field: FieldData) => {
+    return field.path.split(".")[1];
+};
+
+const getDriverName = (
+    driver: string,
+    field: string,
+    entry: { [key: string]: any },
+) => {};
+
 const convertEntry = (entry: ApiEntryInterface) => {
     const newEntry: { [key: string]: any } = {
         id: entry.id,
@@ -46,6 +56,15 @@ const convertEntry = (entry: ApiEntryInterface) => {
                 field.path.includes("carType.")
             ) {
                 newEntry["class"] = convertClassif(field.label);
+                break;
+            }
+
+            if (
+                (label === "driver1" &&
+                    field.path.includes("primaryDriverName.")) ||
+                (label === "driver2" && field.path.includes("2ndDriverName2."))
+            ) {
+                newEntry.l;
             }
         }
     }
