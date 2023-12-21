@@ -1,30 +1,6 @@
 import { ApiEntryInterface, FieldData } from "../models/models";
-import { labels, convertClassif } from "./convertFuncs";
+import { labels, convertClassif, getFieldPathVal, getDriverName } from "./convertFuncs";
 
-const getFieldPathVal = (field: FieldData) => {
-    return field.path.split(".")[1];
-};
-
-const getDriverName = (
-    driver: string, //driver1 or driver2
-    field: FieldData,
-    entry: { [key: string]: any },
-) => {
-    const name = getFieldPathVal(field);
-    const nameArr = name.split(" ");
-
-    const copyEntry = JSON.parse(JSON.stringify(entry));
-
-    if (nameArr.length == 3) {
-        copyEntry[`${driver}firstName`] = `${nameArr[0]} ${nameArr[1]}`;
-        copyEntry[`${driver}lastName`] = nameArr[2];
-    } else {
-        copyEntry[`${driver}firstName`] = nameArr[0];
-        copyEntry[`${driver}lastName`] = nameArr[1];
-    }
-
-    return copyEntry;
-};
 
 const convertEntry = (entry: ApiEntryInterface) => {
     let newEntry: { [key: string]: any } = {
