@@ -46,6 +46,12 @@ const getAllEntries = async (req: Request, res: Response) => {
         .catch((error) => res.status(500).json({ error }));
 };
 
+
+const getEntries = async (req: Request, res: Response) => {
+
+}
+
+
 const updateEntry = async (req: Request, res: Response) => {
     const entryId = req.params.entryId;
     return Entries.findById(entryId)
