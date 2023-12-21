@@ -58,7 +58,7 @@ const getDriverName = (
 };
 
 const convertEntry = (entry: ApiEntryInterface) => {
-    const newEntry: { [key: string]: any } = {
+    let newEntry: { [key: string]: any } = {
         id: entry.id,
         event: entry.eventLabel,
         created: entry.dateCreated,
@@ -66,20 +66,24 @@ const convertEntry = (entry: ApiEntryInterface) => {
 
     for (const label of labels) {
         for (const field of entry.fieldData) {
-            if (
-                label === "Championship / Class" &&
-                field.path.includes("carType.")
-            ) {
+            if (label === "Championship / Class" && field.path.includes("carType.")) {
                 newEntry["class"] = convertClassif(field.label);
                 break;
             }
 
             if (
-                (label === "driver1" &&
-                    field.path.includes("primaryDriverName.")) ||
+                (label === "driver1" && field.path.includes("primaryDriverName.")) ||
                 (label === "driver2" && field.path.includes("2ndDriverName2."))
             ) {
-                newEntry.l;
+                newEntry = getDriverName(label, field, newEntry);
+            }
+
+            if (
+                (label === "driver1nationality" && field.path.includes("nationality2.")) ||
+                (label === "driver2nationality" && field.path.includes("nationality32.")) ||
+                (label === "team" && field.path.includes("temName."))
+            ) {
+                newEntry[label] = getFieldPathVal(field);
             }
         }
     }
