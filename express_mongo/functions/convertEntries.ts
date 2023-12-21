@@ -76,6 +76,7 @@ const convertEntry = (entry: ApiEntryInterface) => {
                 (label === "driver2" && field.path.includes("2ndDriverName2."))
             ) {
                 newEntry = getDriverName(label, field, newEntry);
+                break;
             }
 
             if (
@@ -84,6 +85,15 @@ const convertEntry = (entry: ApiEntryInterface) => {
                 (label === "team" && field.path.includes("temName."))
             ) {
                 newEntry[label] = getFieldPathVal(field);
+                break;
+            }
+
+            if (
+                (label === "driver1category" && field.path.includes("fiaDriverCategorization")) ||
+                (label === "driver2category" && field.path.includes("fiaDriverCategorization2."))
+            ) {
+                newEntry[label] = field.label;
+                break;
             }
         }
     }
