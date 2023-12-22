@@ -1,5 +1,14 @@
-import { ApiEntryInterface, FieldData } from "../models/models";
-import { labels, convertClassif, getFieldPathVal, getDriverName, getManuf, carTypes, vehicles } from "./convertFuncs";
+import { ApiEntryInterface } from "../models/models";
+import {
+    labels,
+    convertClassif,
+    getFieldPathVal,
+    getDriverName,
+    getManuf,
+    carTypes,
+    vehicles,
+    convertSeries,
+} from "./convertFuncs";
 
 const convertEntry = (entry: ApiEntryInterface) => {
     let newEntry: { [key: string]: any } = {
@@ -59,10 +68,18 @@ const convertEntry = (entry: ApiEntryInterface) => {
                     break;
                 }
                 if (label === "Car Series") {
-                    newEntry.series = converSeries(fieldVal);
+                    newEntry.series = convertSeries(fieldVal);
+                    break;
+                }
+                if (label === "Registered Car #") {
+                    newEntry.number = fieldVal;
                     break;
                 }
             }
         }
     }
+
+    return newEntry;
 };
+
+export default convertEntry;
