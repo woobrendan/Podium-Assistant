@@ -12,7 +12,7 @@ import {
 
 const convertEntry = (entry: ApiEntryInterface) => {
     let newEntry: { [key: string]: any } = {
-        id: entry.id,
+        tk_id: entry.id,
         event: entry.eventLabel,
         created: entry.dateCreated,
     };
