@@ -41,10 +41,27 @@ const convertEntry = (entry: ApiEntryInterface) => {
             }
 
             if (label === "car" && carTypes.includes(field.label)) {
-                const carVal = field.value;
+                const carVal = field.value as string;
                 const car = vehicles[carVal] || `${carVal} not in vehicle list`;
                 newEntry.car = car;
                 newEntry.manufacturer = getManuf(car);
+                break;
+            }
+
+            if (label === field.label) {
+                const fieldVal = field.value as string;
+                if (label === "Championship / Class") {
+                    newEntry["class"] = convertClassif(fieldVal);
+                    break;
+                }
+                if (label === "Team Sponsors - Please seperate each Sponsor with a comma") {
+                    newEntry.sponsors = fieldVal;
+                    break;
+                }
+                if (label === "Car Series") {
+                    newEntry.series = converSeries(fieldVal);
+                    break;
+                }
             }
         }
     }
