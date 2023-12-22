@@ -1,6 +1,5 @@
 import { ApiEntryInterface, FieldData } from "../models/models";
-import { labels, convertClassif, getFieldPathVal, getDriverName } from "./convertFuncs";
-
+import { labels, convertClassif, getFieldPathVal, getDriverName, getManuf, carTypes, vehicles } from "./convertFuncs";
 
 const convertEntry = (entry: ApiEntryInterface) => {
     let newEntry: { [key: string]: any } = {
@@ -39,6 +38,13 @@ const convertEntry = (entry: ApiEntryInterface) => {
             ) {
                 newEntry[label] = field.label;
                 break;
+            }
+
+            if (label === "car" && carTypes.includes(field.label)) {
+                const carVal = field.value;
+                const car = vehicles[carVal] || `${carVal} not in vehicle list`;
+                newEntry.car = car;
+                newEntry.manufacturer = getManuf(car);
             }
         }
     }
