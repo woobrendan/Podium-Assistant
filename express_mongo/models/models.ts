@@ -50,3 +50,24 @@ export interface ApiEntryInterface {
     dateCreated: Date;
     dateUpdated: Date;
 }
+
+export interface ConvertedApiEntry {
+    id: number;
+    event: string;
+    created: string;
+    series: string;
+    class: string;
+    number: string;
+    team: string;
+    driver1firstName: string;
+    driver1lastName: string;
+    driver1category?: string;
+    driver1nationality: string;
+    driver2firstName?: string;
+    driver2lastName?: string;
+    driver2category?: string;
+    driver2nationality?: string;
+    car: string;
+    manufacturer: string;
+    sponsors: string;
+}
