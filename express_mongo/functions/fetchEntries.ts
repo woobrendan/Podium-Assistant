@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 import axios from "axios";
 import { ApiEntryInterface } from "../models/models";
+import convertEntry from "./convertEntries";
 
 dotenv.config();
 
@@ -22,10 +23,9 @@ export const fetchApiEntries = async () => {
             },
         });
 
-        const filtered = entries.data.data.filter(
-            (entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY",
-        );
-        // take in data and process same as used in entrant file
+        const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
+        const convertedEntries = filtered.map((entry: ApiEntryInterface) => convertEntry(entry));
+        return convertedEntries;
     } catch (err) {
         console.log("Error fetching api", err);
     }
