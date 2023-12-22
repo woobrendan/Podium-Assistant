@@ -48,7 +48,7 @@ const vehicles: { [key: string]: string } = {
     audiR8Lms: "Audi R8 LMS",
 };
 
-const getManuf = (vehicle: string) => {
+const getManuf = (vehicle: string): string => {
     const car = vehicles[vehicle] || `${vehicle} not in vehicle list`;
     const carArr = car.split(" ");
 
@@ -103,4 +103,15 @@ const getDriverName = (
     return copyEntry;
 };
 
-export { labels, convertClassif, getFieldPathVal, getDriverName, getManuf, carTypes, vehicles };
+const convertSeries = (series: string): string => {
+    const seriesList: { [key: string]: any } = {
+        gtsSprintx: "GT4 America",
+        gtSportsClub: "GT America",
+        sprintX: "GT World Challenge America",
+        tc: "TC America",
+    };
+
+    return seriesList[series] || `Series Error w/ ${series}`;
+};
+
+export { labels, convertClassif, getFieldPathVal, getDriverName, getManuf, carTypes, vehicles, convertSeries };
