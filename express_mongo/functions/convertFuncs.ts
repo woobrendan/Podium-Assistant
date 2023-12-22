@@ -15,6 +15,15 @@ const labels = [
     "Team Sponsors - Please seperate each Sponsor with a comma",
 ];
 
+const carTypes = [
+    "TCX Car Make / Model",
+    "TC Car Make / Model",
+    "TCA Car Make/Model",
+    "FGTWCA Car Make / Model",
+    "GTA Car Make/Model",
+    "GT4 Car Make/Model",
+];
+
 //to be updated later as vehicles come through
 const vehicles: { [key: string]: string } = {
     acuraNsxGt3Evo22: "Acura NSX GT3 EVO22",
@@ -94,4 +103,4 @@ const getDriverName = (
     return copyEntry;
 };
 
-export { labels, convertClassif, getFieldPathVal, getDriverName };
+export { labels, convertClassif, getFieldPathVal, getDriverName, getManuf, carTypes, vehicles };
