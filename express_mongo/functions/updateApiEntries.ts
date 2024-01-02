@@ -18,8 +18,22 @@ const updateById = async (entry: ConvertedApiEntry) => {
 
     try {
         const db_entry = await ApiEntries.findById(entryId);
-        db_entry ? console.log("found") : console.log("not found");
+        db_entry ? console.log("found") : addEntry(entry);
     } catch (error) {
         console.log("error");
+    }
+};
+
+const addEntry = async (entry: ConvertedApiEntry) => {
+    const newEntry = new ApiEntries({
+        _id: entry.tk_id,
+        ...entry,
+    });
+
+    try {
+        const savedEntry = await newEntry.save();
+        if (savedEntry) console.log("new entry added");
+    } catch (error) {
+        console.log("Error adding new entry: ", entry.team);
     }
 };
