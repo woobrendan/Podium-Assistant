@@ -20,7 +20,7 @@ mongoose
     .connect(config.mongo.url, { retryWrites: true, w: "majority" })
     .then(async () => {
         console.log("Connected");
-        // await updateApiEntries()
+        await updateApiEntries();
         startServer();
     })
     .catch((error) => {
