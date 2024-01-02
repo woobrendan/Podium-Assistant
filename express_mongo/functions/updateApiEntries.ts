@@ -1,6 +1,7 @@
 import { fetchApiEntries } from "./fetchEntries";
 import { ConvertedApiEntry } from "../models/models";
 import ApiEntries from "../models/apiEntry_schema";
+import mongoose from "mongoose";
 
 const updateApiEntries = async () => {
     const entries: ConvertedApiEntry[] = await fetchApiEntries();
@@ -17,23 +18,29 @@ const updateById = async (entry: ConvertedApiEntry) => {
     const entryId = entry.tk_id;
 
     try {
-        const db_entry = await ApiEntries.findById(entryId);
-        db_entry ? console.log("found") : addEntry(entry);
+        const db_entry = await ApiEntries.find({ tk_id: entryId });
+        if (db_entry.length > 0) {
+            console.log("Entry Found");
+            console.log("db_entry", db_entry);
+        } else {
+            await addEntry(entry);
+        }
     } catch (error) {
-        console.log("error");
+        console.log("Error updating by ID: ", error);
     }
 };
 
 const addEntry = async (entry: ConvertedApiEntry) => {
     const newEntry = new ApiEntries({
-        _id: entry.tk_id,
+        _id: new mongoose.Types.ObjectId(),
         ...entry,
     });
 
     try {
         const savedEntry = await newEntry.save();
-        if (savedEntry) console.log("new entry added");
+        if (savedEntry) console.log("new entry added:", entry.team);
     } catch (error) {
         console.log("Error adding new entry: ", entry.team);
+        console.log("Error: ", error);
     }
 };
