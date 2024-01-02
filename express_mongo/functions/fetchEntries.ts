@@ -23,6 +23,7 @@ export const fetchApiEntries = async () => {
             },
         });
 
+        // filter out lumiranks by getting only event entry tickets, then convert to usable data
         const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
         const convertedEntries = filtered.map((entry: ApiEntryInterface) => convertEntry(entry));
         return convertedEntries;
@@ -30,3 +31,25 @@ export const fetchApiEntries = async () => {
         console.log("Error fetching api", err);
     }
 };
+
+//example of arrr convertEntries
+//{
+//    tk_id: 58219452,
+//    event: 'FULL SEASON ENTRY',
+//    created: '2023-12-12T22:08:14Z',
+//    series: 'GT4 America',
+//    class: 'Pro-Am',
+//    number: '22',
+//    team: 'TechSport Racing',
+//    driver1firstName: 'Colin',
+//    driver1lastName: 'Harrison',
+//    driver1category: 'Silver',
+//    driver1nationality: 'USA',
+//    driver2firstName: 'Eric',
+//    driver2lastName: 'Powell',
+//    driver2category: 'Silver',
+//    driver2nationality: 'USA',
+//    car: 'Nissan Z GT4',
+//    manufacturer: 'Nissan',
+//    sponsors: ''
+//  },
