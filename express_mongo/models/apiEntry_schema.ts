@@ -21,7 +21,7 @@ const apiEntrySchema: Schema = new Schema({
     driver2nationality: { type: String },
     car: { type: String, required: true },
     manufacturer: { type: String, required: true },
-    sponsors: { type: String, required: true },
+    sponsors: { type: String },
 });
 
 export default mongoose.model<ApiEntryModel>("ApiEntries", apiEntrySchema);
