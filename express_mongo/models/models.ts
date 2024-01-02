@@ -52,7 +52,7 @@ export interface ApiEntryInterface {
 }
 
 export interface ConvertedApiEntry {
-    id: number;
+    tk_id: number;
     event: string;
     created: string;
     series: string;
