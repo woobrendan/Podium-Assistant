@@ -1,5 +1,6 @@
 import { fetchApiEntries } from "./fetchEntries";
 import { ConvertedApiEntry } from "../models/models";
+import isEqual from "lodash/isEqual";
 import ApiEntries from "../models/apiEntry_schema";
 import mongoose from "mongoose";
 
@@ -18,10 +19,11 @@ const updateById = async (entry: ConvertedApiEntry) => {
     const entryId = entry.tk_id;
 
     try {
-        const db_entry = await ApiEntries.find({ tk_id: entryId });
-        if (db_entry.length > 0) {
-            console.log("Entry Found");
-            console.log("db_entry", db_entry);
+        const db_entry = await ApiEntries.findOne({ tk_id: entryId });
+        if (db_entry) {
+            if (!isEqual(db_entry, entry)) {
+                //add update logic
+            }
         } else {
             await addEntry(entry);
         }
