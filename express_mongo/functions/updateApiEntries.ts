@@ -1,6 +1,6 @@
 import { fetchApiEntries } from "./fetchEntries";
 import { ConvertedApiEntry } from "../models/models";
-import isEqual from "lodash/isEqual";
+import isEqual from "lodash-es/isEqual";
 import ApiEntries from "../models/apiEntry_schema";
 import mongoose from "mongoose";
 
