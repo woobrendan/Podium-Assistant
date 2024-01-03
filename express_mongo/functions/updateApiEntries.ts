@@ -1,6 +1,7 @@
 import { fetchApiEntries } from "./fetchEntries";
 import { ConvertedApiEntry } from "../models/models";
-import isEqual from "lodash-es/isEqual";
+//import isEqual from "lodash-es/isEqual";
+const isEqual = require("lodash/isEqual");
 import ApiEntries from "../models/apiEntry_schema";
 import mongoose from "mongoose";
 
@@ -22,7 +23,15 @@ const updateById = async (entry: ConvertedApiEntry) => {
         const db_entry = await ApiEntries.findOne({ tk_id: entryId });
         if (db_entry) {
             if (!isEqual(db_entry, entry)) {
-                //add update logic
+                db_entry.set(entry);
+                db_entry
+                    .save()
+                    .then((saved) => {
+                        console.log(`Successfully updated: ${saved.team} ${saved.number}`);
+                    })
+                    .catch((err) => {
+                        console.log(`Failed to update: ${db_entry.team} ${db_entry.number}`);
+                    });
             }
         } else {
             await addEntry(entry);
