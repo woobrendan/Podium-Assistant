@@ -1,7 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import mongoose from "mongoose";
 import Entries from "../models/entry_schema";
-import { fetchApiEntries } from "../functions/fetchEntries";
 
 const createEntry = async (req: Request, res: Response) => {
     const entry = new Entries({
@@ -31,26 +30,19 @@ const getEntryById = async (req: Request, res: Response) => {
     const entryId = req.params.entryId;
     try {
         const entry = await Entries.findById(entryId);
-        return entry
-            ? res.status(200).json({ entry })
-            : res.status(400).json({ message: "Entry Not Found" });
+        return entry ? res.status(200).json({ entry }) : res.status(400).json({ message: "Entry Not Found" });
     } catch (error) {
         return res.status(500).json({ error });
     }
 };
 
 const getAllEntries = async (req: Request, res: Response) => {
-    fetchApiEntries();
     return Entries.find()
         .then((entry) => res.status(201).json({ entry }))
         .catch((error) => res.status(500).json({ error }));
 };
 
-
-const getEntries = async (req: Request, res: Response) => {
-
-}
-
+const getEntries = async (req: Request, res: Response) => {};
 
 const updateEntry = async (req: Request, res: Response) => {
     const entryId = req.params.entryId;
@@ -73,9 +65,7 @@ const deleteEntry = (req: Request, res: Response) => {
     const entryId = req.params.entryId;
     return Entries.findByIdAndDelete(entryId)
         .then((entry) =>
-            entry
-                ? res.status(201).json({ message: "Deleted" })
-                : res.status(404).json({ message: "Not Found" }),
+            entry ? res.status(201).json({ message: "Deleted" }) : res.status(404).json({ message: "Not Found" }),
         )
         .catch((error) => res.status(500).json({ error }));
 };
