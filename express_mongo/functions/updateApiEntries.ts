@@ -57,9 +57,9 @@ const addEntry = async (entry: ConvertedApiEntry) => {
 
     try {
         const savedEntry = await newEntry.save();
-        if (savedEntry) console.log("new entry added:", entry.team);
+        if (savedEntry) console.log(`new entry added: ${entry.team} - ${entry.number}`);
     } catch (error) {
-        console.log("Error adding new entry: ", entry.team);
+        console.log(`Error adding: ${entry.team} - ${entry.number}`);
         console.log("Error: ", error);
     }
 };
