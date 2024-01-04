@@ -39,7 +39,19 @@ const updateApiEntries = async () => {
                         });
                 }
             } else {
-                await addEntry(entry);
+                // if ID doesnt exist in DB, create mongo entry
+                const newEntry = new ApiEntries({
+                    _id: new mongoose.Types.ObjectId(),
+                    ...entry,
+                });
+
+                try {
+                    const savedEntry = await newEntry.save();
+                    if (savedEntry) console.log(`new entry added: ${entry.team} - ${entry.number}`);
+                } catch (error) {
+                    console.log(`Error adding: ${entry.team} - ${entry.number}`);
+                    console.log("Error: ", error);
+                }
             }
         } catch (error) {
             console.log("Error updating by ID: ", error);
@@ -48,18 +60,3 @@ const updateApiEntries = async () => {
 };
 
 export default updateApiEntries;
-
-const addEntry = async (entry: ConvertedApiEntry) => {
-    const newEntry = new ApiEntries({
-        _id: new mongoose.Types.ObjectId(),
-        ...entry,
-    });
-
-    try {
-        const savedEntry = await newEntry.save();
-        if (savedEntry) console.log(`new entry added: ${entry.team} - ${entry.number}`);
-    } catch (error) {
-        console.log(`Error adding: ${entry.team} - ${entry.number}`);
-        console.log("Error: ", error);
-    }
-};
