@@ -6,6 +6,7 @@ import entryRoute from "./routes/entriesRoutes";
 import resultRoute from "./routes/resultRoutes";
 import eventRoute from "./routes/eventRoutes";
 import seriesRoute from "./routes/seriesRoutes";
+import apiEntryRoute from "./routes/apiEntryRoutes";
 
 import updateApiEntries from "./functions/updateApiEntries";
 
@@ -58,6 +59,8 @@ const startServer = () => {
     //** API Routes */
     router.use("/api/events", eventRoute);
     router.use("/api/series", seriesRoute);
+    // 2024 webconnex entry usaged
+    router.use("/api/entry", apiEntryRoute);
 
     //** Error handling */
     router.use((req, res, next) => {
