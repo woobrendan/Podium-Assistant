@@ -60,7 +60,7 @@ const startServer = () => {
     router.use("/api/events", eventRoute);
     router.use("/api/series", seriesRoute);
     // 2024 webconnex entry usaged
-    router.use("/api/entry", apiEntryRoute);
+    router.use("/api/entries", apiEntryRoute);
 
     //** Error handling */
     router.use((req, res, next) => {
