@@ -1,4 +1,5 @@
 import { ResultInterface, HardChargerInterface } from "../models/result_models";
+import { ConvertedApiEntry } from "../models/models";
 
 const resultBuilder = (result: ResultInterface) => {
     const { firstPlace, secondPlace, thirdPlace } = result;
@@ -34,4 +35,18 @@ const compareObjects = (db_entry: any, entry2: any): boolean => {
     return true;
 };
 
-export { resultBuilder, hardChargeResult, compareObjects };
+const entriesByEvent = (entries: ConvertedApiEntry[]) => {
+    const events: { [key: string]: ConvertedApiEntry[] } = {};
+
+    for (const entry of entries) {
+        if (events[entry.event]) {
+            events[entry.event].push(entry);
+        } else {
+            events[entry.event] = [entry];
+        }
+    }
+
+    return events;
+};
+
+export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent };
