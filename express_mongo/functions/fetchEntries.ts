@@ -23,12 +23,15 @@ export const fetchApiEntries = async () => {
             },
         });
 
-        // filter out lumiranks by getting only event entry tickets, then convert to usable data
-        const filtered = entries.data.data.filter(
-            (entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY" && entry["status"] === "completed",
-        );
-        const convertedEntries = filtered.map((entry: ApiEntryInterface) => convertEntry(entry));
-        return convertedEntries;
+        // filter out lumiranks and incomplete transactions, then convert to usable data
+        const combinedEntries = entries.data.data.reduce((result: any[], entry: ApiEntryInterface) => {
+            if (entry["levelLabel"] === "EVENT ENTRY" && entry["status"] === "completed") {
+                result.push(convertEntry(entry));
+            }
+            return result;
+        }, []);
+
+        return combinedEntries;
     } catch (err) {
         console.log("Error fetching api", err);
     }
