@@ -25,7 +25,7 @@ const hardChargeResult = (result: HardChargerInterface) => {
     };
 };
 
-const compareObjects = (db_entry: any, entry2: any) => {
+const compareObjects = (db_entry: any, entry2: any): boolean => {
     for (const key in entry2) {
         if (db_entry[key] !== entry2[key]) {
             return false;
