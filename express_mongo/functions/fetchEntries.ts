@@ -24,7 +24,9 @@ export const fetchApiEntries = async () => {
         });
 
         // filter out lumiranks by getting only event entry tickets, then convert to usable data
-        const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
+        const filtered = entries.data.data.filter(
+            (entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY" && entry["status"] === "completed",
+        );
         const convertedEntries = filtered.map((entry: ApiEntryInterface) => convertEntry(entry));
         return convertedEntries;
     } catch (err) {
