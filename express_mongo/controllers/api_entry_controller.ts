@@ -51,11 +51,27 @@ const getEntryByEvent = async (req: Request, res: Response) => {
         return res.status(500).json({ error });
     }
 };
-// get entries per event
+
+const updateEntry = async (req: Request, res: Response) => {
+    const entryId = req.params.entryId;
+    try {
+        const entry = await ApiEntries.findById(entryId);
+        if (entry) {
+            entry.set(req.body);
+            await entry.save();
+            return res.status(201).json({ entry });
+        } else {
+            res.status(400).json({ message: "Entry not found" });
+        }
+    } catch (error) {
+        return res.status(500).json({ error });
+    }
+};
 
 export default {
     getAllEntries,
     getEntryById,
     getEntriesByEvent,
     getEntryByEvent,
+    updateEntry,
 };
