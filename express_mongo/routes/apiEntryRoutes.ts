@@ -8,6 +8,7 @@ const router = express.Router();
 //router.post("/", controller.createEntry);
 router.get("/", controller.getAllEntries);
 router.get("/events", controller.getEntriesByEvent);
+router.get("/events/:event", controller.getEntryByEvent);
 router.get("/:entryId", controller.getEntryById);
 //router.patch("/:entryId", controller.updateEntry);
 //router.delete("/:entryId", controller.deleteEntry);
