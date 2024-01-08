@@ -12,6 +12,17 @@ export const fetchEntry = () => {
     };
 };
 
+export const fetchApiEntry = () => {
+    return async (dispatch) => {
+        try {
+            const entries = await axios.get("http://localhost:2020/api/entries");
+            dispatch(entryActions.setEntries(entries.data.entry));
+        } catch (err) {
+            console.error(err);
+        }
+    };
+};
+
 export const updateEntry = async (entry) => {
     try {
         axios.patch(`http://localhost:2020/entries/${entry._id}`, entry);
