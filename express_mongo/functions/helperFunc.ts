@@ -36,14 +36,20 @@ const compareObjects = (db_entry: any, entry2: any): boolean => {
 };
 
 const entriesByEvent = (entries: ConvertedApiEntry[]) => {
-    const events: { [key: string]: ConvertedApiEntry[] } = {};
+    const events: { [key: string]: ConvertedApiEntry[] } = {
+        "FULL SEASON ENTRY": [],
+        "Sonoma Raceway": [],
+        "Long Beach Grand Prix": [],
+        "Sebring International Raceway": [],
+        "Circuit of the Americas": [],
+        "Virginia International Raceway": [],
+        "Road America": [],
+        "Barber Motorsports Park": [],
+        "Indianapolis Motor Speedway": [],
+    };
 
     for (const entry of entries) {
-        if (events[entry.event]) {
-            events[entry.event].push(entry);
-        } else {
-            events[entry.event] = [entry];
-        }
+        events[entry.event].push(entry);
     }
 
     return events;
