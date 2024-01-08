@@ -34,7 +34,23 @@ const getEntriesByEvent = async (req: Request, res: Response) => {
     }
 };
 
-//get entries sorted by event
+const getEntryByEvent = async (req: Request, res: Response) => {
+    const event = req.params.event;
+    try {
+        const entries = await ApiEntries.find();
+        if (entries) {
+            const sortedByEvent = entriesByEvent(entries);
+            const eventEntries = sortedByEvent[event];
+            const fs_entries = sortedByEvent["FULL SEASON ENTRY"];
+
+            return res.status(200).json({ entries: [...eventEntries, ...fs_entries] });
+        } else {
+            res.status(400).json({ message: "Entrie Not Found" });
+        }
+    } catch (error) {
+        return res.status(500).json({ error });
+    }
+};
 // get entries per event
 
 export default {
