@@ -45,6 +45,33 @@ const getPlaceString = (num) => {
     return place[num];
 };
 
+const convertEntryFormat = (apiEntry) => {
+    const { _id, team, number, series, driver1firstName, driver1lastName, driver1nationality, driver2firstName } =
+        apiEntry;
+    const oldEntryFormat = {
+        _id,
+        team,
+        number,
+        series,
+        driver1: {
+            name: `${driver1firstName} ${driver1lastName}`,
+            nationality: driver1nationality,
+            rating: "",
+        },
+        ...(driver2firstName
+            ? {
+                  driver2: {
+                      name: `${driver2firstName} ${apiEntry.driver2lastName}`,
+                      nationality: apiEntry.driver2nationality,
+                      rating: "",
+                  },
+              }
+            : {}),
+    };
+
+    return oldEntryFormat;
+};
+
 const gtwca = "GT World Challenge America";
 const tcam = "TC America";
 const gtam = "GT America";
@@ -64,4 +91,5 @@ export {
     grCup,
     shortenName,
     getPlaceString,
+    convertEntryFormat,
 };
