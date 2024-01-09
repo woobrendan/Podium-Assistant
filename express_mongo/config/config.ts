@@ -8,13 +8,11 @@ const MONGO_URL = `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@cluster0.rm
 
 const MONGO_TEST = `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@cluster0.rmiuql1.mongodb.net/sro23_Test`;
 
-const SERVER_PORT = process.env.SERVER_PORT
-    ? Number(process.env.SERVER_PORT)
-    : 2020;
+const SERVER_PORT = process.env.SERVER_PORT ? Number(process.env.SERVER_PORT) : 2020;
 
 export const config = {
     mongo: {
-        url: MONGO_URL,
+        url: MONGO_TEST,
     },
     server: {
         port: SERVER_PORT,
