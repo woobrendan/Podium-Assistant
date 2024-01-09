@@ -71,6 +71,7 @@ const convertEntryFormat = (apiEntry) => {
         classification: apiEntry.class,
         year: created.split("-")[0],
         carImage: "",
+        event: apiEntry.event,
     };
 
     return oldEntryFormat;
