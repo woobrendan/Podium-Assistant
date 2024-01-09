@@ -1,5 +1,6 @@
 import axios from "axios";
 import { entryActions } from "./entry_slice";
+import { convertEntryFormat } from "../functions/helperFunc";
 
 export const fetchEntry = () => {
     return async (dispatch) => {
@@ -16,7 +17,8 @@ export const fetchApiEntry = () => {
     return async (dispatch) => {
         try {
             const entries = await axios.get("http://localhost:2020/api/entries");
-            dispatch(entryActions.setEntries(entries.data.entry));
+            const converted = entries.data.entry.map((entry) => convertEntryFormat(entry));
+            dispatch(entryActions.setEntries(converted));
         } catch (err) {
             console.error(err);
         }
