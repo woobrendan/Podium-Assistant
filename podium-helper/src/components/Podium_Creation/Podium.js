@@ -44,13 +44,11 @@ const Podium = () => {
 
     useEffect(() => {
         dispatch(fetchEntry());
-        fetchApiEntries();
+        //fetchApiEntries();
     }, [dispatch]);
 
     const handleFinalSubmit = () => {
-        dispatch(
-            resultsActions.addResults(mongoResult(results, results.fastLap)),
-        );
+        dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
         navigate("/recent");
     };
 
@@ -63,12 +61,8 @@ const Podium = () => {
                     .filter((entry) => results.series.name === entry.series)
                     // loop through those entries, set drivers val to an array of driver objects, then find matching name
                     .find((entry) => {
-                        const drivers = Object.values(entry).filter(
-                            (val) => typeof val === "object",
-                        );
-                        return drivers.some(
-                            (driver) => driver.name === value.driver,
-                        );
+                        const drivers = Object.values(entry).filter((val) => typeof val === "object");
+                        return drivers.some((driver) => driver.name === value.driver);
                     });
 
                 setResults((prev) => ({
@@ -121,20 +115,9 @@ const Podium = () => {
             </div>
             {results.series && (
                 <div className="podium_results_container">
-                    {numOfPodiumDisplays(
-                        results.series,
-                        handleRacePodiumSubmit,
-                        results,
-                        entries,
-                    )}
-                    <FastLap
-                        handleSubmit={handleRacePodiumSubmit}
-                        series={results.series}
-                    />
-                    <HardChargeCard
-                        series={results.series}
-                        handleSubmit={handleRacePodiumSubmit}
-                    />
+                    {numOfPodiumDisplays(results.series, handleRacePodiumSubmit, results, entries)}
+                    <FastLap handleSubmit={handleRacePodiumSubmit} series={results.series} />
+                    <HardChargeCard series={results.series} handleSubmit={handleRacePodiumSubmit} />
                 </div>
             )}
             {results.fastLap && (
