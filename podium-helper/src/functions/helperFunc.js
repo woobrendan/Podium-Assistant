@@ -28,6 +28,7 @@ const shortenName = (seriesName) => {
         "GT America": "GTA",
         "TC America": "TCAM",
         "Pirelli GT4 America": "PGT4A",
+        "GT4 America": "PGT4A",
         "Toyota GR Cup": "GR Cup",
         "Intercontinental GT Challenge": "IGTC",
     };
