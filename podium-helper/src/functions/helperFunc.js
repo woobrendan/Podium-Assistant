@@ -46,8 +46,13 @@ const getPlaceString = (num) => {
 };
 
 const convertEntryFormat = (apiEntry) => {
-    const { _id, team, number, series, driver1firstName, driver1lastName, driver1nationality, driver2firstName } =
+    const { _id, team, number, series, driver1firstName, driver1lastName, driver1nationality, driver2firstName, car } =
         apiEntry;
+
+    const getYear = (entry) => {
+        return entry.created.split("-")[0];
+    };
+
     const oldEntryFormat = {
         _id,
         team,
@@ -67,6 +72,9 @@ const convertEntryFormat = (apiEntry) => {
                   },
               }
             : {}),
+        vehicle: car,
+        classification: apiEntry.class,
+        year: getYear(apiEntry),
     };
 
     return oldEntryFormat;
