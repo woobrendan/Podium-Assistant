@@ -24,7 +24,8 @@ const sortBySeries = (listOfEntries) => {
         [grCup]: [],
     };
     listOfEntries.forEach((entry) => {
-        series_list[entry.series].push(entry);
+        const series = entry.series === "GT4 America" ? "Pirelli GT4 America" : entry.series;
+        series_list[series].push(entry);
     });
 
     for (const key in series_list) {
@@ -78,17 +79,13 @@ const sortByClass = (listOfEntries) => {
                 pro.push(entry);
                 break;
             case "Pro-Am":
-                nameOfSeries === gt4a
-                    ? gt4proam.push(entry)
-                    : gt3proam.push(entry);
+                nameOfSeries === gt4a ? gt4proam.push(entry) : gt3proam.push(entry);
                 break;
             case "Am":
                 nameOfSeries === gt4a ? gt4am.push(entry) : gt3am.push(entry);
                 break;
             case "Silver":
-                nameOfSeries === gt4a
-                    ? gt4aSilver.push(entry)
-                    : gt3Silver.push(entry);
+                nameOfSeries === gt4a ? gt4aSilver.push(entry) : gt3Silver.push(entry);
                 break;
             case "SRO3":
                 sro3.push(entry);
@@ -155,11 +152,4 @@ const sortSeriesNames = (a, b) => {
     return 0;
 };
 
-export {
-    sortBySeries,
-    sortByVehicleType,
-    sortByManufacturer,
-    sortByClass,
-    compareResultDates,
-    sortSeriesNames,
-};
+export { sortBySeries, sortByVehicleType, sortByManufacturer, sortByClass, compareResultDates, sortSeriesNames };
