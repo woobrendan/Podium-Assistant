@@ -35,7 +35,7 @@ const vehicles: { [key: string]: string } = {
     fordMustangGt3: "Ford Mustang GT3",
     "mercedes-amgGt3": "Mercedes-AMG GT3",
     "ktmX-bowGt2": "KTM X-Bow GT2",
-    nissanZGt4: "Nissan Z GT4",
+    nissanZGt4: "Nissan NISMO Z GT4",
     bmwM4Gt4: "BMW M4 GT4",
     fordMustangGt4: "Ford Mustang GT4",
     mclarenArturaGt4: "McLaren Artura GT4",
@@ -50,6 +50,7 @@ const vehicles: { [key: string]: string } = {
     astonMartinVantageAmrr: "Aston Martin Vantage AMR GT4",
     mercedesamgGt3: "Mercedes-AMG GT3",
     bmwM4Gt42: "BMW M4 GT4",
+    porsche718CaymanGt42: "Porsche 718 Cayman GT4 RS CS",
 };
 
 const getManuf = (vehicle: string): string => {
