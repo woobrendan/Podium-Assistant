@@ -57,14 +57,14 @@ const convertEntryFormat = (apiEntry) => {
         driver1: {
             name: `${driver1firstName} ${driver1lastName}`,
             nationality: apiEntry.driver1nationality,
-            rating: "",
+            rating: `${apiEntry.driver1category}`,
         },
         ...(driver2firstName
             ? {
                   driver2: {
                       name: `${driver2firstName} ${apiEntry.driver2lastName}`,
                       nationality: apiEntry.driver2nationality,
-                      rating: "",
+                      rating: `${apiEntry.driver2category}`,
                   },
               }
             : {}),
