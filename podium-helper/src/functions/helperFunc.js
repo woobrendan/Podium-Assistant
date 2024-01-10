@@ -53,7 +53,7 @@ const convertEntryFormat = (apiEntry) => {
         _id,
         team,
         number,
-        series,
+        series: series === "GT4 America" ? "Pirelli GT4 America" : series,
         driver1: {
             name: `${driver1firstName} ${driver1lastName}`,
             nationality: apiEntry.driver1nationality,
