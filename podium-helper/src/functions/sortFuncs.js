@@ -24,8 +24,7 @@ const sortBySeries = (listOfEntries) => {
         [grCup]: [],
     };
     listOfEntries.forEach((entry) => {
-        const series = entry.series === "GT4 America" ? "Pirelli GT4 America" : entry.series;
-        series_list[series].push(entry);
+        series_list[entry.series].push(entry);
     });
 
     for (const key in series_list) {
