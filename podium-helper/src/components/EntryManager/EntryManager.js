@@ -1,12 +1,13 @@
 import EntryTable from "./EntryTable";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { fetchEntry, fetchApiEntry } from "../../store/entryActions";
+import { fetchApiEntry } from "../../store/entryActions";
 import Series from "../Podium_Creation/Series";
 import "../../Styling/entryManager.scss";
 import { Button, TextField } from "@mui/material";
 import AddEntry from "./AddEntry";
 import searchAllEntries from "../../functions/searchAllEntries";
+import EventSearch from "../EventsSearch";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
@@ -15,6 +16,7 @@ const EntryManager = () => {
     const [series, setSeries] = useState("");
     const [searchValue, setSearchValue] = useState("");
     const [showModal, setShowModal] = useState(false);
+    const [eventOption, setEventOption] = useState("");
     const dispatch = useDispatch();
 
     useEffect(() => {
@@ -24,6 +26,8 @@ const EntryManager = () => {
     useEffect(() => {
         dispatch(fetchApiEntry());
     }, [dispatch]);
+
+    const getValue = (event) => setEventOption(event.target.value);
 
     const sortEntries = (entries) => {
         const searchEntries = searchAllEntries(entries, searchValue);
@@ -58,6 +62,7 @@ const EntryManager = () => {
                 <Button variant="outlined" onClick={() => setShowModal(!showModal)}>
                     Add Entry
                 </Button>
+                <EventSearch getValue={getValue} />
                 <TextField
                     className="entryManager__search"
                     label="Search"
