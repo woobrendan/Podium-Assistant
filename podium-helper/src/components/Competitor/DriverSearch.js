@@ -46,7 +46,7 @@ const DriverSearch = () => {
     return (
         <div className="competitors-container">
             <div className="search-sort-options">
-                <ToggleSort getOption={(option) => setOption(option)} component="competitor" />
+                <ToggleSort getOption={(option) => setOption(option)} />
                 <TextField
                     className="competitor_search"
                     label="Search"
