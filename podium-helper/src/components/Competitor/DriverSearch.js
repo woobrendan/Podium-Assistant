@@ -5,14 +5,9 @@ import { useState, useEffect } from "react";
 import BackToTopButton from "../BackToTopButton.js";
 import ToggleSort from "./ToggleSort.js";
 import searchAllEntries from "../../functions/searchAllEntries.js";
-import { fetchEntry } from "../../store/entryActions.js";
+import { fetchApiEntry } from "../../store/entryActions.js";
 import NoResults from "../NoResults.js";
-import {
-    sortBySeries,
-    sortByVehicleType,
-    sortByManufacturer,
-    sortByClass,
-} from "../../functions/sortFuncs.js";
+import { sortBySeries, sortByVehicleType, sortByManufacturer, sortByClass } from "../../functions/sortFuncs.js";
 import { useDispatch, useSelector } from "react-redux";
 
 const DriverSearch = () => {
@@ -21,7 +16,7 @@ const DriverSearch = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchEntry());
+        dispatch(fetchApiEntry());
     }, [dispatch]);
 
     const entries = useSelector((state) => state.entry.entriesArray);
@@ -51,10 +46,7 @@ const DriverSearch = () => {
     return (
         <div className="competitors-container">
             <div className="search-sort-options">
-                <ToggleSort
-                    getOption={(option) => setOption(option)}
-                    component="competitor"
-                />
+                <ToggleSort getOption={(option) => setOption(option)} component="competitor" />
                 <TextField
                     className="competitor_search"
                     label="Search"
