@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { compareStartDate } from "./dateFuncs";
+//import { compareStartDate } from "./dateFuncs";
 
 const useEvents = () => {
     const [currentEventName, setCurrentEventName] = useState("");
@@ -8,14 +8,10 @@ const useEvents = () => {
     useEffect(() => {
         const getEventList = async () => {
             try {
-                const date = new Date();
-                const year = date.getFullYear();
+                const year = new Date().getFullYear();
                 const eventList = await axios.get(`http://localhost:2020/api/events/${year}`);
 
-                // return list of events for the current year
-                const currentYearEvents = eventList.data.events;
-                const sortedEvents = currentYearEvents.sort(compareStartDate);
-                setCurrentEventName(getCurrentEvent(sortedEvents));
+                setCurrentEventName(getCurrentEvent(eventList.data.events));
             } catch (err) {
                 console.log("Error:", err);
             }
