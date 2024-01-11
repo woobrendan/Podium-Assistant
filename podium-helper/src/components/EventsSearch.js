@@ -4,7 +4,7 @@ import useEvents from "../functions/useEvents";
 import axios from "axios";
 
 const EventSearch = ({ component, getValue }) => {
-    let { events, currentEventName } = useEvents();
+    let { currentEventName } = useEvents();
     const [eventName, setEventName] = useState("");
     const [eventList, setEventList] = useState([]);
 
@@ -18,13 +18,9 @@ const EventSearch = ({ component, getValue }) => {
 
     const getEvents = async () => {
         try {
-            const date = new Date();
-            const year = date.getFullYear();
-            let yearString = `http://localhost:2020/api/events`;
+            const year = new Date().getFullYear();
 
-            if (component === "podium") {
-                yearString += `/${year}`;
-            }
+            let yearString = `http://localhost:2020/api/events${component === "podium" ? `/${year}` : ""}`;
 
             const data = await axios.get(yearString);
             const eventArr = data.data.events;
