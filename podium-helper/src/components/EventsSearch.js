@@ -31,18 +31,23 @@ const EventSearch = ({ component, getValue }) => {
             const data = await axios.get(yearString);
             const eventArr = data.data.events;
 
-            const uniqueObjects = [];
-            const tempObject = {};
+            const uniqueEvents = [...new Set(eventArr.map((event) => event.name))];
 
-            eventArr.forEach((event) => {
-                const name = event.name;
-                if (!tempObject[name]) {
-                    tempObject[name] = true;
-                    uniqueObjects.push(event);
-                }
-            });
+            //            console.log("unique", uniqueEvents);
+            //
+            //            const uniqueObjects = [];
+            //            const tempObject = {};
+            //
+            //            eventArr.forEach((event) => {
+            //                const name = event.name;
+            //                if (!tempObject[name]) {
+            //                    tempObject[name] = true;
+            //                    uniqueObjects.push(event);
+            //                }
+            //            });
 
-            setEventList(uniqueObjects);
+            setEventList(uniqueEvents);
+            //setEventList(uniqueObjects);
         } catch (err) {
             console.log("Error fetching events: ", err);
         }
@@ -59,8 +64,8 @@ const EventSearch = ({ component, getValue }) => {
                 <InputLabel>Events</InputLabel>
                 <Select name="event" label="Events" value={eventName} onChange={(e) => handleChange(e)}>
                     {(component === "podium" ? events : eventList).map((event, index) => (
-                        <MenuItem key={index} value={event.name} data-testid={event.name}>
-                            {event.name}
+                        <MenuItem key={index} value={event} data-testid={event}>
+                            {event}
                         </MenuItem>
                     ))}
                 </Select>
