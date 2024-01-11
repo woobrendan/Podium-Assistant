@@ -13,9 +13,7 @@ const EventSearch = ({ component, getValue }) => {
     }, [currentEventName]);
 
     useEffect(() => {
-        if (component !== "podium") {
-            getEvents();
-        }
+        getEvents();
     }, []);
 
     const getEvents = async () => {
@@ -33,21 +31,7 @@ const EventSearch = ({ component, getValue }) => {
 
             const uniqueEvents = [...new Set(eventArr.map((event) => event.name))];
 
-            //            console.log("unique", uniqueEvents);
-            //
-            //            const uniqueObjects = [];
-            //            const tempObject = {};
-            //
-            //            eventArr.forEach((event) => {
-            //                const name = event.name;
-            //                if (!tempObject[name]) {
-            //                    tempObject[name] = true;
-            //                    uniqueObjects.push(event);
-            //                }
-            //            });
-
             setEventList(uniqueEvents);
-            //setEventList(uniqueObjects);
         } catch (err) {
             console.log("Error fetching events: ", err);
         }
@@ -63,7 +47,7 @@ const EventSearch = ({ component, getValue }) => {
             <FormControl className="event_dropdown">
                 <InputLabel>Events</InputLabel>
                 <Select name="event" label="Events" value={eventName} onChange={(e) => handleChange(e)}>
-                    {(component === "podium" ? events : eventList).map((event, index) => (
+                    {eventList.map((event, index) => (
                         <MenuItem key={index} value={event} data-testid={event}>
                             {event}
                         </MenuItem>
