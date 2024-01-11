@@ -20,7 +20,7 @@ const EventSearch = ({ component, getValue }) => {
         try {
             const year = new Date().getFullYear();
 
-            let yearString = `http://localhost:2020/api/events${component === "podium" ? `/${year}` : ""}`;
+            let yearString = `http://localhost:2020/api/events${component !== "result" ? `/${year}` : ""}`;
 
             const data = await axios.get(yearString);
             const eventArr = data.data.events;
