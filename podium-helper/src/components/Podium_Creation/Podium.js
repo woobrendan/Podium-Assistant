@@ -19,7 +19,7 @@ import { getToday } from "../../functions/dateFuncs";
 import mongoResult from "../../functions/formMongoResult";
 import { resultsActions } from "../../store/resultsSlice";
 import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
-import { fetchEntry, fetchApiEntries } from "../../store/entryActions";
+import { fetchApiEntry } from "../../store/entryActions";
 
 const Podium = () => {
     const { currentEventName } = useEvents();
@@ -43,8 +43,7 @@ const Podium = () => {
     }, [currentEventName]);
 
     useEffect(() => {
-        dispatch(fetchEntry());
-        //fetchApiEntries();
+        dispatch(fetchApiEntry());
     }, [dispatch]);
 
     const handleFinalSubmit = () => {
