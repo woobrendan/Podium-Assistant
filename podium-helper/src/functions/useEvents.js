@@ -3,7 +3,6 @@ import axios from "axios";
 import { compareStartDate } from "./dateFuncs";
 
 const useEvents = () => {
-    const [events, setEvents] = useState([]);
     const [currentEventName, setCurrentEventName] = useState("");
 
     useEffect(() => {
@@ -16,7 +15,6 @@ const useEvents = () => {
                 // return list of events for the current year
                 const currentYearEvents = eventList.data.events;
                 const sortedEvents = currentYearEvents.sort(compareStartDate);
-                setEvents(sortedEvents);
                 setCurrentEventName(getCurrentEvent(sortedEvents));
             } catch (err) {
                 console.log("Error:", err);
@@ -51,7 +49,7 @@ const useEvents = () => {
         return currentEvent;
     };
 
-    return { events, currentEventName };
+    return { currentEventName };
 };
 
 export default useEvents;
