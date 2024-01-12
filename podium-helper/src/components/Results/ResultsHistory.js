@@ -22,18 +22,14 @@ const ResultsHistory = () => {
     }, [dispatch]);
 
     useEffect(() => {
-        event
-            ? setFilteredResults(
-                  results.filter((result) => event === result.event),
-              )
-            : setFilteredResults(results);
+        event ? setFilteredResults(results.filter((result) => event === result.event)) : setFilteredResults(results);
     }, [event, results]);
 
     return (
         <section className="result-container">
             <h1>Result History</h1>
             <div className="filter-details">
-                <EventSearch getValue={getValue} />
+                <EventSearch getValue={getValue} component="result" />
                 <TextField
                     className="result_search"
                     label="Search"
@@ -46,11 +42,9 @@ const ResultsHistory = () => {
                 />
             </div>
             <div className="result-history-list">
-                {SearchAllResults(filteredResults, searchValue).map(
-                    (result, index) => (
-                        <ResultTableHeader results={result} key={index} />
-                    ),
-                )}
+                {SearchAllResults(filteredResults, searchValue).map((result, index) => (
+                    <ResultTableHeader results={result} key={index} />
+                ))}
             </div>
             <BackToTopButton />
         </section>
