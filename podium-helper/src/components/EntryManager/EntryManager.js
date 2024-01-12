@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { fetchApiEntry } from "../../store/entryActions";
-import searchAllEntries from "../../functions/searchAllEntries";
 
 //** STYLING */
 import { Button, TextField } from "@mui/material";
@@ -12,6 +11,10 @@ import EntryTable from "./EntryTable";
 import Series from "../Podium_Creation/Series";
 import AddEntry from "./AddEntry";
 import EventSearch from "../EventsSearch";
+
+//** Functions */
+import searchAllEntries from "../../functions/searchAllEntries";
+import { gtwca } from "../../functions/helperFunc";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
 const EntryManager = () => {
@@ -48,11 +51,10 @@ const EntryManager = () => {
 
             for (const series in entryObj) {
                 const sorted = entryObj[series].sort((a, b) => a.number - b.number);
-                if (series !== "GT World Challenge America") entryArr.push(...sorted);
+                if (series !== gtwca) entryArr.push(...sorted);
             }
-            return entryObj["GT World Challenge America"]
-                ? [...entryObj["GT World Challenge America"], ...entryArr]
-                : entryArr;
+            // check if entry arr includes gtwca entries, if so, put them at the start
+            return entryObj[gtwca] ? [...entryObj[gtwca], ...entryArr] : entryArr;
         } else {
             //sort when series is selected
             const filtered = searchEntries.filter((entry) => entry.series === series);
