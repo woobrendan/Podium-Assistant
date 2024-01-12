@@ -9,15 +9,13 @@ import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer.js";
 import axios from "axios";
 import { driverInfo } from "./functions/entryFuncs.js";
-import {
-    initialEntryState,
-    errorState,
-    checkEntryErrors,
-} from "../../functions/entryManager.js";
+import { initialEntryState, errorState, checkEntryErrors } from "../../functions/entryManager.js";
+import useEvents from "../../functions/useEvents";
 
 const AddEntry = ({ show, handleToggle }) => {
     const [newEntry, setNewEntry] = useState(initialEntryState);
     const [error, setError] = useState(errorState);
+    const { currentEventName } = useEvents();
 
     const dispatch = useDispatch();
     const customSetError = (err) => setError(err);
@@ -74,10 +72,8 @@ const AddEntry = ({ show, handleToggle }) => {
         const noErrors = checkEntryErrors(newEntry, error, customSetError);
         if (noErrors) {
             try {
-                const entry = await axios.post(
-                    "http://localhost:2020/entries",
-                    newEntry,
-                );
+                newEntry.event = currentEventName;
+                const entry = await axios.post("http://localhost:2020/api/entries", newEntry);
                 dispatch(entryActions.addEntry(entry.data.savedEntry));
                 setNewEntry(initialEntryState);
                 handleToggle();
@@ -107,24 +103,10 @@ const AddEntry = ({ show, handleToggle }) => {
         <Modal open={show} onClose={handleToggle}>
             <Box id="addEntry_modal">
                 <Series getValue={getSeries} />
-                <InputContainer
-                    val={newEntry.team}
-                    name="team"
-                    onInputChange={onInputChange}
-                    label="Team"
-                />
-                <EditVehicle
-                    entry={newEntry}
-                    onInputChange={onInputChange}
-                    series={series}
-                />
+                <InputContainer val={newEntry.team} name="team" onInputChange={onInputChange} label="Team" />
+                <EditVehicle entry={newEntry} onInputChange={onInputChange} series={series} />
                 {newEntry.series && renderEditDrivers()}
-                <Button
-                    variant="outlined"
-                    color="error"
-                    className="edit_modal_update"
-                    onClick={() => handleSubmit()}
-                >
+                <Button variant="outlined" color="error" className="edit_modal_update" onClick={() => handleSubmit()}>
                     Add
                 </Button>
             </Box>
