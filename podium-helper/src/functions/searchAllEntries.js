@@ -4,7 +4,7 @@ const searchAllEntries = (entries, searchVal, eventOption) => {
     }
 
     if (eventOption) {
-        entries = entries.filter((entry) => entry.event === eventOption);
+        entries = entries.filter((entry) => entry.event === eventOption || entry.event === "FULL SEASON ENTRY");
     }
 
     const lowerVal = searchVal.toLowerCase().trim();
