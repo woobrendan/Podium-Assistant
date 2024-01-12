@@ -1,5 +1,5 @@
-const searchAllEntries = (entries, searchVal) => {
-    if (!searchVal) {
+const searchAllEntries = (entries, searchVal, eventOption) => {
+    if (!searchVal && !eventOption) {
         return entries;
     }
 
@@ -8,16 +8,7 @@ const searchAllEntries = (entries, searchVal) => {
     const checkField = (field) => field.toLowerCase().includes(lowerVal);
 
     return entries.filter((val) => {
-        const {
-            driver1,
-            driver2,
-            driver3,
-            series,
-            number,
-            team,
-            vehicle,
-            classification,
-        } = val;
+        const { driver1, driver2, driver3, series, number, team, vehicle, classification } = val;
 
         // loop through driver vals return only truthy values
         const driversArr = [driver1, driver2, driver3].filter(Boolean);
