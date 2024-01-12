@@ -1,12 +1,16 @@
-import EntryTable from "./EntryTable";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { fetchApiEntry } from "../../store/entryActions";
-import Series from "../Podium_Creation/Series";
-import "../../Styling/entryManager.scss";
-import { Button, TextField } from "@mui/material";
-import AddEntry from "./AddEntry";
 import searchAllEntries from "../../functions/searchAllEntries";
+
+//** STYLING */
+import { Button, TextField } from "@mui/material";
+import "../../Styling/entryManager.scss";
+
+//** COMPONENTS */
+import EntryTable from "./EntryTable";
+import Series from "../Podium_Creation/Series";
+import AddEntry from "./AddEntry";
 import EventSearch from "../EventsSearch";
 
 //take in entries from state, run a filter to change return of entries and pass down to table
@@ -30,7 +34,7 @@ const EntryManager = () => {
     const getValue = (event) => setEventOption(event.target.value);
 
     const sortEntries = (entries) => {
-        const searchEntries = searchAllEntries(entries, searchValue);
+        const searchEntries = searchAllEntries(entries, searchValue, eventOption);
         // sorting when no series is selected
         if (!series || series === "All") {
             const entryObj = {};
