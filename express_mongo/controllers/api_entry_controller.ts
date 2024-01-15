@@ -1,12 +1,12 @@
 import { Request, Response } from "express";
 import mongoose from "mongoose";
 import ApiEntries from "../models/apiEntry_schema";
-import { entriesByEvent, getDriverName } from "../functions/helperFunc";
+import { entriesByEvent, getManuf, getDriverInfo } from "../functions/helperFunc";
 
 //** NEW ENTRIES */
 const createEntry = async (req: Request, res: Response) => {
     const { event, team, series, driver1, driver2, driver3, number, classification, vehicle } = req.body;
-    const entry = new ApiEntries({
+    const newEntry = new ApiEntries({
         _id: new mongoose.Types.ObjectId(),
         tk_id: null,
         event,
@@ -15,16 +15,10 @@ const createEntry = async (req: Request, res: Response) => {
         number,
         car: vehicle,
         class: classification,
-        driver1firstName: getDriverName(driver1.name, "first"),
-        driver1lastName: getDriverName(driver1.name, "last"),
-        driver1category: driver1.rating,
-        driver1nationality: driver1.nationality,
-
-        driver1: {
-            ...req.body.driver1,
-        },
-        ...(req.body.driver2 ? { driver2: { ...req.body.driver2 } } : {}),
-        ...(req.body.driver3 ? { driver3: { ...req.body.driver3 } } : {}),
+        manufacturer: getManuf(vehicle),
+        ...getDriverInfo(driver1, 1),
+        ...(driver2 ? getDriverInfo(driver2, 2) : {}),
+        ...(driver3 ? getDriverInfo(driver3, 3) : {}),
     });
 
     try {
