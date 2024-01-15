@@ -4,7 +4,7 @@ import { ConvertedApiEntry } from "./models";
 export interface ApiEntryModel extends Document, ConvertedApiEntry {}
 
 const apiEntrySchema: Schema = new Schema({
-    tk_id: { type: Number, required: true },
+    tk_id: { type: Number },
     event: { type: String, required: true },
     created: { type: String, required: true },
     series: { type: String, required: true },
