@@ -3,6 +3,28 @@ import mongoose from "mongoose";
 import ApiEntries from "../models/apiEntry_schema";
 import { entriesByEvent } from "../functions/helperFunc";
 
+//** NEW ENTRIES */
+const createEntry = async (req: Request, res: Response) => {
+    console.log(req.body);
+    const entry = new ApiEntries({
+        _id: new mongoose.Types.ObjectId(),
+        tk_id: null,
+        driver1: {
+            ...req.body.driver1,
+        },
+        ...(req.body.driver2 ? { driver2: { ...req.body.driver2 } } : {}),
+        ...(req.body.driver3 ? { driver3: { ...req.body.driver3 } } : {}),
+    });
+
+    try {
+        //const savedEntry = await entry.save();
+        //res.status(200).json({ savedEntry });
+        res.status(200);
+    } catch (error) {
+        res.status(500).json({ error });
+    }
+};
+
 const getAllEntries = async (req: Request, res: Response) => {
     return ApiEntries.find()
         .then((entry) => res.status(201).json({ entry }))
@@ -74,4 +96,5 @@ export default {
     getEntriesByEvent,
     getEntryByEvent,
     updateEntry,
+    createEntry,
 };
