@@ -1,14 +1,25 @@
 import { Request, Response } from "express";
 import mongoose from "mongoose";
 import ApiEntries from "../models/apiEntry_schema";
-import { entriesByEvent } from "../functions/helperFunc";
+import { entriesByEvent, getDriverName } from "../functions/helperFunc";
 
 //** NEW ENTRIES */
 const createEntry = async (req: Request, res: Response) => {
-    console.log(req.body);
+    const { event, team, series, driver1, driver2, driver3, number, classification, vehicle } = req.body;
     const entry = new ApiEntries({
         _id: new mongoose.Types.ObjectId(),
         tk_id: null,
+        event,
+        series,
+        team,
+        number,
+        car: vehicle,
+        class: classification,
+        driver1firstName: getDriverName(driver1.name, "first"),
+        driver1lastName: getDriverName(driver1.name, "last"),
+        driver1category: driver1.rating,
+        driver1nationality: driver1.nationality,
+
         driver1: {
             ...req.body.driver1,
         },
