@@ -1,5 +1,5 @@
 import { ResultInterface, HardChargerInterface } from "../models/result_models";
-import { ConvertedApiEntry } from "../models/models";
+import { ConvertedApiEntry, DriverInfo } from "../models/models";
 
 const resultBuilder = (result: ResultInterface) => {
     const { firstPlace, secondPlace, thirdPlace } = result;
@@ -60,4 +60,22 @@ const getDriverName = (name: string, val: string): string => {
     return val === "first" ? nameArr[0] : nameArr.slice(1).join(" ");
 };
 
-export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent, getDriverName };
+const getDriverInfo = (driver: DriverInfo, driverNum: Number) => {
+    const driverString = `driver${driverNum}`;
+    const driverInfo: { [key: string]: string } = {};
+    const keys = ["firstName", "lastName", "category", "nationality"];
+    const values = [
+        getDriverName(driver.name, "first"),
+        getDriverName(driver.name, "last"),
+        driver.rating,
+        driver.nationality,
+    ];
+    for (let i = 0; i < keys.length; i++) {
+        const keyString = `${driverString}${keys[i]}`;
+        driverInfo[keyString] = values[i];
+    }
+
+    return driverInfo;
+};
+
+export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent, getDriverName, getDriverInfo };
