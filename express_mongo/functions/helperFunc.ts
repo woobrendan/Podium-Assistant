@@ -55,4 +55,13 @@ const entriesByEvent = (entries: ConvertedApiEntry[]) => {
     return events;
 };
 
+const getDriverName = (name: string, val: string): string => {
+    const nameArr = name.split(" ");
+    if (val === "first") {
+        return nameArr[0];
+    } else {
+        return nameArr.slice(1).join(" ");
+    }
+};
+
 export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent };
