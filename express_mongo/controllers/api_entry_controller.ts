@@ -9,6 +9,7 @@ const createEntry = async (req: Request, res: Response) => {
     const newEntry = new ApiEntries({
         _id: new mongoose.Types.ObjectId(),
         tk_id: null,
+        created: new Date(),
         event,
         series,
         team,
@@ -20,11 +21,9 @@ const createEntry = async (req: Request, res: Response) => {
         ...(driver2 ? getDriverInfo(driver2, 2) : {}),
         ...(driver3 ? getDriverInfo(driver3, 3) : {}),
     });
-
     try {
-        //const savedEntry = await entry.save();
-        //res.status(200).json({ savedEntry });
-        res.status(200);
+        const savedEntry = await newEntry.save();
+        res.status(200).json({ savedEntry });
     } catch (error) {
         res.status(500).json({ error });
     }
