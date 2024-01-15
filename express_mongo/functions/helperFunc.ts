@@ -78,4 +78,8 @@ const getDriverInfo = (driver: DriverInfo, driverNum: Number) => {
     return driverInfo;
 };
 
-export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent, getDriverName, getDriverInfo };
+const getManuf = (vehicle: string): string => {
+    return vehicle.includes("Aston") ? "Aston Martin" : vehicle.split(" ")[0];
+};
+
+export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent, getDriverInfo, getManuf };
