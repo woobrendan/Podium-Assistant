@@ -48,22 +48,13 @@ const getPlaceString = (num) => {
 
 const convertDriver = (apiEntry, driverNum) => {
     const driver = `driver${driverNum}`;
-    const vals = ["firstName", "lastName", "nationality", "category"];
-    const keys = ["name", "nationality", "rating"];
     const driverInfo = {
-        [driver]: {},
+        [driver]: {
+            name: `${apiEntry[`${driver}firstName`]} ${apiEntry[`${driver}lastName`]}`,
+            nationality: apiEntry[`${driver}nationality`],
+            rating: apiEntry[`${driver}category`],
+        },
     };
-
-    for (let i = 0; i < keys.length; i++) {
-        if (keys[i] === "name") {
-            const firstName = apiEntry[`${driver}firstName`];
-            const lastName = apiEntry[`${driver}lastName`];
-            driverInfo[driver]["name"] = `${firstName} ${lastName}`;
-        } else {
-            const driverVal = `${driver}${vals[i + 1]}`;
-            driverInfo[driver][keys[i]] = apiEntry[driverVal];
-        }
-    }
 
     return driverInfo;
 };
