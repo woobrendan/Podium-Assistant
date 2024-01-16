@@ -49,38 +49,40 @@ const getPlaceString = (num) => {
 const convertDriver = (apiEntry, driverNum) => {
     const driver = `driver${driverNum}`;
     const vals = ["firstName", "lastName", "nationality", "category"];
+    const keys = ["name", "nationality", "rating"];
     const driverInfo = {
         [driver]: {},
     };
+
+    for (let i = 0; i < keys.length; i++) {
+        if (keys[i] === "name") {
+            const firstName = apiEntry[`${driver}firstName`];
+            const lastName = apiEntry[`${driver}lastName`];
+            driverInfo[driver]["name"] = `${firstName} ${lastName}`;
+        } else {
+            const driverVal = `${driver}${vals[i + 1]}`;
+            driverInfo[driver][keys[i]] = apiEntry[driverVal];
+        }
+    }
+
+    return driverInfo;
 };
 
 const convertEntryFormat = (apiEntry) => {
-    const { _id, team, number, series, driver1firstName, driver1lastName, driver2firstName, car, created } = apiEntry;
+    const { _id, team, number, series, driver2firstName, car, created, event } = apiEntry;
 
     const oldEntryFormat = {
         _id,
         team,
         number,
+        event,
         series: series === "GT4 America" ? "Pirelli GT4 America" : series,
-        driver1: {
-            name: `${driver1firstName} ${driver1lastName}`,
-            nationality: apiEntry.driver1nationality,
-            rating: `${apiEntry.driver1category}`,
-        },
-        ...(driver2firstName
-            ? {
-                  driver2: {
-                      name: `${driver2firstName} ${apiEntry.driver2lastName}`,
-                      nationality: apiEntry.driver2nationality,
-                      rating: `${apiEntry.driver2category}`,
-                  },
-              }
-            : {}),
+        ...convertDriver(apiEntry, 1),
+        ...(driver2firstName ? convertDriver(apiEntry, 2) : {}),
         vehicle: car,
         classification: apiEntry.class,
         year: created.split("-")[0],
         carImage: "",
-        event: apiEntry.event,
     };
 
     return oldEntryFormat;
