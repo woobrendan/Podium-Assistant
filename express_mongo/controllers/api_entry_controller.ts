@@ -94,6 +94,16 @@ const updateEntry = async (req: Request, res: Response) => {
     }
 };
 
+//** Delete Entry */
+const deleteEntry = (req: Request, res: Response) => {
+    const entryId = req.params.entryId;
+    return ApiEntries.findByIdAndDelete(entryId)
+        .then((entry) =>
+            entry ? res.status(201).json({ message: "Deleted" }) : res.status(404).json({ message: "Not Found" }),
+        )
+        .catch((error) => res.status(500).json({ error }));
+};
+
 export default {
     getAllEntries,
     getEntryById,
@@ -101,4 +111,5 @@ export default {
     getEntryByEvent,
     updateEntry,
     createEntry,
+    deleteEntry,
 };
