@@ -46,6 +46,14 @@ const getPlaceString = (num) => {
     return place[num];
 };
 
+const convertDriver = (apiEntry, driverNum) => {
+    const driver = `driver${driverNum}`;
+    const vals = ["firstName", "lastName", "nationality", "category"];
+    const driverInfo = {
+        [driver]: {},
+    };
+};
+
 const convertEntryFormat = (apiEntry) => {
     const { _id, team, number, series, driver1firstName, driver1lastName, driver2firstName, car, created } = apiEntry;
 
