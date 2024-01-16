@@ -95,13 +95,19 @@ const updateEntry = async (req: Request, res: Response) => {
 };
 
 //** Delete Entry */
-const deleteEntry = (req: Request, res: Response) => {
-    const entryId = req.params.entryId;
-    return ApiEntries.findByIdAndDelete(entryId)
-        .then((entry) =>
-            entry ? res.status(201).json({ message: "Deleted" }) : res.status(404).json({ message: "Not Found" }),
-        )
-        .catch((error) => res.status(500).json({ error }));
+const deleteEntry = async (req: Request, res: Response) => {
+    try {
+        const entryId = req.params.entryId;
+        const entry = await ApiEntries.findByIdAndDelete(entryId);
+
+        if (entry) {
+            return res.status(201).json({ message: "Deleted" });
+        } else {
+            return res.status(404).json({ message: "Not Found" });
+        }
+    } catch (error: any) {
+        return res.status(500).json({ error: error.message });
+    }
 };
 
 export default {
