@@ -35,7 +35,7 @@ export const updateEntry = async (entry) => {
 
 export const deleteEntry = async (entry) => {
     try {
-        axios.delete(`http://localhost:2020/entries/${entry._id}`);
+        axios.delete(`http://localhost:2020/api/entries/${entry._id}`);
     } catch (error) {
         console.log("Error deleting Entry", error);
     }
