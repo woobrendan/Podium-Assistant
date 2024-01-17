@@ -15,13 +15,13 @@ const FiaRating = (currentRating) => {
                     name="classification"
                     label="Class"
                     value={rating}
-                    onChange={handleChange}
+                    onChange={(e) => setRating(e.target.value)}
                 >
-                    {/*{getSeriesClasses(seriesList).map((classification, index) => (
-                        <MenuItem key={index} value={classification} data-testid={classification}>
-                            {classification}
+                    {ratingList.map((ratingStr, index) => (
+                        <MenuItem key={index} value={ratingStr} data-testid={ratingStr}>
+                            {ratingStr}
                         </MenuItem>
-                    ))}*/}
+                    ))}
                 </Select>
             </FormControl>
         </Box>
