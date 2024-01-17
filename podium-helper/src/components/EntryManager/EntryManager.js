@@ -9,7 +9,7 @@ import "../../Styling/entryManager.scss";
 //** COMPONENTS */
 import EntryTable from "./EntryTable";
 import Series from "../Podium_Creation/Series";
-import AddEntry from "./AddEntry";
+import AddEntry from "./modal/AddEntry";
 import EventSearch from "../EventsSearch";
 
 //** Functions */
