@@ -1,6 +1,6 @@
 import { Modal, Box, Button } from "@mui/material";
 import { useState } from "react";
-import "../../Styling/modal.scss";
+import "../../../Styling/modal.scss";
 import EditDriver from "./EditDriver";
 import EditVehicle from "./EditVehicle";
 import { useDispatch } from "react-redux";
