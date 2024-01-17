@@ -53,6 +53,7 @@ const vehicles: { [key: string]: string } = {
     bmwM4Gt42: "BMW M4 GT4",
     porsche718CaymanGt42: "Porsche 718 Cayman GT4 RS CS",
     astonMartinVantageAmr: "Aston Martin Vantage AMR GT3",
+    porsche911Gt3R3: "Porsche 992 GT3 R",
 };
 
 const getManuf = (vehicle: string): string => {
