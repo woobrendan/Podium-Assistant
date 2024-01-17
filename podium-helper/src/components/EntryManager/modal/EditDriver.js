@@ -1,4 +1,5 @@
 import InputContainer from "./InputContainer";
+import FiaRating from "./FiaRating";
 
 const EditDriver = ({ entry, onChange, driverNum }) => {
     const driver = `driver${driverNum}`;
@@ -17,12 +18,7 @@ const EditDriver = ({ entry, onChange, driverNum }) => {
                 onInputChange={onChange}
                 label="Nationality"
             />
-            <InputContainer
-                val={entry[driver].rating}
-                name={`driver ${driverNum} rating`}
-                onInputChange={onChange}
-                label="FIA Rating"
-            />
+            <FiaRating currentRating={entry[driver].rating} name={`driver ${driverNum} rating`} onChange={onChange} />
         </section>
     );
 };
