@@ -1,7 +1,7 @@
 import { TableRow, TableCell, Button } from "@mui/material";
 import { useState } from "react";
 import { shortenName } from "../../functions/helperFunc";
-import EditModal from "./EditModal";
+import EditModal from "./modal/EditModal";
 
 const EntryRows = ({ entry }) => {
     const [showModal, setShowModal] = useState(false);
