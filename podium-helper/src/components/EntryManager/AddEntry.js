@@ -3,7 +3,7 @@ import { Modal, Box, Button } from "@mui/material";
 import EditVehicle from "./EditVehicle.js";
 import EditDriver from "./EditDriver.js";
 import Series from "../Podium_Creation/Series.js";
-import { gtwca, gt4a, igtc, tcam, gtam } from "../../functions/helperFunc.js";
+import { gtwca, gt4a, igtc, tcam, gtam, convertEntryFormat } from "../../functions/helperFunc.js";
 import { useDispatch } from "react-redux";
 import { entryActions } from "../../store/entry_slice";
 import InputContainer from "./InputContainer.js";
@@ -74,7 +74,9 @@ const AddEntry = ({ show, handleToggle }) => {
             try {
                 newEntry.event = currentEventName;
                 const entry = await axios.post("http://localhost:2020/api/entries", newEntry);
-                dispatch(entryActions.addEntry(entry.data.savedEntry));
+                const converted = convertEntryFormat(entry.data.savedEntry);
+
+                dispatch(entryActions.addEntry(converted));
                 setNewEntry(initialEntryState);
                 handleToggle();
             } catch (err) {
