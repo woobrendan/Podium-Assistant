@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FiaRating = ({ currentRating, name, onChange }) => {
-    const [rating, setRating] = useState(currentRating ? currentRating : "");
+    const [rating, setRating] = useState(currentRating ? currentRating : "N/A");
 
     const ratingList = ["N/A", "Bronze", "Silver", "Gold", "Platinum"];
 
