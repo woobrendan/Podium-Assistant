@@ -11,7 +11,7 @@ const FiaRating = ({ currentRating, name, onChange }) => {
     };
 
     return (
-        <div>
+        <div id="fia_dropdown">
             <label htmlFor="dropdown">FIA Rating:</label>
             <select value={rating} onChange={handleChange} name={name}>
                 {ratingList.map((ratingStr, index) => (
