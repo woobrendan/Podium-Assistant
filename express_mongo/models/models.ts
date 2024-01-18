@@ -5,6 +5,8 @@ export interface DriverInfo {
 }
 
 export interface EntryInterface {
+    event: string;
+    created: string;
     team: string;
     vehicle: string;
     series: string;
