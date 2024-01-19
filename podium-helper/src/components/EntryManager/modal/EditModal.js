@@ -89,8 +89,11 @@ const EditModal = ({ entry, handleToggle, show }) => {
                 >
                     {toBeDeleted ? "Cancel" : "Delete Entry"}
                 </Button>
-                <h1>{modalEntry.team}</h1>
-                <h2>Series: {modalEntry.series}</h2>
+                <div id="entry_info">
+                    <h1>{modalEntry.team}</h1>
+                    <h2>Series: {modalEntry.series}</h2>
+                    <h2>Event: {modalEntry.event}</h2>
+                </div>
                 <EditVehicle
                     entry={modalEntry}
                     onInputChange={onInputChange}
