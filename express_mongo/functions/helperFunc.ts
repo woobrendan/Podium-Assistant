@@ -62,7 +62,6 @@ const getDriverName = (name: string, val: string): string => {
 
 const getDriverInfo = (driver: DriverInfo, driverNum: Number) => {
     const driverString = `driver${driverNum}`;
-    const driverInfo: { [key: string]: string } = {};
     const keys = ["firstName", "lastName", "category", "nationality"];
     const values = [
         getDriverName(driver.name, "first"),
@@ -70,10 +69,10 @@ const getDriverInfo = (driver: DriverInfo, driverNum: Number) => {
         driver.rating,
         driver.nationality,
     ];
-    for (let i = 0; i < keys.length; i++) {
-        const keyString = `${driverString}${keys[i]}`;
-        driverInfo[keyString] = values[i];
-    }
+
+    const driverInfo: { [key: string]: string } = Object.fromEntries(
+        keys.map((key, i) => [`${driverString}${keys[i]}`, values[i]]),
+    );
 
     return driverInfo;
 };
