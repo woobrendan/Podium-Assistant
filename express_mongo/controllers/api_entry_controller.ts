@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import mongoose from "mongoose";
 import ApiEntries from "../models/apiEntry_schema";
 import { entriesByEvent, getManuf, getDriverInfo } from "../functions/helperFunc";
+import convertOldtoNewEntry from "../functions/oldEntrytoApiEntry";
 
 //** NEW ENTRIES */
 const createEntry = async (req: Request, res: Response) => {
@@ -80,10 +81,12 @@ const getEntryByEvent = async (req: Request, res: Response) => {
 
 const updateEntry = async (req: Request, res: Response) => {
     const entryId = req.params.entryId;
+    const convertedEntry = convertOldtoNewEntry(req.body);
+
     try {
         const entry = await ApiEntries.findById(entryId);
         if (entry) {
-            entry.set(req.body);
+            entry.set(convertedEntry);
             await entry.save();
             return res.status(201).json({ entry });
         } else {
