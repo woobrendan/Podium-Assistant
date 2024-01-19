@@ -8,6 +8,7 @@ export interface EntryInterface {
     event: string;
     created: string;
     team: string;
+    sponsors: string;
     vehicle: string;
     series: string;
     number: string;
