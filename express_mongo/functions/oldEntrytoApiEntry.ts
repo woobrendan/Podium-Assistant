@@ -1,7 +1,5 @@
 import { EntryModel } from "../models/entry_schema";
-
-// take in vehicle string and return the manuf
-const getManufName = (vehicle: string) => {};
+import { getManuf, getDriverInfo } from "../functions/helperFunc";
 
 const convertOldtoNewEntry = (entry: EntryModel) => {
     const { _id, team, number, event, series, vehicle, classification, year, created } = entry;
@@ -15,7 +13,15 @@ const convertOldtoNewEntry = (entry: EntryModel) => {
         number,
         team,
         car: vehicle,
+        manufacturer: getManuf(vehicle),
+        ...getDriverInfo(entry.driver1, 1),
+        ...(entry.driver2?.name ? getDriverInfo(entry.driver2, 2) : {}),
+        ...(entry.driver3?.name ? getDriverInfo(entry.driver3, 3) : {}),
     };
+
+    return newFormat;
 
     //pass update function to update controller
 };
+
+export default convertOldtoNewEntry;
