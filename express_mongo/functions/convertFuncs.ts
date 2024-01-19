@@ -1,4 +1,3 @@
-import { EntryModel } from "../models/entry_schema";
 import { FieldData } from "../models/models";
 
 const labels = [
@@ -121,23 +120,6 @@ const convertSeries = (series: string): string => {
     };
 
     return seriesList[series] || `Series Error w/ ${series}`;
-};
-
-const convertOldtoNewEntry = (entry: EntryModel) => {
-    const { _id, team, number, event, series, vehicle, classification, year, created } = entry;
-    // convert from old to new, then try to update again
-    const newFormat = {
-        _id,
-        event,
-        created,
-        series,
-        class: classification,
-        number,
-        team,
-        car: vehicle,
-    };
-
-    //pass update function to update controller
 };
 
 export { labels, convertClassif, getFieldPathVal, getDriverName, getManuf, carTypes, vehicles, convertSeries };
