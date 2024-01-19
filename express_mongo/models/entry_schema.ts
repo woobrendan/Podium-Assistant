@@ -6,6 +6,7 @@ export interface EntryModel extends EntryInterface, Document {}
 const entrySchema: Schema = new Schema({
     event: { type: String },
     created: { type: String },
+    sponsors: { type: String },
     team: { type: String, required: true },
     vehicle: { type: String, required: true },
     classification: { type: String, required: true },
