@@ -10,6 +10,7 @@ import {
     convertSeries,
 } from "./convertFuncs";
 
+// Takes in entries from webconnex api and converts it into usable object
 const convertEntry = (entry: ApiEntryInterface) => {
     let newEntry: { [key: string]: any } = {
         tk_id: entry.id,
