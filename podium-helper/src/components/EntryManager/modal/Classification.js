@@ -1,19 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 
 const Classification = ({ onInputChange, classification, series }) => {
     const [seriesList, setSeriesList] = useState([]);
-    const [className, setClassName] = useState(
-        classification ? classification : "",
-    );
+    const [className, setClassName] = useState(classification ? classification : "");
 
     useEffect(() => {
         const getClasses = async () => {
             try {
-                const series = await axios.get(
-                    "http://localhost:2020/api/series",
-                );
+                const series = await axios.get("http://localhost:2020/api/series");
                 setSeriesList(series.data.series);
             } catch (error) {
                 console.log("Error fetching series", error);
@@ -37,11 +32,7 @@ const Classification = ({ onInputChange, classification, series }) => {
         for (const series of seriesList) {
             classList.push(...series.class);
         }
-        return classList
-            .filter(
-                (className, index) => classList.indexOf(className) === index,
-            )
-            .sort();
+        return classList.filter((className, index) => classList.indexOf(className) === index).sort();
     };
 
     const handleChange = (event) => {
@@ -50,30 +41,16 @@ const Classification = ({ onInputChange, classification, series }) => {
     };
 
     return (
-        <Box id="class_dropdown">
-            <FormControl>
-                <InputLabel>Class</InputLabel>
-                <Select
-                    className="form-control"
-                    name="classification"
-                    label="Class"
-                    value={className}
-                    onChange={handleChange}
-                >
-                    {getSeriesClasses(seriesList).map(
-                        (classification, index) => (
-                            <MenuItem
-                                key={index}
-                                value={classification}
-                                data-testid={classification}
-                            >
-                                {classification}
-                            </MenuItem>
-                        ),
-                    )}
-                </Select>
-            </FormControl>
-        </Box>
+        <div id="class_dropdown">
+            <label htmlFor="dropdown">Class:</label>
+            <select value={className} onChange={handleChange} name="classification">
+                {getSeriesClasses(seriesList).map((classif, index) => (
+                    <option value={classif} key={index}>
+                        {classif}
+                    </option>
+                ))}
+            </select>
+        </div>
     );
 };
 
