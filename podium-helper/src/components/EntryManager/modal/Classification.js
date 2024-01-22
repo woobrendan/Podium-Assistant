@@ -27,12 +27,8 @@ const Classification = ({ onInputChange, classification, series }) => {
                 }
             }
         }
-        //loop through each series and push all classes togeher, then filter out duplicates
-        const classList = [];
-        for (const series of seriesList) {
-            classList.push(...series.class);
-        }
-        return classList.filter((className, index) => classList.indexOf(className) === index).sort();
+        // create get all class lists combined into one with reduce, then use set to remove dupes, spread into arr
+        return [...new Set(seriesList.reduce((acc, series) => acc.concat(series.class), []))].sort();
     };
 
     const handleChange = (event) => {
