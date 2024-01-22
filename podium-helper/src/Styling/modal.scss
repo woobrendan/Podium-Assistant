@@ -17,6 +17,11 @@
     color: white;
     font-weight: 400;
 
+    select {
+        min-height: 30px;
+        font-size: large;
+    }
+
     input {
         min-height: 50%;
     }
