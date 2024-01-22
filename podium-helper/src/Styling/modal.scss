@@ -80,10 +80,10 @@
         width: 100%;
 
         #class_dropdown {
-            label,
-            .MuiInputBase-root {
-                color: white;
-            }
+            display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 50px;
         }
 
         .input_classification {
