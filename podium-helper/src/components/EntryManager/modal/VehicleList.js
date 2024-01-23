@@ -21,14 +21,14 @@ const VehicleList = ({ series, vehicleName, classif }) => {
     };
 
     return (
-        <div id="class_dropdown">
+        <div id="vehicle_dropdown">
             <label htmlFor="dropdown">Class:</label>
-            <select value={vehicle} onChange={handleChange} name="classification">
-                {/*{getSeriesClasses(seriesList).map((classif, index) => (
-                    <option value={classif} key={index}>
-                        {classif}
+            <select value={vehicle} onChange={handleChange} name="vehicle">
+                {getVehicleArr(series, classif).map((vehicleString, index) => (
+                    <option value={vehicleString} key={index}>
+                        {vehicleString}
                     </option>
-                ))}*/}
+                ))}
             </select>
         </div>
     );
