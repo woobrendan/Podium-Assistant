@@ -26,6 +26,11 @@
         min-height: 50%;
     }
 
+    #fia_dropdown, #vehicle_dropdown {
+        display: flex;
+        flex-direction: column;
+    }
+
     #entry_info {
         width: 80%;
         display: flex;
@@ -48,11 +53,6 @@
         }
 
         .editModal_input {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #fia_dropdown {
             display: flex;
             flex-direction: column;
         }
