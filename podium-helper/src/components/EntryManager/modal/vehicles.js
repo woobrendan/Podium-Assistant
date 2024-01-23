@@ -93,23 +93,25 @@ const vehicles = {
         "Saleen S1",
         "Toyota Gazoo Racing GR Supra GT4 EVO",
     ],
-    tcam: [
-        "Acura Integra Type S TCX",
-        "BMW M2 CS (Cup)",
-        "Honda Civic Type-R TCX",
-        "Ginetta GTA",
-        "Honda Civic Type-R (2017 - )",
-        "Hyundai Elantra N Cup",
-        "Hyundai Veloster N DCT TC (2021 - )",
-        "Hyundai Veloster N TC (2019 - )",
-        "Mazda 3 TC",
-        "Mini JCW Pro TC",
-        "Honda Civic Si (2017 - )",
-        "Honda Civic Si FE1 (2022 - )",
-        "Hyundai Veloster Turbo TCA",
-        "Mini Cooper JCW (2019 - )",
-        "Subaru BRZ (2022 - )",
-    ],
+    tcam: {
+        TCX: ["Acura Integra Type S TCX", "BMW M2 CS (Cup)", "Honda Civic Type-R TCX"],
+        TC: [
+            "Ginetta GTA",
+            "Honda Civic Type-R (2017 - )",
+            "Hyundai Elantra N Cup",
+            "Hyundai Veloster N DCT TC (2021 - )",
+            "Hyundai Veloster N TC (2019 - )",
+            "Mazda 3 TC",
+            "Mini JCW Pro TC",
+        ],
+        TCA: [
+            "Honda Civic Si (2017 - )",
+            "Honda Civic Si FE1 (2022 - )",
+            "Hyundai Veloster Turbo TCA",
+            "Mini Cooper JCW (2019 - )",
+            "Subaru BRZ (2022 - )",
+        ],
+    },
 };
 
 export default vehicles;
