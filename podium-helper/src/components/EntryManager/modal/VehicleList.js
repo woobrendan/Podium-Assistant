@@ -2,10 +2,12 @@ import { useState } from "react";
 import { shortenName } from "../../../functions/helperFunc";
 import vehicles from "./vehicles";
 
-const VehicleList = ({ series, vehicleName, classif }) => {
+const VehicleList = ({ series, vehicleName, classif, onChange }) => {
     const [vehicle, setVehicle] = useState(vehicleName ? vehicleName : "");
+
     const handleChange = (e) => {
         setVehicle(e.target.value);
+        onChange(e);
     };
 
     //take in long hand of series name
