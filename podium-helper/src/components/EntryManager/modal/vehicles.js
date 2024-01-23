@@ -1,5 +1,5 @@
 const vehicles = {
-    gtwca: [
+    GTWCA: [
         "Acura NSX GT3 EVO22",
         "Aston Martin Vantage AMR GT3",
         "Audi R8 LMS GT2",
@@ -23,7 +23,7 @@ const vehicles = {
         "Porsche 911 GT3 R (991.ii)",
         "Porsche 992 GT3 R",
     ],
-    pgt4a: [
+    PGT4A: [
         "Alpine A110 GT4",
         "Aston Martin Vantage AMR GT4",
         "Audi R8 LMS GT4",
@@ -40,7 +40,7 @@ const vehicles = {
         "Saleen S1",
         "Toyota Gazoo Racing GR Supra GT4 EVO",
     ],
-    gta: {
+    GTA: {
         SRO3: [
             "Acura NSX GT3 EVO22",
             "Aston Martin Vantage AMR GT3",
@@ -100,7 +100,7 @@ const vehicles = {
             "Toyota Gazoo Racing GR Supra GT4 EVO",
         ],
     },
-    tcam: {
+    TCAM: {
         TCX: ["Acura Integra Type S TCX", "BMW M2 CS (Cup)", "Honda Civic Type-R TCX"],
         TC: [
             "Ginetta GTA",
