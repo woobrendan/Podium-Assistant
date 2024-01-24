@@ -5,7 +5,13 @@ export const fetchEvents = () => {
     return async (dispatch) => {
         try {
             const events = await axios.get("http://localhost:2020/api/events");
+
+            const year = new Date().getFullYear();
+
+            const currentEvents = events.filter((event) => event.year === year);
+
             dispatch(eventActions.setEvents(events.data.events));
+            dispatch(eventActions.setCurrentYear(currentEvents));
         } catch (err) {
             console.log("Error fetching Events: ", err);
         }
