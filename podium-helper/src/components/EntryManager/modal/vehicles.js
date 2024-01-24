@@ -36,7 +36,7 @@ const vehicles = {
         "Mercedes-AMG GT4",
         "Nissan Z GT4",
         "Porsche 718 Cayman GT4 Clubsport MR",
-        "Porsche 718 Cayman GT4 RS Clubsport",
+        "Porsche 718 Cayman GT4 RS CS",
         "Saleen S1",
         "Toyota Gazoo Racing GR Supra GT4 EVO",
     ],
