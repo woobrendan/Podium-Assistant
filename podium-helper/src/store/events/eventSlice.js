@@ -17,3 +17,5 @@ const eventSlice = createSlice({
 });
 
 export const eventActions = eventSlice.actions;
+
+export default eventSlice;
