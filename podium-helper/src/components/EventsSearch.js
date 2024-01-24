@@ -2,19 +2,28 @@ import { useState, useEffect } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import useEvents from "../functions/useEvents";
 import axios from "axios";
+import { useSelector } from "react-redux";
 
 const EventSearch = ({ component, getValue }) => {
     let { currentEventName } = useEvents();
     const [eventName, setEventName] = useState("");
     const [eventList, setEventList] = useState([]);
+    const eventArr = useSelector((state) => state.events.eventsArr);
+    const currentYearEvents = useSelector((state) => state.events.currentYear);
 
     useEffect(() => {
         component === "podium" ? setEventName(currentEventName) : setEventName("");
     }, [currentEventName]);
 
     useEffect(() => {
-        getEvents();
-    }, []);
+        //getEvents();
+        if (component === "result") {
+            const uniqueEvents = [...new Set(eventArr.map((event) => event.name))];
+            setEventList(uniqueEvents);
+        } else {
+            setEventList(currentYearEvents);
+        }
+    }, [eventArr, currentYearEvents]);
 
     const getEvents = async () => {
         try {
