@@ -8,7 +8,7 @@ export const fetchEvents = () => {
 
             const year = new Date().getFullYear();
 
-            const currentEvents = events.filter((event) => event.year === year);
+            const currentEvents = events.data.events.filter((event) => event.year === year);
 
             dispatch(eventActions.setEvents(events.data.events));
             dispatch(eventActions.setCurrentYear(currentEvents));
