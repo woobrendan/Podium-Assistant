@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { FormControl, InputLabel, Select, Box, MenuItem } from "@mui/material";
 import useEvents from "../functions/useEvents";
-//import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchEvents } from "../store/events/eventActions";
 
@@ -19,14 +18,14 @@ const EventSearch = ({ component, getValue }) => {
 
     useEffect(() => {
         component === "podium" ? setEventName(currentEventName) : setEventName("");
-    }, [currentEventName]);
+    }, [currentEventName, component]);
 
     useEffect(() => {
         const uniqueEvents = [
             ...new Set((component === "result" ? eventArr : currentYearEvents).map((event) => event.name)),
         ];
         setEventList(uniqueEvents);
-    }, [eventArr, currentYearEvents]);
+    }, [eventArr, currentYearEvents, component]);
 
     const handleChange = (event) => {
         setEventName(event.target.value);
