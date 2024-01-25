@@ -14,7 +14,7 @@ const EventSearch = ({ component, getValue }) => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchEvents);
+        dispatch(fetchEvents());
     }, [dispatch]);
 
     useEffect(() => {
@@ -22,31 +22,11 @@ const EventSearch = ({ component, getValue }) => {
     }, [currentEventName]);
 
     useEffect(() => {
-        //getEvents();
-        if (component === "result") {
-            const uniqueEvents = [...new Set(eventArr.map((event) => event.name))];
-            setEventList(uniqueEvents);
-        } else {
-            setEventList(currentYearEvents);
-        }
+        const uniqueEvents = [
+            ...new Set((component === "result" ? eventArr : currentYearEvents).map((event) => event.name)),
+        ];
+        setEventList(uniqueEvents);
     }, [eventArr, currentYearEvents]);
-
-    //    const getEvents = async () => {
-    //        try {
-    //            const year = new Date().getFullYear();
-    //
-    //            let yearString = `http://localhost:2020/api/events${component !== "result" ? `/${year}` : ""}`;
-    //
-    //            const data = await axios.get(yearString);
-    //            const eventArr = data.data.events;
-    //
-    //            const uniqueEvents = [...new Set(eventArr.map((event) => event.name))];
-    //
-    //            setEventList(uniqueEvents);
-    //        } catch (err) {
-    //            console.log("Error fetching events: ", err);
-    //        }
-    //    };
 
     const handleChange = (event) => {
         setEventName(event.target.value);
