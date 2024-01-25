@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+//import axios from "axios";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchEvents } from "../store/events/eventActions";
 
@@ -13,18 +13,8 @@ const useEvents = () => {
     }, [dispatch]);
 
     useEffect(() => {
-        const getEventList = async () => {
-            try {
-                const year = new Date().getFullYear();
-                const eventList = await axios.get(`http://localhost:2020/api/events/${year}`);
-
-                setCurrentEventName(getCurrentEvent(eventList.data.events));
-            } catch (err) {
-                console.log("Error:", err);
-            }
-        };
-        getEventList();
-    }, []);
+        setCurrentEventName(getCurrentEvent(currentYearEvents));
+    }, [currentYearEvents]);
 
     const getCurrentEvent = (events) => {
         const today = new Date();
