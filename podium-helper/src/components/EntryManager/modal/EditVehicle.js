@@ -8,7 +8,9 @@ const EditVehicle = ({ entry, onInputChange, classification, series }) => {
         <section className="input_vehicle_container">
             <Classification onInputChange={onInputChange} classification={classification} series={series} />
             <InputContainer val={number} name="number" onInputChange={onInputChange} label="Number" />
-            <VehicleList series={series} vehicleName={vehicle} classif={classification} onChange={onInputChange} />
+            {series && (
+                <VehicleList series={series} vehicleName={vehicle} classif={classification} onChange={onInputChange} />
+            )}
         </section>
     );
 };
