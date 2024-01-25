@@ -1,9 +1,16 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-//import { compareStartDate } from "./dateFuncs";
+import { useSelector, useDispatch } from "react-redux";
+import { fetchEvents } from "../store/events/eventActions";
 
 const useEvents = () => {
     const [currentEventName, setCurrentEventName] = useState("");
+    const currentYearEvents = useSelector((state) => state.events.currentYear);
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchEvents());
+    }, [dispatch]);
 
     useEffect(() => {
         const getEventList = async () => {
