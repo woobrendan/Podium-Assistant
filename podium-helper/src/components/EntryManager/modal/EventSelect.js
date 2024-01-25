@@ -5,11 +5,16 @@ import { fetchEvents } from "../../../store/events/eventActions";
 const EventSelect = () => {
     const currentYearEvents = useSelector((state) => state.events.currentYear);
     const dispatch = useDispatch();
+    const [eventName, setEventName] = useState("");
+
+    useEffect(() => {
+        dispatch(fetchEvents());
+    }, [currentYearEvents]);
 
     return (
         <div id="class_dropdown">
-            <label htmlFor="dropdown">Class:</label>
-            <select value={className} onChange={handleChange} name="classification">
+            <label htmlFor="dropdown">Events:</label>
+            <select value={eventName} onChange={handleChange} name="classification">
                 {currentYearEvents.map((event, index) => (
                     <option value={event} key={index}>
                         {event}
