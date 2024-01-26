@@ -51,10 +51,14 @@
     color: white;
     font-weight: 400;
 
-    #fia_dropdown, #vehicle_dropdown, #class_dropdown {
+    .dropdown {
         display: flex;
         flex-direction: column;
         max-width: 40%;
+
+        &#dropdown_class, &#dropdown_fia {
+            min-width: 10%;
+        }
     }
 
     .series_dropdown {
