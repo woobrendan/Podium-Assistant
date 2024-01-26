@@ -20,8 +20,8 @@ const EventSelect = ({ entryEvent }) => {
             <label htmlFor="dropdown">Events:</label>
             <select value={eventName} onChange={handleChange} name="classification">
                 {currentYearEvents.map((event, index) => (
-                    <option value={event} key={index}>
-                        {event}
+                    <option value={event.name} key={index}>
+                        {event.name}
                     </option>
                 ))}
             </select>
