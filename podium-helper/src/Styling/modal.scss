@@ -26,9 +26,14 @@
         min-height: 50%;
     }
 
-    #fia_dropdown, #vehicle_dropdown {
+    .dropdown {
         display: flex;
         flex-direction: column;
+        max-width: 40%;
+
+        &#dropdown_class, &#dropdown_fia {
+            min-width: 10%;
+        }
     }
 
     #entry_info {
