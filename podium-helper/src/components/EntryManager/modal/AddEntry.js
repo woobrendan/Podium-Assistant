@@ -11,6 +11,7 @@ import axios from "axios";
 import { driverInfo } from "../functions/entryFuncs.js";
 import { initialEntryState, errorState, checkEntryErrors } from "../../../functions/entryManager.js";
 import useEvents from "../../../functions/useEvents.js";
+import EventSelect from "./EventSelect.js";
 
 const AddEntry = ({ show, handleToggle }) => {
     const [newEntry, setNewEntry] = useState(initialEntryState);
@@ -106,7 +107,13 @@ const AddEntry = ({ show, handleToggle }) => {
             <Box id="addEntry_modal">
                 <Series getValue={getSeries} />
                 <InputContainer val={newEntry.team} name="team" onInputChange={onInputChange} label="Team" />
-                <EditVehicle entry={newEntry} onInputChange={onInputChange} series={series} />
+                <EventSelect />
+                <EditVehicle
+                    entry={newEntry}
+                    onInputChange={onInputChange}
+                    series={series}
+                    classification={newEntry.classification}
+                />
                 {newEntry.series && renderEditDrivers()}
                 <Button variant="outlined" color="error" className="edit_modal_update" onClick={() => handleSubmit()}>
                     Add
