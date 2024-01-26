@@ -10,15 +10,24 @@ const VehicleList = ({ series, vehicleName, classif, onChange }) => {
         onChange(e);
     };
 
+    const getAllSeriesVehicles = (series) => {
+        const vehObj = vehicles[series];
+        const allVehicles = [];
+        for (const key in vehObj) {
+            allVehicles.push(...vehObj[key]);
+        }
+        return allVehicles;
+    };
+
     //take in long hand of series name
-    const getVehicleArr = (seriesName, className) => {
+    const getVehicleArr = (seriesName) => {
         const series = shortenName(seriesName);
         const vehicleStr = vehicles[series];
 
         if (series === "GTWCA" || series === "PGT4A") {
             return vehicleStr;
         } else {
-            return vehicleStr[classif];
+            return classif ? vehicles[series][classif] : getAllSeriesVehicles(series);
         }
     };
 
