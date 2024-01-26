@@ -32,7 +32,7 @@ const VehicleList = ({ series, vehicleName, classif, onChange }) => {
     };
 
     return (
-        <div id="vehicle_dropdown">
+        <div className="dropdown" id="dropdown__vehicle">
             <label htmlFor="dropdown">Vehicle:</label>
             <select value={vehicle} onChange={handleChange} name="vehicle">
                 {getVehicleArr(series, classif).map((vehicleString, index) => (
