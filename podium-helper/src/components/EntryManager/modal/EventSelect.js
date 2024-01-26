@@ -16,9 +16,9 @@ const EventSelect = ({ entryEvent }) => {
     };
 
     return (
-        <div id="class_dropdown">
+        <div className="dropdown" id="dropdown_event">
             <label htmlFor="dropdown">Events:</label>
-            <select value={eventName} onChange={handleChange} name="classification">
+            <select value={eventName} onChange={handleChange} name="event">
                 {currentYearEvents.map((event, index) => (
                     <option value={event.name} key={index}>
                         {event.name}
