@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import BackToTopButton from "../BackToTopButton.js";
 import ToggleSort from "./ToggleSort.js";
 import searchAllEntries from "../../functions/searchAllEntries.js";
-import { fetchApiEntry } from "../../store/entryActions.js";
+import { fetchApiEntry } from "../../store/entries/entryActions.js";
 import NoResults from "../NoResults.js";
 import { sortBySeries, sortByVehicleType, sortByManufacturer, sortByClass } from "../../functions/sortFuncs.js";
 import { useDispatch, useSelector } from "react-redux";
