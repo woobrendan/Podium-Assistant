@@ -5,7 +5,7 @@ import EditDriver from "./EditDriver.js";
 import Series from "../../Podium_Creation/Series.js";
 import { gtwca, gt4a, igtc, tcam, gtam, convertEntryFormat } from "../../../functions/helperFunc.js";
 import { useDispatch } from "react-redux";
-import { entryActions } from "../../../store/entry_slice.js";
+import { entryActions } from "../../../store/entries/entry_slice.js";
 import InputContainer from "./InputContainer.js";
 import axios from "axios";
 import { driverInfo } from "../functions/entryFuncs.js";
