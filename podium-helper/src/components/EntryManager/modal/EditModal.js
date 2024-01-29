@@ -4,7 +4,7 @@ import "../../../Styling/modal.scss";
 import EditDriver from "./EditDriver";
 import EditVehicle from "./EditVehicle";
 import { useDispatch } from "react-redux";
-import { entryActions } from "../../../store/entry_slice";
+import { entryActions } from "../../../store/entries/entry_slice";
 import { gtwca, gt4a, igtc, gtam, tcam } from "../../../functions/helperFunc";
 
 const EditModal = ({ entry, handleToggle, show }) => {
