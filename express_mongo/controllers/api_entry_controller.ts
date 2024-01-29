@@ -6,6 +6,7 @@ import convertOldtoNewEntry from "../functions/oldEntrytoApiEntry";
 
 //** NEW ENTRIES */
 const createEntry = async (req: Request, res: Response) => {
+    console.log("req.body", req.body);
     const { event, team, series, driver1, driver2, driver3, number, classification, vehicle } = req.body;
     const newEntry = new ApiEntries({
         _id: new mongoose.Types.ObjectId(),
@@ -19,8 +20,8 @@ const createEntry = async (req: Request, res: Response) => {
         class: classification,
         manufacturer: getManuf(vehicle),
         ...getDriverInfo(driver1, 1),
-        ...(driver2.name ? getDriverInfo(driver2, 2) : {}),
-        ...(driver3.name ? getDriverInfo(driver3, 3) : {}),
+        ...(driver2 ? getDriverInfo(driver2, 2) : {}),
+        ...(driver3 ? getDriverInfo(driver3, 3) : {}),
     });
     try {
         const savedEntry = await newEntry.save();
