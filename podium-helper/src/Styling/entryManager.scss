@@ -51,6 +51,11 @@
     color: white;
     font-weight: 400;
 
+    select {
+        min-height: 30px;
+        font-size: large;
+    }
+
     .dropdown {
         display: flex;
         flex-direction: column;
