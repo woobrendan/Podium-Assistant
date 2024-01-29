@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
-import { fetchApiEntry } from "../../store/entryActions";
+import { fetchApiEntry } from "../../store/entries/entryActions";
 
 //** STYLING */
 import { Button, TextField } from "@mui/material";
