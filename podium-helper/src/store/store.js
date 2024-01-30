@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import entrySlice from "./entry_slice";
+import entrySlice from "./entries/entry_slice";
 import resultsSlice from "./resultsSlice";
 import eventSlice from "./events/eventSlice";
 
