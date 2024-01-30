@@ -19,13 +19,14 @@ import { getToday } from "../../functions/dateFuncs";
 import mongoResult from "../../functions/formMongoResult";
 import { resultsActions } from "../../store/resultsSlice";
 import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
-import { fetchApiEntry } from "../../store/entries/entryActions";
+import { fetchApiEntry, fetchEventEntries } from "../../store/entries/entryActions";
 
 const Podium = () => {
     const { currentEventName } = useEvents();
     const navigate = useNavigate();
     const dispatch = useDispatch();
     const entries = useSelector((state) => state.entry.entriesArray);
+    const eventEntries = useSelector((state) => state.entry.eventEntries);
 
     const [results, setResults] = useState({
         date: getToday(),
@@ -35,16 +36,16 @@ const Podium = () => {
     });
 
     useEffect(() => {
-        //update event name in results
-        setResults((prev) => ({
-            ...prev,
-            event: currentEventName,
-        }));
-    }, [currentEventName]);
+        if (currentEventName) {
+            setResults((prev) => ({
+                ...prev,
+                event: currentEventName,
+            }));
 
-    useEffect(() => {
-        dispatch(fetchApiEntry());
-    }, [dispatch]);
+            dispatch(fetchEventEntries(currentEventName));
+            dispatch(fetchApiEntry());
+        }
+    }, [currentEventName, dispatch]);
 
     const handleFinalSubmit = () => {
         dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
