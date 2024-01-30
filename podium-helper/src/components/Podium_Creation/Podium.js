@@ -19,7 +19,7 @@ import { getToday } from "../../functions/dateFuncs";
 import mongoResult from "../../functions/formMongoResult";
 import { resultsActions } from "../../store/resultsSlice";
 import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
-import { fetchApiEntry } from "../../store/entryActions";
+import { fetchApiEntry } from "../../store/entries/entryActions";
 
 const Podium = () => {
     const { currentEventName } = useEvents();
