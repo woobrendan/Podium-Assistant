@@ -25,7 +25,7 @@ const Podium = () => {
     const { currentEventName } = useEvents();
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const entries = useSelector((state) => state.entry.entriesArray);
+    //const entries = useSelector((state) => state.entry.entriesArray);
     const eventEntries = useSelector((state) => state.entry.eventEntries);
 
     const [results, setResults] = useState({
@@ -56,7 +56,7 @@ const Podium = () => {
     const handleRacePodiumSubmit = (value, resultNumber) => {
         switch (resultNumber) {
             case "fastLap":
-                const entryVal = entries
+                const entryVal = eventEntries
                     // get matching series entries only
                     .filter((entry) => results.series.name === entry.series)
                     // loop through those entries, set drivers val to an array of driver objects, then find matching name
@@ -76,7 +76,7 @@ const Podium = () => {
 
             case "hardCharger":
                 // take in value as vehicle number, get entries matching series then get matching car num
-                const entry = entries
+                const entry = eventEntries
                     .filter((entry) => results.series.name === entry.series)
                     .find((entry) => value.entryNum === entry.number);
 
@@ -115,7 +115,7 @@ const Podium = () => {
             </div>
             {results.series && (
                 <div className="podium_results_container">
-                    {numOfPodiumDisplays(results.series, handleRacePodiumSubmit, results, entries)}
+                    {numOfPodiumDisplays(results.series, handleRacePodiumSubmit, results, eventEntries)}
                     <FastLap handleSubmit={handleRacePodiumSubmit} series={results.series} />
                     <HardChargeCard series={results.series} handleSubmit={handleRacePodiumSubmit} />
                 </div>
