@@ -25,6 +25,18 @@ export const fetchApiEntry = () => {
     };
 };
 
+export const fetchEventEntries = (event) => {
+    return async (dispatch) => {
+        try {
+            const eventEntries = await axios.get(`http://localhost:2020/api/entries/events/${event}`);
+            const converted = eventEntries.data.entry.map((entry) => convertEntryFormat(entry));
+            dispatch(entryActions.setEventEntries(converted));
+        } catch (err) {
+            console.log("Error fetching event entries: ", err);
+        }
+    };
+};
+
 export const updateEntry = async (entry) => {
     try {
         axios.patch(`http://localhost:2020/api/entries/${entry._id}`, entry);
