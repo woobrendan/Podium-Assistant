@@ -46,13 +46,22 @@ const getPlaceString = (num) => {
     return place[num];
 };
 
-const convertDriver = (apiEntry, driverNum) => {
+const convertDriver = (apiEntry, driverNum, series) => {
     const driver = `driver${driverNum}`;
+    let rating = apiEntry[`${driver}category`];
+
+    if (!rating) {
+        if (series === "TC America" || series === "Toyota GR Cup") {
+            rating = "N/A";
+        } else {
+            rating = "Bronze";
+        }
+    }
     const driverInfo = {
         [driver]: {
             name: `${apiEntry[`${driver}firstName`]} ${apiEntry[`${driver}lastName`]}`,
             nationality: apiEntry[`${driver}nationality`],
-            rating: apiEntry[`${driver}category`],
+            rating: rating,
         },
     };
 
@@ -68,8 +77,8 @@ const convertEntryFormat = (apiEntry) => {
         number,
         event,
         series: series === "GT4 America" ? "Pirelli GT4 America" : series,
-        ...convertDriver(apiEntry, 1),
-        ...(driver2firstName ? convertDriver(apiEntry, 2) : {}),
+        ...convertDriver(apiEntry, 1, series),
+        ...(driver2firstName ? convertDriver(apiEntry, 2, series) : {}),
         vehicle: car,
         classification: apiEntry.class,
         year: created.split("-")[0],
