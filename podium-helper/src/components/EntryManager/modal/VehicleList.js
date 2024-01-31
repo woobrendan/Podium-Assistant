@@ -35,6 +35,9 @@ const VehicleList = ({ series, vehicleName, classif, onChange }) => {
         <div className="dropdown" id="dropdown__vehicle">
             <label htmlFor="dropdown">Vehicle:</label>
             <select value={vehicle} onChange={handleChange} name="vehicle">
+                <option value="" disabled>
+                    Select Car
+                </option>
                 {getVehicleArr(series, classif).map((vehicleString, index) => (
                     <option value={vehicleString} key={index}>
                         {vehicleString}
