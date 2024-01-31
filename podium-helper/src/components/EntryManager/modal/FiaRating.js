@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const FiaRating = ({ currentRating, name, onChange }) => {
-    const [rating, setRating] = useState(currentRating ? currentRating : "N/A");
+    const [rating, setRating] = useState(currentRating ? currentRating : "");
 
     const ratingList = ["N/A", "Bronze", "Silver", "Gold", "Platinum"];
 
@@ -14,6 +14,9 @@ const FiaRating = ({ currentRating, name, onChange }) => {
         <div className="dropdown" id="dropdown_fia">
             <label htmlFor="dropdown">FIA Rating:</label>
             <select value={rating} onChange={handleChange} name={name}>
+                <option value="" disabled>
+                    Select Rating
+                </option>
                 {ratingList.map((ratingStr, index) => (
                     <option value={ratingStr} key={index}>
                         {ratingStr}
