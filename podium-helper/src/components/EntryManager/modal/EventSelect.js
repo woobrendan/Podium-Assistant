@@ -19,6 +19,9 @@ const EventSelect = ({ entryEvent }) => {
         <div className="dropdown" id="dropdown_event">
             <label htmlFor="dropdown">Events:</label>
             <select value={eventName} onChange={handleChange} name="event">
+                <option value="" disabled>
+                    Select Event
+                </option>
                 {currentYearEvents.map((event, index) => (
                     <option value={event.name} key={index}>
                         {event.name}
