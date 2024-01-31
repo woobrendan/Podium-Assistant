@@ -40,6 +40,9 @@ const Classification = ({ onInputChange, classification, series }) => {
         <div className="dropdown" id="dropdown_class">
             <label htmlFor="dropdown">Class:</label>
             <select value={className} onChange={handleChange} name="classification">
+                <option value="" disabled>
+                    Select a class
+                </option>
                 {getSeriesClasses(seriesList).map((classif, index) => (
                     <option value={classif} key={index}>
                         {classif}
