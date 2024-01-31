@@ -61,7 +61,7 @@ const convertDriver = (apiEntry, driverNum, series) => {
         [driver]: {
             name: `${apiEntry[`${driver}firstName`]} ${apiEntry[`${driver}lastName`]}`,
             nationality: apiEntry[`${driver}nationality`],
-            rating: rating,
+            rating,
         },
     };
 
