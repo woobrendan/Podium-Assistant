@@ -32,7 +32,7 @@ const VehicleList = ({ series, vehicleName, classif, onChange }) => {
     };
 
     return (
-        <div className="dropdown" id="dropdown__vehicle">
+        <div className="dropdown" id="dropdown_vehicle">
             <label htmlFor="dropdown">Vehicle:</label>
             <select value={vehicle} onChange={handleChange} name="vehicle">
                 <option value="" disabled>
