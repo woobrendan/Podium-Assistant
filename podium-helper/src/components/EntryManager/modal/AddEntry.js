@@ -77,6 +77,8 @@ const AddEntry = ({ show, handleToggle }) => {
                 const entry = await axios.post("http://localhost:2020/api/entries", newEntry);
                 const converted = convertEntryFormat(entry.data.savedEntry);
 
+                //add entry to event entries and/or all
+
                 dispatch(entryActions.addEntry(converted));
                 setNewEntry(initialEntryState);
                 handleToggle();
@@ -106,15 +108,19 @@ const AddEntry = ({ show, handleToggle }) => {
         <Modal open={show} onClose={handleToggle}>
             <Box id="addEntry_modal">
                 <Series getValue={getSeries} />
-                <InputContainer val={newEntry.team} name="team" onInputChange={onInputChange} label="Team" />
-                <EventSelect />
-                <EditVehicle
-                    entry={newEntry}
-                    onInputChange={onInputChange}
-                    series={series}
-                    classification={newEntry.classification}
-                />
-                {newEntry.series && renderEditDrivers()}
+                {newEntry.series && (
+                    <>
+                        <InputContainer val={newEntry.team} name="team" onInputChange={onInputChange} label="Team" />
+                        <EventSelect />
+                        <EditVehicle
+                            entry={newEntry}
+                            onInputChange={onInputChange}
+                            series={series}
+                            classification={newEntry.classification}
+                        />
+                        {renderEditDrivers()}
+                    </>
+                )}
                 <Button variant="outlined" color="error" className="edit_modal_update" onClick={() => handleSubmit()}>
                     Add
                 </Button>
