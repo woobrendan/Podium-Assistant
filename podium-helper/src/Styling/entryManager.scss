@@ -49,7 +49,10 @@
     padding: 2%;
     background-color: red;
     color: white;
-    font-weight: 400;
+
+    input {
+        font-size: large;
+    }
 
     select {
         min-height: 30px;
