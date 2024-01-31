@@ -59,7 +59,6 @@
     .dropdown {
         display: flex;
         flex-direction: column;
-        max-width: 40%;
 
         &#dropdown_class, &#dropdown_fia {
             min-width: 10%;
@@ -93,6 +92,12 @@
         .input_driver_container_1 {
             display: flex;
             justify-content: space-around;
+        }
+    }
+
+    .drivers_2 {
+        section {
+            min-width: 30%;
         }
     }
 
