@@ -17,7 +17,7 @@ import HardChargeCard from "./HardChargeCard";
 import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/dateFuncs";
 import mongoResult from "../../functions/formMongoResult";
-import { resultsActions } from "../../store/resultsSlice";
+import { resultsActions } from "../../store/results/resultsSlice";
 import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
 import { fetchApiEntry, fetchEventEntries } from "../../store/entries/entryActions";
 
