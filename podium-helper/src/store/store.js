@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import entrySlice from "./entries/entry_slice";
-import resultsSlice from "./resultsSlice";
+import resultsSlice from "./results/resultsSlice";
 import eventSlice from "./events/eventSlice";
 
 const store = configureStore({
