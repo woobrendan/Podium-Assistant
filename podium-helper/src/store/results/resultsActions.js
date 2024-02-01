@@ -1,4 +1,4 @@
-import { resultsActions } from "../resultsSlice";
+import { resultsActions } from "./resultsSlice";
 import axios from "axios";
 import { compareResultDates } from "../../functions/sortFuncs";
 
