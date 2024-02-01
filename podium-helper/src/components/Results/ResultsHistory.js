@@ -5,7 +5,7 @@ import SearchAllResults from "./functions/searchAllResults.js";
 import BackToTopButton from "../BackToTopButton.js";
 import EventSearch from "../EventsSearch.js";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchData } from "../../store/resultsActions";
+import { fetchData } from "../../store/results/resultsActions";
 
 const ResultsHistory = () => {
     const dispatch = useDispatch();
