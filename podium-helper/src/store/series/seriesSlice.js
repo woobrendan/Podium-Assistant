@@ -6,7 +6,7 @@ const seriesSlice = createSlice({
         seriesArr: [],
     },
     reducers: {
-        setseriesS(state, action) {
+        setSeries(state, action) {
             state.seriesArr = action.payload;
         },
     },
