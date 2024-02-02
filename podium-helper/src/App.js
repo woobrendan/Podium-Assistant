@@ -7,21 +7,31 @@ import Results from "./components/Results/ResultsHistory";
 import RecentPodium from "./components/Results/RecentPodium";
 import EntryManager from "./components/EntryManager/EntryManager";
 
-function App() {
-  return (
-    <Router>
-      <NavBar />
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Podium />} />
-          <Route path="/competitors" element={<DriverSearch />} />
-          <Route path="/results" element={<Results />} />
-          <Route path="/recent" element={<RecentPodium />} />
-          <Route path="/entryManager" element={<EntryManager />} />
-        </Routes>
-      </div>
-    </Router>
-  );
-}
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { fetchSeries } from "./store/series/seriesActions";
+
+const App = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(fetchSeries);
+    }, [dispatch]);
+
+    return (
+        <Router>
+            <NavBar />
+            <div className="App">
+                <Routes>
+                    <Route path="/" element={<Podium />} />
+                    <Route path="/competitors" element={<DriverSearch />} />
+                    <Route path="/results" element={<Results />} />
+                    <Route path="/recent" element={<RecentPodium />} />
+                    <Route path="/entryManager" element={<EntryManager />} />
+                </Routes>
+            </div>
+        </Router>
+    );
+};
 
 export default App;
