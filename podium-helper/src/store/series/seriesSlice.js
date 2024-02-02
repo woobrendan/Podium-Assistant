@@ -1,6 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const seriesSlice = createSlice({});
+const seriesSlice = createSlice({
+    name: "series",
+    initialState: {
+        seriesArr: [],
+    },
+    reducers: {
+        setseriesS(state, action) {
+            state.seriesArr = action.payload;
+        },
+    },
+});
 
 export const seriesActions = seriesSlice.actions;
 
