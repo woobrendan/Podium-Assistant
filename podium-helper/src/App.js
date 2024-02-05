@@ -15,7 +15,7 @@ const App = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(fetchSeries);
+        dispatch(fetchSeries());
     }, [dispatch]);
 
     return (
