@@ -1,0 +1,47 @@
+export const masters = [
+    {
+        team: "SKI Autosport",
+        driver1: {
+            name: "Johnny O'Connell",
+            nationality: "USA",
+            rating: "Bronze",
+        },
+        vehicle: "Audi R8 LMS GT3",
+        classification: "Master",
+        number: "3",
+        carImage: "",
+        series: "GT America",
+        year: 2024,
+        event: "FULL SEASON ENTRY",
+    },
+    {
+        team: "GMG Racing",
+        driver1: {
+            name: "James Sofronas",
+            nationality: "USA",
+            rating: "Bronze",
+        },
+        vehicle: "Audi R8 LMS GT3",
+        classification: "Master",
+        number: "14",
+        carImage: "",
+        series: "GT America",
+        year: 2024,
+        event: "FULL SEASON ENTRY",
+    },
+    {
+        team: "GMG Racing",
+        driver1: {
+            name: "Brent Holden",
+            nationality: "USA",
+            rating: "Bronze",
+        },
+        vehicle: "Mercedes-AMG GT2",
+        classification: "Master",
+        number: "44",
+        carImage: "",
+        series: "GT America",
+        year: 2024,
+        event: "FULL SEASON ENTRY",
+    },
+];
