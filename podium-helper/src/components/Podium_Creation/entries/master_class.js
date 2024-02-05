@@ -44,4 +44,19 @@ export const masters = [
         year: 2024,
         event: "FULL SEASON ENTRY",
     },
+    {
+        team: "MISHUMOTORS",
+        driver1: {
+            name: "Mirco Schultis",
+            nationality: "DEU",
+            rating: "Bronze",
+        },
+        vehicle: "Callaway Corvette Z06R GT3",
+        classification: "Master",
+        number: "70",
+        carImage: "",
+        series: "GT America",
+        year: 2024,
+        event: "FULL SEASON ENTRY",
+    },
 ];
