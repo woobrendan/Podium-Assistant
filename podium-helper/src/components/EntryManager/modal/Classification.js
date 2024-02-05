@@ -1,22 +1,10 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { useSelector } from "react-redux";
 
 const Classification = ({ onInputChange, classification, series }) => {
-    const [seriesList, setSeriesList] = useState([]);
     const [className, setClassName] = useState(classification ? classification : "");
 
-    useEffect(() => {
-        const getClasses = async () => {
-            try {
-                const series = await axios.get("http://localhost:2020/api/series");
-                setSeriesList(series.data.series);
-            } catch (error) {
-                console.log("Error fetching series", error);
-            }
-        };
-
-        getClasses();
-    }, []);
+    const seriesList = useSelector((state) => state.series.seriesArr);
 
     const getSeriesClasses = (seriesList) => {
         // if series prop exists, then take that name and only return the class list for that series
