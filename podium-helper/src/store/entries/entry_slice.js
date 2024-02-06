@@ -1,11 +1,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { deleteEntry, updateEntry } from "./entryActions";
+import { masters } from "./master_class";
 
 const entrySlice = createSlice({
     name: "entries",
     initialState: {
-        entriesArray: [],
-        eventEntries: [],
+        entriesArray: [...masters],
+        eventEntries: [...masters],
     },
     reducers: {
         setEntries(state, action) {
