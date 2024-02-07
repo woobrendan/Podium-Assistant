@@ -10,11 +10,11 @@ const entrySlice = createSlice({
     },
     reducers: {
         setEntries(state, action) {
-            state.entriesArray = [...state.entriesArray, action.payload];
+            state.entriesArray = [...state.entriesArray, ...action.payload];
         },
 
         setEventEntries(state, action) {
-            state.eventEntries = [...state.entriesArray, action.payload];
+            state.eventEntries = [...state.entriesArray, ...action.payload];
         },
 
         addEntry(state, action) {
