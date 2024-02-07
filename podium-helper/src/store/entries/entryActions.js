@@ -18,7 +18,17 @@ export const fetchApiEntry = () => {
         try {
             const entries = await axios.get("http://localhost:2020/api/entries");
             const converted = entries.data.entry.map((entry) => convertEntryFormat(entry));
-            dispatch(entryActions.setEntries(converted));
+
+            const uniqueIds = new Set();
+            const unique = converted.filter((entry) => {
+                if (!uniqueIds.has(entry._id)) {
+                    uniqueIds.add(entry);
+                    return true;
+                }
+                return false;
+            });
+
+            dispatch(entryActions.setEntries(unique));
         } catch (err) {
             console.error(err);
         }
