@@ -27,7 +27,10 @@ const entrySlice = createSlice({
         },
 
         addEntry(state, action) {
-            state.entriesArray = [...state.entriesArray, action.payload];
+            const existingEntry = state.entriesArray.find((entry) => entry._id === action.payload._id);
+            if (!existingEntry) {
+                state.entriesArray = [...state.entriesArray, action.payload];
+            }
         },
 
         removeEntry(state, action) {
