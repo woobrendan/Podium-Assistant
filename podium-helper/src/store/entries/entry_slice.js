@@ -1,31 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { deleteEntry, updateEntry } from "./entryActions";
-import { masters } from "./master_class";
 
 const entrySlice = createSlice({
     name: "entries",
     initialState: {
-        entriesArray: [...masters],
-        eventEntries: [...masters],
+        entriesArray: [],
+        eventEntries: [],
     },
     reducers: {
-        setEntries(state, action) {
-            const entries = [...state.entriesArray, ...action.payload];
-            const uniqueIds = new Set();
-            const unique = entries.filter((entry) => {
-                if (!uniqueIds.has(entry._id)) {
-                    uniqueIds.add(entry._id);
-                    return true;
-                }
-                return false;
-            });
-            state.entriesArray = unique;
-        },
-
-        setEventEntries(state, action) {
-            state.eventEntries = [...state.entriesArray, ...action.payload];
-        },
-
         addEntry(state, action) {
             const existingEntry = state.entriesArray.find((entry) => entry._id === action.payload._id);
             if (!existingEntry) {
