@@ -2,30 +2,6 @@ import axios from "axios";
 import { entryActions } from "./entry_slice";
 import { convertEntryFormat } from "../../functions/helperFunc";
 
-//export const fetchEntry = () => {
-//    return async (dispatch) => {
-//        try {
-//            const entries = await axios.get("http://localhost:2020/entries");
-//            dispatch(entryActions.setEntries(entries.data.entry));
-//        } catch (err) {
-//            console.error(err);
-//        }
-//    };
-//};
-
-const uniqueEntries = (entryArr) => {
-    const uniqueIds = new Set();
-    const unique = entryArr.filter((entry) => {
-        if (!uniqueIds.has(entry._id)) {
-            uniqueIds.add(entry._id);
-            return true;
-        }
-        return false;
-    });
-
-    return unique;
-};
-
 export const fetchApiEntry = () => {
     return async (dispatch) => {
         try {
