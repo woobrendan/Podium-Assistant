@@ -33,6 +33,13 @@ const entrySlice = createSlice({
             }
         },
 
+        addEventEntries(state, action) {
+            const existingEntry = state.eventEntries.find((entry) => entry._id === action.payload._id);
+            if (!existingEntry) {
+                state.eventEntries = [...state.eventEntries, action.payload];
+            }
+        },
+
         removeEntry(state, action) {
             const entries = [...state.entriesArray];
             const adjusted = entries.filter((entry) => entry._id !== action.payload._id);
