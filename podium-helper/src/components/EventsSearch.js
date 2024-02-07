@@ -21,9 +21,15 @@ const EventSearch = ({ component, getValue }) => {
     }, [currentEventName, component]);
 
     useEffect(() => {
-        const uniqueEvents = [
-            ...new Set((component === "result" ? eventArr : currentYearEvents).map((event) => event.name)),
-        ];
+        const events = ["FULL SEASON ENTRY"];
+        if (currentYearEvents) {
+            for (const event of currentYearEvents) {
+                events.push(event.name);
+            }
+            console.log(events);
+        }
+
+        const uniqueEvents = [...new Set((component === "result" ? eventArr : events).map((event) => event.name))];
         setEventList(uniqueEvents);
     }, [eventArr, currentYearEvents, component]);
 
