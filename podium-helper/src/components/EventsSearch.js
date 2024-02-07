@@ -21,13 +21,15 @@ const EventSearch = ({ component, getValue }) => {
     }, [currentEventName, component]);
 
     useEffect(() => {
-        const events = ["FULL SEASON ENTRY"];
-        if (currentYearEvents) {
-            for (const event of currentYearEvents) {
-                events.push(event.name);
-            }
-            console.log(events);
-        }
+        const events = [
+            {
+                name: "FULL SEASON ENTRY",
+                date: "Oct 11",
+                startDate: "11/3/2024",
+                year: 2024,
+            },
+            ...currentYearEvents,
+        ];
 
         const uniqueEvents = [...new Set((component === "result" ? eventArr : events).map((event) => event.name))];
         setEventList(uniqueEvents);
