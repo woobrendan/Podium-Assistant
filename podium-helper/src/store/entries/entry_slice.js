@@ -10,7 +10,16 @@ const entrySlice = createSlice({
     },
     reducers: {
         setEntries(state, action) {
-            state.entriesArray = [...state.entriesArray, ...action.payload];
+            const entries = [...state.entriesArray, ...action.payload];
+            const uniqueIds = new Set();
+            const unique = entries.filter((entry) => {
+                if (!uniqueIds.has(entry._id)) {
+                    uniqueIds.add(entry._id);
+                    return true;
+                }
+                return false;
+            });
+            state.entriesArray = unique;
         },
 
         setEventEntries(state, action) {
