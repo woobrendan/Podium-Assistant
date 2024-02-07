@@ -31,9 +31,10 @@ export const fetchApiEntry = () => {
         try {
             const entries = await axios.get("http://localhost:2020/api/entries");
             const converted = entries.data.entry.map((entry) => convertEntryFormat(entry));
-            const unique = uniqueEntries(converted);
 
-            dispatch(entryActions.setEntries(unique));
+            for (const entry of converted) {
+                dispatch(entryActions.addEntry(entry));
+            }
         } catch (err) {
             console.error(err);
         }
