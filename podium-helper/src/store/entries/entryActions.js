@@ -13,20 +13,25 @@ import { convertEntryFormat } from "../../functions/helperFunc";
 //    };
 //};
 
+const uniqueEntries = (entryArr) => {
+    const uniqueIds = new Set();
+    const unique = entryArr.filter((entry) => {
+        if (!uniqueIds.has(entry._id)) {
+            uniqueIds.add(entry._id);
+            return true;
+        }
+        return false;
+    });
+
+    return unique;
+};
+
 export const fetchApiEntry = () => {
     return async (dispatch) => {
         try {
             const entries = await axios.get("http://localhost:2020/api/entries");
             const converted = entries.data.entry.map((entry) => convertEntryFormat(entry));
-
-            const uniqueIds = new Set();
-            const unique = converted.filter((entry) => {
-                if (!uniqueIds.has(entry._id)) {
-                    uniqueIds.add(entry);
-                    return true;
-                }
-                return false;
-            });
+            const unique = uniqueEntries(converted);
 
             dispatch(entryActions.setEntries(unique));
         } catch (err) {
@@ -40,7 +45,8 @@ export const fetchEventEntries = (event) => {
         try {
             const eventEntries = await axios.get(`http://localhost:2020/api/entries/events/${event}`);
             const converted = eventEntries.data.entries.map((entry) => convertEntryFormat(entry));
-            dispatch(entryActions.setEventEntries(converted));
+            const unique = uniqueEntries(converted);
+            dispatch(entryActions.setEventEntries(unique));
         } catch (err) {
             console.log("Error fetching event entries: ", err);
         }
