@@ -46,8 +46,10 @@ export const fetchEventEntries = (event) => {
         try {
             const eventEntries = await axios.get(`http://localhost:2020/api/entries/events/${event}`);
             const converted = eventEntries.data.entries.map((entry) => convertEntryFormat(entry));
-            const unique = uniqueEntries(converted);
-            dispatch(entryActions.setEventEntries(unique));
+
+            for (const entry of converted) {
+                dispatch(entryActions.addEventEntries(entry));
+            }
         } catch (err) {
             console.log("Error fetching event entries: ", err);
         }
