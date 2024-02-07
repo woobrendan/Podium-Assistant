@@ -37,7 +37,16 @@ const EntryManager = () => {
     const getValue = (event) => setEventOption(event.target.value);
 
     const sortEntries = (entries) => {
-        const searchEntries = searchAllEntries(entries, searchValue, eventOption);
+        const uniqueIds = new Set();
+        const unique = entries.filter((entry) => {
+            if (!uniqueIds.has(entry._id)) {
+                uniqueIds.add(entry._id);
+                return true;
+            }
+            return false;
+        });
+
+        const searchEntries = searchAllEntries(unique, searchValue, eventOption);
         // sorting when no series is selected
         if (!series || series === "All") {
             const entryObj = {};
