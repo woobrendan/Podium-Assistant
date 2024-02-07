@@ -17,6 +17,7 @@ const vehicles = {
         "Maserati MC20 GT2",
         "McLaren 720S GT3 EVO",
         "Mercedes-AMG GT3",
+        "Mercedes-AMG GT2",
         "Nissan GT-R GT3",
         "Porsche 911 GT2 RS Clubsport",
         "Porsche 911 GT3 R (991)",
@@ -41,6 +42,7 @@ const vehicles = {
         "Maserati MC20 GT2",
         "McLaren 720S GT3 EVO",
         "Mercedes-AMG GT3",
+        "Mercedes-AMG GT2",
         "Nissan GT-R GT3",
         "Porsche 911 GT2 RS Clubsport",
         "Porsche 911 GT3 R (991)",
@@ -105,6 +107,7 @@ const vehicles = {
             "Porsche 911 GT2 RS Clubsport",
             "Lamborghini Huracan Super Trofeo EVO",
             "Lamborghini Huracan Super Trofeo EVO2",
+            "Mercedes-AMG GT2",
         ],
         GT4: [
             "Alpine A110 GT4",
