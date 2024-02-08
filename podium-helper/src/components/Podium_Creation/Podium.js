@@ -12,7 +12,7 @@ import FastLap from "./FastLap";
 import Series from "./Series";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
-import HardChargeCard from "./HardChargeCard";
+import HardChargeCard from "./hard_charger/HardChargeCard";
 
 import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/dateFuncs";
