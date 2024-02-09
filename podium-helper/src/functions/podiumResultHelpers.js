@@ -16,16 +16,14 @@ const numOfDriverMenuItem = (entry, index) => {
 };
 
 //dynamically render appropriate amount of WinnerPodium components based on need per series class requirements
-const numOfPodiumDisplays = (series, submit, results, entries) => {
+const numOfPodiumDisplays = (series, submit) => {
     const mappedSeries = series.class.map((classification, index) => (
         <WinnerPodium
             key={classification}
             seriesName={series.name}
             onClick={submit}
-            results={results}
             classification={classification}
             resultNum={index + 1}
-            entries={entries}
         />
     ));
     return mappedSeries;
@@ -46,5 +44,7 @@ const singleDrivers = (entryArray, seriesVal) => {
         });
     return drivers.sort((a, b) => a.number - b.number);
 };
+
+//const numOfHardChargeDisplays = (series, onSubmit, )
 
 export { numOfDriverMenuItem, numOfPodiumDisplays, singleDrivers };
