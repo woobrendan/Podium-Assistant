@@ -14,7 +14,7 @@ const HardChargeCard = ({ series, handleSubmit }) => {
     const entries = useSelector((state) => state.entry.eventEntries);
 
     const handleClick = () => {
-        handleSubmit(hardCharge, "hardCharger");
+        handleSubmit(hardCharge, "hardCharger", null);
         setIsSubmitted(true);
     };
 
