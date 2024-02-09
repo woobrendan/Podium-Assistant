@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const HardChargeContainer = ({ series }) => {
+const HardChargeContainer = ({ series, resultNum }) => {
     const [hardCharger, setHardCharger] = useState({
         entryNum: "",
         startPos: "",
@@ -16,7 +16,14 @@ const HardChargeContainer = ({ series }) => {
     };
 
     //handle submit pass back result number
-    const classes = series.name === "GT America" ? series.class.slice(0, -1) : series.class;
+    const classes = null;
+    if (series.name === "GT America") {
+        classes = series.class.slice(0, -1);
+    } else if (series.name === "TC America") {
+        classes = series.class;
+    } else {
+        classes = series.name === "Pirelli GT4 America" ? ["GT4"] : ["GT3"];
+    }
 
     //   const display = classes.map((classif, index) => (
     //
