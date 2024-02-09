@@ -21,7 +21,7 @@ const FastLap = ({ series, handleSubmit }) => {
     };
 
     const handleClick = () => {
-        handleSubmit(fastTime, "fastLap");
+        handleSubmit(fastTime, "fastLap", null);
         setIsSubmitted(true);
     };
 
