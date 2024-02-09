@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const HardChargeContainer = () => {
+const HardChargeContainer = ({ series }) => {
     const [hardCharger, setHardCharger] = useState({
         entryNum: "",
         startPos: "",
@@ -14,6 +14,13 @@ const HardChargeContainer = () => {
             [e.target.name]: e.target.value,
         }));
     };
+
+    //handle submit pass back result number
+    const classes = series.name === "GT America" ? series.class.slice(0, -1) : series.class;
+
+    //   const display = classes.map((classif, index) => (
+    //
+    //   ))
 
     return (
         <div className="hard_charge_container">
