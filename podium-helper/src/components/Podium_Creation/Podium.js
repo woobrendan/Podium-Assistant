@@ -90,6 +90,23 @@ const Podium = () => {
                 }));
                 break;
 
+            case "hardChargerMulti":
+                // take in value as vehicle number, get entries matching series then get matching car num
+                const hardChargeEntry = eventEntries
+                    .filter((entry) => results.series.name === entry.series)
+                    .find((entry) => value.entryNum === entry.number);
+
+                setResults((prev) => ({
+                    ...prev,
+                    [`result${resultNumber}`]: {
+                        startPos: Number(value.startPos),
+                        gain: Number(value.gain),
+                        class: value.class,
+                        entry: hardChargeEntry,
+                    },
+                }));
+                break;
+
             default:
                 setResults((prev) => ({
                     ...prev,
