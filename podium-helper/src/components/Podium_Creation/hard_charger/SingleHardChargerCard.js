@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 
-const SingleHardChargerCard = ({ classif, index, series }) => {
+const SingleHardChargerCard = ({ classif, index, series, onSubmit }) => {
     const eventEntries = useSelector((state) => state.entries.eventEntries);
     const [hardCharger, setHardCharger] = useState({
         entryNum: "",
@@ -15,6 +15,10 @@ const SingleHardChargerCard = ({ classif, index, series }) => {
             ...prev,
             [e.target.name]: e.target.value,
         }));
+    };
+
+    const handleSubmit = () => {
+        onSubmit(hardCharger, index);
     };
     return (
         <div className="hard_charge_container">
@@ -45,6 +49,7 @@ const SingleHardChargerCard = ({ classif, index, series }) => {
                 <label>Gain:</label>
                 <input type="text" value={hardCharger.gain} name="gain" onChange={handleChange} />
             </div>
+            {/* buutton to submit, pass handle submit */}
         </div>
     );
 };
