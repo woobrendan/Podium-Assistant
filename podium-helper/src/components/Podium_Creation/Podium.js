@@ -18,8 +18,9 @@ import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/dateFuncs";
 import mongoResult from "../../functions/formMongoResult";
 import { resultsActions } from "../../store/results/resultsSlice";
-import { numOfPodiumDisplays, numOfHardChargeDisplays } from "../../functions/podiumResultHelpers";
+import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
 import { fetchApiEntry, fetchEventEntries } from "../../store/entries/entryActions";
+import HardChargeContainer from "./hard_charger/HardChargeContainer";
 
 const Podium = () => {
     const { currentEventName } = useEvents();
@@ -135,7 +136,7 @@ const Podium = () => {
                     {numOfPodiumDisplays(results.series, handleRacePodiumSubmit)}
                     <FastLap handleSubmit={handleRacePodiumSubmit} series={results.series} />
                     <HardChargeCard series={results.series} handleSubmit={handleRacePodiumSubmit} />
-                    {numOfHardChargeDisplays(results.series, handleRacePodiumSubmit)}
+                    <HardChargeContainer series={results.series} onSubmit={handleRacePodiumSubmit} />
                 </div>
             )}
             {results.fastLap && (
