@@ -28,7 +28,7 @@ const WinnerPodium = ({ seriesName, classification, onClick, resultNum }) => {
             setIsError(true);
         } else {
             if (isError) setIsError(false);
-            onClick(winners, resultNum);
+            onClick(winners, "podium", resultNum);
             setIsSubmitted(true);
         }
     };
