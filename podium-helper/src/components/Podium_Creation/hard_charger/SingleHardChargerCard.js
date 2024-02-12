@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
 
-const SingleHardChargerCard = ({ classif, index, series, onSubmit }) => {
+const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit }) => {
     const eventEntries = useSelector((state) => state.entry.eventEntries);
     const [hardCharger, setHardCharger] = useState({
         entryNum: "",
@@ -18,10 +18,9 @@ const SingleHardChargerCard = ({ classif, index, series, onSubmit }) => {
     };
 
     const handleSubmit = () => {
-        onSubmit(hardCharger, "hardChargerMulti", index);
+        onSubmit(hardCharger, "hardChargerMulti", resultNum);
     };
 
-    console.log("event", eventEntries);
     return (
         <div className="hard_charge_container">
             <div className="hard_driver">
