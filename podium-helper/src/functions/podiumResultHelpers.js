@@ -1,6 +1,5 @@
 import { MenuItem } from "@mui/material";
 import WinnerPodium from "../components/Podium_Creation/WinnerPodium";
-import SingleHardChargerCard from "../components/Podium_Creation/hard_charger/SingleHardChargerCard";
 
 //determine if entry is single or two drivers and return corresponding menu item
 const numOfDriverMenuItem = (entry, index) => {
@@ -30,28 +29,6 @@ const numOfPodiumDisplays = (series, submit) => {
     return mappedSeries;
 };
 
-const numOfHardChargeDisplays = (series, onSubmit) => {
-    let classes = null;
-    if (series.name === "GT America") {
-        classes = series.class.slice(0, -1);
-    } else if (series.name === "TC America") {
-        classes = series.class;
-    } else {
-        classes = series.name === "Pirelli GT4 America" ? ["GT4"] : ["GT3"];
-    }
-    const mappedHardCharge = classes.map((classif, index) => (
-        <SingleHardChargerCard
-            key={index}
-            classif={classif}
-            resultNum={index + 1}
-            onSubmit={onSubmit}
-            series={series}
-        />
-    ));
-
-    return mappedHardCharge;
-};
-
 //take in entry object and get every single driver into list. List is used for Fast Lap component
 const singleDrivers = (entryArray, seriesVal) => {
     const drivers = entryArray
@@ -68,4 +45,4 @@ const singleDrivers = (entryArray, seriesVal) => {
     return drivers.sort((a, b) => a.number - b.number);
 };
 
-export { numOfDriverMenuItem, numOfPodiumDisplays, singleDrivers, numOfHardChargeDisplays };
+export { numOfDriverMenuItem, numOfPodiumDisplays, singleDrivers };
