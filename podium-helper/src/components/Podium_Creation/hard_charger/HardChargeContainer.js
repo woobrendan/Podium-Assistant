@@ -2,7 +2,7 @@ import SingleHardChargerCard from "./SingleHardChargerCard";
 import { grCup } from "../../../functions/helperFunc";
 import { Card } from "@mui/material";
 
-const HardChargeContainer = (series, onSubmit) => {
+const HardChargeContainer = ({ series, onSubmit }) => {
     let classes = null;
     if (series.name === "GT America") {
         classes = series.class.slice(0, -1);
