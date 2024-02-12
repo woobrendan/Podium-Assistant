@@ -18,7 +18,7 @@ import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/dateFuncs";
 import mongoResult from "../../functions/formMongoResult";
 import { resultsActions } from "../../store/results/resultsSlice";
-import { numOfPodiumDisplays } from "../../functions/podiumResultHelpers";
+import { numOfPodiumDisplays, numOfHardChargeDisplays } from "../../functions/podiumResultHelpers";
 import { fetchApiEntry, fetchEventEntries } from "../../store/entries/entryActions";
 
 const Podium = () => {
@@ -53,8 +53,8 @@ const Podium = () => {
     };
 
     //** sent to WinnerPodium to handle submission of podium result X and set to results, used for fast lap too *//
-    const handleRacePodiumSubmit = (value, resultNumber) => {
-        switch (resultNumber) {
+    const handleRacePodiumSubmit = (value, resultType, resultNumber) => {
+        switch (resultType) {
             case "fastLap":
                 const entryVal = eventEntries
                     // get matching series entries only
@@ -132,9 +132,10 @@ const Podium = () => {
             </div>
             {results.series && (
                 <div className="podium_results_container">
-                    {numOfPodiumDisplays(results.series, handleRacePodiumSubmit, results, eventEntries)}
+                    {numOfPodiumDisplays(results.series, handleRacePodiumSubmit)}
                     <FastLap handleSubmit={handleRacePodiumSubmit} series={results.series} />
                     <HardChargeCard series={results.series} handleSubmit={handleRacePodiumSubmit} />
+                    {numOfHardChargeDisplays(results.series, handleRacePodiumSubmit)}
                 </div>
             )}
             {results.fastLap && (
