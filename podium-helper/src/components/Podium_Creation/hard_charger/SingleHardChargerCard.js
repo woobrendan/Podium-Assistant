@@ -34,7 +34,7 @@ const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit }) => {
                         Select Driver(s)
                     </option>
                     {eventEntries
-                        .filter((entry) => entry.series === series.name)
+                        .filter((entry) => entry.series === series.name && entry.classification === classif)
                         .sort((a, b) => a.number - b.number)
                         .map((entry, index) => {
                             return (
