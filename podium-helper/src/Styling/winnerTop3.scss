@@ -58,7 +58,13 @@
     justify-content: space-around;
     height: 80%;
 
-    h5 {
+    .single_hard_charge_container {
+      border: 1px solid black;
+      padding: 5%;
+      margin: 2%;
+    }
+
+    h3 {
       margin-bottom: 5px;
     }
 
@@ -71,8 +77,15 @@
         justify-content: space-around;
         width: 100%;
 
-        select, input {
-          width: 80%;
+        label {
+          text-align: left;
+        }
+
+        select {
+          width: 90%;
+        }
+        input {
+          width: 60%;
         }
 
       }
