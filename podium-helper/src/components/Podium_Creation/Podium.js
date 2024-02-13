@@ -48,6 +48,10 @@ const Podium = () => {
         }
     }, [currentEventName, dispatch]);
 
+    useEffect(() => {
+        dispatch(fetchEventEntries(results.event));
+    }, [results.event, dispatch]);
+
     const handleFinalSubmit = () => {
         dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
         navigate("/recent");
@@ -99,7 +103,7 @@ const Podium = () => {
 
                 setResults((prev) => ({
                     ...prev,
-                    [`result${resultNumber}`]: {
+                    [`hardCharge${resultNumber}`]: {
                         startPos: Number(value.startPos),
                         gain: Number(value.gain),
                         class: value.class,
