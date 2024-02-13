@@ -8,8 +8,9 @@ const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit }) => {
         entryNum: "",
         startPos: "",
         gain: "",
-        class: "",
+        class: classif,
     });
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleChange = (e) => {
         setHardCharger((prev) => ({
@@ -20,6 +21,7 @@ const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit }) => {
 
     const handleSubmit = () => {
         onSubmit(hardCharger, "hardChargerMulti", resultNum);
+        setIsSubmitted(true);
     };
 
     return (
@@ -52,7 +54,7 @@ const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit }) => {
                 <label>Gain:</label>
                 <input type="text" value={hardCharger.gain} name="gain" onChange={handleChange} />
             </div>
-            <Button variant="contained" color={isSubmitted ? "success" : "error"} onClick={handleSubmit}>
+            <Button size="small" variant="contained" color={isSubmitted ? "success" : "error"} onClick={handleSubmit}>
                 {isSubmitted ? "Update" : "Submit"}
             </Button>
         </div>
