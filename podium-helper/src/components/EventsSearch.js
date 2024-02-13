@@ -45,6 +45,7 @@ const EventSearch = ({ component, getValue }) => {
             <FormControl className="event_dropdown">
                 <InputLabel>Events</InputLabel>
                 <Select name="event" label="Events" value={eventName} onChange={(e) => handleChange(e)}>
+                    {!eventName && <MenuItem value="">Select Event</MenuItem>}
                     {eventList.map((event, index) => (
                         <MenuItem key={index} value={event} data-testid={event}>
                             {event}
