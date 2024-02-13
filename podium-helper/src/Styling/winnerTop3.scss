@@ -64,6 +64,18 @@
 
     .hard_charge_input {
       display: flex;
+
+      .hard_input {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+
+        select, input {
+          width: 80%;
+        }
+
+      }
     }
   }
 }
