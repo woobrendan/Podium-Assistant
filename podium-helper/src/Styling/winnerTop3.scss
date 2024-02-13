@@ -57,6 +57,14 @@
     flex-direction: column;
     justify-content: space-around;
     height: 80%;
+
+    h5 {
+      margin-bottom: 5px;
+    }
+
+    .hard_charge_input {
+      display: flex;
+    }
   }
 }
 
