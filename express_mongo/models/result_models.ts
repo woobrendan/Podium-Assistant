@@ -45,4 +45,7 @@ export interface FullResultInterface {
     result2?: ResultInterface;
     result3?: ResultInterface;
     result4?: ResultInterface;
+    hardCharger1?: MultiHardCharger;
+    hardCharger2?: MultiHardCharger;
+    hardCharger3?: MultiHardCharger;
 }
