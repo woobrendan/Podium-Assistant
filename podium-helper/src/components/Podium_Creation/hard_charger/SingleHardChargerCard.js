@@ -25,39 +25,41 @@ const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit }) => {
     };
 
     return (
-        <div className="single_hard_charge_container">
-            <h5>{classif} Hard Charger</h5>
-            <div className="hard_driver">
-                <label>Driver:</label>
-                <select name="entryNum" value={hardCharger.entryNum} onChange={handleChange}>
-                    <option value="" disabled>
-                        Select Driver(s)
-                    </option>
-                    {eventEntries
-                        .filter((entry) => entry.series === series.name && entry.classification === classif)
-                        .sort((a, b) => a.number - b.number)
-                        .map((entry, index) => {
-                            return (
-                                <option value={entry.number} key={index}>
-                                    #{entry.number} - {entry.driver1.name}{" "}
-                                    {entry.driver2 ? `& ${entry.driver2.name}` : " "}
-                                </option>
-                            );
-                        })}
-                </select>
-            </div>
-            <div className="hard_start">
-                <label>Start Pos:</label>
-                <input type="text" value={hardCharger.startPos} name="startPos" onChange={handleChange} />
-            </div>
-            <div className="hard_gain">
-                <label>Gain:</label>
-                <input type="text" value={hardCharger.gain} name="gain" onChange={handleChange} />
-            </div>
+        <section className="single_hard_charge_container">
+            <h3>{classif}</h3>
+            <section className="hard_charge_input">
+                <div className="hard_driver hard_input">
+                    <label>Driver:</label>
+                    <select name="entryNum" value={hardCharger.entryNum} onChange={handleChange}>
+                        <option value="" disabled>
+                            Select Driver(s)
+                        </option>
+                        {eventEntries
+                            .filter((entry) => entry.series === series.name && entry.classification === classif)
+                            .sort((a, b) => a.number - b.number)
+                            .map((entry, index) => {
+                                return (
+                                    <option value={entry.number} key={index}>
+                                        #{entry.number} - {entry.driver1.name}{" "}
+                                        {entry.driver2 ? `& ${entry.driver2.name}` : " "}
+                                    </option>
+                                );
+                            })}
+                    </select>
+                </div>
+                <div className="hard_start hard_input">
+                    <label>Start Pos:</label>
+                    <input type="text" value={hardCharger.startPos} name="startPos" onChange={handleChange} />
+                </div>
+                <div className="hard_gain hard_input">
+                    <label>Gain:</label>
+                    <input type="text" value={hardCharger.gain} name="gain" onChange={handleChange} />
+                </div>
+            </section>
             <Button size="small" variant="contained" color={isSubmitted ? "success" : "error"} onClick={handleSubmit}>
                 {isSubmitted ? "Update" : "Submit"}
             </Button>
-        </div>
+        </section>
     );
 };
 
