@@ -10,6 +10,8 @@ const HardCharger = ({ hardCharger }) => {
     driverStr += entry.driver3 ? ` & ${entry.driver3.name}` : "";
     const finishPos = startPos - gain;
 
+    const hardClass = hardCharger.class;
+
     return (
         <>
             <TableHead className="table_header">
@@ -21,7 +23,8 @@ const HardCharger = ({ hardCharger }) => {
             </TableHead>
             <TableHead>
                 <TableRow>
-                    <TableCell colSpan={1}>Driver</TableCell>
+                    <TableCell colSpan={hardClass ? 1 : 2}>Driver</TableCell>
+                    {hardClass && <TableCell colSpan={1}>Class</TableCell>}
                     {!startPos ? (
                         <>
                             <TableCell colSpan={2}>Team</TableCell>
@@ -47,8 +50,11 @@ const HardCharger = ({ hardCharger }) => {
             </TableHead>
             <TableBody>
                 <TableRow>
-                    <TableCell component="th" scope="row" colSpan={2}>
+                    <TableCell component="th" scope="row" colSpan={hardClass ? 1 : 2}>
                         {driverStr}
+                    </TableCell>
+                    <TableCell align="left" colSpan={1}>
+                        {hardClass}
                     </TableCell>
                     <TableCell align="left" colSpan={1}>
                         #{number}
