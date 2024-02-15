@@ -12,7 +12,6 @@ import FastLap from "./FastLap";
 import Series from "./Series";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
-import HardChargeCard from "./hard_charger/HardChargeCard";
 
 import useEvents from "../../functions/useEvents";
 import { getToday } from "../../functions/dateFuncs";
@@ -79,22 +78,6 @@ const Podium = () => {
                 }));
                 break;
 
-            case "hardCharger":
-                // take in value as vehicle number, get entries matching series then get matching car num
-                const entry = eventEntries
-                    .filter((entry) => results.series.name === entry.series)
-                    .find((entry) => value.entryNum === entry.number);
-
-                setResults((prev) => ({
-                    ...prev,
-                    hardCharger: {
-                        entry,
-                        gain: Number(value.gain),
-                        startPos: Number(value.startPos),
-                    },
-                }));
-                break;
-
             case "hardChargerMulti":
                 // take in value as vehicle number, get entries matching series then get matching car num
                 const hardChargeEntry = eventEntries
@@ -139,7 +122,6 @@ const Podium = () => {
                 <div className="podium_results_container">
                     {numOfPodiumDisplays(results.series, handleRacePodiumSubmit)}
                     <FastLap handleSubmit={handleRacePodiumSubmit} series={results.series} />
-                    <HardChargeCard series={results.series} handleSubmit={handleRacePodiumSubmit} />
                     <HardChargeContainer series={results.series} onSubmit={handleRacePodiumSubmit} />
                 </div>
             )}
