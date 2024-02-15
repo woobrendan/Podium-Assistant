@@ -23,8 +23,8 @@ const HardCharger = ({ hardCharger }) => {
             </TableHead>
             <TableHead>
                 <TableRow>
-                    <TableCell colSpan={hardClass ? 1 : 2}>Driver</TableCell>
                     {hardClass && <TableCell colSpan={1}>Class</TableCell>}
+                    <TableCell colSpan={hardClass ? 1 : 2}>Driver</TableCell>
                     {!startPos ? (
                         <>
                             <TableCell colSpan={2}>Team</TableCell>
@@ -50,11 +50,11 @@ const HardCharger = ({ hardCharger }) => {
             </TableHead>
             <TableBody>
                 <TableRow>
-                    <TableCell component="th" scope="row" colSpan={hardClass ? 1 : 2}>
-                        {driverStr}
-                    </TableCell>
-                    <TableCell align="left" colSpan={1}>
+                    <TableCell scope="row" colSpan={1}>
                         {hardClass}
+                    </TableCell>
+                    <TableCell align="left" colSpan={hardClass ? 1 : 2}>
+                        {driverStr}
                     </TableCell>
                     <TableCell align="left" colSpan={1}>
                         #{number}
