@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
 import { Button } from "@mui/material";
 
-const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit, entries }) => {
-    //const eventEntries = useSelector((state) => state.entry.eventEntries);
+const SingleHardChargerCard = ({ classif, resultNum, onSubmit, entries }) => {
     const [hardCharger, setHardCharger] = useState({
         entryNum: "",
         startPos: "",
@@ -35,7 +33,6 @@ const SingleHardChargerCard = ({ classif, resultNum, series, onSubmit, entries }
                             Select Driver(s)
                         </option>
                         {entries
-                            //.filter((entry) => entry.series === series.name && entry.classification === classif)
                             .sort((a, b) => a.number - b.number)
                             .map((entry, index) => {
                                 return (
