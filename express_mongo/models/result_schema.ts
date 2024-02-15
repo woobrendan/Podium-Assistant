@@ -18,19 +18,19 @@ const resultSchema: Schema = new Schema({
         gain: { type: Number },
         startPos: { type: Number },
     },
-    hardCharger1: {
+    hardCharge1: {
         entry: { type: entrySchema },
         gain: { type: Number },
         startPos: { type: Number },
         class: { type: String },
     },
-    hardCharger2: {
+    hardCharge2: {
         entry: { type: entrySchema },
         gain: { type: Number },
         startPos: { type: Number },
         class: { type: String },
     },
-    hardCharger3: {
+    hardCharge3: {
         entry: { type: entrySchema },
         gain: { type: Number },
         startPos: { type: Number },
