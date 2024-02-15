@@ -35,6 +35,9 @@ const createResult = (req: Request, res: Response) => {
         ...(result2 ? { result2: { ...resultBuilder(result2) } } : {}),
         ...(result3 ? { result3: { ...resultBuilder(result3) } } : {}),
         ...(result4 ? { result4: { ...resultBuilder(result4) } } : {}),
+        ...(hardCharge1 ? { hardCharge1: { ...hardChargeResult(hardCharge1) } } : {}),
+        ...(hardCharge2 ? { hardCharge1: { ...hardChargeResult(hardCharge1) } } : {}),
+        ...(hardCharge3 ? { hardCharge1: { ...hardChargeResult(hardCharge1) } } : {}),
     });
 
     return result
