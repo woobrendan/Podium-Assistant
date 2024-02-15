@@ -15,15 +15,13 @@ const HardCharger = ({ hardCharger }) => {
             <TableHead className="table_header">
                 <TableRow>
                     <TableCell colSpan={entry.driver3 ? 7 : 6} align="center">
-                        {series === grCup
-                            ? "Hard Charger"
-                            : "E-Boost Hard Charger"}
+                        {series === grCup ? "Hard Charger" : "E-Boost Hard Charger"}
                     </TableCell>
                 </TableRow>
             </TableHead>
             <TableHead>
                 <TableRow>
-                    <TableCell colSpan={startPos ? 3 : 2}>Driver</TableCell>
+                    <TableCell colSpan={1}>Driver</TableCell>
                     {!startPos ? (
                         <>
                             <TableCell colSpan={2}>Team</TableCell>
@@ -31,6 +29,9 @@ const HardCharger = ({ hardCharger }) => {
                         </>
                     ) : (
                         <>
+                            <TableCell align="left" colSpan={1}>
+                                Car #
+                            </TableCell>
                             <TableCell align="right" colSpan={1}>
                                 Start Position
                             </TableCell>
