@@ -12,7 +12,7 @@ export interface HardChargerInterface {
     startPos: number;
 }
 
-export interface MultiHardCharger {
+export interface MultiHardCharge {
     entry: EntryInterface;
     gain: number;
     startPos: number;
@@ -45,7 +45,7 @@ export interface FullResultInterface {
     result2?: ResultInterface;
     result3?: ResultInterface;
     result4?: ResultInterface;
-    hardCharger1?: MultiHardCharger;
-    hardCharger2?: MultiHardCharger;
-    hardCharger3?: MultiHardCharger;
+    hardCharge1?: MultiHardCharge;
+    hardCharge2?: MultiHardCharge;
+    hardCharge3?: MultiHardCharge;
 }
