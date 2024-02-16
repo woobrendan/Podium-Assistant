@@ -58,6 +58,8 @@ const ResultTableHeader = ({ results }) => {
                 <FastLapTable fastLap={fastLap} series={series} />
                 {hardCharger && <HardCharger hardCharger={hardCharger} />}
                 {hardCharge1 && <HardCharger hardCharger={hardCharge1} />}
+                {hardCharge2 && <HardCharger hardCharger={hardCharge2} />}
+                {hardCharge3 && <HardCharger hardCharger={hardCharge3} />}
             </Table>
         </TableContainer>
     );
