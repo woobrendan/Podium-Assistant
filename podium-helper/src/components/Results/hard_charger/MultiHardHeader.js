@@ -1,13 +1,17 @@
-import { TableCell, TableHead, TableRow } from "@mui/material";
+import { TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 import { grCup } from "../../../functions/helperFunc";
+import SingleHardRow from "./SingleHardRow";
 
 const MultiHardHeader = ({ allHardCharger }) => {
     const { hardCharge1, hardCharge2, hardCharge3 } = allHardCharger;
-    //const { entry, startPos, gain } = hardCharger;
     const { entry } = hardCharge1;
     const { series } = entry;
 
     const hardClass = entry.class;
+
+    const hardChargeVals = [hardCharge1, hardCharge2, hardCharge3].filter(Boolean);
+
+    const mappedHardRows = hardChargeVals.map((result, index) => <SingleHardRow hardCharger={result} key={index} />);
 
     return (
         <>
@@ -38,6 +42,7 @@ const MultiHardHeader = ({ allHardCharger }) => {
                     </TableCell>
                 </TableRow>
             </TableHead>
+            <TableBody>{mappedHardRows}</TableBody>
         </>
     );
 };
