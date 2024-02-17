@@ -1,17 +1,13 @@
 import { TableCell, TableHead, TableRow } from "@mui/material";
 import { grCup } from "../../../functions/helperFunc";
 
-const MultiHardHeader = ({ hardCharger }) => {
-    const { entry } = hardCharger;
-    //const { series, number, team, vehicle } = entry;
-    const series = entry.series;
-    //
-    //    let driverStr = `${entry.driver1.name}`;
-    //    driverStr += entry.driver2 ? ` & ${entry.driver2.name}` : "";
-    //    driverStr += entry.driver3 ? ` & ${entry.driver3.name}` : "";
-    //    const finishPos = startPos - gain;
+const MultiHardHeader = ({ allHardCharger }) => {
+    const { hardCharge1, hardCharge2, hardCharge3 } = allHardCharger;
+    //const { entry, startPos, gain } = hardCharger;
+    const { entry } = hardCharge1;
+    const { series } = entry;
 
-    const hardClass = hardCharger.class;
+    const hardClass = entry.class;
 
     return (
         <>
