@@ -5,6 +5,7 @@ import FastLapTable from "./FastLapTable";
 import "../../Styling/result.scss";
 import { dateToString } from "../../functions/dateFuncs";
 import HardCharger from "./HardCharger";
+import MultiHardHeader from "./hard_charger/MultiHardHeader";
 
 const ResultTableHeader = ({ results }) => {
     const {
@@ -23,6 +24,7 @@ const ResultTableHeader = ({ results }) => {
     } = results;
 
     const { driver2, driver3 } = result1.firstPlace;
+    const allHardCharger = { hardCharge1, hardCharge2, hardCharge3 };
 
     return (
         <TableContainer component={Paper} id="result-table-container">
@@ -57,9 +59,7 @@ const ResultTableHeader = ({ results }) => {
                 {result4 && <ResultTableBody results={result4} />}
                 <FastLapTable fastLap={fastLap} series={series} />
                 {hardCharger && <HardCharger hardCharger={hardCharger} />}
-                {hardCharge1 && <HardCharger hardCharger={hardCharge1} />}
-                {hardCharge2 && <HardCharger hardCharger={hardCharge2} />}
-                {hardCharge3 && <HardCharger hardCharger={hardCharge3} />}
+                {hardCharge1 && <MultiHardHeader allHardCharger={allHardCharger} />}
             </Table>
         </TableContainer>
     );
