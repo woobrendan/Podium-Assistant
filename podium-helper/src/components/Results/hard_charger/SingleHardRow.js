@@ -1,6 +1,6 @@
 import { TableCell, TableRow, TableBody } from "@mui/material";
 
-const SingleHardRrow = () => {
+const SingleHardRow = () => {
     return (
         <TableBody>
             <TableRow>
