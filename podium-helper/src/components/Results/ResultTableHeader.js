@@ -4,24 +4,11 @@ import ResultTableBody from "./ResultTableBody";
 import FastLapTable from "./FastLapTable";
 import "../../Styling/result.scss";
 import { dateToString } from "../../functions/dateFuncs";
-import HardCharger from "./HardCharger";
 import MultiHardHeader from "./hard_charger/MultiHardHeader";
 
 const ResultTableHeader = ({ results }) => {
-    const {
-        event,
-        series,
-        date,
-        fastLap,
-        result1,
-        result2,
-        result3,
-        result4,
-        hardCharger,
-        hardCharge1,
-        hardCharge2,
-        hardCharge3,
-    } = results;
+    const { event, series, date, fastLap, result1, result2, result3, result4, hardCharge1, hardCharge2, hardCharge3 } =
+        results;
 
     const { driver2, driver3 } = result1.firstPlace;
     const allHardCharger = { hardCharge1, hardCharge2, hardCharge3 };
@@ -58,7 +45,6 @@ const ResultTableHeader = ({ results }) => {
                 {result3 && <ResultTableBody results={result3} />}
                 {result4 && <ResultTableBody results={result4} />}
                 <FastLapTable fastLap={fastLap} series={series} />
-                {hardCharger && <HardCharger hardCharger={hardCharger} />}
                 {hardCharge1 && <MultiHardHeader allHardCharger={allHardCharger} />}
             </Table>
         </TableContainer>
