@@ -4,9 +4,9 @@ import WinnerPodium from "../components/Podium_Creation/WinnerPodium";
 //determine if entry is single or two drivers and return corresponding menu item
 const numOfDriverMenuItem = (entry, index) => {
     const { driver1, driver2, driver3, number } = entry;
-    let driverStr = `#${number} - ${driver1.name}`;
-    driverStr += driver2 ? ` & ${driver2.name}` : "";
-    driverStr += driver3 ? ` & ${driver3.name}` : "";
+
+    const drivers = [driver1, driver2, driver3].filter(Boolean).map((driver) => driver.name);
+    const driverStr = `#${number} ${drivers.join(" & ")}`;
 
     return (
         <MenuItem key={index} value={entry}>
