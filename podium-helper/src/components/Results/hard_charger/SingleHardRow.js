@@ -2,25 +2,20 @@ import { TableCell, TableRow } from "@mui/material";
 
 const SingleHardRow = ({ hardCharger }) => {
     const { gain, entry, startPos } = hardCharger;
+    const { driver1, driver2, driver3 } = entry;
 
-    let driverStr = `${entry.driver1.name}`;
-    driverStr += entry.driver2 ? ` & ${entry.driver2.name}` : "";
-    driverStr += entry.driver3 ? ` & ${entry.driver3.name}` : "";
+    const drivers = [driver1, driver2, driver3].filter(Boolean).map((driver) => driver.name);
+    const driverStr = drivers.join(" & ");
+
     const finishPos = startPos - gain;
 
-    const hardClass = hardCharger.class;
     return (
         <TableRow>
             <TableCell scope="row" colSpan={1}>
-                {hardClass}
+                {hardCharger.class}
             </TableCell>
-            <TableCell align="left" colSpan={hardClass ? 1 : 2}>
-                {driverStr}
-            </TableCell>
-            <TableCell align="left" colSpan={1}>
-                #{entry.number}
-            </TableCell>
-
+            <TableCell colSpan={1}>{driverStr}</TableCell>
+            <TableCell colSpan={1}>#{entry.number}</TableCell>
             <TableCell align="right" colSpan={1}>
                 {startPos}
             </TableCell>
