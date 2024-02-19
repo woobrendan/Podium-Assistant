@@ -11,7 +11,6 @@ const createResult = (req: Request, res: Response) => {
         result3,
         result4,
         fastLap,
-        hardCharger,
         hardCharge1,
         hardCharge2,
         hardCharge3,
@@ -21,7 +20,6 @@ const createResult = (req: Request, res: Response) => {
         result3?: ResultInterface;
         result4?: ResultInterface;
         fastLap: FastLapInterface;
-        hardCharger: HardChargerInterface;
         hardCharge1: MultiHardCharge;
         hardCharge2: MultiHardCharge;
         hardCharge3: MultiHardCharge;
@@ -30,7 +28,6 @@ const createResult = (req: Request, res: Response) => {
     const result = new Result({
         ...req.body.results,
         fastLap: { ...fastLap },
-        ...(hardCharger ? { hardCharger: { ...hardChargeResult(hardCharger) } } : {}),
         result1: { ...resultBuilder(result1) },
         ...(result2 ? { result2: { ...resultBuilder(result2) } } : {}),
         ...(result3 ? { result3: { ...resultBuilder(result3) } } : {}),
