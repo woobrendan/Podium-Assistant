@@ -1,5 +1,6 @@
 import { MenuItem } from "@mui/material";
 import WinnerPodium from "../components/Podium_Creation/WinnerPodium";
+import { gtam, gt4a, tcam, grCup } from "./helperFunc";
 
 //determine if entry is single or two drivers and return corresponding menu item
 const numOfDriverMenuItem = (entry, index) => {
@@ -45,4 +46,20 @@ const singleDrivers = (entryArray, seriesVal) => {
     return drivers.sort((a, b) => a.number - b.number);
 };
 
-export { numOfDriverMenuItem, numOfPodiumDisplays, singleDrivers };
+// used for awards to get class array in conatiners
+const getClassArr = (series) => {
+    switch (series.name) {
+        case gtam:
+            return series.class.slice(0, -1);
+        case tcam:
+            return series.class;
+        case gt4a:
+            return ["GT4"];
+        case grCup:
+            return ["Am"];
+        default:
+            return ["GT3"];
+    }
+};
+
+export { numOfDriverMenuItem, numOfPodiumDisplays, singleDrivers, getClassArr };
