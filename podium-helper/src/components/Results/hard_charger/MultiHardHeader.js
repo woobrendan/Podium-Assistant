@@ -6,9 +6,6 @@ const MultiHardHeader = ({ allHardCharger }) => {
     const { hardCharge1, hardCharge2, hardCharge3 } = allHardCharger;
     const { entry } = hardCharge1;
     const { series } = entry;
-
-    const hardClass = entry.class;
-
     const hardChargeVals = [hardCharge1, hardCharge2, hardCharge3].filter(Boolean);
 
     const mappedHardRows = hardChargeVals.map((result, index) => <SingleHardRow hardCharger={result} key={index} />);
@@ -24,12 +21,9 @@ const MultiHardHeader = ({ allHardCharger }) => {
             </TableHead>
             <TableHead>
                 <TableRow>
-                    {hardClass && <TableCell colSpan={1}>Class</TableCell>}
-                    <TableCell colSpan={hardClass ? 1 : 2}>Driver</TableCell>
-
-                    <TableCell align="left" colSpan={1}>
-                        Car #
-                    </TableCell>
+                    <TableCell colSpan={1}>Class</TableCell>
+                    <TableCell colSpan={1}>Driver</TableCell>
+                    <TableCell colSpan={1}>Car #</TableCell>
                     <TableCell align="right" colSpan={1}>
                         Start Position
                     </TableCell>
