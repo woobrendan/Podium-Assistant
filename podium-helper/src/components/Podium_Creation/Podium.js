@@ -78,6 +78,26 @@ const Podium = () => {
                 }));
                 break;
 
+            case "multiFastLap":
+                const driverEntry = eventEntries
+                    // get matching series entries only
+                    .filter((entry) => results.series.name === entry.series)
+                    // loop through those entries, set drivers val to an array of driver objects, then find matching name
+                    .find((entry) => {
+                        const drivers = Object.values(entry).filter((val) => typeof val === "object");
+                        return drivers.some((driver) => driver.name === value.driver);
+                    });
+
+                setResults((prev) => ({
+                    ...prev,
+                    [`fastLap${resultNumber}`]: {
+                        ...value,
+                        class: value.class,
+                        entry: driverEntry,
+                    },
+                }));
+                break;
+
             case "hardChargerMulti":
                 // take in value as vehicle number, get entries matching series then get matching car num
                 const hardChargeEntry = eventEntries
