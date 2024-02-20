@@ -2,19 +2,13 @@ import SingleHardChargerCard from "./SingleHardChargerCard";
 import { grCup } from "../../../functions/helperFunc";
 import { Card } from "@mui/material";
 import { useSelector } from "react-redux";
-import { gtwca, gt4a } from "../../../functions/helperFunc";
-import { getClassArr } from "../../../functions/podiumResultHelpers";
+import { getClassArr, getAwardEntries } from "../../../functions/podiumResultHelpers";
 
 const HardChargeContainer = ({ series, onSubmit }) => {
     let eventEntries = useSelector((state) => state.entry.eventEntries);
 
     const hardChargeCards = getClassArr(series).map((classif, index) => {
-        let entries = eventEntries;
-        if (series.name === gtwca || series.name === gt4a) {
-            entries = eventEntries.filter((entry) => entry.series === series.name);
-        } else {
-            entries = eventEntries.filter((entry) => entry.series === series.name && entry.classification === classif);
-        }
+        const entries = getAwardEntries(eventEntries, series, classif);
 
         return (
             <SingleHardChargerCard
