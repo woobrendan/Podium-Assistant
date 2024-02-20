@@ -1,10 +1,11 @@
 import { useState } from "react";
 
-const SingleFastLapCard = () => {
+const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
     const [isSubmitted, setIsSubmitted] = useState(false);
     const [fastLap, setFastLap] = useState({
         driver: "",
         laptime: "",
+        classif,
     });
 
     const handleChange = (e) => {
@@ -13,7 +14,12 @@ const SingleFastLapCard = () => {
             [e.target.name]: e.target.value,
         }));
     };
-    return <></>;
+
+    const handleSubmit = () => {
+        onSubmit(fastLap, "mulitFastLap", resultNum);
+        setIsSubmitted(true);
+    };
+    return <section className="single_fast_lap_container"></section>;
 };
 
 export default SingleFastLapCard;
