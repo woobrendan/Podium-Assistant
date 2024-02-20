@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import SingleFastLapCard from "./SingleFastLapCard";
 import { getAwardEntries, getClassArr } from "../../../functions/podiumResultHelpers";
 
-const FastLapContainer = ({ series }) => {
+const FastLapContainer = ({ series, onSubmit }) => {
     const eventEntries = useSelector((state) => state.entry.eventEntries);
 
     const fastLapCards = getClassArr(series).map((classif, index) => {
@@ -15,7 +15,7 @@ const FastLapContainer = ({ series }) => {
                 key={index}
                 classif={classif}
                 resultNum={index + 1}
-                //onSubmit={onSubmit}
+                onSubmit={onSubmit}
                 entries={entries}
             />
         );
