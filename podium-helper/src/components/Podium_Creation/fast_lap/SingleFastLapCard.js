@@ -42,8 +42,8 @@ const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
     return (
         <section className="single_fast_lap_container single_award">
             <h3>{classif}</h3>
-            <section>
-                <div className="fast_driver fast_input">
+            <section className="single_award_section">
+                <div className="fast_driver award_input">
                     <label>Driver:</label>
                     <select name="driver" value={fastLap.driver} onChange={handleChange}>
                         <option value="" disabled>
@@ -52,7 +52,7 @@ const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
                         {driverOptions}
                     </select>
                 </div>
-                <div className="lap_time fast_input">
+                <div className="lap_time award_input">
                     <label>Lap Time:</label>
                     <input type="text" value={fastLap.laptime} name="laptime" onChange={handleChange} />
                 </div>
