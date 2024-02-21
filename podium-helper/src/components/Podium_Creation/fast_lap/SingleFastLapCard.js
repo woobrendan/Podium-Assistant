@@ -20,11 +20,36 @@ const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
         onSubmit(fastLap, "mulitFastLap", resultNum);
         setIsSubmitted(true);
     };
+    //
+    const driverOptions = entries
+        .flatMap((entry) => {
+            const { number, vehicle, driver1, driver2, driver3 } = entry;
+            return [
+                { number, driver: driver1.name, vehicle },
+                ...(driver2 ? [{ number, driver: driver2.name, vehicle }] : []),
+                ...(driver3 ? [{ number, driver: driver3.name, vehicle }] : []),
+            ];
+        })
+        .sort((a, b) => a.number - b.number)
+        .map((entry, index) => {
+            return (
+                <option value={entry.driver} key={index}>
+                    #{entry.number} - {entry.driver}
+                </option>
+            );
+        });
+
     return (
         <section className="single_fast_lap_container">
             <section>
                 <div className="fast_driver fast_input">
                     <label>Driver:</label>
+                    <select name="driver" value={fastLap.driver} onChange={handleChange}>
+                        <option value="" disabled>
+                            Select Driver
+                        </option>
+                        {driverOptions}
+                    </select>
                 </div>
                 <div className="lap_time fast_input">
                     <label>Lap Time:</label>
