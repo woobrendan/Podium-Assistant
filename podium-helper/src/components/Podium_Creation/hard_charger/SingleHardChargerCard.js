@@ -23,10 +23,10 @@ const SingleHardChargerCard = ({ classif, resultNum, onSubmit, entries }) => {
     };
 
     return (
-        <section className="single_hard_charge_container">
+        <section className="single_hard_charge_container single_award">
             <h3>{classif}</h3>
-            <section className="hard_charge_input">
-                <div className="hard_driver hard_input">
+            <section className="single_award_section">
+                <div className="hard_driver award_input">
                     <label>Driver:</label>
                     <select name="entryNum" value={hardCharger.entryNum} onChange={handleChange}>
                         <option value="" disabled>
@@ -44,11 +44,11 @@ const SingleHardChargerCard = ({ classif, resultNum, onSubmit, entries }) => {
                             })}
                     </select>
                 </div>
-                <div className="hard_start hard_input">
+                <div className="hard_start award_input">
                     <label>Start Pos:</label>
                     <input type="text" value={hardCharger.startPos} name="startPos" onChange={handleChange} />
                 </div>
-                <div className="hard_gain hard_input">
+                <div className="hard_gain award_input">
                     <label>Gain:</label>
                     <input type="text" value={hardCharger.gain} name="gain" onChange={handleChange} />
                 </div>
