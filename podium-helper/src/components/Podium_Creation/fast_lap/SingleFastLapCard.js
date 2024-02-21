@@ -40,7 +40,8 @@ const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
         });
 
     return (
-        <section className="single_fast_lap_container">
+        <section className="single_fast_lap_container single_award">
+            <h3>{classif}</h3>
             <section>
                 <div className="fast_driver fast_input">
                     <label>Driver:</label>
