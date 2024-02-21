@@ -66,10 +66,10 @@
       text-decoration: underline;
     }
 
-    .hard_charge_input {
+    .single_award_section {
       display: flex;
 
-      .hard_input {
+      .award_input {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -88,30 +88,5 @@
 
       }
     }
-  }
-}
-
-.hard_charger_container,
-.fast-lap-container {
-  .podium_card {
-    justify-content: center;
-
-    h2 {
-      padding-bottom: 10%;
-    }
-  }
-
-  .podium_card__input {
-    margin-bottom: 10px;
-  }
-
-  .MuiFormControl-root {
-    min-width: 250px;
-  }
-
-  .MuiButton-root {
-    max-width: 200px;
-    align-self: center;
-    margin-top: 10px;
   }
 }
