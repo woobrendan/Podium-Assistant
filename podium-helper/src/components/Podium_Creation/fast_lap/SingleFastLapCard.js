@@ -22,10 +22,15 @@ const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
     };
     return (
         <section className="single_fast_lap_container">
-            <div className="hard_start hard_input">
-                <label>Lap Time:</label>
-                <input type="text" value={fastLap.laptime} name="laptime" onChange={handleChange} />
-            </div>
+            <section>
+                <div className="fast_driver fast_input">
+                    <label>Driver:</label>
+                </div>
+                <div className="lap_time fast_input">
+                    <label>Lap Time:</label>
+                    <input type="text" value={fastLap.laptime} name="laptime" onChange={handleChange} />
+                </div>
+            </section>
             <Button size="small" variant="contained" color={isSubmitted ? "success" : "error"} onClick={handleSubmit}>
                 {isSubmitted ? "Update" : "Submit"}
             </Button>
