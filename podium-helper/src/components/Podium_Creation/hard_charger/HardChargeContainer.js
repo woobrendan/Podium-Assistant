@@ -25,7 +25,7 @@ const HardChargeContainer = ({ series, onSubmit }) => {
         <div className="results-container">
             <Card className="podium_card">
                 <h2>{series.name === grCup ? "Hard Charger" : "E-Boost Hard Charger"}</h2>
-                <div className="hard_charge_container">{hardChargeCards}</div>
+                <div className="award_container">{hardChargeCards}</div>
             </Card>
         </div>
     );
