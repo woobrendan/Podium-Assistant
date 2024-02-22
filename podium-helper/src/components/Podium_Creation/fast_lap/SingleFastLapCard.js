@@ -6,7 +6,7 @@ const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
     const [fastLap, setFastLap] = useState({
         driver: "",
         laptime: "",
-        classif,
+        class: classif,
     });
 
     const handleChange = (e) => {
@@ -17,7 +17,7 @@ const SingleFastLapCard = ({ classif, resultNum, onSubmit, entries }) => {
     };
 
     const handleSubmit = () => {
-        onSubmit(fastLap, "mulitFastLap", resultNum);
+        onSubmit(fastLap, "multiFastLap", resultNum);
         setIsSubmitted(true);
     };
     //
