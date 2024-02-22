@@ -31,7 +31,6 @@ const Podium = () => {
         date: getToday(),
         series: "",
         event: "",
-        fastLap: "",
     });
 
     useEffect(() => {
@@ -60,25 +59,6 @@ const Podium = () => {
     //** sent to WinnerPodium to handle submission of podium result X and set to results, used for fast lap too *//
     const handleRacePodiumSubmit = (value, resultType, resultNumber) => {
         switch (resultType) {
-            case "fastLap":
-                const entryVal = eventEntries
-                    // get matching series entries only
-                    .filter((entry) => results.series.name === entry.series)
-                    // loop through those entries, set drivers val to an array of driver objects, then find matching name
-                    .find((entry) => {
-                        const drivers = Object.values(entry).filter((val) => typeof val === "object");
-                        return drivers.some((driver) => driver.name === value.driver);
-                    });
-
-                setResults((prev) => ({
-                    ...prev,
-                    fastLap: {
-                        ...value,
-                        entry: entryVal,
-                    },
-                }));
-                break;
-
             case "multiFastLap":
                 const driverEntry = eventEntries
                     // get matching series entries only
