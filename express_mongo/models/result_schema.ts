@@ -8,10 +8,20 @@ const resultSchema: Schema = new Schema({
     series: { type: String, required: true },
     date: { type: String, required: true },
     event: { type: String, required: true },
-    fastLap: {
-        driver: { type: String, required: true },
+    fastLap1: {
+        driver: { type: String },
         entry: { type: entrySchema },
-        laptime: { type: String, required: true },
+        laptime: { type: String },
+    },
+    fastLap2: {
+        driver: { type: String },
+        entry: { type: entrySchema },
+        laptime: { type: String },
+    },
+    fastLap3: {
+        driver: { type: String },
+        entry: { type: entrySchema },
+        laptime: { type: String },
     },
     hardCharger: {
         entry: { type: entrySchema },
