@@ -8,7 +8,6 @@ import "../../Styling/podium.scss";
 import "../../Styling/winnerTop3.scss";
 
 //** Components  */
-import FastLap from "./FastLap";
 import Series from "./Series";
 import EventSearch from "../EventsSearch";
 import DatePicker from "./DatePicker";
@@ -26,7 +25,6 @@ const Podium = () => {
     const { currentEventName } = useEvents();
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    //const entries = useSelector((state) => state.entry.entriesArray);
     const eventEntries = useSelector((state) => state.entry.eventEntries);
 
     const [results, setResults] = useState({
@@ -49,7 +47,9 @@ const Podium = () => {
     }, [currentEventName, dispatch]);
 
     useEffect(() => {
-        dispatch(fetchEventEntries(results.event));
+        if (results.event) {
+            dispatch(fetchEventEntries(results.event));
+        }
     }, [results.event, dispatch]);
 
     const handleFinalSubmit = () => {
