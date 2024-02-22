@@ -6,6 +6,12 @@ export interface FastLapInterface {
     laptime: string;
 }
 
+export interface MultiFastLap {
+    entry: EntryInterface;
+    laptime: string;
+    driver: string;
+}
+
 export interface HardChargerInterface {
     entry: EntryInterface;
     gain: number;
