@@ -1,4 +1,4 @@
-import { ResultInterface, HardChargerInterface } from "../models/result_models";
+import { ResultInterface, MultiHardCharge, MultiFastLap } from "../models/result_models";
 import { ConvertedApiEntry, DriverInfo } from "../models/models";
 
 const resultBuilder = (result: ResultInterface) => {
@@ -11,7 +11,22 @@ const resultBuilder = (result: ResultInterface) => {
     };
 };
 
-const hardChargeResult = (result: HardChargerInterface) => {
+const hardChargeResult = (result: MultiHardCharge) => {
+    const { entry } = result;
+    return {
+        ...result,
+        entry: {
+            ...entry,
+            driver1: {
+                ...entry.driver1,
+            },
+            ...(entry.driver2 ? { driver2: { ...entry.driver2 } } : {}),
+            ...(entry.driver3 ? { driver3: { ...entry.driver3 } } : {}),
+        },
+    };
+};
+
+const fastLapResult = (result: MultiFastLap) => {
     const { entry } = result;
     return {
         ...result,
@@ -81,4 +96,4 @@ const getManuf = (vehicle: string): string => {
     return vehicle.includes("Aston") ? "Aston Martin" : vehicle.split(" ")[0];
 };
 
-export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent, getDriverInfo, getManuf };
+export { resultBuilder, hardChargeResult, compareObjects, entriesByEvent, getDriverInfo, getManuf, fastLapResult };
