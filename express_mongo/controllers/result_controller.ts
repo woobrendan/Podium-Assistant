@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import Result from "../models/result_schema";
 import { resultBuilder, hardChargeResult } from "../functions/helperFunc";
-import { FastLapInterface, HardChargerInterface, ResultInterface, MultiHardCharge } from "../models/result_models";
+import { MultiFastLap, ResultInterface, MultiHardCharge } from "../models/result_models";
 
 //** CREATE ROUTE HANDLER */
 const createResult = (req: Request, res: Response) => {
@@ -10,7 +10,9 @@ const createResult = (req: Request, res: Response) => {
         result2,
         result3,
         result4,
-        fastLap,
+        fastLap1,
+        fastLap2,
+        fastLap3,
         hardCharge1,
         hardCharge2,
         hardCharge3,
@@ -19,7 +21,9 @@ const createResult = (req: Request, res: Response) => {
         result2?: ResultInterface;
         result3?: ResultInterface;
         result4?: ResultInterface;
-        fastLap: FastLapInterface;
+        fastLap1: MultiFastLap;
+        fastLap2: MultiFastLap;
+        fastLap3: MultiFastLap;
         hardCharge1: MultiHardCharge;
         hardCharge2: MultiHardCharge;
         hardCharge3: MultiHardCharge;
@@ -27,7 +31,7 @@ const createResult = (req: Request, res: Response) => {
 
     const result = new Result({
         ...req.body.results,
-        fastLap: { ...fastLap },
+        fastLap1: { ...fastLap1 },
         result1: { ...resultBuilder(result1) },
         ...(result2 ? { result2: { ...resultBuilder(result2) } } : {}),
         ...(result3 ? { result3: { ...resultBuilder(result3) } } : {}),
