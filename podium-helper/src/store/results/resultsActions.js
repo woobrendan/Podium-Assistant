@@ -16,10 +16,10 @@ export const fetchData = () => {
     };
 };
 
-export const addResultToDB = async (result) => {
+export const addResultToDB = async (results) => {
     try {
         await axios.post("http://localhost:2020/results", {
-            results: result,
+            results,
         });
     } catch (err) {
         console.log("Error:", err);
