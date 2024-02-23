@@ -1,7 +1,14 @@
 import { TableBody, TableCell, TableHead, TableRow } from "@mui/material";
 import { grCup } from "../../../functions/helperFunc";
 
-const FastLapHeader = () => {
+const FastLapHeader = ({ allFastLaps }) => {
+    const { fastLap1, fastLap2, fastLap3 } = allFastLaps;
+    const { entry } = fastLap1;
+    const { series } = entry;
+    const fastLapVals = [fastLap1, fastLap2, fastLap3].filter(Boolean);
+
+    //const mappedFastLapRows = fastLapVals.map()
+
     return (
         <>
             <TableHead className="table_header">
@@ -28,7 +35,7 @@ const FastLapHeader = () => {
                     </TableCell>
                 </TableRow>
             </TableHead>
-            <TableBody>{mappedHardRows}</TableBody>
+            {/*<TableBody>{mappedHardRows}</TableBody>*/}
         </>
     );
 };
