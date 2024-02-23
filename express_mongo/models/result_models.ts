@@ -1,21 +1,9 @@
 import { EntryInterface } from "./models";
 
-export interface FastLapInterface {
-    driver: string;
-    entry: EntryInterface;
-    laptime: string;
-}
-
 export interface MultiFastLap {
     entry: EntryInterface;
     laptime: string;
     driver: string;
-}
-
-export interface HardChargerInterface {
-    entry: EntryInterface;
-    gain: number;
-    startPos: number;
 }
 
 export interface MultiHardCharge {
@@ -45,8 +33,9 @@ export interface FullResultInterface {
     series: string;
     date: string;
     event: string;
-    fastLap: FastLapInterface;
-    hardCharger?: HardChargerInterface;
+    fastLap1: MultiFastLap;
+    fastLap2: MultiFastLap;
+    fastLap3: MultiFastLap;
     result1: ResultInterface;
     result2?: ResultInterface;
     result3?: ResultInterface;
