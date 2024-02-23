@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import Result from "../models/result_schema";
-import { resultBuilder, hardChargeResult } from "../functions/helperFunc";
+import { resultBuilder, hardChargeResult, fastLapResult } from "../functions/helperFunc";
 import { MultiFastLap, ResultInterface, MultiHardCharge } from "../models/result_models";
 
 //** CREATE ROUTE HANDLER */
@@ -31,11 +31,13 @@ const createResult = (req: Request, res: Response) => {
 
     const result = new Result({
         ...req.body.results,
-        fastLap1: { ...fastLap1 },
         result1: { ...resultBuilder(result1) },
         ...(result2 ? { result2: { ...resultBuilder(result2) } } : {}),
         ...(result3 ? { result3: { ...resultBuilder(result3) } } : {}),
         ...(result4 ? { result4: { ...resultBuilder(result4) } } : {}),
+        fastLap1: { ...fastLapResult(fastLap1) },
+        ...(fastLap2 ? { fastLap2: { ...fastLapResult(fastLap2) } } : {}),
+        ...(fastLap3 ? { fastLap3: { ...fastLapResult(fastLap3) } } : {}),
         ...(hardCharge1 ? { hardCharge1: { ...hardChargeResult(hardCharge1) } } : {}),
         ...(hardCharge2 ? { hardCharge2: { ...hardChargeResult(hardCharge2) } } : {}),
         ...(hardCharge3 ? { hardCharge3: { ...hardChargeResult(hardCharge3) } } : {}),
