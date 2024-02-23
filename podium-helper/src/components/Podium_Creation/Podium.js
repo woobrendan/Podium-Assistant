@@ -52,7 +52,7 @@ const Podium = () => {
     }, [results.event, dispatch]);
 
     const handleFinalSubmit = () => {
-        dispatch(resultsActions.addResults(mongoResult(results, results.fastLap)));
+        dispatch(resultsActions.addResults(mongoResult(results)));
         navigate("/recent");
     };
 
@@ -122,12 +122,11 @@ const Podium = () => {
             {results.series && (
                 <div className="podium_results_container">
                     {numOfPodiumDisplays(results.series, handleRacePodiumSubmit)}
-                    {/*<FastLap handleSubmit={handleRacePodiumSubmit} series={results.series} />*/}
                     <FastLapContainer onSubmit={handleRacePodiumSubmit} series={results.series} />
                     <HardChargeContainer series={results.series} onSubmit={handleRacePodiumSubmit} />
                 </div>
             )}
-            {results.fastLap && (
+            {results.fastLap1 && (
                 <Button
                     variant="contained"
                     color="success"
