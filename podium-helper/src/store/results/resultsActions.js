@@ -2,7 +2,7 @@ import { resultsActions } from "./resultsSlice";
 import axios from "axios";
 import { compareResultDates } from "../../functions/sortFuncs";
 
-export const fetchData = () => {
+export const fetchAllResults = () => {
     return async (dispatch) => {
         try {
             const results = await axios.get("http://localhost:2020/results");
