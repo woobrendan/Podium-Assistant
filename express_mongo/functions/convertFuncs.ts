@@ -59,6 +59,7 @@ const vehicles: { [key: string]: string } = {
     hondaCivicSiFe1: "Honda Civic Si",
     bmwM2Cs: "BMW M2 CS (Cup)",
     hyundaiElantraNCup: "Hyundai Elantra N Cup",
+    hondaCivicTyper: "Honda Civic Type R",
 };
 
 const getManuf = (vehicle: string): string => {
