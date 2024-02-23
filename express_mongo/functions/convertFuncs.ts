@@ -18,6 +18,7 @@ const labels = [
 const carTypes = [
     "TCX Car Make / Model",
     "TC Car Make / Model",
+    "TC Car Make/Model",
     "TCA Car Make/Model",
     "FGTWCA Car Make / Model",
     "GTA Car Make/Model",
@@ -57,6 +58,7 @@ const vehicles: { [key: string]: string } = {
     mercedesamgGt2: "Mercedes-AMG GT2",
     hondaCivicSiFe1: "Honda Civic Si",
     bmwM2Cs: "BMW M2 CS (Cup)",
+    hyundaiElantraNCup: "Hyundai Elantra N Cup",
 };
 
 const getManuf = (vehicle: string): string => {
