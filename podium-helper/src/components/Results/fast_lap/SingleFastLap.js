@@ -9,7 +9,15 @@ const SingleFastLap = ({ fastLap }) => {
 
     return (
         <TableRow>
-            <TableCell>{driverStr}</TableCell>
+            <TableCell colSpan={2}>{driverStr}</TableCell>
+            <TableCell>#{entry.number}</TableCell>
+            <TableCell align="right">{entry.team}</TableCell>
+            <TableCell align="right" colSpan={entry.driver3 ? 2 : 1}>
+                {entry.vehicle}
+            </TableCell>
+            <TableCell align="right" colSpan={entry.driver3 ? 3 : 1}>
+                {laptime}
+            </TableCell>
         </TableRow>
     );
 };
