@@ -14,7 +14,7 @@ const FastLapHeader = ({ allFastLaps }) => {
         <>
             <TableHead className="table_header">
                 <TableRow>
-                    <TableCell colSpan={entry.driver3 ? 3 : 2}>Driver</TableCell>
+                    <TableCell colSpan={entry.driver3 ? 4 : 3}>Driver</TableCell>
                     <TableCell colSpan={2} align="center">
                         {series === grCup ? "Fast Lap" : "CrowdStrike Fast Lap"}
                     </TableCell>
