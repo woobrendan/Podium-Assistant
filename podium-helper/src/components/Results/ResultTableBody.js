@@ -7,13 +7,10 @@ const ResultTableBody = ({ results }) => {
 
     const checkPodium = () => {
         //** Loop through each placemnt, if that place exists create the data and push that arr */
-        const placements = [firstPlace, secondPlace, thirdPlace].filter(
-            Boolean,
-        );
+        const placements = [firstPlace, secondPlace, thirdPlace].filter(Boolean);
 
         return placements.map((placement, index) => {
-            const { number, driver1, driver2, driver3, team, vehicle } =
-                placement;
+            const { number, driver1, driver2, driver3, team, vehicle } = placement;
 
             return {
                 place: getPlaceString(index),
@@ -30,18 +27,15 @@ const ResultTableBody = ({ results }) => {
     const placementRows = checkPodium().map((row, index) => {
         const { place, number, driver1, driver2, driver3, team, car } = row;
         return (
-            <TableRow
-                key={index}
-                sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-            >
+            <TableRow key={index} sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
                 <TableCell component="th" scope="row">
                     {place}
                 </TableCell>
-                <TableCell align="left">{number}</TableCell>
-                <TableCell align="right">{driver1}</TableCell>
-                <TableCell align="right">{driver2 ? driver2 : ""}</TableCell>
+                <TableCell>#{number}</TableCell>
+                <TableCell colSpan={driver2 ? 1 : 2}>{driver1}</TableCell>
+                {driver2 && <TableCell align="right">{driver2}</TableCell>}
                 {driver3 && <TableCell align="right">{driver3}</TableCell>}
-                <TableCell align="right">{team}</TableCell>
+                <TableCell>{team}</TableCell>
                 <TableCell align="right">{car}</TableCell>
             </TableRow>
         );
@@ -51,11 +45,7 @@ const ResultTableBody = ({ results }) => {
         <>
             <TableHead>
                 <TableRow>
-                    <TableCell
-                        colSpan={7}
-                        align="center"
-                        className="table_header"
-                    >
+                    <TableCell colSpan={7} align="center" className="table_header">
                         {results.class}
                     </TableCell>
                 </TableRow>
