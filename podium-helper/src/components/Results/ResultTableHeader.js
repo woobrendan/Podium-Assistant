@@ -5,7 +5,7 @@ import ResultTableBody from "./ResultTableBody";
 import "../../Styling/result.scss";
 import { dateToString } from "../../functions/dateFuncs";
 import MultiHardHeader from "./hard_charger/MultiHardHeader";
-import FastLapHeader from "./fast_lap/fastLapHeader";
+import FastLapHeader from "./fast_lap/FastLapHeader";
 
 const ResultTableHeader = ({ results }) => {
     const {
