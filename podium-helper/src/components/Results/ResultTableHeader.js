@@ -8,25 +8,16 @@ import MultiHardHeader from "./hard_charger/MultiHardHeader";
 import FastLapHeader from "./fast_lap/FastLapHeader";
 
 const ResultTableHeader = ({ results }) => {
-    const {
-        event,
-        series,
-        date,
-        fastLap1,
-        fastLap2,
-        fastLap3,
-        result1,
-        result2,
-        result3,
-        result4,
-        hardCharge1,
-        hardCharge2,
-        hardCharge3,
-    } = results;
+    const { event, series, date, fastLap1, fastLap2, fastLap3, result1, hardCharge1, hardCharge2, hardCharge3 } =
+        results;
 
     const { driver2, driver3 } = result1.firstPlace;
     const allHardCharger = { hardCharge1, hardCharge2, hardCharge3 };
     const allFastLaps = { fastLap1, fastLap2, fastLap3 };
+
+    const allResults = [result1, results.result2, results.result3, results.result4]
+        .filter(Boolean)
+        .map((result, index) => <ResultTableBody results={result} key={index} />);
 
     return (
         <TableContainer component={Paper} id="result-table-container">
@@ -47,19 +38,15 @@ const ResultTableHeader = ({ results }) => {
                 <TableHead>
                     <TableRow>
                         <TableCell>Place</TableCell>
-                        <TableCell align="left">#</TableCell>
-                        <TableCell align="right">Driver 1</TableCell>
-                        <TableCell align="right">{driver2 ? "Driver2" : ""}</TableCell>
+                        <TableCell>#</TableCell>
+                        <TableCell colSpan={driver2 ? 1 : 2}>Driver 1</TableCell>
+                        {driver2 && <TableCell align="right">Driver 2</TableCell>}
                         {driver3 && <TableCell align="right">Driver 3</TableCell>}
-                        <TableCell align="right">Team</TableCell>
+                        <TableCell>Team</TableCell>
                         <TableCell align="right">Vehicle</TableCell>
                     </TableRow>
                 </TableHead>
-                <ResultTableBody results={results.result1} />
-                {result2 && <ResultTableBody results={result2} />}
-                {result3 && <ResultTableBody results={result3} />}
-                {result4 && <ResultTableBody results={result4} />}
-                {/*<FastLapTable fastLap={fastLap} series={series} />*/}
+                {allResults}
                 <FastLapHeader allFastLaps={allFastLaps} />
                 {hardCharge1 && <MultiHardHeader allHardCharger={allHardCharger} />}
             </Table>
