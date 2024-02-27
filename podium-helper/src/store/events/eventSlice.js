@@ -8,7 +8,7 @@ const eventSlice = createSlice({
     },
     reducers: {
         setEvents(state, action) {
-            state.eventArr = action.payload;
+            state.eventsArr = action.payload;
         },
         setCurrentYear(state, action) {
             state.currentYear = action.payload;
