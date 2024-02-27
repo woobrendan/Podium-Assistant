@@ -1,0 +1,16 @@
+[
+    {
+        "team": "Bennett Motorsports",
+        "driver1": {
+          "name": "Bennett Muldoon",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "15",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      }
+]
