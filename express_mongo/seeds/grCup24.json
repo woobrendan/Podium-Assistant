@@ -110,6 +110,160 @@
         "carImage": "",
         "series": "Toyota GR Cup",
         "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Jason Kos",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "3",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Ramon Llanos",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "20",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Ford Koch",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "21",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Kurt Koch",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "21",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Andrew Gilleland",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "86",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Hunter Allen",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "89",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Livio Galanti",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "89",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Maddie Aust",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "09",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "JMF Motorsports",
+        "driver1": {
+          "name": "Brayden Arthur",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "34",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Lucas Racing",
+        "driver1": {
+          "name": "Lucas Weisenberg",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "46",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Mashore Autobody",
+        "driver1": {
+          "name": "Casey Mashore",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "50",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
       }
 
 ]
