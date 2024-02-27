@@ -166,172 +166,184 @@
       },
       {
         "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Kurt Koch",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Kurt",
+        "driver1lastName": "Koch",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "21",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Andrew Gilleland",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Andrew",
+        "driver1lastName": "Gilleland",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "86",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Hunter Allen",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Hunter",
+        "driver1lastName": "Allen",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "89",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Livio Galanti",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Livio",
+        "driver1lastName": "Galanti",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "89",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Maddie Aust",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Maddie",
+        "driver1lastName": "Aust",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "09",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "JMF Motorsports",
-        "driver1": {
-          "name": "Brayden Arthur",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Brayden",
+        "driver1lastName": "Arthur",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "34",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Lucas Racing",
-        "driver1": {
-          "name": "Lucas Weisenberg",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Lucas",
+        "driver1lastName": "Weisenberg",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "46",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Mashore Autobody",
-        "driver1": {
-          "name": "Casey Mashore",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Casey",
+        "driver1lastName": "Mashore",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "50",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Nitro Motorsports",
-        "driver1": {
-          "name": "Jade Avedisian",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Jade",
+        "driver1lastName": "Avedisian",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "24",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Nitro Motorsports",
-        "driver1": {
-          "name": "TBD TBD",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "TBD",
+        "driver1lastName": "TBD",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "70",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Nitro Motorsports",
-        "driver1": {
-          "name": "Tyler Wettengel",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Tyler",
+        "driver1lastName": "Wettengel",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "80",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
-      {
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
+    {
         "team": "Precision Racing LA",
-        "driver1": {
-          "name": "Alexandra Hainer",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Alexandra",
+        "driver1lastName": "Hainer",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "43",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
-      },
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
+    },
       {
         "team": "Precision Racing LA",
         "driver1": {
