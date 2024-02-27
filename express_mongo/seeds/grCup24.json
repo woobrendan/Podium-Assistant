@@ -12,5 +12,104 @@
         "carImage": "",
         "series": "Toyota GR Cup",
         "year": 2024
+      },
+      {
+        "team": "BSI Racing",
+        "driver1": {
+          "name": "Maximillian Hewitt",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "39",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "BSI Racing",
+        "driver1": {
+          "name": "Steven Clemons",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "76",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Copeland Motorsports",
+        "driver1": {
+          "name": "Gresham Wagner",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "5",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Westin Workman",
+        "driver1": {
+          "name": "Gresham Wagner",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "13",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Copeland Motorsports",
+        "driver1": {
+          "name": "Adam Brickley",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "51",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Copeland Motorsports",
+        "driver1": {
+          "name": "Mia Lovell",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "57",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Copeland Motorsports",
+        "driver1": {
+          "name": "Jaxson Bell",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "99",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
       }
+
 ]
