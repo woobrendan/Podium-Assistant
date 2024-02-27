@@ -446,6 +446,61 @@
         "carImage": "",
         "series": "Toyota GR Cup",
         "year": 2024
+      },
+      {
+        "team": "Copeland Motorsports",
+        "driver1": {
+          "name": "Mia Lovell",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Female", 
+        "number": "57",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Nitro Motorsports",
+        "driver1": {
+          "name": "Jade Avedisian",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Female", 
+        "number": "24",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Eagles Canyon Racing powered by Fast Track",
+        "driver1": {
+          "name": "Maddie Aust",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Female", 
+        "number": "09",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Precision Racing LA",
+        "driver1": {
+          "name": "Alexandra Hainer",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Female", 
+        "number": "43",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
       }
-
 ]
