@@ -348,6 +348,104 @@
         "carImage": "",
         "series": "Toyota GR Cup",
         "year": 2024
+      },
+      {
+        "team": "RVA Graphics Motorsports by Speed Syndicate",
+        "driver1": {
+          "name": "TBD TBD",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "11",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Skip Barber Racing",
+        "driver1": {
+          "name": "Alex Garcia",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "14",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "Skip Barber Racing",
+        "driver1": {
+          "name": "James Kilmas",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "61",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "McCumbee McAleer Racing",
+        "driver1": {
+          "name": "Lev Uretsky",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "27",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "TechSport Racing",
+        "driver1": {
+          "name": "Devon Anderson",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "22",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "TechSport Racing",
+        "driver1": {
+          "name": "Alfonso Diaz",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "25",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
+      },
+      {
+        "team": "TechSport Racing",
+        "driver1": {
+          "name": "Spike Kohlbecker",
+          "nationality": "USA",
+          "rating": "N/A"
+        },
+        "vehicle": "Toyota GR86",
+        "classification": "Am", 
+        "number": "55",
+        "carImage": "",
+        "series": "Toyota GR Cup",
+        "year": 2024
       }
 
 ]
