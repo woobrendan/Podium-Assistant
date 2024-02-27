@@ -1,157 +1,168 @@
 [
-    {
+      {
         "team": "Bennett Motorsports",
-        "driver1": {
-          "name": "Bennett Muldoon",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
+        "driver1firstName": "Bennett",
+        "driver1lastName": "Muldoon",
+        "driver1category": "N/A",
+        "driver1nationality": "USA",
+        "car": "Toyota GR86",
+        "manufacturer": "Toyota",
+        "class": "Am",
         "number": "15",
-        "carImage": "",
         "series": "Toyota GR Cup",
-        "year": 2024
+        "year": 2024,
+        "created": "2024-02-26T15:35:36Z",
+        "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "BSI Racing",
-        "driver1": {
-          "name": "Maximillian Hewitt",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "39",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "BSI Racing",
+          "driver1firstName": "Maximillian",
+          "driver1lastName": "Hewitt",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "39",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "BSI Racing",
-        "driver1": {
-          "name": "Steven Clemons",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "76",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "BSI Racing",
+          "driver1firstName": "Steven",
+          "driver1lastName": "Clemons",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "76",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Copeland Motorsports",
-        "driver1": {
-          "name": "Gresham Wagner",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "5",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Copeland Motorsports",
+          "driver1firstName": "Gresham",
+          "driver1lastName": "Wagner",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "5",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Westin Workman",
-        "driver1": {
-          "name": "Gresham Wagner",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "13",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Westin Workman",
+          "driver1firstName": "Gresham",
+          "driver1lastName": "Wagner",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "13",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Copeland Motorsports",
-        "driver1": {
-          "name": "Adam Brickley",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "51",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Copeland Motorsports",
+          "driver1firstName": "Adam",
+          "driver1lastName": "Brickley",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "51",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Copeland Motorsports",
-        "driver1": {
-          "name": "Mia Lovell",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "57",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Copeland Motorsports",
+          "driver1firstName": "Mia",
+          "driver1lastName": "Lovell",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "57",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Copeland Motorsports",
-        "driver1": {
-          "name": "Jaxson Bell",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "99",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Copeland Motorsports",
+          "driver1firstName": "Jaxson",
+          "driver1lastName": "Bell",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "99",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Jason Kos",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "3",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Eagles Canyon Racing powered by Fast Track",
+          "driver1firstName": "Jason",
+          "driver1lastName": "Kos",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "3",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Ramon Llanos",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "20",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Eagles Canyon Racing powered by Fast Track",
+          "driver1firstName": "Ramon",
+          "driver1lastName": "Llanos",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "20",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
-        "team": "Eagles Canyon Racing powered by Fast Track",
-        "driver1": {
-          "name": "Ford Koch",
-          "nationality": "USA",
-          "rating": "N/A"
-        },
-        "vehicle": "Toyota GR86",
-        "classification": "Am", 
-        "number": "21",
-        "carImage": "",
-        "series": "Toyota GR Cup",
-        "year": 2024
+          "team": "Eagles Canyon Racing powered by Fast Track",
+          "driver1firstName": "Ford",
+          "driver1lastName": "Koch",
+          "driver1category": "N/A",
+          "driver1nationality": "USA",
+          "car": "Toyota GR86",
+          "manufacturer": "Toyota",
+          "class": "Am",
+          "number": "21",
+          "series": "Toyota GR Cup",
+          "year": 2024,
+          "created": "2024-02-26T15:35:36Z",
+          "event": "FULL SEASON ENTRY"
       },
       {
         "team": "Eagles Canyon Racing powered by Fast Track",
