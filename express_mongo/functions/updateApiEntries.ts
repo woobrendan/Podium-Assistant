@@ -50,6 +50,7 @@ const updateApiEntries = async () => {
                     if (savedEntry) console.log(`new entry added: ${entry.team} - ${entry.number}`);
                 } catch (error) {
                     console.log(`Error adding: ${entry.team} - ${entry.number}`);
+                    console.log("Raw Entry---", entry);
                     console.log("Error: ", error);
                 }
             }
