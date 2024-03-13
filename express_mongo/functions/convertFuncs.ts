@@ -60,6 +60,7 @@ const vehicles: { [key: string]: string } = {
     bmwM2Cs: "BMW M2 CS (Cup)",
     hyundaiElantraNCup: "Hyundai Elantra N Cup",
     hondaCivicTyper: "Honda Civic Type R",
+    miniCooperJcw: "MINI JCW",
 };
 
 const getManuf = (vehicle: string): string => {
@@ -108,10 +109,10 @@ const getDriverName = (
 
     if (nameArr.length == 3) {
         copyEntry[`${driver}firstName`] = `${nameArr[0]} ${nameArr[1]}`;
-        copyEntry[`${driver}lastName`] = nameArr[2];
+        copyEntry[`${driver}lastName`] = nameArr[nameArr.length - 1];
     } else {
         copyEntry[`${driver}firstName`] = nameArr[0];
-        copyEntry[`${driver}lastName`] = nameArr[1];
+        copyEntry[`${driver}lastName`] = nameArr[nameArr.length - 1];
     }
 
     return copyEntry;
@@ -123,6 +124,7 @@ const convertSeries = (series: string): string => {
         gtSportsClub: "GT America",
         sprintX: "GT World Challenge America",
         tc: "TC America",
+        grCup: "Toyota GR Cup",
     };
 
     return seriesList[series] || `Series Error w/ ${series}`;
