@@ -69,7 +69,12 @@ const convertEntry = (entry: ApiEntryInterface) => {
                     break;
                 }
                 if (label === "Car Series") {
-                    newEntry.series = convertSeries(fieldVal);
+                    const series = convertSeries(fieldVal);
+                    newEntry.series = series;
+                    if (series === "Toyota GR Cup") {
+                        newEntry.car = "Toyota GR86";
+                        newEntry.manufacturer = "Toyota";
+                    }
                     break;
                 }
                 if (label === "Registered Car #") {
