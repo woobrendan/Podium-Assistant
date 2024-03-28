@@ -2,11 +2,13 @@ import dotenv from "dotenv";
 import axios from "axios";
 import { ApiEntryInterface } from "../models/models";
 import convertEntry from "./convertEntries";
+import { get60DayOld } from "./helperFunc";
 
 dotenv.config();
 
 export const fetchApiEntries = async () => {
     try {
+        const date = get60DayOld();
         const token = process.env.TKSPICE;
         const form = process.env.FORM_ID;
         const url = "https://api.webconnex.com/v2/public/search/tickets";
@@ -17,6 +19,7 @@ export const fetchApiEntries = async () => {
             formId: form,
             limit: "250",
             status: "completed",
+            date,
         };
 
         const entries = await axios.get(url, {
@@ -26,8 +29,8 @@ export const fetchApiEntries = async () => {
             },
         });
 
-        //const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
-        //console.log("entries len", filtered.length);
+        const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
+        console.log("entries len", filtered.length);
 
         // filter out lumiranks and incomplete transactions, then convert to usable data
         const combinedEntries = entries.data.data.reduce((result: any[], entry: ApiEntryInterface) => {
