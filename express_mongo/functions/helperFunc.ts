@@ -96,11 +96,11 @@ const getManuf = (vehicle: string): string => {
     return vehicle.includes("Aston") ? "Aston Martin" : vehicle.split(" ")[0];
 };
 
-const get60DayOld = (): string => {
+const get60DayOld = (): Date => {
     let date = new Date();
 
     date.setDate(date.getDate() - 60);
-    return date.toString();
+    return date;
 };
 
 export {
