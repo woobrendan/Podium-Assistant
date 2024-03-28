@@ -56,11 +56,13 @@ const vehicles: { [key: string]: string } = {
     astonMartinVantageAmr: "Aston Martin Vantage AMR GT3",
     porsche911Gt3R3: "Porsche 992 GT3 R",
     mercedesamgGt2: "Mercedes-AMG GT2",
-    hondaCivicSiFe1: "Honda Civic Si",
+    hondaCivicSiFe1: "Honda Civic Si FE1",
     bmwM2Cs: "BMW M2 CS (Cup)",
     hyundaiElantraNCup: "Hyundai Elantra N Cup",
     hondaCivicTyper: "Honda Civic Type R",
     miniCooperJcw: "MINI JCW",
+    mazda3Tc: "Mazda 3",
+    miniJcwProTc: "MINI JCW TC Pro",
 };
 
 const getManuf = (vehicle: string): string => {
