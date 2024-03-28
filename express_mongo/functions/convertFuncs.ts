@@ -63,6 +63,10 @@ const vehicles: { [key: string]: string } = {
     miniCooperJcw: "MINI JCW",
     mazda3Tc: "Mazda 3",
     miniJcwProTc: "MINI JCW TC Pro",
+    astonMarinVantageAmr: "Aston Martin Vantage AMR GT3",
+    audiR8LmsGt3: "Audi R8 LMS GT3",
+    porsche911Gt3R2: "Porsche 992 GT3 R",
+    lamborghiniHuracanSuperTrofeo2: "Lamborghini Huracan Super Trofeo EVO2",
 };
 
 const getManuf = (vehicle: string): string => {
