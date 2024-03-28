@@ -19,7 +19,7 @@ export const fetchApiEntries = async () => {
             formId: form,
             limit: "250",
             status: "completed",
-            date,
+            dateCreatedAfter: date,
         };
 
         const entries = await axios.get(url, {
@@ -29,8 +29,8 @@ export const fetchApiEntries = async () => {
             },
         });
 
-        const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
-        console.log("entries len", filtered.length);
+        //const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
+        //console.log("entries len", filtered.length);
 
         // filter out lumiranks and incomplete transactions, then convert to usable data
         const combinedEntries = entries.data.data.reduce((result: any[], entry: ApiEntryInterface) => {
