@@ -60,9 +60,9 @@
           "event": "FULL SEASON ENTRY"
       },
       {
-          "team": "Westin Workman",
-          "driver1firstName": "Gresham",
-          "driver1lastName": "Wagner",
+          "team": "Copeland Motorsports",
+          "driver1firstName": "Westin",
+          "driver1lastName": "Workman",
           "driver1category": "N/A",
           "driver1nationality": "USA",
           "car": "Toyota GR86",
@@ -106,7 +106,7 @@
       },
       {
           "team": "Copeland Motorsports",
-          "driver1firstName": "Jaxson",
+          "driver1firstName": "Jaxon",
           "driver1lastName": "Bell",
           "driver1category": "N/A",
           "driver1nationality": "USA",
@@ -241,7 +241,7 @@
     },
     {
         "team": "JMF Motorsports",
-        "driver1firstName": "Brayden",
+        "driver1firstName": "Braydon",
         "driver1lastName": "Arthur",
         "driver1category": "N/A",
         "driver1nationality": "USA",
@@ -376,8 +376,8 @@
   },
   {
       "team": "RVA Graphics Motorsports by Speed Syndicate",
-      "driver1firstName": "TBD",
-      "driver1lastName": "TBD",
+      "driver1firstName": "Farran",
+      "driver1lastName": "Davis",
       "driver1category": "N/A",
       "driver1nationality": "USA",
       "car": "Toyota GR86",
