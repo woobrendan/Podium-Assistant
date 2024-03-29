@@ -40,7 +40,7 @@ const ResultTableHeader = ({ results }) => {
                         <TableCell>Place</TableCell>
                         <TableCell>#</TableCell>
                         <TableCell colSpan={driver2 ? 1 : 2}>Driver 1</TableCell>
-                        {driver2 && <TableCell align="right">Driver 2</TableCell>}
+                        {driver2 && <TableCell>Driver 2</TableCell>}
                         {driver3 && <TableCell align="right">Driver 3</TableCell>}
                         <TableCell>Team</TableCell>
                         <TableCell align="right">Vehicle</TableCell>
