@@ -81,6 +81,7 @@ const EntryManager = () => {
                 />
                 <Series getValue={(e) => setSeries(e.target.value.name)} comp="entryManager" />
             </div>
+            <p>Num of Results: {sortEntries(entries).length}</p>
             <EntryTable entries={sortEntries(entries)} />
             <AddEntry show={showModal} handleToggle={() => setShowModal(!showModal)} />
         </section>
