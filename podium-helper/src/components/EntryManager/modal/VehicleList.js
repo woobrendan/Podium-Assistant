@@ -26,6 +26,8 @@ const VehicleList = ({ series, vehicleName, classif, onChange }) => {
 
         if (series === "GTWCA" || series === "PGT4A") {
             return vehicleStr;
+        } else if (series === "GR Cup") {
+            return ["Toyota GR86"];
         } else {
             return classif ? vehicles[series][classif] : getAllSeriesVehicles(series);
         }
