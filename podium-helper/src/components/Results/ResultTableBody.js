@@ -33,7 +33,7 @@ const ResultTableBody = ({ results }) => {
                 </TableCell>
                 <TableCell>#{number}</TableCell>
                 <TableCell colSpan={driver2 ? 1 : 2}>{driver1}</TableCell>
-                {driver2 && <TableCell align="right">{driver2}</TableCell>}
+                {driver2 && <TableCell>{driver2}</TableCell>}
                 {driver3 && <TableCell align="right">{driver3}</TableCell>}
                 <TableCell>{team}</TableCell>
                 <TableCell align="right">{car}</TableCell>
