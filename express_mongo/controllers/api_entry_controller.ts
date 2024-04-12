@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import ApiEntries from "../models/apiEntry_schema";
 import { entriesByEvent, getManuf, getDriverInfo } from "../functions/helperFunc";
 import convertOldtoNewEntry from "../functions/oldEntrytoApiEntry";
+import { ConvertedApiEntry } from "../models/models";
 
 //** NEW ENTRIES */
 const createEntry = async (req: Request, res: Response) => {
@@ -69,8 +70,16 @@ const getEntryByEvent = async (req: Request, res: Response) => {
         const entries = await ApiEntries.find();
         if (entries) {
             const sortedByEvent = entriesByEvent(entries);
+            let allEntries: ConvertedApiEntry[] = []
 
-            const allEntries = [...sortedByEvent[event], ...sortedByEvent["FULL SEASON ENTRY"]];
+            if (event === 'Long Beach Grand Prix') {
+                const fullSeason = sortedByEvent["FULL SEASON ENTRY"].filter((entry) => entry.series === 'GT America')
+                allEntries = [...sortedByEvent[event], ...fullSeason]
+
+            } else {
+                allEntries = [...sortedByEvent[event], ...sortedByEvent["FULL SEASON ENTRY"]];
+            }
+
 
             return res.status(200).json({ entries: allEntries.sort((a, b) => Number(a.number) - Number(b.number)) });
         } else {
