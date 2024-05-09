@@ -19,22 +19,29 @@ const useEvents = () => {
     const getCurrentEvent = (events) => {
         const today = new Date();
         let currentEvent = null;
-
+        
         for (let i = 0; i < events.length; i++) {
             const eventStartDate = new Date(events[i].startDate);
-
-            // check if today is before or equal to start date
+            const eventEndDate = new Date(events[i].endDate);
+    
+            // Check if today is between the start and end date of the event
+            if (today >= eventStartDate && today <= eventEndDate) {
+                currentEvent = events[i].name;
+                break;
+            }
+    
+            // Check if today is before or equal to start date
             if (today <= eventStartDate) {
-                // check if today is not past start of next event, and isnt the last event
+                // Check if today is not past start of next event, and isn't the last event
                 if (i < events.length - 1) {
-                    const nextEvent = new Date(events[i + 1].startDate);
-
-                    if (today < nextEvent) {
+                    const nextEventStartDate = new Date(events[i + 1].startDate);
+    
+                    if (today < nextEventStartDate) {
                         currentEvent = events[i].name;
                         break;
                     }
                 } else {
-                    // returns last event
+                    // Returns last event
                     currentEvent = events[i].name;
                 }
             }
