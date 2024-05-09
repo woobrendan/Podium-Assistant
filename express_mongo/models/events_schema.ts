@@ -3,6 +3,8 @@ import mongoose, { Document, Schema } from "mongoose";
 interface Events {
 	name: string;
 	date: string;
+	startDate: string;
+	endDate: string;
 	year: number;
 }
 
