@@ -11,6 +11,8 @@ export interface eventModel extends Events, Document {}
 const eventSchema: Schema = new Schema({
   name: { type: String, required: true },
   date: { type: String, required: true },
+  startDate: {type: String},
+  endDate: {type: String},
   year: { type: Number, required: true },
 });
 
