@@ -7,43 +7,43 @@ import { get60DayOld } from "./helperFunc";
 dotenv.config();
 
 export const fetchApiEntries = async () => {
-    try {
-        const date = get60DayOld();
-        const token = process.env.TKSPICE;
-        const form = process.env.FORM_ID;
-        const url = "https://api.webconnex.com/v2/public/search/tickets";
+	try {
+		const date = get60DayOld();
+		const token = process.env.TKSPICE;
+		const form = process.env.FORM_ID;
+		const url = "https://api.webconnex.com/v2/public/search/tickets";
 
-        const params = {
-            product: "ticketspice.com",
-            port: "443",
-            formId: form,
-            limit: "250",
-            status: "completed",
-            dateCreatedAfter: date,
-        };
+		const params = {
+			product: "ticketspice.com",
+			port: "443",
+			formId: form,
+			limit: "250",
+			status: "completed",
+			dateCreatedAfter: date,
+		};
 
-        const entries = await axios.get(url, {
-            params,
-            headers: {
-                apiKey: token || "",
-            },
-        });
+		const entries = await axios.get(url, {
+			params,
+			headers: {
+				apiKey: token || "",
+			},
+		});
 
-        //const filtered = entries.data.data.filter((entry: ApiEntryInterface) => entry["levelLabel"] === "EVENT ENTRY");
-        //console.log("entries len", filtered.length);
+		// filter out lumiranks and incomplete transactions, then convert to usable data
+		const combinedEntries = entries.data.data.reduce(
+			(result: any[], entry: ApiEntryInterface) => {
+				if (entry["levelLabel"] === "EVENT ENTRY") {
+					result.push(convertEntry(entry));
+				}
+				return result;
+			},
+			[]
+		);
 
-        // filter out lumiranks and incomplete transactions, then convert to usable data
-        const combinedEntries = entries.data.data.reduce((result: any[], entry: ApiEntryInterface) => {
-            if (entry["levelLabel"] === "EVENT ENTRY") {
-                result.push(convertEntry(entry));
-            }
-            return result;
-        }, []);
-
-        return combinedEntries;
-    } catch (err) {
-        console.log("Error fetching api", err);
-    }
+		return combinedEntries;
+	} catch (err) {
+		console.log("Error fetching api", err);
+	}
 };
 
 //example of arrr convertEntries
