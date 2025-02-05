@@ -30,15 +30,12 @@ export const fetchApiEntries = async () => {
 		});
 
 		// filter out lumiranks and incomplete transactions, then convert to usable data
-		const combinedEntries = entries.data.data.reduce(
-			(result: any[], entry: ApiEntryInterface) => {
-				if (entry["levelLabel"] === "EVENT ENTRY") {
-					result.push(convertEntry(entry));
-				}
-				return result;
-			},
-			[]
-		);
+		const combinedEntries = entries.data.data.reduce((result: any[], entry: ApiEntryInterface) => {
+			if (entry["levelLabel"] === "EVENT ENTRY") {
+				result.push(convertEntry(entry));
+			}
+			return result;
+		}, []);
 
 		return combinedEntries;
 	} catch (err) {
