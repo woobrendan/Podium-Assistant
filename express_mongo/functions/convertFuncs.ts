@@ -23,6 +23,7 @@ const carTypes = [
 	"FGTWCA Car Make / Model",
 	"GTA Car Make/Model",
 	"GT4 Car Make/Model",
+	"GTWCA Car Make / Model",
 ];
 
 //to be updated later as vehicles come through
@@ -71,6 +72,7 @@ const vehicles: { [key: string]: string } = {
 	mercedesamgGt4: "Mercedes-AMG GT4",
 	chevroletCorvetteZ06Gt3r: "Chevrolet Corvette Z06 GT3.R",
 	corvetteC7Gt3r: "Chevrolet Corvette Z06 GT3.R",
+	astonMartinVantageAmr2: "Aston Martin Vantage AMR GT4 EVO",
 };
 
 const getManuf = (vehicle: string): string => {
@@ -98,6 +100,7 @@ const convertClassif = (classif: string): string | undefined => {
 		TCX: "TCX",
 		TC: "TC",
 		TCA: "TCA",
+		gt3Am: "SRO3",
 	};
 
 	return classList[classif];
@@ -140,13 +143,4 @@ const convertSeries = (series: string): string => {
 	return seriesList[series] || `Series Error w/ ${series}`;
 };
 
-export {
-	labels,
-	convertClassif,
-	getFieldPathVal,
-	getDriverName,
-	getManuf,
-	carTypes,
-	vehicles,
-	convertSeries,
-};
+export { labels, convertClassif, getFieldPathVal, getDriverName, getManuf, carTypes, vehicles, convertSeries };
