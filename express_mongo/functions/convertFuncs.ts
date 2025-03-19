@@ -101,6 +101,8 @@ const convertClassif = (classif: string): string | undefined => {
 		TC: "TC",
 		TCA: "TCA",
 		gt3Am: "SRO3",
+		gt2Proam: "GT2",
+		gt3Proam: "SRO3",
 	};
 
 	return classList[classif];
