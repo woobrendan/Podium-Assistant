@@ -73,6 +73,10 @@ const vehicles: { [key: string]: string } = {
 	chevroletCorvetteZ06Gt3r: "Chevrolet Corvette Z06 GT3.R",
 	corvetteC7Gt3r: "Chevrolet Corvette Z06 GT3.R",
 	astonMartinVantageAmr2: "Aston Martin Vantage AMR GT4 EVO",
+	hyundaiElantraN1Tc: "Hyundai Elantra N1 TC EVO",
+	toyotaGrCorollaTc: "Toyota GR Corolla TC",
+	astonMartinVantageAmr3: "Aston Martin Vantage AMR GT4",
+	porsche911Gt3R4: "Porsche 992 GT3 R",
 };
 
 const getManuf = (vehicle: string): string => {
