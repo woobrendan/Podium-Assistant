@@ -5,29 +5,29 @@ import SingleFastLapCard from "./SingleFastLapCard";
 import { getAwardEntries, getClassArr } from "../../../functions/podiumResultHelpers";
 
 const FastLapContainer = ({ series, onSubmit }) => {
-    const eventEntries = useSelector((state) => state.entry.eventEntries);
+	const eventEntries = useSelector((state) => state.entry.eventEntries);
 
-    const fastLapCards = getClassArr(series).map((classif, index) => {
-        const entries = getAwardEntries(eventEntries, series, classif);
+	const fastLapCards = getClassArr(series).map((classif, index) => {
+		const entries = getAwardEntries(eventEntries, series, classif);
 
-        return (
-            <SingleFastLapCard
-                key={index}
-                classif={classif}
-                resultNum={index + 1}
-                onSubmit={onSubmit}
-                entries={entries}
-            />
-        );
-    });
-    return (
-        <div className="results-container">
-            <Card className="podium_card">
-                <h2>{series.name === grCup ? "Fast Lap" : "CrowdStrike Fast Lap"}</h2>
-                <div className="award_container">{fastLapCards}</div>
-            </Card>
-        </div>
-    );
+		return (
+			<SingleFastLapCard
+				key={index}
+				classif={classif}
+				resultNum={index + 1}
+				onSubmit={onSubmit}
+				entries={entries}
+			/>
+		);
+	});
+	return (
+		<div className="results-container">
+			<Card className="podium_card">
+				<h2>Fast Lap</h2>
+				<div className="award_container">{fastLapCards}</div>
+			</Card>
+		</div>
+	);
 };
 
 export default FastLapContainer;
