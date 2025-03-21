@@ -44,7 +44,8 @@ const convertEntry = (entry: ApiEntryInterface) => {
 
 			if (
 				(label === "driver1category" && field.path.includes("fiaDriverCategorization.")) ||
-				(label === "driver2category" && field.path.includes("fiaDriverCategorization2."))
+				(label === "driver2category" && field.path.includes("fiaDriverCategorization2.")) ||
+				(label === "team" && field.path.includes("temName."))
 			) {
 				newEntry[label] = field.label;
 				break;
