@@ -1,51 +1,30 @@
 [
-  {
-    "name": "GT World Challenge America",
-    "class": [
-      "Pro",
-      "Pro-Am",
-      "Am"
-    ]
-  },
-  {
-    "name": "Pirelli GT4 America",
-    "class": [
-      "Silver",
-      "Pro-Am",
-      "Am"
-    ]
-  },
-  {
-    "name": "GT America",
-    "class": [
-      "SRO3",
-      "GT4",
-      "GT2",
-      "Masters"
-    ]
-  },
-  {
-    "name": "TC America",
-    "class": [
-      "TCX",
-      "TC",
-      "TCA"
-    ]
-  },
-  {
-    "name": "Intercontinental GT Challenge",
-    "class": [
-      "IGTC Pro",
-      "Pro-Am",
-      "FGTWCA Pro",
-      "Am"
-    ]
-  },
-  {
-    "name": "Toyota GR Cup",
-    "class": [
-      "Am",
-      "Female"
-    ]
-  }
+	{
+		"name": "GT World Challenge America",
+		"class": ["Pro", "Pro-Am", "Am"]
+	},
+	{
+		"name": "Pirelli GT4 America",
+		"class": ["Silver", "Pro-Am", "Am"]
+	},
+	{
+		"name": "GT America",
+		"class": ["SRO3", "GT4", "GT2", "Masters"]
+	},
+	{
+		"name": "TC America",
+		"class": ["TC", "Masters"]
+	},
+	{
+		"name": "Intercontinental GT Challenge",
+		"class": ["IGTC Pro", "Pro-Am", "FGTWCA Pro", "Am"]
+	},
+	{
+		"name": "Toyota GR Cup",
+		"class": ["Am", "Female", "Legend"]
+	},
+	{
+		"name": "McLaren Trophy",
+		"class": ["Pro", "Pro-Am", "Am"]
+	}
 ]
