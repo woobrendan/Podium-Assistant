@@ -31,6 +31,7 @@ const shortenName = (seriesName) => {
 		"GT4 America": "PGT4A",
 		"Toyota GR Cup": "GR Cup",
 		"Intercontinental GT Challenge": "IGTC",
+		"McLaren Trophy": "MTA",
 	};
 	return obj[seriesName];
 };
@@ -97,6 +98,7 @@ const gtam = "GT America";
 const gt4a = "Pirelli GT4 America";
 const igtc = "Intercontinental GT Challenge";
 const grCup = "Toyota GR Cup";
+const mta = "McLaren Trophy";
 
 export {
 	printPage,
@@ -108,6 +110,7 @@ export {
 	gt4a,
 	igtc,
 	grCup,
+	mta,
 	shortenName,
 	getPlaceString,
 	convertEntryFormat,
