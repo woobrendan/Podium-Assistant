@@ -24,7 +24,7 @@ const VehicleList = ({ series, vehicleName, classif, onChange }) => {
 		const series = shortenName(seriesName);
 		const vehicleStr = vehicles[series];
 
-		if (series === "GTWCA" || series === "PGT4A") {
+		if (series === "GTWCA" || series === "PGT4A" || series === "IGTC" || series === "TCAM") {
 			return vehicleStr;
 		} else if (series === "GR Cup") {
 			return ["Toyota GR86"];
