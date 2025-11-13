@@ -1,6 +1,6 @@
 import { MenuItem } from "@mui/material";
 import WinnerPodium from "../components/Podium_Creation/WinnerPodium";
-import { gtam, gt4a, tcam, grCup, gtwca } from "./helperFunc";
+import { gtam, gt4a, tcam, grCup, gtwca, igtc } from "./helperFunc";
 
 //determine if entry is single or two drivers and return corresponding menu item
 const numOfDriverMenuItem = (entry, index) => {
@@ -59,6 +59,8 @@ const getClassArr = (series) => {
 			return ["Am"];
 		case "McLaren Trophy":
 			return ["McLaren"];
+		case "Intercontingental GT Challenge":
+			return ["IGTC"];
 		default:
 			return ["GT3"];
 	}
@@ -66,7 +68,7 @@ const getClassArr = (series) => {
 
 // for awards, take in event entries,and return filtering by class. GTWCand  GT4return  all entries in series
 const getAwardEntries = (entries, series, classif) => {
-	if (series.name === gtwca || series.name === gt4a || series.name == "McLaren Trophy") {
+	if (series.name === gtwca || series.name === gt4a || series.name == "McLaren Trophy" || series.name === igtc) {
 		return entries.filter((entry) => entry.series === series.name);
 	} else {
 		return entries.filter((entry) => entry.series === series.name && entry.classification === classif);
