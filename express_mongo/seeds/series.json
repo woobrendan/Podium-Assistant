@@ -17,7 +17,7 @@
 	},
 	{
 		"name": "Intercontinental GT Challenge",
-		"class": ["IGTC Pro", "Pro-Am", "FGTWCA Pro", "Am"]
+		"class": ["Pro", "Pro-Am", "Am", "Independent Cup"]
 	},
 	{
 		"name": "Toyota GR Cup",
@@ -25,6 +25,6 @@
 	},
 	{
 		"name": "McLaren Trophy",
-		"class": ["Pro", "Pro-Am", "Am"]
+		"class": ["Pro", "Pro-Am", "Am", "Pro-Am PC", "Am PC"]
 	}
 ]
